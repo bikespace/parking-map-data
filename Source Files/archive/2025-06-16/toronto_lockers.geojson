@@ -1,0 +1,290 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.387144,
+          43.767015
+        ]
+      },
+      "properties": {
+        "location": "Bayview Subway Station",
+        "location_description": "North side of Sheppard Ave., east of Bayview Ave.",
+        "quantity": "# of Lockers: 12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.344649,
+          43.777874
+        ]
+      },
+      "properties": {
+        "location": "Don Mills Subway Station",
+        "location_description": "Northeast corner of Don Mills Rd. and Sheppard Ave. E.",
+        "quantity": "# of lockers: 4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.462384,
+          43.749753
+        ]
+      },
+      "properties": {
+        "location": "Sheppard West Subway Station (Formerly Downsview Subway Station)",
+        "location_description": "Outside of passenger drop-off and pick-up area",
+        "quantity": "# of lockers 30"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.230773,
+          43.739683
+        ]
+      },
+      "properties": {
+        "location": "Eglinton GO",
+        "location_description": "In parking lot, east of the station house",
+        "quantity": "# of lockers 6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.564493,
+          43.643049
+        ]
+      },
+      "properties": {
+        "location": "Etobicoke Civic Centre",
+        "location_description": "Located on the south side, before the outside ATM",
+        "quantity": "# of lockers 6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.420871,
+          43.634882
+        ]
+      },
+      "properties": {
+        "location": "Exhibition Place",
+        "location_description": "On the south side of Exhibition GO Station",
+        "quantity": "# of lockers: 6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.415783,
+          43.782044
+        ]
+      },
+      "properties": {
+        "location": "Finch GO",
+        "location_description": "Just north of the station house on the east side of Yonge St.",
+        "quantity": "# of lockers: 12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.415939,
+          43.781273
+        ]
+      },
+      "properties": {
+        "location": "Finch Subway Station",
+        "location_description": "Located on the west side of Yonge St. beside the passenger drop-off and pick-up",
+        "quantity": "# of lockers: 12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.198272,
+          43.754725
+        ]
+      },
+      "properties": {
+        "location": "Guildwood GO Station",
+        "location_description": "Located within the parking lot across from the station house",
+        "quantity": "# of lockers: 6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.263701,
+          43.732525
+        ]
+      },
+      "properties": {
+        "location": "Kennedy Subway Station",
+        "location_description": "Lockers are located on south side of the Kiss\u2019n\u2019Ride off Transway Crescent",
+        "quantity": "# of lockers: 6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.545261,
+          43.590704
+        ]
+      },
+      "properties": {
+        "location": "Long Branch GO Station",
+        "location_description": "Located outside the station house at Lakeshore Rd. and Browns Line",
+        "quantity": "# of lockers: 4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.389135,
+          43.646028
+        ]
+      },
+      "properties": {
+        "location": "Metro Hall",
+        "location_description": "Two segments at the King St. W. and Wellington St. W. entrances",
+        "quantity": "# of lockers 40"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.398499,
+          43.667969
+        ]
+      },
+      "properties": {
+        "location": "Ontario Institute for Studies in Education (OISE)",
+        "location_description": "Close to St. George Subway. Located at the back of the building (north of Bloor) next to the ramp to the parking garage on Prince Arthur Ave.",
+        "quantity": "# of lockers: 10"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.131605,
+          43.780701
+        ]
+      },
+      "properties": {
+        "location": "Rouge Hill GO Station",
+        "location_description": "Located on the north side of the tracks near the eastern most bike shelter",
+        "quantity": "# of lockers: 4"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.25768,
+          43.772898
+        ]
+      },
+      "properties": {
+        "location": "Scarborough Civic Centre",
+        "location_description": "North side of Albert Campbell Sq. next to picnic tables",
+        "quantity": "# of lockers: 12"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.251678,
+          43.718606
+        ]
+      },
+      "properties": {
+        "location": "Scarborough GO Station",
+        "location_description": "Located on the south side of the tracks next to the bike shelter",
+        "quantity": "# of lockers: 6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.448566,
+          43.723468
+        ]
+      },
+      "properties": {
+        "location": "Yorkdale Subway",
+        "location_description": "Located outside of the Yorkdale Subway Station under the bridge",
+        "quantity": "# of lockers: 2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.414947,
+          43.767279
+        ]
+      },
+      "properties": {
+        "location": "North York Civic Centre",
+        "location_description": "South side of the Civic Centre, slightly west of Beecroft Rd. (near Douglas Snow Aquatic Centre).",
+        "quantity": "# of lockers: 6"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.535763,
+          43.636728
+        ]
+      },
+      "properties": {
+        "location": "Kipling Station",
+        "location_description": "Located west of the subway at parking lot",
+        "quantity": "# of lockers: 8"
+      }
+    }
+  ]
+}

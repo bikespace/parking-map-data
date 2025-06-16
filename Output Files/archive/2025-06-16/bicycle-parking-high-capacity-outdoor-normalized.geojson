@@ -1,0 +1,4833 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 1 Albany Ave\n\nPlacement Street: Bloor St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 1,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4099385908683,
+            43.6657201946865
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 24,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 1 St Clair Ave E\n\nPlacement Street: Yonge St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 2,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3935708744087,
+            43.6879111568366
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 18,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 10 Linnsmore Cres\n\nPlacement Street: Linnsmore Cr\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 3,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.330292170892,
+            43.6825720317076
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 120,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 2.9,
+        "description": "Address: 100 Queen St W\n\nPlacement Street: Queen St W\n\nPlace Name: City Hall - Nathan Phillips Square\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 4,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3836250552132,
+            43.6528221423182
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 101 Sherbourne St\n\nPlacement Street: Richmond St E\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 5,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3689116973164,
+            43.6536621558492
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 1030 King St W\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 6,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4157586754681,
+            43.6415808536674
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 2.9,
+        "description": "Address: 1032 Bloor St W\n\nPlacement Street: Salem Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 7,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4316062598435,
+            43.6609569224605
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 1034 Bloor St W\n\nPlacement Street: Salem Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 8,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4319342255372,
+            43.6608848734219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 2.9,
+        "description": "Address: 1036 Bloor St W\n\nPlacement Street: Bloor St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 9,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4319383641102,
+            43.6608213173929
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 11 Charlotte St\n\nPlacement Street: Charlotte St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 10,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3936698784778,
+            43.6463778424247
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 1140 Yonge St\n\nPlacement Street: Malborough Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 11,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3910471597584,
+            43.6795102439657
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2018,
+        "length": 5.5,
+        "description": "Address: 1149 Queen St W\n\nPlacement Street: Abell\n\nPlace Name: None\n\nDetails: No parking, councillor request:",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 12,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4244512493986,
+            43.6428517658703
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": null,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2022,
+        "length": 5.5,
+        "description": "Address: 1182 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: run over by truck",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 13,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4374909179049,
+            43.6595828699002
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2013,
+        "length": 5.5,
+        "description": "Address: 1184 Queen St W\n\nPlacement Street: Northcote Ave\n\nPlace Name: None\n\nDetails: No parking",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 14,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4257846968092,
+            43.6430284991501
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 1190 Dundas St E\n\nPlacement Street: Carlaw Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 15,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3411197505129,
+            43.6651351186657
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 5.5,
+        "description": "Address: 12 Emerson Ave\n\nPlacement Street: Emerson Ave\n\nPlace Name: None\n\nDetails: at Lansdowne subway",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 16,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4413132921915,
+            43.6593829779361
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 12 Madison Ave\n\nPlacement Street: Madison Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 17,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4033213402764,
+            43.6677591999227
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 12 Ossington Ave\n\nPlacement Street: Ossington Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 18,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4193781682054,
+            43.6444593301141
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 122 Bond St\n\nPlacement Street: Bond St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 19,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3791387851816,
+            43.6573781216217
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 28,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 12.0,
+        "description": "Address: 124 Spadina Ave\n\nPlacement Street: Camden St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 20,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3960813062152,
+            43.6471973210076
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2021,
+        "length": 14.0,
+        "description": "Address: 1282 Bloor St W\n\nPlacement Street: St Clarens\n\nPlace Name: None\n\nDetails: councillor request",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 21,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4415539964871,
+            43.6587421063091
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 137 Bond St\n\nPlacement Street: Dalhousie St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 22,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3787181688475,
+            43.6578227118334
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 138 Fort York Blvd\n\nPlacement Street: Ft York Blvd\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 23,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3988449448621,
+            43.6393748443351
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2019,
+        "length": 5.5,
+        "description": "Address: 145 Wellington St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No parking, installed May 2020",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 24,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.38495571031,
+            43.6459544508566
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 5.5,
+        "description": "Address: 1485 Dupont St\n\nPlacement Street: Campbell Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 25,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4501905747648,
+            43.6657993325492
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 2.9,
+        "description": "Address: 150 Borough Dr\n\nPlacement Street: Borough Dr\n\nPlace Name: Albert Campbell Square\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 26,
+        "meta_borough": "Scarborough",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.2572409577755,
+            43.7728105957421
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 150 King St W\n\nPlacement Street: University Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 27,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3842322745632,
+            43.6482142784795
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 1560 Yonge St\n\nPlacement Street: Delisle Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 28,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3951269012401,
+            43.6896783530003
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 157 Dan Leckie Way\n\nPlacement Street: Dan Leckie Way\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 29,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3980186796167,
+            43.6399245354554
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 1573 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: reserved in Bloor cycle track",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 30,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4541485773615,
+            43.6557648223222
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 1580 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: reserved in Bloor cycle track",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 31,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4541952695045,
+            43.6561692087922
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 1595 Dupont St\n\nPlacement Street: Franklin Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 32,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4542193179898,
+            43.6649358894512
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 160 Geary Ave\n\nPlacement Street: None\n\nPlace Name: Bartlett Parkette\n\nDetails: 1 Hr parking, Installed July 2020",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 33,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4362891184308,
+            43.6702225711502
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 163 Dan Leckie Way\n\nPlacement Street: Iceboat Ter\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 34,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3980958868167,
+            43.6401210683593
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 18,
+        "operator": "City of Toronto",
+        "covered": "yes",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2013,
+        "length": 7.6,
+        "description": "Address: 180 Shaw St\n\nPlacement Street: Shaw St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 35,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.417471669257,
+            43.646893289847
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 1800 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: in hashed out area, angled rack",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 36,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4621357684402,
+            43.6544227736634
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 182 Augusta Ave\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No parking, Moved from east side for private construction",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 37,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4020121805489,
+            43.6539933828674
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 19 Dorval Rd\n\nPlacement Street: Edna\n\nPlace Name: None\n\nDetails: No parking, for Dundas West subway",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 38,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4542341030041,
+            43.6565723408805
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 1914 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No parking, reserved in Bloor cycle track",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 39,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4660482672429,
+            43.6537243182816
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 5.5,
+        "description": "Address: 192 Spadina Ave\n\nPlacement Street: Spadina Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 40,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.397314777333,
+            43.6500029994397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 196 Spadina Ave\n\nPlacement Street: Spadina Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 41,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3973706520018,
+            43.6501245499884
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 1978 Queen St E\n\nPlacement Street: Waverley Rd\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 42,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3011363154956,
+            43.6699728610104
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 1986 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No parking, reserved in Bloor cycle track",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 43,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4685838737145,
+            43.6530119827806
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 32,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 2 Bloor St W\n\nPlacement Street: Yonge St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 44,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3872300479029,
+            43.6704004360083
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 10,
+        "operator": "City of Toronto",
+        "covered": "yes",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 3.0,
+        "description": "Address: 20 Northcote Ave\n\nPlacement Street: Northcote Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 45,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4264347476873,
+            43.6431255580551
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 200 King St E\n\nPlacement Street: Adelaide St E and Frederick St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 46,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3701856494981,
+            43.651100464219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 5.5,
+        "description": "Address: 200 King St E\n\nPlacement Street: George\n\nPlace Name: None\n\nDetails: No parking",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 47,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3701856494981,
+            43.651100464219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 200 King St W\n\nPlacement Street: University Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 48,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3857204176048,
+            43.6479052737837
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 2000 Yonge St\n\nPlacement Street: Glebe Rd W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 49,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3973815441376,
+            43.7004743321706
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2010,
+        "length": 11.0,
+        "description": "Address: 205 Spadina Ave\n\nPlacement Street: Spadina Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 50,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3966190321934,
+            43.6504254363213
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 21 Gerrard St E\n\nPlacement Street: Gerrard St E\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 51,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3810999113837,
+            43.6591625171396
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 2.9,
+        "description": "Address: 213 Delaware Ave\n\nPlacement Street: Delaware Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 52,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4278708182001,
+            43.6620573990966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 3.0,
+        "description": "Address: 213 Delaware Ave\n\nPlacement Street: Delaware Ave\n\nPlace Name: None\n\nDetails: PUDO, at Ossington subway",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 53,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4278708182001,
+            43.6620573990966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 2190 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No parking, reserved in Bloor cycle track",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 54,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4748066158339,
+            43.6516541654422
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 2198 Yonge St\n\nPlacement Street: Soudan Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 55,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3984239071573,
+            43.7058827894606
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 22 Fort York Blvd\n\nPlacement Street: Fort York Blvd\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 56,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3943072586939,
+            43.6404929497304
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 222 Spadina Ave\n\nPlacement Street: Spadina Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 57,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3978377650267,
+            43.6509286638588
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 24,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2012,
+        "length": 12.0,
+        "description": "Address: 236 Augusta Ave\n\nPlacement Street: Augusta Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 58,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4025948745683,
+            43.6553455061522
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 241 Wellington St W\n\nPlacement Street: John St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 59,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3900134101984,
+            43.6449521397727
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 26 Dundas St E\n\nPlacement Street: Victoria St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 60,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3799775246031,
+            43.6565175761293
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 266 King St E\n\nPlacement Street: Ontario St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 61,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3663420506319,
+            43.6519627216596
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 5.5,
+        "description": "Address: 268 College St\n\nPlacement Street: College St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 62,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4005149553641,
+            43.6581487248445
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 277 Victoria St\n\nPlacement Street: Dundas St E\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 63,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3793385826187,
+            43.6565589127997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 5.5,
+        "description": "Address: 30 Duncan St\n\nPlacement Street: Nelson St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 64,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3892396315038,
+            43.6489358113018
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2019,
+        "length": 5.5,
+        "description": "Address: 29 Nelson St\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No parking, Moved from Nelson St 2019",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 65,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3886321202439,
+            43.6486718501907
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2019,
+        "length": 5.5,
+        "description": "Address: 3 Westmoreland Ave\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No parking, 50m north of Bloor St",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 66,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4304000534148,
+            43.6612972733511
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 32,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 300 Victoria St\n\nPlacement Street: Gould St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 67,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3802376739077,
+            43.6575126241522
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 315 Bloor St W\n\nPlacement Street: Bloor St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 68,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3985624500635,
+            43.6674469424306
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 30,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 2.9,
+        "description": "Address: 35 York St\n\nPlacement Street: Front St W\n\nPlace Name: GO York Concourse\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 69,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3814651014112,
+            43.6437906731595
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 350 Victoria St\n\nPlacement Street: Gould St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 70,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3804798260292,
+            43.6577656354656
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 2.9,
+        "description": "Address: 3530 Sheppard Ave E\n\nPlacement Street: Sheppard Ave E\n\nPlace Name: Holy Spirit Catholic School\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 71,
+        "meta_borough": "Scarborough",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.302695673123,
+            43.7812935995392
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 357 Bay St\n\nPlacement Street: Temperance St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 72,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3808769998818,
+            43.6508344042378
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 35D Bathurst St\n\nPlacement Street: Bathurst St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 73,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4017249691284,
+            43.642225715835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 36 Lisgar St\n\nPlacement Street: Lisgar St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 74,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4233157461113,
+            43.6417386470507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 362 Bloor St W\n\nPlacement Street: Walmer Rd\n\nPlace Name: The Living Stone Church\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 75,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4057839572486,
+            43.6665134281721
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 20,
+        "operator": "City of Toronto",
+        "covered": "yes",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2011,
+        "length": 10.0,
+        "description": "Address: 375 St Clair Ave W\n\nPlacement Street: St Clair Ave W\n\nPlace Name: Nordheimer Ravine\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 76,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4143290305209,
+            43.6836946284848
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 38 Orchard View Blvd\n\nPlacement Street: Yonge St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 77,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3996801445734,
+            43.708216713311
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 20,
+        "operator": "City of Toronto",
+        "covered": "yes",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2013,
+        "length": 10.0,
+        "description": "Address: 40 High Park Ave\n\nPlacement Street: High Park Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 78,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4663279307411,
+            43.6546222051732
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 40 Orchard View Blvd\n\nPlacement Street: Roehampton Ave\n\nPlace Name: Northern District Public Library\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 79,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4000640484789,
+            43.7082699050511
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 388 Yonge St\n\nPlacement Street: Gerrard St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 80,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.382584365945,
+            43.6594427421949
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 429 College St\n\nPlacement Street: Bathurst St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 81,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4072847841266,
+            43.6562832334017
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 36 Lisgar St\n\nPlacement Street: Lisgar St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 82,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4233157461113,
+            43.6417386470507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 441 King St W\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 83,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3956715228578,
+            43.6451488396696
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 449 Parliament St\n\nPlacement Street: Spruce St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 84,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3671626414988,
+            43.6635065844203
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2018,
+        "length": 5.5,
+        "description": "Address: 455 King St W\n\nPlacement Street: Spadina\n\nPlace Name: None\n\nDetails: Pedzone, Installed 3rd week June 2018:",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 85,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3960200182592,
+            43.6449926683861
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 468 King St W\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 86,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3959267185292,
+            43.645545087493
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 24,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 47 Lower River St\n\nPlacement Street: Trolley Cres\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 87,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.35554106317,
+            43.6564985969909
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": null,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 7.2,
+        "description": "Address: 481 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No parking, Angled racks in hashed out area adjacent cycle track",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 88,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4071172092532,
+            43.6657537893633
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2013,
+        "length": 2.9,
+        "description": "Address: 49 Givins St\n\nPlacement Street: Shaw St\n\nPlace Name: Givins/Shaw Junior Public School\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 89,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4176864709581,
+            43.646216613937
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 490 Bloor St W\n\nPlacement Street: Albany Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 90,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4097622062528,
+            43.6656283409671
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 5 Bartonville Ave E\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 91,
+        "meta_borough": "York",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.494582675061,
+            43.6894845939346
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 2.9,
+        "description": "Address: 5 Salem Ave\n\nPlacement Street: Salem Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 92,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4315601023945,
+            43.6608451251421
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 5 Walmer Rd\n\nPlacement Street: Walmer Rd\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 93,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4053701547633,
+            43.6666043689082
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2018,
+        "length": 5.5,
+        "description": "Address: 50 King St E\n\nPlacement Street: Toronto\n\nPlace Name: None\n\nDetails: Pedzone, Installed June 2018",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 94,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3762416344609,
+            43.6497660862272
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 5.5,
+        "description": "Address: 50 Portland St\n\nPlacement Street: Wellington St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 95,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3999654356682,
+            43.6433952592458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 500 King St W\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: Pedzone, Installed June 2018",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 96,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3968051380048,
+            43.6453156558296
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 509 Bloor St W\n\nPlacement Street: Borden St W\n\nPlace Name: None\n\nDetails: No parking, Angled racks in hashed out area adjacent cycle track",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 97,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4083859964734,
+            43.6654609016074
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 511 King St W\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 98,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3978494175301,
+            43.6446235513294
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 516 Glenlake Ave\n\nPlacement Street: Glendonwynne Rd\n\nPlace Name: Glenlake Square\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 99,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4741048220362,
+            43.6561212464489
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 522 University Ave\n\nPlacement Street: Elm St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 100,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3893801203605,
+            43.6559184351809
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 539 Parliament St\n\nPlacement Street: Winchester St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 101,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3684723713959,
+            43.6660407871926
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 2.9,
+        "description": "Address: 55 John St\n\nPlacement Street: John St\n\nPlace Name: Metro Hall\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 102,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3889314920572,
+            43.6461537935103
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2018,
+        "length": 5.5,
+        "description": "Address: 56D Kensington Ave\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 103,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4006207562636,
+            43.654182407335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 2.9,
+        "description": "Address: 584 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 104,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4126936121623,
+            43.6651006726937
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 595 Bay St\n\nPlacement Street: Dundas St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 105,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3832978278682,
+            43.6562124477002
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 72,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 2.9,
+        "description": "Address: 61 Front St W\n\nPlacement Street: Front St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 106,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3794236805597,
+            43.6456160951927
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2023,
+        "length": 5.5,
+        "description": "Address: 61 Front St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: PUDO, In lay-by east of Bike Share",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 107,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3794236805597,
+            43.6456160951927
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": null,
+        "length": 2.9,
+        "description": "Address: 612 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 108,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4138388158142,
+            43.6647341700049
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 621 King St W\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 109,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4011450143591,
+            43.6440618197494
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 636 Queen St E\n\nPlacement Street: Caroll St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 110,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3525832042328,
+            43.6583950055839
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 32,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 65 Dundas St W\n\nPlacement Street: Bay St\n\nPlace Name: Eaton Centre Retail Entr\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 111,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3830072851693,
+            43.6555937758623
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 666 Queen St E\n\nPlacement Street: Munro St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 112,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3515005142531,
+            43.6586988939243
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 56,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 675 Bloor St W\n\nPlacement Street: Manning Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 113,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4162538549835,
+            43.663806234493
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 10,
+        "operator": "City of Toronto",
+        "covered": "yes",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 3.0,
+        "description": "Address: 686 Queen St W\n\nPlacement Street: Euclid Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 114,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4079437964715,
+            43.646578203587
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 692 Bloor St W\n\nPlacement Street: Clinton Pl\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 115,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4174332539337,
+            43.6639772447612
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 693 Bloor St W\n\nPlacement Street: Clinton St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 116,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4173511984097,
+            43.6635409715405
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 2.9,
+        "description": "Address: 695 Lansdowne Ave\n\nPlacement Street: Lansdowne Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 117,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4428104294615,
+            43.6591290436207
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 5.5,
+        "description": "Address: 702 Bathurst St\n\nPlacement Street: Herrick\n\nPlace Name: None\n\nDetails: Permit parking, Centre for Social Innovation request",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 118,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4105046596053,
+            43.6627422312458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 71 New Forest Sq\n\nPlacement Street: Steeles Ave E\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 119,
+        "meta_borough": "Scarborough",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3074473906934,
+            43.8230331061332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 71 Second St\n\nPlacement Street: Second St\n\nPlace Name: Second Street Junior Middle School\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 120,
+        "meta_borough": "Etobicoke",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.5000229034999,
+            43.6037250776607
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 720 Bay St\n\nPlacement Street: Gerrard St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 121,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3854849355134,
+            43.6588371036289
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 736 Bay St\n\nPlacement Street: Bay St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 122,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3856470491767,
+            43.6593434836471
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 32,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2015,
+        "length": 2.9,
+        "description": "Address: 743 Pape Ave\n\nPlacement Street: Lipton Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 123,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3450123847713,
+            43.6798873239788
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": null,
+        "length": 2.9,
+        "description": "Address: 777 Victoria Park Ave\n\nPlacement Street: Victoria Park Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 124,
+        "meta_borough": "Scarborough",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.2891570511807,
+            43.6945435700427
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 78 Tecumseth St\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 125,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4053241024552,
+            43.6430326838761
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 790 Bay St\n\nPlacement Street: Bay St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 126,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3861750845428,
+            43.6604459643503
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 798 Richmond St W\n\nPlacement Street: Niagara St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 127,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4098108572165,
+            43.6451297244944
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 802 College St\n\nPlacement Street: Roxton Rd\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 128,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4217098646824,
+            43.6548443189396
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 809 Dovercourt Rd\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No stop, councillor request:",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 129,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4295084389131,
+            43.6628590810281
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 2.9,
+        "description": "Address: 813 Bloor St W\n\nPlacement Street: Bloor St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 130,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4217629457854,
+            43.6625538026018
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 82 Fort York Blvd\n\nPlacement Street: Fort York Blvd\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 131,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3967708309412,
+            43.6400217734976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": null,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": null,
+        "length": 1.5,
+        "description": "Address: 855 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No parking, Half a multibike rack",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 132,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4239641953789,
+            43.662105112845
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 860 College St\n\nPlacement Street: Concord Ave\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 133,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4238539128414,
+            43.6544574848038
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 4,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 861 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: Half a multibike rack",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 134,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4245239058707,
+            43.6619791949322
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 901 King St W\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 135,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4112467839912,
+            43.641872432814
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 92 Fort York Blvd\n\nPlacement Street: Fort York Blvd\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 136,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3971907659455,
+            43.6399638050045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2017,
+        "length": 5.5,
+        "description": "Address: 92 Sudbury St\n\nPlacement Street: Lisgar St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 137,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4230929296456,
+            43.6413368380168
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 940 College St\n\nPlacement Street: Dovercourt Rd\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 138,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4266277065843,
+            43.6537429799659
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2014,
+        "length": 2.9,
+        "description": "Address: 95 Front St E\n\nPlacement Street: Lower Jarvis St\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 139,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3714937127787,
+            43.6491812588323
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 95 River Grove Dr\n\nPlacement Street: Kennedy Rd\n\nPlace Name: None\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 140,
+        "meta_borough": "Scarborough",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3173896634976,
+            43.8209470854589
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2016,
+        "length": 2.9,
+        "description": "Address: 953 Gerrard St E\n\nPlacement Street: Pape Ave\n\nPlace Name: Matty Eckler Playground,Pape Avenue Playground\n\nDetails: None",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 141,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3393969830404,
+            43.668053671131
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": 2020,
+        "length": 5.5,
+        "description": "Address: 58 Marine Parade Dr\n\nPlacement Street: opposite 58 Marine Parade\n\nPlace Name: None\n\nDetails: No parking, east of crossover",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": 142,
+        "meta_borough": "Etobicoke",
+        "meta_ward_name": null,
+        "meta_ward_number": null,
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T14:19:12.486700+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4771276610409,
+            43.6274691648797
+          ]
+        ]
+      }
+    }
+  ]
+}
