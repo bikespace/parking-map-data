@@ -451,5 +451,11 @@
     ],
     "reason": "removed",
     "notes": "Could not locate. May have been moved to where there is a corral now on the SE corner of Nelson & Duncan or may have been removed."
+  },
+  {
+    "survey_date": "2025-06-14",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "121" }],
+    "reason": "missing",
+    "notes": "Could not locate via survey"
   }
 ]
