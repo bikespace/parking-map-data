@@ -1,0 +1,5692 @@
+{
+  "type": "FeatureCollection",
+  "name": "Bicycle Parking Map Data - 4326",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 1,
+        "ADDRESS_POINT_ID": 8417835,
+        "ADDRESS_NUMBER": "1",
+        "LINEAR_NAME_FULL": "Albany Ave",
+        "ADDRESS_FULL": "1 Albany Ave",
+        "POSTAL_CODE": "M5R 3C2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14014600,
+        "LO_NUM": 1,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 2859.0,
+        "ID": 1,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Bloor St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 1
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4099385908683,
+            43.6657201946865
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 2,
+        "ADDRESS_POINT_ID": 10154425,
+        "ADDRESS_NUMBER": "1",
+        "LINEAR_NAME_FULL": "St Clair Ave E",
+        "ADDRESS_FULL": "1 St Clair Ave E",
+        "POSTAL_CODE": "M4T 2V7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-St. Paul's",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10154405,
+        "LO_NUM": 1,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 339.0,
+        "ID": 2,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Yonge St",
+        "BICYCLE_CAPACITY": 24,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 2
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3935708744087,
+            43.6879111568366
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 3,
+        "ADDRESS_POINT_ID": 7939998,
+        "ADDRESS_NUMBER": "10",
+        "LINEAR_NAME_FULL": "Linnsmore Cres",
+        "ADDRESS_FULL": "10 Linnsmore Cres",
+        "POSTAL_CODE": "M4J 4J6",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-Danforth",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14023269,
+        "LO_NUM": 10,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 11375.0,
+        "ID": 3,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Linnsmore Cr",
+        "BICYCLE_CAPACITY": 18,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 3
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.330292170892,
+            43.6825720317076
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 4,
+        "ADDRESS_POINT_ID": 856375,
+        "ADDRESS_NUMBER": "100",
+        "LINEAR_NAME_FULL": "Queen St W",
+        "ADDRESS_FULL": "100 Queen St W",
+        "POSTAL_CODE": "M5H 2N1",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "City Hall - Nathan Phillips Square",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1145216,
+        "LO_NUM": 100,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4238.0,
+        "ID": 4,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Queen St W",
+        "BICYCLE_CAPACITY": 120,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 4
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3836250552132,
+            43.6528221423182
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 5,
+        "ADDRESS_POINT_ID": 20140670,
+        "ADDRESS_NUMBER": "101",
+        "LINEAR_NAME_FULL": "Sherbourne St",
+        "ADDRESS_FULL": "101 Sherbourne St",
+        "POSTAL_CODE": "M5A 2R3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1144819,
+        "LO_NUM": 101,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4391.0,
+        "ID": 5,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Richmond St E",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 5
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3689116973164,
+            43.6536621558492
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 6,
+        "ADDRESS_POINT_ID": 3120556,
+        "ADDRESS_NUMBER": "1030",
+        "LINEAR_NAME_FULL": "King St W",
+        "ADDRESS_FULL": "1030 King St W",
+        "POSTAL_CODE": "M6K 0B4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 3155022,
+        "LO_NUM": 1030,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3780.0,
+        "ID": 6,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "King St W",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 6
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4157586754681,
+            43.6415808536674
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 7,
+        "ADDRESS_POINT_ID": 773157,
+        "ADDRESS_NUMBER": "1032",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "1032 Bloor St W",
+        "POSTAL_CODE": "M6H 1M2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1143789,
+        "LO_NUM": 1032,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 7,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Salem Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 7
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4316062598435,
+            43.6609569224605
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 8,
+        "ADDRESS_POINT_ID": 773158,
+        "ADDRESS_NUMBER": "1034",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "1034 Bloor St W",
+        "POSTAL_CODE": "M6H 1M3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1143821,
+        "LO_NUM": 1034,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 8,
+        "PARKING_TYPE": "Angled Bike Rack",
+        "FLANKING": "Salem Ave",
+        "BICYCLE_CAPACITY": 5,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 8
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4319342255372,
+            43.6608848734219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 9,
+        "ADDRESS_POINT_ID": 14210930,
+        "ADDRESS_NUMBER": "1036",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "1036 Bloor St W",
+        "POSTAL_CODE": "M6H 1M3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1143821,
+        "LO_NUM": 1036,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 9,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Bloor St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 9
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4319383641102,
+            43.6608213173929
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 10,
+        "ADDRESS_POINT_ID": 14199241,
+        "ADDRESS_NUMBER": "11",
+        "LINEAR_NAME_FULL": "Charlotte St",
+        "ADDRESS_FULL": "11 Charlotte St",
+        "POSTAL_CODE": "M5V 0M6",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14025593,
+        "LO_NUM": 11,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3147.0,
+        "ID": 10,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Charlotte St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 10
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3936698784778,
+            43.6463778424247
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 11,
+        "ADDRESS_POINT_ID": 887713,
+        "ADDRESS_NUMBER": "1140",
+        "LINEAR_NAME_FULL": "Yonge St",
+        "ADDRESS_FULL": "1140 Yonge St",
+        "POSTAL_CODE": "M4W 2L8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1140465,
+        "LO_NUM": 1140,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4733.0,
+        "ID": 11,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Malborough Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 11
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3910471597584,
+            43.6795102439657
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 12,
+        "ADDRESS_POINT_ID": 20068494,
+        "ADDRESS_NUMBER": "1149",
+        "LINEAR_NAME_FULL": "Queen St W",
+        "ADDRESS_FULL": "1149 Queen St W",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30018526,
+        "LO_NUM": 1149,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4238.0,
+        "ID": 12,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Abell ",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2018,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, councillor request: ",
+        "OBJECTID": 12
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4244512493986,
+            43.6428517658703
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 13,
+        "ADDRESS_POINT_ID": 773232,
+        "ADDRESS_NUMBER": "1182",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "1182 Bloor St W",
+        "POSTAL_CODE": "M6H 1N1",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1143991,
+        "LO_NUM": 1182,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 13,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": null,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2022,
+        "BY_LAW": "N/A",
+        "DETAILS": "run over by truck",
+        "OBJECTID": 13
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4374909179049,
+            43.6595828699002
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 14,
+        "ADDRESS_POINT_ID": 7553175,
+        "ADDRESS_NUMBER": "1184",
+        "LINEAR_NAME_FULL": "Queen St W",
+        "ADDRESS_FULL": "1184 Queen St W",
+        "POSTAL_CODE": "M6J 1J5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7553178,
+        "LO_NUM": 1184,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4238.0,
+        "ID": 14,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Northcote Ave",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2013,
+        "BY_LAW": "NO",
+        "DETAILS": "No parking",
+        "OBJECTID": 14
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4257846968092,
+            43.6430284991501
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 15,
+        "ADDRESS_POINT_ID": 30072958,
+        "ADDRESS_NUMBER": "1190",
+        "LINEAR_NAME_FULL": "Dundas St E",
+        "ADDRESS_FULL": "1190 Dundas St E",
+        "POSTAL_CODE": "M4M 0C5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-Danforth",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7576995,
+        "LO_NUM": 1190,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3334.0,
+        "ID": 15,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Carlaw Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 15
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3411197505129,
+            43.6651351186657
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 16,
+        "ADDRESS_POINT_ID": 10334643,
+        "ADDRESS_NUMBER": "12",
+        "LINEAR_NAME_FULL": "Emerson Ave",
+        "ADDRESS_FULL": "12 Emerson Ave",
+        "POSTAL_CODE": "M6H 3S8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14012771,
+        "LO_NUM": 12,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3396.0,
+        "ID": 16,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Emerson Ave",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "NO",
+        "DETAILS": "at Lansdowne subway",
+        "OBJECTID": 16
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4413132921915,
+            43.6593829779361
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 17,
+        "ADDRESS_POINT_ID": 8408615,
+        "ADDRESS_NUMBER": "12",
+        "LINEAR_NAME_FULL": "Madison Ave",
+        "ADDRESS_FULL": "12 Madison Ave",
+        "POSTAL_CODE": "M5R 2S1",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30104520,
+        "LO_NUM": 12,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3896.0,
+        "ID": 17,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Madison Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 17
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4033213402764,
+            43.6677591999227
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 18,
+        "ADDRESS_POINT_ID": 7570973,
+        "ADDRESS_NUMBER": "12",
+        "LINEAR_NAME_FULL": "Ossington Ave",
+        "ADDRESS_FULL": "12 Ossington Ave",
+        "POSTAL_CODE": "M6J 2Y7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7570969,
+        "LO_NUM": 12,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4125.0,
+        "ID": 18,
+        "PARKING_TYPE": "Angled Bike Rack",
+        "FLANKING": "Ossington Ave",
+        "BICYCLE_CAPACITY": 5,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 18
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4193781682054,
+            43.6444593301141
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 19,
+        "ADDRESS_POINT_ID": 773911,
+        "ADDRESS_NUMBER": "122",
+        "LINEAR_NAME_FULL": "Bond St",
+        "ADDRESS_FULL": "122 Bond St",
+        "POSTAL_CODE": "M5B 1X8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14021112,
+        "LO_NUM": 122,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3029.0,
+        "ID": 19,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Bond St",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 19
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3791387851816,
+            43.6573781216217
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 20,
+        "ADDRESS_POINT_ID": 7930799,
+        "ADDRESS_NUMBER": "124",
+        "LINEAR_NAME_FULL": "Spadina Ave",
+        "ADDRESS_FULL": "124 Spadina Ave",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7930670,
+        "LO_NUM": 124,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4426.0,
+        "ID": 20,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Camden St",
+        "BICYCLE_CAPACITY": 28,
+        "SIZE_M": "12",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "NO",
+        "DETAILS": "None",
+        "OBJECTID": 20
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3960813062152,
+            43.6471973210076
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 21,
+        "ADDRESS_POINT_ID": 14210858,
+        "ADDRESS_NUMBER": "1282",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "1282 Bloor St W",
+        "POSTAL_CODE": "M6H 1N8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 9638416,
+        "LO_NUM": 1282,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 21,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "St Clarens",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "14",
+        "YEAR_INSTALLED": 2021,
+        "BY_LAW": "N/A",
+        "DETAILS": "councillor request",
+        "OBJECTID": 21
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4415539964871,
+            43.6587421063091
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 22,
+        "ADDRESS_POINT_ID": 773913,
+        "ADDRESS_NUMBER": "137",
+        "LINEAR_NAME_FULL": "Bond St",
+        "ADDRESS_FULL": "137 Bond St",
+        "POSTAL_CODE": "M5B 1Y2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14021112,
+        "LO_NUM": 137,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3029.0,
+        "ID": 22,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Dalhousie St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 22
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3787181688475,
+            43.6578227118334
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 23,
+        "ADDRESS_POINT_ID": 30015452,
+        "ADDRESS_NUMBER": "138",
+        "LINEAR_NAME_FULL": "Fort York Blvd",
+        "ADDRESS_FULL": "138 Fort York Blvd",
+        "POSTAL_CODE": "M5V 0E3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30015458,
+        "LO_NUM": 138,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 15826.0,
+        "ID": 23,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Ft York Blvd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 23
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3988449448621,
+            43.6393748443351
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 24,
+        "ADDRESS_POINT_ID": 12763892,
+        "ADDRESS_NUMBER": "145",
+        "LINEAR_NAME_FULL": "Wellington St W",
+        "ADDRESS_FULL": "145 Wellington St W",
+        "POSTAL_CODE": "M5J 1H8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 12763891,
+        "LO_NUM": 145,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4652.0,
+        "ID": 24,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2019,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, installed May 2020",
+        "OBJECTID": 24
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.38495571031,
+            43.6459544508566
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 25,
+        "ADDRESS_POINT_ID": 8293016,
+        "ADDRESS_NUMBER": "1485",
+        "LINEAR_NAME_FULL": "Dupont St",
+        "ADDRESS_FULL": "1485 Dupont St",
+        "POSTAL_CODE": "M6P 3S2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14013265,
+        "LO_NUM": 1485,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3343.0,
+        "ID": 25,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Campbell Ave",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "NO",
+        "DETAILS": "None",
+        "OBJECTID": 25
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4501905747648,
+            43.6657993325492
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 26,
+        "ADDRESS_POINT_ID": 310564,
+        "ADDRESS_NUMBER": "150",
+        "LINEAR_NAME_FULL": "Borough Dr",
+        "ADDRESS_FULL": "150 Borough Dr",
+        "POSTAL_CODE": "M1P 4N7",
+        "MUNICIPALITY": "Scarborough",
+        "CITY": "Toronto",
+        "WARD": "Scarborough Centre",
+        "PLACE_NAME": "Albert Campbell Square",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 107945,
+        "LO_NUM": 150,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 7397.0,
+        "ID": 26,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Borough Dr",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 26
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.2572409577755,
+            43.7728105957421
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 27,
+        "ADDRESS_POINT_ID": 828221,
+        "ADDRESS_NUMBER": "150",
+        "LINEAR_NAME_FULL": "King St W",
+        "ADDRESS_FULL": "150 King St W",
+        "POSTAL_CODE": "M5H 1J9",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1145855,
+        "LO_NUM": 150,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3780.0,
+        "ID": 27,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "University Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 27
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3842322745632,
+            43.6482142784795
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 28,
+        "ADDRESS_POINT_ID": 11272519,
+        "ADDRESS_NUMBER": "1560",
+        "LINEAR_NAME_FULL": "Yonge St",
+        "ADDRESS_FULL": "1560 Yonge St",
+        "POSTAL_CODE": "M4T 2S9",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-St. Paul's",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14242419,
+        "LO_NUM": 1560,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4733.0,
+        "ID": 28,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Delisle Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 28
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3951269012401,
+            43.6896783530003
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 29,
+        "ADDRESS_POINT_ID": 20364734,
+        "ADDRESS_NUMBER": "157",
+        "LINEAR_NAME_FULL": "Dan Leckie Way",
+        "ADDRESS_FULL": "157 Dan Leckie Way",
+        "POSTAL_CODE": "M5V 4A8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 20364648,
+        "LO_NUM": 157,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 17007.0,
+        "ID": 29,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Dan Leckie Way",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 29
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3980186796167,
+            43.6399245354554
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 30,
+        "ADDRESS_POINT_ID": 9694416,
+        "ADDRESS_NUMBER": "1573",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "1573 Bloor St W",
+        "POSTAL_CODE": "M6P 1A6",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Parkdale-High Park",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 9655366,
+        "LO_NUM": 1573,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 30,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "reserved in Bloor cycle track",
+        "OBJECTID": 30
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4541485773615,
+            43.6557648223222
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 31,
+        "ADDRESS_POINT_ID": 9655375,
+        "ADDRESS_NUMBER": "1580",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "1580 Bloor St W",
+        "POSTAL_CODE": "M6P 1A4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Parkdale-High Park",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 9655366,
+        "LO_NUM": 1580,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 31,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "reserved in Bloor cycle track",
+        "OBJECTID": 31
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4541952695045,
+            43.6561692087922
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 32,
+        "ADDRESS_POINT_ID": 8312904,
+        "ADDRESS_NUMBER": "1595",
+        "LINEAR_NAME_FULL": "Dupont St",
+        "ADDRESS_FULL": "1595 Dupont St",
+        "POSTAL_CODE": "M6P 3S8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 8312902,
+        "LO_NUM": 1595,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3343.0,
+        "ID": 32,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Franklin Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 32
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4542193179898,
+            43.6649358894512
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 33,
+        "ADDRESS_POINT_ID": 8016000,
+        "ADDRESS_NUMBER": "160",
+        "LINEAR_NAME_FULL": "Geary Ave",
+        "ADDRESS_FULL": "160 Geary Ave",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "Bartlett Parkette",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30069255,
+        "LO_NUM": 160,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3490.0,
+        "ID": 33,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "1 Hr parking, Installed July 2020",
+        "OBJECTID": 33
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4362891184308,
+            43.6702225711502
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 34,
+        "ADDRESS_POINT_ID": 20362129,
+        "ADDRESS_NUMBER": "163",
+        "LINEAR_NAME_FULL": "Dan Leckie Way",
+        "ADDRESS_FULL": "163 Dan Leckie Way",
+        "POSTAL_CODE": "M5V 4A8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 20364648,
+        "LO_NUM": 163,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 17007.0,
+        "ID": 34,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Iceboat Ter",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 34
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3980958868167,
+            43.6401210683593
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 35,
+        "ADDRESS_POINT_ID": 30029289,
+        "ADDRESS_NUMBER": "180",
+        "LINEAR_NAME_FULL": "Shaw St",
+        "ADDRESS_FULL": "180 Shaw St",
+        "POSTAL_CODE": "M6J 2W5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14018156,
+        "LO_NUM": 180,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4388.0,
+        "ID": 35,
+        "PARKING_TYPE": "Bike Shelter",
+        "FLANKING": "Shaw St",
+        "BICYCLE_CAPACITY": 18,
+        "SIZE_M": "7.6",
+        "YEAR_INSTALLED": 2013,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 35
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.417471669257,
+            43.646893289847
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 36,
+        "ADDRESS_POINT_ID": 773476,
+        "ADDRESS_NUMBER": "1800",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "1800 Bloor St W",
+        "POSTAL_CODE": "M6P 3K5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Parkdale-High Park",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1144885,
+        "LO_NUM": 1800,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 36,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 5,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "in hashed out area, angled rack",
+        "OBJECTID": 36
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4621357684402,
+            43.6544227736634
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 37,
+        "ADDRESS_POINT_ID": 10494989,
+        "ADDRESS_NUMBER": "182",
+        "LINEAR_NAME_FULL": "Augusta Ave",
+        "ADDRESS_FULL": "182 Augusta Ave",
+        "POSTAL_CODE": "M5T 2L6",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14674092,
+        "LO_NUM": 182,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 2918.0,
+        "ID": 37,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, Moved from east side for private construction",
+        "OBJECTID": 37
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4020121805489,
+            43.6539933828674
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 38,
+        "ADDRESS_POINT_ID": 10411342,
+        "ADDRESS_NUMBER": "19",
+        "LINEAR_NAME_FULL": "Dorval Rd",
+        "ADDRESS_FULL": "19 Dorval Rd",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Parkdale-High Park",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14013920,
+        "LO_NUM": 19,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3313.0,
+        "ID": 38,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Edna",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, for Dundas West subway",
+        "OBJECTID": 38
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4542341030041,
+            43.6565723408805
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 39,
+        "ADDRESS_POINT_ID": 773491,
+        "ADDRESS_NUMBER": "1914",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "1914 Bloor St W",
+        "POSTAL_CODE": "M6P 3K8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Parkdale-High Park",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30119699,
+        "LO_NUM": 1914,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 39,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, reserved in Bloor cycle track",
+        "OBJECTID": 39
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4660482672429,
+            43.6537243182816
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 40,
+        "ADDRESS_POINT_ID": 14069353,
+        "ADDRESS_NUMBER": "192",
+        "LINEAR_NAME_FULL": "Spadina Ave",
+        "ADDRESS_FULL": "192 Spadina Ave",
+        "POSTAL_CODE": "M5T 2C2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10494196,
+        "LO_NUM": 192,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4426.0,
+        "ID": 40,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Spadina Ave",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "NO",
+        "DETAILS": "None",
+        "OBJECTID": 40
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.397314777333,
+            43.6500029994397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 41,
+        "ADDRESS_POINT_ID": 14199528,
+        "ADDRESS_NUMBER": "196",
+        "LINEAR_NAME_FULL": "Spadina Ave",
+        "ADDRESS_FULL": "196 Spadina Ave",
+        "POSTAL_CODE": "M5T 2C2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10494196,
+        "LO_NUM": 196,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4426.0,
+        "ID": 41,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Spadina Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 41
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3973706520018,
+            43.6501245499884
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 42,
+        "ADDRESS_POINT_ID": 9980057,
+        "ADDRESS_NUMBER": "1978",
+        "LINEAR_NAME_FULL": "Queen St E",
+        "ADDRESS_FULL": "1978 Queen St E",
+        "POSTAL_CODE": "M4L 1H8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Beaches-East York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 9980046,
+        "LO_NUM": 1978,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4237.0,
+        "ID": 42,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Waverley Rd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 42
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3011363154956,
+            43.6699728610104
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 43,
+        "ADDRESS_POINT_ID": 773505,
+        "ADDRESS_NUMBER": "1986",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "1986 Bloor St W",
+        "POSTAL_CODE": "M6P 3K9",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Parkdale-High Park",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30042277,
+        "LO_NUM": 1986,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 43,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, reserved in Bloor cycle track",
+        "OBJECTID": 43
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4685838737145,
+            43.6530119827806
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 44,
+        "ADDRESS_POINT_ID": 8408498,
+        "ADDRESS_NUMBER": "2",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "2 Bloor St W",
+        "POSTAL_CODE": "M4W 3E2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10759265,
+        "LO_NUM": 2,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 44,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Yonge St",
+        "BICYCLE_CAPACITY": 32,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 44
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3872300479029,
+            43.6704004360083
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 45,
+        "ADDRESS_POINT_ID": 9468140,
+        "ADDRESS_NUMBER": "20",
+        "LINEAR_NAME_FULL": "Northcote Ave",
+        "ADDRESS_FULL": "20 Northcote Ave",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14018614,
+        "LO_NUM": 20,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4070.0,
+        "ID": 45,
+        "PARKING_TYPE": "Bike Shelter",
+        "FLANKING": "Northcote Ave",
+        "BICYCLE_CAPACITY": 10,
+        "SIZE_M": "3",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 45
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4264347476873,
+            43.6431255580551
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 46,
+        "ADDRESS_POINT_ID": 828085,
+        "ADDRESS_NUMBER": "200",
+        "LINEAR_NAME_FULL": "King St E",
+        "ADDRESS_FULL": "200 King St E",
+        "POSTAL_CODE": "M5A 3W8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1145266,
+        "LO_NUM": 200,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3779.0,
+        "ID": 46,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Adelaide St E and Frederick St",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 46
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3701856494981,
+            43.651100464219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 47,
+        "ADDRESS_POINT_ID": 828085,
+        "ADDRESS_NUMBER": "200",
+        "LINEAR_NAME_FULL": "King St E",
+        "ADDRESS_FULL": "200 King St E",
+        "POSTAL_CODE": "M5A 3W8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1145266,
+        "LO_NUM": 200,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3779.0,
+        "ID": 47,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "George ",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking",
+        "OBJECTID": 47
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3701856494981,
+            43.651100464219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 48,
+        "ADDRESS_POINT_ID": 7929674,
+        "ADDRESS_NUMBER": "200",
+        "LINEAR_NAME_FULL": "King St W",
+        "ADDRESS_FULL": "200 King St W",
+        "POSTAL_CODE": "M5H 3T4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7929673,
+        "LO_NUM": 200,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3780.0,
+        "ID": 48,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "University Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 48
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3857204176048,
+            43.6479052737837
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 49,
+        "ADDRESS_POINT_ID": 10430677,
+        "ADDRESS_NUMBER": "2000",
+        "LINEAR_NAME_FULL": "Yonge St",
+        "ADDRESS_FULL": "2000 Yonge St",
+        "POSTAL_CODE": "M4S 1Z7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-St. Paul's",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10430667,
+        "LO_NUM": 2000,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4733.0,
+        "ID": 49,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Glebe Rd W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 49
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3973815441376,
+            43.7004743321706
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 50,
+        "ADDRESS_POINT_ID": 14207146,
+        "ADDRESS_NUMBER": "205",
+        "LINEAR_NAME_FULL": "Spadina Ave",
+        "ADDRESS_FULL": "205 Spadina Ave",
+        "POSTAL_CODE": "M5T 2C7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10494196,
+        "LO_NUM": 205,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4426.0,
+        "ID": 50,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Spadina Ave",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "11",
+        "YEAR_INSTALLED": 2010,
+        "BY_LAW": "Y",
+        "DETAILS": "None",
+        "OBJECTID": 50
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3966190321934,
+            43.6504254363213
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 51,
+        "ADDRESS_POINT_ID": 7641979,
+        "ADDRESS_NUMBER": "21",
+        "LINEAR_NAME_FULL": "Gerrard St E",
+        "ADDRESS_FULL": "21 Gerrard St E",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7641994,
+        "LO_NUM": 21,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3495.0,
+        "ID": 51,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Gerrard St E",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 51
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3810999113837,
+            43.6591625171396
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 52,
+        "ADDRESS_POINT_ID": 13991178,
+        "ADDRESS_NUMBER": "213",
+        "LINEAR_NAME_FULL": "Delaware Ave",
+        "ADDRESS_FULL": "213 Delaware Ave",
+        "POSTAL_CODE": "M6H 2T4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 20033433,
+        "LO_NUM": 213,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3283.0,
+        "ID": 52,
+        "PARKING_TYPE": "Angled Bike Rack",
+        "FLANKING": "Delaware Ave",
+        "BICYCLE_CAPACITY": 5,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 52
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4278708182001,
+            43.6620573990966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 53,
+        "ADDRESS_POINT_ID": 13991178,
+        "ADDRESS_NUMBER": "213",
+        "LINEAR_NAME_FULL": "Delaware Ave",
+        "ADDRESS_FULL": "213 Delaware Ave",
+        "POSTAL_CODE": "M6H 2T4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 20033433,
+        "LO_NUM": 213,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3283.0,
+        "ID": 53,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Delaware Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "3",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "NO",
+        "DETAILS": "PUDO, at Ossington subway",
+        "OBJECTID": 53
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4278708182001,
+            43.6620573990966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 54,
+        "ADDRESS_POINT_ID": 13973721,
+        "ADDRESS_NUMBER": "2190",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "2190 Bloor St W",
+        "POSTAL_CODE": "M6S 1N3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Parkdale-High Park",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10250117,
+        "LO_NUM": 2190,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 54,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, reserved in Bloor cycle track",
+        "OBJECTID": 54
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4748066158339,
+            43.6516541654422
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 55,
+        "ADDRESS_POINT_ID": 14206623,
+        "ADDRESS_NUMBER": "2198",
+        "LINEAR_NAME_FULL": "Yonge St",
+        "ADDRESS_FULL": "2198 Yonge St",
+        "POSTAL_CODE": "M4S 2B8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-St. Paul's",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14230407,
+        "LO_NUM": 2198,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4733.0,
+        "ID": 55,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Soudan Ave",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 55
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3984239071573,
+            43.7058827894606
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 56,
+        "ADDRESS_POINT_ID": 20111213,
+        "ADDRESS_NUMBER": "22",
+        "LINEAR_NAME_FULL": "Fort York Blvd",
+        "ADDRESS_FULL": "22 Fort York Blvd",
+        "POSTAL_CODE": "M5V 3Z2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 20035046,
+        "LO_NUM": 22,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 15826.0,
+        "ID": 56,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Fort York Blvd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 56
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3943072586939,
+            43.6404929497304
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 57,
+        "ADDRESS_POINT_ID": 10494377,
+        "ADDRESS_NUMBER": "222",
+        "LINEAR_NAME_FULL": "Spadina Ave",
+        "ADDRESS_FULL": "222 Spadina Ave",
+        "POSTAL_CODE": "M5T 3B3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30139456,
+        "LO_NUM": 222,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4426.0,
+        "ID": 57,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Spadina Ave",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 57
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3978377650267,
+            43.6509286638588
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 58,
+        "ADDRESS_POINT_ID": 765142,
+        "ADDRESS_NUMBER": "236",
+        "LINEAR_NAME_FULL": "Augusta Ave",
+        "ADDRESS_FULL": "236 Augusta Ave",
+        "POSTAL_CODE": "M5T 2L7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1144604,
+        "LO_NUM": 236,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 2918.0,
+        "ID": 58,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Augusta Ave",
+        "BICYCLE_CAPACITY": 24,
+        "SIZE_M": "12",
+        "YEAR_INSTALLED": 2012,
+        "BY_LAW": "Y",
+        "DETAILS": "None",
+        "OBJECTID": 58
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4025948745683,
+            43.6553455061522
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 59,
+        "ADDRESS_POINT_ID": 880972,
+        "ADDRESS_NUMBER": "241",
+        "LINEAR_NAME_FULL": "Wellington St W",
+        "ADDRESS_FULL": "241 Wellington St W",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1146352,
+        "LO_NUM": 241,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4652.0,
+        "ID": 59,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "John St",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 59
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3900134101984,
+            43.6449521397727
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 60,
+        "ADDRESS_POINT_ID": 7641709,
+        "ADDRESS_NUMBER": "26",
+        "LINEAR_NAME_FULL": "Dundas St E",
+        "ADDRESS_FULL": "26 Dundas St E",
+        "POSTAL_CODE": "M5B 2L6",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7641747,
+        "LO_NUM": 26,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3334.0,
+        "ID": 60,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Victoria St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 60
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3799775246031,
+            43.6565175761293
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 61,
+        "ADDRESS_POINT_ID": 8353493,
+        "ADDRESS_NUMBER": "266",
+        "LINEAR_NAME_FULL": "King St E",
+        "ADDRESS_FULL": "266 King St E",
+        "POSTAL_CODE": "M5A 1K3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 8353517,
+        "LO_NUM": 266,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3779.0,
+        "ID": 61,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Ontario St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 61
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3663420506319,
+            43.6519627216596
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 62,
+        "ADDRESS_POINT_ID": 9942213,
+        "ADDRESS_NUMBER": "268",
+        "LINEAR_NAME_FULL": "College St",
+        "ADDRESS_FULL": "268 College St",
+        "POSTAL_CODE": "M5T 1S1",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14022731,
+        "LO_NUM": 268,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9765.0,
+        "ID": 62,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "College St",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "NO",
+        "DETAILS": "None",
+        "OBJECTID": 62
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4005149553641,
+            43.6581487248445
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 63,
+        "ADDRESS_POINT_ID": 7642554,
+        "ADDRESS_NUMBER": "277",
+        "LINEAR_NAME_FULL": "Victoria St",
+        "ADDRESS_FULL": "277 Victoria St",
+        "POSTAL_CODE": "M5B 1W2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30075808,
+        "LO_NUM": 277,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9790.0,
+        "ID": 63,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Dundas St E",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 63
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3793385826187,
+            43.6565589127997
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 64,
+        "ADDRESS_POINT_ID": 10864305,
+        "ADDRESS_NUMBER": "30",
+        "LINEAR_NAME_FULL": "Duncan St",
+        "ADDRESS_FULL": "30 Duncan St",
+        "POSTAL_CODE": "M5V 2C3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14036084,
+        "LO_NUM": 30,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3331.0,
+        "ID": 64,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Nelson St",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "NO",
+        "DETAILS": "None",
+        "OBJECTID": 64
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3892396315038,
+            43.6489358113018
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 65,
+        "ADDRESS_POINT_ID": 5866261,
+        "ADDRESS_NUMBER": "29",
+        "LINEAR_NAME_FULL": "Nelson St",
+        "ADDRESS_FULL": "29 Nelson St",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14025359,
+        "LO_NUM": 29,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9819.0,
+        "ID": 65,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2019,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, Moved from Nelson St 2019 ",
+        "OBJECTID": 65
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3886321202439,
+            43.6486718501907
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 66,
+        "ADDRESS_POINT_ID": 10877537,
+        "ADDRESS_NUMBER": "3",
+        "LINEAR_NAME_FULL": "Westmoreland Ave",
+        "ADDRESS_FULL": "3 Westmoreland Ave",
+        "POSTAL_CODE": "M6H 2Z6",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14011476,
+        "LO_NUM": 3,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4666.0,
+        "ID": 66,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2019,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, 50m north of Bloor St",
+        "OBJECTID": 66
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4304000534148,
+            43.6612972733511
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 67,
+        "ADDRESS_POINT_ID": 14171704,
+        "ADDRESS_NUMBER": "300",
+        "LINEAR_NAME_FULL": "Victoria St",
+        "ADDRESS_FULL": "300 Victoria St",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30075809,
+        "LO_NUM": 300,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9790.0,
+        "ID": 67,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Gould St",
+        "BICYCLE_CAPACITY": 32,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 67
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3802376739077,
+            43.6575126241522
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 68,
+        "ADDRESS_POINT_ID": 772775,
+        "ADDRESS_NUMBER": "315",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "315 Bloor St W",
+        "POSTAL_CODE": "M5S 0A7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1142564,
+        "LO_NUM": 315,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 68,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Bloor St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 68
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3985624500635,
+            43.6674469424306
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 69,
+        "ADDRESS_POINT_ID": 30069161,
+        "ADDRESS_NUMBER": "35",
+        "LINEAR_NAME_FULL": "York St",
+        "ADDRESS_FULL": "35 York St",
+        "POSTAL_CODE": "M5J 0C7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "GO York Concourse",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 13975053,
+        "LO_NUM": 35,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4735.0,
+        "ID": 69,
+        "PARKING_TYPE": "Angled Bike Rack",
+        "FLANKING": "Front St W",
+        "BICYCLE_CAPACITY": 30,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 69
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3814651014112,
+            43.6437906731595
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 70,
+        "ADDRESS_POINT_ID": 7730108,
+        "ADDRESS_NUMBER": "350",
+        "LINEAR_NAME_FULL": "Victoria St",
+        "ADDRESS_FULL": "350 Victoria St",
+        "POSTAL_CODE": "M5B 2K3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30060911,
+        "LO_NUM": 350,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9790.0,
+        "ID": 70,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Gould St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 70
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3804798260292,
+            43.6577656354656
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 71,
+        "ADDRESS_POINT_ID": 6292601,
+        "ADDRESS_NUMBER": "3530",
+        "LINEAR_NAME_FULL": "Sheppard Ave E",
+        "ADDRESS_FULL": "3530 Sheppard Ave E",
+        "POSTAL_CODE": "M1T 3K7",
+        "MUNICIPALITY": "Scarborough",
+        "CITY": "Toronto",
+        "WARD": "Scarborough-Agincourt",
+        "PLACE_NAME": "Holy Spirit Catholic School",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 6292597,
+        "LO_NUM": 3530,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 6698.0,
+        "ID": 71,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Sheppard Ave E",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 71
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.302695673123,
+            43.7812935995392
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 72,
+        "ADDRESS_POINT_ID": 7929475,
+        "ADDRESS_NUMBER": "357",
+        "LINEAR_NAME_FULL": "Bay St",
+        "ADDRESS_FULL": "357 Bay St",
+        "POSTAL_CODE": "M5H 2T7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7929469,
+        "LO_NUM": 357,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 2962.0,
+        "ID": 72,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Temperance St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 72
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3808769998818,
+            43.6508344042378
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 73,
+        "ADDRESS_POINT_ID": 30019115,
+        "ADDRESS_NUMBER": "35D",
+        "LINEAR_NAME_FULL": "Bathurst St",
+        "ADDRESS_FULL": "35D Bathurst St",
+        "POSTAL_CODE": "M5V 2P2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 8457361,
+        "LO_NUM": 35,
+        "LO_NUM_SUF": "D",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 436.0,
+        "ID": 73,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Bathurst St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 73
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4017249691284,
+            43.642225715835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 74,
+        "ADDRESS_POINT_ID": 30035743,
+        "ADDRESS_NUMBER": "36",
+        "LINEAR_NAME_FULL": "Lisgar St",
+        "ADDRESS_FULL": "36 Lisgar St",
+        "POSTAL_CODE": "M6J 0C7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14024655,
+        "LO_NUM": 36,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3859.0,
+        "ID": 74,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Lisgar St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 74
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4233157461113,
+            43.6417386470507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 75,
+        "ADDRESS_POINT_ID": 10736597,
+        "ADDRESS_NUMBER": "362",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "362 Bloor St W",
+        "POSTAL_CODE": "M5S 1X2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "The Living Stone Church",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10736589,
+        "LO_NUM": 362,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 75,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Walmer Rd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 75
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4057839572486,
+            43.6665134281721
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 76,
+        "ADDRESS_POINT_ID": 12562241,
+        "ADDRESS_NUMBER": "375",
+        "LINEAR_NAME_FULL": "St Clair Ave W",
+        "ADDRESS_FULL": "375 St Clair Ave W",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-St. Paul's",
+        "PLACE_NAME": "Nordheimer Ravine",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30076115,
+        "LO_NUM": 375,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 890.0,
+        "ID": 76,
+        "PARKING_TYPE": "Bike Shelter",
+        "FLANKING": "St Clair Ave W",
+        "BICYCLE_CAPACITY": 20,
+        "SIZE_M": "10",
+        "YEAR_INSTALLED": 2011,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 76
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4143290305209,
+            43.6836946284848
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 77,
+        "ADDRESS_POINT_ID": 13968174,
+        "ADDRESS_NUMBER": "38",
+        "LINEAR_NAME_FULL": "Orchard View Blvd",
+        "ADDRESS_FULL": "38 Orchard View Blvd",
+        "POSTAL_CODE": "M4R 2G3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Eglinton-Lawrence",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10258454,
+        "LO_NUM": 38,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4111.0,
+        "ID": 77,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Yonge St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 77
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3996801445734,
+            43.708216713311
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 78,
+        "ADDRESS_POINT_ID": 30091020,
+        "ADDRESS_NUMBER": "40",
+        "LINEAR_NAME_FULL": "High Park Ave",
+        "ADDRESS_FULL": "40 High Park Ave",
+        "POSTAL_CODE": "M6P 2S1",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Parkdale-High Park",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7994458,
+        "LO_NUM": 40,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3660.0,
+        "ID": 78,
+        "PARKING_TYPE": "Bike Shelter",
+        "FLANKING": "High Park Ave",
+        "BICYCLE_CAPACITY": 20,
+        "SIZE_M": "10",
+        "YEAR_INSTALLED": 2013,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 78
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4663279307411,
+            43.6546222051732
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 79,
+        "ADDRESS_POINT_ID": 10258457,
+        "ADDRESS_NUMBER": "40",
+        "LINEAR_NAME_FULL": "Orchard View Blvd",
+        "ADDRESS_FULL": "40 Orchard View Blvd",
+        "POSTAL_CODE": "M4R 1B9",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Eglinton-Lawrence",
+        "PLACE_NAME": "Northern District Public Library",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10258454,
+        "LO_NUM": 40,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4111.0,
+        "ID": 79,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Roehampton Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 79
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4000640484789,
+            43.7082699050511
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 80,
+        "ADDRESS_POINT_ID": 20199887,
+        "ADDRESS_NUMBER": "388",
+        "LINEAR_NAME_FULL": "Yonge St",
+        "ADDRESS_FULL": "388 Yonge St",
+        "POSTAL_CODE": "M5B 0A4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7730098,
+        "LO_NUM": 388,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4733.0,
+        "ID": 80,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Gerrard St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 80
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.382584365945,
+            43.6594427421949
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 81,
+        "ADDRESS_POINT_ID": 785313,
+        "ADDRESS_NUMBER": "429",
+        "LINEAR_NAME_FULL": "College St",
+        "ADDRESS_FULL": "429 College St",
+        "POSTAL_CODE": "M5T 1T2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1144402,
+        "LO_NUM": 429,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9765.0,
+        "ID": 81,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Bathurst St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 81
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4072847841266,
+            43.6562832334017
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 82,
+        "ADDRESS_POINT_ID": 30035743,
+        "ADDRESS_NUMBER": "36",
+        "LINEAR_NAME_FULL": "Lisgar St",
+        "ADDRESS_FULL": "36 Lisgar St",
+        "POSTAL_CODE": "M6J 0C7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14024655,
+        "LO_NUM": 36,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3859.0,
+        "ID": 82,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Lisgar St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 82
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4233157461113,
+            43.6417386470507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 83,
+        "ADDRESS_POINT_ID": 10223670,
+        "ADDRESS_NUMBER": "441",
+        "LINEAR_NAME_FULL": "King St W",
+        "ADDRESS_FULL": "441 King St W",
+        "POSTAL_CODE": "M5V 1K4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10223667,
+        "LO_NUM": 441,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3780.0,
+        "ID": 83,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "King St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 83
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3956715228578,
+            43.6451488396696
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 84,
+        "ADDRESS_POINT_ID": 9980658,
+        "ADDRESS_NUMBER": "449",
+        "LINEAR_NAME_FULL": "Parliament St",
+        "ADDRESS_FULL": "449 Parliament St",
+        "POSTAL_CODE": "M5A 3A3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14023933,
+        "LO_NUM": 449,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4162.0,
+        "ID": 84,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Spruce St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 84
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3671626414988,
+            43.6635065844203
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 85,
+        "ADDRESS_POINT_ID": 10223672,
+        "ADDRESS_NUMBER": "455",
+        "LINEAR_NAME_FULL": "King St W",
+        "ADDRESS_FULL": "455 King St W",
+        "POSTAL_CODE": "M5V 1K4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10223667,
+        "LO_NUM": 455,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3780.0,
+        "ID": 85,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Spadina ",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2018,
+        "BY_LAW": "N/A",
+        "DETAILS": "Pedzone, Installed 3rd week June 2018: ",
+        "OBJECTID": 85
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3960200182592,
+            43.6449926683861
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 86,
+        "ADDRESS_POINT_ID": 10223676,
+        "ADDRESS_NUMBER": "468",
+        "LINEAR_NAME_FULL": "King St W",
+        "ADDRESS_FULL": "468 King St W",
+        "POSTAL_CODE": "M5V 1L8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10223667,
+        "LO_NUM": 468,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3780.0,
+        "ID": 86,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "King St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 86
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3959267185292,
+            43.645545087493
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 87,
+        "ADDRESS_POINT_ID": 30038007,
+        "ADDRESS_NUMBER": "47",
+        "LINEAR_NAME_FULL": "Lower River St",
+        "ADDRESS_FULL": "47 Lower River St",
+        "POSTAL_CODE": "M5A 0G1",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30037989,
+        "LO_NUM": 47,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 19546.0,
+        "ID": 87,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Trolley Cres",
+        "BICYCLE_CAPACITY": 24,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 87
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.35554106317,
+            43.6564985969909
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 88,
+        "ADDRESS_POINT_ID": 772833,
+        "ADDRESS_NUMBER": "481",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "481 Bloor St W",
+        "POSTAL_CODE": "M5S 1X9",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1142870,
+        "LO_NUM": 481,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 88,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": null,
+        "SIZE_M": "7.2",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, Angled racks in hashed out area adjacent cycle track",
+        "OBJECTID": 88
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4071172092532,
+            43.6657537893633
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 89,
+        "ADDRESS_POINT_ID": 30029294,
+        "ADDRESS_NUMBER": "49",
+        "LINEAR_NAME_FULL": "Givins St",
+        "ADDRESS_FULL": "49 Givins St",
+        "POSTAL_CODE": "M6J 2X5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "Givins/Shaw Junior Public School",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 11180398,
+        "LO_NUM": 49,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3505.0,
+        "ID": 89,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Shaw St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2013,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 89
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4176864709581,
+            43.646216613937
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 90,
+        "ADDRESS_POINT_ID": 12107167,
+        "ADDRESS_NUMBER": "490",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "490 Bloor St W",
+        "POSTAL_CODE": "M5S 1X8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 12107157,
+        "LO_NUM": 490,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 90,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Albany Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 90
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4097622062528,
+            43.6656283409671
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 91,
+        "ADDRESS_POINT_ID": 51630,
+        "ADDRESS_NUMBER": "5",
+        "LINEAR_NAME_FULL": "Bartonville Ave E",
+        "ADDRESS_FULL": "5 Bartonville Ave E",
+        "POSTAL_CODE": "M6M 2B1",
+        "MUNICIPALITY": "York",
+        "CITY": "Toronto",
+        "WARD": "York South-Weston",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 20112838,
+        "LO_NUM": 5,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 433.0,
+        "ID": 91,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 91
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.494582675061,
+            43.6894845939346
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 92,
+        "ADDRESS_POINT_ID": 14210933,
+        "ADDRESS_NUMBER": "5",
+        "LINEAR_NAME_FULL": "Salem Ave",
+        "ADDRESS_FULL": "5 Salem Ave",
+        "POSTAL_CODE": "M6H 3C2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14011464,
+        "LO_NUM": 5,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4354.0,
+        "ID": 92,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Salem Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 92
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4315601023945,
+            43.6608451251421
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 93,
+        "ADDRESS_POINT_ID": 14211049,
+        "ADDRESS_NUMBER": "5",
+        "LINEAR_NAME_FULL": "Walmer Rd",
+        "ADDRESS_FULL": "5 Walmer Rd",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10759044,
+        "LO_NUM": 5,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 940.0,
+        "ID": 93,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Walmer Rd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 93
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4053701547633,
+            43.6666043689082
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 94,
+        "ADDRESS_POINT_ID": 828038,
+        "ADDRESS_NUMBER": "50",
+        "LINEAR_NAME_FULL": "King St E",
+        "ADDRESS_FULL": "50 King St E",
+        "POSTAL_CODE": "M5C 1E5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1145520,
+        "LO_NUM": 50,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3779.0,
+        "ID": 94,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Toronto",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2018,
+        "BY_LAW": "N/A",
+        "DETAILS": "Pedzone, Installed June 2018",
+        "OBJECTID": 94
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3762416344609,
+            43.6497660862272
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 95,
+        "ADDRESS_POINT_ID": 854435,
+        "ADDRESS_NUMBER": "50",
+        "LINEAR_NAME_FULL": "Portland St",
+        "ADDRESS_FULL": "50 Portland St",
+        "POSTAL_CODE": "M5V 2M7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14025624,
+        "LO_NUM": 50,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9780.0,
+        "ID": 95,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Wellington St W",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "NO",
+        "DETAILS": "None",
+        "OBJECTID": 95
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3999654356682,
+            43.6433952592458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 96,
+        "ADDRESS_POINT_ID": 10223683,
+        "ADDRESS_NUMBER": "500",
+        "LINEAR_NAME_FULL": "King St W",
+        "ADDRESS_FULL": "500 King St W",
+        "POSTAL_CODE": "M5V 1L9",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10223667,
+        "LO_NUM": 500,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3780.0,
+        "ID": 96,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "King St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "Pedzone, Installed June 2018",
+        "OBJECTID": 96
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3968051380048,
+            43.6453156558296
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 97,
+        "ADDRESS_POINT_ID": 772852,
+        "ADDRESS_NUMBER": "509",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "509 Bloor St W",
+        "POSTAL_CODE": "M5S 1Y2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1142919,
+        "LO_NUM": 509,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 97,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Borden St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, Angled racks in hashed out area adjacent cycle track",
+        "OBJECTID": 97
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4083859964734,
+            43.6654609016074
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 98,
+        "ADDRESS_POINT_ID": 10222755,
+        "ADDRESS_NUMBER": "511",
+        "LINEAR_NAME_FULL": "King St W",
+        "ADDRESS_FULL": "511 King St W",
+        "POSTAL_CODE": "M5V 1K4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10222754,
+        "LO_NUM": 511,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3780.0,
+        "ID": 98,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "King St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 98
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3978494175301,
+            43.6446235513294
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 99,
+        "ADDRESS_POINT_ID": 7466874,
+        "ADDRESS_NUMBER": "516",
+        "LINEAR_NAME_FULL": "Glenlake Ave",
+        "ADDRESS_FULL": "516 Glenlake Ave",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Parkdale-High Park",
+        "PLACE_NAME": "Glenlake Square",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7466844,
+        "LO_NUM": 516,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3546.0,
+        "ID": 99,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Glendonwynne Rd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 99
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4741048220362,
+            43.6561212464489
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 100,
+        "ADDRESS_POINT_ID": 2854062,
+        "ADDRESS_NUMBER": "522",
+        "LINEAR_NAME_FULL": "University Ave",
+        "ADDRESS_FULL": "522 University Ave",
+        "POSTAL_CODE": "M5G 1W7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 2854059,
+        "LO_NUM": 522,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4583.0,
+        "ID": 100,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Elm St",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 100
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3893801203605,
+            43.6559184351809
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 101,
+        "ADDRESS_POINT_ID": 30028624,
+        "ADDRESS_NUMBER": "539",
+        "LINEAR_NAME_FULL": "Parliament St",
+        "ADDRESS_FULL": "539 Parliament St",
+        "POSTAL_CODE": "M4X 1P7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 9980335,
+        "LO_NUM": 539,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4162.0,
+        "ID": 101,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Winchester St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 101
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3684723713959,
+            43.6660407871926
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 102,
+        "ADDRESS_POINT_ID": 825934,
+        "ADDRESS_NUMBER": "55",
+        "LINEAR_NAME_FULL": "John St",
+        "ADDRESS_FULL": "55 John St",
+        "POSTAL_CODE": "M5V 3C6",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "Metro Hall",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1146312,
+        "LO_NUM": 55,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9747.0,
+        "ID": 102,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "John St",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 102
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3889314920572,
+            43.6461537935103
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 103,
+        "ADDRESS_POINT_ID": 14208545,
+        "ADDRESS_NUMBER": "56D",
+        "LINEAR_NAME_FULL": "Kensington Ave",
+        "ADDRESS_FULL": "56D Kensington Ave",
+        "POSTAL_CODE": "M5T 2K1",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7846321,
+        "LO_NUM": 56,
+        "LO_NUM_SUF": "D",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9813.0,
+        "ID": 103,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2018,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 103
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4006207562636,
+            43.654182407335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 104,
+        "ADDRESS_POINT_ID": 13991066,
+        "ADDRESS_NUMBER": "584",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "584 Bloor St W",
+        "POSTAL_CODE": "M6G 1K4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 8353520,
+        "LO_NUM": 584,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 104,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 104
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4126936121623,
+            43.6651006726937
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 105,
+        "ADDRESS_POINT_ID": 7792268,
+        "ADDRESS_NUMBER": "595",
+        "LINEAR_NAME_FULL": "Bay St",
+        "ADDRESS_FULL": "595 Bay St",
+        "POSTAL_CODE": "M5G 2C2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7792266,
+        "LO_NUM": 595,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 2962.0,
+        "ID": 105,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Dundas St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 105
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3832978278682,
+            43.6562124477002
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 106,
+        "ADDRESS_POINT_ID": 10864312,
+        "ADDRESS_NUMBER": "61",
+        "LINEAR_NAME_FULL": "Front St W",
+        "ADDRESS_FULL": "61 Front St W",
+        "POSTAL_CODE": "M5J 1E5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10864309,
+        "LO_NUM": 61,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3472.0,
+        "ID": 106,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Front St",
+        "BICYCLE_CAPACITY": 72,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 106
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3794236805597,
+            43.6456160951927
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 107,
+        "ADDRESS_POINT_ID": 10864312,
+        "ADDRESS_NUMBER": "61",
+        "LINEAR_NAME_FULL": "Front St W",
+        "ADDRESS_FULL": "61 Front St W",
+        "POSTAL_CODE": "M5J 1E5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10864309,
+        "LO_NUM": 61,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3472.0,
+        "ID": 107,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2023,
+        "BY_LAW": "N/A",
+        "DETAILS": "PUDO, In lay-by east of Bike Share",
+        "OBJECTID": 107
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3794236805597,
+            43.6456160951927
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 108,
+        "ADDRESS_POINT_ID": 772899,
+        "ADDRESS_NUMBER": "612",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "612 Bloor St W",
+        "POSTAL_CODE": "M6G 1K7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1143160,
+        "LO_NUM": 612,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 108,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": null,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 108
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4138388158142,
+            43.6647341700049
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 109,
+        "ADDRESS_POINT_ID": 30089174,
+        "ADDRESS_NUMBER": "621",
+        "LINEAR_NAME_FULL": "King St W",
+        "ADDRESS_FULL": "621 King St W",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14674278,
+        "LO_NUM": 621,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3780.0,
+        "ID": 109,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "King St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 109
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4011450143591,
+            43.6440618197494
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 110,
+        "ADDRESS_POINT_ID": 30033825,
+        "ADDRESS_NUMBER": "636",
+        "LINEAR_NAME_FULL": "Queen St E",
+        "ADDRESS_FULL": "636 Queen St E",
+        "POSTAL_CODE": "M4M 1G3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-Danforth",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 11585489,
+        "LO_NUM": 636,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4237.0,
+        "ID": 110,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Caroll St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 110
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3525832042328,
+            43.6583950055839
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 111,
+        "ADDRESS_POINT_ID": 20040470,
+        "ADDRESS_NUMBER": "65",
+        "LINEAR_NAME_FULL": "Dundas St W",
+        "ADDRESS_FULL": "65 Dundas St W",
+        "POSTAL_CODE": "M5G 2C3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "Eaton Centre Retail Entr",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7762832,
+        "LO_NUM": 65,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 558.0,
+        "ID": 111,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Bay St",
+        "BICYCLE_CAPACITY": 32,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 111
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3830072851693,
+            43.6555937758623
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 112,
+        "ADDRESS_POINT_ID": 8292528,
+        "ADDRESS_NUMBER": "666",
+        "LINEAR_NAME_FULL": "Queen St E",
+        "ADDRESS_FULL": "666 Queen St E",
+        "POSTAL_CODE": "M4M 1G8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-Danforth",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 8292524,
+        "LO_NUM": 666,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4237.0,
+        "ID": 112,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Munro St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 112
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3515005142531,
+            43.6586988939243
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 113,
+        "ADDRESS_POINT_ID": 8416907,
+        "ADDRESS_NUMBER": "675",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "675 Bloor St W",
+        "POSTAL_CODE": "M6G 1L3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 8416891,
+        "LO_NUM": 675,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 113,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Manning Ave",
+        "BICYCLE_CAPACITY": 56,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 113
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4162538549835,
+            43.663806234493
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 114,
+        "ADDRESS_POINT_ID": 856701,
+        "ADDRESS_NUMBER": "686",
+        "LINEAR_NAME_FULL": "Queen St W",
+        "ADDRESS_FULL": "686 Queen St W",
+        "POSTAL_CODE": "M6J 1E7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1146191,
+        "LO_NUM": 686,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4238.0,
+        "ID": 114,
+        "PARKING_TYPE": "Bike Shelter",
+        "FLANKING": "Euclid Ave",
+        "BICYCLE_CAPACITY": 10,
+        "SIZE_M": "3",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 114
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4079437964715,
+            43.646578203587
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 115,
+        "ADDRESS_POINT_ID": 8416837,
+        "ADDRESS_NUMBER": "692",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "692 Bloor St W",
+        "POSTAL_CODE": "M6G 1L4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 8416823,
+        "LO_NUM": 692,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 115,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Clinton Pl",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 115
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4174332539337,
+            43.6639772447612
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 116,
+        "ADDRESS_POINT_ID": 8416838,
+        "ADDRESS_NUMBER": "693",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "693 Bloor St W",
+        "POSTAL_CODE": "M6G 1L5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 8416823,
+        "LO_NUM": 693,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 116,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Clinton St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 116
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4173511984097,
+            43.6635409715405
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 117,
+        "ADDRESS_POINT_ID": 10335151,
+        "ADDRESS_NUMBER": "695",
+        "LINEAR_NAME_FULL": "Lansdowne Ave",
+        "ADDRESS_FULL": "695 Lansdowne Ave",
+        "POSTAL_CODE": "M6H 3Y9",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14012788,
+        "LO_NUM": 695,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3814.0,
+        "ID": 117,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Lansdowne Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 117
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4428104294615,
+            43.6591290436207
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 118,
+        "ADDRESS_POINT_ID": 6924850,
+        "ADDRESS_NUMBER": "702",
+        "LINEAR_NAME_FULL": "Bathurst St",
+        "ADDRESS_FULL": "702 Bathurst St",
+        "POSTAL_CODE": "M5S 2R4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 6924849,
+        "LO_NUM": 702,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 436.0,
+        "ID": 118,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Herrick",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "Permit parking, Centre for Social Innovation request",
+        "OBJECTID": 118
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4105046596053,
+            43.6627422312458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 119,
+        "ADDRESS_POINT_ID": 367443,
+        "ADDRESS_NUMBER": "71",
+        "LINEAR_NAME_FULL": "New Forest Sq",
+        "ADDRESS_FULL": "71 New Forest Sq",
+        "POSTAL_CODE": "M1V 2Z6",
+        "MUNICIPALITY": "Scarborough",
+        "CITY": "Toronto",
+        "WARD": "Scarborough-Agincourt",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 20050441,
+        "LO_NUM": 71,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9497.0,
+        "ID": 119,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Steeles Ave E",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 119
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3074473906934,
+            43.8230331061332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 120,
+        "ADDRESS_POINT_ID": 7389731,
+        "ADDRESS_NUMBER": "71",
+        "LINEAR_NAME_FULL": "Second St",
+        "ADDRESS_FULL": "71 Second St",
+        "POSTAL_CODE": "M8V 2X4",
+        "MUNICIPALITY": "Etobicoke",
+        "CITY": "Toronto",
+        "WARD": "Etobicoke-Lakeshore",
+        "PLACE_NAME": "Second Street Junior Middle School",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7389724,
+        "LO_NUM": 71,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 2447.0,
+        "ID": 120,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Second St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 120
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.5000229034999,
+            43.6037250776607
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 121,
+        "ADDRESS_POINT_ID": 10906649,
+        "ADDRESS_NUMBER": "720",
+        "LINEAR_NAME_FULL": "Bay St",
+        "ADDRESS_FULL": "720 Bay St",
+        "POSTAL_CODE": "M5G 2K1",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10906644,
+        "LO_NUM": 720,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 2962.0,
+        "ID": 121,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Gerrard St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 121
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3854849355134,
+            43.6588371036289
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 122,
+        "ADDRESS_POINT_ID": 14120392,
+        "ADDRESS_NUMBER": "736",
+        "LINEAR_NAME_FULL": "Bay St",
+        "ADDRESS_FULL": "736 Bay St",
+        "POSTAL_CODE": "M5G 2M4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7792579,
+        "LO_NUM": 736,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 2962.0,
+        "ID": 122,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Bay St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 122
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3856470491767,
+            43.6593434836471
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 123,
+        "ADDRESS_POINT_ID": 10386594,
+        "ADDRESS_NUMBER": "743",
+        "LINEAR_NAME_FULL": "Pape Ave",
+        "ADDRESS_FULL": "743 Pape Ave",
+        "POSTAL_CODE": "M4K 3T1",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-Danforth",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10386591,
+        "LO_NUM": 743,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 280.0,
+        "ID": 123,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Lipton Ave",
+        "BICYCLE_CAPACITY": 32,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2015,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 123
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3450123847713,
+            43.6798873239788
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 124,
+        "ADDRESS_POINT_ID": 11382307,
+        "ADDRESS_NUMBER": "777",
+        "LINEAR_NAME_FULL": "Victoria Park Ave",
+        "ADDRESS_FULL": "777 Victoria Park Ave",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "Scarborough",
+        "CITY": "Toronto",
+        "WARD": "Scarborough Southwest",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 11382305,
+        "LO_NUM": 777,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 370.0,
+        "ID": 124,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Victoria Park Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": null,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 124
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.2891570511807,
+            43.6945435700427
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 125,
+        "ADDRESS_POINT_ID": 30025064,
+        "ADDRESS_NUMBER": "78",
+        "LINEAR_NAME_FULL": "Tecumseth St",
+        "ADDRESS_FULL": "78 Tecumseth St",
+        "POSTAL_CODE": "M5V 0A9",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 20053421,
+        "LO_NUM": 78,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4534.0,
+        "ID": 125,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "King St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 125
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4053241024552,
+            43.6430326838761
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 126,
+        "ADDRESS_POINT_ID": 7792587,
+        "ADDRESS_NUMBER": "790",
+        "LINEAR_NAME_FULL": "Bay St",
+        "ADDRESS_FULL": "790 Bay St",
+        "POSTAL_CODE": "M5G 1N8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7792579,
+        "LO_NUM": 790,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 2962.0,
+        "ID": 126,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Bay St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 126
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3861750845428,
+            43.6604459643503
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 127,
+        "ADDRESS_POINT_ID": 7569577,
+        "ADDRESS_NUMBER": "798",
+        "LINEAR_NAME_FULL": "Richmond St W",
+        "ADDRESS_FULL": "798 Richmond St W",
+        "POSTAL_CODE": "M6J 3P3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7569576,
+        "LO_NUM": 798,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4277.0,
+        "ID": 127,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Niagara St",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 127
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4098108572165,
+            43.6451297244944
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 128,
+        "ADDRESS_POINT_ID": 785507,
+        "ADDRESS_NUMBER": "802",
+        "LINEAR_NAME_FULL": "College St",
+        "ADDRESS_FULL": "802 College St",
+        "POSTAL_CODE": "M6G 1C8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1144782,
+        "LO_NUM": 802,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9765.0,
+        "ID": 128,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Roxton Rd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 128
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4217098646824,
+            43.6548443189396
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 129,
+        "ADDRESS_POINT_ID": 794475,
+        "ADDRESS_NUMBER": "809",
+        "LINEAR_NAME_FULL": "Dovercourt Rd",
+        "ADDRESS_FULL": "809 Dovercourt Rd",
+        "POSTAL_CODE": "M6H 2X4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14011511,
+        "LO_NUM": 809,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3317.0,
+        "ID": 129,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "Y",
+        "DETAILS": "No stop, councillor request:",
+        "OBJECTID": 129
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4295084389131,
+            43.6628590810281
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 130,
+        "ADDRESS_POINT_ID": 773004,
+        "ADDRESS_NUMBER": "813",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "813 Bloor St W",
+        "POSTAL_CODE": "M6G 1L8",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30039479,
+        "LO_NUM": 813,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 130,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Bloor St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 130
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4217629457854,
+            43.6625538026018
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 131,
+        "ADDRESS_POINT_ID": 20364714,
+        "ADDRESS_NUMBER": "82",
+        "LINEAR_NAME_FULL": "Fort York Blvd",
+        "ADDRESS_FULL": "82 Fort York Blvd",
+        "POSTAL_CODE": "M5V 4A6",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30036751,
+        "LO_NUM": 82,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 15826.0,
+        "ID": 131,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Fort York Blvd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 131
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3967708309412,
+            43.6400217734976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 132,
+        "ADDRESS_POINT_ID": 10877644,
+        "ADDRESS_NUMBER": "855",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "855 Bloor St W",
+        "POSTAL_CODE": "M6G 1M3",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10877626,
+        "LO_NUM": 855,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 132,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": null,
+        "SIZE_M": "1.5",
+        "YEAR_INSTALLED": null,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, Half a multibike rack ",
+        "OBJECTID": 132
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4239641953789,
+            43.662105112845
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 133,
+        "ADDRESS_POINT_ID": 10576992,
+        "ADDRESS_NUMBER": "860",
+        "LINEAR_NAME_FULL": "College St",
+        "ADDRESS_FULL": "860 College St",
+        "POSTAL_CODE": "M6H 1A2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10576972,
+        "LO_NUM": 860,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9765.0,
+        "ID": 133,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Concord Ave",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 133
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4238539128414,
+            43.6544574848038
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 134,
+        "ADDRESS_POINT_ID": 773044,
+        "ADDRESS_NUMBER": "861",
+        "LINEAR_NAME_FULL": "Bloor St W",
+        "ADDRESS_FULL": "861 Bloor St W",
+        "POSTAL_CODE": "M6G 1M4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "University-Rosedale",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1143545,
+        "LO_NUM": 861,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 458.0,
+        "ID": 134,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "None",
+        "BICYCLE_CAPACITY": 4,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "Half a multibike rack",
+        "OBJECTID": 134
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4245239058707,
+            43.6619791949322
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 135,
+        "ADDRESS_POINT_ID": 6047970,
+        "ADDRESS_NUMBER": "901",
+        "LINEAR_NAME_FULL": "King St W",
+        "ADDRESS_FULL": "901 King St W",
+        "POSTAL_CODE": "M5V 3H5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14024874,
+        "LO_NUM": 901,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3780.0,
+        "ID": 135,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "King St W",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 135
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4112467839912,
+            43.641872432814
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 136,
+        "ADDRESS_POINT_ID": 30039986,
+        "ADDRESS_NUMBER": "92",
+        "LINEAR_NAME_FULL": "Fort York Blvd",
+        "ADDRESS_FULL": "92 Fort York Blvd",
+        "POSTAL_CODE": "M5V 4A7",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Spadina-Fort York",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30036751,
+        "LO_NUM": 92,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 15826.0,
+        "ID": 136,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Fort York Blvd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 136
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3971907659455,
+            43.6399638050045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 137,
+        "ADDRESS_POINT_ID": 30035793,
+        "ADDRESS_NUMBER": "92",
+        "LINEAR_NAME_FULL": "Sudbury St",
+        "ADDRESS_FULL": "92 Sudbury St",
+        "POSTAL_CODE": "M6J 0C5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 7553518,
+        "LO_NUM": 92,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4502.0,
+        "ID": 137,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "Lisgar St",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2017,
+        "BY_LAW": "NO",
+        "DETAILS": "None",
+        "OBJECTID": 137
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4230929296456,
+            43.6413368380168
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 138,
+        "ADDRESS_POINT_ID": 785590,
+        "ADDRESS_NUMBER": "940",
+        "LINEAR_NAME_FULL": "College St",
+        "ADDRESS_FULL": "940 College St",
+        "POSTAL_CODE": "M6H 1A5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Davenport",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 14018364,
+        "LO_NUM": 940,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 9765.0,
+        "ID": 138,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Dovercourt Rd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 138
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4266277065843,
+            43.6537429799659
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 139,
+        "ADDRESS_POINT_ID": 11075760,
+        "ADDRESS_NUMBER": "95",
+        "LINEAR_NAME_FULL": "Front St E",
+        "ADDRESS_FULL": "95 Front St E",
+        "POSTAL_CODE": "M5E 1C2",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto Centre",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 11075761,
+        "LO_NUM": 95,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3471.0,
+        "ID": 139,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Lower Jarvis St",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2014,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 139
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3714937127787,
+            43.6491812588323
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 140,
+        "ADDRESS_POINT_ID": 379258,
+        "ADDRESS_NUMBER": "95",
+        "LINEAR_NAME_FULL": "River Grove Dr",
+        "ADDRESS_FULL": "95 River Grove Dr",
+        "POSTAL_CODE": "M1W 3T8",
+        "MUNICIPALITY": "Scarborough",
+        "CITY": "Toronto",
+        "WARD": "Scarborough-Agincourt",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 20052191,
+        "LO_NUM": 95,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 8803.0,
+        "ID": 140,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Kennedy Rd",
+        "BICYCLE_CAPACITY": 8,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 140
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3173896634976,
+            43.8209470854589
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 141,
+        "ADDRESS_POINT_ID": 10034904,
+        "ADDRESS_NUMBER": "953",
+        "LINEAR_NAME_FULL": "Gerrard St E",
+        "ADDRESS_FULL": "953 Gerrard St E",
+        "POSTAL_CODE": "M4M 1Z4",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD": "Toronto-Danforth",
+        "PLACE_NAME": "Matty Eckler Playground,Pape Avenue Playground",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30107057,
+        "LO_NUM": 953,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3495.0,
+        "ID": 141,
+        "PARKING_TYPE": "Bike Rack",
+        "FLANKING": "Pape Ave",
+        "BICYCLE_CAPACITY": 16,
+        "SIZE_M": "2.9",
+        "YEAR_INSTALLED": 2016,
+        "BY_LAW": "N/A",
+        "DETAILS": "None",
+        "OBJECTID": 141
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3393969830404,
+            43.668053671131
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 142,
+        "ADDRESS_POINT_ID": 14644698,
+        "ADDRESS_NUMBER": "58",
+        "LINEAR_NAME_FULL": "Marine Parade Dr",
+        "ADDRESS_FULL": "58 Marine Parade Dr",
+        "POSTAL_CODE": "M8V 4G1",
+        "MUNICIPALITY": "Etobicoke",
+        "CITY": "Toronto",
+        "WARD": "Etobicoke-Lakeshore",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 30070003,
+        "LO_NUM": 58,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 15626.0,
+        "ID": 142,
+        "PARKING_TYPE": "Bike Corral",
+        "FLANKING": "opposite 58 Marine Parade",
+        "BICYCLE_CAPACITY": 14,
+        "SIZE_M": "5.5",
+        "YEAR_INSTALLED": 2020,
+        "BY_LAW": "N/A",
+        "DETAILS": "No parking, east of crossover",
+        "OBJECTID": 142
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4771276610409,
+            43.6274691648797
+          ]
+        ]
+      }
+    }
+  ]
+}
