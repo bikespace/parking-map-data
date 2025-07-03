@@ -457,5 +457,25 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "121" }],
     "reason": "missing",
     "notes": "Could not locate via survey"
+  },
+  {
+    "survey_date": "2025-06-29",
+    "ids": [
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-23460" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34280" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34300" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34299" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34298" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34293" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34290" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34288" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34291" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34286" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34284" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-23363" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34292" }
+    ],
+    "reason": "removed",
+    "notes": "Reported by BikeSpace user in submission #1546. City of Toronto webpage for construction project indicates that affected area includes O'Connor between St. Clair and Bermondsey and includes sidewalk reconstruction which would presumably have led to the removal of the ring-posts. (See: https://www.toronto.ca/community-people/get-involved/public-consultations/infrastructure-projects/oconnor-drive-improvements/)"
   }
 ]
