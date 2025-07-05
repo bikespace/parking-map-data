@@ -117,8 +117,8 @@ def transform_properties(input_props: InputProps, global_props: dict):
             "covered": _is_covered(input_props["PARKING_TYPE"]),
             "access": "yes",
             "fee": "no",
-            "start_date": input_props["YEAR_INSTALLED"],
-            "length": float(input_props["SIZE_M"]),
+            "start_date": str(input_props["YEAR_INSTALLED"]),
+            "length": str(input_props["SIZE_M"]),
             "description": "\n\n".join(
                 x.strip()
                 for x in [

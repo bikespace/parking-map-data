@@ -240,7 +240,16 @@ class BikeDataOSM(BikeData):
         )
 
         # apply transforms
-        transformed_features = filtered_features
+        transformed_features = filtered_features.assign(
+            **{
+                "capacity": pd.to_numeric(
+                    filtered_features["capacity"], errors="coerce"
+                ),
+                "capacity:description": filtered_features["capacity"].apply(
+                    lambda c: pd.NA if (str(c).isnumeric() or pd.isna(c)) else str(c)
+                ),
+            }
+        ).astype({"capacity": "Int64", "capacity:description": "string"})
 
         # return normalized data
         if format == "geodataframe":
@@ -333,7 +342,7 @@ class BikeLockersToronto(BikeData):
             meta_source_url=self.page_url,
             meta_source_license="https://www.toronto.ca/home/copyright-information/",
             meta_source_last_updated=self.last_updated.isoformat(),
-        )
+        ).convert_dtypes()
 
         # return normalized data
         if format == "geodataframe":

@@ -309,7 +309,8 @@ def run_pipeline(*, archive=False):
             osm_combined,
             lockers,
         ]
-    )
+    ).convert_dtypes()
+
     save_output(
         all_normalized_unprocessed,
         path=ofp,
@@ -355,9 +356,11 @@ def run_pipeline(*, archive=False):
         )
         | (osm_combined["bicycle_parking"] == "lockers")
     ) & (~open_toronto_ca_test)
-    osm_filtered = pd.concat(
-        [city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]]
-    ).to_crs(32617)  # change to UTM 17 N for centroid calculation
+    osm_filtered = (
+        pd.concat([city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]])
+        .to_crs(32617)  # change to UTM 17 N for centroid calculation
+        .convert_dtypes()
+    )
     osm_centroid = osm_filtered.set_geometry(osm_filtered.geometry.centroid).to_crs(
         4326
     )
@@ -387,7 +390,7 @@ def run_pipeline(*, archive=False):
             dataset.dropna(axis="columns", how="all")
             for name, dataset in city_unclustered.items()
         ]
-    )
+    ).convert_dtypes()
 
     # drop city lockers already in OpenStreetMap
     lockers_unmapped = drop_mapped_city_lockers(lockers, osm_combined)
@@ -450,11 +453,13 @@ def run_pipeline(*, archive=False):
             city_not_racks,
             city_data["bicycle-parking-bike-stations-indoor"],
         ]
-    )
+    ).convert_dtypes()
     city_full = city_full.drop("tmu", axis=1)
 
     # make combined set from all sources
-    all_sources = pd.concat([city_full, osm_centroid, lockers_unmapped])
+    all_sources = pd.concat(
+        [city_full, osm_centroid, lockers_unmapped]
+    ).convert_dtypes()
 
     # Save display files
     # ------------------
