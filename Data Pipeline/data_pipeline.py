@@ -64,20 +64,26 @@ def save_output(
 ):
     """Save GeoJSON dict or GeoPandas Geodataframe to file. If archive_name is specified, the file will also be saved in an archive folder in the same path."""
 
-    output_paths = [path]
+    path.mkdir(exist_ok=True)
     if archive_name:
-        output_paths.append(path / archive_name)
+        (path / archive_name).mkdir(exist_ok=True)
 
     if isinstance(output, geopandas.GeoDataFrame):
-        for op in output_paths:
-            op.mkdir(exist_ok=True)
-            with open(op / file_name, "w") as f:
-                f.write(dt_cols_to_str(output).to_json(na=na, drop_id=True, indent=2))
+        with open(path / file_name, "w") as f:
+            f.write(dt_cols_to_str(output).to_json(na=na, drop_id=True, indent=2))
+        if archive_name:
+            output.to_parquet(
+                (path / archive_name / file_name).with_suffix(".parquet"),
+            )
+
     else:
-        for op in output_paths:
-            op.mkdir(exist_ok=True)
-            with open(op / file_name, "w") as f:
-                geojson.dump(output, f, indent=2)
+        with open(path / file_name, "w") as f:
+            geojson.dump(output, f, indent=2)
+        if archive_name:
+            gdf = geopandas.GeoDataFrame.from_features(
+                output["features"]
+            ).convert_dtypes()
+            gdf.to_parquet((path / archive_name / file_name).with_suffix(".parquet"))
 
 
 # SCRIPT EXECUTION
@@ -303,7 +309,8 @@ def run_pipeline(*, archive=False):
             osm_combined,
             lockers,
         ]
-    )
+    ).convert_dtypes()
+
     save_output(
         all_normalized_unprocessed,
         path=ofp,
@@ -349,9 +356,11 @@ def run_pipeline(*, archive=False):
         )
         | (osm_combined["bicycle_parking"] == "lockers")
     ) & (~open_toronto_ca_test)
-    osm_filtered = pd.concat(
-        [city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]]
-    ).to_crs(32617)  # change to UTM 17 N for centroid calculation
+    osm_filtered = (
+        pd.concat([city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]])
+        .to_crs(32617)  # change to UTM 17 N for centroid calculation
+        .convert_dtypes()
+    )
     osm_centroid = osm_filtered.set_geometry(osm_filtered.geometry.centroid).to_crs(
         4326
     )
@@ -381,7 +390,7 @@ def run_pipeline(*, archive=False):
             dataset.dropna(axis="columns", how="all")
             for name, dataset in city_unclustered.items()
         ]
-    )
+    ).convert_dtypes()
 
     # drop city lockers already in OpenStreetMap
     lockers_unmapped = drop_mapped_city_lockers(lockers, osm_combined)
@@ -444,11 +453,13 @@ def run_pipeline(*, archive=False):
             city_not_racks,
             city_data["bicycle-parking-bike-stations-indoor"],
         ]
-    )
+    ).convert_dtypes()
     city_full = city_full.drop("tmu", axis=1)
 
     # make combined set from all sources
-    all_sources = pd.concat([city_full, osm_centroid, lockers_unmapped])
+    all_sources = pd.concat(
+        [city_full, osm_centroid, lockers_unmapped]
+    ).convert_dtypes()
 
     # Save display files
     # ------------------

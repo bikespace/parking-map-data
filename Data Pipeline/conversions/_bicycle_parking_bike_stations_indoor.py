@@ -154,7 +154,7 @@ def transform_properties(input_props: InputProps, global_props: dict):
             "addr:street": input_props["LINEAR_NAME_FULL"],
             "addr:city": input_props["CITY"],
             "addr:postcode": input_props["POSTAL_CODE"],
-            "start_date": input_props["YR_INSTALL"],
+            "start_date": str(input_props["YR_INSTALL"]),
             f"ref:open.toronto.ca:{_dataset_name}:id": input_props["ID"],
             f"ref:open.toronto.ca:{_dataset_name}:objectid": input_props["OBJECTID"],
             "meta_borough": input_props["MUNICIPALITY"].title(),

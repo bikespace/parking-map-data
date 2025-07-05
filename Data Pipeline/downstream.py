@@ -81,8 +81,12 @@ def group_proximate_rings(rings, radius=5.0):
         columns={"cluster_centroid": "geometry"}
     )
 
-    # convert back to WGS 84 lat/long
-    out_rings = rings_UTM17N.to_crs(4326).astype({"quantity": "Int64"})
+    # convert back to WGS 84 lat/long and convert quantity to string
+    out_rings = (
+        rings_UTM17N.to_crs(4326)
+        .astype({"quantity": "Int64"})  # prevent float in string output
+        .astype({"quantity": "str"})
+    )
 
     return out_rings
 
@@ -182,9 +186,12 @@ def group_proximate_racks(racks, radius=30.0):
         [racks_UTM17N_clusters, racks_UTM17N_singles]
     ).drop("cluster", axis=1)
 
-    # convert back to WGS 84 lat/long
-    out_racks = racks_UTM17N_recombined.to_crs(4326).astype({"quantity": "Int64"})
-
+    # convert back to WGS 84 lat/long and convert quantity to string
+    out_racks = (
+        racks_UTM17N_recombined.to_crs(4326)
+        .astype({"quantity": "Int64"})  # prevent float in string output
+        .astype({"quantity": "str"})
+    )
     return out_racks
 
 
