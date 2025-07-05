@@ -13,6 +13,7 @@ dependencies = [
     "pandas>=2.2.3",
     "pandera>=0.23.1",
     "pathlib>=1.0.1",
+    "progress>=1.6.1",
     "pyarrow>=20.0.0",
     "requests>=2.32.3",
     "scikit-learn>=1.6.1",
