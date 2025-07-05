@@ -64,20 +64,26 @@ def save_output(
 ):
     """Save GeoJSON dict or GeoPandas Geodataframe to file. If archive_name is specified, the file will also be saved in an archive folder in the same path."""
 
-    output_paths = [path]
+    path.mkdir(exist_ok=True)
     if archive_name:
-        output_paths.append(path / archive_name)
+        (path / archive_name).mkdir(exist_ok=True)
 
     if isinstance(output, geopandas.GeoDataFrame):
-        for op in output_paths:
-            op.mkdir(exist_ok=True)
-            with open(op / file_name, "w") as f:
-                f.write(dt_cols_to_str(output).to_json(na=na, drop_id=True, indent=2))
+        with open(path / file_name, "w") as f:
+            f.write(dt_cols_to_str(output).to_json(na=na, drop_id=True, indent=2))
+        if archive_name:
+            output.to_parquet(
+                (path / archive_name / file_name).with_suffix(".parquet"),
+            )
+
     else:
-        for op in output_paths:
-            op.mkdir(exist_ok=True)
-            with open(op / file_name, "w") as f:
-                geojson.dump(output, f, indent=2)
+        with open(path / file_name, "w") as f:
+            geojson.dump(output, f, indent=2)
+        if archive_name:
+            gdf = geopandas.GeoDataFrame.from_features(
+                output["features"]
+            ).convert_dtypes()
+            gdf.to_parquet((path / archive_name / file_name).with_suffix(".parquet"))
 
 
 # SCRIPT EXECUTION
