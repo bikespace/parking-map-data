@@ -22,7 +22,6 @@ from pathlib import Path
 from shapely import Polygon
 import overpass
 
-from pandas.api.types import is_datetime64_any_dtype
 from custom_types import GeoJSONFeatureCollection
 
 import conversions
@@ -32,26 +31,9 @@ from downstream import (
     group_proximate_racks,
     drop_mapped_city_lockers,
 )
+from utilities import copy_production_files, dt_cols_to_str, ref_cols_to_str
 
 geopandas.options.io_engine = "pyogrio"
-
-
-def ref_cols_to_str(gdf: geopandas.GeoDataFrame) -> geopandas.GeoDataFrame:
-    """Convert dtype for ref columns to string"""
-    ref_cols = gdf.filter(like="ref:open.toronto.ca", axis=1)
-    for name, values in ref_cols.items():
-        gdf[name] = values.astype("str")
-    return gdf
-
-
-def dt_cols_to_str(gdf: geopandas.GeoDataFrame) -> geopandas.GeoDataFrame:
-    """Convert dtype for datetime columns to string"""
-    json_not_supported_cols = gdf.columns[
-        [is_datetime64_any_dtype(gdf[c]) for c in gdf.columns]
-    ].union(gdf.columns[gdf.dtypes == "object"])
-    if len(json_not_supported_cols) > 0:
-        gdf = gdf.astype({c: "string" for c in json_not_supported_cols})
-    return gdf
 
 
 def save_output(
@@ -102,9 +84,9 @@ def run_pipeline(*, archive=False):
     if archive:
         print("Archive folder option enabled")
 
-    sfp = Path("Source Files/")
-    ofp = Path("Output Files/")
-    dfp = Path("Display Files/")
+    sfp = Path("bicycle_parking/source_files/")
+    ofp = Path("bicycle_parking/output_files/")
+    dfp = Path("bicycle_parking/display_files/")
 
     # load in details and status
     print("Loading sources and statuses...")
@@ -125,14 +107,26 @@ def run_pipeline(*, archive=False):
 
     # load paths to .json files specifying details and status of data sources
     source_paths = {
-        "city": Path("Data Pipeline/sources/open_toronto_ca_sources.json"),
-        "osm": Path("Data Pipeline/sources/openstreetmap_sources.json"),
-        "lockers": Path("Data Pipeline/sources/toronto_lockers_sources.json"),
+        "city": Path(
+            "src/bikespace_data/bicycle_network/sources/open_toronto_ca_sources.json"
+        ),
+        "osm": Path(
+            "src/bikespace_data/bicycle_network/sources/openstreetmap_sources.json"
+        ),
+        "lockers": Path(
+            "src/bikespace_data/bicycle_network/sources/toronto_lockers_sources.json"
+        ),
     }
     status_paths = {
-        "city": Path("Data Pipeline/statuses/open_toronto_ca_statuses.json"),
-        "osm": Path("Data Pipeline/statuses/openstreetmap_statuses.json"),
-        "lockers": Path("Data Pipeline/statuses/toronto_lockers_statuses.json"),
+        "city": Path(
+            "src/bikespace_data/bicycle_network/statuses/open_toronto_ca_statuses.json"
+        ),
+        "osm": Path(
+            "src/bikespace_data/bicycle_network/statuses/openstreetmap_statuses.json"
+        ),
+        "lockers": Path(
+            "src/bikespace_data/bicycle_network/statuses/toronto_lockers_statuses.json"
+        ),
     }
     sources = load_paths(source_paths)
     statuses = load_paths(status_paths)
@@ -157,8 +151,8 @@ def run_pipeline(*, archive=False):
           - days_since_source_update: calculated number of days between last_checked and last_updated to indicate source data freshness
 
         As a side effect, will save or update the following files:
-        - Data received from the source: /Source Files/{bike_data.dataset_name}.geojson
-        - Normalized (filtered and transformed) data: /Source Files/{bike_data.dataset_name}-normalized.geojson
+        - Data received from the source: /source_files/{bike_data.dataset_name}.geojson
+        - Normalized (filtered and transformed) data: /source_files/{bike_data.dataset_name}-normalized.geojson
 
         """
 
@@ -222,7 +216,7 @@ def run_pipeline(*, archive=False):
         )
 
     # update status JSON
-    status_fp = Path("Data Pipeline/statuses/")
+    status_fp = Path("src/bikespace_data/bicycle_network/statuses/")
     if not status_fp.exists():
         status_fp.mkdir()
     with status_paths["city"].open("w") as f:
@@ -367,7 +361,7 @@ def run_pipeline(*, archive=False):
 
     # drop city data points in the manual exclusion file
     city_exclusions_path = Path(
-        "Data Pipeline/city_modifications/open_toronto_ca_exclusions.json"
+        "src/bikespace_data/bicycle_network/city_modifications/open_toronto_ca_exclusions.json"
     )
     with city_exclusions_path.open("r") as f:
         city_exclusions = json.load(f)
@@ -520,3 +514,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     run_pipeline(archive=args.archive)
+    copy_production_files()
