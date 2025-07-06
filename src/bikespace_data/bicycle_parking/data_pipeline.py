@@ -81,7 +81,6 @@ def get_city_exclusions(
         )
 
     city_exclusions = response.json()
-    breakpoint()
     return city_exclusions
 
 
