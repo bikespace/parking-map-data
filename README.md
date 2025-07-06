@@ -60,13 +60,13 @@ Folder content is as follows:
 
 ### Data Processing Script - Toronto Bicycle Parking Locations
 
-Main script is `Data Pipeline/data_pipeline.py`
+Main script is `src/bikespace_data/bicycle_parking/data_pipeline.py`
 
 You will need [uv installed](https://docs.astral.sh/uv/getting-started/installation/) to run the script.
 
 Run with:
 ```bash
-$ uv run "Data Pipeline/data_pipeline.py"
+$ uv run src/bikespace_data/bicycle_parking/data_pipeline.py
 ```
 
 ### Data Sources:

@@ -4,7 +4,7 @@ name: Run Update
 
 on: # workflow_dispatch
   schedule:
-    - cron: '00 9 * * 2-7' # only on Tue-Sun 9:00am UTC (4:00am ST or 5:00am DT in Toronto)
+    - cron: '00 9 * * 1' # only on Mondays 9:00am UTC (4:00am ST or 5:00am DT in Toronto)
 
 permissions:
   contents: write
@@ -26,13 +26,12 @@ jobs:
     - name: Install the project
       run: uv sync --all-extras
     - name: Run data pipeline script
-      run: uv run src/bikespace_data/bicycle_parking/data_pipeline.py
-    - name: Update repository
+      run: uv run src/bikespace_data/bicycle_parking/data_pipeline.py --archive
+    - name: Update main and data branches
       run: |
         git config user.email ${{ secrets.BOT_EMAIL }}
         git config user.name "tallcoleman-bot"
-        git add bicycle_parking "Display Files" "Output Files"
-        git switch data
+        git add --all
         git commit -m "BOT - ran data pipeline update"
         git fetch origin main
         git push origin main
