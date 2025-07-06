@@ -1,16 +1,24 @@
-# Toronto Bicycle Parking Map Data
+# BikeSpace Project Data for Toronto Bicycle Parking and Other Sources
 
-This script downloads, filters, and transforms data from two major sources: City of Toronto Open Data and OpenStreetMap. The goal of the script is to provide a clean and uniform data set of bicycle parking locations in Toronto.
+This repository holds and runs scripts to provide data used by the BikeSpace project, including a clean and up to date dataset of bicycle parking locations in Toronto and the city bicycle network.
 
-## [BikeSpace Parking Map](https://bikespace.ca/parking-map)
+## [View the Data](https://github.com/bikespace/parking-map-data/tree/data)
+
+The output data for this repository can be [viewed in the data branch](https://github.com/bikespace/parking-map-data/tree/data).
+
+## Bicycle Parking Data
+
+The scripts in `src/../bicycle_parking` download, filter, and transform data from two major sources: City of Toronto Open Data and OpenStreetMap. The goal of the script is to provide a clean and uniform data set of bicycle parking locations in Toronto.
+
+### [BikeSpace Parking Map](https://bikespace.ca/parking-map)
 
 The data is used for the BikeSpace parking map available at [bikespace.ca/parking-map](https://bikespace.ca/parking-map).
 
-## Prototype Maps
+### Prototype Maps
 
 Proof of concept maps that also use this data:
 
-### [Map Demo](https://demo-map-app.new-parking-map.pages.dev/)
+#### [Map Demo](https://demo-map-app.new-parking-map.pages.dev/)
 
 Link: https://demo-map-app.new-parking-map.pages.dev/
 
@@ -20,7 +28,7 @@ Link: https://demo-map-app.new-parking-map.pages.dev/
 - The City of Toronto bike network is shown for context (source: https://open.toronto.ca/dataset/cycling-network/)
 - This is a prototype used to help design the bicycle parking map now available on bikespace.ca
 
-### [Quest Map](https://quest-map.new-parking-map.pages.dev/)
+#### [Quest Map](https://quest-map.new-parking-map.pages.dev/)
 
 Link: https://quest-map.new-parking-map.pages.dev/
 
@@ -37,11 +45,11 @@ How to fix:
   - You can link the OpenStreetMap entry to any of the City datasets using the appropriate [ref tag](https://www.openstreetmap.org/user/tallcoleman).
   - The correct ref tag value should be pre-generated for you if you click on the details in the quest map.
   - The script uses the ref tags to de-duplicate entries for the "display" dataset.
-- To remove City bike parking that no longer exists, add an entry in `Data Pipeline/city_modifications/open_toronto_ca_exclusions.json`.
-  - There is a template in the `Data Pipeline/city_modifications` folder to help you.
+- To remove City bike parking that no longer exists, add an entry in `bicycle_parking/city_modifications/open_toronto_ca_exclusions.json` in the [data branch](https://github.com/bikespace/parking-map-data/tree/data).
+  - There is a template in the `bicycle_parking/city_modifications` folder to help you.
   - These entries will be removed from the "display" dataset.
 
-### [Current Map](https://demo-map-app.new-parking-map.pages.dev/CurrentMap/)
+#### [Current Map](https://demo-map-app.new-parking-map.pages.dev/CurrentMap/)
 
 Link: https://demo-map-app.new-parking-map.pages.dev/CurrentMap/
 
@@ -50,26 +58,26 @@ Link: https://demo-map-app.new-parking-map.pages.dev/CurrentMap/
 - For the dataset, see [datasets/old_parking_data in the bikespace repo](https://github.com/bikespace/bikespace/tree/main/datasets/old_parking_data)
 
 
-## Development
+### Development
 
 Folder content is as follows:
 
-* Source Files: data received from the original source before any upstream filtering or transformation
-* Output Files: data after upstream filtering and transformation
-* Display Files: final data after downstream filtering and transformation
+* `source_files`: data received from the original source before any upstream filtering or transformation
+* `output_files`: data after upstream filtering and transformation
+* `display_files`: final data after downstream filtering and transformation
 
-### Data Processing Script - Toronto Bicycle Parking Locations
+#### Data Processing Script - Toronto Bicycle Parking Locations
 
-Main script is `Data Pipeline/data_pipeline.py`
+Main script is `src/bikespace_data/bicycle_parking/data_pipeline.py`
 
 You will need [uv installed](https://docs.astral.sh/uv/getting-started/installation/) to run the script.
 
 Run with:
 ```bash
-$ uv run "Data Pipeline/data_pipeline.py"
+$ uv run src/bikespace_data/bicycle_parking/data_pipeline.py
 ```
 
-### Data Sources:
+#### Data Sources:
 
 The OpenStreetMap data includes all elements with the tag "amenity=bicycle_parking" within the City of Toronto relation (id=324211).
 The City of Toronto Open Data portal has four current datasets:
@@ -80,15 +88,15 @@ The City of Toronto Open Data portal has four current datasets:
 
 More information about these datasets can be found on open.toronto.ca
 
-### Upstream Filtering
+#### Upstream Filtering
 
 Upstream filtering removes irrelevant features (e.g. features in City data that have been "temporarily removed" or not yet marked as installed). 
 
-### Upstream Transformation
+#### Upstream Transformation
 
 The primary goal of upstream data transformations is to ensure a consistent output format. The output format is based on the OpenStreetMap tagging schema, with the addition of fields with the "meta_" prefix for information that may be useful but does not fit with a logical OpenStreetMap tag. (In many cases, in OpenStreetMap this meta information would be inferred from the edit history, the geography, or added as a relation).
 
-### Downstream Filtering and Transformation
+#### Downstream Filtering and Transformation
 
 Downstream filtering and transformation is applied to clean and organize the data in more complex ways, and requires analyzing features and datasets in relation to each other. Examples include:
 
@@ -101,16 +109,16 @@ OpenStreetMap:
 
 City of Toronto:
 * Exclude: features where the ID matches a retained feature from OpenStreetMap
-* Exclude: features included in `Data Pipeline/city_modifications/open_toronto_ca_exclusions.json` (intended to allow for City of Toronto features which have been removed, but have not yet been updated in the City dataset).
+* Exclude: features included in `bicycle_parking/city_modifications/open_toronto_ca_exclusions.json` in the [data branch](https://github.com/bikespace/parking-map-data/tree/data) (intended to allow for City of Toronto features which have been removed, but have not yet been updated in the City dataset).
 
 Clustering of city ring and posts (i.e. `"bicycle_parking"="bollard"`) to reduce clutter - ring and post features within 5m of each other are combined into a single point.
 
 De-duplication of bicycle racks across multiple City datasets - in many cases, racks from different City datasets within 30m of each other are duplicates. Since there may be cases where they are not duplicates, the processing combines the features into a single point that retains the properties of all of them. In order to prevent racks from being combined, they should be surveyed to verify their number, capacity, and locations, and added to OpenStreetMap.
 
-## City Exclusions - Instructions
+### City Exclusions - Instructions
 
-1. Copy template from `Data Pipeline/city_modifications/exclusion_template.json`
-2. Add to `Data Pipeline/city_modifications/open_toronto_ca_exclusions.json`
+1. Copy template from `bicycle_parking/city_modifications/exclusion_template.json`
+2. Add to `bicycle_parking/city_modifications/open_toronto_ca_exclusions.json`
 3. Add IDs, reason, and notes. If there is more than one ID with the same key, do not use the semicolon separator, add a separate line for each instance of the key-value pair.
 
 Reasons:
