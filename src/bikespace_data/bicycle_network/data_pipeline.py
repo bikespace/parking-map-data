@@ -118,15 +118,9 @@ def run_pipeline(*, archive=False):
         ),
     }
     status_paths = {
-        "city": Path(
-            "src/bikespace_data/bicycle_network/statuses/open_toronto_ca_statuses.json"
-        ),
-        "osm": Path(
-            "src/bikespace_data/bicycle_network/statuses/openstreetmap_statuses.json"
-        ),
-        "lockers": Path(
-            "src/bikespace_data/bicycle_network/statuses/toronto_lockers_statuses.json"
-        ),
+        "city": Path("bicycle_parking/statuses/open_toronto_ca_statuses.json"),
+        "osm": Path("bicycle_parking/statuses/openstreetmap_statuses.json"),
+        "lockers": Path("bicycle_parking/statuses/toronto_lockers_statuses.json"),
     }
     sources = load_paths(source_paths)
     statuses = load_paths(status_paths)
@@ -216,7 +210,7 @@ def run_pipeline(*, archive=False):
         )
 
     # update status JSON
-    status_fp = Path("src/bikespace_data/bicycle_network/statuses/")
+    status_fp = Path("bicycle_parking/statuses/")
     if not status_fp.exists():
         status_fp.mkdir()
     with status_paths["city"].open("w") as f:
@@ -361,7 +355,7 @@ def run_pipeline(*, archive=False):
 
     # drop city data points in the manual exclusion file
     city_exclusions_path = Path(
-        "src/bikespace_data/bicycle_network/city_modifications/open_toronto_ca_exclusions.json"
+        "bicycle_parking/city_modifications/open_toronto_ca_exclusions.json"
     )
     with city_exclusions_path.open("r") as f:
         city_exclusions = json.load(f)
