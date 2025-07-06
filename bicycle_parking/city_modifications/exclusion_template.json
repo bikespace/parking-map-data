@@ -1,0 +1,10 @@
+{
+    "survey_date": "YYYY-MM-DD",
+    "ids": [
+      {"ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": ""},
+      {"ref:open.toronto.ca:bicycle-parking-racks:objectid": ""},
+      {"ref:open.toronto.ca:street-furniture-bicycle-parking:id": ""},
+    ],
+    "reason": "removed|missing",
+    "notes": ""
+},
