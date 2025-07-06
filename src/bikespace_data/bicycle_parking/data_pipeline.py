@@ -11,6 +11,7 @@ from argparse import ArgumentParser
 from datetime import datetime, timezone
 from itertools import chain
 import json
+import requests
 from typing import Literal
 from zoneinfo import ZoneInfo
 
@@ -68,6 +69,22 @@ def save_output(
             gdf.to_parquet((path / archive_name / file_name).with_suffix(".parquet"))
 
 
+def get_city_exclusions(
+    url: str = "https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/bicycle_parking/city_modifications/open_toronto_ca_exclusions.json",
+):
+    """Gets city exclusions from data branch. Implemented as a url request to prepare for later switch to hosting exclusions via API."""
+    response = requests.get(url)
+
+    if response.status_code != 200:
+        raise Exception(
+            f"Could not get city exclusions from resource url. Resource returned status {response.status_code}"
+        )
+
+    city_exclusions = response.json()
+    breakpoint()
+    return city_exclusions
+
+
 # SCRIPT EXECUTION
 # ----------------
 
@@ -87,6 +104,9 @@ def run_pipeline(*, archive=False):
     sfp = Path("bicycle_parking/source_files/")
     ofp = Path("bicycle_parking/output_files/")
     dfp = Path("bicycle_parking/display_files/")
+
+    for path in [sfp, ofp, dfp]:
+        path.mkdir(exist_ok=True, parents=True)
 
     # load in details and status
     print("Loading sources and statuses...")
@@ -354,11 +374,7 @@ def run_pipeline(*, archive=False):
     )
 
     # drop city data points in the manual exclusion file
-    city_exclusions_path = Path(
-        "bicycle_parking/city_modifications/open_toronto_ca_exclusions.json"
-    )
-    with city_exclusions_path.open("r") as f:
-        city_exclusions = json.load(f)
+    city_exclusions = get_city_exclusions()
 
     city_exclusions_ids = list(chain.from_iterable([x["ids"] for x in city_exclusions]))
 
