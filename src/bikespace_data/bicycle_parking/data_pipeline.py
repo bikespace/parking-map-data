@@ -108,13 +108,13 @@ def run_pipeline(*, archive=False):
     # load paths to .json files specifying details and status of data sources
     source_paths = {
         "city": Path(
-            "src/bikespace_data/bicycle_network/sources/open_toronto_ca_sources.json"
+            "src/bikespace_data/bicycle_parking/sources/open_toronto_ca_sources.json"
         ),
         "osm": Path(
-            "src/bikespace_data/bicycle_network/sources/openstreetmap_sources.json"
+            "src/bikespace_data/bicycle_parking/sources/openstreetmap_sources.json"
         ),
         "lockers": Path(
-            "src/bikespace_data/bicycle_network/sources/toronto_lockers_sources.json"
+            "src/bikespace_data/bicycle_parking/sources/toronto_lockers_sources.json"
         ),
     }
     status_paths = {
