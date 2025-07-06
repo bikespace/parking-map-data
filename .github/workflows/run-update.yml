@@ -4,7 +4,7 @@ name: Run Update
 
 on: # workflow_dispatch
   schedule:
-    - cron: '00 9 * * 2-7' # only on Tue-Sun 9:00am UTC (4:00am ST or 5:00am DT in Toronto)
+    - cron: '00 9 * * 2-0' # only on Tue-Sun 9:00am UTC (4:00am ST or 5:00am DT in Toronto)
 
 permissions:
   contents: write
