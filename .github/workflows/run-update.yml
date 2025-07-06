@@ -27,12 +27,14 @@ jobs:
       run: uv sync --all-extras
     - name: Run data pipeline script
       run: uv run src/bikespace_data/bicycle_parking/data_pipeline.py
-    - name: Update repository
+    - name: Git setup
       run: |
         git config user.email ${{ secrets.BOT_EMAIL }}
         git config user.name "tallcoleman-bot"
-        git add bicycle_parking "Display Files" "Output Files"
+    - name: Update data branch
+      run: |
+        git add bicycle_parking
         git switch data
         git commit -m "BOT - ran data pipeline update"
-        git fetch origin main
-        git push origin main
+        git fetch origin data
+        git push origin data
