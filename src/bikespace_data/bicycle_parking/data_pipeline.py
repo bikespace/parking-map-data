@@ -47,9 +47,9 @@ def save_output(
 ):
     """Save GeoJSON dict or GeoPandas Geodataframe to file. If archive_name is specified, the file will also be saved in an archive folder in the same path."""
 
-    path.mkdir(exist_ok=True)
+    path.mkdir(exist_ok=True, parents=True)
     if archive_name:
-        (path / archive_name).mkdir(exist_ok=True)
+        (path / archive_name).mkdir(exist_ok=True, parents=True)
 
     if isinstance(output, geopandas.GeoDataFrame):
         with open(path / file_name, "w") as f:
@@ -230,8 +230,8 @@ def run_pipeline(*, archive=False):
 
     # update status JSON
     status_fp = Path("bicycle_parking/statuses/")
-    if not status_fp.exists():
-        status_fp.mkdir()
+    status_fp.mkdir(exist_ok=True, parents=True)
+
     with status_paths["city"].open("w") as f:
         json.dump(statuses["city"], f, indent=2)
 
