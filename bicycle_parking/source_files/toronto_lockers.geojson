@@ -6,8 +6,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.387144,
-          43.767015
+          -79.387143,
+          43.767019
         ]
       },
       "properties": {
@@ -21,8 +21,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.344649,
-          43.777874
+          -79.344656,
+          43.77788
         ]
       },
       "properties": {
@@ -36,8 +36,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.462384,
-          43.749753
+          -79.462395,
+          43.749754
         ]
       },
       "properties": {
@@ -51,8 +51,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.230773,
-          43.739683
+          -79.230781,
+          43.739678
         ]
       },
       "properties": {
@@ -66,8 +66,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.564493,
-          43.643049
+          -79.56449,
+          43.643048
         ]
       },
       "properties": {
@@ -81,8 +81,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.420871,
-          43.634882
+          -79.420874,
+          43.634879
         ]
       },
       "properties": {
@@ -96,8 +96,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.415783,
-          43.782044
+          -79.415789,
+          43.782048
         ]
       },
       "properties": {
@@ -127,7 +127,7 @@
         "type": "Point",
         "coordinates": [
           -79.198272,
-          43.754725
+          43.754729
         ]
       },
       "properties": {
@@ -141,8 +141,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.263701,
-          43.732525
+          -79.263697,
+          43.73253
         ]
       },
       "properties": {
@@ -156,13 +156,13 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.545261,
-          43.590704
+          -79.543247,
+          43.592172
         ]
       },
       "properties": {
-        "location": "Long Branch GO Station",
-        "location_description": "Located outside the station house at Lakeshore Rd. and Browns Line",
+        "location": "Long Branch",
+        "location_description": "Located at Lakeshore Rd. and Browns Line",
         "quantity": "# of lockers: 4"
       }
     },
@@ -171,8 +171,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.389135,
-          43.646028
+          -79.389138,
+          43.646029
         ]
       },
       "properties": {
@@ -186,8 +186,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.398499,
-          43.667969
+          -79.398494,
+          43.667965
         ]
       },
       "properties": {
@@ -201,8 +201,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.131605,
-          43.780701
+          -79.131603,
+          43.7807
         ]
       },
       "properties": {
@@ -216,8 +216,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.25768,
-          43.772898
+          -79.257689,
+          43.772891
         ]
       },
       "properties": {
@@ -231,7 +231,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.251678,
+          -79.25168,
           43.718606
         ]
       },
@@ -246,8 +246,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.448566,
-          43.723468
+          -79.448576,
+          43.723475
         ]
       },
       "properties": {
@@ -261,8 +261,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.414947,
-          43.767279
+          -79.414952,
+          43.767282
         ]
       },
       "properties": {
@@ -276,8 +276,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.535763,
-          43.636728
+          -79.535759,
+          43.636727
         ]
       },
       "properties": {

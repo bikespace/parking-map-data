@@ -1,8 +1,8 @@
 {
   "toronto_lockers": {
-    "last_updated": "2021-06-11T16:28:18-04:00",
+    "last_updated": "2025-07-02T09:15:56-04:00",
     "num_normalized_features": 19,
-    "last_checked": "2025-06-30T09:13:47.991888+00:00",
-    "days_since_source_update": 1479
+    "last_checked": "2025-07-07T10:32:40.454548+00:00",
+    "days_since_source_update": 4
   }
 }
