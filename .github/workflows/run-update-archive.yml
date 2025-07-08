@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  update-data:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,16 +31,19 @@ jobs:
       run: |
         git config user.email ${{ secrets.BOT_EMAIL }}
         git config user.name "tallcoleman-bot"
-    - name: Update main branch
+    - name: Update and push to main
       run: |
         git add "Display Files" "Output Files"
         git commit -m "BOT - ran data pipeline update"
         git fetch origin main
         git push origin main
-    - name: Update data branch
+    - name: Build commit on main (not pushed)
       run: |
         git add bicycle_parking
-        git switch data
         git commit -m "BOT - ran data pipeline update"
+    - name: Cherry pick and push commit to data branch
+      run: |
+        git switch data
+        git cherry-pick main --strategy-option=theirs
         git fetch origin data
         git push origin data
