@@ -31,6 +31,7 @@ jobs:
       run: |
         git config user.email ${{ secrets.BOT_EMAIL }}
         git config user.name "tallcoleman-bot"
+        git fetch --depth=1
     - name: Build commit on main (not pushed)
       run: |
         git add bicycle_parking
