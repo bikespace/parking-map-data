@@ -5397,15 +5397,19 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2015-06-18T19:17:12+00:00",
+        "bicycle_parking": "stands",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-07-11T04:55:39+00:00",
         "meta_osm_id": "node/3603414583"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4200661,
-          43.6398704
+          -79.420101,
+          43.6399172
         ]
       }
     },
@@ -48799,6 +48803,63 @@
         "coordinates": [
           -79.3469135,
           43.7753768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-07-11T04:55:39+00:00",
+        "meta_osm_id": "node/12993616148"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4200854,
+          43.6398808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-07-11T04:55:39+00:00",
+        "meta_osm_id": "node/12993616149"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4200722,
+          43.639843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-07-11T04:55:39+00:00",
+        "meta_osm_id": "node/12993616150"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4200602,
+          43.6398099
         ]
       }
     },
