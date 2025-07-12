@@ -3283,14 +3283,14 @@
       "properties": {
         "amenity": "bicycle_parking",
         "capacity": "50",
-        "meta_feature_last_updated": "2015-08-26T15:17:05+00:00",
+        "meta_feature_last_updated": "2025-07-11T15:58:02+00:00",
         "meta_osm_id": "node/2302107581"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3827766,
-          43.6473148
+          -79.382782,
+          43.6473413
         ]
       }
     },
@@ -48860,6 +48860,79 @@
         "coordinates": [
           -79.4200602,
           43.6398099
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "32",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Toronto District School Board",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2025-07-11T21:37:11+00:00",
+        "meta_osm_id": "node/12994900100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.460562,
+          43.6627077
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "bike_ride": "yes",
+        "capacity": "7",
+        "covered": "no",
+        "description": "bike rack on the grass by the railpath trail",
+        "fee": "no",
+        "operator": "Metrolinx",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-07-11T21:37:11+00:00",
+        "meta_osm_id": "node/12994976201"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4518978,
+          43.6591553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "cargo_bike": "yes",
+        "colour": "black",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "2",
+        "meta_feature_last_updated": "2025-07-11T21:37:11+00:00",
+        "meta_osm_id": "node/12994976202"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4625231,
+          43.6624061
         ]
       }
     },
