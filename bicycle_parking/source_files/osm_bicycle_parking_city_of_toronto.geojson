@@ -30112,14 +30112,14 @@
         "bicycle_parking": "stands",
         "capacity": "3",
         "covered": "no",
-        "meta_feature_last_updated": "2024-01-27T21:35:37+00:00",
+        "meta_feature_last_updated": "2025-07-13T02:34:08+00:00",
         "meta_osm_id": "node/11557779403"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3551302,
-          43.6463753
+          -79.3551058,
+          43.6463345
         ]
       }
     },
@@ -48933,6 +48933,22 @@
         "coordinates": [
           -79.4625231,
           43.6624061
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "capacity": "3",
+        "meta_feature_last_updated": "2025-07-12T17:40:54+00:00",
+        "meta_osm_id": "node/12996144629"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.47114,
+          43.6693607
         ]
       }
     },
