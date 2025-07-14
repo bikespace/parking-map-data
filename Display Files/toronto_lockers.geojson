@@ -6,33 +6,6 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
-        "capacity": 12,
-        "covered": "yes",
-        "fee": "yes",
-        "operator": "City of Toronto",
-        "operator:type": "government",
-        "access": "customers",
-        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "description": "Bayview Subway Station: North side of Sheppard Ave., east of Bayview Ave.",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
-        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
-        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2025-07-02 09:15:56-04:00"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3871427,
-          43.76701859999999
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "lockers",
         "capacity": 4,
         "covered": "yes",
         "fee": "yes",
@@ -51,7 +24,7 @@
         "type": "Point",
         "coordinates": [
           -79.3446565,
-          43.77788009999999
+          43.7778801
         ]
       }
     },
@@ -105,7 +78,7 @@
         "type": "Point",
         "coordinates": [
           -79.5644903,
-          43.64304759999999
+          43.643047599999996
         ]
       }
     },
@@ -267,7 +240,7 @@
         "type": "Point",
         "coordinates": [
           -79.2516804,
-          43.718605499999995
+          43.71860550000001
         ]
       }
     },
@@ -294,7 +267,7 @@
         "type": "Point",
         "coordinates": [
           -79.448576,
-          43.723474899999985
+          43.72347489999999
         ]
       }
     },
@@ -321,7 +294,7 @@
         "type": "Point",
         "coordinates": [
           -79.5357585,
-          43.63672739999999
+          43.636727399999984
         ]
       }
     }
