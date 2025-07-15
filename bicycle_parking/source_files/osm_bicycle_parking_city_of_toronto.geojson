@@ -48955,6 +48955,30 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "6",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "3",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-07-14T22:38:55+00:00",
+        "meta_osm_id": "node/13000094792"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.246347,
+          43.755527
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -51410,6 +51434,78 @@
             [
               -79.4630885,
               43.6749195
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "meta_feature_last_updated": "2025-07-15T02:36:35+00:00",
+        "meta_osm_id": "way/1414775242"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.408847,
+              43.6372408
+            ],
+            [
+              -79.4088452,
+              43.6370953
+            ],
+            [
+              -79.408837,
+              43.6370953
+            ],
+            [
+              -79.4088388,
+              43.6372409
+            ],
+            [
+              -79.408847,
+              43.6372408
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "meta_feature_last_updated": "2025-07-15T02:36:35+00:00",
+        "meta_osm_id": "way/1414775243"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.4088414,
+              43.6373051
+            ],
+            [
+              -79.408832,
+              43.6373049
+            ],
+            [
+              -79.408834,
+              43.6372561
+            ],
+            [
+              -79.4088434,
+              43.6372563
+            ],
+            [
+              -79.4088414,
+              43.6373051
             ]
           ]
         ]
