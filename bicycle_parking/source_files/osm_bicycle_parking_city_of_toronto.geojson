@@ -22772,14 +22772,14 @@
         "bicycle_parking": "stands",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2022-10-08T17:44:23+00:00",
+        "meta_feature_last_updated": "2025-07-16T01:50:00+00:00",
         "meta_osm_id": "node/10084952196"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4157364,
-          43.667321
+          -79.4157303,
+          43.6673208
         ]
       }
     },
@@ -43044,14 +43044,14 @@
         "bicycle_parking": "stands",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2024-12-22T19:42:31+00:00",
+        "meta_feature_last_updated": "2025-07-16T03:34:56+00:00",
         "meta_osm_id": "node/12442177541"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3893869,
-          43.7087018
+          -79.3894447,
+          43.7087104
         ]
       }
     },
