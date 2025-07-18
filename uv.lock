@@ -35,7 +35,7 @@ dependencies = [
     { name = "numpy" },
     { name = "overpass" },
     { name = "pandas" },
-    { name = "pandera" },
+    { name = "pandera", extra = ["geopandas"] },
     { name = "pathlib" },
     { name = "progress" },
     { name = "pyarrow" },
@@ -58,7 +58,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.2.4" },
     { name = "overpass", specifier = ">=0.7.2" },
     { name = "pandas", specifier = ">=2.2.3" },
-    { name = "pandera", specifier = ">=0.25.0" },
+    { name = "pandera", extras = ["geopandas"], specifier = ">=0.24.0" },
     { name = "pathlib", specifier = ">=1.0.1" },
     { name = "progress", specifier = ">=1.6.1" },
     { name = "pyarrow", specifier = ">=20.0.0" },
@@ -297,7 +297,7 @@ wheels = [
 
 [[package]]
 name = "pandera"
-version = "0.25.0"
+version = "0.24.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "packaging" },
@@ -306,9 +306,15 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "typing-inspect" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/13/c1/02f78cd18cd32a009405c847dcf430a97d1a8c162f6e8872acae928c8f20/pandera-0.25.0.tar.gz", hash = "sha256:af3bbaa163672c91b83d59d70715f25c4134dbccfc8bc89a642a2f0e23db951e", size = 555391, upload-time = "2025-07-08T19:20:22.106Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/47/4e/9eaf279c32058839361085faf203d728967d0fe1d6229dd989139bdb34e0/pandera-0.24.0.tar.gz", hash = "sha256:154231780643bc73b121bd976b0ada9dcebb3e065c622954fd099dc299cf44bd", size = 513238, upload-time = "2025-05-15T14:08:47.596Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/71/e0/234707103c742555e1c23bff51f3f0e496c144cd76fcf5a6b800dfe193f2/pandera-0.25.0-py3-none-any.whl", hash = "sha256:365a555accc46404466641203e297722d424d74a1315f077ab899e1344f82303", size = 293336, upload-time = "2025-07-08T19:20:20.44Z" },
+    { url = "https://files.pythonhosted.org/packages/e9/4d/ec550fbb5fe09a7c0a93a3f9b2d87446f728c1ef052f786b195eb4620def/pandera-0.24.0-py3-none-any.whl", hash = "sha256:3b7de575b43a4aa03a1561802be4ee0c7471e49153684fe327f7bbea0724b02b", size = 267092, upload-time = "2025-05-15T14:08:45.77Z" },
+]
+
+[package.optional-dependencies]
+geopandas = [
+    { name = "geopandas" },
+    { name = "shapely" },
 ]
 
 [[package]]

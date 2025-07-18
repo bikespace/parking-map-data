@@ -1,10 +1,18 @@
 from datetime import datetime, timezone
 from pathlib import Path
 
-import geopandas as gpd
+import pandera.pandas as pa
+from pandera.errors import SchemaErrors
 
 from bikespace_data.bicycle_network.utilities import StatusManager
 from bikespace_data.resources.toronto_open_data import TODResponse, request_tod_gdf
+
+cycling_network_schema = pa.DataFrameSchema(
+    columns={
+        "INFRA_HIGHORDER": pa.Column(str, nullable=True),
+        "geometry": pa.Column("geometry"),
+    },
+)
 
 
 def update_cycling_network(
@@ -31,6 +39,11 @@ def update_cycling_network(
     if sm.last_updated is None or last_updated > sm.last_updated:
         cycling_network = cycling_network_data["gdf"]
         now = datetime.now(timezone.utc)
+
+        try:
+            cycling_network_schema.validate(cycling_network, lazy=True)
+        except SchemaErrors as e:
+            print(f"Schema Error with cycling-network: {e}")
 
         output_path.parent.mkdir(exist_ok=True, parents=True)
         cycling_network.to_file(
