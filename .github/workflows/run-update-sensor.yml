@@ -1,0 +1,44 @@
+# This workflow will install Python dependencies and run the data pipeline script
+
+name: Run Update (Sensor)
+
+on: # workflow_dispatch
+  schedule:
+    - cron: '00 9 * * *' # all days at 9:00am UTC (4:00am ST or 5:00am DT in Toronto)
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install uv
+      uses: astral-sh/setup-uv@v5
+      with:
+        version: "0.6.14"
+    - name: "Set up Python"
+      uses: actions/setup-python@v5
+      with:
+        python-version-file: ".python-version"
+    - name: Install the project
+      run: uv sync --all-extras
+    - name: Run bike network update script
+      run: uv run src/bikespace_data/bicycle_network/update_cycling_network.py
+    - name: Git setup
+      run: |
+        git config user.email ${{ secrets.BOT_EMAIL }}
+        git config user.name "tallcoleman-bot"
+        git fetch --depth=1
+    - name: Build commit on main (not pushed)
+      run: |
+        git add bicycle_network
+        git commit -m "BOT - ran data pipeline update"
+    - name: Cherry pick and push commit to data branch
+      run: |
+        git switch data
+        git cherry-pick main --strategy-option=theirs
+#       git fetch origin data
+#       git push origin data

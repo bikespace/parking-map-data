@@ -79,3 +79,7 @@ def update_cycling_network(
             last_checked=now,
         )
         sm.save()
+
+
+if __name__ == "__main__":
+    update_cycling_network()
