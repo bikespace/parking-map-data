@@ -76,3 +76,24 @@ def test_status_manager(mocker, tmp_path):
     # save the status table (twice)
     sm.save()
     sm.save()
+
+
+def test_status_manager_tznaive_date_handling(mocker):
+    mock_response = mocker.MagicMock()
+    mock_response.status_code = 404
+    mocker.patch("requests.get", return_value=mock_response)
+
+    # load the status table (no valid source file)
+    sm = StatusManager(
+        status_source="mocked",
+        status_save=Path("bicycle_network_status.csv"),
+    )
+
+    # add a tz-naive datetime
+    sm.add(
+        dataset_name="test",
+        last_updated=datetime.fromisoformat("2025-06-30T23:00:00.000000"),
+        num_features=1,
+        last_checked=datetime.now(timezone.utc),
+    )
+    assert sm.last_updated == datetime(2025, 6, 30, 23, 0, 0, 0, tzinfo=timezone.utc)

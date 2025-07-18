@@ -38,7 +38,7 @@ class StatusManager:
             )
 
     @property
-    def last_updated(self):
+    def last_updated(self) -> datetime | None:
         if len(self._status_table) == 0:
             return None
         else:
@@ -55,18 +55,21 @@ class StatusManager:
         """Add an entry to the status table.
 
         Note: if either of the datetime arguments is provided in a timezone-naive format, it will assume the timezone is UTC"""
+
+        # Note: ckan default is UTC for datetime: https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-display-timezone
         last_updated_ts = pd.Timestamp(
             last_updated
             if last_updated.tzinfo is not None
-            else last_updated.astimezone(timezone.utc),
+            else last_updated.replace(tzinfo=timezone.utc),
         )
         last_checked_ts = pd.Timestamp(
             last_checked
             if last_checked.tzinfo is not None
-            else last_checked.astimezone(timezone.utc),
+            else last_checked.replace(tzinfo=timezone.utc),
         )
         self._status_table = pd.concat(
-            [
+            df.dropna(axis="columns", how="all")
+            for df in [
                 self._status_table,
                 pd.DataFrame(
                     [
@@ -85,4 +88,5 @@ class StatusManager:
         ).reset_index(drop=True)
 
     def save(self):
+        self.status_save.parent.mkdir(exist_ok=True, parents=True)
         self._status_table.to_csv(self.status_save, index=False)
