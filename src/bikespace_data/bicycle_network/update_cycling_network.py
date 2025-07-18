@@ -9,11 +9,59 @@ from bikespace_data.resources.toronto_open_data import TODResponse, request_tod_
 
 cycling_network_schema = pa.DataFrameSchema(
     columns={
-        "SEGMENT_ID": pa.Column("int32"),
+        "SEGMENT_ID": pa.Column(int, coerce=True),
         "INFRA_HIGHORDER": pa.Column(str, nullable=True),
         "INFRA_LOWORDER": pa.Column(str, nullable=True),
         "geometry": pa.Column("geometry"),
     },
+)
+
+bike_lane_types = [
+    # protected bike route
+    "Cycle Track",
+    "Cycle Track - Contraflow",
+    "Bi-Directional Cycle Track",
+    # painted bike route
+    "Bike Lane",
+    "Bike Lane - Buffered",
+    "Bike Lane - Contraflow",
+    "Contra-Flow Bike Lane",
+    "Contraflow",
+    # multi-use trails
+    "Multi-Use Trail",
+    "Multi-Use Trail - Boulevard",
+    "Multi-Use Trail - Connector",
+    "Multi-Use Trail - Entrance",
+    "Multi-Use Trail - Existing Connector",
+    "Park Road",
+    # unprotected connectors
+    "Sharrows",
+    "Sharrows - Arterial",
+    "Sharrows - Arterial - Connector",
+    "Sharrows - Wayfinding",
+    "Signed Route (No Pavement Markings)",
+    # nulls
+    " ",
+    "<Null>",
+    "--",
+    "---",
+    "N/A",
+]
+
+cycling_network_schema_optional = pa.DataFrameSchema(
+    columns={
+        **cycling_network_schema.columns,
+        "INFRA_HIGHORDER": pa.Column(
+            str,
+            nullable=True,
+            checks=pa.Check.isin(bike_lane_types, ignore_na=True),
+        ),
+        "INFRA_LOWORDER": pa.Column(
+            str,
+            nullable=True,
+            checks=pa.Check.isin(bike_lane_types, ignore_na=True),
+        ),
+    }
 )
 
 
@@ -43,10 +91,12 @@ def update_cycling_network(
         cycling_network = cycling_network_data["gdf"].sort_values(by="SEGMENT_ID")
         now = datetime.now(timezone.utc)
 
+        # validate data meets requirements and log optional variances
+        cycling_network_schema.validate(cycling_network, lazy=True)
         try:
-            cycling_network_schema.validate(cycling_network, lazy=True)
+            cycling_network_schema_optional.validate(cycling_network, lazy=True)
         except SchemaErrors as e:
-            print(f"Schema Error with cycling-network: {e}")
+            print(f"Non-breaking Schema Error with cycling-network: {e}")
 
         # save full file received
         output_path.parent.mkdir(exist_ok=True, parents=True)
