@@ -18,13 +18,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3871441,
-          43.7670152
+          -79.3871427,
+          43.7670186
         ]
       }
     },
@@ -45,13 +45,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3446491,
-          43.7778743
+          -79.3446565,
+          43.7778801
         ]
       }
     },
@@ -72,13 +72,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4623841,
-          43.7497527
+          -79.4623947,
+          43.7497537
         ]
       }
     },
@@ -99,13 +99,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2307733,
-          43.7396826
+          -79.2307806,
+          43.7396776
         ]
       }
     },
@@ -126,13 +126,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5644928,
-          43.6430495
+          -79.5644903,
+          43.6430476
         ]
       }
     },
@@ -153,13 +153,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4208711,
-          43.6348816
+          -79.4208741,
+          43.6348794
         ]
       }
     },
@@ -180,13 +180,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4157825,
-          43.7820442
+          -79.4157887,
+          43.7820476
         ]
       }
     },
@@ -207,7 +207,7 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
@@ -234,13 +234,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.1982717,
-          43.7547245
+          -79.1982722,
+          43.7547291
         ]
       }
     },
@@ -261,13 +261,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2637012,
-          43.7325254
+          -79.2636967,
+          43.7325304
         ]
       }
     },
@@ -283,18 +283,18 @@
         "operator:type": "government",
         "access": "customers",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "description": "Long Branch GO Station: Located outside the station house at Lakeshore Rd. and Browns Line",
+        "description": "Long Branch: Located at Lakeshore Rd. and Browns Line",
         "meta_source": "City of Toronto",
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5452609,
-          43.5907041
+          -79.5432472,
+          43.5921721
         ]
       }
     },
@@ -315,13 +315,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3891354,
-          43.6460279
+          -79.3891382,
+          43.6460289
         ]
       }
     },
@@ -342,13 +342,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3984988,
-          43.667969
+          -79.3984938,
+          43.6679647
         ]
       }
     },
@@ -369,13 +369,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.1316049,
-          43.7807009
+          -79.1316032,
+          43.7806998
         ]
       }
     },
@@ -396,13 +396,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2576797,
-          43.7728978
+          -79.2576885,
+          43.7728912
         ]
       }
     },
@@ -423,13 +423,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2516778,
-          43.7186062
+          -79.2516804,
+          43.7186055
         ]
       }
     },
@@ -450,13 +450,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4485662,
-          43.7234677
+          -79.448576,
+          43.7234749
         ]
       }
     },
@@ -477,13 +477,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4149471,
-          43.7672794
+          -79.4149518,
+          43.767282
         ]
       }
     },
@@ -504,13 +504,13 @@
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
         "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
         "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2021-06-11T16:28:18-04:00"
+        "meta_source_last_updated": "2025-07-02T09:15:56-04:00"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.535763291679,
-          43.6367285
+          -79.5357585,
+          43.6367274
         ]
       }
     }
