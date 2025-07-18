@@ -33170,7 +33170,8 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-04-27T14:02:59+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-07-18T02:02:52+00:00",
         "meta_osm_id": "node/11854882441"
       },
       "geometry": {
@@ -48999,6 +49000,26 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "4",
+        "note": "two post-and-rings",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "meta_feature_last_updated": "2025-07-17T15:12:12+00:00",
+        "meta_osm_id": "node/13006820625"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.436262,
+          43.6376511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -49123,10 +49144,11 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
         "building": "roof",
         "covered": "yes",
         "fee": "no",
-        "meta_feature_last_updated": "2013-02-26T02:32:00+00:00",
+        "meta_feature_last_updated": "2025-07-17T13:01:12+00:00",
         "meta_osm_id": "way/207258289"
       },
       "geometry": {
@@ -50370,8 +50392,9 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
+        "covered": "no",
         "note": "Bike Lockers",
-        "meta_feature_last_updated": "2019-06-23T13:54:21+00:00",
+        "meta_feature_last_updated": "2025-07-17T13:16:11+00:00",
         "meta_osm_id": "way/699218608"
       },
       "geometry": {
