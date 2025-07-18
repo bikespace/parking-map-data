@@ -40,5 +40,5 @@ jobs:
       run: |
         git switch data
         git cherry-pick main --strategy-option=theirs
-#       git fetch origin data
-#       git push origin data
+        git fetch origin data
+        git push origin data
