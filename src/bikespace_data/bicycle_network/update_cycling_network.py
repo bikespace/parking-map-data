@@ -9,7 +9,9 @@ from bikespace_data.resources.toronto_open_data import TODResponse, request_tod_
 
 cycling_network_schema = pa.DataFrameSchema(
     columns={
+        "SEGMENT_ID": pa.Column("int32"),
         "INFRA_HIGHORDER": pa.Column(str, nullable=True),
+        "INFRA_LOWORDER": pa.Column(str, nullable=True),
         "geometry": pa.Column("geometry"),
     },
 )
@@ -37,7 +39,8 @@ def update_cycling_network(
         cycling_network_data["metadata"]["last_modified"]
     )
     if sm.last_updated is None or last_updated > sm.last_updated:
-        cycling_network = cycling_network_data["gdf"]
+        # sort values to reduce differences in diff
+        cycling_network = cycling_network_data["gdf"].sort_values(by="SEGMENT_ID")
         now = datetime.now(timezone.utc)
 
         try:
@@ -45,12 +48,20 @@ def update_cycling_network(
         except SchemaErrors as e:
             print(f"Schema Error with cycling-network: {e}")
 
+        # save full file received
         output_path.parent.mkdir(exist_ok=True, parents=True)
-        cycling_network.to_file(
-            output_path,
-            driver="GeoJSON",
-            index=False,
+        with open(output_path, "w") as f:
+            f.write(cycling_network.to_json(na="drop", drop_id=True, indent=2))
+
+        # save display version with needed columns only
+        cycling_network_display = cycling_network[
+            ["SEGMENT_ID", "INFRA_HIGHORDER", "INFRA_LOWORDER", "geometry"]
+        ]
+        display_path = (
+            output_path.parent / f"{output_path.stem}-display{output_path.suffix}"
         )
+        with open(display_path, "w") as f:
+            f.write(cycling_network_display.to_json(na="drop", drop_id=True))
 
         if archive:
             archive_path = (
