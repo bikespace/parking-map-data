@@ -10,6 +10,7 @@ from bikespace_data.resources.toronto_open_data import TODResponse, request_tod_
 def update_cycling_network(
     status_path: Path = Path("bicycle_network/statuses/bicycle_network_status.csv"),
     output_path: Path = Path("bicycle_network/cycling-network.geojson"),
+    archive=True,
 ):
     """Check https://open.toronto.ca/dataset/cycling-network/ and re-download the file if it has changed"""
 
@@ -29,6 +30,7 @@ def update_cycling_network(
     )
     if sm.last_updated is None or last_updated > sm.last_updated:
         cycling_network = cycling_network_data["gdf"]
+        now = datetime.now(timezone.utc)
 
         output_path.parent.mkdir(exist_ok=True, parents=True)
         cycling_network.to_file(
@@ -37,10 +39,19 @@ def update_cycling_network(
             index=False,
         )
 
+        if archive:
+            archive_path = (
+                output_path.parent
+                / "archive"
+                / f"{output_path.stem}_{now.date().isoformat()}.parquet"
+            )
+            archive_path.parent.mkdir(exist_ok=True, parents=True)
+            cycling_network.to_parquet(archive_path)
+
         sm.add(
             dataset_name="cycling-network",
             last_updated=last_updated,
             num_features=len(cycling_network),
-            last_checked=datetime.now(timezone.utc),
+            last_checked=now,
         )
         sm.save()
