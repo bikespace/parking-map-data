@@ -15,6 +15,7 @@ dependencies = [
     "pathlib>=1.0.1",
     "progress>=1.6.1",
     "pyarrow>=20.0.0",
+    "pytest-cov>=6.2.1",
     "requests>=2.32.3",
     "scikit-learn>=1.6.1",
     "shapely>=2.1.0",
@@ -31,4 +32,16 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.pytest.ini_options]
-addopts = "-s"
+addopts = "-s --cov=src --cov-report=term-missing"
+
+[tool.coverage.run]
+omit = [
+    # omit anything in a test directory anywhere
+    "*/tests/*",
+    ]
+
+[tool.coverage.report]
+exclude_also = [
+    'if __name__ == .__main__.:',
+    '@(abc\.)?abstractmethod',
+]
