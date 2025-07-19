@@ -32,7 +32,7 @@ from downstream import (
     group_proximate_racks,
     drop_mapped_city_lockers,
 )
-from utilities import copy_production_files, dt_cols_to_str, ref_cols_to_str
+from .utilities import dt_cols_to_str, ref_cols_to_str
 
 geopandas.options.io_engine = "pyogrio"
 
@@ -523,6 +523,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     run_pipeline(archive=args.archive)
-
-    if args.archive:
-        copy_production_files()

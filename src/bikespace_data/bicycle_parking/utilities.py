@@ -1,5 +1,4 @@
 from pathlib import Path
-import shutil
 
 from pandas.api.types import is_datetime64_any_dtype
 
@@ -23,17 +22,6 @@ def dt_cols_to_str(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     if len(json_not_supported_cols) > 0:
         gdf = gdf.astype({c: "string" for c in json_not_supported_cols})
     return gdf
-
-
-def copy_production_files():
-    source_destination_paths = [
-        (Path("bicycle_parking/display_files"), Path("Display Files")),
-        (Path("bicycle_parking/output_files"), Path("Output Files")),
-    ]
-    for source_path, destination_path in source_destination_paths:
-        source_files = source_path.glob("*.geojson")
-        for source_file in source_files:
-            shutil.copy(source_file, destination_path / source_file.name)
 
 
 def convert_geojson_to_parquet(path: Path):
