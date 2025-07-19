@@ -86,6 +86,9 @@ def update_cycling_network(
     last_updated = datetime.fromisoformat(
         cycling_network_data["metadata"]["last_modified"]
     )
+    if last_updated.tzinfo is None:
+        last_updated = last_updated.replace(tzinfo=timezone.utc)
+
     if sm.last_updated is None or last_updated > sm.last_updated:
         # sort values to reduce differences in diff
         cycling_network = cycling_network_data["gdf"].sort_values(by="SEGMENT_ID")
