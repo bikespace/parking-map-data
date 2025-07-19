@@ -4,7 +4,7 @@
 import re
 import geopandas as gpd
 import pandas as pd
-import pandera as pa
+import pandera.pandas as pa
 
 
 _dataset_name = "toronto_lockers"
