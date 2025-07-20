@@ -49020,6 +49020,53 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-07-19T23:24:10+00:00",
+        "meta_osm_id": "node/13012392951"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3816374,
+          43.6131806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "capacity": "8",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-07-19T23:24:10+00:00",
+        "meta_osm_id": "node/13012392954"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3887477,
+          43.6121775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
