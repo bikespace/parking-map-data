@@ -12,9 +12,9 @@ permissions:
 jobs:
   update-data:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
     - name: Install uv
       uses: astral-sh/setup-uv@v5
       with:
@@ -27,16 +27,26 @@ jobs:
       run: uv sync --all-extras
     - name: Run bike network update script
       run: uv run src/bikespace_data/bicycle_network/update_cycling_network.py
+    - name: Check if there are changes that need to be committed
+      run: |
+        if [ -z "$(git status --porcelain)" ]; then 
+          echo "should_commit=False" >> "$GITHUB_ENV"
+        else 
+          echo "should_commit=True" >> "$GITHUB_ENV"
+        fi
     - name: Git setup
+      if: ${{ env.should_commit == 'True' }}
       run: |
         git config user.email ${{ secrets.BOT_EMAIL }}
         git config user.name "tallcoleman-bot"
         git fetch --depth=1
     - name: Build commit on main (not pushed)
+      if: ${{ env.should_commit == 'True' }}
       run: |
         git add bicycle_network
         git commit -m "BOT - ran data pipeline update"
     - name: Cherry pick and push commit to data branch
+      if: ${{ env.should_commit == 'True' }}
       run: |
         git switch data
         git cherry-pick main --strategy-option=theirs
