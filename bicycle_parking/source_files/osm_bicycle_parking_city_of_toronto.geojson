@@ -25960,7 +25960,8 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2025-06-15T23:06:29+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-07-20T15:26:27+00:00",
         "meta_osm_id": "node/11094345986"
       },
       "geometry": {
