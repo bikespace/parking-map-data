@@ -17,22 +17,26 @@ from zoneinfo import ZoneInfo
 
 import geojson
 import geopandas
-import numpy as np
 import pandas as pd
 from pathlib import Path
 from shapely import Polygon
 import overpass
 
-from custom_types import GeoJSONFeatureCollection
+from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
 
-import conversions
-from wrappers import BikeData, BikeDataToronto, BikeDataOSM, BikeLockersToronto
-from downstream import (
+import bikespace_data.bicycle_parking.conversions as conversions
+from bikespace_data.bicycle_parking.wrappers import (
+    BikeData,
+    BikeDataToronto,
+    BikeDataOSM,
+    BikeLockersToronto,
+)
+from bikespace_data.bicycle_parking.downstream import (
     group_proximate_rings,
     group_proximate_racks,
     drop_mapped_city_lockers,
 )
-from utilities import copy_production_files, dt_cols_to_str, ref_cols_to_str
+from bikespace_data.bicycle_parking.utilities import dt_cols_to_str, ref_cols_to_str
 
 geopandas.options.io_engine = "pyogrio"
 
@@ -523,6 +527,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     run_pipeline(archive=args.archive)
-
-    if args.archive:
-        copy_production_files()
