@@ -49068,6 +49068,77 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "description": "wave rack",
+        "operator": "Seneca Polytechnic",
+        "meta_feature_last_updated": "2025-07-21T22:43:28+00:00",
+        "meta_osm_id": "node/13016330028"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3494668,
+          43.7940706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "description": "wave rack",
+        "operator": "Seneca Polytechnic",
+        "meta_feature_last_updated": "2025-07-21T22:43:28+00:00",
+        "meta_osm_id": "node/13016330029"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3486152,
+          43.7944226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "description": "wave rack",
+        "operator": "Seneca Polytechnic",
+        "meta_feature_last_updated": "2025-07-21T22:43:28+00:00",
+        "meta_osm_id": "node/13016330030"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3471165,
+          43.7948291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "operator": "Seneca Polytechnic",
+        "meta_feature_last_updated": "2025-07-21T22:43:28+00:00",
+        "meta_osm_id": "node/13016330031"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3481989,
+          43.7944413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
