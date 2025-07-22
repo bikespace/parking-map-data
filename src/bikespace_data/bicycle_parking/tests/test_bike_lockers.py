@@ -1,4 +1,4 @@
-from wrappers import BikeLockersToronto
+from bikespace_data.bicycle_parking.wrappers import BikeLockersToronto
 
 
 def init_live_url():

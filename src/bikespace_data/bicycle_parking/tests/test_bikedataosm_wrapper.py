@@ -1,7 +1,7 @@
 import pandas as pd
 
-from wrappers import BikeDataOSM
-import conversions
+from bikespace_data.bicycle_parking.wrappers import BikeDataOSM
+import bikespace_data.bicycle_parking.conversions as conversions
 
 mock_overpass_response = {
     "type": "FeatureCollection",

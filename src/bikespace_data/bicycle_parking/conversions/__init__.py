@@ -1,4 +1,4 @@
-from conversions import (
+from . import (
     _bicycle_parking_high_capacity_outdoor,
     _bicycle_parking_racks,
     _bicycle_parking_bike_stations_indoor,

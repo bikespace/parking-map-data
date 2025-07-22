@@ -1,0 +1,25 @@
+name: Test Data Scripts
+on:
+  pull_request:
+    types: [opened, synchronize, edited, ready_for_review]
+    paths:
+        - src/**
+jobs:
+  unit_test:
+    name: Run unit tests with pytest
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Install uv
+      uses: astral-sh/setup-uv@v5
+      with:
+        version: "0.6.14"
+        enable-cache: true
+    - name: "Set up Python"
+      uses: actions/setup-python@v5
+      with:
+        python-version-file: ".python-version"
+    - name: Install the project
+      run: uv sync --all-extras
+    - name: Run pytest
+      run: uv run pytest  
