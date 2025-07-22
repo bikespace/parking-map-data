@@ -75,8 +75,9 @@ map.on("load", () => {
 
   // add in data sources
   const displayData =
-    "https://raw.githubusercontent.com/bikespace/parking-map-data/main/Display%20Files/all_sources.geojson";
-  const bikeLaneURL = "data/cycling-network.geojson";
+    "https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/bicycle_parking/display_files/all_sources.geojson";
+  const bikeLaneURL =
+    "https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/bicycle_network/cycling-network-display.geojson";
   const bikeTheftURL = "data/bicycle-thefts.geojson";
 
   map.addSource("bicycle-parking", {
