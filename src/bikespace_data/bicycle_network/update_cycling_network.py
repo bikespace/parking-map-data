@@ -71,6 +71,7 @@ def update_cycling_network(
     archive=True,
 ):
     """Check https://open.toronto.ca/dataset/cycling-network/ and re-download the file if it has changed"""
+    print("Checking open.toronto.ca to see if cycling-network dataset has been updated")
 
     sm = StatusManager(
         status_source=f"https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/{str(status_path)}",
@@ -86,7 +87,12 @@ def update_cycling_network(
     last_updated = datetime.fromisoformat(
         cycling_network_data["metadata"]["last_modified"]
     )
+    if last_updated.tzinfo is None:
+        last_updated = last_updated.replace(tzinfo=timezone.utc)
+
     if sm.last_updated is None or last_updated > sm.last_updated:
+        print("Changes posted, updating cycling-network dataset")
+
         # sort values to reduce differences in diff
         cycling_network = cycling_network_data["gdf"].sort_values(by="SEGMENT_ID")
         now = datetime.now(timezone.utc)
@@ -129,6 +135,9 @@ def update_cycling_network(
             last_checked=now,
         )
         sm.save()
+
+    else:
+        print("No changes detected")
 
 
 if __name__ == "__main__":

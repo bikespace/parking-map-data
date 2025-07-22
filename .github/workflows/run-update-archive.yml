@@ -33,12 +33,6 @@ jobs:
         git config user.email ${{ secrets.BOT_EMAIL }}
         git config user.name "tallcoleman-bot"
         git fetch --depth=1
-    - name: Update and push to main
-      run: |
-        git add "Display Files" "Output Files"
-        git commit -m "BOT - ran data pipeline update"
-        git fetch origin main
-        git push origin main
     - name: Build commit on main (not pushed)
       run: |
         git add bicycle_parking

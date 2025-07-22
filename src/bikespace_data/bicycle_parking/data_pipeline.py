@@ -527,6 +527,3 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     run_pipeline(archive=args.archive)
-
-    if args.archive:
-        copy_production_files()
