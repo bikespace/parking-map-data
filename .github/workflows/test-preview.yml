@@ -1,4 +1,4 @@
-name: Test and Preview
+name: Test Data Scripts
 on:
   pull_request:
     types: [opened, synchronize, edited, ready_for_review]
