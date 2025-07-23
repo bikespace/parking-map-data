@@ -49139,6 +49139,44 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "yes",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-07-22T19:38:30+00:00",
+        "meta_osm_id": "node/13017854122"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5193356,
+          43.6614654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "yes",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-07-22T19:38:30+00:00",
+        "meta_osm_id": "node/13017854123"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5193277,
+          43.6614654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
