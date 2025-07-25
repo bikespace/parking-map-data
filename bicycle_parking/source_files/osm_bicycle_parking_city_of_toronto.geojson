@@ -1982,29 +1982,17 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "capacity": "24",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "colour": "black",
         "covered": "no",
-        "meta_feature_last_updated": "2022-10-27T19:20:59+00:00",
-        "meta_osm_id": "node/1112030739"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.501154,
-          43.771507
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "capacity": "24",
-        "covered": "no",
-        "meta_feature_last_updated": "2022-10-27T19:22:41+00:00",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/1112031904"
       },
       "geometry": {
@@ -2670,15 +2658,27 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2011-02-12T01:06:46+00:00",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "capacity:cargo_bike": "2",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "note": "In city data but has same appearance as other York U racks",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "2",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-13008;BP-14424",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/1148263775"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.504019,
-          43.775452
+          -79.5041297,
+          43.7755205
         ]
       }
     },
@@ -5841,34 +5841,26 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "4",
+        "capacity:cargo_bike": "2",
+        "cargo_bike": "yes",
         "covered": "no",
-        "meta_feature_last_updated": "2023-01-04T19:37:37+00:00",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "2",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/4175149564"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5009283,
-          43.7646375
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "covered": "no",
-        "meta_feature_last_updated": "2023-01-04T19:37:34+00:00",
-        "meta_osm_id": "node/4175149565"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.5009591,
-          43.7646409
+          -79.5009812,
+          43.7646879
         ]
       }
     },
@@ -11838,10 +11830,10 @@
         "capacity": "18",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "9",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842916"
       },
       "geometry": {
@@ -11861,10 +11853,10 @@
         "capacity": "4",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842917"
       },
       "geometry": {
@@ -11884,10 +11876,10 @@
         "capacity": "4",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842918"
       },
       "geometry": {
@@ -11907,10 +11899,10 @@
         "capacity": "4",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842919"
       },
       "geometry": {
@@ -11930,10 +11922,10 @@
         "capacity": "8",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "4",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842920"
       },
       "geometry": {
@@ -11953,10 +11945,10 @@
         "capacity": "4",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842921"
       },
       "geometry": {
@@ -11976,10 +11968,10 @@
         "capacity": "6",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "3",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842922"
       },
       "geometry": {
@@ -11999,10 +11991,10 @@
         "capacity": "4",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842923"
       },
       "geometry": {
@@ -12022,10 +12014,10 @@
         "capacity": "4",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842924"
       },
       "geometry": {
@@ -12045,10 +12037,10 @@
         "capacity": "4",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842925"
       },
       "geometry": {
@@ -12068,10 +12060,10 @@
         "capacity": "8",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "4",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842926"
       },
       "geometry": {
@@ -12091,10 +12083,10 @@
         "capacity": "4",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842927"
       },
       "geometry": {
@@ -12114,10 +12106,10 @@
         "capacity": "8",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "4",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842928"
       },
       "geometry": {
@@ -12137,10 +12129,10 @@
         "capacity": "4",
         "colour": "grey",
         "covered": "no",
-        "note": "post and ring",
-        "operator": "City of Toronto",
+        "fee": "no",
+        "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068842929"
       },
       "geometry": {
@@ -12179,28 +12171,6 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "capacity": "14",
-        "colour": "black",
-        "covered": "yes",
-        "operator": "York University",
-        "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
-        "meta_osm_id": "node/6068849350"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.5007586,
-          43.7706992
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
         "capacity": "21",
         "colour": "black",
         "covered": "no",
@@ -12223,34 +12193,14 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "capacity": "21",
-        "colour": "grey",
-        "covered": "no",
-        "operator": "Seneca College",
-        "quantity": "3",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
-        "meta_osm_id": "node/6068849352"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4999089,
-          43.7707692
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
         "capacity": "14",
         "colour": "grey",
         "covered": "no",
-        "operator": "Seneca College",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
         "quantity": "2",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068849353"
       },
       "geometry": {
@@ -12266,42 +12216,23 @@
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": "35",
+        "bicycle_parking": "stands",
+        "capacity": "8",
         "colour": "grey",
         "covered": "no",
-        "operator": "Seneca College",
-        "quantity": "5",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
-        "meta_osm_id": "node/6068849354"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.500106,
-          43.7711314
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "bollard",
-        "capacity": "2",
-        "colour": "grey",
-        "covered": "yes",
+        "fee": "no",
         "note": "post and ring",
-        "operator": "City of Toronto",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068851747"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5033003,
-          43.7733716
+          -79.5032998,
+          43.773392
         ]
       }
     },
@@ -12358,17 +12289,18 @@
         "bicycle_parking": "bollard",
         "capacity": "2",
         "colour": "grey",
-        "covered": "yes",
-        "note": "post and ring",
-        "operator": "City of Toronto",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "covered": "no",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068854613"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5031328,
-          43.7729714
+          -79.5030882,
+          43.772978
         ]
       }
     },
@@ -12377,20 +12309,22 @@
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "bollard",
-        "capacity": "2",
+        "bicycle_parking": "stands",
+        "capacity": "8",
         "colour": "grey",
-        "covered": "yes",
-        "note": "post and ring",
-        "operator": "City of Toronto",
-        "meta_feature_last_updated": "2021-07-22T12:52:51+00:00",
+        "covered": "no",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/6068854614"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5030954,
-          43.7728942
+          -79.5030763,
+          43.772873
         ]
       }
     },
@@ -17787,10 +17721,28 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "customers",
+        "addr:city": "Toronto",
+        "addr:housenumber": "3955",
+        "addr:postcode": "M3J 2W1",
+        "addr:street": "Keele St",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "bike_ride": "yes",
+        "capacity": "68",
         "covered": "yes",
-        "name": "Secure Bicycle Parking",
-        "meta_feature_last_updated": "2021-06-12T23:26:25+00:00",
+        "description": "Per City website, has change room, tools and pump, and vending machine",
+        "fee": "yes",
+        "indoor": "yes",
+        "name": "Bicycle Parking Station at Finch West Station",
+        "opening_hours": "Mo-Su,PH 00:00-24:00",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-bike-stations-indoor:id": "5",
+        "start_date": "2018-10",
+        "supervised": "no",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-parking-stations/",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/8828443419"
       },
       "geometry": {
@@ -25258,11 +25210,15 @@
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
+        "bicycle_parking": "rack",
         "capacity": "24",
+        "colour": "black",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2023-05-17T18:15:20+00:00",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/10905753380"
       },
       "geometry": {
@@ -38828,36 +38784,21 @@
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "wall_loops",
+        "bicycle_parking": "rack",
+        "capacity": "14",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2024-09-11T19:16:21+00:00",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
         "meta_osm_id": "node/12170542007"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5034645,
-          43.7745454
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "wall_loops",
-        "covered": "no",
-        "fee": "no",
-        "meta_feature_last_updated": "2024-09-11T19:16:21+00:00",
-        "meta_osm_id": "node/12170542008"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.503439,
-          43.7745503
+          -79.5034538,
+          43.7745493
         ]
       }
     },
@@ -49320,6 +49261,245 @@
         "coordinates": [
           -79.5117936,
           43.6471486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "6",
+        "note": "3 post-and-rings",
+        "meta_feature_last_updated": "2025-07-24T14:13:03+00:00",
+        "meta_osm_id": "node/13021013875"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4434606,
+          43.6376691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-07-24T14:13:03+00:00",
+        "meta_osm_id": "node/13021013881"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4375793,
+          43.6367967
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-07-24T14:13:03+00:00",
+        "meta_osm_id": "node/13021013883"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4389159,
+          43.6366786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "8",
+        "note": "4 post-and-rings",
+        "meta_feature_last_updated": "2025-07-24T14:13:03+00:00",
+        "meta_osm_id": "node/13021013884"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4401513,
+          43.6364878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-07-24T14:13:03+00:00",
+        "meta_osm_id": "node/13021013885"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4429537,
+          43.63746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "4",
+        "note": "2 post-and-rings",
+        "meta_feature_last_updated": "2025-07-24T14:13:03+00:00",
+        "meta_osm_id": "node/13021013886"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4453921,
+          43.6383759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-07-24T15:00:14+00:00",
+        "meta_osm_id": "node/13021128677"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4891033,
+          43.6139291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-07-24T15:00:14+00:00",
+        "meta_osm_id": "node/13021128678"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4890952,
+          43.6139447
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "colour": "grey",
+        "covered": "no",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_osm_id": "node/13021850945"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5030545,
+          43.7729034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "colour": "black",
+        "covered": "no",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_osm_id": "node/13021850946"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5028081,
+          43.7724543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "two-tier",
+        "bike_ride": "yes",
+        "capacity": "16",
+        "cargo_bike": "no",
+        "covered": "yes",
+        "fee": "no",
+        "operator": "Toronto Transit Commission",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_osm_id": "node/13021850949"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4912284,
+          43.7653344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "colour": "black",
+        "covered": "yes",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_osm_id": "node/13021850950"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5037991,
+          43.773854
         ]
       }
     },

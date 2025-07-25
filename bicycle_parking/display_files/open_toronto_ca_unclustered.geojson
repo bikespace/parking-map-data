@@ -2177,50 +2177,6 @@
     {
       "type": "Feature",
       "properties": {
-        "source": "bicycle-parking-bike-stations-indoor",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "building",
-        "capacity": 68,
-        "operator": "City of Toronto",
-        "covered": "yes",
-        "access": "customers",
-        "fee": "yes",
-        "start_date": "2018",
-        "description": "Access from: Keele St\n\nThe new TTC station at Finch and Keele features a bicycle station with secure parking for 68 bicycles. The facility opened to the public in October of 2018.",
-        "meta_borough": "North York",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-bike-stations-indoor",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:24.334000+00:00",
-        "meta_ward_name": "York Centre",
-        "meta_ward_number": "06",
-        "supervised": "no",
-        "opening_hours": "Mo-Su,PH 00:00-24:00",
-        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-parking-stations/",
-        "name": "Bicycle Parking Station at Finch West Station",
-        "addr:housenumber": "3955",
-        "addr:street": "Keele St",
-        "addr:city": "Toronto",
-        "addr:postcode": "M3J 2W1",
-        "ref:open.toronto.ca:bicycle-parking-bike-stations-indoor:id": "5",
-        "ref:open.toronto.ca:bicycle-parking-bike-stations-indoor:objectid": "5",
-        "meta_has_change_room": "Yes",
-        "meta_has_tools_and_pump": "Yes",
-        "meta_has_vending_machine": "Yes"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4908951136414,
-          43.7650951513775
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "source": "street-furniture-bicycle-parking",
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
@@ -14467,36 +14423,6 @@
       "properties": {
         "source": "street-furniture-bicycle-parking",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "street-furniture-bicycle-parking",
-        "meta_source_url": "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-07-24 03:04:29.508000+00:00",
-        "meta_ward_name": "Humber River-Black Creek",
-        "meta_ward_number": "07",
-        "meta_status": "Existing",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-14424",
-        "meta_business_improvement_area": "None"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.5041396938162,
-          43.7755287151795
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "street-furniture-bicycle-parking",
-        "amenity": "bicycle_parking",
         "operator": "City of Toronto",
         "covered": "no",
         "access": "yes",
@@ -14874,36 +14800,6 @@
         "coordinates": [
           -79.464262017651,
           43.6644997368771
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "street-furniture-bicycle-parking",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "street-furniture-bicycle-parking",
-        "meta_source_url": "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-07-24 03:04:29.508000+00:00",
-        "meta_ward_name": "Humber River-Black Creek",
-        "meta_ward_number": "07",
-        "meta_status": "Existing",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-04086",
-        "meta_business_improvement_area": "None"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4999098454769,
-          43.7708273184788
         ]
       }
     },
@@ -17620,66 +17516,6 @@
         "coordinates": [
           -79.4366891735475,
           43.6904528138757
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "street-furniture-bicycle-parking",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "street-furniture-bicycle-parking",
-        "meta_source_url": "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-07-24 03:04:29.508000+00:00",
-        "meta_ward_name": "Humber River-Black Creek",
-        "meta_ward_number": "07",
-        "meta_status": "Existing",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-14306",
-        "meta_business_improvement_area": "None"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4999509229882,
-          43.7708999579524
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "street-furniture-bicycle-parking",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "street-furniture-bicycle-parking",
-        "meta_source_url": "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-07-24 03:04:29.508000+00:00",
-        "meta_ward_name": "Humber River-Black Creek",
-        "meta_ward_number": "07",
-        "meta_status": "Existing",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-08817",
-        "meta_business_improvement_area": "None"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4999312102403,
-          43.7708666086044
         ]
       }
     },
@@ -178167,37 +178003,6 @@
         "coordinates": [
           -79.4045732634232,
           43.6484574181198
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "street-furniture-bicycle-parking",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "bollard",
-        "capacity": 2,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "street-furniture-bicycle-parking",
-        "meta_source_url": "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-07-24 03:04:29.508000+00:00",
-        "meta_ward_name": "Humber River-Black Creek",
-        "meta_ward_number": "07",
-        "meta_status": "Existing",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-29199",
-        "meta_business_improvement_area": "None"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.503275948859,
-          43.7733906874426
         ]
       }
     },
@@ -368586,36 +368391,6 @@
       "properties": {
         "source": "street-furniture-bicycle-parking",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "street-furniture-bicycle-parking",
-        "meta_source_url": "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-07-24 03:04:29.508000+00:00",
-        "meta_ward_name": "Humber River-Black Creek",
-        "meta_ward_number": "07",
-        "meta_status": "Existing",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-13008",
-        "meta_business_improvement_area": "None"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.5041321274293,
-          43.775511847273
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "street-furniture-bicycle-parking",
-        "amenity": "bicycle_parking",
         "operator": "City of Toronto",
         "covered": "no",
         "access": "yes",
@@ -461855,36 +461630,6 @@
         "coordinates": [
           -79.4114934143378,
           43.6414512066734
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "street-furniture-bicycle-parking",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "street-furniture-bicycle-parking",
-        "meta_source_url": "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-07-24 03:04:29.508000+00:00",
-        "meta_ward_name": "Humber River-Black Creek",
-        "meta_ward_number": "07",
-        "meta_status": "Existing",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-11699",
-        "meta_business_improvement_area": "None"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4998342614142,
-          43.7707701519576
         ]
       }
     },
