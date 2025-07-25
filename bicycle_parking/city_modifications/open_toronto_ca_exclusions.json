@@ -477,5 +477,22 @@
     ],
     "reason": "removed",
     "notes": "Reported by BikeSpace user in submission #1546. City of Toronto webpage for construction project indicates that affected area includes O'Connor between St. Clair and Bermondsey and includes sidewalk reconstruction which would presumably have led to the removal of the ring-posts. (See: https://www.toronto.ca/community-people/get-involved/public-consultations/infrastructure-projects/oconnor-drive-improvements/)"
+  },
+  {
+    "survey_date": "2025-07-23",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-29199" }],
+    "reason": "missing",
+    "notes": "Could not locate via survey"
+  },
+  {
+    "survey_date": "2025-07-23",
+    "ids": [
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-14306" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-08817" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-04086" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-11699" }
+    ],
+    "reason": "missing",
+    "notes": "Could not locate racks in described location. One or two are possibly https://www.openstreetmap.org/node/6068849353 but unclear; present racks have the same appearance as other York U installed racks."
   }
 ]
