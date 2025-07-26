@@ -2667,11 +2667,11 @@
         "covered": "no",
         "fee": "no",
         "note": "In city data but has same appearance as other York U racks",
-        "operator": "City of Toronto",
-        "operator:type": "government",
+        "operator": "York University",
+        "operator:type": "public",
         "quantity": "2",
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-13008;BP-14424",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2025-07-25T11:58:03+00:00",
         "meta_osm_id": "node/1148263775"
       },
       "geometry": {
@@ -49500,6 +49500,130 @@
         "coordinates": [
           -79.5037991,
           43.773854
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "2",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-07-25T12:01:50+00:00",
+        "meta_osm_id": "node/13022760414"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3758135,
+          43.616791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "colour": "black",
+        "covered": "no",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "2",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-11141;BP-08471",
+        "meta_feature_last_updated": "2025-07-25T11:58:03+00:00",
+        "meta_osm_id": "node/13022761760"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5025031,
+          43.768505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "colour": "black",
+        "covered": "no",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "2",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-11634;BP-08061",
+        "meta_feature_last_updated": "2025-07-25T11:58:03+00:00",
+        "meta_osm_id": "node/13022761761"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.503434,
+          43.7686677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "colour": "black",
+        "covered": "no",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "2",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-09733;BP-11900",
+        "meta_feature_last_updated": "2025-07-25T11:58:03+00:00",
+        "meta_osm_id": "node/13022761762"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5040826,
+          43.7682229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "colour": "black",
+        "covered": "no",
+        "fee": "no",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "2",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-10499;BP-12471",
+        "meta_feature_last_updated": "2025-07-25T11:58:03+00:00",
+        "meta_osm_id": "node/13022761763"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5047905,
+          43.7678696
         ]
       }
     },
