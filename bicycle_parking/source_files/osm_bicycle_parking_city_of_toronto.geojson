@@ -11856,14 +11856,14 @@
         "fee": "no",
         "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2025-07-26T20:25:05+00:00",
         "meta_osm_id": "node/6068842917"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5006414,
-          43.7702317
+          -79.5006603,
+          43.7702722
         ]
       }
     },
@@ -11879,14 +11879,14 @@
         "fee": "no",
         "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2025-07-26T20:25:05+00:00",
         "meta_osm_id": "node/6068842918"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5007627,
-          43.7702042
+          -79.5007767,
+          43.7702482
         ]
       }
     },
@@ -11902,14 +11902,14 @@
         "fee": "no",
         "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2025-07-26T20:25:05+00:00",
         "meta_osm_id": "node/6068842919"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5008739,
-          43.7701801
+          -79.5008908,
+          43.7702258
         ]
       }
     },
@@ -11925,14 +11925,14 @@
         "fee": "no",
         "operator": "The Quad at York",
         "quantity": "4",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2025-07-26T20:25:05+00:00",
         "meta_osm_id": "node/6068842920"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5009184,
-          43.7701715
+          -79.5009324,
+          43.7702172
         ]
       }
     },
@@ -11948,14 +11948,14 @@
         "fee": "no",
         "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2025-07-26T20:25:05+00:00",
         "meta_osm_id": "node/6068842921"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5010962,
-          43.7701365
+          -79.5011044,
+          43.7701829
         ]
       }
     },
@@ -11971,14 +11971,14 @@
         "fee": "no",
         "operator": "The Quad at York",
         "quantity": "3",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2025-07-26T20:25:05+00:00",
         "meta_osm_id": "node/6068842922"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5014314,
-          43.7700603
+          -79.5014494,
+          43.7701066
         ]
       }
     },
@@ -11994,14 +11994,14 @@
         "fee": "no",
         "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2025-07-26T20:25:05+00:00",
         "meta_osm_id": "node/6068842923"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5016656,
-          43.7699972
+          -79.5016055,
+          43.770079
         ]
       }
     },
@@ -12017,14 +12017,14 @@
         "fee": "no",
         "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2025-07-26T20:25:05+00:00",
         "meta_osm_id": "node/6068842924"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5017863,
-          43.7699662
+          -79.5017377,
+          43.7700518
         ]
       }
     },
@@ -12040,14 +12040,14 @@
         "fee": "no",
         "operator": "The Quad at York",
         "quantity": "2",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2025-07-26T20:25:05+00:00",
         "meta_osm_id": "node/6068842925"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5019078,
-          43.7699415
+          -79.5018763,
+          43.7700203
         ]
       }
     },
@@ -49624,6 +49624,23 @@
         "coordinates": [
           -79.5047905,
           43.7678696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "meta_feature_last_updated": "2025-07-26T19:41:05+00:00",
+        "meta_osm_id": "node/13027122595"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3924594,
+          43.7292266
         ]
       }
     },
