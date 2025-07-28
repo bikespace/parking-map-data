@@ -599,45 +599,6 @@
         "fee": "no",
         "start_date": "2016",
         "length": "2.9",
-        "description": "MULTIPLE RACKS\nThis point is a combination of 2 bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than 2 racks present.\n---\nAddress: 71 Second St\n\nPlacement Street: Second St\n\nPlace Name: Second Street Junior Middle School\n\nDetails: None\n---\nAddress: 71 Second St\n\nNotes: 0.5m back from limit of concrete",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "120",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "36",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "",
-        "meta_borough": "Etobicoke",
-        "meta_ward_name": "Etobicoke-Lakeshore",
-        "meta_ward_number": "03",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor | bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/ | https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00 | 2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "no",
-        "meta_status": "Installed",
-        "meta_business_improvement_area": "",
-        "quantity": "<NA>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.49989458077488,
-          43.603696750097335
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "city-multi",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 8,
-        "operator": "City of Toronto",
-        "covered": "no | no",
-        "access": "yes",
-        "fee": "no",
-        "start_date": "2016",
-        "length": "2.9",
         "description": "MULTIPLE RACKS\nThis point is a combination of 2 bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than 2 racks present.\n---\nAddress: 78 Tecumseth St\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: None\n---\nAddress: 78 Tecumseth St\n\nNotes: at south side of publication boxes",
         "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "125",
         "ref:open.toronto.ca:bicycle-parking-racks:objectid": "123",
@@ -990,38 +951,6 @@
     {
       "type": "Feature",
       "properties": {
-        "source": "bicycle-parking-high-capacity-outdoor",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 14,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "start_date": "2020",
-        "length": "5.5",
-        "description": "Address: 58 Marine Parade Dr\n\nPlacement Street: opposite 58 Marine Parade\n\nPlace Name: None\n\nDetails: No parking, east of crossover",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "142",
-        "meta_borough": "Etobicoke",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00",
-        "quantity": "<NA>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4771276610409,
-          43.62746916487969
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "source": "bicycle-parking-racks",
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
@@ -1288,108 +1217,6 @@
         "coordinates": [
           -79.400924005423,
           43.6545455601628
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "bicycle-parking-racks",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 8,
-        "operator": "City of Toronto",
-        "covered": "",
-        "access": "yes",
-        "fee": "no",
-        "description": "Address: 2246 Lake Shore Blvd W\n\nNotes: Stacker\n\nLocation: back of walk",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "222",
-        "meta_borough": "Etobicoke",
-        "meta_ward_name": "Etobicoke-Lakeshore",
-        "meta_ward_number": "03",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "no",
-        "meta_status": "Installed",
-        "quantity": "<NA>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4834708718911,
-          43.6209978264526
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "bicycle-parking-racks",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 8,
-        "operator": "City of Toronto",
-        "covered": "",
-        "access": "yes",
-        "fee": "no",
-        "description": "Address: 2391 Lake Shore Blvd W\n\nLocation: adjacent to planter",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "237",
-        "meta_borough": "Etobicoke",
-        "meta_ward_name": "Etobicoke-Lakeshore",
-        "meta_ward_number": "03",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "no",
-        "meta_status": "Installed",
-        "quantity": "<NA>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4883603535509,
-          43.6150886595306
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "source": "bicycle-parking-racks",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 8,
-        "operator": "City of Toronto",
-        "covered": "",
-        "access": "yes",
-        "fee": "no",
-        "description": "Address: 2404-2406 Lake Shore Blvd W\n\nLocation: adjacent to planter",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "238",
-        "meta_borough": "Etobicoke",
-        "meta_ward_name": "Etobicoke-Lakeshore",
-        "meta_ward_number": "03",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "no",
-        "meta_status": "Installed",
-        "quantity": "<NA>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4890641907246,
-          43.614877213722195
         ]
       }
     },
