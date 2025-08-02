@@ -147,7 +147,9 @@ def group_proximate_racks(racks, radius=30.0):
     )
     return_to_singles = racks_UTM17N_clusters[~sources_per_cluster_test]
     racks_UTM17N_clusters = racks_UTM17N_clusters[sources_per_cluster_test]
-    racks_UTM17N_singles = pd.concat([racks_UTM17N_singles, return_to_singles])
+    racks_UTM17N_singles = gpd.GeoDataFrame(
+        pd.concat([racks_UTM17N_singles, return_to_singles])
+    )
 
     # PART 2 - AGGREGATE (DISSOLVE) CLUSTERS
 
@@ -198,8 +200,8 @@ def group_proximate_racks(racks, radius=30.0):
     racks_UTM17N_clusters["geometry"] = racks_UTM17N_clusters.centroid
 
     # combine racks
-    racks_UTM17N_recombined = pd.concat(
-        [racks_UTM17N_clusters, racks_UTM17N_singles]
+    racks_UTM17N_recombined = gpd.GeoDataFrame(
+        pd.concat([racks_UTM17N_clusters, racks_UTM17N_singles])
     ).drop("cluster", axis=1)
 
     # convert back to WGS 84 lat/long and convert quantity to string

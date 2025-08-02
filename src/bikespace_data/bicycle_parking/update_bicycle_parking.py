@@ -282,7 +282,7 @@ def run_pipeline(*, archive=False):
         )
         osm_data_list.append(gdf)
 
-    osm_combined = pd.concat(osm_data_list)
+    osm_combined = geopandas.GeoDataFrame(pd.concat(osm_data_list))
 
     # City Lockers
     print("Checking and updating City of Toronto bike lockers...")
@@ -310,16 +310,20 @@ def run_pipeline(*, archive=False):
         )
         lockers_data_list.append(gdf)
 
-    lockers: geopandas.GeoDataFrame = pd.concat(lockers_data_list)
+    lockers: geopandas.GeoDataFrame = geopandas.GeoDataFrame(
+        pd.concat(lockers_data_list)
+    )
 
     # save full normalized data without any deduplication or clustering
-    all_normalized_unprocessed = pd.concat(
-        df.dropna(axis="columns", how="all")
-        for df in [
-            *city_data.values(),
-            osm_combined,
-            lockers,
-        ]
+    all_normalized_unprocessed = geopandas.GeoDataFrame(
+        pd.concat(
+            df.dropna(axis="columns", how="all")
+            for df in [
+                *city_data.values(),
+                osm_combined,
+                lockers,
+            ]
+        )
     ).convert_dtypes()
 
     save_output(
@@ -359,7 +363,11 @@ def run_pipeline(*, archive=False):
         | (osm_combined["bicycle_parking"] == "lockers")
     ) & (~open_toronto_ca_test)
     osm_filtered = (
-        pd.concat([city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]])
+        geopandas.GeoDataFrame(
+            pd.concat(
+                [city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]]
+            )
+        )
         .to_crs(32617)  # change to UTM 17 N for centroid calculation
         .convert_dtypes()
     )
@@ -383,11 +391,13 @@ def run_pipeline(*, archive=False):
             ~dataset.isin(city_exclusions_dict).any(axis=1)
         ]
     city_unclustered = city_data.copy()
-    city_unclustered_combined = pd.concat(
-        [
-            dataset.dropna(axis="columns", how="all")
-            for name, dataset in city_unclustered.items()
-        ]
+    city_unclustered_combined = geopandas.GeoDataFrame(
+        pd.concat(
+            [
+                dataset.dropna(axis="columns", how="all")
+                for name, dataset in city_unclustered.items()
+            ]
+        )
     ).convert_dtypes()
 
     # drop city lockers already in OpenStreetMap
@@ -406,8 +416,8 @@ def run_pipeline(*, archive=False):
     ]
 
     agg_bollards = group_proximate_rings(furniture_bollards)
-    city_data["street-furniture-bicycle-parking"] = pd.concat(
-        [furniture_not_bollards, agg_bollards]
+    city_data["street-furniture-bicycle-parking"] = geopandas.GeoDataFrame(
+        pd.concat([furniture_not_bollards, agg_bollards])
     )
 
     # Downstream: Rack Deduplication
@@ -421,15 +431,17 @@ def run_pipeline(*, archive=False):
     tmugs = geopandas.GeoSeries(tmupoly, crs=4326).to_crs(32617).buffer(20).to_crs(4326)
 
     # combine city datasets (bicycle stations excluded)
-    city_combined = pd.concat(
-        [
-            df.dropna(axis="columns", how="all")
-            for df in [
-                city_data["bicycle-parking-high-capacity-outdoor"],
-                city_data["bicycle-parking-racks"],
-                city_data["street-furniture-bicycle-parking"],
+    city_combined = geopandas.GeoDataFrame(
+        pd.concat(
+            [
+                df.dropna(axis="columns", how="all")
+                for df in [
+                    city_data["bicycle-parking-high-capacity-outdoor"],
+                    city_data["bicycle-parking-racks"],
+                    city_data["street-furniture-bicycle-parking"],
+                ]
             ]
-        ]
+        )
     )
     city_racks = city_combined[city_combined["bicycle_parking"] == "rack"]
     city_not_racks = city_combined[
@@ -444,19 +456,21 @@ def run_pipeline(*, archive=False):
 
     # run clustering (excluding TMU)
     city_racks_clustered = group_proximate_racks(city_racks[city_racks["tmu"] == False])  # noqa: E712
-    city_full = pd.concat(
-        [
-            city_racks_clustered,
-            city_racks[city_racks["tmu"] == True],  # noqa: E712
-            city_not_racks,
-            city_data["bicycle-parking-bike-stations-indoor"],
-        ]
+    city_full = geopandas.GeoDataFrame(
+        pd.concat(
+            [
+                city_racks_clustered,
+                city_racks[city_racks["tmu"] == True],  # noqa: E712
+                city_not_racks,
+                city_data["bicycle-parking-bike-stations-indoor"],
+            ]
+        )
     ).convert_dtypes()
     city_full = city_full.drop("tmu", axis=1)
 
     # make combined set from all sources
-    all_sources = pd.concat(
-        [city_full, osm_centroid, lockers_unmapped]
+    all_sources = geopandas.GeoDataFrame(
+        pd.concat([city_full, osm_centroid, lockers_unmapped])
     ).convert_dtypes()
 
     # Save display files
