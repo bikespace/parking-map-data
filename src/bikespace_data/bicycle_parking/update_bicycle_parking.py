@@ -151,7 +151,7 @@ def run_pipeline(*, archive=False):
 
     # update function
 
-    def run_update(bike_data: type[BikeData], dataset_status: dict) -> dict:
+    def run_update(bike_data: BikeData, dataset_status: dict) -> dict:
         """Function to check whether specified dataset is up to date and download new data if required.
 
         Parameters
