@@ -47,7 +47,6 @@ def group_proximate_rings(rings, radius=5.0):
             return mylist.iloc[0]
 
     aggregations = {
-        "source": "first",
         "amenity": "first",  # does not vary
         "bicycle_parking": "first",  # does not vary among subset
         "capacity": "sum",
@@ -120,8 +119,8 @@ def group_proximate_racks(racks, radius=30.0):
 
     # remove clusters with only one data source
     sources_per_cluster = dict(
-        racks_UTM17N_clusters[["cluster", "source"]]
-        .groupby("cluster")["source"]
+        racks_UTM17N_clusters[["cluster", "meta_source_dataset"]]
+        .groupby("cluster")["meta_source_dataset"]
         .unique()
         .apply(lambda r: len(r))
     )
@@ -144,7 +143,6 @@ def group_proximate_racks(racks, radius=30.0):
         return " | ".join([str(x) for x in l.dropna().values])
 
     aggregations = {
-        "source": lambda _: "city-multi",
         "amenity": "first",  # unique in dataset
         "bicycle_parking": "first",  # unique in subset
         "capacity": "min",  # most conservative number

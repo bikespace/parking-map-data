@@ -248,7 +248,6 @@ def run_pipeline(*, archive=False):
         gdf = gdf.astype({"meta_source_last_updated": "str", "capacity": "Int64"})
         gdf = ref_cols_to_str(gdf)
         gdf = gdf.explode(index_parts=False)
-        gdf.insert(0, "source", dataset["dataset_name"])
         city_data[dataset["dataset_name"]] = gdf
 
     # OpenStreetMap Data
