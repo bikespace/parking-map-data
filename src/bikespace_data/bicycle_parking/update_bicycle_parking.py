@@ -512,7 +512,7 @@ def run_pipeline(*, archive=False):
 # Script Execution
 # ----------------
 
-# run from command line `python data_pipeline.py
+# run from command line `uv run src/bikespace_data/bicycle_parking/update_bicycle_parking.py`
 if __name__ == "__main__":
     # parse script arguments from command line
     parser = ArgumentParser(

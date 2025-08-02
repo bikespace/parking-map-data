@@ -27,7 +27,7 @@ jobs:
     - name: Install the project
       run: uv sync --all-extras
     - name: Run data pipeline script
-      run: uv run src/bikespace_data/bicycle_parking/data_pipeline.py
+      run: uv run src/bikespace_data/bicycle_parking/update_bicycle_parking.py
     - name: Git setup
       run: |
         git config user.email ${{ secrets.BOT_EMAIL }}
