@@ -32,6 +32,7 @@ from bikespace_data.bicycle_parking.wrappers import (
     BikeLockersToronto,
 )
 from bikespace_data.bicycle_parking.downstream import (
+    extract_ref_tags,
     group_proximate_rings,
     group_proximate_racks,
     drop_mapped_city_lockers,
@@ -340,16 +341,7 @@ def run_pipeline(*, archive=False):
     city_verified_osm = osm_combined[open_toronto_ca_test]
 
     # get all instances of osm city ref tags and split out if needed
-    id_lists = {}
-    id_cols = city_verified_osm.filter(like="ref:open.toronto.ca", axis=1)
-    for ref_type, tags in id_cols.items():
-        id_list = []
-        for tag_str in tags:
-            tags = str(tag_str).split(";")
-            id_list.extend([tag.strip() for tag in tags])
-
-        id_lists.setdefault(ref_type, [])
-        id_lists[ref_type].extend(id_list)
+    id_lists = extract_ref_tags(osm_combined, "ref:open.toronto.ca")
 
     # drop city data points if they have matching tags from osm data
     for dataset_name, dataset in city_data.items():

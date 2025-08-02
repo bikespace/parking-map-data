@@ -1,7 +1,25 @@
-from sklearn.cluster import DBSCAN
 import geopandas as gpd
 import numpy as np
 import pandas as pd
+from sklearn.cluster import DBSCAN
+
+
+def extract_ref_tags(gdf: gpd.GeoDataFrame, pattern: str) -> dict[str, list[str]]:
+    """Extract all values where the column name matches the pattern and return a dict of the result. If multiple tag values are included in one entry and separated by a semicolon, these are split out into individual tags."""
+
+    # get all instances of osm city ref tags and split out if needed
+    id_lists: dict[str, list[str]] = {}
+    id_cols = gdf.filter(like=pattern, axis=1).dropna(how="all")
+    for ref_type, tags in id_cols.items():
+        id_list = []
+        for tag_str in tags.dropna():
+            tags = str(tag_str).split(";")
+            id_list.extend([tag.strip() for tag in tags])
+
+        id_lists.setdefault(str(ref_type), [])
+        id_lists[str(ref_type)].extend(id_list)
+
+    return id_lists
 
 
 def group_proximate_rings(rings, radius=5.0):
