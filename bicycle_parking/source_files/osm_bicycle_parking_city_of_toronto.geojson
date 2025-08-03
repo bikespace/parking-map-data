@@ -50476,6 +50476,24 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "16",
+        "meta_feature_last_updated": "2025-08-02T13:08:31+00:00",
+        "meta_osm_id": "node/13042948013"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3849939,
+          43.6639158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
