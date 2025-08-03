@@ -345,11 +345,14 @@ def run_pipeline(*, archive=False):
     city_verified_osm = osm_combined[open_toronto_ca_test]
 
     # get all instances of osm city ref tags and split out if needed
-    id_lists = extract_ref_tags(osm_combined, "ref:open.toronto.ca")
+    open_toronto_refs = extract_ref_tags(osm_combined, "ref:open.toronto.ca")
+    toronto_refs = extract_ref_tags(osm_combined, "ref:toronto.ca")
+    id_lists = open_toronto_refs | toronto_refs
 
     # drop city data points if they have matching tags from osm data
     for dataset_name, dataset in city_data.items():
         city_data[dataset_name] = dataset[~dataset.isin(id_lists).any(axis=1)]
+    lockers = lockers[~lockers.isin(id_lists).any(axis=1)]
 
     # drop all osm with operator="City of Toronto" (case/space-insensitive) unless they have ref tag or unless they are a locker (for which no ref match can currently be made).
     # this also retains osm points with ANY value for "ref:open.toronto.ca", including "ref.open.toronto.ca"="no"

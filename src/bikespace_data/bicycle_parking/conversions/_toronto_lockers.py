@@ -57,6 +57,7 @@ def transform_properties(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
             "access": "customers",
             "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
             "description": gdf["location"] + ": " + gdf["location_description"],
+            "ref:toronto.ca:lockers:title": gdf["location"].str.strip(),
         }
     ).drop(original_cols, axis=1)
 
