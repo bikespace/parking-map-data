@@ -35,7 +35,6 @@ from bikespace_data.bicycle_parking.downstream import (
     extract_ref_tags,
     group_proximate_rings,
     group_proximate_racks,
-    drop_mapped_city_lockers,
 )
 from bikespace_data.bicycle_parking.utilities import dt_cols_to_str, ref_cols_to_str
 
@@ -339,10 +338,10 @@ def run_pipeline(*, archive=False):
     print("Applying downstream processing: City Data Selection...")
 
     # get osm with ref tags
-    open_toronto_ca_test = (
+    toronto_refs_test = (
         osm_combined.filter(like="ref:open.toronto.ca", axis=1).notna().any(axis=1)
-    )
-    city_verified_osm = osm_combined[open_toronto_ca_test]
+    ) | (osm_combined.filter(like="ref:toronto.ca", axis=1).notna().any(axis=1))
+    city_verified_osm = osm_combined[toronto_refs_test]
 
     # get all instances of osm city ref tags and split out if needed
     open_toronto_refs = extract_ref_tags(osm_combined, "ref:open.toronto.ca")
@@ -352,23 +351,23 @@ def run_pipeline(*, archive=False):
     # drop city data points if they have matching tags from osm data
     for dataset_name, dataset in city_data.items():
         city_data[dataset_name] = dataset[~dataset.isin(id_lists).any(axis=1)]
-    lockers = lockers[~lockers.isin(id_lists).any(axis=1)]
+    lockers_unmapped = lockers[~lockers.isin(id_lists).any(axis=1)]
 
     # drop all osm with operator="City of Toronto" (case/space-insensitive) unless they have ref tag or unless they are a locker (for which no ref match can currently be made).
     # this also retains osm points with ANY value for "ref:open.toronto.ca", including "ref.open.toronto.ca"="no"
     operator_not_city_and_no_ref_test = (
-        (
-            ~osm_combined["operator"].str.contains(
-                r"city\s*?of\s*?toronto", case=False, regex=True
-            )
-            | osm_combined["operator"].isna()
+        ~osm_combined["operator"].str.contains(
+            r"city\s*?of\s*?toronto", case=False, regex=True
         )
-        | (osm_combined["bicycle_parking"] == "lockers")
-    ) & (~open_toronto_ca_test)
+        | osm_combined["operator"].isna()
+    ) & (~toronto_refs_test)
     osm_filtered = (
         geopandas.GeoDataFrame(
             pd.concat(
-                [city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]]
+                [
+                    city_verified_osm,
+                    osm_combined[operator_not_city_and_no_ref_test],
+                ]
             )
         )
         .to_crs(32617)  # change to UTM 17 N for centroid calculation
@@ -402,9 +401,6 @@ def run_pipeline(*, archive=False):
             ]
         )
     ).convert_dtypes()
-
-    # drop city lockers already in OpenStreetMap
-    lockers_unmapped = drop_mapped_city_lockers(lockers, osm_combined)
 
     # Downstream: Ring and Post Clustering
     # ------------------------------------
