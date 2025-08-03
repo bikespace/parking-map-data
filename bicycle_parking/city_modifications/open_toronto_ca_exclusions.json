@@ -494,5 +494,11 @@
     ],
     "reason": "missing",
     "notes": "Could not locate racks in described location. One or two are possibly https://www.openstreetmap.org/node/6068849353 but unclear; present racks have the same appearance as other York U installed racks."
+  },
+  {
+    "survey_date": "2025-08-03",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-bike-stations-indoor:id": "1" }],
+    "reason": "removed",
+    "notes": "Not able to loate via several surveys; south union station bike room removed during construction in 2022. See: https://toronto.citynews.ca/2022/06/16/union-station-toronto-construction-maintenance-bike-stations/"
   }
 ]
