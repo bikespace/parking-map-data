@@ -455,9 +455,11 @@
         "indoor": "no",
         "lit": "yes",
         "operator": "City of Toronto",
+        "operator:type": "government",
         "quantity": "12",
+        "ref:toronto.ca:lockers:title": "Scarborough Civic Centre",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2023-12-21T15:50:05+00:00",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/436908687"
       },
       "geometry": {
@@ -654,8 +656,9 @@
         "lit": "yes",
         "operator": "City of Toronto",
         "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Metro Hall",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2025-05-14T02:31:04+00:00",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/618125065"
       },
       "geometry": {
@@ -1937,14 +1940,16 @@
         "bicycle_parking": "lockers",
         "capacity": "10",
         "cargo_bike": "no",
-        "covered": "no",
+        "covered": "yes",
         "description": "bicycle lockers, must be rented from city",
+        "fee": "yes",
         "image": "https://flic.kr/p/2pDVu7Q",
         "operator": "City of Toronto",
         "operator:type": "government",
         "quantity": "5",
+        "ref:toronto.ca:lockers:title": "Ontario Institute for Studies in Education (OISE)",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2025-05-14T02:31:04+00:00",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/1017405800"
       },
       "geometry": {
@@ -3655,14 +3660,14 @@
         "check_date": "2025-04-09",
         "check_date:capacity": "2025-04-09",
         "covered": "no",
-        "meta_feature_last_updated": "2025-04-09T17:13:37+00:00",
+        "meta_feature_last_updated": "2025-08-03T19:05:31+00:00",
         "meta_osm_id": "node/2532984986"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4138958,
-          43.6651067
+          -79.4138924,
+          43.6650914
         ]
       }
     },
@@ -4552,11 +4557,18 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
-        "capacity": "6",
-        "locked": "yes",
-        "meta_feature_last_updated": "2023-08-11T15:36:11+00:00",
+        "capacity": "12",
+        "covered": "yes",
+        "description": "Finch Subway Station: Located on the west side of Yonge St. beside the passenger drop-off and pick-up",
+        "fee": "yes",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Finch Subway Station",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/3013604539"
       },
       "geometry": {
@@ -4991,13 +5003,17 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
-        "capacity": "5",
+        "capacity": "10",
         "covered": "yes",
-        "note": "bicycle lockers",
+        "fee": "yes",
         "operator": "City of Toronto",
-        "meta_feature_last_updated": "2017-01-14T04:09:50+00:00",
+        "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Metro Hall",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/3476578585"
       },
       "geometry": {
@@ -18091,16 +18107,24 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
-        "meta_feature_last_updated": "2022-08-06T13:09:57+00:00",
+        "capacity": "8",
+        "covered": "yes",
+        "fee": "yes",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Kipling Station",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/8940038137"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5387669,
-          43.6358183
+          -79.5387843,
+          43.6358227
         ]
       }
     },
@@ -22132,16 +22156,24 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
-        "meta_feature_last_updated": "2022-08-06T13:09:57+00:00",
+        "capacity": "8",
+        "covered": "yes",
+        "fee": "yes",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Kipling Station",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/9935579322"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5387749,
-          43.6358272
+          -79.5388017,
+          43.6358553
         ]
       }
     },
@@ -24398,10 +24430,18 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
-        "capacity": "6",
-        "meta_feature_last_updated": "2024-08-10T18:21:35+00:00",
+        "capacity": "12",
+        "covered": "yes",
+        "description": "Finch GO: Just north of the station house on the east side of Yonge St.",
+        "fee": "yes",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Finch GO",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/10783390040"
       },
       "geometry": {
@@ -24993,13 +25033,18 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
-        "capacity": "14",
-        "covered": "no",
+        "capacity": "30",
+        "covered": "yes",
+        "description": "Sheppard West Subway Station (Formerly Downsview Subway Station): Outside of passenger drop-off and pick-up area",
+        "fee": "yes",
         "operator": "City of Toronto",
         "operator:type": "government",
-        "meta_feature_last_updated": "2023-04-29T01:48:55+00:00",
+        "ref:toronto.ca:lockers:title": "Sheppard West Subway Station (Formerly Downsview Subway Station)",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/10854050274"
       },
       "geometry": {
@@ -30517,8 +30562,9 @@
         "indoor": "no",
         "operator": "City of Toronto",
         "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Guildwood GO Station",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2025-05-14T02:31:04+00:00",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/11638911447"
       },
       "geometry": {
@@ -30538,12 +30584,14 @@
         "bike_ride": "yes",
         "capacity": "6",
         "covered": "yes",
+        "description": "Scarborough GO Station: Located on the south side of the tracks next to the bike shelter",
         "fee": "yes",
         "image": "https://flic.kr/p/2pyXwW9",
         "operator": "City of Toronto",
         "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Scarborough GO Station",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2025-05-14T02:31:04+00:00",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/11638911448"
       },
       "geometry": {
@@ -31249,26 +31297,6 @@
         "coordinates": [
           -79.4105462,
           43.6626417
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "lockers",
-        "capacity": "6",
-        "covered": "yes",
-        "fee": "yes",
-        "meta_feature_last_updated": "2024-11-22T14:30:53+00:00",
-        "meta_osm_id": "node/11740141757"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.1973825,
-          43.7553688
         ]
       }
     },
@@ -34415,25 +34443,6 @@
         "coordinates": [
           -79.3021686,
           43.7803645
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "lockers",
-        "covered": "yes",
-        "fee": "yes",
-        "meta_feature_last_updated": "2024-11-22T14:34:02+00:00",
-        "meta_osm_id": "node/11960108511"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.1971234,
-          43.7549754
         ]
       }
     },
@@ -40177,19 +40186,18 @@
     {
       "type": "Feature",
       "properties": {
-        "access": "customers",
+        "access": "private",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
         "capacity": "26",
         "cargo_bike": "no",
         "covered": "yes",
-        "description": "City bike lockers",
-        "fee": "yes",
+        "description": "City bike lockers (not listed on public lockers page, may be for City staff only)",
         "operator": "City of Toronto",
         "operator:type": "government",
         "quantity": "13",
-        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2025-05-14T02:31:04+00:00",
+        "ref:toronto.ca": "no",
+        "meta_feature_last_updated": "2025-08-03T16:37:14+00:00",
         "meta_osm_id": "node/12245059980"
       },
       "geometry": {
@@ -41631,11 +41639,13 @@
         "capacity": "6",
         "cargo_bike": "no",
         "covered": "yes",
+        "description": "North York Civic Centre: South side of the Civic Centre, slightly west of Beecroft Rd. (near Douglas Snow Aquatic Centre).",
         "fee": "yes",
         "operator": "City of Toronto",
         "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "North York Civic Centre",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2025-05-14T02:31:04+00:00",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "node/12329207032"
       },
       "geometry": {
@@ -50494,19 +50504,38 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "meta_feature_last_updated": "2025-08-03T19:04:19+00:00",
+        "meta_osm_id": "node/13046470398"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4033084,
+          43.650093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
         "capacity": "6",
         "covered": "yes",
+        "description": "Kennedy Subway Station: Lockers are located on south side of the Kiss\u2019n\u2019Ride off Transway Crescent",
         "fee": "yes",
         "image": "https://flic.kr/p/2pjG6pL",
         "indoor": "no",
         "lit": "yes",
         "operator": "City of Toronto",
         "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Kennedy Subway Station",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2025-05-14T02:31:04+00:00",
+        "meta_feature_last_updated": "2025-08-03T16:18:20+00:00",
         "meta_osm_id": "way/135331961"
       },
       "geometry": {
