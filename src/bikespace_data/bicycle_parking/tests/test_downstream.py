@@ -83,12 +83,11 @@ mock_gdf = gpd.GeoDataFrame.from_features(
 
 
 def test_extract_ref_tags():
-    """Extract ref tags from a mock gdf using the 'ref:open.toronto.ca' and 'ref:toronto.ca' patterns and ensure that all the tags are properly extracted."""
+    """Extract ref tags from a mock gdf using the 'ref:(open\\.)?toronto\\.ca' pattern (for 'ref:open.toronto.ca' and 'ref:toronto.ca' prefixes) and ensure that all the tags are properly extracted."""
 
-    open_toronto_ca_tags = extract_ref_tags(mock_gdf, "ref:open.toronto.ca")
-    toronto_ca_tags = extract_ref_tags(mock_gdf, "ref:toronto.ca")
+    ref_tags = extract_ref_tags(mock_gdf, r"ref:(open\.)?toronto\.ca")
 
-    assert open_toronto_ca_tags == {
+    assert ref_tags == {
         "ref:open.toronto.ca": ["no", "yes"],
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": [
             "BP-34427",
@@ -100,7 +99,5 @@ def test_extract_ref_tags():
         "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": ["78", "43"],
         "ref:open.toronto.ca:bicycle-parking-racks:objectid": ["52"],
         "ref:open.toronto.ca:bicycle-parking-bike-stations-indoor:id": ["2"],
-    }
-    assert toronto_ca_tags == {
-        "ref:toronto.ca:lockers:title": ["Bayview Subway Station"]
+        "ref:toronto.ca:lockers:title": ["Bayview Subway Station"],
     }
