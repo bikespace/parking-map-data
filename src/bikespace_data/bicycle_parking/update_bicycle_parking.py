@@ -393,7 +393,7 @@ def run_pipeline(*, archive=False):
         .set_geometry(add_attr_drop.to_crs("EPSG:32617").geometry.centroid)
         .to_crs("EPSG:4326"),
         path=ofp,
-        file_name="all_filtered_source.geojson",
+        file_name="all_normalized_tagged.geojson",
         archive_name=archive_name,
         na="drop",
     )
