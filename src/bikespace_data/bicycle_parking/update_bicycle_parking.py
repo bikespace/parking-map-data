@@ -437,8 +437,8 @@ def run_pipeline(*, archive=False):
         pd.concat([not_city_racks, agg_racks], ignore_index=True)
     ).convert_dtypes()
 
-    # make combined set from all sources
-    all_sources = racks_clustered_utm17N.to_crs("EPSG:4326")  # WGS 84
+    # convert back to WGS 84
+    all_sources = racks_clustered_utm17N.to_crs("EPSG:4326")
 
     # Save display files
     # ------------------
