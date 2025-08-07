@@ -47239,10 +47239,11 @@
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-06-10T18:41:49+00:00",
+        "meta_feature_last_updated": "2025-08-06T18:17:29+00:00",
         "meta_osm_id": "node/12903208551"
       },
       "geometry": {
@@ -47258,10 +47259,11 @@
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-06-10T18:41:49+00:00",
+        "meta_feature_last_updated": "2025-08-06T18:17:29+00:00",
         "meta_osm_id": "node/12903208552"
       },
       "geometry": {
@@ -47277,17 +47279,18 @@
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-06-10T18:41:49+00:00",
+        "meta_feature_last_updated": "2025-08-06T18:17:29+00:00",
         "meta_osm_id": "node/12903208553"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5082656,
-          43.6481628
+          -79.5082761,
+          43.6481594
         ]
       }
     },
@@ -50515,6 +50518,26 @@
         "coordinates": [
           -79.4033084,
           43.650093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-06T18:17:29+00:00",
+        "meta_osm_id": "node/13053437239"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5081908,
+          43.648175
         ]
       }
     },
