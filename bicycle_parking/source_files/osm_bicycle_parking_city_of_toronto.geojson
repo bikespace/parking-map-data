@@ -44784,14 +44784,14 @@
         "covered": "no",
         "fee": "no",
         "quantity": "5",
-        "meta_feature_last_updated": "2025-03-29T19:34:25+00:00",
+        "meta_feature_last_updated": "2025-08-09T16:27:04+00:00",
         "meta_osm_id": "node/12710416796"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3920413,
-          43.6884352
+          -79.3920409,
+          43.6884127
         ]
       }
     },
@@ -44806,14 +44806,14 @@
         "covered": "no",
         "fee": "no",
         "quantity": "3",
-        "meta_feature_last_updated": "2025-03-29T19:34:25+00:00",
+        "meta_feature_last_updated": "2025-08-09T16:27:04+00:00",
         "meta_osm_id": "node/12710416797"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3923211,
-          43.6883743
+          -79.3923386,
+          43.6883475
         ]
       }
     },
@@ -50544,6 +50544,162 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-09T16:53:53+00:00",
+        "meta_osm_id": "node/13059983813"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5373458,
+          43.638248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-09T16:53:53+00:00",
+        "meta_osm_id": "node/13059983814"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5373555,
+          43.6382541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-09T16:53:53+00:00",
+        "meta_osm_id": "node/13059983815"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5373661,
+          43.6382605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-09T16:53:53+00:00",
+        "meta_osm_id": "node/13059983816"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5373763,
+          43.6382672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "capacity": "8",
+        "covered": "yes",
+        "description": "stacker rack; max wheelwidth 9cm",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-08-09T21:48:59+00:00",
+        "meta_osm_id": "node/13060863867"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.315061,
+          43.6980661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "bike_ride": "yes",
+        "capacity": "8",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "panoramax": "e66174a5-1ee1-4475-b4ec-9cb737f5bb73",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-08-10T00:06:44+00:00",
+        "meta_osm_id": "node/13060914148"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3133339,
+          43.6865309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "bike_ride": "yes",
+        "capacity": "8",
+        "covered": "no",
+        "description": "stacker rack",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "panoramax": "2053f375-486f-4fec-8bb4-79f1191f6c58",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-08-10T00:26:51+00:00",
+        "meta_osm_id": "node/13060914149"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3129077,
+          43.6865095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -53076,6 +53232,38 @@
               -79.4088414,
               43.6373051
             ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "20",
+        "capacity:cargo_bike": "10",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "quantity": "10",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-08-09T21:48:59+00:00",
+        "meta_osm_id": "way/1421250438"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.316097,
+            43.6984081
+          ],
+          [
+            -79.316063,
+            43.698329
           ]
         ]
       }
