@@ -48521,10 +48521,13 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
+        "bike_ride": "yes",
         "capacity": "2",
+        "colour": "silver",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-09T17:56:36+00:00",
+        "indoor": "no",
+        "meta_feature_last_updated": "2025-08-10T18:03:10+00:00",
         "meta_osm_id": "node/12990082516"
       },
       "geometry": {
@@ -50694,6 +50697,32 @@
         "coordinates": [
           -79.3129077,
           43.6865095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "capacity:cargo_bike": "7",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "bike corral in parking lane",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2025-08-11T02:33:19+00:00",
+        "meta_osm_id": "node/13062658296"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.446417,
+          43.6619068
         ]
       }
     },
