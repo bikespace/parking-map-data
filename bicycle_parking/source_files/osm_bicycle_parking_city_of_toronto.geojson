@@ -2110,8 +2110,10 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
+        "check_date": "2025-08-12",
+        "covered": "no",
         "note": "ring and posts along north side of Dundas along whole block",
-        "meta_feature_last_updated": "2011-01-22T00:26:12+00:00",
+        "meta_feature_last_updated": "2025-08-12T22:04:29+00:00",
         "meta_osm_id": "node/1114129263"
       },
       "geometry": {
@@ -27197,7 +27199,8 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-10-22T15:40:41+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-08-12T12:39:15+00:00",
         "meta_osm_id": "node/11281687169"
       },
       "geometry": {
@@ -50726,6 +50729,46 @@
         "coordinates": [
           -79.446417,
           43.6619068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-12T17:15:06+00:00",
+        "meta_osm_id": "node/13065965044"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.476872,
+          43.6270205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-12T17:15:06+00:00",
+        "meta_osm_id": "node/13065965045"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4768795,
+          43.626993
         ]
       }
     },
