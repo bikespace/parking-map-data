@@ -50835,6 +50835,48 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "covered": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "meta_feature_last_updated": "2025-08-16T02:04:29+00:00",
+        "meta_osm_id": "node/13073441838"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4072706,
+          43.6765665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "covered": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "meta_feature_last_updated": "2025-08-16T02:04:29+00:00",
+        "meta_osm_id": "node/13073441839"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4071584,
+          43.676467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
