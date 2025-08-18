@@ -35805,14 +35805,14 @@
         "operator": "University of Toronto",
         "operator:type": "public",
         "quantity": "5",
-        "meta_feature_last_updated": "2024-07-17T01:27:47+00:00",
+        "meta_feature_last_updated": "2025-08-17T23:07:04+00:00",
         "meta_osm_id": "node/12058223766"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.39693,
-          43.6631792
+          -79.3969119,
+          43.6631505
         ]
       }
     },
