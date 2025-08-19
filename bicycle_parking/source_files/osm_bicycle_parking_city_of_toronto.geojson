@@ -50944,6 +50944,82 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-18T23:51:52+00:00",
+        "meta_osm_id": "node/13078893701"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3497668,
+          43.6769982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-18T23:51:52+00:00",
+        "meta_osm_id": "node/13078893702"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3498154,
+          43.6769904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-18T23:51:52+00:00",
+        "meta_osm_id": "node/13078893801"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3497481,
+          43.6770332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-08-18T23:51:52+00:00",
+        "meta_osm_id": "node/13078893901"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3497591,
+          43.6770672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
