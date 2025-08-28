@@ -5,6 +5,8 @@ from pathlib import Path
 import pandas as pd
 import requests
 
+status_manager_date_format = r"%Y-%m-%dT%H:%M:%S.%f%:z"
+
 
 class StatusManager:
     """Interface for getting and updating database statuses"""
@@ -93,4 +95,6 @@ class StatusManager:
 
     def save(self):
         self.status_save.parent.mkdir(exist_ok=True, parents=True)
-        self._status_table.to_csv(self.status_save, index=False)
+        self._status_table.to_csv(
+            self.status_save, index=False, date_format=status_manager_date_format
+        )
