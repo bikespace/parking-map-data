@@ -47119,14 +47119,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-06-10T18:41:49+00:00",
+        "meta_feature_last_updated": "2025-08-28T00:21:53+00:00",
         "meta_osm_id": "node/12903208544"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5104134,
-          43.6476818
+          -79.5104037,
+          43.647668
         ]
       }
     },
@@ -47233,7 +47233,8 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-06-10T18:41:49+00:00",
+        "note": "damaged; not usable",
+        "meta_feature_last_updated": "2025-08-28T00:21:53+00:00",
         "meta_osm_id": "node/12903208550"
       },
       "geometry": {
@@ -47350,14 +47351,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-06-10T18:41:49+00:00",
+        "meta_feature_last_updated": "2025-08-28T00:21:53+00:00",
         "meta_osm_id": "node/12903208556"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5069159,
-          43.6484651
+          -79.506938,
+          43.648452
         ]
       }
     },
@@ -47545,14 +47546,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-06-10T18:41:49+00:00",
+        "meta_feature_last_updated": "2025-08-28T00:21:53+00:00",
         "meta_osm_id": "node/12903208569"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5118628,
-          43.6473608
+          -79.5118566,
+          43.6473493
         ]
       }
     },
@@ -54098,6 +54099,74 @@
         "coordinates": [
           -79.4841644,
           43.6494876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-08-28T00:21:53+00:00",
+        "meta_osm_id": "node/13102751145"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4859949,
+          43.6482806
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-08-28T00:21:53+00:00",
+        "meta_osm_id": "node/13102751146"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4860211,
+          43.648265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "meta_feature_last_updated": "2025-08-28T00:21:53+00:00",
+        "meta_osm_id": "node/13102751155"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5116002,
+          43.6476511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "16",
+        "note": "Two pretty standard-looking coathanger racks, capacity estimated",
+        "meta_feature_last_updated": "2025-08-28T01:51:07+00:00",
+        "meta_osm_id": "node/13102799478"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3745054,
+          43.6200032
         ]
       }
     },
