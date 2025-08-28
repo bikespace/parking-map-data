@@ -270,7 +270,7 @@ class BikeLockersToronto(BikeData):
     """Wrapper for working with bicycle locker data from https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/"""
 
     def __init__(self, dataset_name: str, page_url: str):
-        self.dataset_name = dataset_name
+        super().__init__(dataset_name)
         self.page_url = page_url
 
         # get webpage
