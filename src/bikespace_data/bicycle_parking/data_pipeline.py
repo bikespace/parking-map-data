@@ -88,6 +88,75 @@ def get_city_exclusions(
     return city_exclusions
 
 
+class StatusDict(TypedDict):
+    dataset_name: str
+    last_updated: datetime
+    num_features: int
+    last_checked: datetime
+
+
+def run_update(
+    bike_data: BikeData,
+    *,
+    status_manager: StatusManager,
+    sfp: Path,
+    ofp: Path,
+    archive_name: str | None,
+) -> StatusDict:
+    """Function to check whether specified dataset is up to date and download new data if required.
+
+    Returns
+    -------
+        Returns a status dict with the following values:
+        - dataset_name
+        - last_updated: datetime the source dataset was last updated
+        - num_features: number of features in filtered/transformed output
+        - last_checked: datetime the source was last queried
+
+    As a side effect, will save or update the following files:
+    - Data received from the source: /source_files/{bike_data.dataset_name}.geojson
+    - Normalized (filtered and transformed) data: /source_files/{bike_data.dataset_name}-normalized.geojson
+
+    """
+
+    # check if data has been updated (NOT CURRENTLY USED)
+    rec_last_updated = status_manager.last_updated(dataset_name=bike_data.dataset_name)
+
+    # save source file
+    save_output(
+        bike_data.response_geojson,
+        path=sfp,
+        file_name=f"{bike_data.dataset_name}.geojson",
+        archive_name=archive_name,
+    )
+
+    # get normalized output
+    filter_properties = conversions.get_filter(bike_data.dataset_name)
+    transform_properties = conversions.get_transform(bike_data.dataset_name)
+    normalized_gdf = bike_data.normalize(filter_properties, transform_properties)
+
+    # save normalized output
+    na_option = "drop" if isinstance(bike_data, BikeDataOSM) else "null"
+    save_output(
+        normalized_gdf,
+        path=ofp,
+        file_name=f"{bike_data.dataset_name}-normalized.geojson",
+        archive_name=archive_name,
+        na=na_option,
+    )
+
+    dataset_status: StatusDict = {
+        "dataset_name": bike_data.dataset_name,
+        "last_updated": bike_data.last_updated,
+        "num_features": len(normalized_gdf),
+        "last_checked": datetime.now(timezone.utc),
+    }
+    status_manager.add(**dataset_status)
+    status_manager.save()
+
+    return dataset_status
+
+
 # SCRIPT EXECUTION
 # ----------------
 
@@ -151,70 +220,6 @@ def run_pipeline(
     }
     sources = load_paths(source_paths)
 
-    # update function
-
-    class StatusDict(TypedDict):
-        dataset_name: str
-        last_updated: datetime
-        num_features: int
-        last_checked: datetime
-
-    def run_update(bike_data: BikeData, status_manager: StatusManager) -> StatusDict:
-        """Function to check whether specified dataset is up to date and download new data if required.
-
-        Returns
-        -------
-          Returns a status dict with the following values:
-          - dataset_name
-          - last_updated: datetime the source dataset was last updated
-          - num_features: number of features in filtered/transformed output
-          - last_checked: datetime the source was last queried
-
-        As a side effect, will save or update the following files:
-        - Data received from the source: /source_files/{bike_data.dataset_name}.geojson
-        - Normalized (filtered and transformed) data: /source_files/{bike_data.dataset_name}-normalized.geojson
-
-        """
-
-        # check if data has been updated (NOT CURRENTLY USED)
-        rec_last_updated = status_manager.last_updated(
-            dataset_name=bike_data.dataset_name
-        )
-
-        # save source file
-        save_output(
-            bike_data.response_geojson,
-            path=sfp,
-            file_name=f"{bike_data.dataset_name}.geojson",
-            archive_name=archive_name,
-        )
-
-        # get normalized output
-        filter_properties = conversions.get_filter(bike_data.dataset_name)
-        transform_properties = conversions.get_transform(bike_data.dataset_name)
-        normalized_gdf = bike_data.normalize(filter_properties, transform_properties)
-
-        # save normalized output
-        na_option = "drop" if isinstance(bike_data, BikeDataOSM) else "null"
-        save_output(
-            normalized_gdf,
-            path=ofp,
-            file_name=f"{bike_data.dataset_name}-normalized.geojson",
-            archive_name=archive_name,
-            na=na_option,
-        )
-
-        dataset_status: StatusDict = {
-            "dataset_name": bike_data.dataset_name,
-            "last_updated": bike_data.last_updated,
-            "num_features": len(normalized_gdf),
-            "last_checked": datetime.now(timezone.utc),
-        }
-        status_manager.add(**dataset_status)
-        status_manager.save()
-
-        return dataset_status
-
     # City of Toronto Data
     print("Checking and updating City of Toronto data...")
 
@@ -222,7 +227,13 @@ def run_pipeline(
     for dataset in sources["city"]["datasets"]:
         bdt = BikeDataToronto(dataset["dataset_name"], dataset["resource_name"])
         # check source and save output files if there are new changes
-        updated_status = run_update(bdt, sm)
+        updated_status = run_update(
+            bdt,
+            status_manager=sm,
+            sfp=sfp,
+            ofp=ofp,
+            archive_name=archive_name,
+        )
 
     # get output files, do further processing and combine
     city_data = {}
@@ -243,7 +254,13 @@ def run_pipeline(
     for dataset in sources["osm"]["datasets"]:
         bdo = BikeDataOSM(dataset["dataset_name"], dataset["overpass_query"])
         # check source and save output files if there are new changes
-        updated_status = run_update(bdo, sm)
+        updated_status = run_update(
+            bdo,
+            status_manager=sm,
+            sfp=sfp,
+            ofp=ofp,
+            archive_name=archive_name,
+        )
 
     # get output files, do further processing and combine
     osm_data_list = []
@@ -268,7 +285,13 @@ def run_pipeline(
     for dataset in sources["lockers"]["datasets"]:
         blt = BikeLockersToronto(dataset["dataset_name"], dataset["url"])
         # check source and save output files if there are new changes
-        updated_status = run_update(blt, sm)
+        updated_status = run_update(
+            blt,
+            status_manager=sm,
+            sfp=sfp,
+            ofp=ofp,
+            archive_name=archive_name,
+        )
 
     # get output files, do further processing and combine
     lockers_data_list = []
