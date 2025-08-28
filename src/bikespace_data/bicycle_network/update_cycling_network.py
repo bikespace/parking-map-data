@@ -90,7 +90,9 @@ def update_cycling_network(
     if last_updated.tzinfo is None:
         last_updated = last_updated.replace(tzinfo=timezone.utc)
 
-    if sm.last_updated is None or last_updated > sm.last_updated:
+    last_updated_from_status = sm.last_updated()
+
+    if last_updated_from_status is None or last_updated > last_updated_from_status:
         print("Changes posted, updating cycling-network dataset")
 
         # sort values to reduce differences in diff

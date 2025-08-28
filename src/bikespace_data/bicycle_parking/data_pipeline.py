@@ -7,36 +7,36 @@
 # IMPORTS
 # -------
 
+import json
 from argparse import ArgumentParser
 from datetime import datetime, timezone
 from itertools import chain
-import json
-import requests
-from typing import Literal
+from pathlib import Path
+from typing import Literal, TypedDict
 from zoneinfo import ZoneInfo
 
 import geojson
 import geopandas
-import pandas as pd
-from pathlib import Path
-from shapely import Polygon
 import overpass
-
-from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
+import pandas as pd
+import requests
+from shapely import Polygon
 
 import bikespace_data.bicycle_parking.conversions as conversions
-from bikespace_data.bicycle_parking.wrappers import (
-    BikeData,
-    BikeDataToronto,
-    BikeDataOSM,
-    BikeLockersToronto,
-)
+from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
 from bikespace_data.bicycle_parking.downstream import (
-    group_proximate_rings,
-    group_proximate_racks,
     drop_mapped_city_lockers,
+    group_proximate_racks,
+    group_proximate_rings,
 )
 from bikespace_data.bicycle_parking.utilities import dt_cols_to_str, ref_cols_to_str
+from bikespace_data.bicycle_parking.wrappers import (
+    BikeData,
+    BikeDataOSM,
+    BikeDataToronto,
+    BikeLockersToronto,
+)
+from bikespace_data.utilities import StatusManager
 
 geopandas.options.io_engine = "pyogrio"
 
@@ -92,7 +92,11 @@ def get_city_exclusions(
 # ----------------
 
 
-def run_pipeline(*, archive=False):
+def run_pipeline(
+    *,
+    archive=False,
+    status_path: Path = Path("bicycle_parking/statuses/bicycle_parking_statuses.csv"),
+):
     """Main function to run the data processing pipeline."""
 
     # get today's date and use to set output folders
@@ -114,6 +118,11 @@ def run_pipeline(*, archive=False):
     # load in details and status
     print("Loading sources and statuses...")
 
+    sm = StatusManager(
+        status_source=f"https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/{str(status_path)}",
+        status_save=status_path,
+    )
+
     def load_paths(paths: dict) -> dict:
         data = {}
         for label, path in paths.items():
@@ -128,7 +137,7 @@ def run_pipeline(*, archive=False):
 
         return data
 
-    # load paths to .json files specifying details and status of data sources
+    # load paths to .json files specifying details of data sources
     source_paths = {
         "city": Path(
             "src/bikespace_data/bicycle_parking/sources/open_toronto_ca_sources.json"
@@ -140,32 +149,26 @@ def run_pipeline(*, archive=False):
             "src/bikespace_data/bicycle_parking/sources/toronto_lockers_sources.json"
         ),
     }
-    status_paths = {
-        "city": Path("bicycle_parking/statuses/open_toronto_ca_statuses.json"),
-        "osm": Path("bicycle_parking/statuses/openstreetmap_statuses.json"),
-        "lockers": Path("bicycle_parking/statuses/toronto_lockers_statuses.json"),
-    }
     sources = load_paths(source_paths)
-    statuses = load_paths(status_paths)
 
     # update function
 
-    def run_update(bike_data: type[BikeData], dataset_status: dict) -> dict:
-        """Function to check whether specified dataset is up to date and download new data if required.
+    class StatusDict(TypedDict):
+        dataset_name: str
+        last_updated: datetime
+        num_features: int
+        last_checked: datetime
 
-        Parameters
-        ----------
-        bike_data: type[BikeData]
-        dataset_status: dict
-          - Optional
+    def run_update(bike_data: BikeData, status_manager: StatusManager) -> StatusDict:
+        """Function to check whether specified dataset is up to date and download new data if required.
 
         Returns
         -------
           Returns a status dict with the following values:
+          - dataset_name
           - last_updated: datetime the source dataset was last updated
-          - num_normalized_features: number of features in filtered/transformed output
+          - num_features: number of features in filtered/transformed output
           - last_checked: datetime the source was last queried
-          - days_since_source_update: calculated number of days between last_checked and last_updated to indicate source data freshness
 
         As a side effect, will save or update the following files:
         - Data received from the source: /source_files/{bike_data.dataset_name}.geojson
@@ -173,13 +176,9 @@ def run_pipeline(*, archive=False):
 
         """
 
-        # check if data has been updated
-        rec_last_updated_str = dataset_status.setdefault("last_updated", None)
-        rec_last_updated = (
-            datetime.fromisoformat(rec_last_updated_str)
-            if rec_last_updated_str
-            # None not allowed in date comparsion; this is like datetime.min but tz aware
-            else datetime(1, 1, 1, tzinfo=timezone.utc)
+        # check if data has been updated (NOT CURRENTLY USED)
+        rec_last_updated = status_manager.last_updated(
+            dataset_name=bike_data.dataset_name
         )
 
         # save source file
@@ -205,18 +204,15 @@ def run_pipeline(*, archive=False):
             na=na_option,
         )
 
-        num_normalized_features = len(normalized_gdf)
+        dataset_status: StatusDict = {
+            "dataset_name": bike_data.dataset_name,
+            "last_updated": bike_data.last_updated,
+            "num_features": len(normalized_gdf),
+            "last_checked": datetime.now(timezone.utc),
+        }
+        status_manager.add(**dataset_status)
+        status_manager.save()
 
-        # update status from metadata
-        dataset_status["last_updated"] = bike_data.last_updated.isoformat()
-        dataset_status["num_normalized_features"] = num_normalized_features
-
-        # update check datetime
-        last_checked = datetime.now(timezone.utc)
-        dataset_status["last_checked"] = last_checked.isoformat()
-        dataset_status["days_since_source_update"] = (
-            last_checked - datetime.fromisoformat(dataset_status["last_updated"])
-        ).days
         return dataset_status
 
     # City of Toronto Data
@@ -225,19 +221,8 @@ def run_pipeline(*, archive=False):
     # check status and update output file if needed
     for dataset in sources["city"]["datasets"]:
         bdt = BikeDataToronto(dataset["dataset_name"], dataset["resource_name"])
-        dataset_status = statuses["city"].setdefault(bdt.dataset_name, {})
         # check source and save output files if there are new changes
-        updated_status = run_update(bdt, dataset_status)
-        statuses["city"][bdt.dataset_name] = (
-            statuses["city"][bdt.dataset_name] | updated_status
-        )
-
-    # update status JSON
-    status_fp = Path("bicycle_parking/statuses/")
-    status_fp.mkdir(exist_ok=True, parents=True)
-
-    with status_paths["city"].open("w") as f:
-        json.dump(statuses["city"], f, indent=2)
+        updated_status = run_update(bdt, sm)
 
     # get output files, do further processing and combine
     city_data = {}
@@ -257,16 +242,8 @@ def run_pipeline(*, archive=False):
     # check status and update output file if needed
     for dataset in sources["osm"]["datasets"]:
         bdo = BikeDataOSM(dataset["dataset_name"], dataset["overpass_query"])
-        dataset_status = statuses["osm"].setdefault(bdo.dataset_name, {})
         # check source and save output files if there are new changes
-        updated_status = run_update(bdo, dataset_status)
-        statuses["osm"][bdo.dataset_name] = (
-            statuses["osm"][bdo.dataset_name] | updated_status
-        )
-
-    # update status JSON
-    with status_paths["osm"].open("w") as f:
-        json.dump(statuses["osm"], f, indent=2)
+        updated_status = run_update(bdo, sm)
 
     # get output files, do further processing and combine
     osm_data_list = []
@@ -290,16 +267,8 @@ def run_pipeline(*, archive=False):
     # check status and update output file if needed
     for dataset in sources["lockers"]["datasets"]:
         blt = BikeLockersToronto(dataset["dataset_name"], dataset["url"])
-        dataset_status = statuses["lockers"].setdefault(blt.dataset_name, {})
         # check source and save output files if there are new changes
-        updated_status = run_update(blt, dataset_status)
-        statuses["lockers"][blt.dataset_name] = (
-            statuses["lockers"][blt.dataset_name] | updated_status
-        )
-
-    # update status JSON
-    with status_paths["lockers"].open("w") as f:
-        json.dump(statuses["lockers"], f, indent=2)
+        updated_status = run_update(blt, sm)
 
     # get output files, do further processing and combine
     lockers_data_list = []

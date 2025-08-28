@@ -37,10 +37,14 @@ class StatusManager:
                 f"Could not get status from source {status_source}. Resource returned status {response.status_code}"
             )
 
-    @property
-    def last_updated(self) -> datetime | None:
+    def last_updated(self, dataset_name: str | None = None) -> datetime | None:
         if len(self._status_table) == 0:
             return None
+        elif dataset_name is not None:
+            filtered_status_table = self._status_table[
+                self._status_table["dataset_name"] == dataset_name
+            ]
+            return filtered_status_table["last_updated"].max().to_pydatetime()
         else:
             return self._status_table["last_updated"].max().to_pydatetime()
 
