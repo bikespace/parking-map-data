@@ -96,4 +96,4 @@ def test_status_manager_tznaive_date_handling(mocker):
         num_features=1,
         last_checked=datetime.now(timezone.utc),
     )
-    assert sm.last_updated == datetime(2025, 6, 30, 23, 0, 0, 0, tzinfo=timezone.utc)
+    assert sm.last_updated() == datetime(2025, 6, 30, 23, 0, 0, 0, tzinfo=timezone.utc)
