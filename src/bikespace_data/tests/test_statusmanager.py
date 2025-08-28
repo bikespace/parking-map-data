@@ -1,6 +1,7 @@
 import csv
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 import pandera.pandas as pa
@@ -59,7 +60,7 @@ def test_status_manager(mocker, tmp_path):
     # add an update with timezone-naive datetimes
     tz_naive_last_checked = datetime.now()
     sm.add(
-        dataset_name="test",
+        dataset_name="test tz-naive",
         last_updated=datetime(2025, 7, 1),
         num_features=150,
         last_checked=tz_naive_last_checked,
@@ -69,12 +70,21 @@ def test_status_manager(mocker, tmp_path):
     # add an update with timezone-aware datetimes
     tz_aware_last_checked = datetime.now(timezone.utc)
     sm.add(
-        dataset_name="test",
+        dataset_name="test tz-aware",
         last_updated=datetime(2025, 7, 1, tzinfo=timezone.utc),
         num_features=150,
         last_checked=tz_aware_last_checked,
     )
     sm_schema.validate(sm._status_table)
+
+    # add an update with a non-utc timezone
+    tz_not_utc_last_checked = datetime.now(ZoneInfo("America/Toronto"))
+    sm.add(
+        dataset_name="test tz-not-utc",
+        last_updated=datetime(2025, 7, 1, tzinfo=timezone.utc),
+        num_features=150,
+        last_checked=tz_not_utc_last_checked,
+    )
 
     # save the status table (twice)
     sm.save()
@@ -87,17 +97,26 @@ def test_status_manager(mocker, tmp_path):
         mock_header,
         mock_line,
         [
-            "test",
+            "test tz-naive",
             "2025-07-01T00:00:00.000000+00:00",
             "150",
             tz_naive_last_checked.strftime(status_manager_date_format) + "+00:00",
             "58",
         ],
         [
-            "test",
+            "test tz-aware",
             "2025-07-01T00:00:00.000000+00:00",
             "150",
             tz_aware_last_checked.strftime(status_manager_date_format),
+            "58",
+        ],
+        [
+            "test tz-not-utc",
+            "2025-07-01T00:00:00.000000+00:00",
+            "150",
+            tz_not_utc_last_checked.astimezone(timezone.utc).strftime(
+                status_manager_date_format
+            ),
             "58",
         ],
     ]

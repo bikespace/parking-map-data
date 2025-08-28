@@ -64,12 +64,12 @@ class StatusManager:
 
         # Note: ckan default is UTC for datetime: https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-display-timezone
         last_updated_ts = pd.Timestamp(
-            last_updated
+            last_updated.astimezone(timezone.utc)
             if last_updated.tzinfo is not None
             else last_updated.replace(tzinfo=timezone.utc),
         )
         last_checked_ts = pd.Timestamp(
-            last_checked
+            last_checked.astimezone(timezone.utc)
             if last_checked.tzinfo is not None
             else last_checked.replace(tzinfo=timezone.utc),
         )
