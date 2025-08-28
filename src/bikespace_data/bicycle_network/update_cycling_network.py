@@ -4,7 +4,7 @@ from pathlib import Path
 import pandera.pandas as pa
 from pandera.errors import SchemaErrors
 
-from bikespace_data.bicycle_network.utilities import StatusManager
+from bikespace_data.utilities import StatusManager
 from bikespace_data.resources.toronto_open_data import TODResponse, request_tod_gdf
 
 cycling_network_schema = pa.DataFrameSchema(

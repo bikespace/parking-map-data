@@ -4,7 +4,7 @@ from pathlib import Path
 import pandas as pd
 import pandera.pandas as pa
 
-from bikespace_data.bicycle_network.utilities import StatusManager
+from bikespace_data.utilities import StatusManager
 
 sm_schema = pa.DataFrameSchema(
     columns={
