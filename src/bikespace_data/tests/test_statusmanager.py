@@ -30,17 +30,33 @@ def test_status_manager(mocker, tmp_path):
         "last_checked",
         "days_since_source_update",
     ]
-    mock_line = [
-        "test_name",
+    mock_line_one = [
+        "test_existing",
         "2025-01-01T05:00:00.000000+00:00",
         "123",
         "2025-01-07T05:00:00.000000+00:00",
         "10",
     ]
+    mock_line_two = [
+        "test_existing",
+        "2025-01-01T05:00:00+00:00",
+        "123",
+        "2025-01-07T05:00:00+00:00",
+        "10",
+    ]
+    mock_line_three = [
+        "test_existing",
+        "2025-01-01T01:00:00-04:00",
+        "123",
+        "2025-01-07T01:00:00-04:00",
+        "10",
+    ]
     mock_csv = "\n".join(
         [
             ",".join(mock_header),
-            ",".join(mock_line),
+            ",".join(mock_line_one),
+            ",".join(mock_line_two),
+            ",".join(mock_line_three),
         ]
     )
 
@@ -95,7 +111,10 @@ def test_status_manager(mocker, tmp_path):
 
     assert lines == [
         mock_header,
-        mock_line,
+        mock_line_one,
+        # dates in mock_line_two and mock_line_three should be coerced to mock_line_one format:
+        mock_line_one,
+        mock_line_one,
         [
             "test tz-naive",
             "2025-07-01T00:00:00.000000+00:00",

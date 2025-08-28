@@ -17,9 +17,19 @@ class StatusManager:
         response = requests.get(status_source)
 
         if response.status_code == 200:
-            st = pd.read_csv(
-                StringIO(response.text), parse_dates=["last_updated", "last_checked"]
-            ).convert_dtypes()
+            st = (
+                pd.read_csv(
+                    StringIO(response.text),
+                    parse_dates=["last_updated", "last_checked"],
+                )
+                .convert_dtypes()
+                .astype(
+                    {
+                        "last_updated": "datetime64[ns, UTC]",
+                        "last_checked": "datetime64[ns, UTC]",
+                    }
+                )
+            )
             self._status_table = st.assign(
                 last_updated=st["last_updated"].apply(lambda x: pd.Timestamp(x)),
                 last_checked=st["last_checked"].apply(lambda x: pd.Timestamp(x)),
