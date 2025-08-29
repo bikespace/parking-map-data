@@ -11,7 +11,7 @@ import json
 from argparse import ArgumentParser
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Literal, TypedDict
+from typing import Literal, Required, TypedDict, cast
 from zoneinfo import ZoneInfo
 
 import geojson
@@ -178,17 +178,29 @@ def run_pipeline(
         status_save=status_path,
     )
 
-    def load_paths(paths: dict) -> dict:
+    class SourceDataset(TypedDict, total=False):
+        dataset_name: Required[str]
+
+    class SourceDatasetTorontoOpenData(SourceDataset, total=False):
+        resource_name: Required[str]
+
+    class SourceDatasetOpenStreetMap(SourceDataset, total=False):
+        overpass_query: Required[str]
+
+    class SourceDatasetTorontoWeb(SourceDataset, total=False):
+        url: Required[str]
+
+    class SourceProperties(TypedDict):
+        url: str
+        datasets: list[SourceDataset]
+
+    def load_paths(paths: dict[str, Path]) -> dict[str, SourceProperties]:
         data = {}
         for label, path in paths.items():
-            item_data = None
-            if path.exists():
-                with path.open() as f:
-                    item_data = json.load(f)
-            else:
-                item_data = {}
+            with path.open() as f:
+                item_data: SourceProperties = json.load(f)
 
-            data = data | {label: item_data}
+            data: dict[str, SourceProperties] = data | {label: item_data}
 
         return data
 
@@ -211,6 +223,7 @@ def run_pipeline(
 
     # check status and update output file if needed
     for dataset in sources["city"]["datasets"]:
+        dataset = cast(SourceDatasetTorontoOpenData, dataset)
         bdt = BikeDataToronto(dataset["dataset_name"], dataset["resource_name"])
         # check source and save output files if there are new changes
         updated_status = run_update(
@@ -224,6 +237,7 @@ def run_pipeline(
     # get output files, do further processing and combine
     city_data = {}
     for dataset in sources["city"]["datasets"]:
+        dataset = cast(SourceDatasetTorontoOpenData, dataset)
         gdf = geopandas.read_file(
             ofp / f"{dataset['dataset_name']}-normalized.geojson"
         ).convert_dtypes()
@@ -237,6 +251,7 @@ def run_pipeline(
 
     # check status and update output file if needed
     for dataset in sources["osm"]["datasets"]:
+        dataset = cast(SourceDatasetOpenStreetMap, dataset)
         bdo = BikeDataOSM(dataset["dataset_name"], dataset["overpass_query"])
         # check source and save output files if there are new changes
         updated_status = run_update(
@@ -250,6 +265,7 @@ def run_pipeline(
     # get output files, do further processing and combine
     osm_data_list = []
     for dataset in sources["osm"]["datasets"]:
+        dataset = cast(SourceDatasetOpenStreetMap, dataset)
         gdf = geopandas.read_file(
             ofp / f"{dataset['dataset_name']}-normalized.geojson"
         ).convert_dtypes()
@@ -268,6 +284,7 @@ def run_pipeline(
 
     # check status and update output file if needed
     for dataset in sources["lockers"]["datasets"]:
+        dataset = cast(SourceDatasetTorontoWeb, dataset)
         blt = BikeLockersToronto(dataset["dataset_name"], dataset["url"])
         # check source and save output files if there are new changes
         updated_status = run_update(
@@ -281,6 +298,7 @@ def run_pipeline(
     # get output files, do further processing and combine
     lockers_data_list = []
     for dataset in sources["lockers"]["datasets"]:
+        dataset = cast(SourceDatasetTorontoWeb, dataset)
         gdf = geopandas.read_file(ofp / f"{dataset['dataset_name']}-normalized.geojson")
         gdf = gdf.convert_dtypes().astype(
             {"meta_source_last_updated": "str", "capacity": "Int64"}
