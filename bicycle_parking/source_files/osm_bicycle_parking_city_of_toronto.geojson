@@ -20998,7 +20998,9 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2022-02-20T18:45:49+00:00",
+        "bicycle_parking": "wall_loops",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-08-28T15:30:58+00:00",
         "meta_osm_id": "node/9522348779"
       },
       "geometry": {
@@ -48638,14 +48640,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-09T17:55:14+00:00",
+        "meta_feature_last_updated": "2025-08-28T23:49:01+00:00",
         "meta_osm_id": "node/12990162459"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5218797,
-          43.6451556
+          -79.5218766,
+          43.6451434
         ]
       }
     },
