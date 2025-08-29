@@ -16,7 +16,11 @@ class BikeData(ABC):
     """Shared interface for bike data regardless of source"""
 
     def __init__(self, dataset_name: str):
-        self.dataset_name: str = dataset_name
+        self._dataset_name = dataset_name
+
+    @property
+    def dataset_name(self) -> str:
+        return self._dataset_name
 
     @property
     @abstractmethod
@@ -266,7 +270,7 @@ class BikeLockersToronto(BikeData):
     """Wrapper for working with bicycle locker data from https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/"""
 
     def __init__(self, dataset_name: str, page_url: str):
-        self.dataset_name = dataset_name
+        super().__init__(dataset_name)
         self.page_url = page_url
 
         # get webpage

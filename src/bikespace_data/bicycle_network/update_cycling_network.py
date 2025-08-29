@@ -4,7 +4,7 @@ from pathlib import Path
 import pandera.pandas as pa
 from pandera.errors import SchemaErrors
 
-from bikespace_data.bicycle_network.utilities import StatusManager
+from bikespace_data.utilities import StatusManager
 from bikespace_data.resources.toronto_open_data import TODResponse, request_tod_gdf
 
 cycling_network_schema = pa.DataFrameSchema(
@@ -90,7 +90,9 @@ def update_cycling_network(
     if last_updated.tzinfo is None:
         last_updated = last_updated.replace(tzinfo=timezone.utc)
 
-    if sm.last_updated is None or last_updated > sm.last_updated:
+    last_updated_from_status = sm.last_updated()
+
+    if last_updated_from_status is None or last_updated > last_updated_from_status:
         print("Changes posted, updating cycling-network dataset")
 
         # sort values to reduce differences in diff
