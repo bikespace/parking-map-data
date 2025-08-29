@@ -42,6 +42,38 @@ from bikespace_data.utilities import StatusManager
 geopandas.options.io_engine = "pyogrio"
 
 
+class SourceDataset(TypedDict, total=False):
+    dataset_name: Required[str]
+
+
+class SourceDatasetTorontoOpenData(SourceDataset, total=False):
+    resource_name: Required[str]
+
+
+class SourceDatasetOpenStreetMap(SourceDataset, total=False):
+    overpass_query: Required[str]
+
+
+class SourceDatasetTorontoWeb(SourceDataset, total=False):
+    url: Required[str]
+
+
+class SourceProperties(TypedDict):
+    url: str
+    datasets: list[SourceDataset]
+
+
+def load_paths(paths: dict[str, Path]) -> dict[str, SourceProperties]:
+    data = {}
+    for label, path in paths.items():
+        with path.open() as f:
+            item_data: SourceProperties = json.load(f)
+
+        data: dict[str, SourceProperties] = data | {label: item_data}
+
+    return data
+
+
 def save_output(
     output: GeoJSONFeatureCollection | geopandas.GeoDataFrame,
     *,
@@ -177,32 +209,6 @@ def run_pipeline(
         status_source=f"https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/{str(status_path)}",
         status_save=status_path,
     )
-
-    class SourceDataset(TypedDict, total=False):
-        dataset_name: Required[str]
-
-    class SourceDatasetTorontoOpenData(SourceDataset, total=False):
-        resource_name: Required[str]
-
-    class SourceDatasetOpenStreetMap(SourceDataset, total=False):
-        overpass_query: Required[str]
-
-    class SourceDatasetTorontoWeb(SourceDataset, total=False):
-        url: Required[str]
-
-    class SourceProperties(TypedDict):
-        url: str
-        datasets: list[SourceDataset]
-
-    def load_paths(paths: dict[str, Path]) -> dict[str, SourceProperties]:
-        data = {}
-        for label, path in paths.items():
-            with path.open() as f:
-                item_data: SourceProperties = json.load(f)
-
-            data: dict[str, SourceProperties] = data | {label: item_data}
-
-        return data
 
     # load paths to .json files specifying details of data sources
     source_paths = {
