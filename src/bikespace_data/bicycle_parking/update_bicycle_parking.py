@@ -7,17 +7,15 @@
 # IMPORTS
 # -------
 
-import json
 from argparse import ArgumentParser
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Literal, Required, TypedDict, cast
+from typing import Literal, TypedDict, cast
 from zoneinfo import ZoneInfo
 
 import geojson
 import geopandas
 import pandas as pd
-import requests
 
 import bikespace_data.bicycle_parking.conversions as conversions
 from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
@@ -30,6 +28,12 @@ from bikespace_data.bicycle_parking.sources.city_exclusions import (
     city_exclusions_getids,
     get_city_exclusions,
 )
+from bikespace_data.bicycle_parking.sources.load_sources import (
+    SourceDatasetOpenStreetMap,
+    SourceDatasetTorontoOpenData,
+    SourceDatasetTorontoWeb,
+    load_paths,
+)
 from bikespace_data.bicycle_parking.utilities import dt_cols_to_str, ref_cols_to_str
 from bikespace_data.bicycle_parking.wrappers import (
     BikeData,
@@ -40,38 +44,6 @@ from bikespace_data.bicycle_parking.wrappers import (
 from bikespace_data.utilities import StatusManager
 
 geopandas.options.io_engine = "pyogrio"
-
-
-class SourceDataset(TypedDict, total=False):
-    dataset_name: Required[str]
-
-
-class SourceDatasetTorontoOpenData(SourceDataset, total=False):
-    resource_name: Required[str]
-
-
-class SourceDatasetOpenStreetMap(SourceDataset, total=False):
-    overpass_query: Required[str]
-
-
-class SourceDatasetTorontoWeb(SourceDataset, total=False):
-    url: Required[str]
-
-
-class SourceProperties(TypedDict):
-    url: str
-    datasets: list[SourceDataset]
-
-
-def load_paths(paths: dict[str, Path]) -> dict[str, SourceProperties]:
-    data = {}
-    for label, path in paths.items():
-        with path.open() as f:
-            item_data: SourceProperties = json.load(f)
-
-        data: dict[str, SourceProperties] = data | {label: item_data}
-
-    return data
 
 
 def save_output(
