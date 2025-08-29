@@ -74,7 +74,7 @@ def test_status_manager(mocker, tmp_path):
     sm_schema.validate(sm._status_table)
 
     # add an update with timezone-naive datetimes
-    tz_naive_last_checked = datetime.now()
+    tz_naive_last_checked = datetime(2025, 7, 30)
     sm.add(
         dataset_name="test tz-naive",
         last_updated=datetime(2025, 7, 1),
@@ -84,7 +84,7 @@ def test_status_manager(mocker, tmp_path):
     sm_schema.validate(sm._status_table)
 
     # add an update with timezone-aware datetimes
-    tz_aware_last_checked = datetime.now(timezone.utc)
+    tz_aware_last_checked = datetime(2025, 7, 30, tzinfo=timezone.utc)
     sm.add(
         dataset_name="test tz-aware",
         last_updated=datetime(2025, 7, 1, tzinfo=timezone.utc),
@@ -94,7 +94,7 @@ def test_status_manager(mocker, tmp_path):
     sm_schema.validate(sm._status_table)
 
     # add an update with a non-utc timezone
-    tz_not_utc_last_checked = datetime.now(ZoneInfo("America/Toronto"))
+    tz_not_utc_last_checked = datetime(2025, 7, 30, tzinfo=ZoneInfo("America/Toronto"))
     sm.add(
         dataset_name="test tz-not-utc",
         last_updated=datetime(2025, 7, 1, tzinfo=timezone.utc),
@@ -120,14 +120,14 @@ def test_status_manager(mocker, tmp_path):
             "2025-07-01T00:00:00.000000+00:00",
             "150",
             tz_naive_last_checked.strftime(status_manager_date_format) + "+00:00",
-            "58",
+            "29",
         ],
         [
             "test tz-aware",
             "2025-07-01T00:00:00.000000+00:00",
             "150",
             tz_aware_last_checked.strftime(status_manager_date_format),
-            "58",
+            "29",
         ],
         [
             "test tz-not-utc",
@@ -136,7 +136,7 @@ def test_status_manager(mocker, tmp_path):
             tz_not_utc_last_checked.astimezone(timezone.utc).strftime(
                 status_manager_date_format
             ),
-            "58",
+            "29",
         ],
     ]
 
@@ -158,6 +158,6 @@ def test_status_manager_tznaive_date_handling(mocker):
         dataset_name="test",
         last_updated=datetime.fromisoformat("2025-06-30T23:00:00.000000"),
         num_features=1,
-        last_checked=datetime.now(timezone.utc),
+        last_checked=datetime(2025, 7, 30),
     )
     assert sm.last_updated() == datetime(2025, 6, 30, 23, 0, 0, 0, tzinfo=timezone.utc)
