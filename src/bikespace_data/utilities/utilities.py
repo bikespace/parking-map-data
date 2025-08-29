@@ -5,6 +5,8 @@ from pathlib import Path
 import pandas as pd
 import requests
 
+status_manager_date_format = r"%Y-%m-%dT%H:%M:%S.%f%:z"
+
 
 class StatusManager:
     """Interface for getting and updating database statuses"""
@@ -15,9 +17,19 @@ class StatusManager:
         response = requests.get(status_source)
 
         if response.status_code == 200:
-            st = pd.read_csv(
-                StringIO(response.text), parse_dates=["last_updated", "last_checked"]
-            ).convert_dtypes()
+            st = (
+                pd.read_csv(
+                    StringIO(response.text),
+                    parse_dates=["last_updated", "last_checked"],
+                )
+                .convert_dtypes()
+                .astype(
+                    {
+                        "last_updated": "datetime64[ns, UTC]",
+                        "last_checked": "datetime64[ns, UTC]",
+                    }
+                )
+            )
             self._status_table = st.assign(
                 last_updated=st["last_updated"].apply(lambda x: pd.Timestamp(x)),
                 last_checked=st["last_checked"].apply(lambda x: pd.Timestamp(x)),
@@ -37,10 +49,14 @@ class StatusManager:
                 f"Could not get status from source {status_source}. Resource returned status {response.status_code}"
             )
 
-    @property
-    def last_updated(self) -> datetime | None:
+    def last_updated(self, dataset_name: str | None = None) -> datetime | None:
         if len(self._status_table) == 0:
             return None
+        elif dataset_name is not None:
+            filtered_status_table = self._status_table[
+                self._status_table["dataset_name"] == dataset_name
+            ]
+            return filtered_status_table["last_updated"].max().to_pydatetime()
         else:
             return self._status_table["last_updated"].max().to_pydatetime()
 
@@ -58,12 +74,12 @@ class StatusManager:
 
         # Note: ckan default is UTC for datetime: https://docs.ckan.org/en/latest/maintaining/configuration.html#ckan-display-timezone
         last_updated_ts = pd.Timestamp(
-            last_updated
+            last_updated.astimezone(timezone.utc)
             if last_updated.tzinfo is not None
             else last_updated.replace(tzinfo=timezone.utc),
         )
         last_checked_ts = pd.Timestamp(
-            last_checked
+            last_checked.astimezone(timezone.utc)
             if last_checked.tzinfo is not None
             else last_checked.replace(tzinfo=timezone.utc),
         )
@@ -89,4 +105,6 @@ class StatusManager:
 
     def save(self):
         self.status_save.parent.mkdir(exist_ok=True, parents=True)
-        self._status_table.to_csv(self.status_save, index=False)
+        self._status_table.to_csv(
+            self.status_save, index=False, date_format=status_manager_date_format
+        )

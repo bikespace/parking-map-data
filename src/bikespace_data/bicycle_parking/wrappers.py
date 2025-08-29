@@ -2,34 +2,40 @@ from abc import ABC, abstractmethod
 from copy import deepcopy
 from datetime import datetime, timezone
 
-from bs4 import BeautifulSoup
 import geojson
 import geopandas
 import overpass
 import pandas as pd
 import requests
+from bs4 import BeautifulSoup
+
+from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
 
 
 class BikeData(ABC):
     """Shared interface for bike data regardless of source"""
 
     def __init__(self, dataset_name: str):
-        self.dataset_name = dataset_name
+        self._dataset_name = dataset_name
+
+    @property
+    def dataset_name(self) -> str:
+        return self._dataset_name
 
     @property
     @abstractmethod
-    def last_updated(self):
+    def last_updated(self) -> datetime:
         pass
 
     @property
     @abstractmethod
-    def response_geojson(self):
+    def response_geojson(self) -> GeoJSONFeatureCollection:
         pass
 
     @abstractmethod
     def normalize(
         self, filter_properties, transform_properties, *, format="geodataframe"
-    ):
+    ) -> geopandas.GeoDataFrame | GeoJSONFeatureCollection:
         pass
 
 
@@ -264,7 +270,7 @@ class BikeLockersToronto(BikeData):
     """Wrapper for working with bicycle locker data from https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/"""
 
     def __init__(self, dataset_name: str, page_url: str):
-        self.dataset_name = dataset_name
+        super().__init__(dataset_name)
         self.page_url = page_url
 
         # get webpage
