@@ -103,7 +103,7 @@ def run_update(
     ofp: Path,
     archive_name: str | None,
 ) -> StatusDict:
-    """Function to check whether specified dataset is up to date and download new data if required.
+    """Download a dataset using its BikeData class wrapper and update the status for that dataset.
 
     Returns
     -------
@@ -113,7 +113,7 @@ def run_update(
         - num_features: number of features in filtered/transformed output
         - last_checked: datetime the source was last queried
 
-    As a side effect, will save or update the following files:
+    As a side effect, will update the status file managed by `status_manager` and save or update the following files:
     - Data received from the source: /source_files/{bike_data.dataset_name}.geojson
     - Normalized (filtered and transformed) data: /source_files/{bike_data.dataset_name}-normalized.geojson
 
