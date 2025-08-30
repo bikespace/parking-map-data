@@ -45,3 +45,6 @@ exclude_also = [
     'if __name__ == .__main__.:',
     '@(abc\.)?abstractmethod',
 ]
+
+[tool.marimo.runtime]
+output_max_bytes = 100_000_000
