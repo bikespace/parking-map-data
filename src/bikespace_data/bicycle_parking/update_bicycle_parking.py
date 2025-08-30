@@ -310,9 +310,12 @@ def run_pipeline(
         na="drop",
     )
 
-    # Downstream: City Data Selection
+    # Downstream: City and OSM data de-duplication
     # -------------------------------
-    print("Applying downstream processing: City Data Selection...")
+    print("Applying downstream processing: City and OSM data de-duplication...")
+
+    # convert to projected crs for spatial analysis
+    all_normalized_utm17N = all_normalized.to_crs("EPSG:32617")
 
     # get all instances of osm city ref tags and split out if needed
     id_lists = extract_ref_tags(osm_combined, r"ref:(open\.)?toronto\.ca")
@@ -321,7 +324,8 @@ def run_pipeline(
     city_exclusions = get_city_exclusions()
     city_exclusions_ids = city_exclusions_getids(city_exclusions)
 
-    add_attr_drop = all_normalized.assign(
+    # add property-based attributes used for data selection
+    add_attr = all_normalized_utm17N.assign(
         _city_drop_ref_match=lambda df: (
             (df["meta_source"].eq("City of Toronto", fill_value=False))
             & (df.isin(id_lists).any(axis=1))
@@ -352,40 +356,87 @@ def run_pipeline(
                 .any(axis=1)
             )
         ),
-        _osm_drop_operator_city=lambda df: (
-            (df["_osm_operator_city"]) & (~df["_osm_has_ref"])
-        ),
     )
 
-    # drop city data points if they have matching ref tags from osm data
-    # drop city data points in the manual exclusion file
-    # drop all osm with operator="City of Toronto" (case/space-insensitive) unless they have ref tag.
-    # this also retains osm points with ANY value for "ref:open.toronto.ca", including "ref.open.toronto.ca"="no"
+    # add spatial-based attributes used for data selection
+    osm_attr = add_attr[add_attr["meta_source"].eq("OpenStreetMap")]
+    city_attr_retained = add_attr[
+        add_attr["meta_source"].eq("City of Toronto")
+        & ~add_attr["_city_drop_ref_match"]
+        & ~add_attr["_city_drop_exclusions"]
+    ][["bicycle_parking", "geometry"]]
 
-    all_filtered = add_attr_drop[
-        ~(
-            (add_attr_drop["_city_drop_ref_match"])
-            | (add_attr_drop["_city_drop_exclusions"])
-            | (add_attr_drop["_osm_drop_operator_city"])
+    osm_city_5m_join = osm_attr.sjoin_nearest(
+        city_attr_retained[
+            ~city_attr_retained["bicycle_parking"].eq("rack", fill_value=False)
+        ],
+        how="left",
+        max_distance=5,
+        distance_col="distance",
+    )
+    osm_city_30m_join = osm_attr.sjoin_nearest(
+        city_attr_retained,
+        how="left",
+        max_distance=30,
+        distance_col="distance",
+    )
+
+    osm_drop_5m_match = osm_city_5m_join[
+        ~osm_city_5m_join.index.duplicated()
+        # spatial match within 5m radius only
+        & ~osm_city_5m_join["distance"].isna()
+        # do not drop OSM features with city ref
+        & ~osm_city_5m_join["_osm_has_ref"]
+        # only drop OSM features that are likely to be a ring and post
+        & (
+            osm_city_5m_join["bicycle_parking_left"].isin(["bollard", "stands"])
+            | osm_city_5m_join["bicycle_parking_left"].isna()
         )
-    ].drop(
-        columns=add_attr_drop.filter(regex=r"^_", axis=1).columns
-    )  # drop all columns with prefix "_"
+    ]
+    osm_drop_operator_city = osm_city_30m_join[
+        ~osm_city_30m_join.index.duplicated()
+        # drop OSM features where operator is like "City of Toronto"
+        & osm_city_30m_join["_osm_operator_city"]
+        # but keep if they have a ref tag
+        & ~osm_city_30m_join["_osm_has_ref"]
+        # and keep if they are more than 30m from a retained City feature
+        & ~osm_city_30m_join["distance"].isna()
+    ]
 
-    all_unclustered_utm17N = all_filtered.to_crs("EPSG:32617")
-    all_centroid_utm17N = all_unclustered_utm17N.set_geometry(
-        all_unclustered_utm17N.geometry.centroid
+    add_spatial = add_attr.assign(
+        _osm_drop_5m_match=lambda df: df.index.isin(osm_drop_5m_match.index),
+        _osm_drop_operator_city=lambda df: df.index.isin(osm_drop_operator_city.index),
+    )
+
+    final_selection = add_spatial.assign(
+        _retained=lambda df: ~(
+            # drop City data points if they have matching ref tags from OSM data
+            (df["_city_drop_ref_match"])
+            # drop City data points in the manual exclusion file
+            | (df["_city_drop_exclusions"])
+            # drop all OSM with operator like "City of Toronto" unless they have ref tag or are more than 30m from a retained City feature
+            # this also retains osm points with ANY value for "ref:open.toronto.ca", including "ref.open.toronto.ca"="no"
+            | (df["_osm_drop_operator_city"])
+            # drop any OSM that are likely to be a ring and post and within 5m of a retained City feature
+            | (df["_osm_drop_5m_match"])
+        )
     )
 
     save_output(
-        add_attr_drop.to_crs("EPSG:32617")
-        .set_geometry(add_attr_drop.to_crs("EPSG:32617").geometry.centroid)
+        final_selection.to_crs("EPSG:32617")
+        .set_geometry(final_selection.to_crs("EPSG:32617").geometry.centroid)
         .to_crs("EPSG:4326"),
         path=ofp,
         file_name="all_normalized_tagged.geojson",
         archive_name=archive_name,
         na="drop",
     )
+
+    all_filtered = final_selection[final_selection["_retained"]].drop(
+        # drop all columns with prefix "_"
+        columns=final_selection.filter(regex=r"^_", axis=1).columns
+    )
+    all_centroid_utm17N = all_filtered.set_geometry(all_filtered.geometry.centroid)
 
     # Downstream: Ring and Post Clustering
     # ------------------------------------
