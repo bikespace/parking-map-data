@@ -38,6 +38,7 @@ addopts = "-s --cov=src --cov-report=term-missing"
 omit = [
     # omit anything in a test directory anywhere
     "*/tests/*",
+    "src/bikespace_data/bicycle_parking/analysis",
     ]
 
 [tool.coverage.report]
