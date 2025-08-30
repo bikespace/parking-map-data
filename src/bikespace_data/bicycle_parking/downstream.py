@@ -1,3 +1,5 @@
+"""Functions for downstream processing of bicycle_parking data, e.g. data clustering and extracting city ref tags from OpenStreetMap features."""
+
 import geopandas as gpd
 import numpy as np
 import pandas as pd

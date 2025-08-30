@@ -27,6 +27,7 @@ class SourceProperties(TypedDict):
 
 
 def load_paths(paths: dict[str, Path]) -> dict[str, SourceProperties]:
+    """Loads a collection of data source paths into a combined dict."""
     data = {}
     for label, path in paths.items():
         with path.open() as f:

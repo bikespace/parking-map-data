@@ -1,3 +1,5 @@
+"""Utility functions for the bicycle_parking scripts."""
+
 from pathlib import Path
 
 from pandas.api.types import is_datetime64_any_dtype

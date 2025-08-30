@@ -1,3 +1,5 @@
+"""Functions to help process city datapoints that should be excluded from the output of the bicycle_parking scripts."""
+
 from itertools import chain
 from typing import TypedDict, Literal, Required
 

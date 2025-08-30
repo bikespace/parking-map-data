@@ -1,7 +1,9 @@
-# DATA PROCESSING SCRIPT - TORONTO BICYCLE PARKING LOCATIONS
-# ==========================================================
-#
-# This script downloads, filters, and transforms data from two major sources: City of Toronto Open Data and OpenStreetMap. The goal of the script is to provide a clean and uniform data set that can be used to create a map that helps cyclists find bicycle parking in Toronto.
+"""
+DATA PROCESSING SCRIPT - TORONTO BICYCLE PARKING LOCATIONS
+==========================================================
+
+This script downloads, filters, and transforms data from City of Toronto Open Data, the City of Toronto Website, and OpenStreetMap. The goal of the script is to provide a clean and uniform data set that can be used to create a map that helps cyclists find bicycle parking in Toronto.
+"""
 
 
 # IMPORTS
@@ -151,12 +153,12 @@ def run_update(
 # ----------------
 
 
-def run_pipeline(
+def update_bicycle_parking(
     *,
     archive=False,
     status_path: Path = Path("bicycle_parking/statuses/bicycle_parking_statuses.csv"),
 ):
-    """Main function to run the data processing pipeline."""
+    """Main function to update the bicycle parking data."""
 
     # get today's date and use to set output folders
     # unlike other dates in this script, uses Toronto time not UTC
@@ -544,4 +546,4 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    run_pipeline(archive=args.archive)
+    update_bicycle_parking(archive=args.archive)

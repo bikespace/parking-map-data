@@ -1,3 +1,5 @@
+"""Classes to help with downloading and managing data used for the bicycle_parking dataset."""
+
 from abc import ABC, abstractmethod
 from copy import deepcopy
 from datetime import datetime, timezone
