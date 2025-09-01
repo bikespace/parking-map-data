@@ -2,7 +2,7 @@
 
 from http import HTTPStatus
 from itertools import chain
-from typing import Literal, Optional, TypedDict
+from typing import Literal, NotRequired, TypedDict
 
 import requests
 
@@ -11,7 +11,7 @@ class CityExclusion(TypedDict):
     survey_date: str  # iso YYYY-MM-DD format
     ids: list[dict[str, str]]
     reason: Literal["removed", "missing", "area_survey"]
-    notes: Optional[str]
+    notes: NotRequired[str]
 
 
 def get_city_exclusions(
