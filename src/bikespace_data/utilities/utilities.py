@@ -1,4 +1,5 @@
 from datetime import datetime, timezone
+from http import HTTPStatus
 from io import StringIO
 from pathlib import Path
 
@@ -16,7 +17,7 @@ class StatusManager:
 
         response = requests.get(status_source)
 
-        if response.status_code == 200:
+        if response.status_code == HTTPStatus.OK:
             st = (
                 pd.read_csv(
                     StringIO(response.text),
@@ -34,7 +35,7 @@ class StatusManager:
                 last_updated=st["last_updated"].apply(lambda x: pd.Timestamp(x)),
                 last_checked=st["last_checked"].apply(lambda x: pd.Timestamp(x)),
             )
-        elif response.status_code == 404:
+        elif response.status_code == HTTPStatus.NOT_FOUND:
             self._status_table = pd.DataFrame(
                 columns=[
                     "dataset_name",

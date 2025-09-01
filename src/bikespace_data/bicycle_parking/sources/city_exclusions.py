@@ -1,7 +1,8 @@
 """Functions to help process city datapoints that should be excluded from the output of the bicycle_parking scripts."""
 
+from http import HTTPStatus
 from itertools import chain
-from typing import TypedDict, Literal, Optional
+from typing import Literal, Optional, TypedDict
 
 import requests
 
@@ -19,7 +20,7 @@ def get_city_exclusions(
     """Gets city exclusions from data branch. Implemented as a url request to prepare for later switch to hosting exclusions via API."""
     response = requests.get(url)
 
-    if response.status_code != 200:
+    if response.status_code != HTTPStatus.OK:
         raise Exception(
             f"Could not get city exclusions from resource url. Resource returned status {response.status_code}"
         )
