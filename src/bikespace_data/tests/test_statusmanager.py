@@ -6,6 +6,7 @@ from zoneinfo import ZoneInfo
 
 import pandas as pd
 import pandera.pandas as pa
+import pytest
 
 from bikespace_data.utilities import StatusManager, status_manager_date_format
 
@@ -21,16 +22,17 @@ sm_schema = pa.DataFrameSchema(
     strict=True,
 )
 
+mock_header = [
+    "dataset_name",
+    "last_updated",
+    "num_features",
+    "last_checked",
+    "days_since_source_update",
+]
+
 
 def test_status_manager(mocker, tmp_path):
     """Confirm that status manager can run its main functions without error, save over its own output file, and output datetimes consistently."""
-    mock_header = [
-        "dataset_name",
-        "last_updated",
-        "num_features",
-        "last_checked",
-        "days_since_source_update",
-    ]
     mock_line_one = [
         "test_existing",
         "2025-01-01T05:00:00.000000+00:00",
@@ -74,6 +76,8 @@ def test_status_manager(mocker, tmp_path):
     )
     sm_schema.validate(sm._status_table)
 
+    assert sm.last_updated() == datetime(2025, 1, 1, 5, tzinfo=timezone.utc)
+
     # add an update with timezone-naive datetimes
     tz_naive_last_checked = datetime(2025, 7, 30)
     sm.add(
@@ -93,6 +97,12 @@ def test_status_manager(mocker, tmp_path):
         last_checked=tz_aware_last_checked,
     )
     sm_schema.validate(sm._status_table)
+
+    with pytest.raises(Exception) as e:
+        sm.last_updated()
+        assert "more than one dataset" in str(e.value)
+
+    assert sm.last_updated("test tz-aware") == datetime(2025, 7, 1, tzinfo=timezone.utc)
 
     # add an update with a non-utc timezone
     tz_not_utc_last_checked = datetime(2025, 7, 30, tzinfo=ZoneInfo("America/Toronto"))
@@ -162,3 +172,64 @@ def test_status_manager_tznaive_date_handling(mocker):
         last_checked=datetime(2025, 7, 30),
     )
     assert sm.last_updated() == datetime(2025, 6, 30, 23, 0, 0, 0, tzinfo=timezone.utc)
+
+
+def test_status_manager_failed_request(mocker, tmp_path):
+    error_response = HTTPStatus.SERVICE_UNAVAILABLE
+    mock_response = mocker.MagicMock()
+    mock_response.status_code = error_response
+    mocker.patch("requests.get", return_value=mock_response)
+
+    with pytest.raises(Exception) as e:
+        sm = StatusManager(
+            status_source="https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/bicycle_network/statuses/bicycle_network_status.csv",
+            status_save=tmp_path / "not_used.csv",
+        )
+        assert str(error_response) in str(e.value)
+
+
+def test_status_manager_fresh_start(mocker, tmp_path):
+    mock_response = mocker.MagicMock()
+    mock_response.status_code = HTTPStatus.NOT_FOUND
+    mocker.patch("requests.get", return_value=mock_response)
+
+    # load the status table from source file
+    status_save_path = Path(tmp_path / "bicycle_network_status.csv")
+    sm = StatusManager(
+        status_source="https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/bicycle_network/statuses/bicycle_network_status.csv",
+        status_save=status_save_path,
+    )
+
+    assert sm.last_updated() is None
+
+    # add an update with timezone-aware datetimes
+    dataset_name = "test tz-aware"
+    last_updated = datetime(2025, 7, 1, tzinfo=timezone.utc)
+    num_features = 150
+    tz_aware_last_checked = datetime(2025, 7, 30, tzinfo=timezone.utc)
+
+    sm.add(
+        dataset_name=dataset_name,
+        last_updated=last_updated,
+        num_features=num_features,
+        last_checked=tz_aware_last_checked,
+    )
+    sm_schema.validate(sm._status_table)
+
+    # save the status table (twice)
+    sm.save()
+    sm.save()
+
+    with status_save_path.open("r") as f:
+        lines = [x for x in csv.reader(f)]
+
+    assert lines == [
+        mock_header,
+        [
+            dataset_name,
+            last_updated.strftime(status_manager_date_format),
+            str(num_features),
+            tz_aware_last_checked.strftime(status_manager_date_format),
+            "29",
+        ],
+    ]

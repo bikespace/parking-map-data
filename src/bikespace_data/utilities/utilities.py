@@ -58,6 +58,10 @@ class StatusManager:
                 self._status_table["dataset_name"] == dataset_name
             ]
             return filtered_status_table["last_updated"].max().to_pydatetime()
+        elif len(self._status_table["dataset_name"].unique()) > 1:
+            raise Exception(
+                "There is more than one dataset in this status table. Please specify the dataset using the `dataset_name` parameter."
+            )
         else:
             return self._status_table["last_updated"].max().to_pydatetime()
 
