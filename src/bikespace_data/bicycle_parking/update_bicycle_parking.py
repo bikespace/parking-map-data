@@ -156,6 +156,7 @@ def run_update(
 def update_bicycle_parking(
     *,
     archive=False,
+    output_dir: Path = Path(""),
     status_path: Path = Path("bicycle_parking/statuses/bicycle_parking_statuses.csv"),
 ):
     """Main function to update the bicycle parking data."""
@@ -169,9 +170,9 @@ def update_bicycle_parking(
     if archive:
         print("Archive folder option enabled")
 
-    sfp = Path("bicycle_parking/source_files/")
-    ofp = Path("bicycle_parking/output_files/")
-    dfp = Path("bicycle_parking/display_files/")
+    sfp = output_dir / "bicycle_parking/source_files/"
+    ofp = output_dir / "bicycle_parking/output_files/"
+    dfp = output_dir / "bicycle_parking/display_files/"
 
     for path in [sfp, ofp, dfp]:
         path.mkdir(exist_ok=True, parents=True)

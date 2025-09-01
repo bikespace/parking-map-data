@@ -22,4 +22,4 @@ jobs:
     - name: Install the project
       run: uv sync --all-extras
     - name: Run pytest
-      run: uv run pytest  
+      run: uv run pytest -m "not long" 

@@ -50,6 +50,9 @@ Instructions on running the script for each dataset can be found in their respec
 
 Run tests (options are pre-configured in pyproject.toml):
 ```bash
+$ uv run pytest -m "not long"
+
+# all tests, including tests that take a long time to run
 $ uv run pytest
 ```
 
