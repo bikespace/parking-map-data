@@ -52,6 +52,9 @@ Run tests (options are pre-configured in pyproject.toml):
 ```bash
 $ uv run pytest -m "not long"
 
+# show print output
+$ uv run pytest -s -m "not long"
+
 # all tests, including tests that take a long time to run
 $ uv run pytest
 ```

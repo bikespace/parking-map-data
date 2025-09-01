@@ -5,3 +5,4 @@ Scratch/
 __pycache__/
 .ipynb_checkpoints
 .coverage
+/.hypothesis
