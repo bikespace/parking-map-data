@@ -23,6 +23,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "hypothesis>=6.138.13", # required for pandera.DataFrameSchema.example
     "pytest>=8.3.5",
     "pytest-mock>=3.14.1",
 ]
@@ -32,12 +33,17 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.pytest.ini_options]
-addopts = "-s --cov=src --cov-report=term-missing"
+addopts = "--cov=src --cov-branch --cov-report=term-missing"
+markers = [
+    "long: marks tests as long-running (deselect with '-m \"not long\"')",
+    "uses_external_resources: marks tests that depend on external resources, e.g. OSM Overpass API, City of Toronto Open Data Portal.",
+]
 
 [tool.coverage.run]
 omit = [
     # omit anything in a test directory anywhere
     "*/tests/*",
+    "src/bikespace_data/bicycle_parking/analysis",
     ]
 
 [tool.coverage.report]
@@ -45,3 +51,6 @@ exclude_also = [
     'if __name__ == .__main__.:',
     '@(abc\.)?abstractmethod',
 ]
+
+[tool.marimo.runtime]
+output_max_bytes = 100_000_000

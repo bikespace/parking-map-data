@@ -1,5 +1,4 @@
-# from custom_types import geojson_types
-# from geojson_types import GeoJSONFeatureCollection
+"""Custom types used by the bicycle_parking data scripts."""
 
 from bikespace_data.bicycle_parking.custom_types.geojson_types import (
     GeoJSONFeatureCollection,

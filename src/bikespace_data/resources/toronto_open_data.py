@@ -1,9 +1,9 @@
-import requests
+from http import HTTPStatus
 from typing import TypedDict
 
 import geopandas as gpd
 import pandas as pd
-
+import requests
 
 BASE_URL = "https://ckan0.cf.opendata.inter.prod-toronto.ca"
 PACKAGE_URL = BASE_URL + "/api/3/action/package_show"
@@ -18,7 +18,7 @@ def request_tod_gdf(dataset_name: str, resource_id: str) -> TODResponse:
     meta_params = {"id": dataset_name}
 
     response = requests.get(PACKAGE_URL, params=meta_params)
-    if response.status_code != 200:
+    if response.status_code != HTTPStatus.OK:
         raise Exception(
             f"Could not get {dataset_name} (resource {resource_id}) from Toronto Open Data Portal. Resource returned status {response.status_code}"
         )

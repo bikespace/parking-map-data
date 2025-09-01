@@ -1,16 +1,46 @@
-from sklearn.cluster import DBSCAN
+"""Functions for downstream processing of bicycle_parking data, e.g. data clustering and extracting city ref tags from OpenStreetMap features."""
+
 import geopandas as gpd
 import numpy as np
 import pandas as pd
+import pandera.pandas as pa
+from pandera.engines.geopandas_engine import Geometry
+from sklearn.cluster import DBSCAN
 
 
-def group_proximate_rings(rings, radius=5.0):
+def extract_ref_tags(gdf: gpd.GeoDataFrame, pattern: str) -> dict[str, list[str]]:
+    """Extract all values where the column name matches the pattern and return a dict of the result. If multiple tag values are included in one entry and separated by a semicolon, these are split out into individual tags."""
+
+    # get all instances of osm city ref tags and split out if needed
+    id_lists: dict[str, list[str]] = {}
+    id_cols = gdf.filter(regex=pattern, axis=1).dropna(how="all")
+    for ref_type, tags in id_cols.items():
+        id_list = []
+        for tag_str in tags.dropna():
+            tags = str(tag_str).split(";")
+            id_list.extend([tag.strip() for tag in tags])
+
+        id_lists.setdefault(str(ref_type), [])
+        id_lists[str(ref_type)].extend(id_list)
+
+    return id_lists
+
+
+clustering_schema = pa.DataFrameSchema(
+    {
+        "geometry": pa.Column(Geometry(crs="EPSG:32617")),  # UTM 17 N
+    }
+)
+
+
+@pa.check_input(clustering_schema, "rings")
+def group_proximate_rings(rings: gpd.GeoDataFrame, radius=5.0):
     """Converts geodataframe of bollards (ring and post) from the "street-furniture-bicycle-parking" dataset and aggregates (dissolves) by proximity if bollards are within 5m of each other.
 
     Parameters
     ----------
     rings: geopandas.GeoDataFrame
-      Should only include bollards.
+      Should only include bollards. CRS must be EPSG:32617 (UTM 17 N) to allow for DBSCAN clustering in metres.
 
     Returns
     -------
@@ -22,16 +52,12 @@ def group_proximate_rings(rings, radius=5.0):
     # add quantity column (will be summed later)
     rings = rings.assign(quantity=1)
 
-    # reproject to EPSG:32617 (WGS 84 / UTM zone 17N)
-    # needed for DBSCAN clustering so unit can be in metres
-    rings_UTM17N = rings.to_crs(32617)
-
     # DBSCAN clustering
-    coordinates = rings_UTM17N["geometry"].get_coordinates().values
+    coordinates = rings["geometry"].get_coordinates().values
     clusters = DBSCAN(eps=radius, min_samples=1).fit(coordinates)
 
-    # Assign clusters back to UTM17N GeoDataFrame
-    rings_UTM17N = rings_UTM17N.assign(cluster=clusters.labels_)
+    # Assign clusters back to GeoDataFrame
+    rings = rings.assign(cluster=clusters.labels_)
 
     # PART 2 - AGGREGATE (DISSOLVE) BY CLUSTER
 
@@ -47,7 +73,6 @@ def group_proximate_rings(rings, radius=5.0):
             return mylist.iloc[0]
 
     aggregations = {
-        "source": "first",
         "amenity": "first",  # does not vary
         "bicycle_parking": "first",  # does not vary among subset
         "capacity": "sum",
@@ -70,34 +95,32 @@ def group_proximate_rings(rings, radius=5.0):
     }
 
     # dissolve clusters
-    rings_UTM17N = rings_UTM17N.dissolve(by="cluster", aggfunc=aggregations)
+    rings = rings.dissolve(by="cluster", aggfunc=aggregations)
 
     # set "null" values back to np.nan
-    rings_UTM17N = rings_UTM17N.replace("null", np.nan)
+    rings = rings.replace("null", np.nan)
 
     # get centroid and set as geometry
-    rings_UTM17N["cluster_centroid"] = rings_UTM17N.centroid
-    rings_UTM17N = rings_UTM17N.drop("geometry", axis=1).rename(
+    rings["cluster_centroid"] = rings.centroid
+    rings = rings.drop("geometry", axis=1).rename(
         columns={"cluster_centroid": "geometry"}
     )
 
-    # convert back to WGS 84 lat/long and convert quantity to string
-    out_rings = (
-        rings_UTM17N.to_crs(4326)
-        .astype({"quantity": "Int64"})  # prevent float in string output
-        .astype({"quantity": "str"})
-    )
-
+    # convert quantity to string
+    out_rings = rings.astype({"quantity": "Int64"}).astype(
+        {"quantity": "str"}
+    )  # prevent float in string output
     return out_rings
 
 
+@pa.check_input(clustering_schema, "racks")
 def group_proximate_racks(racks, radius=30.0):
     """Takes geodataframe of bicycle racks from multiple city datasets and aggregates (dissolves) by proximity if racks are within 30m of each other.
 
     Parameters
     ----------
     racks: geopandas.GeoDataFrame
-      Should only include racks.
+      Should only include racks. CRS must be EPSG:32617 (UTM 17 N) to allow for DBSCAN clustering in metres.
 
     Returns
     -------
@@ -106,31 +129,28 @@ def group_proximate_racks(racks, radius=30.0):
 
     # PART 1 - DEFINE CLUSTERS
 
-    # change unit to meters instead of lat/long
-    racks_UTM17N = racks.to_crs(32617)
-
     # cluster points
-    coordinates = racks_UTM17N["geometry"].get_coordinates().values
+    coordinates = racks["geometry"].get_coordinates().values
     clusters = DBSCAN(eps=30.0, min_samples=2).fit(coordinates)
-    racks_UTM17N = racks_UTM17N.assign(cluster=clusters.labels_)
+    racks = racks.assign(cluster=clusters.labels_)
 
     # split clusters from singles
-    racks_UTM17N_clusters = racks_UTM17N[racks_UTM17N["cluster"] >= 0]
-    racks_UTM17N_singles = racks_UTM17N[racks_UTM17N["cluster"] < 0]
+    racks_clusters = racks[racks["cluster"] >= 0]
+    racks_singles = racks[racks["cluster"] < 0]
 
     # remove clusters with only one data source
     sources_per_cluster = dict(
-        racks_UTM17N_clusters[["cluster", "source"]]
-        .groupby("cluster")["source"]
+        racks_clusters[["cluster", "meta_source_dataset"]]
+        .groupby("cluster")["meta_source_dataset"]
         .unique()
         .apply(lambda r: len(r))
     )
-    sources_per_cluster_test = racks_UTM17N_clusters["cluster"].apply(
+    sources_per_cluster_test = racks_clusters["cluster"].apply(
         lambda c: sources_per_cluster[c] > 1
     )
-    return_to_singles = racks_UTM17N_clusters[~sources_per_cluster_test]
-    racks_UTM17N_clusters = racks_UTM17N_clusters[sources_per_cluster_test]
-    racks_UTM17N_singles = pd.concat([racks_UTM17N_singles, return_to_singles])
+    return_to_singles = racks_clusters[~sources_per_cluster_test]
+    racks_clusters = racks_clusters[sources_per_cluster_test]
+    racks_singles = gpd.GeoDataFrame(pd.concat([racks_singles, return_to_singles]))
 
     # PART 2 - AGGREGATE (DISSOLVE) CLUSTERS
 
@@ -144,7 +164,6 @@ def group_proximate_racks(racks, radius=30.0):
         return " | ".join([str(x) for x in l.dropna().values])
 
     aggregations = {
-        "source": lambda _: "city-multi",
         "amenity": "first",  # unique in dataset
         "bicycle_parking": "first",  # unique in subset
         "capacity": "min",  # most conservative number
@@ -170,51 +189,21 @@ def group_proximate_racks(racks, radius=30.0):
         "seasonal": flist,  # debug
         "meta_status": flist,  # debug
         "meta_business_improvement_area": flist,  # debug
-        "tmu": "first",  # unique per point
     }
 
     # dissolve clusters
-    racks_UTM17N_clusters = racks_UTM17N_clusters.dissolve(
-        by="cluster", aggfunc=aggregations
-    )
+    racks_clusters = racks_clusters.dissolve(by="cluster", aggfunc=aggregations)
 
     # get centroid and set as geometry
-    racks_UTM17N_clusters["geometry"] = racks_UTM17N_clusters.centroid
+    racks_clusters["geometry"] = racks_clusters.centroid
 
     # combine racks
-    racks_UTM17N_recombined = pd.concat(
-        [racks_UTM17N_clusters, racks_UTM17N_singles]
+    racks_recombined = gpd.GeoDataFrame(
+        pd.concat([racks_clusters, racks_singles])
     ).drop("cluster", axis=1)
 
     # convert back to WGS 84 lat/long and convert quantity to string
-    out_racks = (
-        racks_UTM17N_recombined.to_crs(4326)
-        .astype({"quantity": "Int64"})  # prevent float in string output
-        .astype({"quantity": "str"})
-    )
+    out_racks = racks_recombined.astype({"quantity": "Int64"}).astype(
+        {"quantity": "str"}
+    )  # prevent float in string output
     return out_racks
-
-
-def drop_mapped_city_lockers(
-    lockers: gpd.GeoDataFrame, osm: gpd.GeoDataFrame, radius: int = 200
-) -> gpd.GeoDataFrame:
-    """Radius is quite large because the City locations are not very precise"""
-    osm_city_lockers = osm[
-        osm["operator"].str.contains(r"city\s*?of\s*?toronto", case=False, regex=True)
-        & (osm["bicycle_parking"] == "lockers")
-    ][["geometry"]]
-    osm_city_lockers_utm17n = osm_city_lockers.to_crs("EPSG:32617")
-    osm_city_lockers_utm17n = osm_city_lockers_utm17n.set_geometry(
-        osm_city_lockers_utm17n.centroid
-    )
-    lockers_utm17n = lockers.to_crs("EPSG:32617")
-    joined = lockers_utm17n.sjoin_nearest(
-        osm_city_lockers_utm17n,
-        how="left",
-        max_distance=radius,
-    )
-    lockers_unmapped_utm17n = joined[joined["index_right"].isna()].drop(
-        columns=["index_right"]
-    )
-    lockers_unmapped = lockers_unmapped_utm17n.to_crs("EPSG:4326")
-    return lockers_unmapped

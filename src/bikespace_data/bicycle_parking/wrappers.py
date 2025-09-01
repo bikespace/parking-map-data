@@ -1,6 +1,9 @@
+"""Classes to help with downloading and managing data used for the bicycle_parking dataset."""
+
 from abc import ABC, abstractmethod
 from copy import deepcopy
 from datetime import datetime, timezone
+from http import HTTPStatus
 
 import geojson
 import geopandas
@@ -275,7 +278,7 @@ class BikeLockersToronto(BikeData):
 
         # get webpage
         response = requests.get(page_url)
-        if response.status_code != 200:
+        if response.status_code != HTTPStatus.OK:
             raise Exception(
                 f"Could not get page content for Toronto Bike Lockers. Page returned status {response.status_code}"
             )

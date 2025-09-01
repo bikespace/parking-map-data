@@ -1,3 +1,5 @@
+"""Functions to normalize data to consistent OpenStreetMap tags and do upstream filtering of irrelevant features."""
+
 from . import (
     _bicycle_parking_high_capacity_outdoor,
     _bicycle_parking_racks,

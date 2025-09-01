@@ -1,33 +1,40 @@
-# DATA PROCESSING SCRIPT - TORONTO BICYCLE PARKING LOCATIONS
-# ==========================================================
-#
-# This script downloads, filters, and transforms data from two major sources: City of Toronto Open Data and OpenStreetMap. The goal of the script is to provide a clean and uniform data set that can be used to create a map that helps cyclists find bicycle parking in Toronto.
+"""
+DATA PROCESSING SCRIPT - TORONTO BICYCLE PARKING LOCATIONS
+==========================================================
+
+This script downloads, filters, and transforms data from City of Toronto Open Data, the City of Toronto Website, and OpenStreetMap. The goal of the script is to provide a clean and uniform data set that can be used to create a map that helps cyclists find bicycle parking in Toronto.
+"""
 
 
 # IMPORTS
 # -------
 
-import json
 from argparse import ArgumentParser
 from datetime import datetime, timezone
-from itertools import chain
 from pathlib import Path
-from typing import Literal, TypedDict
+from typing import Literal, TypedDict, cast
 from zoneinfo import ZoneInfo
 
 import geojson
 import geopandas
-import overpass
 import pandas as pd
-import requests
-from shapely import Polygon
 
 import bikespace_data.bicycle_parking.conversions as conversions
 from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
 from bikespace_data.bicycle_parking.downstream import (
-    drop_mapped_city_lockers,
+    extract_ref_tags,
     group_proximate_racks,
     group_proximate_rings,
+)
+from bikespace_data.bicycle_parking.sources.city_exclusions import (
+    city_exclusions_getids,
+    get_city_exclusions,
+)
+from bikespace_data.bicycle_parking.sources.load_sources import (
+    SourceDatasetOpenStreetMap,
+    SourceDatasetTorontoOpenData,
+    SourceDatasetTorontoWeb,
+    load_paths,
 )
 from bikespace_data.bicycle_parking.utilities import dt_cols_to_str, ref_cols_to_str
 from bikespace_data.bicycle_parking.wrappers import (
@@ -71,21 +78,6 @@ def save_output(
                 output["features"]
             ).convert_dtypes()
             gdf.to_parquet((path / archive_name / file_name).with_suffix(".parquet"))
-
-
-def get_city_exclusions(
-    url: str = "https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/bicycle_parking/city_modifications/open_toronto_ca_exclusions.json",
-):
-    """Gets city exclusions from data branch. Implemented as a url request to prepare for later switch to hosting exclusions via API."""
-    response = requests.get(url)
-
-    if response.status_code != 200:
-        raise Exception(
-            f"Could not get city exclusions from resource url. Resource returned status {response.status_code}"
-        )
-
-    city_exclusions = response.json()
-    return city_exclusions
 
 
 class StatusDict(TypedDict):
@@ -161,12 +153,13 @@ def run_update(
 # ----------------
 
 
-def run_pipeline(
+def update_bicycle_parking(
     *,
     archive=False,
+    output_dir: Path = Path(""),
     status_path: Path = Path("bicycle_parking/statuses/bicycle_parking_statuses.csv"),
 ):
-    """Main function to run the data processing pipeline."""
+    """Main function to update the bicycle parking data."""
 
     # get today's date and use to set output folders
     # unlike other dates in this script, uses Toronto time not UTC
@@ -177,9 +170,9 @@ def run_pipeline(
     if archive:
         print("Archive folder option enabled")
 
-    sfp = Path("bicycle_parking/source_files/")
-    ofp = Path("bicycle_parking/output_files/")
-    dfp = Path("bicycle_parking/display_files/")
+    sfp = output_dir / "bicycle_parking/source_files/"
+    ofp = output_dir / "bicycle_parking/output_files/"
+    dfp = output_dir / "bicycle_parking/display_files/"
 
     for path in [sfp, ofp, dfp]:
         path.mkdir(exist_ok=True, parents=True)
@@ -191,20 +184,6 @@ def run_pipeline(
         status_source=f"https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/{str(status_path)}",
         status_save=status_path,
     )
-
-    def load_paths(paths: dict) -> dict:
-        data = {}
-        for label, path in paths.items():
-            item_data = None
-            if path.exists():
-                with path.open() as f:
-                    item_data = json.load(f)
-            else:
-                item_data = {}
-
-            data = data | {label: item_data}
-
-        return data
 
     # load paths to .json files specifying details of data sources
     source_paths = {
@@ -225,6 +204,7 @@ def run_pipeline(
 
     # check status and update output file if needed
     for dataset in sources["city"]["datasets"]:
+        dataset = cast(SourceDatasetTorontoOpenData, dataset)
         bdt = BikeDataToronto(dataset["dataset_name"], dataset["resource_name"])
         # check source and save output files if there are new changes
         updated_status = run_update(
@@ -238,13 +218,13 @@ def run_pipeline(
     # get output files, do further processing and combine
     city_data = {}
     for dataset in sources["city"]["datasets"]:
+        dataset = cast(SourceDatasetTorontoOpenData, dataset)
         gdf = geopandas.read_file(
             ofp / f"{dataset['dataset_name']}-normalized.geojson"
         ).convert_dtypes()
         gdf = gdf.astype({"meta_source_last_updated": "str", "capacity": "Int64"})
         gdf = ref_cols_to_str(gdf)
         gdf = gdf.explode(index_parts=False)
-        gdf.insert(0, "source", dataset["dataset_name"])
         city_data[dataset["dataset_name"]] = gdf
 
     # OpenStreetMap Data
@@ -252,6 +232,7 @@ def run_pipeline(
 
     # check status and update output file if needed
     for dataset in sources["osm"]["datasets"]:
+        dataset = cast(SourceDatasetOpenStreetMap, dataset)
         bdo = BikeDataOSM(dataset["dataset_name"], dataset["overpass_query"])
         # check source and save output files if there are new changes
         updated_status = run_update(
@@ -265,6 +246,7 @@ def run_pipeline(
     # get output files, do further processing and combine
     osm_data_list = []
     for dataset in sources["osm"]["datasets"]:
+        dataset = cast(SourceDatasetOpenStreetMap, dataset)
         gdf = geopandas.read_file(
             ofp / f"{dataset['dataset_name']}-normalized.geojson"
         ).convert_dtypes()
@@ -276,13 +258,14 @@ def run_pipeline(
         )
         osm_data_list.append(gdf)
 
-    osm_combined = pd.concat(osm_data_list)
+    osm_combined = geopandas.GeoDataFrame(pd.concat(osm_data_list))
 
     # City Lockers
     print("Checking and updating City of Toronto bike lockers...")
 
     # check status and update output file if needed
     for dataset in sources["lockers"]["datasets"]:
+        dataset = cast(SourceDatasetTorontoWeb, dataset)
         blt = BikeLockersToronto(dataset["dataset_name"], dataset["url"])
         # check source and save output files if there are new changes
         updated_status = run_update(
@@ -296,197 +279,243 @@ def run_pipeline(
     # get output files, do further processing and combine
     lockers_data_list = []
     for dataset in sources["lockers"]["datasets"]:
+        dataset = cast(SourceDatasetTorontoWeb, dataset)
         gdf = geopandas.read_file(ofp / f"{dataset['dataset_name']}-normalized.geojson")
         gdf = gdf.convert_dtypes().astype(
             {"meta_source_last_updated": "str", "capacity": "Int64"}
         )
         lockers_data_list.append(gdf)
 
-    lockers: geopandas.GeoDataFrame = pd.concat(lockers_data_list)
+    lockers: geopandas.GeoDataFrame = geopandas.GeoDataFrame(
+        pd.concat(lockers_data_list)
+    )
 
     # save full normalized data without any deduplication or clustering
-    all_normalized_unprocessed = pd.concat(
-        df.dropna(axis="columns", how="all")
-        for df in [
-            *city_data.values(),
-            osm_combined,
-            lockers,
-        ]
+    all_normalized = geopandas.GeoDataFrame(
+        pd.concat(
+            [
+                df.dropna(axis="columns", how="all")
+                for df in [
+                    *city_data.values(),
+                    osm_combined,
+                    lockers,
+                ]
+            ],
+            ignore_index=True,
+        )
     ).convert_dtypes()
 
     save_output(
-        all_normalized_unprocessed,
+        all_normalized,
         path=ofp,
         file_name="all_normalized_unprocessed.geojson",
         archive_name=archive_name,
         na="drop",
     )
 
-    # Downstream: City Data Selection
+    # Downstream: City and OSM data de-duplication
     # -------------------------------
-    print("Applying downstream processing: City Data Selection...")
+    print("Applying downstream processing: City and OSM data de-duplication...")
 
-    # get osm with ref tags
-    open_toronto_ca_test = (
-        osm_combined.filter(like="ref:open.toronto.ca", axis=1).notna().any(axis=1)
-    )
-    city_verified_osm = osm_combined[open_toronto_ca_test]
+    # convert to projected crs for spatial analysis
+    all_normalized_utm17N = all_normalized.to_crs("EPSG:32617")
 
     # get all instances of osm city ref tags and split out if needed
-    id_lists = {}
-    id_cols = city_verified_osm.filter(like="ref:open.toronto.ca", axis=1)
-    for ref_type, tags in id_cols.items():
-        id_list = []
-        for tag_str in tags:
-            tags = str(tag_str).split(";")
-            id_list.extend([tag.strip() for tag in tags])
+    id_lists = extract_ref_tags(osm_combined, r"ref:(open\.)?toronto\.ca")
 
-        id_lists.setdefault(ref_type, [])
-        id_lists[ref_type].extend(id_list)
-
-    # drop city data points if they have matching tags from osm data
-    for dataset_name, dataset in city_data.items():
-        city_data[dataset_name] = dataset[~dataset.isin(id_lists).any(axis=1)]
-
-    # drop all osm with operator="City of Toronto" (case/space-insensitive) unless they have ref tag or unless they are a locker (for which no ref match can currently be made).
-    # this also retains osm points with ANY value for "ref:open.toronto.ca", including "ref.open.toronto.ca"="no"
-    operator_not_city_and_no_ref_test = (
-        (
-            ~osm_combined["operator"].str.contains(
-                r"city\s*?of\s*?toronto", case=False, regex=True
-            )
-            | osm_combined["operator"].isna()
-        )
-        | (osm_combined["bicycle_parking"] == "lockers")
-    ) & (~open_toronto_ca_test)
-    osm_filtered = (
-        pd.concat([city_verified_osm, osm_combined[operator_not_city_and_no_ref_test]])
-        .to_crs(32617)  # change to UTM 17 N for centroid calculation
-        .convert_dtypes()
-    )
-    osm_centroid = osm_filtered.set_geometry(osm_filtered.geometry.centroid).to_crs(
-        4326
-    )
-
-    # drop city data points in the manual exclusion file
+    # get city data points from the manual exclusion file
     city_exclusions = get_city_exclusions()
+    city_exclusions_ids = city_exclusions_getids(city_exclusions)
 
-    city_exclusions_ids = list(chain.from_iterable([x["ids"] for x in city_exclusions]))
+    # add property-based attributes used for data selection
+    add_attr = all_normalized_utm17N.assign(
+        _city_drop_ref_match=lambda df: (
+            (df["meta_source"].eq("City of Toronto", fill_value=False))
+            & (df.isin(id_lists).any(axis=1))
+        ),
+        _city_drop_exclusions=lambda df: (
+            (df["meta_source"].eq("City of Toronto", fill_value=False))
+            & (df.isin(city_exclusions_ids).any(axis=1))
+        ),
+        _osm_operator_city=lambda df: (
+            (df["meta_source"].eq("OpenStreetMap", fill_value=False))
+            & (
+                df["operator"].str.contains(
+                    r"city\s*?of\s*?toronto",
+                    case=False,
+                    regex=True,
+                    na=False,
+                )
+            )
+        ),
+        _osm_has_ref=lambda df: (
+            (df["meta_source"].eq("OpenStreetMap", fill_value=False))
+            & (
+                df.filter(
+                    regex=r"ref:(open\.)?toronto\.ca",
+                    axis=1,
+                )
+                .notna()
+                .any(axis=1)
+            )
+        ),
+    )
 
-    city_exclusions_dict = {}
-    for id in city_exclusions_ids:
-        [[k, v]] = id.items()
-        city_exclusions_dict.setdefault(k, [])
-        city_exclusions_dict[k].append(v)
+    # add spatial-based attributes used for data selection
+    osm_attr = add_attr[add_attr["meta_source"].eq("OpenStreetMap")]
+    city_attr_retained = add_attr[
+        add_attr["meta_source"].eq("City of Toronto")
+        & ~add_attr["_city_drop_ref_match"]
+        & ~add_attr["_city_drop_exclusions"]
+    ][["bicycle_parking", "geometry"]]
 
-    for dataset_name, dataset in city_data.items():
-        city_data[dataset_name] = dataset[
-            ~dataset.isin(city_exclusions_dict).any(axis=1)
-        ]
-    city_unclustered = city_data.copy()
-    city_unclustered_combined = pd.concat(
-        [
-            dataset.dropna(axis="columns", how="all")
-            for name, dataset in city_unclustered.items()
-        ]
-    ).convert_dtypes()
+    osm_city_5m_join = osm_attr.sjoin_nearest(
+        city_attr_retained[
+            ~city_attr_retained["bicycle_parking"].eq("rack", fill_value=False)
+        ],
+        how="left",
+        max_distance=5,
+        distance_col="distance",
+    )
+    osm_city_30m_join = osm_attr.sjoin_nearest(
+        city_attr_retained,
+        how="left",
+        max_distance=30,
+        distance_col="distance",
+    )
 
-    # drop city lockers already in OpenStreetMap
-    lockers_unmapped = drop_mapped_city_lockers(lockers, osm_combined)
+    osm_drop_5m_match = osm_city_5m_join[
+        ~osm_city_5m_join.index.duplicated()
+        # spatial match within 5m radius only
+        & ~osm_city_5m_join["distance"].isna()
+        # do not drop OSM features with city ref
+        & ~osm_city_5m_join["_osm_has_ref"]
+        # only drop OSM features that are likely to be a ring and post
+        & (
+            osm_city_5m_join["bicycle_parking_left"].isin(["bollard", "stands"])
+            | osm_city_5m_join["bicycle_parking_left"].isna()
+        )
+    ]
+    osm_drop_operator_city = osm_city_30m_join[
+        ~osm_city_30m_join.index.duplicated()
+        # drop OSM features where operator is like "City of Toronto"
+        & osm_city_30m_join["_osm_operator_city"]
+        # but keep if they have a ref tag
+        & ~osm_city_30m_join["_osm_has_ref"]
+        # and keep if they are more than 30m from a retained City feature
+        & ~osm_city_30m_join["distance"].isna()
+    ]
+
+    add_spatial = add_attr.assign(
+        _osm_drop_5m_match=lambda df: df.index.isin(osm_drop_5m_match.index),
+        _osm_drop_operator_city=lambda df: df.index.isin(osm_drop_operator_city.index),
+    )
+
+    final_selection = add_spatial.assign(
+        _retained=lambda df: ~(
+            # drop City data points if they have matching ref tags from OSM data
+            (df["_city_drop_ref_match"])
+            # drop City data points in the manual exclusion file
+            | (df["_city_drop_exclusions"])
+            # drop all OSM with operator like "City of Toronto" unless they have ref tag or are more than 30m from a retained City feature
+            # this also retains osm points with ANY value for "ref:open.toronto.ca", including "ref.open.toronto.ca"="no"
+            | (df["_osm_drop_operator_city"])
+            # drop any OSM that are likely to be a ring and post and within 5m of a retained City feature
+            | (df["_osm_drop_5m_match"])
+        )
+    )
+
+    save_output(
+        final_selection.to_crs("EPSG:32617")
+        .set_geometry(final_selection.to_crs("EPSG:32617").geometry.centroid)
+        .to_crs("EPSG:4326"),
+        path=ofp,
+        file_name="all_normalized_tagged.geojson",
+        archive_name=archive_name,
+        na="drop",
+    )
+
+    all_filtered = final_selection[final_selection["_retained"]].drop(
+        # drop all columns with prefix "_"
+        columns=final_selection.filter(regex=r"^_", axis=1).columns
+    )
+    all_centroid_utm17N = all_filtered.set_geometry(all_filtered.geometry.centroid)
 
     # Downstream: Ring and Post Clustering
     # ------------------------------------
     print("Applying downstream processing: Ring and Post Clustering...")
 
     # special handling for ring and post features from "street-furniture-bicycle-parking"
-    furniture = city_data["street-furniture-bicycle-parking"]
-    furniture_bollards = furniture[furniture["bicycle_parking"] == "bollard"]
-    furniture_not_bollards = furniture[
-        (furniture["bicycle_parking"] != "bollard")
-        | (furniture["bicycle_parking"].isna())
-    ]
+    furniture_bollards_test = (
+        all_centroid_utm17N["meta_source_dataset"].eq(
+            "street-furniture-bicycle-parking", fill_value=False
+        )
+    ) & (all_centroid_utm17N["bicycle_parking"].eq("bollard", fill_value=False))
+
+    furniture_bollards = all_centroid_utm17N[furniture_bollards_test]
+    furniture_not_bollards = all_centroid_utm17N[~furniture_bollards_test]
+    assert len(furniture_bollards) + len(furniture_not_bollards) == len(
+        all_centroid_utm17N
+    )
 
     agg_bollards = group_proximate_rings(furniture_bollards)
-    city_data["street-furniture-bicycle-parking"] = pd.concat(
-        [furniture_not_bollards, agg_bollards]
-    )
+    rings_clustered_utm17N = geopandas.GeoDataFrame(
+        pd.concat([furniture_not_bollards, agg_bollards], ignore_index=True)
+    ).convert_dtypes()
 
     # Downstream: Rack Deduplication
     # ------------------------------
     print("Applying downstream processing: Rack Deduplication...")
 
-    # get boundary for Toronto Metropolitan University
-    api = overpass.API()
-    response = api.get("way(id:23250594)", responseformat="geojson", verbosity="geom")
-    tmupoly = Polygon(response["features"][0]["geometry"]["coordinates"])
-    tmugs = geopandas.GeoSeries(tmupoly, crs=4326).to_crs(32617).buffer(20).to_crs(4326)
+    city_racks_test = (
+        rings_clustered_utm17N["meta_source"].eq("City of Toronto", fill_value=False)
+    ) & (rings_clustered_utm17N["bicycle_parking"].eq("rack", fill_value=False))
+    city_racks = rings_clustered_utm17N[city_racks_test]
+    not_city_racks = rings_clustered_utm17N[~city_racks_test]
+    assert len(city_racks) + len(not_city_racks) == len(rings_clustered_utm17N)
 
-    # combine city datasets (bicycle stations excluded)
-    city_combined = pd.concat(
-        [
-            df.dropna(axis="columns", how="all")
-            for df in [
-                city_data["bicycle-parking-high-capacity-outdoor"],
-                city_data["bicycle-parking-racks"],
-                city_data["street-furniture-bicycle-parking"],
-            ]
-        ]
-    )
-    city_racks = city_combined[city_combined["bicycle_parking"] == "rack"]
-    city_not_racks = city_combined[
-        (city_combined["bicycle_parking"] != "rack")
-        | (city_combined["bicycle_parking"].isna())
-    ]
-
-    # no duplicates at TMU apparently
-    city_racks = city_racks.assign(
-        tmu=city_racks["geometry"].apply(lambda p: tmugs.intersects(p, align=False))
-    )
-
-    # run clustering (excluding TMU)
-    city_racks_clustered = group_proximate_racks(city_racks[city_racks["tmu"] == False])  # noqa: E712
-    city_full = pd.concat(
-        [
-            city_racks_clustered,
-            city_racks[city_racks["tmu"] == True],  # noqa: E712
-            city_not_racks,
-            city_data["bicycle-parking-bike-stations-indoor"],
-        ]
+    # run rack clustering
+    agg_racks = group_proximate_racks(city_racks)
+    racks_clustered_utm17N = geopandas.GeoDataFrame(
+        pd.concat([not_city_racks, agg_racks], ignore_index=True)
     ).convert_dtypes()
-    city_full = city_full.drop("tmu", axis=1)
 
-    # make combined set from all sources
-    all_sources = pd.concat(
-        [city_full, osm_centroid, lockers_unmapped]
-    ).convert_dtypes()
+    # convert back to WGS 84
+    all_sources = racks_clustered_utm17N.to_crs("EPSG:4326")
 
     # Save display files
     # ------------------
     print("Saving display files...")
 
     save_output(
-        city_full,
+        all_sources[all_sources["meta_source"].eq("City of Toronto", fill_value=False)],
         path=dfp,
         file_name="open_toronto_ca.geojson",
         archive_name=archive_name,
         na="drop",
     )
     save_output(
-        city_unclustered_combined,
+        all_centroid_utm17N[
+            all_centroid_utm17N["meta_source"].eq("City of Toronto", fill_value=False)
+        ].to_crs("EPSG:4326"),
         path=dfp,
         file_name="open_toronto_ca_unclustered.geojson",
         archive_name=archive_name,
         na="drop",
     )
     save_output(
-        osm_centroid,
+        all_sources[all_sources["meta_source"].eq("OpenStreetMap", fill_value=False)],
         path=dfp,
         file_name="openstreetmap.geojson",
         archive_name=archive_name,
         na="drop",
     )
-    save_output(
-        lockers_unmapped,
+    save_output(  # unmapped lockers
+        all_sources[
+            all_sources["meta_source_dataset"].eq(
+                "City of Toronto Bicycle Locker webpage", fill_value=False
+            )
+        ],
         path=dfp,
         file_name="toronto_lockers.geojson",
         archive_name=archive_name,
@@ -504,7 +533,7 @@ def run_pipeline(
 # Script Execution
 # ----------------
 
-# run from command line `python data_pipeline.py
+# run from command line `uv run src/bikespace_data/bicycle_parking/update_bicycle_parking.py`
 if __name__ == "__main__":
     # parse script arguments from command line
     parser = ArgumentParser(
@@ -518,4 +547,4 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    run_pipeline(archive=args.archive)
+    update_bicycle_parking(archive=args.archive)

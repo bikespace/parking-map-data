@@ -1,5 +1,6 @@
 import csv
 from datetime import datetime, timezone
+from http import HTTPStatus
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -61,7 +62,7 @@ def test_status_manager(mocker, tmp_path):
     )
 
     mock_response = mocker.MagicMock()
-    mock_response.status_code = 200
+    mock_response.status_code = HTTPStatus.OK
     mock_response.text = mock_csv
     mocker.patch("requests.get", return_value=mock_response)
 
@@ -144,7 +145,7 @@ def test_status_manager(mocker, tmp_path):
 def test_status_manager_tznaive_date_handling(mocker):
     """Confirm that status manager correctly handles timezone-naive datetimes"""
     mock_response = mocker.MagicMock()
-    mock_response.status_code = 404
+    mock_response.status_code = HTTPStatus.NOT_FOUND
     mocker.patch("requests.get", return_value=mock_response)
 
     # load the status table (no valid source file)
