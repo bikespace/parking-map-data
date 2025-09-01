@@ -1,15 +1,16 @@
 """Functions to help process city datapoints that should be excluded from the output of the bicycle_parking scripts."""
 
 from itertools import chain
-from typing import TypedDict, Literal, Required
+from typing import TypedDict, Literal, Optional
 
 import requests
 
 
-class CityExclusion(TypedDict, total=False):
+class CityExclusion(TypedDict):
     survey_date: str  # iso YYYY-MM-DD format
-    ids: Required[list[dict[str, str]]]
+    ids: list[dict[str, str]]
     reason: Literal["removed", "missing", "area_survey"]
+    notes: Optional[str]
 
 
 def get_city_exclusions(
