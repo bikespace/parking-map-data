@@ -1,6 +1,12 @@
 import geopandas as gpd
+import pandas as pd
 
-from bikespace_data.bicycle_parking.downstream import extract_ref_tags
+from bikespace_data.bicycle_parking.downstream import (
+    combine_list,
+    extract_ref_tags,
+    summarize_boolean,
+    summarize_freq,
+)
 
 mock_gdf = gpd.GeoDataFrame.from_features(
     [
@@ -101,3 +107,72 @@ def test_extract_ref_tags():
         "ref:open.toronto.ca:bicycle-parking-bike-stations-indoor:id": ["2"],
         "ref:toronto.ca:lockers:title": ["Bayview Subway Station"],
     }
+
+
+def test_summarize_freq():
+    df = pd.DataFrame(
+        {
+            "mixed_col": [1, 2, 2, "three", "three", "three", pd.NA, pd.NA],
+            "same_col_int": [1, 1, 1, 1, 1, 1, 1, 1],
+            "same_col_char": ["a", "a", "a", "a", "a", "a", "a", "a"],
+            "same_col_str": ["abc", "abc", "abc", "abc", "abc", "abc", "abc", "abc"],
+            "all_na_col": [pd.NA, pd.NA, pd.NA, pd.NA, pd.NA, pd.NA, pd.NA, pd.NA],
+            "same_na_first": [pd.NA, "a", "a", "a", "a", "a", "a", pd.NA],
+            "mix_na_none": [pd.NA, None, pd.NA, None, pd.NA, None, pd.NA, None],
+            "blank_strings": [1, "two", "two", "", "", "", pd.NA, pd.NA],
+        }
+    )
+    assert (
+        summarize_freq(df["mixed_col"]) == "three (n=3), 2 (n=2), <NA> (n=2), 1 (n=1)"
+    )
+    assert summarize_freq(df["same_col_int"]) == 1
+    assert summarize_freq(df["same_col_char"]) == "a"
+    assert summarize_freq(df["same_col_str"]) == "abc"
+    assert summarize_freq(df["all_na_col"]) is pd.NA
+    assert summarize_freq(df["same_na_first"]) == "a (n=6), <NA> (n=2)"
+    assert summarize_freq(df["mix_na_none"]) is pd.NA
+    assert summarize_freq(df["blank_strings"]) == "<NA> (n=5), two (n=2), 1 (n=1)"
+
+
+def test_summarize_boolean():
+    df = pd.DataFrame(
+        {
+            "all_yes": ["yes", "yes", "yes"],  # 'yes'
+            "all_yes_na": [pd.NA, "yes", "yes"],  # 'probably yes'
+            "all_no": ["no", "no", "no"],  # 'no'
+            "all_no_na": [pd.NA, "no", "no"],  # 'probably no'
+            "some_yes_some_no": [pd.NA, "yes", "no"],  # 'maybe'
+            "other_values": [pd.NA, "yes", "blue"],
+        }
+    )
+
+    assert summarize_boolean(df["all_yes"]) == "yes"
+    assert summarize_boolean(df["all_yes_na"]) == "probably yes"
+    assert summarize_boolean(df["all_yes_na"], fill_value="yes") == "yes"
+    assert summarize_boolean(df["all_yes_na"], fill_value="no") == "maybe"
+    assert summarize_boolean(df["all_no"]) == "no"
+    assert summarize_boolean(df["all_no_na"]) == "probably no"
+    assert summarize_boolean(df["some_yes_some_no"]) == "maybe"
+    assert summarize_boolean(df["other_values"]) == "<NA> (n=1), yes (n=1), blue (n=1)"
+
+
+def test_combine_list():
+    df = pd.DataFrame(
+        {
+            "all_str": ["id1", "id2", "id3"],
+            "all_int": [1, 2, 3],
+            "mixed": ["id1", 2, "id3"],
+            "has_na": [pd.NA, "id1", "id2"],
+            "has_na_none": [None, "id1", "id2"],
+            "has_na_blank": ["", "id1", "id2"],
+            "all_na": [pd.NA, pd.NA, pd.NA],
+        }
+    )
+
+    assert combine_list(df["all_str"]) == "id1;id2;id3"
+    assert combine_list(df["all_int"]) == "1;2;3"
+    assert combine_list(df["mixed"]) == "id1;2;id3"
+    assert combine_list(df["has_na"]) == "id1;id2"
+    assert combine_list(df["has_na_none"]) == "id1;id2"
+    assert combine_list(df["has_na_blank"]) == "id1;id2"
+    assert combine_list(df["all_na"]) is pd.NA

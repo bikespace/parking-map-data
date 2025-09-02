@@ -1,11 +1,65 @@
 """Functions for downstream processing of bicycle_parking data, e.g. data clustering and extracting city ref tags from OpenStreetMap features."""
 
+from typing import Literal
+
 import geopandas as gpd
 import numpy as np
 import pandas as pd
 import pandera.pandas as pa
 from pandera.engines.geopandas_engine import Geometry
 from sklearn.cluster import DBSCAN
+
+
+def summarize_freq(mylist: pd.Series):
+    """Summarize frequency of value if more than one, otherwise return first value. pd.NA is treated as a unique value type and '' (blank string) and None are coerced to pd.NA."""
+    mylist = mylist.replace({None: pd.NA, "": pd.NA})
+    items = list(mylist.value_counts(dropna=False).items())
+    if len(items) > 1:
+        return ", ".join([f"{value} (n={count})" for value, count in items])
+    else:
+        return items[0][0]
+
+
+def combine_list(mylist: pd.Series):
+    """Combine values with ';' similar to OpenStreetMap tagging for multi-value fields. '' (blank string) and None are coerced to pd.NA. If all values are NA, then pd.NA is returned."""
+    mylist = mylist.replace({None: pd.NA, "": pd.NA})
+    if mylist.isna().all():
+        return pd.NA
+    return ";".join([str(x) for x in mylist.dropna().values])
+
+
+def summarize_boolean(mylist: pd.Series, fill_value: Literal["yes", "no", None] = None):
+    """Summarize fields that are expected to be primarily 'yes', 'no', or blank.
+
+    '' (blank string) and None are coerced to pd.NA. NA values can be assumed to mean 'yes' or 'no' based on the value specified by fill_value; by default, NA values are not changed.
+
+    Potential outputs:
+    - all 'yes': 'yes'
+    - all 'yes' with some pd.NA: 'probably yes'
+    - all 'no': 'no'
+    - all 'no' with some pd.NA: 'probably no'
+    - some 'yes' and some 'no' (with or without pd.NA): 'maybe'
+    - if there are any values other than 'yes', 'no', and pd.NA, then the output of summarize_freq is used instead
+    """
+    mylist = mylist.replace({None: pd.NA, "": pd.NA})
+    if fill_value is not None:
+        mylist = mylist.fillna(fill_value)
+
+    if not mylist.isin(["yes", "no", pd.NA]).all():
+        return summarize_freq(mylist)
+
+    if mylist.eq("yes").all():
+        return "yes"
+    elif mylist.dropna().eq("yes").all():
+        return "probably yes"
+    elif mylist.eq("no").all():
+        return "no"
+    elif mylist.dropna().eq("no").all():
+        return "probably no"
+    elif mylist.eq("yes").any() and mylist.eq("no").any():
+        return "maybe"
+    else:
+        return summarize_freq(mylist)
 
 
 def extract_ref_tags(gdf: gpd.GeoDataFrame, pattern: str) -> dict[str, list[str]]:
@@ -61,26 +115,15 @@ def group_proximate_rings(rings: gpd.GeoDataFrame, radius=5.0):
 
     # PART 2 - AGGREGATE (DISSOLVE) BY CLUSTER
 
-    # summarize frequency of value if more than one, otherwise return first value
-    # replaces np.nan with "null"; np.unique doesn't seem to work otherwise
-    def summarize_freq(mylist):
-        mylist = mylist.replace("", "null").fillna("null")
-        (values, counts) = np.unique(mylist, return_counts=True)
-        pairs = list(zip(values, counts))
-        if len(pairs) > 1:
-            return "\n".join([f"{value} (n={count})" for value, count in pairs])
-        else:
-            return mylist.iloc[0]
-
     aggregations = {
         "amenity": "first",  # does not vary
         "bicycle_parking": "first",  # does not vary among subset
         "capacity": "sum",
         "operator": "first",  # does not vary
-        "covered": summarize_freq,
+        "covered": summarize_boolean,
         "access": summarize_freq,
         "fee": "first",  # does not vary
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": ";".join,
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": combine_list,
         "meta_status": "first",  # does not vary
         "meta_business_improvement_area": summarize_freq,
         "meta_ward_name": summarize_freq,
@@ -154,41 +197,37 @@ def group_proximate_racks(racks, radius=30.0):
 
     # PART 2 - AGGREGATE (DISSOLVE) CLUSTERS
 
-    def combine_descriptions(l):
-        l = [str(x) for x in l]
-        blurb = f"MULTIPLE RACKS\nThis point is a combination of {len(l)} bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than {len(l)} racks present."
-        return "\n---\n".join([blurb, *l])
-
-    # format list: convert to text if needed, drop na's
-    def flist(l):
-        return " | ".join([str(x) for x in l.dropna().values])
+    def combine_descriptions(mylist):
+        mylist = [str(x) for x in mylist]
+        blurb = f"MULTIPLE RACKS\nThis point is a combination of {len(mylist)} bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than {len(mylist)} racks present."
+        return "\n---\n".join([blurb, *mylist])
 
     aggregations = {
         "amenity": "first",  # unique in dataset
         "bicycle_parking": "first",  # unique in subset
         "capacity": "min",  # most conservative number
         "operator": "first",  # unique in subset
-        "covered": flist,  # debug
+        "covered": summarize_boolean,  # debug
         "access": "first",  # unique in subset
         "fee": "first",  # unique in subset
-        "start_date": flist,  # debug
-        "length": flist,  # debug
+        "start_date": summarize_freq,  # debug
+        "length": summarize_freq,  # debug
         "description": combine_descriptions,  # debug
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": flist,
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": flist,
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": flist,
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": combine_list,
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": combine_list,
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": combine_list,
         "meta_borough": "first",  # unique per point
         "meta_ward_name": "first",  # unique per point
         "meta_ward_number": "first",  # unique per point
         "meta_source": "first",  # unique per point
-        "meta_source_dataset": flist,
-        "meta_source_url": flist,
+        "meta_source_dataset": summarize_freq,
+        "meta_source_url": summarize_freq,
         "meta_source_license": "first",  # does not vary
         "meta_source_license_url": "first",  # does not vary
-        "meta_source_last_updated": flist,  # debug
-        "seasonal": flist,  # debug
-        "meta_status": flist,  # debug
-        "meta_business_improvement_area": flist,  # debug
+        "meta_source_last_updated": summarize_freq,  # debug
+        "seasonal": summarize_freq,  # debug
+        "meta_status": summarize_freq,  # debug
+        "meta_business_improvement_area": summarize_freq,  # debug
     }
 
     # dissolve clusters
