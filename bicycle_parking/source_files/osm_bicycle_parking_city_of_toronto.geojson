@@ -20690,20 +20690,20 @@
     {
       "type": "Feature",
       "properties": {
-        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
         "capacity": "2",
         "covered": "no",
         "description": "in practice blocked off by construction hoarding",
         "disused:amenity": "bicycle_parking",
         "fee": "no",
-        "meta_feature_last_updated": "2025-09-04T16:13:41+00:00",
+        "meta_feature_last_updated": "2025-09-06T02:12:59+00:00",
         "meta_osm_id": "node/9236518691"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3849294,
-          43.672342
+          -79.3849157,
+          43.6723515
         ]
       }
     },
