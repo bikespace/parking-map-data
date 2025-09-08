@@ -426,35 +426,6 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "start_date": "2020",
-        "length": "7.2",
-        "description": "Address: 481 Bloor St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: No parking, Angled racks in hashed out area adjacent cycle track",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "88",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4071172092532,
-          43.6657537893633
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
         "capacity": 8,
         "operator": "City of Toronto",
         "covered": "no",

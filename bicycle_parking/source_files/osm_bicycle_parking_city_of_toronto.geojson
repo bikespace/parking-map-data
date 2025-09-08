@@ -16229,14 +16229,14 @@
         "capacity": "2",
         "covered": "no",
         "operator": "City of Toronto",
-        "meta_feature_last_updated": "2023-12-31T22:13:36+00:00",
+        "meta_feature_last_updated": "2025-09-07T12:07:07+00:00",
         "meta_osm_id": "node/7575882449"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4070495,
-          43.665959
+          -79.4070437,
+          43.6659518
         ]
       }
     },
@@ -16305,14 +16305,14 @@
         "capacity": "2",
         "covered": "no",
         "operator": "City of Toronto",
-        "meta_feature_last_updated": "2023-12-31T22:13:36+00:00",
+        "meta_feature_last_updated": "2025-09-07T12:07:07+00:00",
         "meta_osm_id": "node/7575882453"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4071032,
-          43.6659514
+          -79.4071181,
+          43.6659344
         ]
       }
     },
@@ -16457,14 +16457,14 @@
         "capacity": "2",
         "covered": "no",
         "operator": "City of Toronto",
-        "meta_feature_last_updated": "2024-05-24T21:45:04+00:00",
+        "meta_feature_last_updated": "2025-09-07T12:07:07+00:00",
         "meta_osm_id": "node/7575882464"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4069158,
-          43.6659825
+          -79.406908,
+          43.6659808
         ]
       }
     },
@@ -16476,14 +16476,14 @@
         "capacity": "2",
         "covered": "no",
         "operator": "City of Toronto",
-        "meta_feature_last_updated": "2024-05-24T21:45:05+00:00",
+        "meta_feature_last_updated": "2025-09-07T12:07:07+00:00",
         "meta_osm_id": "node/7575882465"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4068657,
-          43.665993
+          -79.4068627,
+          43.6659902
         ]
       }
     },
@@ -59116,6 +59116,167 @@
         "coordinates": [
           -79.366068,
           43.6562601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "cargo_bike": "no",
+        "covered": "no",
+        "description": "angled stacker rack in buffer zone between bike and car lanes",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "88",
+        "meta_feature_last_updated": "2025-09-07T12:07:07+00:00",
+        "meta_osm_id": "node/13124861367"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4071682,
+          43.6659562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "post_hoop",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-08T00:37:04+00:00",
+        "meta_osm_id": "node/13126290909"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3659251,
+          43.6622485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "post_hoop",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-08T00:37:04+00:00",
+        "meta_osm_id": "node/13126290910"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3658689,
+          43.6622608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "post_hoop",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-08T00:37:04+00:00",
+        "meta_osm_id": "node/13126290911"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3658989,
+          43.6622542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "post_hoop",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-08T00:37:04+00:00",
+        "meta_osm_id": "node/13126290912"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.366276,
+          43.6621703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "post_hoop",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-08T00:37:04+00:00",
+        "meta_osm_id": "node/13126290913"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.366249,
+          43.662177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "post_hoop",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-08T00:37:04+00:00",
+        "meta_osm_id": "node/13126290914"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3663078,
+          43.6621648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "post_hoop",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-08T00:37:04+00:00",
+        "meta_osm_id": "node/13126290915"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3663366,
+          43.6621581
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "post_hoop",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-08T00:37:04+00:00",
+        "meta_osm_id": "node/13126290916"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3663963,
+          43.6621431
         ]
       }
     },
