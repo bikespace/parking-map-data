@@ -499,6 +499,44 @@
     "survey_date": "2025-08-03",
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-bike-stations-indoor:id": "1" }],
     "reason": "removed",
-    "notes": "Not able to loate via several surveys; south union station bike room removed during construction in 2022. See: https://toronto.citynews.ca/2022/06/16/union-station-toronto-construction-maintenance-bike-stations/"
+    "notes": "Not able to locate via several surveys; south union station bike room removed during construction in 2022. See: https://toronto.citynews.ca/2022/06/16/union-station-toronto-construction-maintenance-bike-stations/"
+  },
+  {
+    "survey_date": "2025-09-07",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "18" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "40" }
+    ],
+    "reason": "missing",
+    "notes": "Not able to locate via survey"
+  },
+  {
+    "survey_date": "2025-09-07",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "12" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "203" }
+    ],
+    "reason": "removed",
+    "notes": "Bike corral - not able to locate via survey. I remember seeing this one a year or two ago, so it must have been removed or relocated."
+  },
+  {
+    "survey_date": "2025-09-07",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "137" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "155" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "" }
+    ],
+    "reason": "missing",
+    "notes": "Bike corral - not able to locate via survey."
+  },
+  {
+    "survey_date": "2025-09-07",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "74" },
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "82" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "128" }
+    ],
+    "reason": "missing",
+    "notes": "Not able to locate via survey"
   }
 ]
