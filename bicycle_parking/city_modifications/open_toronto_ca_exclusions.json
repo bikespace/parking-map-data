@@ -538,5 +538,11 @@
     ],
     "reason": "missing",
     "notes": "Not able to locate via survey"
+  },
+  {
+    "survey_date": "2025-09-07",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-26917" }],
+    "reason": "missing",
+    "notes": "Not able to locate via survey. See https://panoramax.openstreetmap.fr/?s=fp;s2;pecf24da5-b55c-4ed8-88fa-fd10b9afd0f2;c166.37/-32.50/30;m18.47/43.6450548/-79.4110087;bs"
   }
 ]
