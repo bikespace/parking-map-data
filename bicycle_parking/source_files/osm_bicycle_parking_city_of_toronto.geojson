@@ -59504,6 +59504,813 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "operator": "City of Toronto",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416515"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3681763,
+          43.6621745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "operator": "City of Toronto",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416516"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3682276,
+          43.6621637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "0",
+        "operator": "City of Toronto",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416517"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3682727,
+          43.6621544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "operator": "City of Toronto",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416518"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3683223,
+          43.6621435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416526"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3694909,
+          43.6618866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416527"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3695291,
+          43.6618776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416528"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3695093,
+          43.6618812
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416530"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3700735,
+          43.6617821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416533"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.370296,
+          43.6617126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416537"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3705628,
+          43.6616585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416540"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3709835,
+          43.6615644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416551"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3717872,
+          43.66139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416552"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3718561,
+          43.6613756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416555"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3722222,
+          43.6614248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416556"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3722333,
+          43.6614467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416557"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3722999,
+          43.6616071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416567"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3758769,
+          43.6601775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416568"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.375855,
+          43.660118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416571"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3768918,
+          43.6602788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416572"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3768617,
+          43.6602849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416573"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3769492,
+          43.6602668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416574"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3769203,
+          43.6602721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416576"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3771841,
+          43.6602139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416577"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3772141,
+          43.6602089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416578"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3772426,
+          43.6601997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416580"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3772858,
+          43.6601916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "meta_osm_id": "node/13134416581"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.377315,
+          43.6601841
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350028"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.37743,
+          43.6601589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350029"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3774986,
+          43.6601472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350030"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3775309,
+          43.6601394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350031"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3775671,
+          43.660131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350032"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3776072,
+          43.6601205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350033"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3777212,
+          43.6600976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350038"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3779249,
+          43.6600517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350039"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3780199,
+          43.6600311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350045"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3782937,
+          43.6599719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350047"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3787554,
+          43.6598676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350048"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3788961,
+          43.659839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350049"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3788423,
+          43.6598518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "capacity": "8",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350051"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3797374,
+          43.6597206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350052"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3800449,
+          43.6595912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350053"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3801079,
+          43.659575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350056"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3814449,
+          43.6592905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350057"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3815639,
+          43.6592622
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350058"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3816503,
+          43.659243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350060"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3818418,
+          43.6592015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2025-09-11T00:36:04+00:00",
+        "meta_osm_id": "node/13135350061"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3818185,
+          43.6592066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",

@@ -290126,36 +290126,6 @@
         "meta_ward_name": "Spadina-Fort York",
         "meta_ward_number": "10",
         "meta_status": "Existing",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-26917",
-        "meta_business_improvement_area": "None",
-        "quantity": "<NA>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4110771013667,
-          43.64500547142621
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "street-furniture-bicycle-parking",
-        "meta_source_url": "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-09-10 03:04:21.164000+00:00",
-        "meta_ward_name": "Spadina-Fort York",
-        "meta_ward_number": "10",
-        "meta_status": "Existing",
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-28016",
         "meta_business_improvement_area": "West Queen West",
         "quantity": "<NA>"
