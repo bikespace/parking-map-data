@@ -289348,72 +289348,36 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "capacity": 16,
+        "capacity": 14,
         "operator": "City of Toronto",
         "covered": "no",
         "access": "yes",
         "fee": "no",
-        "start_date": "2016 (n=1), <NA> (n=1)",
-        "length": "2.9 (n=1), <NA> (n=1)",
-        "description": "MULTIPLE RACKS\nThis point is a combination of 2 bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than 2 racks present.\n---\nAddress: 1030 King St W\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: None\n---\nAddress: 1030 King St W\n\nNotes: at Strachan  and west at Sleep Country",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "6",
+        "start_date": "<NA> (n=3), 2013 (n=1)",
+        "length": "<NA> (n=3), 5.5 (n=1)",
+        "description": "MULTIPLE RACKS\nThis point is a combination of 4 bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than 4 racks present.\n---\nAddress: 1184 Queen St W\n\nPlacement Street: Northcote Ave\n\nPlace Name: None\n\nDetails: No parking\n---\nAddress: 1186 Queen St W\n\nNotes: parking stall design; on Northcote, not Queen\n---\nAddress: 1184 Queen St W\n\nNotes: 3 posts\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/\n---\n<NA>",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "14",
         "meta_borough": "Former Toronto",
         "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor (n=1), bicycle-parking-racks (n=1)",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/ (n=1), https://open.toronto.ca/dataset/bicycle-parking-racks/ (n=1)",
+        "meta_source_dataset": "bicycle-parking-racks (n=2), bicycle-parking-high-capacity-outdoor (n=1), street-furniture-bicycle-parking (n=1)",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/ (n=2), https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/ (n=1), https://open.toronto.ca/dataset/street-furniture-bicycle-parking/ (n=1)",
         "meta_source_license": "Open Government Licence - Toronto",
         "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00 (n=1), 2025-03-27 15:53:28.493000+00:00 (n=1)",
-        "seasonal": "<NA> (n=1), no (n=1)",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "30",
-        "meta_ward_name": "Spadina-Fort York",
-        "meta_ward_number": "10",
-        "meta_status": "<NA> (n=1), Installed (n=1)",
-        "quantity": "<NA>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4157586754681,
-          43.6415808536674
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 10,
-        "operator": "City of Toronto",
-        "covered": "maybe",
-        "access": "yes",
-        "fee": "no",
-        "start_date": "<NA> (n=4), 2013 (n=1), 2015 (n=1)",
-        "length": "<NA> (n=4), 5.5 (n=1), 3 (n=1)",
-        "description": "MULTIPLE RACKS\nThis point is a combination of 6 bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than 6 racks present.\n---\nAddress: 1184 Queen St W\n\nPlacement Street: Northcote Ave\n\nPlace Name: None\n\nDetails: No parking\n---\nAddress: 20 Northcote Ave\n\nPlacement Street: Northcote Ave\n\nPlace Name: None\n\nDetails: None\n---\nAddress: 1186 Queen St W\n\nNotes: parking stall design; on Northcote, not Queen\n---\nAddress: 20 Northcote Ave\n\nNotes: on the boulevard, 40m north of Queen\n---\nAddress: 1184 Queen St W\n\nNotes: 3 posts\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/\n---\n<NA>",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "14;45",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks (n=3), bicycle-parking-high-capacity-outdoor (n=2), street-furniture-bicycle-parking (n=1)",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/ (n=3), https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/ (n=2), https://open.toronto.ca/dataset/street-furniture-bicycle-parking/ (n=1)",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00 (n=3), 2025-03-27 14:19:12.487000+00:00 (n=2), 2025-09-10 03:04:21.164000+00:00 (n=1)",
-        "seasonal": "<NA> (n=3), no (n=2), yes (n=1)",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "38;65;151",
+        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00 (n=2), 2025-03-27 14:19:12.487000+00:00 (n=1), 2025-09-10 03:04:21.164000+00:00 (n=1)",
+        "seasonal": "<NA> (n=2), no (n=1), yes (n=1)",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "38;151",
         "meta_ward_name": "Davenport",
         "meta_ward_number": "09",
-        "meta_status": "Installed (n=3), <NA> (n=2), Existing (n=1)",
+        "meta_status": "Installed (n=2), <NA> (n=1), Existing (n=1)",
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-23178",
-        "meta_business_improvement_area": "<NA> (n=5), West Queen West (n=1)",
+        "meta_business_improvement_area": "<NA> (n=3), West Queen West (n=1)",
         "quantity": "<NA>"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.42610818552096,
-          43.64299822330309
+          -79.42599933177644,
+          43.64295577818242
         ]
       }
     },
@@ -289738,42 +289702,6 @@
         "coordinates": [
           -79.40114743017224,
           43.64403235135091
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 8,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "start_date": "2016 (n=1), <NA> (n=1)",
-        "length": "2.9 (n=1), <NA> (n=1)",
-        "description": "MULTIPLE RACKS\nThis point is a combination of 2 bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than 2 racks present.\n---\nAddress: 78 Tecumseth St\n\nPlacement Street: King St W\n\nPlace Name: None\n\nDetails: None\n---\nAddress: 78 Tecumseth St\n\nNotes: at south side of publication boxes",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "125",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor (n=1), bicycle-parking-racks (n=1)",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/ (n=1), https://open.toronto.ca/dataset/bicycle-parking-racks/ (n=1)",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00 (n=1), 2025-03-27 15:53:28.493000+00:00 (n=1)",
-        "seasonal": "<NA> (n=1), no (n=1)",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "123",
-        "meta_ward_name": "Spadina-Fort York",
-        "meta_ward_number": "10",
-        "meta_status": "<NA> (n=1), Installed (n=1)",
-        "quantity": "<NA>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4053827623129,
-          43.64304036560614
         ]
       }
     },
