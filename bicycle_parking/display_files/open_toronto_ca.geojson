@@ -289348,44 +289348,6 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "capacity": 14,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "start_date": "<NA> (n=3), 2013 (n=1)",
-        "length": "<NA> (n=3), 5.5 (n=1)",
-        "description": "MULTIPLE RACKS\nThis point is a combination of 4 bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than 4 racks present.\n---\nAddress: 1184 Queen St W\n\nPlacement Street: Northcote Ave\n\nPlace Name: None\n\nDetails: No parking\n---\nAddress: 1186 Queen St W\n\nNotes: parking stall design; on Northcote, not Queen\n---\nAddress: 1184 Queen St W\n\nNotes: 3 posts\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/\n---\n<NA>",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "14",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks (n=2), bicycle-parking-high-capacity-outdoor (n=1), street-furniture-bicycle-parking (n=1)",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/ (n=2), https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/ (n=1), https://open.toronto.ca/dataset/street-furniture-bicycle-parking/ (n=1)",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00 (n=2), 2025-03-27 14:19:12.487000+00:00 (n=1), 2025-09-10 03:04:21.164000+00:00 (n=1)",
-        "seasonal": "<NA> (n=2), no (n=1), yes (n=1)",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "38;151",
-        "meta_ward_name": "Davenport",
-        "meta_ward_number": "09",
-        "meta_status": "Installed (n=2), <NA> (n=1), Existing (n=1)",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-23178",
-        "meta_business_improvement_area": "<NA> (n=3), West Queen West (n=1)",
-        "quantity": "<NA>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.42599933177644,
-          43.64295577818242
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
         "capacity": 24,
         "operator": "City of Toronto",
         "covered": "no",
@@ -289809,6 +289771,37 @@
         "coordinates": [
           -79.37225921441402,
           43.64885124921902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "start_date": "2013",
+        "length": "5.5",
+        "description": "Address: 1184 Queen St W\n\nPlacement Street: Northcote Ave\n\nPlace Name: None\n\nDetails: No parking",
+        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "14",
+        "meta_borough": "Former Toronto",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00",
+        "quantity": "<NA>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4257846968092,
+          43.64302849915009
         ]
       }
     },

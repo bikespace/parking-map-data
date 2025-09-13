@@ -555,38 +555,6 @@
         "covered": "no",
         "access": "yes",
         "fee": "no",
-        "description": "Address: 1186 Queen St W\n\nNotes: parking stall design; on Northcote, not Queen",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "no",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "38",
-        "meta_ward_name": "Davenport",
-        "meta_ward_number": "09",
-        "meta_status": "Installed"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4262248352553,
-          43.642934845719196
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 14,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
         "description": "Address: 87 Front St E\n\nNotes: lay-by on south side, c. Market St - BIA in favour\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
         "meta_borough": "Former Toronto",
         "meta_source": "City of Toronto",
@@ -894,38 +862,6 @@
         "coordinates": [
           -79.3814651014112,
           43.643790673159494
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 14,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "description": "Address: 1184 Queen St W\n\nNotes: 3 posts\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "yes",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "151",
-        "meta_ward_name": "Davenport",
-        "meta_ward_number": "09",
-        "meta_status": "Installed"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4257846968092,
-          43.64302849915009
         ]
       }
     },
@@ -133457,35 +133393,6 @@
         "coordinates": [
           -79.4327305292664,
           43.64539430704421
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "street-furniture-bicycle-parking",
-        "meta_source_url": "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-09-10 03:04:21.164000+00:00",
-        "meta_ward_name": "Davenport",
-        "meta_ward_number": "09",
-        "meta_status": "Existing",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-23178",
-        "meta_business_improvement_area": "West Queen West"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.425988462947,
-          43.64290398924769
         ]
       }
     },
