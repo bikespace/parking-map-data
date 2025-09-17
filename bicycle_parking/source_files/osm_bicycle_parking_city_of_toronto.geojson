@@ -61408,6 +61408,83 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wave",
+        "capacity": "3",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-09-16T17:44:24+00:00",
+        "meta_osm_id": "node/13147792175"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5234499,
+          43.6451864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-09-17T00:58:42+00:00",
+        "meta_osm_id": "node/13148519881"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.352327,
+          43.6623452
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-09-17T00:58:42+00:00",
+        "meta_osm_id": "node/13148519883"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3516188,
+          43.6624396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-09-17T00:58:42+00:00",
+        "meta_osm_id": "node/13148519884"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3515904,
+          43.6624464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
