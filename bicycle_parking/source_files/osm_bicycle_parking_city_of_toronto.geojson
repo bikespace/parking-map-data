@@ -35361,14 +35361,14 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
         "capacity": "20",
-        "meta_feature_last_updated": "2024-07-07T01:49:35+00:00",
+        "meta_feature_last_updated": "2025-09-21T17:16:50+00:00",
         "meta_osm_id": "node/12038565354"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4863272,
-          43.6877821
+          -79.4862979,
+          43.687817
         ]
       }
     },
