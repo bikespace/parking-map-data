@@ -63416,6 +63416,90 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-09-23T23:51:42+00:00",
+        "meta_osm_id": "node/13166699073"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3522262,
+          43.6647368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-09-23T23:51:42+00:00",
+        "meta_osm_id": "node/13166699082"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.352444,
+          43.6652663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-09-23T23:51:42+00:00",
+        "meta_osm_id": "node/13166699084"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3530812,
+          43.6655017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-09-23T23:51:42+00:00",
+        "meta_osm_id": "node/13166699085"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3530484,
+          43.6655108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
