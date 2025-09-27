@@ -555,5 +555,37 @@
     ],
     "reason": "removed",
     "notes": "No longer there, per survey. See https://panoramax.openstreetmap.fr/?s=fp;s2;p46262302-c816-4970-ae94-773ecefcc797;c345.20/-20.63/30;m18.1/43.642853/-79.42596;vd;bs"
+  },
+  {
+    "survey_date": "2025-09-27",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "107" }],
+    "reason": "removed",
+    "notes": "Bike corral no longer in front of Union station - could not locate during survey. I remember seeing it in 2024, so it must have been removed."
+  },
+  {
+    "survey_date": "2025-09-27",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "69" },
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "106" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "131" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "89" }
+    ],
+    "reason": "area_survey",
+    "notes": "Surveyed around Union Station and added in bike racks in their specific locations."
+  },
+  {
+    "survey_date": "2025-09-27",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "191" }],
+    "reason": "missing",
+    "notes": "Could not locate. May have been removed during construction on the west side of the building."
+  },
+  {
+    "survey_date": "2025-09-27",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "55" },
+      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-23853" }
+    ],
+    "reason": "missing",
+    "notes": "Could not locate."
   }
 ]
