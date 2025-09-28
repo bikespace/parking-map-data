@@ -66,36 +66,6 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "capacity": 30,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "start_date": "2015",
-        "length": "2.9",
-        "description": "Address: 35 York St\n\nPlacement Street: Front St W\n\nPlace Name: GO York Concourse\n\nDetails: None",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "69",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3814651014112,
-          43.643790673159494
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
         "capacity": 8,
         "operator": "City of Toronto",
         "covered": "no",
@@ -336,66 +306,6 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "capacity": 72,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "start_date": "2015",
-        "length": "2.9",
-        "description": "Address: 61 Front St W\n\nPlacement Street: Front St\n\nPlace Name: None\n\nDetails: None",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "106",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.37942368055971,
-          43.64561609519269
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 14,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "start_date": "2023",
-        "length": "5.5",
-        "description": "Address: 61 Front St W\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: PUDO, In lay-by east of Bike Share",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "107",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.37942368055971,
-          43.64561609519269
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
         "capacity": 8,
         "operator": "City of Toronto",
         "covered": "no",
@@ -461,36 +371,6 @@
         "covered": "no",
         "access": "yes",
         "fee": "no",
-        "start_date": "2014",
-        "length": "2.9",
-        "description": "Address: 95 Front St E\n\nPlacement Street: Lower Jarvis St\n\nPlace Name: None\n\nDetails: None",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "139",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3714937127787,
-          43.64918125883229
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 8,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
         "description": "Address: 24 Victoria Park Ave\n\nNotes: One 8-bike rack on TTC property",
         "meta_borough": "Scarborough",
         "meta_source": "City of Toronto",
@@ -542,38 +422,6 @@
         "coordinates": [
           -79.4112467839912,
           43.641872432814
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 14,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "description": "Address: 87 Front St E\n\nNotes: lay-by on south side, c. Market St - BIA in favour\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "yes",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "55",
-        "meta_ward_name": "Toronto Centre",
-        "meta_ward_number": "13",
-        "meta_status": "Installed"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3722000572823,
-          43.6487470958429
         ]
       }
     },
@@ -742,70 +590,6 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "capacity": 72,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "description": "Address: 61 Front St W\n\nNotes: indoor and outdoor\n\nLocation: Union GO",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "no",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "89",
-        "meta_ward_name": "Spadina-Fort York",
-        "meta_ward_number": "10",
-        "meta_status": "Installed"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3800700536371,
-          43.64524540568839
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 8,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "description": "Address: 95 Front St E\n\nNotes: St Lawrence Mkt renos: angled rack reclaimed for lack of use, one 8-bike",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "no",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "91",
-        "meta_ward_name": "Toronto Centre",
-        "meta_ward_number": "13",
-        "meta_status": "Installed"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3714937127787,
-          43.64918125883229
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
         "capacity": 8,
         "operator": "City of Toronto",
         "covered": "no",
@@ -830,38 +614,6 @@
         "coordinates": [
           -79.4017249691284,
           43.642225715835
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 30,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "description": "Address: 35 York St\n\nNotes: indoor and outdoor",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "no",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "131",
-        "meta_ward_name": "Spadina-Fort York",
-        "meta_ward_number": "10",
-        "meta_status": "Installed"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3814651014112,
-          43.643790673159494
         ]
       }
     },
@@ -934,38 +686,6 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "capacity": 5,
-        "operator": "City of Toronto",
-        "covered": "",
-        "access": "yes",
-        "fee": "no",
-        "description": "Address: 33 Yonge St\n\nLocation: front of walk",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-racks",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 15:53:28.493000+00:00",
-        "seasonal": "no",
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": "191",
-        "meta_ward_name": "Toronto Centre",
-        "meta_ward_number": "13",
-        "meta_status": "Installed"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.376584165477,
-          43.647559655380995
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
         "capacity": 14,
         "operator": "City of Toronto",
         "covered": "no",
@@ -990,49 +710,6 @@
         "coordinates": [
           -79.400924005423,
           43.6545455601628
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "building",
-        "capacity": 160,
-        "operator": "City of Toronto",
-        "covered": "yes",
-        "access": "customers",
-        "fee": "yes",
-        "start_date": "2016",
-        "description": "Access from: Front St W\n\nThe Bicycle Station is located on the east side of York Street, just south of Front Street. The facility features [approximately 160] bike racks, a washroom, a change room and  a shower with complimentary towels, and an office where staff can register new members and renew bike station parking plans. Tools and pumps are available for members to perform minor repairs.",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-bike-stations-indoor",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-bike-stations-indoor/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:24.334000+00:00",
-        "meta_ward_name": "Spadina-Fort York",
-        "meta_ward_number": "10",
-        "supervised": "no",
-        "opening_hours": "Mo-Su,PH 00:00-24:00",
-        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-parking-stations/",
-        "name": "Bicycle Parking Station at Union Station",
-        "addr:housenumber": "97",
-        "addr:street": "Front St W",
-        "addr:city": "Toronto",
-        "addr:postcode": "M5J 1E6",
-        "ref:open.toronto.ca:bicycle-parking-bike-stations-indoor:id": "3",
-        "ref:open.toronto.ca:bicycle-parking-bike-stations-indoor:objectid": "3",
-        "meta_has_change_room": "Yes",
-        "meta_has_tools_and_pump": "Yes",
-        "meta_has_vending_machine": "Yes"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3821167966934,
-          43.64515068889379
         ]
       }
     },
@@ -128894,35 +128571,6 @@
         "coordinates": [
           -79.3238476499104,
           43.68365909161581
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "street-furniture-bicycle-parking",
-        "meta_source_url": "https://open.toronto.ca/dataset/street-furniture-bicycle-parking/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-09-27 03:04:12.778000+00:00",
-        "meta_ward_name": "Toronto Centre",
-        "meta_ward_number": "13",
-        "meta_status": "Existing",
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-23853",
-        "meta_business_improvement_area": "Old Town Toronto"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3723183717458,
-          43.64895540256591
         ]
       }
     },
