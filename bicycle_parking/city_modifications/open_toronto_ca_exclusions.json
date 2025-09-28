@@ -523,8 +523,7 @@
     "survey_date": "2025-09-07",
     "ids": [
       { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "137" },
-      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "155" },
-      { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "" }
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "155" }
     ],
     "reason": "missing",
     "notes": "Bike corral - not able to locate via survey."
@@ -548,7 +547,7 @@
   {
     "survey_date": "2025-09-07",
     "ids": [
-      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": " 14" },
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "14" },
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "151" },
       { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "38" },
       { "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-23178" }
@@ -587,5 +586,38 @@
     ],
     "reason": "missing",
     "notes": "Could not locate."
+  },
+  {
+    "survey_date": "2025-09-27",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "86" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "73" }
+    ],
+    "reason": "missing",
+    "notes": "Could not locate. Possibly removed during King St. Pilot to allow for streetcar platform. See: https://panoramax.openstreetmap.fr/?s=fp;s2;p00878cb2-6020-4bf3-bc27-ac77bb798471;c358.78/-12.58/30;m19.06/43.6452557/-79.3959492;vd;bs"
+  },
+  {
+    "survey_date": "2025-09-27",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "98" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "71" }
+    ],
+    "reason": "missing",
+    "notes": "Could not locate. Possibly removed during construction. See: https://panoramax.openstreetmap.fr/?s=fp;s2;p08b28c04-1ce8-45e1-a736-b6d95f39dcbb;c87.68/-4.49/30;m20.93/43.6447315/-79.3985045;vd;bs"
+  },
+  {
+    "survey_date": "2025-09-27",
+    "ids": [{ "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-28016" }],
+    "reason": "missing",
+    "notes": "Could not locate. See: https://panoramax.openstreetmap.fr/?s=fp;s2;p28e82255-5656-4b1f-a663-f65eca6538cb;c347.41/11.52/30;m20.43/43.647001/-79.4052208;vd;bs"
+  },
+  {
+    "survey_date": "2025-09-27",
+    "ids": [
+      { "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "95" },
+      { "ref:open.toronto.ca:bicycle-parking-racks:objectid": "154" }
+    ],
+    "reason": "removed",
+    "notes": "Replaced by two stacker racks, have entered the new racks into OSM. See: https://panoramax.openstreetmap.fr/?s=fp;s2;pf071aac6-fbfc-4808-a50c-68d960f0d75f;c287.54/-19.12/30;m17.13/43.643507/-79.399675;vd;bs"
   }
 ]
