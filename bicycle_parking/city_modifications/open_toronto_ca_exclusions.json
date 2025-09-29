@@ -619,5 +619,11 @@
     ],
     "reason": "removed",
     "notes": "Replaced by two stacker racks, have entered the new racks into OSM. See: https://panoramax.openstreetmap.fr/?s=fp;s2;pf071aac6-fbfc-4808-a50c-68d960f0d75f;c287.54/-19.12/30;m17.13/43.643507/-79.399675;vd;bs"
+  },
+  {
+    "survey_date": "2025-09-27",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "85" }],
+    "reason": "missing",
+    "notes": "Could not locate corral in parking lane or on sidewalk. See: https://panoramax.openstreetmap.fr/?s=fp;s2;pd836f1aa-5038-4789-afef-2e8a70090252;c121.30/-7.08/30;m18.54/43.6452808/-79.3962095;vd;bs"
   }
 ]
