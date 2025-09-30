@@ -43,36 +43,6 @@
         "fee": "no",
         "start_date": "2018",
         "length": "5.5",
-        "description": "Address: 455 King St W\n\nPlacement Street: Spadina\n\nPlace Name: None\n\nDetails: Pedzone, Installed 3rd week June 2018:",
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "85",
-        "meta_borough": "Former Toronto",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
-        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-high-capacity-outdoor/",
-        "meta_source_license": "Open Government Licence - Toronto",
-        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
-        "meta_source_last_updated": "2025-03-27 14:19:12.487000+00:00"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3960200182592,
-          43.644992668386095
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 14,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "start_date": "2018",
-        "length": "5.5",
         "description": "Address: 56D Kensington Ave\n\nPlacement Street: None\n\nPlace Name: None\n\nDetails: None",
         "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "103",
         "meta_borough": "Former Toronto",
