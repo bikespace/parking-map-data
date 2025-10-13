@@ -30681,14 +30681,14 @@
         "covered": "yes",
         "description": "four black wave racks",
         "fee": "no",
-        "meta_feature_last_updated": "2024-02-19T23:12:34+00:00",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
         "meta_osm_id": "node/11643226050"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3833558,
-          43.6589641
+          -79.3833538,
+          43.6589452
         ]
       }
     },
@@ -37192,14 +37192,14 @@
         "operator": "City of Toronto",
         "operator:type": "government",
         "ref:open.toronto.ca:bicycle-parking-racks:objectid": "221",
-        "meta_feature_last_updated": "2024-08-04T19:31:55+00:00",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
         "meta_osm_id": "node/12092375199"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3865253,
-          43.6580726
+          -79.3865194,
+          43.6580588
         ]
       }
     },
@@ -37217,14 +37217,14 @@
         "operator": "University Health Network",
         "operator:type": "public",
         "quantity": "2",
-        "meta_feature_last_updated": "2024-08-04T19:31:55+00:00",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
         "meta_osm_id": "node/12092375200"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.386797,
-          43.659435
+          -79.3867767,
+          43.6594382
         ]
       }
     },
@@ -71956,6 +71956,1925 @@
         "coordinates": [
           -79.3525261,
           43.6650237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T12:49:46+00:00",
+        "meta_osm_id": "node/13227613334"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3522402,
+          43.6643505
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720767"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3585492,
+          43.656985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720768"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3584255,
+          43.6570126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720769"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.358372,
+          43.6570231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720770"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3583426,
+          43.6570291
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720771"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3582941,
+          43.657042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720779"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3579454,
+          43.6571208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720780"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3580141,
+          43.6571028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720783"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3575805,
+          43.6572007
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720785"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3570107,
+          43.6573265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720786"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3570764,
+          43.6573115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720787"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3571413,
+          43.6572981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720791"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3568376,
+          43.6573645
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720792"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3567423,
+          43.6573868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720797"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3590883,
+          43.6568624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720798"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3591213,
+          43.6568559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227720799"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3591964,
+          43.656839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227746205"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3599143,
+          43.6566798
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-12T14:01:07+00:00",
+        "meta_osm_id": "node/13227746232"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3736957,
+          43.6536764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "6",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "meta_feature_last_updated": "2025-10-12T17:35:09+00:00",
+        "meta_osm_id": "node/13228016764"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4236245,
+          43.6877559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "10",
+        "note": "5x post-and-ring",
+        "meta_feature_last_updated": "2025-10-12T16:52:43+00:00",
+        "meta_osm_id": "node/13228052643"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4328064,
+          43.647436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "6",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "meta_feature_last_updated": "2025-10-12T17:23:13+00:00",
+        "meta_osm_id": "node/13228056272"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3947317,
+          43.6899244
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "meta_feature_last_updated": "2025-10-12T17:25:02+00:00",
+        "meta_osm_id": "node/13228084599"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4177533,
+          43.6854879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "meta_feature_last_updated": "2025-10-12T17:25:02+00:00",
+        "meta_osm_id": "node/13228084600"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4177137,
+          43.6855148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "meta_feature_last_updated": "2025-10-12T17:27:28+00:00",
+        "meta_osm_id": "node/13228097069"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.43209,
+          43.6889277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "meta_feature_last_updated": "2025-10-12T17:25:02+00:00",
+        "meta_osm_id": "node/13228113001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4176747,
+          43.6855421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "meta_feature_last_updated": "2025-10-12T17:25:02+00:00",
+        "meta_osm_id": "node/13228113002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4176375,
+          43.6855685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "meta_feature_last_updated": "2025-10-12T17:27:52+00:00",
+        "meta_osm_id": "node/13228113003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4324389,
+          43.6889188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "6",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "meta_feature_last_updated": "2025-10-12T17:28:31+00:00",
+        "meta_osm_id": "node/13228113004"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4327018,
+          43.6889651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wave",
+        "capacity": "8",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738012"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3829846,
+          43.6590057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738015"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.384015,
+          43.6587555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738018"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3842488,
+          43.6586964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3843331,
+          43.6586844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738021"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3844909,
+          43.6586405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738022"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3845937,
+          43.6586201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738033"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3856542,
+          43.6584766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738034"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3865356,
+          43.6583411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738035"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3865539,
+          43.6583782
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738036"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3864609,
+          43.6585553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738037"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3864697,
+          43.6585727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738038"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3865419,
+          43.6587415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738039"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3865491,
+          43.6587569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738040"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3866755,
+          43.6590338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738041"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3867144,
+          43.6591091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738042"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3867374,
+          43.6591661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738043"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.386762,
+          43.6592125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738048"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3872204,
+          43.6602828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738049"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3872554,
+          43.6603663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738050"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3871966,
+          43.6602273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738051"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3873918,
+          43.6602801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738052"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3873717,
+          43.6602381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "12",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738053"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3874059,
+          43.6602063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "12",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738054"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.387397,
+          43.6601906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738055"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3873508,
+          43.6601933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738056"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3873337,
+          43.6601394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738057"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3870013,
+          43.6593741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738058"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3869701,
+          43.659304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738059"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.386894,
+          43.6591456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738060"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3869038,
+          43.6591661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738068"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3867199,
+          43.6587348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738069"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3866575,
+          43.6586053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738071"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3866498,
+          43.6585874
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738072"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3865419,
+          43.6583605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738073"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3865299,
+          43.65833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738089"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3876549,
+          43.6580507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738090"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3876675,
+          43.6580443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738091"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3876408,
+          43.6580373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738092"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3876573,
+          43.6580296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738093"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3876718,
+          43.6580258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738095"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3879515,
+          43.6579784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738096"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3879688,
+          43.6579714
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738097"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3880188,
+          43.6579614
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738098"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3879995,
+          43.6579639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738099"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3880353,
+          43.6579594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228738100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3880312,
+          43.6579696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747601"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3880508,
+          43.6579602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747607"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3891355,
+          43.6575529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747608"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3890454,
+          43.6575709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747609"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3890149,
+          43.6575767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747610"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3887427,
+          43.6576368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747611"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3886798,
+          43.6576497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747612"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3886507,
+          43.6576582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747613"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3883436,
+          43.6577204
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747614"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3883085,
+          43.6577294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747615"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3882711,
+          43.6577367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747616"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3878177,
+          43.6578237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747617"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3877666,
+          43.6578323
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747618"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3876369,
+          43.6578589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747619"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3873156,
+          43.6579205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747620"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3872674,
+          43.6579265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747622"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3870193,
+          43.6579584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-13T00:35:16+00:00",
+        "meta_osm_id": "node/13228747623"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3870509,
+          43.6579528
         ]
       }
     },
