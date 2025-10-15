@@ -2445,7 +2445,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
         "capacity": "8",
-        "meta_feature_last_updated": "2021-11-08T22:58:36+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-10-14T16:53:07+00:00",
         "meta_osm_id": "node/1134604871"
       },
       "geometry": {
@@ -20371,8 +20372,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "4",
+        "covered": "no",
         "note": "ring and post along length of yonge st",
-        "meta_feature_last_updated": "2021-11-08T22:58:36+00:00",
+        "meta_feature_last_updated": "2025-10-14T16:53:00+00:00",
         "meta_osm_id": "node/9236518656"
       },
       "geometry": {
@@ -20408,8 +20410,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
+        "covered": "no",
         "note": "ring and post along length of yonge st",
-        "meta_feature_last_updated": "2021-11-08T22:58:36+00:00",
+        "meta_feature_last_updated": "2025-10-14T16:51:14+00:00",
         "meta_osm_id": "node/9236518659"
       },
       "geometry": {
@@ -20538,8 +20541,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "4",
+        "covered": "no",
         "note": "ring and post along length of yonge st",
-        "meta_feature_last_updated": "2021-11-08T22:58:36+00:00",
+        "meta_feature_last_updated": "2025-10-14T16:52:17+00:00",
         "meta_osm_id": "node/9236518674"
       },
       "geometry": {
@@ -20769,8 +20773,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "4",
+        "covered": "no",
         "note": "ring and post along length of yonge st",
-        "meta_feature_last_updated": "2021-11-08T22:58:36+00:00",
+        "meta_feature_last_updated": "2025-10-14T16:53:07+00:00",
         "meta_osm_id": "node/9236518696"
       },
       "geometry": {
@@ -20787,8 +20792,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "4",
+        "covered": "no",
         "note": "ring and post along length of yonge st",
-        "meta_feature_last_updated": "2021-11-08T22:58:36+00:00",
+        "meta_feature_last_updated": "2025-10-14T16:51:41+00:00",
         "meta_osm_id": "node/9236518697"
       },
       "geometry": {
@@ -74841,6 +74847,23 @@
         "coordinates": [
           -79.3817516,
           43.6561952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "capacity": "12",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-10-14T15:21:53+00:00",
+        "meta_osm_id": "node/13232970557"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3986707,
+          43.6613152
         ]
       }
     },
