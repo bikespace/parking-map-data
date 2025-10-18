@@ -57,7 +57,7 @@ def summarize_boolean(mylist: pd.Series, fill_value: Literal["yes", "no", None] 
         return "probably no"
     elif mylist.eq("yes").any() and mylist.eq("no").any():
         return "maybe"
-    else:
+    else:  # pragma: no cover
         return summarize_freq(mylist)
 
 
@@ -103,6 +103,10 @@ def group_proximate_rings(
     gdf: geopandas.GeoDataFrame
     """
 
+    # do not process if input dataframe is empty
+    if len(rings) == 0:
+        return rings
+
     # PART 1 - CALCULATE CLUSTERS
 
     # add quantity column (will be summed later)
@@ -139,8 +143,12 @@ def group_proximate_rings(
         "quantity": "sum",
     }
 
+    applied_aggregations = {
+        k: v for (k, v) in aggregations.items() if k in rings.columns
+    }
+
     # dissolve clusters
-    rings = rings.dissolve(by="cluster", aggfunc=aggregations)
+    rings = rings.dissolve(by="cluster", aggfunc=applied_aggregations)
 
     # set "null" values back to pd.NA
     rings = rings.replace("null", pd.NA)

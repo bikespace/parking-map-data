@@ -6,6 +6,7 @@ from bikespace_data.bicycle_parking.downstream import (
     extract_ref_tags,
     summarize_boolean,
     summarize_freq,
+    group_proximate_rings,
     group_proximate_racks,
 )
 
@@ -205,6 +206,111 @@ def test_combine_list():
     assert combine_list(df["has_na_none"]) == "id1;id2"
     assert combine_list(df["has_na_blank"]) == "id1;id2"
     assert combine_list(df["all_na"]) is pd.NA
+
+
+# see properties.description for test case notes
+mock_clusterable_rings = gpd.GeoDataFrame.from_features(
+    [
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "should join a cluster of three; null should be replaced with pd.NA",
+                "meta_source_dataset": "street-furniture-bicycle-parking",
+                "amenity": "bicycle_parking",
+                "capacity": "null",
+                "dbscan_cluster": "yes",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [100, 100],
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "should join a cluster of three",
+                "meta_source_dataset": "street-furniture-bicycle-parking",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "yes",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [100, 103],
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "should join a cluster of three",
+                "meta_source_dataset": "street-furniture-bicycle-parking",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "yes",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [100, 106],
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "should remain unclustered",
+                "meta_source_dataset": "street-furniture-bicycle-parking",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "no",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [200, 200],
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "should remain unclustered",
+                "meta_source_dataset": "street-furniture-bicycle-parking",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "no",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [300, 300],
+            },
+        },
+    ],
+    crs="EPSG:32617",  # UTM 17 N
+)
+
+mock_not_clusterable_rings = mock_clusterable_rings[
+    mock_clusterable_rings["dbscan_cluster"] == "no"
+]
+
+mock_empty_rings_table = mock_clusterable_rings[
+    mock_clusterable_rings["amenity"] == "give_me_an_empty_table"
+]
+
+
+def test_group_proximate_rings():
+    """Check that the test_group_proximate_rings function works as expected under different input conditions:
+
+    - dataset with a mix of clusterable points, including points within 5m of each other, and points that are not within 5m of each other (should not cluster)
+    - dataset with only points that are not within 5m of each other (should not cluster, no dbscan matches)
+    - empty dataset with no points (should return empty table)
+    """
+    expected_cluster = group_proximate_rings(mock_clusterable_rings)
+    # one cluster of three, two unclustered. Quantity should be a string and there should not be "null" string values in output (should be pd.NA)
+    assert len(expected_cluster) == 3
+    assert "3" in expected_cluster["quantity"].unique()
+    assert "null" not in expected_cluster["capacity"].dropna().unique()
+    assert expected_cluster["capacity"].hasnans
+
+    expected_nocluster = group_proximate_rings(mock_not_clusterable_rings)
+    # two unclustered
+    assert len(expected_nocluster) == 2
+
+    expected_empty = group_proximate_rings(mock_empty_rings_table)
+    # empty table in, empty table out
+    assert len(expected_empty) == 0
 
 
 # see properties.description for test case notes
