@@ -87,7 +87,10 @@ clustering_schema = pa.DataFrameSchema(
 
 
 @pa.check_input(clustering_schema, "rings")
-def group_proximate_rings(rings: gpd.GeoDataFrame, radius=5.0):
+def group_proximate_rings(
+    rings: gpd.GeoDataFrame,
+    radius: float = 5.0,
+) -> gpd.GeoDataFrame:
     """Converts geodataframe of bollards (ring and post) from the "street-furniture-bicycle-parking" dataset and aggregates (dissolves) by proximity if bollards are within 5m of each other.
 
     Parameters
@@ -162,7 +165,10 @@ def combine_descriptions(mylist: list[str]) -> str:
 
 
 @pa.check_input(clustering_schema, "racks")
-def group_proximate_racks(racks, radius=30.0):
+def group_proximate_racks(
+    racks: gpd.GeoDataFrame,
+    radius: float = 30.0,
+) -> gpd.GeoDataFrame:
     """Takes geodataframe of bicycle racks from multiple city datasets and aggregates (dissolves) by proximity if racks are within 30m of each other.
 
     Parameters
