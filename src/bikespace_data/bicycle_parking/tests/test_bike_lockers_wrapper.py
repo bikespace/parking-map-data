@@ -2,6 +2,7 @@ from bikespace_data.bicycle_parking.wrappers import BikeLockersToronto
 
 
 def init_live_url():
+    """Utility for manual testing"""
     blt = BikeLockersToronto(
         "toronto_lockers",
         "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
