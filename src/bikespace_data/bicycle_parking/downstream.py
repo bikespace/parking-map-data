@@ -3,7 +3,6 @@
 from typing import Literal
 
 import geopandas as gpd
-import numpy as np
 import pandas as pd
 import pandera.pandas as pa
 from pandera.engines.geopandas_engine import Geometry
@@ -140,8 +139,8 @@ def group_proximate_rings(rings: gpd.GeoDataFrame, radius=5.0):
     # dissolve clusters
     rings = rings.dissolve(by="cluster", aggfunc=aggregations)
 
-    # set "null" values back to np.nan
-    rings = rings.replace("null", np.nan)
+    # set "null" values back to pd.NA
+    rings = rings.replace("null", pd.NA)
 
     # get centroid and set as geometry
     rings["cluster_centroid"] = rings.centroid
