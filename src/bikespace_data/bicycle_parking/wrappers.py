@@ -5,12 +5,13 @@ from copy import deepcopy
 from datetime import datetime, timezone
 from http import HTTPStatus
 
+from bs4 import BeautifulSoup
 import geojson
 import geopandas
 import overpass
 import pandas as pd
 import requests
-from bs4 import BeautifulSoup
+from tenacity import retry, wait_chain, wait_fixed
 
 from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
 
@@ -49,6 +50,13 @@ class BikeData(ABC):
 class BikeDataToronto(BikeData):
     """Wrapper for working with bicycle parking data from open.toronto.ca"""
 
+    @retry(
+        wait=wait_chain(
+            wait_fixed(60 * 1),
+            wait_fixed(60 * 2),
+            wait_fixed(60 * 5),
+        )
+    )
     def __init__(self, dataset_name, resource_name):
         super().__init__(dataset_name)
         self.resource_name = resource_name
@@ -154,6 +162,13 @@ class BikeDataToronto(BikeData):
 class BikeDataOSM(BikeData):
     """Wrapper for working with bicycle parking data from the OpenStreetMap overpass API"""
 
+    @retry(
+        wait=wait_chain(
+            wait_fixed(60 * 1),
+            wait_fixed(60 * 2),
+            wait_fixed(60 * 5),
+        )
+    )
     def __init__(self, dataset_name: str, overpass_query: str):
         super().__init__(dataset_name)
 
@@ -272,6 +287,13 @@ class BikeDataOSM(BikeData):
 class BikeLockersToronto(BikeData):
     """Wrapper for working with bicycle locker data from https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/"""
 
+    @retry(
+        wait=wait_chain(
+            wait_fixed(60 * 1),
+            wait_fixed(60 * 2),
+            wait_fixed(60 * 5),
+        )
+    )
     def __init__(self, dataset_name: str, page_url: str):
         super().__init__(dataset_name)
         self.page_url = page_url
