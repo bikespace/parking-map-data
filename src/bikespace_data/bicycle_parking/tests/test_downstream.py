@@ -6,6 +6,7 @@ from bikespace_data.bicycle_parking.downstream import (
     extract_ref_tags,
     summarize_boolean,
     summarize_freq,
+    group_proximate_racks,
 )
 
 # see properties.description for test case notes
@@ -204,3 +205,130 @@ def test_combine_list():
     assert combine_list(df["has_na_none"]) == "id1;id2"
     assert combine_list(df["has_na_blank"]) == "id1;id2"
     assert combine_list(df["all_na"]) is pd.NA
+
+
+# see properties.description for test case notes
+mock_clusterable_city_racks = gpd.GeoDataFrame.from_features(
+    [
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "high-capacity dataset, should join a cluster of three",
+                "meta_source_dataset": "bicycle-parking-high-capacity-outdoor",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "yes",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [100, 100],
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "racks dataset, should join a cluster of three",
+                "meta_source_dataset": "bicycle-parking-racks",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "yes",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [100, 120],
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "street-furniture dataset, should join a cluster of three",
+                "meta_source_dataset": "street-furniture-bicycle-parking",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "yes",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [100, 140],
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "street-furniture dataset, within 30m of another, but from the same dataset, so should not cluster",
+                "meta_source_dataset": "street-furniture-bicycle-parking",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "yes",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [200, 200],
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "street-furniture dataset, within 30m of another, but from the same dataset, so should not cluster",
+                "meta_source_dataset": "street-furniture-bicycle-parking",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "yes",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [200, 220],
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "street-furniture dataset, not within 30m of another, should not cluster",
+                "meta_source_dataset": "street-furniture-bicycle-parking",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "no",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [300, 300],
+            },
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "racks dataset, not within 30m of another, should not cluster",
+                "meta_source_dataset": "bicycle-parking-racks",
+                "amenity": "bicycle_parking",
+                "dbscan_cluster": "no",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [400, 400],
+            },
+        },
+    ],
+    crs="EPSG:32617",  # UTM 17 N
+)
+
+mock_not_clusterable_city_racks = mock_clusterable_city_racks[
+    mock_clusterable_city_racks["dbscan_cluster"] == "no"
+]
+
+mock_empty_racks_table = mock_clusterable_city_racks[
+    mock_clusterable_city_racks["amenity"] == "give_me_an_empty_table"
+]
+
+
+def test_group_proximate_racks():
+    """Check that the test_group_proximate_racks function works as expected under different input conditions:
+
+    - dataset with a mix of clusterable points, points within 30m but from the same dataset (should not cluster), and points that are not within 30m of each other (should not cluster)
+    - dataset with only points that are not within 30m of each other (should not cluster, no dbscan matches)
+    - empty dataset with no points (should return empty table)
+    """
+    expected_cluster = group_proximate_racks(mock_clusterable_city_racks)
+    # one cluster of three, two within 30m but from same dataset, two not within 30m
+    assert len(expected_cluster) == 5
+
+    expected_nocluster = group_proximate_racks(mock_not_clusterable_city_racks)
+    # two not within 30m
+    assert len(expected_nocluster) == 2
+
+    expected_empty = group_proximate_racks(mock_empty_racks_table)
+    # empty table in, empty table out
+    assert len(expected_empty) == 0

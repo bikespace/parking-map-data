@@ -155,6 +155,12 @@ def group_proximate_rings(rings: gpd.GeoDataFrame, radius=5.0):
     return out_rings
 
 
+def combine_descriptions(mylist: list[str]) -> str:
+    mylist = [str(x) for x in mylist]
+    blurb = f"MULTIPLE RACKS\nThis point is a combination of {len(mylist)} bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than {len(mylist)} racks present."
+    return "\n---\n".join([blurb, *mylist])
+
+
 @pa.check_input(clustering_schema, "racks")
 def group_proximate_racks(racks, radius=30.0):
     """Takes geodataframe of bicycle racks from multiple city datasets and aggregates (dissolves) by proximity if racks are within 30m of each other.
@@ -169,11 +175,15 @@ def group_proximate_racks(racks, radius=30.0):
     gdf: geopandas.GeoDataFrame
     """
 
+    # do not process if input dataframe is empty
+    if len(racks) == 0:
+        return racks
+
     # PART 1 - DEFINE CLUSTERS
 
     # cluster points
     coordinates = racks["geometry"].get_coordinates().values
-    clusters = DBSCAN(eps=30.0, min_samples=2).fit(coordinates)
+    clusters = DBSCAN(eps=radius, min_samples=2).fit(coordinates)
     racks = racks.assign(cluster=clusters.labels_)
 
     # split clusters from singles
@@ -196,52 +206,52 @@ def group_proximate_racks(racks, radius=30.0):
 
     # PART 2 - AGGREGATE (DISSOLVE) CLUSTERS
 
-    def combine_descriptions(mylist):
-        mylist = [str(x) for x in mylist]
-        blurb = f"MULTIPLE RACKS\nThis point is a combination of {len(mylist)} bicycle racks from multiple City of Toronto datasets. In many cases, these may be duplicate entries and there will be fewer than {len(mylist)} racks present."
-        return "\n---\n".join([blurb, *mylist])
+    # skip if no clusters were found
+    if len(racks_clusters) > 0:
+        aggregations = {
+            "amenity": "first",  # unique in dataset
+            "bicycle_parking": "first",  # unique in subset
+            "capacity": "min",  # most conservative number
+            "operator": "first",  # unique in subset
+            "covered": summarize_boolean,  # debug
+            "access": "first",  # unique in subset
+            "fee": "first",  # unique in subset
+            "start_date": summarize_freq,  # debug
+            "length": summarize_freq,  # debug
+            "description": combine_descriptions,  # debug
+            "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": combine_list,
+            "ref:open.toronto.ca:bicycle-parking-racks:objectid": combine_list,
+            "ref:open.toronto.ca:street-furniture-bicycle-parking:id": combine_list,
+            "meta_borough": "first",  # unique per point
+            "meta_ward_name": "first",  # unique per point
+            "meta_ward_number": "first",  # unique per point
+            "meta_source": "first",  # unique per point
+            "meta_source_dataset": summarize_freq,
+            "meta_source_url": summarize_freq,
+            "meta_source_license": "first",  # does not vary
+            "meta_source_license_url": "first",  # does not vary
+            "meta_source_last_updated": summarize_freq,  # debug
+            "seasonal": summarize_freq,  # debug
+            "meta_status": summarize_freq,  # debug
+            "meta_business_improvement_area": summarize_freq,  # debug
+        }
 
-    aggregations = {
-        "amenity": "first",  # unique in dataset
-        "bicycle_parking": "first",  # unique in subset
-        "capacity": "min",  # most conservative number
-        "operator": "first",  # unique in subset
-        "covered": summarize_boolean,  # debug
-        "access": "first",  # unique in subset
-        "fee": "first",  # unique in subset
-        "start_date": summarize_freq,  # debug
-        "length": summarize_freq,  # debug
-        "description": combine_descriptions,  # debug
-        "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": combine_list,
-        "ref:open.toronto.ca:bicycle-parking-racks:objectid": combine_list,
-        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": combine_list,
-        "meta_borough": "first",  # unique per point
-        "meta_ward_name": "first",  # unique per point
-        "meta_ward_number": "first",  # unique per point
-        "meta_source": "first",  # unique per point
-        "meta_source_dataset": summarize_freq,
-        "meta_source_url": summarize_freq,
-        "meta_source_license": "first",  # does not vary
-        "meta_source_license_url": "first",  # does not vary
-        "meta_source_last_updated": summarize_freq,  # debug
-        "seasonal": summarize_freq,  # debug
-        "meta_status": summarize_freq,  # debug
-        "meta_business_improvement_area": summarize_freq,  # debug
-    }
+        applied_aggregations = {
+            k: v for (k, v) in aggregations.items() if k in racks_clusters.columns
+        }
 
-    # dissolve clusters
-    racks_clusters = racks_clusters.dissolve(by="cluster", aggfunc=aggregations)
+        # dissolve clusters
+        racks_clusters = racks_clusters.dissolve(
+            by="cluster",
+            aggfunc=applied_aggregations,
+        )
 
-    # get centroid and set as geometry
-    racks_clusters["geometry"] = racks_clusters.centroid
+        # get centroid and set as geometry
+        racks_clusters["geometry"] = racks_clusters.centroid
 
     # combine racks
     racks_recombined = gpd.GeoDataFrame(
         pd.concat([racks_clusters, racks_singles])
     ).drop("cluster", axis=1)
 
-    # convert back to WGS 84 lat/long and convert quantity to string
-    out_racks = racks_recombined.astype({"quantity": "Int64"}).astype(
-        {"quantity": "str"}
-    )  # prevent float in string output
-    return out_racks
+    return racks_recombined
