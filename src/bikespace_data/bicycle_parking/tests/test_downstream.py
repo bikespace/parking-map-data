@@ -8,80 +8,108 @@ from bikespace_data.bicycle_parking.downstream import (
     summarize_freq,
 )
 
+# see properties.description for test case notes
 mock_gdf = gpd.GeoDataFrame.from_features(
     [
         {
             "type": "Feature",
-            "properties": {"amenity": "bicycle_parking", "description": "No ref tags"},
-            "geometry": {"type": "Point", "coordinates": [-79.4004991, 43.6605147]},
+            "properties": {
+                "description": "No ref tags",
+                "amenity": "bicycle_parking",
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.4004991, 43.6605147],
+            },
         },
         {
             "type": "Feature",
             "properties": {
-                "amenity": "bicycle_parking",
                 "description": "open.toronto.ca ref, value 'no'",
+                "amenity": "bicycle_parking",
                 "ref:open.toronto.ca": "no",
             },
-            "geometry": {"type": "Point", "coordinates": [-79.2650674, 43.7332707]},
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.2650674, 43.7332707],
+            },
         },
         {
             "type": "Feature",
             "properties": {
-                "amenity": "bicycle_parking",
                 "description": "open.toronto.ca street furniture ref; multiple values including with and without whitespace",
+                "amenity": "bicycle_parking",
                 "ref:open.toronto.ca": "yes",
                 "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-34427;BP-34426; BP-34423",
             },
-            "geometry": {"type": "Point", "coordinates": [-79.4015863, 43.6632417]},
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.4015863, 43.6632417],
+            },
         },
         {
             "type": "Feature",
             "properties": {
-                "amenity": "bicycle_parking",
                 "description": "open.toronto.ca street furniture ref; single  value",
+                "amenity": "bicycle_parking",
                 "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-09460",
             },
-            "geometry": {"type": "Point", "coordinates": [-79.3746154, 43.667301]},
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.3746154, 43.667301],
+            },
         },
         {
             "type": "Feature",
             "properties": {
-                "amenity": "bicycle_parking",
                 "description": "open.toronto.ca refs for high cap, racks, and street furniture",
+                "amenity": "bicycle_parking",
                 "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "78",
                 "ref:open.toronto.ca:bicycle-parking-racks:objectid": "52",
                 "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-24232",
             },
-            "geometry": {"type": "Point", "coordinates": [-79.4658072, 43.6544076]},
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.4658072, 43.6544076],
+            },
         },
         {
             "type": "Feature",
             "properties": {
-                "amenity": "bicycle_parking",
                 "description": "open.toronto.ca high cap ref",
+                "amenity": "bicycle_parking",
                 "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "43",
             },
-            "geometry": {"type": "Point", "coordinates": [-79.4685262, 43.6528776]},
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.4685262, 43.6528776],
+            },
         },
         {
             "type": "Feature",
             "properties": {
+                "description": "open.toronto.ca bike station ref",
                 "amenity": "bicycle_parking",
                 "bicycle_parking": "building",
-                "description": "open.toronto.ca bike station ref",
                 "ref:open.toronto.ca:bicycle-parking-bike-stations-indoor:id": "2",
             },
-            "geometry": {"type": "Point", "coordinates": [-79.2894687, 43.6945942]},
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.2894687, 43.6945942],
+            },
         },
         {
             "type": "Feature",
             "properties": {
+                "description": "toronto.ca lockers ref",
                 "amenity": "bicycle_parking",
                 "bicycle_parking": "lockers",
-                "description": "toronto.ca lockers ref",
                 "ref:toronto.ca:lockers:title": "Bayview Subway Station",
             },
-            "geometry": {"type": "Point", "coordinates": [-79.3873901, 43.7670662]},
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-79.3873901, 43.7670662],
+            },
         },
     ],
     crs="EPSG:4326",
