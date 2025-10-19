@@ -11,7 +11,7 @@ import geopandas
 import overpass
 import pandas as pd
 import requests
-from tenacity import retry, wait_chain, wait_fixed
+from tenacity import retry, stop_after_attempt, wait_chain, wait_fixed
 
 from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
 
@@ -55,7 +55,8 @@ class BikeDataToronto(BikeData):
             wait_fixed(60 * 1),
             wait_fixed(60 * 2),
             wait_fixed(60 * 5),
-        )
+        ),
+        stop=stop_after_attempt(3),
     )
     def __init__(self, dataset_name, resource_name):
         super().__init__(dataset_name)
@@ -167,7 +168,8 @@ class BikeDataOSM(BikeData):
             wait_fixed(60 * 1),
             wait_fixed(60 * 2),
             wait_fixed(60 * 5),
-        )
+        ),
+        stop=stop_after_attempt(3),
     )
     def __init__(self, dataset_name: str, overpass_query: str):
         super().__init__(dataset_name)
@@ -292,7 +294,8 @@ class BikeLockersToronto(BikeData):
             wait_fixed(60 * 1),
             wait_fixed(60 * 2),
             wait_fixed(60 * 5),
-        )
+        ),
+        stop=stop_after_attempt(3),
     )
     def __init__(self, dataset_name: str, page_url: str):
         super().__init__(dataset_name)
