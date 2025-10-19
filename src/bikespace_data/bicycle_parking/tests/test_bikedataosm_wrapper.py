@@ -1,4 +1,7 @@
+from overpass import ServerLoadError
 import pandas as pd
+from pytest import raises
+from tenacity import RetryError
 
 from bikespace_data.bicycle_parking.wrappers import BikeDataOSM
 import bikespace_data.bicycle_parking.conversions as conversions
@@ -102,6 +105,7 @@ mock_overpass_meta = {
 
 
 def test_capacity_string_conversion(mocker):
+    """BikeDataOSM object should convert non-numeric capacity values (e.g. 'large') to a new tag, capacity:description, so that all capacity values are either numeric or null."""
     dataset_name = "osm_bicycle_parking_city_of_toronto"
 
     overpass_mock = mocker.MagicMock(
@@ -117,3 +121,30 @@ def test_capacity_string_conversion(mocker):
     assert gdf["capacity:description"].equals(
         pd.Series([pd.NA, pd.NA, "large"], dtype="string")
     )
+
+
+def test_succeeds_after_retry(mocker):
+    """BikeDataOSM should retry (at least once) if fetching from the Overpass API fails"""
+    mocker.patch("tenacity.nap.time", mocker.MagicMock())
+    overpass_mock = mocker.MagicMock(
+        side_effect=[
+            ServerLoadError(0),
+            mock_overpass_response,
+            mock_overpass_meta,
+        ]
+    )
+    mocker.patch("overpass.API.get", overpass_mock)
+    bdo = BikeDataOSM("test-osm", "test-query")
+    assert overpass_mock.call_count == 3
+    assert len(bdo._response) > 0
+    assert len(bdo._metadata) > 0
+
+
+def test_fails_after_retry(mocker):
+    """BikeDataOSM should retry (at least once) but fail once the retries are exhausted"""
+    mocker.patch("tenacity.nap.time", mocker.MagicMock())
+    overpass_mock = mocker.MagicMock(side_effect=ServerLoadError(0))
+    mocker.patch("overpass.API.get", overpass_mock)
+    with raises(RetryError):
+        bdo = BikeDataOSM("test-osm", "test-query")
+    assert overpass_mock.call_count > 1
