@@ -38516,8 +38516,18 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-08-26T15:24:21+00:00",
+        "bicycle_parking": "safe_loops",
+        "capacity": "40",
+        "description": "stacker racks",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "panoramax": "223e8797-820c-42ce-b9c0-366ad9ddf253",
+        "quantity": "5",
+        "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-08810;BP-03456;BP-03550",
+        "meta_feature_last_updated": "2025-10-19T12:10:36+00:00",
         "meta_osm_id": "node/12137994629"
       },
       "geometry": {
@@ -47721,14 +47731,14 @@
         "operator": "Toronto Metropolitan University",
         "operator:type": "public",
         "quantity": "2",
-        "meta_feature_last_updated": "2025-06-15T22:54:20+00:00",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
         "meta_osm_id": "node/12918321042"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3793399,
-          43.6570924
+          -79.3793831,
+          43.6570884
         ]
       }
     },
@@ -47816,14 +47826,14 @@
         "fee": "no",
         "operator": "Toronto Metropolitan University",
         "operator:type": "public",
-        "meta_feature_last_updated": "2025-06-15T22:54:20+00:00",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
         "meta_osm_id": "node/12918321046"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3794168,
-          43.6572087
+          -79.3794183,
+          43.6571572
         ]
       }
     },
@@ -55164,7 +55174,10 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-08-31T01:29:52+00:00",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-19T13:16:04+00:00",
         "meta_osm_id": "node/13109501060"
       },
       "geometry": {
@@ -78311,6 +78324,731 @@
         "coordinates": [
           -79.3661061,
           43.6516866
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-19T13:16:04+00:00",
+        "meta_osm_id": "node/13243241795"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4596536,
+          43.6546975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-19T13:16:04+00:00",
+        "meta_osm_id": "node/13243241797"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4579126,
+          43.6550676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-19T13:16:04+00:00",
+        "meta_osm_id": "node/13243262201"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4539711,
+          43.6558887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-19T13:43:38+00:00",
+        "meta_osm_id": "node/13243275876"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3719035,
+          43.6606649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "14",
+        "meta_feature_last_updated": "2025-10-19T15:06:33+00:00",
+        "meta_osm_id": "node/13243413533"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4250567,
+          43.641986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-19T23:23:31+00:00",
+        "meta_osm_id": "node/13244818153"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4306039,
+          43.6496749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-19T23:23:31+00:00",
+        "meta_osm_id": "node/13244818156"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4304298,
+          43.6496703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-19T23:23:31+00:00",
+        "meta_osm_id": "node/13244818157"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4303111,
+          43.6496671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "15",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884658"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3784242,
+          43.6579675
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884659"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3782521,
+          43.658066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884661"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3772204,
+          43.6581861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884662"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3770287,
+          43.6583213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884663"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3769743,
+          43.6583358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884664"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3769488,
+          43.6583392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884665"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3767223,
+          43.6583829
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884666"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3766508,
+          43.6583953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884670"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3770882,
+          43.6600484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884675"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3762933,
+          43.6582146
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884679"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3763115,
+          43.6567457
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884680"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3763331,
+          43.6567396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884684"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3769884,
+          43.6577629
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884687"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3770753,
+          43.6580044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884688"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3771016,
+          43.6580538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884689"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3771174,
+          43.6580838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884693"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3764977,
+          43.6564119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "capacity": "12",
+        "covered": "yes",
+        "fee": "no",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884699"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.376273,
+          43.6557407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244884700"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3758522,
+          43.6550849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244888401"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3758644,
+          43.6551128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244888402"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3758745,
+          43.6551381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244888403"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3758842,
+          43.655167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244888404"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3761503,
+          43.6558419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "description": "hanger racks, temporarily moved for construction (closely stacked)",
+        "fee": "no",
+        "operator": "Toronto Metropolitan University",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-10-20T00:43:22+00:00",
+        "meta_osm_id": "node/13244888405"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3761574,
+          43.6558599
         ]
       }
     },
