@@ -5559,34 +5559,6 @@
         "covered": "yes",
         "access": "customers",
         "fee": "yes",
-        "description": "Eglinton GO: In parking lot, east of the station house",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
-        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
-        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2025-07-02 09:15:56-04:00",
-        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "operator:type": "government",
-        "ref:toronto.ca:lockers:title": "Eglinton GO"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.2307806,
-          43.7396776
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "lockers",
-        "capacity": 6,
-        "operator": "City of Toronto",
-        "covered": "yes",
-        "access": "customers",
-        "fee": "yes",
         "description": "Exhibition Place: On the south side of Exhibition GO Station",
         "meta_source": "City of Toronto",
         "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
@@ -5602,62 +5574,6 @@
         "coordinates": [
           -79.4208741,
           43.634879399999996
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "lockers",
-        "capacity": 4,
-        "operator": "City of Toronto",
-        "covered": "yes",
-        "access": "customers",
-        "fee": "yes",
-        "description": "Long Branch: Located at Lakeshore Rd. and Browns Line",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
-        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
-        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2025-07-02 09:15:56-04:00",
-        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "operator:type": "government",
-        "ref:toronto.ca:lockers:title": "Long Branch"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.5432472,
-          43.5921721
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "lockers",
-        "capacity": 4,
-        "operator": "City of Toronto",
-        "covered": "yes",
-        "access": "customers",
-        "fee": "yes",
-        "description": "Rouge Hill GO Station: Located on the north side of the tracks near the eastern most bike shelter",
-        "meta_source": "City of Toronto",
-        "meta_source_dataset": "City of Toronto Bicycle Locker webpage",
-        "meta_source_url": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/locker-locations/",
-        "meta_source_license": "https://www.toronto.ca/home/copyright-information/",
-        "meta_source_last_updated": "2025-07-02 09:15:56-04:00",
-        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "operator:type": "government",
-        "ref:toronto.ca:lockers:title": "Rouge Hill GO Station"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.1316032,
-          43.78069980000001
         ]
       }
     },
