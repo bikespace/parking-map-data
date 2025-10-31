@@ -625,5 +625,11 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "85" }],
     "reason": "missing",
     "notes": "Could not locate corral in parking lane or on sidewalk. See: https://panoramax.openstreetmap.fr/?s=fp;s2;pd836f1aa-5038-4789-afef-2e8a70090252;c121.30/-7.08/30;m18.54/43.6452808/-79.3962095;vd;bs"
+  },
+  {
+    "survey_date": "2025-10-29",
+    "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "5" }],
+    "reason": "missing",
+    "notes": "Could not locate via survey. Does not appear to be any TTC property at the noted address of 24 Victoria Park Ave."
   }
 ]
