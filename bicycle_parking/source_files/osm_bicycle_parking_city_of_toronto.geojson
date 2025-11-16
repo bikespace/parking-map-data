@@ -91498,6 +91498,405 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429032"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5418018,
+          43.6341078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429033"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5417923,
+          43.6341148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429034"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5416515,
+          43.6342456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429035"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5416439,
+          43.6342537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429036"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5414825,
+          43.634404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429037"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5414757,
+          43.6344125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429038"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5410407,
+          43.634817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429039"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5409395,
+          43.6349167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429040"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5409235,
+          43.6349315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429041"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5409074,
+          43.6349471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429044"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5408312,
+          43.6350207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429046"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5407406,
+          43.6351179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429047"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5407274,
+          43.6351315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429048"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5407128,
+          43.6351455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429049"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5406986,
+          43.6351601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429052"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5405834,
+          43.6352842
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429053"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5405695,
+          43.6352973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429054"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5405573,
+          43.6353119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T00:33:37+00:00",
+        "meta_osm_id": "node/13307429055"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5405434,
+          43.6353257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
