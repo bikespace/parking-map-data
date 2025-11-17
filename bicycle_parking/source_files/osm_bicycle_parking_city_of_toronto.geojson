@@ -1029,14 +1029,14 @@
         "operator": "University of Toronto",
         "operator:type": "public",
         "quantity": "8",
-        "meta_feature_last_updated": "2024-07-14T02:48:50+00:00",
+        "meta_feature_last_updated": "2025-11-17T01:17:49+00:00",
         "meta_osm_id": "node/773398443"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3948877,
-          43.6603557
+          -79.3948571,
+          43.6604176
         ]
       }
     },
@@ -2235,18 +2235,20 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "capacity": "2",
+        "capacity": "6",
         "covered": "no",
-        "meta_feature_last_updated": "2021-11-06T20:06:46+00:00",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T14:54:45+00:00",
         "meta_osm_id": "node/1123662716"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.387208,
-          43.671646
+          -79.3872329,
+          43.6716076
         ]
       }
     },
@@ -20040,20 +20042,21 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "capacity": "12",
+        "capacity": "14",
         "covered": "no",
         "fee": "no",
         "operator": "City of Toronto",
-        "meta_feature_last_updated": "2023-12-31T22:13:36+00:00",
+        "meta_feature_last_updated": "2025-11-16T14:54:45+00:00",
         "meta_osm_id": "node/9206317945"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.386701,
-          43.670471
+          -79.3867987,
+          43.6705613
         ]
       }
     },
@@ -91891,6 +91894,177 @@
         "coordinates": [
           -79.5405434,
           43.6353257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T14:54:45+00:00",
+        "meta_osm_id": "node/13308282146"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3820861,
+          43.6586957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T14:54:45+00:00",
+        "meta_osm_id": "node/13308282148"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3820718,
+          43.6586058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T14:54:45+00:00",
+        "meta_osm_id": "node/13308282150"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3869439,
+          43.6708904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T14:54:45+00:00",
+        "meta_osm_id": "node/13308282154"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3873674,
+          43.6721467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T14:54:45+00:00",
+        "meta_osm_id": "node/13308282155"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3873405,
+          43.6721532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T14:54:45+00:00",
+        "meta_osm_id": "node/13308282158"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3874967,
+          43.6722752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2025-11-16T14:54:45+00:00",
+        "meta_osm_id": "node/13308282159"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3875215,
+          43.6723166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2025-11-16T19:06:13+00:00",
+        "meta_osm_id": "node/13308821756"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4884604,
+          43.6876626
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2025-11-17T01:17:49+00:00",
+        "meta_osm_id": "node/13309955074"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3940608,
+          43.6595051
         ]
       }
     },
