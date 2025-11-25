@@ -8,6 +8,7 @@ dependencies = [
     "beautifulsoup4>=4.13.3",
     "geojson>=3.2.0",
     "geopandas>=1.1.1",
+    "geopy>=2.4.1",
     "numpy>=2.2.4",
     "overpass>=0.7.2",
     "pandas>=2.2.3",
@@ -15,11 +16,11 @@ dependencies = [
     "pathlib>=1.0.1",
     "progress>=1.6.1",
     "pyarrow>=20.0.0",
-    "pytest-cov>=6.2.1",
     "requests>=2.32.3",
     "scikit-learn>=1.6.1",
     "shapely>=2.1.0",
     "tenacity>=9.1.2",
+    "tqdm>=4.67.1",
 ]
 
 [dependency-groups]
@@ -27,6 +28,7 @@ dev = [
     "hypothesis>=6.138.13", # required for pandera.DataFrameSchema.example
     "pytest>=8.3.5",
     "pytest-mock>=3.14.1",
+    "pytest-cov>=6.2.1",
 ]
 
 [build-system]
@@ -34,7 +36,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.pytest.ini_options]
-addopts = "--cov=src --cov-branch --cov-report=term-missing"
+addopts = "--cov=src --cov-branch --cov-report=term-missing:skip-covered"
 markers = [
     "long: marks tests as long-running (deselect with '-m \"not long\"')",
     "uses_external_resources: marks tests that depend on external resources, e.g. OSM Overpass API, City of Toronto Open Data Portal.",
@@ -42,8 +44,6 @@ markers = [
 
 [tool.coverage.run]
 omit = [
-    # omit anything in a test directory anywhere
-    "*/tests/*",
     "src/bikespace_data/bicycle_parking/analysis",
     ]
 
