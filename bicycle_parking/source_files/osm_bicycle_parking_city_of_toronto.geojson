@@ -5052,15 +5052,24 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2015-05-02T00:10:58+00:00",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "Hanger rack",
+        "fee": "no",
+        "operator": "Dufferin Mall",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2025-11-25T03:08:41+00:00",
         "meta_osm_id": "node/3492364430"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4337841,
-          43.6554241
+          -79.4337791,
+          43.6553978
         ]
       }
     },
@@ -30946,30 +30955,48 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-03-16T14:21:28+00:00",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "Hanger rack",
+        "fee": "no",
+        "operator": "Dufferin Mall",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2025-11-25T03:08:41+00:00",
         "meta_osm_id": "node/11736810968"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4337789,
-          43.6554026
+          -79.4337679,
+          43.6553704
         ]
       }
     },
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-03-16T14:21:28+00:00",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "Hanger rack",
+        "fee": "no",
+        "operator": "Dufferin Mall",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2025-11-25T03:08:41+00:00",
         "meta_osm_id": "node/11736827970"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4337942,
-          43.6554455
+          -79.4337916,
+          43.6554309
         ]
       }
     },
@@ -92185,6 +92212,27 @@
         "coordinates": [
           -79.4388799,
           43.6402092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "40",
+        "covered": "no",
+        "note": "capacity estimated",
+        "operator": "Brentwood Towers",
+        "operator:type": "private",
+        "meta_feature_last_updated": "2025-11-25T03:04:02+00:00",
+        "meta_osm_id": "node/13329595937"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3982847,
+          43.6950987
         ]
       }
     },
