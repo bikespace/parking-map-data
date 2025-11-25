@@ -5,7 +5,7 @@ import pandera.pandas as pa
 from pandera.errors import SchemaErrors
 
 from bikespace_data.utilities import StatusManager
-from bikespace_data.resources.toronto_open_data import TODResponse, request_tod_gdf
+from bikespace_data.resources.toronto_open_data import TODResponseGDF, request_tod_gdf
 
 cycling_network_schema = pa.DataFrameSchema(
     columns={
@@ -78,7 +78,7 @@ def update_cycling_network(
         status_save=status_path,
     )
 
-    cycling_network_data: TODResponse = request_tod_gdf(
+    cycling_network_data: TODResponseGDF = request_tod_gdf(
         dataset_name="cycling-network",
         resource_id="023da9a2-8848-4e10-9cad-e7f9119cd874",
     )

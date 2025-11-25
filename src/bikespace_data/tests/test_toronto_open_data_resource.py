@@ -5,7 +5,7 @@ import pytest
 from geopandas.testing import assert_geodataframe_equal
 from shapely import Point
 
-from bikespace_data.resources.toronto_open_data import TODResponse, request_tod_gdf
+from bikespace_data.resources.toronto_open_data import TODResponseGDF, request_tod_gdf
 
 mock_metadata_response = {
     "success": True,
@@ -40,7 +40,7 @@ def test_request_tod_gdf(mocker):
 
     mocker.patch("geopandas.read_file", return_value=mock_resource_response)
 
-    response: TODResponse = request_tod_gdf("test-dataset", "test-resource-two")
+    response: TODResponseGDF = request_tod_gdf("test-dataset", "test-resource-two")
 
     assert_geodataframe_equal(
         response["gdf"],
