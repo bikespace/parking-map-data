@@ -92239,6 +92239,54 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "bike_ride": "yes",
+        "capacity": "7",
+        "covered": "no",
+        "description": "Access requires pushing bike up/down wheel ramp on short set of stairs",
+        "fee": "no",
+        "operator": "Toronto Transit Commission",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2025-11-27T00:10:36+00:00",
+        "meta_osm_id": "node/13334932421"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2885148,
+          43.6946183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "3",
+        "covered": "no",
+        "description": "wave rack",
+        "fee": "no",
+        "operator": "Long & McQuade",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2025-11-27T00:10:36+00:00",
+        "meta_osm_id": "node/13334932422"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2827831,
+          43.6923458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
