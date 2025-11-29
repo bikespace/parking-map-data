@@ -26442,14 +26442,17 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-09-13T00:22:20+00:00",
+        "bicycle_parking": "bollard",
+        "capacity": "10",
+        "description": "Five post-and-rings",
+        "meta_feature_last_updated": "2025-11-29T01:42:56+00:00",
         "meta_osm_id": "node/11186845824"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4410699,
-          43.6535109
+          -79.4410739,
+          43.653549
         ]
       }
     },
