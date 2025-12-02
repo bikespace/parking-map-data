@@ -92898,6 +92898,23 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "covered": "yes",
+        "meta_feature_last_updated": "2025-12-02T06:00:32+00:00",
+        "meta_osm_id": "node/13347211376"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2309844,
+          43.7398809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -94350,12 +94367,21 @@
         "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "35",
         "ref:open.toronto.ca:bicycle-parking-racks:objectid": "25",
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-28925",
-        "meta_feature_last_updated": "2025-09-08T12:29:20+00:00",
+        "meta_feature_last_updated": "2025-12-01T14:13:30+00:00",
         "meta_osm_id": "way/741145976"
       },
       "geometry": {
-        "type": "Polygon",
-        "coordinates": []
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.4172349,
+            43.6468246
+          ],
+          [
+            -79.4173335,
+            43.6468304
+          ]
+        ]
       }
     },
     {
@@ -95460,24 +95486,24 @@
         "coordinates": [
           [
             [
-              -79.2301831,
-              43.7403392
+              -79.230193,
+              43.7403462
             ],
             [
-              -79.2301757,
-              43.7403236
+              -79.2301856,
+              43.7403306
             ],
             [
-              -79.2302127,
-              43.7403146
+              -79.2302226,
+              43.7403216
             ],
             [
-              -79.2302201,
-              43.7403302
+              -79.23023,
+              43.7403372
             ],
             [
-              -79.2301831,
-              43.7403392
+              -79.230193,
+              43.7403462
             ]
           ]
         ]
