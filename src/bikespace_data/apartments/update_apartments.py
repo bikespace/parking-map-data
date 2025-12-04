@@ -1,5 +1,5 @@
-import json
 import math
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import TypedDict
 
@@ -18,7 +18,10 @@ class ZoningRequirements(TypedDict):
     long_term: int | pd.api.typing.NAType
 
 
-def get_building_registrations(source_save_path: Path | None = None):
+def get_building_registrations(
+    source_save_path: Path | None = None,
+    status_manager: StatusManager | None = None,
+):
     """
     Get the [building registration data](https://open.toronto.ca/dataset/apartment-building-registration/) from the City of Toronto Open Data portal, validate that it contains the expected columns, and extract the number of indoor and outdoor bicycle parking spots from the "BIKE_PARKING" column.
 
@@ -33,6 +36,16 @@ def get_building_registrations(source_save_path: Path | None = None):
     # save original if requested
     if source_save_path is not None:
         df.to_csv(source_save_path / "building_registrations.csv")
+
+    # log in status manager if requested
+    if status_manager is not None:
+        last_updated = datetime.fromisoformat(response["metadata"]["last_modified"])
+        status_manager.add(
+            dataset_name="apartment-building-registration",
+            last_updated=last_updated,
+            num_features=len(df),
+            last_checked=datetime.now(timezone.utc),
+        )
 
     schema = pa.DataFrameSchema(
         {
@@ -296,6 +309,12 @@ def get_neighbourhoods_gdf(source_save_path: Path | None = None) -> gpd.GeoDataF
     return gdf_formatted
 
 
+# TODO
+# - address cache pull from git like sm
+# - add in archive saving (move save file function to shared utility)
+# - reorganize shared utilities folder?
+
+
 def get_bike_parking_info(
     status_path: Path = Path("apartments/statuses/apartments_status.csv"),
     output_path: Path = Path("apartments"),
@@ -320,7 +339,8 @@ def get_bike_parking_info(
 
     # contains statistics on building bicycle parking
     building_registrations = get_building_registrations(
-        source_save_path=output_path / "source_files"
+        source_save_path=output_path / "source_files",
+        status_manager=sm,
     )
 
     # contains geolocation for most buildings
