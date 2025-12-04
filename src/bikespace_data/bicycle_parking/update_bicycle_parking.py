@@ -12,15 +12,13 @@ This script downloads, filters, and transforms data from City of Toronto Open Da
 from argparse import ArgumentParser
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Literal, TypedDict, cast
+from typing import TypedDict, cast
 from zoneinfo import ZoneInfo
 
-import geojson
 import geopandas
 import pandas as pd
 
 import bikespace_data.bicycle_parking.conversions as conversions
-from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
 from bikespace_data.bicycle_parking.downstream import (
     extract_ref_tags,
     group_proximate_racks,
@@ -43,41 +41,9 @@ from bikespace_data.bicycle_parking.wrappers import (
     BikeDataToronto,
     BikeLockersToronto,
 )
-from bikespace_data.utilities import StatusManager, dt_cols_to_str
+from bikespace_data.utilities import StatusManager, save_geo_output
 
 geopandas.options.io_engine = "pyogrio"
-
-
-def save_output(
-    output: GeoJSONFeatureCollection | geopandas.GeoDataFrame,
-    *,
-    path: Path,
-    file_name: str,
-    archive_name: str | None = None,
-    na: Literal["null", "drop", "keep"] = "drop",
-):
-    """Save GeoJSON dict or GeoPandas Geodataframe to file. If archive_name is specified, the file will also be saved in an archive folder in the same path."""
-
-    path.mkdir(exist_ok=True, parents=True)
-    if archive_name:
-        (path / archive_name).mkdir(exist_ok=True, parents=True)
-
-    if isinstance(output, geopandas.GeoDataFrame):
-        with open(path / file_name, "w") as f:
-            f.write(dt_cols_to_str(output).to_json(na=na, drop_id=True, indent=2))
-        if archive_name:
-            output.to_parquet(
-                (path / archive_name / file_name).with_suffix(".parquet"),
-            )
-
-    else:
-        with open(path / file_name, "w") as f:
-            geojson.dump(output, f, indent=2)
-        if archive_name:
-            gdf = geopandas.GeoDataFrame.from_features(
-                output["features"]
-            ).convert_dtypes()
-            gdf.to_parquet((path / archive_name / file_name).with_suffix(".parquet"))
 
 
 class StatusDict(TypedDict):
@@ -115,7 +81,7 @@ def run_update(
     rec_last_updated = status_manager.last_updated(dataset_name=bike_data.dataset_name)
 
     # save source file
-    save_output(
+    save_geo_output(
         bike_data.response_geojson,
         path=sfp,
         file_name=f"{bike_data.dataset_name}.geojson",
@@ -129,7 +95,7 @@ def run_update(
 
     # save normalized output
     na_option = "drop" if isinstance(bike_data, BikeDataOSM) else "null"
-    save_output(
+    save_geo_output(
         normalized_gdf,
         path=ofp,
         file_name=f"{bike_data.dataset_name}-normalized.geojson",
@@ -305,7 +271,7 @@ def update_bicycle_parking(
         )
     ).convert_dtypes()
 
-    save_output(
+    save_geo_output(
         all_normalized,
         path=ofp,
         file_name="all_normalized_unprocessed.geojson",
@@ -425,7 +391,7 @@ def update_bicycle_parking(
         )
     )
 
-    save_output(
+    save_geo_output(
         final_selection.to_crs("EPSG:32617")
         .set_geometry(final_selection.to_crs("EPSG:32617").geometry.centroid)
         .to_crs("EPSG:4326"),
@@ -487,14 +453,14 @@ def update_bicycle_parking(
     # ------------------
     print("Saving display files...")
 
-    save_output(
+    save_geo_output(
         all_sources[all_sources["meta_source"].eq("City of Toronto", fill_value=False)],
         path=dfp,
         file_name="open_toronto_ca.geojson",
         archive_name=archive_name,
         na="drop",
     )
-    save_output(
+    save_geo_output(
         all_centroid_utm17N[
             all_centroid_utm17N["meta_source"].eq("City of Toronto", fill_value=False)
         ].to_crs("EPSG:4326"),
@@ -503,14 +469,14 @@ def update_bicycle_parking(
         archive_name=archive_name,
         na="drop",
     )
-    save_output(
+    save_geo_output(
         all_sources[all_sources["meta_source"].eq("OpenStreetMap", fill_value=False)],
         path=dfp,
         file_name="openstreetmap.geojson",
         archive_name=archive_name,
         na="drop",
     )
-    save_output(  # unmapped lockers
+    save_geo_output(  # unmapped lockers
         all_sources[
             all_sources["meta_source_dataset"].eq(
                 "City of Toronto Bicycle Locker webpage", fill_value=False
@@ -521,7 +487,7 @@ def update_bicycle_parking(
         archive_name=archive_name,
         na="drop",
     )
-    save_output(
+    save_geo_output(
         all_sources,
         path=dfp,
         file_name="all_sources.geojson",

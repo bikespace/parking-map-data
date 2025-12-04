@@ -3,10 +3,8 @@ from http import HTTPStatus
 from io import StringIO
 from pathlib import Path
 
-import geopandas as gpd
 import pandas as pd
 import requests
-from pandas.api.types import is_datetime64_any_dtype
 
 status_manager_date_format = r"%Y-%m-%dT%H:%M:%S.%f%:z"
 
@@ -115,13 +113,3 @@ class StatusManager:
         self._status_table.to_csv(
             self.status_save, index=False, date_format=status_manager_date_format
         )
-
-
-def dt_cols_to_str(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
-    """Convert dtype for datetime columns to string"""
-    json_not_supported_cols = gdf.columns[
-        [is_datetime64_any_dtype(gdf[c]) for c in gdf.columns]
-    ].union(gdf.columns[gdf.dtypes == "object"])
-    if len(json_not_supported_cols) > 0:
-        gdf = gdf.astype({c: "string" for c in json_not_supported_cols})
-    return gdf

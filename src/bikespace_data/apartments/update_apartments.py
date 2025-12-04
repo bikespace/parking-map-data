@@ -310,7 +310,6 @@ def get_neighbourhoods_gdf(source_save_path: Path | None = None) -> gpd.GeoDataF
 
 
 # TODO
-# - address cache pull from git like sm
 # - add in archive saving (move save file function to shared utility)
 # - reorganize shared utilities folder?
 
