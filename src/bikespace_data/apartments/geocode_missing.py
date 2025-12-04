@@ -1,8 +1,10 @@
 import json
+from http import HTTPStatus
 from pathlib import Path
 from typing import TypedDict
 
 import pandas as pd
+import requests
 from geopy.extra.rate_limiter import RateLimiter
 from geopy.geocoders import Nominatim
 from tqdm import tqdm
@@ -81,14 +83,15 @@ def geocode_missing(
 class AddressCache:
     """Utility wrapper for getting and updating address cache"""
 
-    def __init__(self, path: Path):
-        self._path = path
+    def __init__(self, source_path: str, save_path: Path):
+        self.save_path = save_path
         self.cache: AddressCacheDict = {}
-        if self._path.exists():
-            with self._path.open("r") as f:
-                self.cache = json.load(f)
+
+        response = requests.get(source_path)
+        if response.status_code == HTTPStatus.OK:
+            self.cache = response.json()
 
     def save_cache(self):
-        self._path.parent.mkdir(exist_ok=True, parents=True)
-        with self._path.open("w") as f:
+        self.save_path.parent.mkdir(exist_ok=True, parents=True)
+        with self.save_path.open("w") as f:
             json.dump(self.cache, f, indent=2)

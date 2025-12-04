@@ -350,7 +350,10 @@ def get_bike_parking_info(
     joined = building_registrations.merge(building_evaluations, how="left", on="RSN")
 
     # add missing geolocations
-    address_cache = AddressCache(address_cache_path)
+    address_cache = AddressCache(
+        source_path=f"https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/{str(address_cache_path)}",
+        save_path=address_cache_path,
+    )
     geocode_result = geocode_missing(
         joined, "LATITUDE", "LONGITUDE", "SITE_ADDRESS_x", address_cache.cache
     )
