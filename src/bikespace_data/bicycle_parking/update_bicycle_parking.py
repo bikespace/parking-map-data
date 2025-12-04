@@ -36,14 +36,14 @@ from bikespace_data.bicycle_parking.sources.load_sources import (
     SourceDatasetTorontoWeb,
     load_paths,
 )
-from bikespace_data.bicycle_parking.utilities import dt_cols_to_str, ref_cols_to_str
+from bikespace_data.bicycle_parking.utilities import ref_cols_to_str
 from bikespace_data.bicycle_parking.wrappers import (
     BikeData,
     BikeDataOSM,
     BikeDataToronto,
     BikeLockersToronto,
 )
-from bikespace_data.utilities import StatusManager
+from bikespace_data.utilities import StatusManager, dt_cols_to_str
 
 geopandas.options.io_engine = "pyogrio"
 

@@ -7,17 +7,9 @@ import geopandas as gpd
 import pandas as pd
 import pandera.pandas as pa
 
-from bikespace_data.apartments.geocode_missing import AddressCacheDict, geocode_missing
-from bikespace_data.resources.toronto_open_data import (
-    TODResponseDF,
-    TODResponseGDF,
-    request_tod_df,
-    request_tod_gdf,
-)
-from bikespace_data.utilities import StatusManager
-
-# TODO - research ways of saving to geojson file. open and saving json allows for indent, but it might be worth checking again.
-# also wards dataset has a timestamp that needs to be handled for JSON
+from bikespace_data.apartments.geocode_missing import AddressCache, geocode_missing
+from bikespace_data.resources.toronto_open_data import request_tod_df, request_tod_gdf
+from bikespace_data.utilities import StatusManager, dt_cols_to_str
 
 
 class ZoningRequirements(TypedDict):
@@ -212,22 +204,6 @@ def get_building_evaluations(source_save_path: Path | None = None):
     return output
 
 
-class AddressCache:
-    """Utility wrapper for getting and updating address cache"""
-
-    def __init__(self, path: Path):
-        self._path = path
-        self.cache: AddressCacheDict = {}
-        if self._path.exists():
-            with self._path.open("r") as f:
-                self.cache = json.load(f)
-
-    def save_cache(self):
-        self._path.parent.mkdir(exist_ok=True, parents=True)
-        with self._path.open("w") as f:
-            json.dump(self.cache, f, indent=2)
-
-
 def calculate_zoning_requirement(row) -> ZoningRequirements:
     """Calculate the required number of bicycle parking spaces under the current zoning by-law using the BICYCLE_ZONE and CONFIRMED_UNITS columns"""
 
@@ -268,7 +244,7 @@ def get_wards_gdf(source_save_path: Path | None = None) -> gpd.GeoDataFrame:
     # save original if requested
     if source_save_path is not None:
         with open(source_save_path / "wards.geojson", "w") as f:
-            f.write(wards["gdf"].to_json(drop_id=True, indent=2))
+            f.write(dt_cols_to_str(wards["gdf"]).to_json(drop_id=True, indent=2))
 
     wards_formatted = (
         wards["gdf"][["AREA_SHORT_CODE", "AREA_NAME", "geometry"]]
@@ -413,10 +389,15 @@ def get_bike_parking_info(
             calculate_zoning_requirement, axis=1
         )  # type: ignore
     )
-    gdf_split_zoning_reqs = pd.concat(
-        [gdf_with_zoning_reqs, pd.json_normalize(gdf_with_zoning_reqs["zoning_reqs"])],  # type: ignore
-        axis=1,
-    ).drop(columns=["zoning_reqs"])
+    gdf_split_zoning_reqs = gpd.GeoDataFrame(
+        pd.concat(
+            [
+                gdf_with_zoning_reqs,
+                pd.json_normalize(gdf_with_zoning_reqs["zoning_reqs"]),  # type: ignore
+            ],
+            axis=1,
+        ).drop(columns=["zoning_reqs"])
+    )
 
     gdf_unmet_need = gdf_split_zoning_reqs.assign(
         short_term_min_unmet=gdf_split_zoning_reqs["short_term_min"]
@@ -433,13 +414,14 @@ def get_bike_parking_info(
     gdf_unmet_need["total_req_min"] = (
         gdf_unmet_need["short_term_min"] + gdf_unmet_need["long_term"]
     )
-    gdf_unmet_need["pc_unmet"] = (
-        gdf_unmet_need["total_unmet_min"] / gdf_unmet_need["total_req_min"]
+    gdf_unmet_need["pc_unmet"] = round(
+        gdf_unmet_need["total_unmet_min"] / gdf_unmet_need["total_req_min"],
+        2,
     )
 
     # output
     with open(output_path / "output_files" / "apartments.geojson", "w") as f:
-        f.write(gdf_unmet_need.to_json(index=False, indent=2))
+        f.write(gdf_unmet_need.to_json(drop_id=True, indent=2))
     gdf_unmet_need.to_csv(output_path / "output_files" / "apartments.csv")
 
     # filtered output for mapping
@@ -451,12 +433,17 @@ def get_bike_parking_info(
             gdf_unmet_need[
                 [
                     "CONFIRMED_UNITS",
-                    "pc_unmet",
+                    "bike_parking_indoor",
+                    "long_term",
+                    "bike_parking_outdoor",
+                    "short_term_min",
+                    "short_term_max",
                     "total_req_min",
                     "total_unmet_min",
+                    "pc_unmet",
                     "geometry",
                 ]
-            ].to_json(index=False, indent=2)
+            ].to_json(drop_id=True, indent=2)
         )
 
 

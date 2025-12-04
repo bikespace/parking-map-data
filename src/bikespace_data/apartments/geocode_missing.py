@@ -1,3 +1,5 @@
+import json
+from pathlib import Path
 from typing import TypedDict
 
 import pandas as pd
@@ -74,3 +76,19 @@ def geocode_missing(
         "df": df_geocoded,
         "address_cache": address_cache,
     }
+
+
+class AddressCache:
+    """Utility wrapper for getting and updating address cache"""
+
+    def __init__(self, path: Path):
+        self._path = path
+        self.cache: AddressCacheDict = {}
+        if self._path.exists():
+            with self._path.open("r") as f:
+                self.cache = json.load(f)
+
+    def save_cache(self):
+        self._path.parent.mkdir(exist_ok=True, parents=True)
+        with self._path.open("w") as f:
+            json.dump(self.cache, f, indent=2)
