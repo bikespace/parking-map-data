@@ -7,14 +7,17 @@ import geopandas as gpd
 import pandas as pd
 import pandera.pandas as pa
 
+from bikespace_data.apartments.geocode_missing import AddressCacheDict, geocode_missing
 from bikespace_data.resources.toronto_open_data import (
     TODResponseDF,
     TODResponseGDF,
     request_tod_df,
     request_tod_gdf,
 )
+from bikespace_data.utilities import StatusManager
 
-from bikespace_data.apartments.geocode_missing import AddressCacheDict, geocode_missing
+# TODO - research ways of saving to geojson file. open and saving json allows for indent, but it might be worth checking again.
+# also wards dataset has a timestamp that needs to be handled for JSON
 
 
 class ZoningRequirements(TypedDict):
@@ -23,7 +26,7 @@ class ZoningRequirements(TypedDict):
     long_term: int | pd.api.typing.NAType
 
 
-def get_building_registrations():
+def get_building_registrations(source_save_path: Path | None = None):
     """
     Get the [building registration data](https://open.toronto.ca/dataset/apartment-building-registration/) from the City of Toronto Open Data portal, validate that it contains the expected columns, and extract the number of indoor and outdoor bicycle parking spots from the "BIKE_PARKING" column.
 
@@ -35,23 +38,27 @@ def get_building_registrations():
     )
     df = response["df"]
 
+    # save original if requested
+    if source_save_path is not None:
+        df.to_csv(source_save_path / "building_registrations.csv")
+
     schema = pa.DataFrameSchema(
         {
             "BIKE_PARKING": pa.Column(str, required=True),
-            "CONFIRMED_STOREYS": pa.Column("int64"),
-            "CONFIRMED_UNITS": pa.Column("int64"),
+            "CONFIRMED_STOREYS": pa.Column(int),
+            "CONFIRMED_UNITS": pa.Column(int),
             "PROP_MANAGEMENT_COMPANY_NAME": pa.Column(str, nullable=True),
             "PROPERTY_TYPE": pa.Column(
                 str,
                 nullable=True,
                 checks=pa.Check.isin(["PRIVATE", "TCHC", "SOCIAL HOUSING"]),
             ),
-            "RSN": pa.Column("int64", required=True, unique=True),
+            "RSN": pa.Column(int, required=True, unique=True),
             "SITE_ADDRESS": pa.Column(str, required=True),
-            "WARD": pa.Column(str),
-            "YEAR_BUILT": pa.Column("int64", nullable=True),
-            "YEAR_OF_REPLACEMENT": pa.Column("int64", nullable=True),
-            "YEAR_REGISTERED": pa.Column("int64", nullable=True),
+            "WARD": pa.Column(int),
+            "YEAR_BUILT": pa.Column(int, nullable=True),
+            "YEAR_OF_REPLACEMENT": pa.Column(int, nullable=True),
+            "YEAR_REGISTERED": pa.Column(int, nullable=True),
         },
         strict="filter",
     )
@@ -66,7 +73,7 @@ def get_building_registrations():
     return vdf
 
 
-def get_building_evaluations():
+def get_building_evaluations(source_save_path: Path | None = None):
     """
     Get the [building evaluations datasets](https://open.toronto.ca/dataset/apartment-building-evaluation/) from the City of Toronto Open Data portal,  validate that each dataset contains the expected columns, and combine the datasets.
 
@@ -91,6 +98,10 @@ def get_building_evaluations():
         resource_id="7fa98ab2-7412-43cd-9270-cb44dd75b573",
     )
     df_2023_plus = response_2023_plus["df"]
+
+    # save original if requested
+    if source_save_path is not None:
+        df_2023_plus.to_csv(source_save_path / "building_evaluations_2023_plus.csv")
 
     schema_2023_plus = pa.DataFrameSchema(
         {
@@ -125,6 +136,10 @@ def get_building_evaluations():
         resource_id="979fb513-5186-41e9-bb23-7b5cc6b89915",
     )
     df_prior = response_prior["df"]
+
+    # save original if requested
+    if source_save_path is not None:
+        df_prior.to_csv(source_save_path / "building_evaluations_prior_to_2023.csv")
 
     schema_prior = pa.DataFrameSchema(
         {
@@ -208,9 +223,9 @@ class AddressCache:
                 self.cache = json.load(f)
 
     def save_cache(self):
-        self._path.parent.mkdir(exist_ok=True)
+        self._path.parent.mkdir(exist_ok=True, parents=True)
         with self._path.open("w") as f:
-            json.dump(self.cache, f)
+            json.dump(self.cache, f, indent=2)
 
 
 def calculate_zoning_requirement(row) -> ZoningRequirements:
@@ -242,13 +257,19 @@ def calculate_zoning_requirement(row) -> ZoningRequirements:
     }
 
 
-def get_wards_gdf() -> gpd.GeoDataFrame:
+def get_wards_gdf(source_save_path: Path | None = None) -> gpd.GeoDataFrame:
     """Retrieves, simplifies, and saves data from the City Wards dataset from open.toronto.ca"""
 
     wards = request_tod_gdf(
         dataset_name="city-wards",
         resource_id="737b29e0-8329-4260-b6af-21555ab24f28",
     )
+
+    # save original if requested
+    if source_save_path is not None:
+        with open(source_save_path / "wards.geojson", "w") as f:
+            f.write(wards["gdf"].to_json(drop_id=True, indent=2))
+
     wards_formatted = (
         wards["gdf"][["AREA_SHORT_CODE", "AREA_NAME", "geometry"]]
         .assign(
@@ -267,13 +288,19 @@ def get_wards_gdf() -> gpd.GeoDataFrame:
     return wards_formatted
 
 
-def get_neighbourhoods_gdf() -> gpd.GeoDataFrame:
+def get_neighbourhoods_gdf(source_save_path: Path | None = None) -> gpd.GeoDataFrame:
     "Retrieves and simplifies from https://open.toronto.ca/dataset/neighbourhoods/"
     response = request_tod_gdf(
         dataset_name="neighbourhoods",
-        resource_id="1d38e8b7-65a8-4dd0-88b0-ad2ce938126e",
+        resource_id="0719053b-28b7-48ea-b863-068823a93aaa",
     )
     gdf = response["gdf"]
+
+    # save original if requested
+    if source_save_path is not None:
+        with open(source_save_path / "neighbourhoods.geojson", "w") as f:
+            f.write(gdf.to_json(drop_id=True, indent=2))
+
     gdf_formatted = gdf[
         [
             "AREA_SHORT_CODE",
@@ -293,21 +320,41 @@ def get_neighbourhoods_gdf() -> gpd.GeoDataFrame:
     return gdf_formatted
 
 
-def get_bike_parking_info():
+def get_bike_parking_info(
+    status_path: Path = Path("apartments/statuses/apartments_status.csv"),
+    output_path: Path = Path("apartments"),
+    address_cache_path: Path = Path("apartments/address_cache/address_cache.json"),
+    bicycle_policy_zones_path: Path = Path(
+        "src/bikespace_data/apartments/Toronto_Bicycle_Policy_Zones.geojson"
+    ),
+    archive=True,
+):
     """
     Get data on bicycle parking for apartments from a variety of RentSafeTO datasets from the Open Data Portal and calculate the amount of bicycle parking that would be required for each building if it were built under current zoning rules.
 
     For any apartments where the geolocation cannot be determined from the evaluations data, the location is reverse geocoded using nominatim.
     """
+    sm = StatusManager(
+        status_source=f"https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/{str(status_path)}",
+        status_save=status_path,
+    )
+    (output_path / "source_files").mkdir(exist_ok=True, parents=True)
+    (output_path / "output_files").mkdir(exist_ok=True, parents=True)
+    (output_path / "display_files").mkdir(exist_ok=True, parents=True)
+
     # contains statistics on building bicycle parking
-    building_registrations = get_building_registrations()
+    building_registrations = get_building_registrations(
+        source_save_path=output_path / "source_files"
+    )
 
     # contains geolocation for most buildings
-    building_evaluations = get_building_evaluations()
+    building_evaluations = get_building_evaluations(
+        source_save_path=output_path / "source_files"
+    )
     joined = building_registrations.merge(building_evaluations, how="left", on="RSN")
 
     # add missing geolocations
-    address_cache = AddressCache(Path("") / "address_cache" / "address_cache.json")
+    address_cache = AddressCache(address_cache_path)
     geocode_result = geocode_missing(
         joined, "LATITUDE", "LONGITUDE", "SITE_ADDRESS_x", address_cache.cache
     )
@@ -344,19 +391,19 @@ def get_bike_parking_info():
     )
 
     # add city wards
-    wards = get_wards_gdf()
+    wards = get_wards_gdf(source_save_path=output_path / "source_files")
     gdf_with_wards = gdf.sjoin(wards, how="left").drop(columns=["index_right"])
 
     # add city neighbourhoods
-    neighbourhoods = get_neighbourhoods_gdf()
+    neighbourhoods = get_neighbourhoods_gdf(
+        source_save_path=output_path / "source_files"
+    )
     gdf_with_neighbourhoods = gdf_with_wards.sjoin(neighbourhoods, how="left").drop(
         columns=["index_right"]
     )
 
     # add city bicycle parking zoning policy areas
-    bicycle_parking_zones = gpd.GeoDataFrame.from_file(
-        Path("") / "source_data" / "Toronto_Bicycle_Policy_Zones.geojson"
-    )
+    bicycle_parking_zones = gpd.GeoDataFrame.from_file(bicycle_policy_zones_path)
     gdf_with_zones = gdf_with_neighbourhoods.sjoin(
         bicycle_parking_zones, how="left"
     ).drop(columns=["index_right"])
@@ -364,10 +411,10 @@ def get_bike_parking_info():
     gdf_with_zoning_reqs = gdf_with_zones.assign(
         zoning_reqs=gdf_with_zones[["BICYCLE_ZONE", "CONFIRMED_UNITS"]].apply(
             calculate_zoning_requirement, axis=1
-        )
+        )  # type: ignore
     )
     gdf_split_zoning_reqs = pd.concat(
-        [gdf_with_zoning_reqs, pd.json_normalize(gdf_with_zoning_reqs["zoning_reqs"])],
+        [gdf_with_zoning_reqs, pd.json_normalize(gdf_with_zoning_reqs["zoning_reqs"])],  # type: ignore
         axis=1,
     ).drop(columns=["zoning_reqs"])
 
@@ -391,19 +438,26 @@ def get_bike_parking_info():
     )
 
     # output
-    gdf_unmet_need.to_file("apartments_bicycle_parking.geojson", driver="GeoJSON")
-    gdf_unmet_need.to_csv("apartments_bicycle_parking.csv")
+    with open(output_path / "output_files" / "apartments.geojson", "w") as f:
+        f.write(gdf_unmet_need.to_json(index=False, indent=2))
+    gdf_unmet_need.to_csv(output_path / "output_files" / "apartments.csv")
 
     # filtered output for mapping
-    gdf_unmet_need[
-        [
-            "CONFIRMED_UNITS",
-            "pc_unmet",
-            "total_req_min",
-            "total_unmet_min",
-            "geometry",
-        ]
-    ].to_file("apartments_bicycle_parking_filtered.geojson", driver="GeoJSON")
+    with open(
+        output_path / "display_files" / "apartments_bicycle_parking_display.geojson",
+        "w",
+    ) as f:
+        f.write(
+            gdf_unmet_need[
+                [
+                    "CONFIRMED_UNITS",
+                    "pc_unmet",
+                    "total_req_min",
+                    "total_unmet_min",
+                    "geometry",
+                ]
+            ].to_json(index=False, indent=2)
+        )
 
 
 if __name__ == "__main__":
