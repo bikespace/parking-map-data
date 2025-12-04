@@ -1,7 +1,9 @@
 import math
+from argparse import ArgumentParser
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import TypedDict
+from zoneinfo import ZoneInfo
 
 import geopandas as gpd
 import pandas as pd
@@ -9,7 +11,7 @@ import pandera.pandas as pa
 
 from bikespace_data.apartments.geocode_missing import AddressCache, geocode_missing
 from bikespace_data.resources.toronto_open_data import request_tod_df, request_tod_gdf
-from bikespace_data.utilities import StatusManager, dt_cols_to_str
+from bikespace_data.utilities import StatusManager, dt_cols_to_str, save_geo_output
 
 
 class ZoningRequirements(TypedDict):
@@ -20,6 +22,7 @@ class ZoningRequirements(TypedDict):
 
 def get_building_registrations(
     source_save_path: Path | None = None,
+    archive_path: Path | None = None,
     status_manager: StatusManager | None = None,
 ):
     """
@@ -36,6 +39,11 @@ def get_building_registrations(
     # save original if requested
     if source_save_path is not None:
         df.to_csv(source_save_path / "building_registrations.csv")
+
+    # archive if requested
+    if archive_path is not None:
+        archive_path.mkdir(exist_ok=True, parents=True)
+        df.to_parquet(archive_path / "building_registrations.parquet")
 
     # log in status manager if requested
     if status_manager is not None:
@@ -78,7 +86,10 @@ def get_building_registrations(
     return vdf
 
 
-def get_building_evaluations(source_save_path: Path | None = None):
+def get_building_evaluations(
+    source_save_path: Path | None = None,
+    archive_path: Path | None = None,
+):
     """
     Get the [building evaluations datasets](https://open.toronto.ca/dataset/apartment-building-evaluation/) from the City of Toronto Open Data portal,  validate that each dataset contains the expected columns, and combine the datasets.
 
@@ -107,6 +118,11 @@ def get_building_evaluations(source_save_path: Path | None = None):
     # save original if requested
     if source_save_path is not None:
         df_2023_plus.to_csv(source_save_path / "building_evaluations_2023_plus.csv")
+
+    # archive if requested
+    if archive_path is not None:
+        archive_path.mkdir(exist_ok=True, parents=True)
+        df_2023_plus.to_parquet(archive_path / "building_evaluations_2023_plus.parquet")
 
     schema_2023_plus = pa.DataFrameSchema(
         {
@@ -145,6 +161,10 @@ def get_building_evaluations(source_save_path: Path | None = None):
     # save original if requested
     if source_save_path is not None:
         df_prior.to_csv(source_save_path / "building_evaluations_prior_to_2023.csv")
+
+    # archive if requested
+    if archive_path is not None:
+        df_prior.to_parquet(archive_path / "building_evaluations_prior_to_2023.parquet")
 
     schema_prior = pa.DataFrameSchema(
         {
@@ -246,7 +266,10 @@ def calculate_zoning_requirement(row) -> ZoningRequirements:
     }
 
 
-def get_wards_gdf(source_save_path: Path | None = None) -> gpd.GeoDataFrame:
+def get_wards_gdf(
+    source_save_path: Path | None = None,
+    archive_name: str | None = None,
+) -> gpd.GeoDataFrame:
     """Retrieves, simplifies, and saves data from the City Wards dataset from open.toronto.ca"""
 
     wards = request_tod_gdf(
@@ -254,10 +277,14 @@ def get_wards_gdf(source_save_path: Path | None = None) -> gpd.GeoDataFrame:
         resource_id="737b29e0-8329-4260-b6af-21555ab24f28",
     )
 
-    # save original if requested
+    # save original (and optionally archive) if requested
     if source_save_path is not None:
-        with open(source_save_path / "wards.geojson", "w") as f:
-            f.write(dt_cols_to_str(wards["gdf"]).to_json(drop_id=True, indent=2))
+        save_geo_output(
+            wards["gdf"],
+            path=source_save_path,
+            file_name="wards.geojson",
+            archive_name=archive_name,
+        )
 
     wards_formatted = (
         wards["gdf"][["AREA_SHORT_CODE", "AREA_NAME", "geometry"]]
@@ -277,7 +304,10 @@ def get_wards_gdf(source_save_path: Path | None = None) -> gpd.GeoDataFrame:
     return wards_formatted
 
 
-def get_neighbourhoods_gdf(source_save_path: Path | None = None) -> gpd.GeoDataFrame:
+def get_neighbourhoods_gdf(
+    source_save_path: Path | None = None,
+    archive_name: str | None = None,
+) -> gpd.GeoDataFrame:
     "Retrieves and simplifies from https://open.toronto.ca/dataset/neighbourhoods/"
     response = request_tod_gdf(
         dataset_name="neighbourhoods",
@@ -285,10 +315,14 @@ def get_neighbourhoods_gdf(source_save_path: Path | None = None) -> gpd.GeoDataF
     )
     gdf = response["gdf"]
 
-    # save original if requested
+    # save original (and optionally archive) if requested
     if source_save_path is not None:
-        with open(source_save_path / "neighbourhoods.geojson", "w") as f:
-            f.write(gdf.to_json(drop_id=True, indent=2))
+        save_geo_output(
+            gdf,
+            path=source_save_path,
+            file_name="neighbourhoods.geojson",
+            archive_name=archive_name,
+        )
 
     gdf_formatted = gdf[
         [
@@ -310,8 +344,7 @@ def get_neighbourhoods_gdf(source_save_path: Path | None = None) -> gpd.GeoDataF
 
 
 # TODO
-# - add in archive saving (move save file function to shared utility)
-# - reorganize shared utilities folder?
+# - only save in archive if file has changed
 
 
 def get_bike_parking_info(
@@ -321,13 +354,17 @@ def get_bike_parking_info(
     bicycle_policy_zones_path: Path = Path(
         "src/bikespace_data/apartments/Toronto_Bicycle_Policy_Zones.geojson"
     ),
-    archive=True,
+    archive=False,
 ):
     """
     Get data on bicycle parking for apartments from a variety of RentSafeTO datasets from the Open Data Portal and calculate the amount of bicycle parking that would be required for each building if it were built under current zoning rules.
 
     For any apartments where the geolocation cannot be determined from the evaluations data, the location is reverse geocoded using nominatim.
     """
+    today_toronto_isodate = datetime.now(ZoneInfo("America/Toronto")).strftime(
+        "%Y-%m-%d"
+    )
+
     sm = StatusManager(
         status_source=f"https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/data/{str(status_path)}",
         status_save=status_path,
@@ -339,12 +376,18 @@ def get_bike_parking_info(
     # contains statistics on building bicycle parking
     building_registrations = get_building_registrations(
         source_save_path=output_path / "source_files",
+        archive_path=output_path / "source_files" / f"archive/{today_toronto_isodate}"
+        if archive
+        else None,
         status_manager=sm,
     )
 
     # contains geolocation for most buildings
     building_evaluations = get_building_evaluations(
-        source_save_path=output_path / "source_files"
+        source_save_path=output_path / "source_files",
+        archive_path=output_path / "source_files" / f"archive/{today_toronto_isodate}"
+        if archive
+        else None,
     )
     joined = building_registrations.merge(building_evaluations, how="left", on="RSN")
 
@@ -389,12 +432,16 @@ def get_bike_parking_info(
     )
 
     # add city wards
-    wards = get_wards_gdf(source_save_path=output_path / "source_files")
+    wards = get_wards_gdf(
+        source_save_path=output_path / "source_files",
+        archive_name=f"archive/{today_toronto_isodate}" if archive else None,
+    )
     gdf_with_wards = gdf.sjoin(wards, how="left").drop(columns=["index_right"])
 
     # add city neighbourhoods
     neighbourhoods = get_neighbourhoods_gdf(
-        source_save_path=output_path / "source_files"
+        source_save_path=output_path / "source_files",
+        archive_name=f"archive/{today_toronto_isodate}" if archive else None,
     )
     gdf_with_neighbourhoods = gdf_with_wards.sjoin(neighbourhoods, how="left").drop(
         columns=["index_right"]
@@ -442,32 +489,47 @@ def get_bike_parking_info(
     )
 
     # output
-    with open(output_path / "output_files" / "apartments.geojson", "w") as f:
-        f.write(gdf_unmet_need.to_json(drop_id=True, indent=2))
+    save_geo_output(
+        gdf_unmet_need,
+        path=output_path / "output_files",
+        file_name="apartments.geojson",
+        archive_name=f"archive/{today_toronto_isodate}" if archive else None,
+    )
     gdf_unmet_need.to_csv(output_path / "output_files" / "apartments.csv")
 
     # filtered output for mapping
-    with open(
-        output_path / "display_files" / "apartments_bicycle_parking_display.geojson",
-        "w",
-    ) as f:
-        f.write(
-            gdf_unmet_need[
-                [
-                    "CONFIRMED_UNITS",
-                    "bike_parking_indoor",
-                    "long_term",
-                    "bike_parking_outdoor",
-                    "short_term_min",
-                    "short_term_max",
-                    "total_req_min",
-                    "total_unmet_min",
-                    "pc_unmet",
-                    "geometry",
-                ]
-            ].to_json(drop_id=True, indent=2)
-        )
+    save_geo_output(
+        gdf_unmet_need[
+            [
+                "CONFIRMED_UNITS",
+                "bike_parking_indoor",
+                "long_term",
+                "bike_parking_outdoor",
+                "short_term_min",
+                "short_term_max",
+                "total_req_min",
+                "total_unmet_min",
+                "pc_unmet",
+                "geometry",
+            ]
+        ],
+        path=output_path / "display_files",
+        file_name="apartments_bicycle_parking_display.geojson",
+        archive_name=f"archive/{today_toronto_isodate}" if archive else None,
+    )
 
 
 if __name__ == "__main__":
-    get_bike_parking_info()
+    # parse script arguments from command line
+    parser = ArgumentParser(
+        description="""A copy of outputs can optionally be put in a date-stamped archive folder using --archive"""
+    )
+    parser.add_argument(
+        "-a",
+        "--archive",
+        action="store_true",
+        help="Create a date-stamped archive folder alongside outputs",
+    )
+    args = parser.parse_args()
+
+    get_bike_parking_info(archive=args.archive)
