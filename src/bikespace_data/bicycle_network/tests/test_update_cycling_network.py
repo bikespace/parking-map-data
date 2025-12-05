@@ -88,7 +88,7 @@ def test_update_cycling_network(mocker, tmp_path, response_last_fresh, schema, a
         last_fresh="2024-12-31T05:00:00.000000+00:00"
     )
     mocker.patch(
-        "bikespace_data.utilities.utilities.requests.get",
+        "bikespace_data.utilities.status_manager.requests.get",
         return_value=mock_prior_status_response,
     )
 
@@ -126,7 +126,7 @@ def test_update_cycling_network_already_up_to_date(mocker, tmp_path):
     mock_prior_status_response.status_code = HTTPStatus.OK
     mock_prior_status_response.text = generate_mock_status(last_fresh=last_fresh)
     mocker.patch(
-        "bikespace_data.utilities.utilities.requests.get",
+        "bikespace_data.utilities.status_manager.requests.get",
         return_value=mock_prior_status_response,
     )
 

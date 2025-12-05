@@ -1,6 +1,11 @@
 import pandas as pd
 
-from bikespace_data.apartments.geocode_missing import geocode_missing, AddressCacheDict
+from bikespace_data.apartments.geocode_missing import (
+    geocode_missing,
+    AddressCacheDict,
+    AddressCache,
+)
+from geopy import Location, Point
 
 test_df = pd.DataFrame(
     [
@@ -33,7 +38,17 @@ test_cache: AddressCacheDict = {
 }
 
 
-def test_geocode_missing():
+def test_geocode_missing(mocker):
+    # mock geocoder
+    mock_nominatim = mocker.patch("bikespace_data.apartments.geocode_missing.Nominatim")
+    mock_nominatim_instance = mock_nominatim.return_value
+    mock_geocode = mock_nominatim_instance.geocode
+    mock_geocode.return_value = Location(
+        address="doesn't matter",
+        point=Point(latitude=43.70, longitude=-79.40),
+        raw=mocker.MagicMock(),
+    )
+
     geocoded_df = geocode_missing(
         test_df,
         "latitude",
@@ -46,6 +61,6 @@ def test_geocode_missing():
 
     assert not (geocoded_df["latitude"].hasnans or geocoded_df["longitude"].hasnans)
 
-    cached_row = geocoded_df[geocoded_df["address"] == CACHED_ADDRESS].squeeze()
+    cached_row = geocoded_df[geocoded_df["address"] == CACHED_ADDRESS].iloc[0].to_dict()
     assert cached_row["latitude"] == test_cache[CACHED_ADDRESS]["latitude"]
     assert cached_row["longitude"] == test_cache[CACHED_ADDRESS]["longitude"]
