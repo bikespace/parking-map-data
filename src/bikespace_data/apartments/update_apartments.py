@@ -11,7 +11,7 @@ import pandera.pandas as pa
 
 from bikespace_data.apartments.geocode_missing import AddressCache, geocode_missing
 from bikespace_data.resources.toronto_open_data import request_tod_df, request_tod_gdf
-from bikespace_data.utilities import StatusManager, dt_cols_to_str, save_geo_output
+from bikespace_data.utilities import StatusManager, save_geo_output
 
 
 class ZoningRequirements(TypedDict):
@@ -341,10 +341,6 @@ def get_neighbourhoods_gdf(
         }
     )
     return gdf_formatted
-
-
-# TODO
-# - only save in archive if file has changed
 
 
 def get_bike_parking_info(
