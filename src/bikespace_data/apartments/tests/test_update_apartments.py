@@ -12,6 +12,7 @@ from bikespace_data.apartments.update_apartments import (
     calculate_zoning_requirement,
     get_wards_gdf,
     get_neighbourhoods_gdf,
+    get_bike_parking_info,
 )
 
 
@@ -562,3 +563,171 @@ def test_get_neighbourhoods_gdf(
         )
     else:
         mock_save_geo_output.assert_not_called()
+
+
+@pytest.mark.parametrize("archive", [True, False])
+def test_get_bike_parking_info(
+    archive,
+    mocker,
+    tmp_path,
+):
+    """
+    Test the main get_bike_parking_info orchestration function to ensure it correctly calls dependencies and produces the expected final output.
+    """
+    # Mock datetime to have a predictable date for archive paths
+    mock_datetime = mocker.patch("bikespace_data.apartments.update_apartments.datetime")
+    mock_datetime.now.return_value.strftime.return_value = "2024-01-01"
+
+    # Mock dependencies of get_bike_parking_info
+    mock_sm_instance = mocker.Mock()
+    mocker.patch(
+        "bikespace_data.apartments.update_apartments.StatusManager",
+        return_value=mock_sm_instance,
+    )
+
+    mock_registrations_df = pd.DataFrame(
+        {
+            "RSN": [1, 2],
+            "CONFIRMED_UNITS": [100, 50],
+            "SITE_ADDRESS": ["Address 1", "Address 2"],
+            "bike_parking_indoor": pd.to_numeric([10, 2], downcast="integer"),
+            "bike_parking_outdoor": pd.to_numeric([5, 1], downcast="integer"),
+        }
+    )
+    mock_get_building_registrations = mocker.patch(
+        "bikespace_data.apartments.update_apartments.get_building_registrations",
+        return_value=mock_registrations_df,
+    )
+    mock_evaluations_df = pd.DataFrame(
+        {
+            "LATITUDE": [43.0, None],
+            "LONGITUDE": [-79.0, None],
+            "SITE_ADDRESS": ["Address 1", "Address 2"],
+        },
+        index=pd.Series([1, 2], name="RSN"),
+    )
+    mock_get_building_evaluations = mocker.patch(
+        "bikespace_data.apartments.update_apartments.get_building_evaluations",
+        return_value=mock_evaluations_df,
+    )
+    mock_address_cache_instance = mocker.Mock()
+    mock_address_cache_instance.cache = {"Address 2": (43.1, -79.1)}
+    mocker.patch(
+        "bikespace_data.apartments.update_apartments.AddressCache",
+        return_value=mock_address_cache_instance,
+    )
+
+    def geocode_side_effect(df, lat_col, lon_col, address_col, cache):
+        df.loc[df["RSN"] == 2, lat_col] = 43.1
+        df.loc[df["RSN"] == 2, lon_col] = -79.1
+        return {"df": df, "address_cache": {**cache, "Address 1": (43.0, -79.0)}}
+
+    mocker.patch(
+        "bikespace_data.apartments.update_apartments.geocode_missing",
+        side_effect=geocode_side_effect,
+    )
+
+    # Create processed mock for wards
+    wards_data = {
+        "AREA_SHORT_CODE": [1],
+        "AREA_NAME": ["Ward 1"],
+        "geometry": [Polygon([(-80, 40), (-78, 40), (-78, 44), (-80, 44)])],
+    }
+    wards_gdf = gpd.GeoDataFrame(wards_data, crs="EPSG:4326")
+    processed_wards_gdf = wards_gdf.copy()
+    processed_wards_gdf["ward_full"] = [
+        f"{x.AREA_NAME} ({x.AREA_SHORT_CODE})" for x in processed_wards_gdf.itertuples()
+    ]
+    processed_wards_gdf = processed_wards_gdf.rename(
+        columns={"AREA_SHORT_CODE": "ward_code", "AREA_NAME": "ward_name"}
+    )
+    mocker.patch(
+        "bikespace_data.apartments.update_apartments.get_wards_gdf",
+        return_value=processed_wards_gdf,
+    )
+
+    # Create processed mock for neighbourhoods
+    neighbourhoods_data = {
+        "AREA_SHORT_CODE": [101],
+        "AREA_NAME": ["Neighbourhood A"],
+        "CLASSIFICATION": ["Type 1"],
+        "CLASSIFICATION_CODE": [1],
+        "geometry": [Polygon([(-80, 40), (-78, 40), (-78, 44), (-80, 44)])],
+    }
+    neighbourhoods_gdf = gpd.GeoDataFrame(neighbourhoods_data, crs="EPSG:4326")
+    processed_neighbourhoods_gdf = neighbourhoods_gdf.rename(
+        columns={
+            "AREA_SHORT_CODE": "neighbourhood_number",
+            "AREA_NAME": "neighbourhood_name",
+            "CLASSIFICATION": "neighbourhood_classification",
+            "CLASSIFICATION_CODE": "neighbourhood_classification_code",
+        }
+    )
+    mocker.patch(
+        "bikespace_data.apartments.update_apartments.get_neighbourhoods_gdf",
+        return_value=processed_neighbourhoods_gdf,
+    )
+
+    mock_bicycle_zones_gdf = gpd.GeoDataFrame(
+        {
+            "BICYCLE_ZONE": [1],
+            "geometry": [Polygon([(-80, 40), (-78, 40), (-78, 44), (-80, 44)])],
+        },
+        crs="EPSG:4326",
+    )
+    mocker.patch(
+        "geopandas.GeoDataFrame.from_file", return_value=mock_bicycle_zones_gdf
+    )
+
+    mock_save_geo_output = mocker.patch(
+        "bikespace_data.apartments.update_apartments.save_geo_output"
+    )
+    mock_to_csv = mocker.patch("geopandas.geodataframe.GeoDataFrame.to_csv")
+
+    # Call the function under test
+    output_path = tmp_path / "apartments"
+    get_bike_parking_info(
+        output_path=output_path,
+        archive=archive,
+    )
+
+    # Assertions
+    assert (output_path / "source_files").is_dir()
+    assert (output_path / "output_files").is_dir()
+    assert (output_path / "display_files").is_dir()
+    mock_get_building_registrations.assert_called_once()
+    mock_get_building_evaluations.assert_called_once()
+    mock_address_cache_instance.save_cache.assert_called_once()
+
+    # Two calls to save_geo_output for the final results
+    assert mock_save_geo_output.call_count == 2
+    mock_to_csv.assert_called_once()
+
+    # Inspect the final GeoDataFrame passed to save_geo_output
+    final_gdf = None
+    for call in mock_save_geo_output.call_args_list:
+        if call.kwargs["file_name"] == "apartments.geojson":
+            final_gdf = call.args[0]
+            break
+
+    assert final_gdf is not None
+
+    # Check for columns from all merged sources
+    assert "bike_parking_indoor" in final_gdf.columns
+    assert "LATITUDE" in final_gdf.columns
+    assert "ward_full" in final_gdf.columns
+    assert "neighbourhood_name" in final_gdf.columns
+    assert "BICYCLE_ZONE" in final_gdf.columns
+    assert "short_term_min" in final_gdf.columns
+    assert "long_term_min" in final_gdf.columns
+    assert "total_unmet_min" in final_gdf.columns
+
+    # Check calculations for a specific row
+    row1 = final_gdf[final_gdf["RSN"] == 1].iloc[0]
+
+    # Based on calculate_zoning_requirement test cases and our inputs:
+    # 100 units, zone 1 -> short_term_min=10, long_term_min=45
+    # Parking: outdoor=5, indoor=10
+    assert row1["short_term_min_unmet"] == 5
+    assert row1["long_term_min_unmet"] == 35
+    assert row1["total_unmet_min"] == 40
