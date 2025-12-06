@@ -260,7 +260,7 @@ def calculate_zoning_requirement(row) -> ZoningRequirements:
         raise TypeError(
             f"{row['BICYCLE_ZONE']} is not an expected bicycle zone (supported values are int 1 or 2)"
         )
-    if not isinstance(row["CONFIRMED_UNITS"], (int)):
+    if not pd.api.types.is_integer(row["CONFIRMED_UNITS"]):
         raise TypeError(
             f"{row['CONFIRMED_UNITS']} is not an expected integer (whole number)"
         )
@@ -499,15 +499,17 @@ def get_bike_parking_info(
         - gdf_split_zoning_reqs["bike_parking_outdoor"].fillna(0),
         short_term_max_unmet=gdf_split_zoning_reqs["short_term_max"]
         - gdf_split_zoning_reqs["bike_parking_outdoor"].fillna(0),
-        long_term_unmet=gdf_split_zoning_reqs["long_term"]
+        long_term_min_unmet=gdf_split_zoning_reqs["long_term_min"]
+        - gdf_split_zoning_reqs["bike_parking_indoor"].fillna(0),
+        long_term_max_unmet=gdf_split_zoning_reqs["long_term_max"]
         - gdf_split_zoning_reqs["bike_parking_indoor"].fillna(0),
     ).convert_dtypes()
 
     gdf_unmet_need["total_unmet_min"] = (
-        gdf_unmet_need["short_term_min_unmet"] + gdf_unmet_need["long_term_unmet"]
+        gdf_unmet_need["short_term_min_unmet"] + gdf_unmet_need["long_term_min_unmet"]
     )
     gdf_unmet_need["total_req_min"] = (
-        gdf_unmet_need["short_term_min"] + gdf_unmet_need["long_term"]
+        gdf_unmet_need["short_term_min"] + gdf_unmet_need["long_term_min"]
     )
     gdf_unmet_need["pc_unmet"] = round(
         gdf_unmet_need["total_unmet_min"] / gdf_unmet_need["total_req_min"],
@@ -529,13 +531,16 @@ def get_bike_parking_info(
             [
                 "CONFIRMED_UNITS",
                 "bike_parking_indoor",
-                "long_term",
+                "long_term_min",
+                "long_term_max",
                 "bike_parking_outdoor",
                 "short_term_min",
                 "short_term_max",
                 "total_req_min",
                 "total_unmet_min",
                 "pc_unmet",
+                "long_term_oversized_min",
+                "long_term_oversized_max",
                 "geometry",
             ]
         ],
