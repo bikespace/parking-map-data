@@ -46,13 +46,13 @@ jobs:
         run: |
           git add bicycle_network
           git commit -m "BOT - ran data pipeline update"
-      # - name: Cherry pick and push commit to data branch
-      #   if: ${{ env.should_commit == 'True' }}
-      #   run: |
-      #     git switch data
-      #     git cherry-pick main --strategy-option=theirs
-      #     git fetch origin data
-      #     git push origin data
+      - name: Cherry pick and push commit to data branch
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git switch data
+          git cherry-pick main --strategy-option=theirs
+          git fetch origin data
+          git push origin data
   update-apartments-data:
     runs-on: ubuntu-latest
     steps:
@@ -96,10 +96,10 @@ jobs:
         run: |
           git add apartments
           git commit -m "BOT - ran data pipeline update"
-      # - name: Cherry pick and push commit to data branch
-      #   if: ${{ env.should_commit == 'True' }}
-      #   run: |
-      #     git switch data
-      #     git cherry-pick main --strategy-option=theirs
-      #     git fetch origin data
-      #     git push origin data
+      - name: Cherry pick and push commit to data branch
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git switch data
+          git cherry-pick main --strategy-option=theirs
+          git fetch origin data
+          git push origin data
