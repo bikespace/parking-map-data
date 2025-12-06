@@ -9,12 +9,17 @@ BASE_URL = "https://ckan0.cf.opendata.inter.prod-toronto.ca"
 PACKAGE_URL = BASE_URL + "/api/3/action/package_show"
 
 
-class TODResponse(TypedDict):
+class TODResponseGDF(TypedDict):
     gdf: gpd.GeoDataFrame
     metadata: dict
 
 
-def request_tod_gdf(dataset_name: str, resource_id: str) -> TODResponse:
+class TODResponseDF(TypedDict):
+    df: pd.DataFrame
+    metadata: dict
+
+
+def request_tod_gdf(dataset_name: str, resource_id: str) -> TODResponseGDF:
     meta_params = {"id": dataset_name}
 
     response = requests.get(PACKAGE_URL, params=meta_params)
@@ -32,5 +37,27 @@ def request_tod_gdf(dataset_name: str, resource_id: str) -> TODResponse:
     )
     return {
         "gdf": gdf,
+        "metadata": meta_resource,
+    }
+
+
+def request_tod_df(dataset_name: str, resource_id: str) -> TODResponseDF:
+    meta_params = {"id": dataset_name}
+
+    response = requests.get(PACKAGE_URL, params=meta_params)
+    if response.status_code != HTTPStatus.OK:
+        raise Exception(
+            f"Could not get {dataset_name} (resource {resource_id}) from Toronto Open Data Portal. Resource returned status {response.status_code}"
+        )
+
+    meta_all = response.json()
+    [meta_resource] = [
+        rs for rs in meta_all["result"]["resources"] if rs["id"] == resource_id
+    ]
+    df: pd.DataFrame = (
+        pd.read_csv(meta_resource["url"]).replace("None", pd.NA).convert_dtypes()
+    )
+    return {
+        "df": df,
         "metadata": meta_resource,
     }

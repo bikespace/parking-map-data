@@ -1,0 +1,97 @@
+import json
+from http import HTTPStatus
+from pathlib import Path
+from typing import TypedDict
+
+import pandas as pd
+import requests
+from geopy.extra.rate_limiter import RateLimiter
+from geopy.geocoders import Nominatim
+from tqdm import tqdm
+
+# enables pd.Series.progress_apply()
+tqdm.pandas(desc="Geocoding missing addresses...")
+
+
+class AddressCacheItem(TypedDict):
+    latitude: float
+    longitude: float
+
+
+type AddressCacheDict = dict[str, AddressCacheItem]
+
+
+class GeoCodeDFResult(TypedDict):
+    df: pd.DataFrame
+    address_cache: AddressCacheDict
+
+
+def geocode_missing(
+    df: pd.DataFrame,
+    lat_col: str,
+    long_col: str,
+    address_col: str,
+    address_cache: AddressCacheDict = {},
+) -> GeoCodeDFResult:
+    """Geocode and cache location for rows that do not have a latitude or longitude value"""
+    df_missing = df[df[lat_col].isna() | df[long_col].isna()].copy()
+
+    # get uncached addresses
+    addresses = df_missing[address_col]
+    cached_addresses = pd.Series(address_cache.keys())
+    uncached_addresses = addresses[~addresses.isin(cached_addresses)]
+
+    # set up geocoder
+    geolocator = Nominatim(user_agent="bikespace_data_stories_apartments")
+    geocode = RateLimiter(
+        lambda a: geolocator.geocode(f"{a}, Toronto, ON, Canada"), min_delay_seconds=1
+    )
+
+    # geocode missing addresses
+    located_addresses = list(
+        zip(
+            uncached_addresses,
+            uncached_addresses.progress_apply(geocode),
+        )
+    )
+    add_to_cache: AddressCacheDict = {
+        address: {
+            "latitude": location.point.latitude,
+            "longitude": location.point.longitude,
+        }
+        for address, location in located_addresses
+    }
+
+    # update cache
+    address_cache = address_cache | add_to_cache
+
+    # add missing locations from updated cache
+    df_missing[lat_col] = [
+        address_cache[address]["latitude"] for address in df_missing[address_col]
+    ]
+    df_missing[long_col] = [
+        address_cache[address]["longitude"] for address in df_missing[address_col]
+    ]
+    df_geocoded = df_missing.combine_first(df)
+
+    return {
+        "df": df_geocoded,
+        "address_cache": address_cache,
+    }
+
+
+class AddressCache:
+    """Utility wrapper for getting and updating address cache"""
+
+    def __init__(self, source_path: str, save_path: Path):
+        self.save_path = save_path
+        self.cache: AddressCacheDict = {}
+
+        response = requests.get(source_path)
+        if response.status_code == HTTPStatus.OK:
+            self.cache = response.json()
+
+    def save_cache(self):
+        self.save_path.parent.mkdir(exist_ok=True, parents=True)
+        with self.save_path.open("w") as f:
+            json.dump(self.cache, f, indent=2)

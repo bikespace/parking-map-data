@@ -4,52 +4,158 @@ name: Run Update (Sensor)
 
 on: # workflow_dispatch
   schedule:
-    - cron: '00 9 * * *' # all days at 9:00am UTC (4:00am ST or 5:00am DT in Toronto)
+    - cron: "00 9 * * *" # all days at 9:00am UTC (4:00am ST or 5:00am DT in Toronto)
 
 permissions:
   contents: write
 
 jobs:
-  update-data:
+  update-bicycle-parking-data:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v4
-    - name: Install uv
-      uses: astral-sh/setup-uv@v5
-      with:
-        version: "0.6.14"
-        enable-cache: true
-    - name: "Set up Python"
-      uses: actions/setup-python@v5
-      with:
-        python-version-file: ".python-version"
-    - name: Install the project
-      run: uv sync --all-extras
-    - name: Run bike network update script
-      run: uv run src/bikespace_data/bicycle_network/update_cycling_network.py
-    - name: Check if there are changes that need to be committed
-      run: |
-        if [ -z "$(git status --porcelain)" ]; then 
-          echo "should_commit=False" >> "$GITHUB_ENV"
-        else 
-          echo "should_commit=True" >> "$GITHUB_ENV"
-        fi
-    - name: Git setup
-      if: ${{ env.should_commit == 'True' }}
-      run: |
-        git config user.email ${{ secrets.BOT_EMAIL }}
-        git config user.name "tallcoleman-bot"
-        git fetch --depth=1
-    - name: Build commit on main (not pushed)
-      if: ${{ env.should_commit == 'True' }}
-      run: |
-        git add bicycle_network
-        git commit -m "BOT - ran data pipeline update"
-    - name: Cherry pick and push commit to data branch
-      if: ${{ env.should_commit == 'True' }}
-      run: |
-        git switch data
-        git cherry-pick main --strategy-option=theirs
-        git fetch origin data
-        git push origin data
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.6.14"
+          enable-cache: true
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+      - name: Get Day of Week
+        id: get_day
+        run: echo "day_of_week=$(date +'%u')" >> $GITHUB_OUTPUT # %u returns 1 for Monday, 7 for Sunday
+      - name: Install the project
+        run: uv sync --all-extras
+      - name: Run bike parking update script
+        if: steps.get_day.outputs.day_of_week != '1'
+        run: uv run src/bikespace_data/bicycle_parking/update_bicycle_parking.py
+      - name: Run bike parking update script and archive
+        if: steps.get_day.outputs.day_of_week == '1'
+        run: uv run src/bikespace_data/bicycle_parking/update_bicycle_parking.py --archive
+      - name: Check if there are changes that need to be committed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then 
+            echo "should_commit=False" >> "$GITHUB_ENV"
+          else 
+            echo "should_commit=True" >> "$GITHUB_ENV"
+          fi
+      - name: Git setup
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git config user.email ${{ secrets.BOT_EMAIL }}
+          git config user.name "tallcoleman-bot"
+          git fetch --depth=1
+      - name: Build commit on main (not pushed)
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git add bicycle_parking
+          git commit -m "BOT - ran data pipeline update (bicycle_parking)"
+      - name: Cherry pick and push commit to data branch
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git switch data
+          git pull origin data
+          git cherry-pick main --strategy-option=theirs
+          git push origin data
+  update-cycling-network-data:
+    # run after the "needs" job regardless of whether it fails or succeeds
+    if: ${{ always() }}
+    needs: update-bicycle-parking-data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.6.14"
+          enable-cache: true
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+      - name: Install the project
+        run: uv sync --all-extras
+      - name: Run bike network update script
+        run: uv run src/bikespace_data/bicycle_network/update_cycling_network.py
+      - name: Check if there are changes that need to be committed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then 
+            echo "should_commit=False" >> "$GITHUB_ENV"
+          else 
+            echo "should_commit=True" >> "$GITHUB_ENV"
+          fi
+      - name: Git setup
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git config user.email ${{ secrets.BOT_EMAIL }}
+          git config user.name "tallcoleman-bot"
+          git fetch --depth=1
+      - name: Build commit on main (not pushed)
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git add bicycle_network
+          git commit -m "BOT - ran data pipeline update (bicycle_network)"
+      - name: Cherry pick and push commit to data branch
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git switch data
+          git pull origin data
+          git cherry-pick main --strategy-option=theirs
+          git push origin data
+  update-apartments-data:
+    # run after the "needs" job regardless of whether it fails or succeeds
+    if: ${{ always() }}
+    needs: update-cycling-network-data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.6.14"
+          enable-cache: true
+      - name: "Set up Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: ".python-version"
+      - name: Get Day of Week
+        id: get_day
+        run: echo "day_of_week=$(date +'%u')" >> $GITHUB_OUTPUT # %u returns 1 for Monday, 7 for Sunday
+      - name: Install the project
+        run: uv sync --all-extras
+      - name: Run apartment bike parking update script
+        if: steps.get_day.outputs.day_of_week != '1'
+        run: uv run src/bikespace_data/apartments/update_apartments.py
+      - name: Run apartment bike parking update script and archive
+        if: steps.get_day.outputs.day_of_week == '1'
+        run: uv run src/bikespace_data/apartments/update_apartments.py --archive
+      - name: Check if there are changes that need to be committed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then 
+            echo "should_commit=False" >> "$GITHUB_ENV"
+          else 
+            echo "should_commit=True" >> "$GITHUB_ENV"
+          fi
+      - name: Git setup
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git config user.email ${{ secrets.BOT_EMAIL }}
+          git config user.name "tallcoleman-bot"
+          git fetch --depth=1
+      - name: Build commit on main (not pushed)
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git add apartments
+          git commit -m "BOT - ran data pipeline update (apartments)"
+      - name: Cherry pick and push commit to data branch
+        if: ${{ env.should_commit == 'True' }}
+        run: |
+          git switch data
+          git pull origin data
+          git cherry-pick main --strategy-option=theirs
+          git push origin data

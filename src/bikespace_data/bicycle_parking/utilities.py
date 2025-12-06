@@ -2,7 +2,6 @@
 
 from pathlib import Path
 
-from pandas.api.types import is_datetime64_any_dtype
 
 import geopandas as gpd
 from progress.bar import Bar
@@ -13,16 +12,6 @@ def ref_cols_to_str(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     ref_cols = gdf.filter(like="ref:open.toronto.ca", axis=1)
     for name, values in ref_cols.items():
         gdf[name] = values.astype("str")
-    return gdf
-
-
-def dt_cols_to_str(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
-    """Convert dtype for datetime columns to string"""
-    json_not_supported_cols = gdf.columns[
-        [is_datetime64_any_dtype(gdf[c]) for c in gdf.columns]
-    ].union(gdf.columns[gdf.dtypes == "object"])
-    if len(json_not_supported_cols) > 0:
-        gdf = gdf.astype({c: "string" for c in json_not_supported_cols})
     return gdf
 
 

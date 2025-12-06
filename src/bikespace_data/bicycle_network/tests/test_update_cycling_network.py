@@ -10,11 +10,13 @@ from bikespace_data.bicycle_network.update_cycling_network import (
     cycling_network_schema_optional,
     update_cycling_network,
 )
-from bikespace_data.resources.toronto_open_data import TODResponse
+from bikespace_data.resources.toronto_open_data import TODResponseGDF
 from bikespace_data.tests.testing_utilities import generate_gdf_from_schema
 
 
-def generate_mock_tod_response(last_fresh: str, schema: DataFrameSchema) -> TODResponse:
+def generate_mock_tod_response(
+    last_fresh: str, schema: DataFrameSchema
+) -> TODResponseGDF:
     """last_fresh should be a datetime in ISO "YYYY-MM-DDTHH:MM:SS.SSSSSS" format either with our without the "+HH:MM" offset at the end"""
     return {
         "gdf": generate_gdf_from_schema(schema, size=10),
@@ -86,7 +88,7 @@ def test_update_cycling_network(mocker, tmp_path, response_last_fresh, schema, a
         last_fresh="2024-12-31T05:00:00.000000+00:00"
     )
     mocker.patch(
-        "bikespace_data.utilities.utilities.requests.get",
+        "bikespace_data.utilities.status_manager.requests.get",
         return_value=mock_prior_status_response,
     )
 
@@ -124,7 +126,7 @@ def test_update_cycling_network_already_up_to_date(mocker, tmp_path):
     mock_prior_status_response.status_code = HTTPStatus.OK
     mock_prior_status_response.text = generate_mock_status(last_fresh=last_fresh)
     mocker.patch(
-        "bikespace_data.utilities.utilities.requests.get",
+        "bikespace_data.utilities.status_manager.requests.get",
         return_value=mock_prior_status_response,
     )
 
