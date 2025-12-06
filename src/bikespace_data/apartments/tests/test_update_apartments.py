@@ -75,7 +75,9 @@ def mock_status_manager(mocker):
     yield sm_instance
 
 
+@pytest.mark.parametrize("optional_args", [True, False])
 def test_get_building_registrations(
+    optional_args,
     mocker,
     mock_tod_df_response,
     mock_status_manager,
@@ -97,8 +99,8 @@ def test_get_building_registrations(
 
     # Test with all arguments
     result_df = get_building_registrations(
-        source_save_path=source_save_path,
-        archive_path=archive_path,
+        source_save_path=source_save_path if optional_args else None,
+        archive_path=archive_path if optional_args else None,
         status_manager=mock_status_manager,
     )
 
@@ -114,11 +116,12 @@ def test_get_building_registrations(
     assert result_df["bike_parking_indoor"].equals(pd.Series([10, 2, 0, None, None]))
     assert result_df["bike_parking_outdoor"].equals(pd.Series([5, 1, 0, None, None]))
 
-    # Assert source file was saved
-    assert (source_save_path / "building_registrations.csv").exists()
+    if optional_args:
+        # Assert source file was saved
+        assert (source_save_path / "building_registrations.csv").exists()
 
-    # Assert archive file was saved
-    assert (archive_path / "building_registrations.parquet").exists()
+        # Assert archive file was saved
+        assert (archive_path / "building_registrations.parquet").exists()
 
     # Assert StatusManager was called
     mock_status_manager.add.assert_called_once()
@@ -129,27 +132,6 @@ def test_get_building_registrations(
     )
     assert call_args["num_features"] == len(mock_tod_df_response["df"])
     assert "last_checked" in call_args
-
-
-def test_get_building_registrations_no_optional_args(mocker, mock_tod_df_response):
-    """
-    Test get_building_registrations when no optional arguments are provided.
-    """
-    mock_request_tod_df = mocker.patch(
-        "bikespace_data.apartments.update_apartments.request_tod_df",
-        return_value=mock_tod_df_response,
-    )
-
-    result_df = get_building_registrations()
-
-    # Assert request_tod_df was called
-    mock_request_tod_df.assert_called_once()
-
-    # Assert columns were added and values are correct
-    assert "bike_parking_indoor" in result_df.columns
-    assert "bike_parking_outdoor" in result_df.columns
-    assert result_df["bike_parking_indoor"].equals(pd.Series([10, 2, 0, None, None]))
-    assert result_df["bike_parking_outdoor"].equals(pd.Series([5, 1, 0, None, None]))
 
 
 @pytest.fixture
@@ -249,7 +231,10 @@ def mock_evaluations_data():
     }
 
 
-def test_get_building_evaluations(mocker, mock_evaluations_data, tmp_path):
+@pytest.mark.parametrize("optional_args", [True, False])
+def test_get_building_evaluations(
+    optional_args, mocker, mock_evaluations_data, tmp_path
+):
     """
     Test the get_building_evaluations function.
     """
@@ -267,8 +252,8 @@ def test_get_building_evaluations(mocker, mock_evaluations_data, tmp_path):
     archive_path.mkdir()
 
     result_df = get_building_evaluations(
-        source_save_path=source_save_path,
-        archive_path=archive_path,
+        source_save_path=source_save_path if optional_args else None,
+        archive_path=archive_path if optional_args else None,
     )
 
     # Assert request_tod_df was called for both resource IDs
@@ -322,10 +307,11 @@ def test_get_building_evaluations(mocker, mock_evaluations_data, tmp_path):
     assert result_df.loc[9, "LATITUDE"] == pytest.approx(43.6)
     assert result_df.loc[9, "LONGITUDE"] == pytest.approx(-79.6)
 
-    # Assert source files were saved
-    assert (source_save_path / "building_evaluations_2023_plus.csv").exists()
-    assert (source_save_path / "building_evaluations_prior_to_2023.csv").exists()
+    if optional_args:
+        # Assert source files were saved
+        assert (source_save_path / "building_evaluations_2023_plus.csv").exists()
+        assert (source_save_path / "building_evaluations_prior_to_2023.csv").exists()
 
-    # Assert archive files were saved
-    assert (archive_path / "building_evaluations_2023_plus.parquet").exists()
-    assert (archive_path / "building_evaluations_prior_to_2023.parquet").exists()
+        # Assert archive files were saved
+        assert (archive_path / "building_evaluations_2023_plus.parquet").exists()
+        assert (archive_path / "building_evaluations_prior_to_2023.parquet").exists()
