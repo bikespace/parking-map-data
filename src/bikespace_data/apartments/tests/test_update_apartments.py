@@ -103,7 +103,7 @@ def test_get_building_registrations(
     result_df = get_building_registrations(
         source_save_path=source_save_path if optional_args else None,
         archive_path=archive_path if optional_args else None,
-        status_manager=mock_status_manager,
+        status_manager=mock_status_manager if optional_args else None,
     )
 
     # Assert request_tod_df was called
@@ -125,15 +125,15 @@ def test_get_building_registrations(
         # Assert archive file was saved
         assert (archive_path / "building_registrations.parquet").exists()
 
-    # Assert StatusManager was called
-    mock_status_manager.add.assert_called_once()
-    call_args = mock_status_manager.add.call_args[1]
-    assert call_args["dataset_name"] == "apartment-building-registration"
-    assert call_args["last_updated"] == datetime(
-        2023, 10, 26, 10, 0, 0, tzinfo=timezone.utc
-    )
-    assert call_args["num_features"] == len(mock_tod_df_response["df"])
-    assert "last_checked" in call_args
+        # Assert StatusManager was called
+        mock_status_manager.add.assert_called_once()
+        call_args = mock_status_manager.add.call_args[1]
+        assert call_args["dataset_name"] == "apartment-building-registration"
+        assert call_args["last_updated"] == datetime(
+            2023, 10, 26, 10, 0, 0, tzinfo=timezone.utc
+        )
+        assert call_args["num_features"] == len(mock_tod_df_response["df"])
+        assert "last_checked" in call_args
 
 
 @pytest.fixture
@@ -406,7 +406,9 @@ def mock_neighbourhoods_gdf():
 
 
 @pytest.mark.parametrize("optional_args", [True, False])
-def test_get_neighbourhoods_gdf(optional_args, mocker, mock_neighbourhoods_gdf, tmp_path):
+def test_get_neighbourhoods_gdf(
+    optional_args, mocker, mock_neighbourhoods_gdf, tmp_path
+):
     """
     Test the get_neighbourhoods_gdf function for correct data retrieval and processing.
     """
@@ -446,7 +448,10 @@ def test_get_neighbourhoods_gdf(optional_args, mocker, mock_neighbourhoods_gdf, 
     assert all(col in result_gdf.columns for col in expected_columns)
     assert len(result_gdf.columns) == len(expected_columns)
     assert result_gdf["neighbourhood_number"].tolist() == [101, 102]
-    assert result_gdf["neighbourhood_name"].tolist() == ["Neighbourhood A", "Neighbourhood B"]
+    assert result_gdf["neighbourhood_name"].tolist() == [
+        "Neighbourhood A",
+        "Neighbourhood B",
+    ]
     assert result_gdf["neighbourhood_classification"].tolist() == ["Type 1", "Type 2"]
     assert result_gdf["neighbourhood_classification_code"].tolist() == [1, 2]
 
