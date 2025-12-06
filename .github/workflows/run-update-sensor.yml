@@ -51,13 +51,13 @@ jobs:
       - name: Build commit on main (not pushed)
         if: ${{ env.should_commit == 'True' }}
         run: |
-          git add apartments
+          git add bicycle_parking
           git commit -m "BOT - ran data pipeline update (bicycle_parking)"
       - name: Cherry pick and push commit to data branch
         if: ${{ env.should_commit == 'True' }}
         run: |
           git switch data
-          git fetch origin data
+          git pull origin data
           git cherry-pick main --strategy-option=theirs
           git push origin data
   update-cycling-network-data:
@@ -103,7 +103,7 @@ jobs:
         if: ${{ env.should_commit == 'True' }}
         run: |
           git switch data
-          git fetch origin data
+          git pull origin data
           git cherry-pick main --strategy-option=theirs
           git push origin data
   update-apartments-data:
@@ -156,6 +156,6 @@ jobs:
         if: ${{ env.should_commit == 'True' }}
         run: |
           git switch data
-          git fetch origin data
+          git pull origin data
           git cherry-pick main --strategy-option=theirs
           git push origin data
