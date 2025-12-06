@@ -1,10 +1,13 @@
+import json
 from datetime import date, datetime, timezone
 
 import geopandas as gpd
 import pandas as pd
+import pytest
 from shapely.geometry import Point
 
-from bikespace_data.utilities.gdf_utils import dt_cols_to_str
+from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
+from bikespace_data.utilities.gdf_utils import dt_cols_to_str, save_geo_output
 
 
 def test_dt_cols_to_str_datetime_columns():
@@ -154,3 +157,132 @@ def test_dt_cols_to_str_dataframe_with_none_values():
         modified_gdf["col_obj"],
         pd.Series(["text", pd.NA], dtype="string", name="col_obj"),
     )
+
+
+# --- Tests for save_geo_output ---
+
+
+@pytest.fixture
+def sample_gdf():
+    data = {
+        "col1": ["a", "b"],
+        "col2": [1.0, 2.0],
+        "geometry": [Point(0, 0), Point(1, 1)],
+    }
+    return gpd.GeoDataFrame(data, crs="EPSG:4326")
+
+
+@pytest.fixture
+def sample_geojson_dict() -> GeoJSONFeatureCollection:
+    return {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {"type": "Point", "coordinates": [0, 0]},
+                "properties": {"col1": "a", "col2": 1.0},
+            },
+            {
+                "type": "Feature",
+                "geometry": {"type": "Point", "coordinates": [1, 1]},
+                "properties": {"col1": "b", "col2": 2.0},
+            },
+        ],
+    }  # type: ignore
+
+
+@pytest.mark.parametrize("archive", [True, False])
+def test_save_geo_output_gdf(archive, sample_gdf, tmp_path):
+    """
+    Test saving a GeoDataFrame to GeoJSON, with and without archiving.
+    """
+    file_name = "output.geojson"
+    archive_name = "archive_folder" if archive else None
+
+    save_geo_output(
+        sample_gdf,
+        path=tmp_path,
+        file_name=file_name,
+        archive_name=archive_name,
+    )
+
+    # Check if GeoJSON file was created and is valid
+    output_path = tmp_path / file_name
+    assert output_path.exists()
+    with open(output_path, "r") as f:
+        data = json.load(f)
+        assert data["type"] == "FeatureCollection"
+        assert len(data["features"]) == 2
+        assert data["features"][0]["properties"]["col1"] == "a"
+
+    # Check archive
+    archive_path = tmp_path / archive_name if archive else None
+    if archive_path is not None:
+        assert archive_path.is_dir()
+        parquet_path = (archive_path / file_name).with_suffix(".parquet")
+        assert parquet_path.exists()
+        # Read back and compare
+        archived_gdf = gpd.read_parquet(parquet_path)
+        pd.testing.assert_frame_equal(
+            sample_gdf.drop(columns="geometry"), archived_gdf.drop(columns="geometry")
+        )
+    else:
+        assert not (tmp_path / "archive_folder").exists()
+
+
+def test_save_geo_output_gdf_with_datetime(tmp_path):
+    """
+    Test that datetime columns in a GeoDataFrame are correctly converted to strings.
+    """
+    data = {
+        "col1": [datetime(2023, 1, 1, 10, 0)],
+        "geometry": [Point(0, 0)],
+    }
+    gdf = gpd.GeoDataFrame(data, crs="EPSG:4326")
+    file_name = "dt_output.geojson"
+
+    save_geo_output(gdf, path=tmp_path, file_name=file_name)
+
+    output_path = tmp_path / file_name
+    assert output_path.exists()
+    with open(output_path, "r") as f:
+        data = json.load(f)
+        # Check that the datetime was converted to a string
+        assert isinstance(data["features"][0]["properties"]["col1"], str)
+        assert data["features"][0]["properties"]["col1"] == "2023-01-01 10:00:00"
+
+
+@pytest.mark.parametrize("archive", [True, False])
+def test_save_geo_output_dict(archive, sample_geojson_dict, tmp_path):
+    """
+    Test saving a GeoJSON dictionary, with and without archiving.
+    """
+    file_name = "output_dict.geojson"
+    archive_name = "archive_folder" if archive else None
+
+    save_geo_output(
+        sample_geojson_dict,
+        path=tmp_path,
+        file_name=file_name,
+        archive_name=archive_name,
+    )
+
+    # Check if GeoJSON file was created and is valid
+    output_path = tmp_path / file_name
+    assert output_path.exists()
+    with open(output_path, "r") as f:
+        data = json.load(f)
+        assert data == sample_geojson_dict
+
+    # Check archive
+    archive_path = tmp_path / archive_name if archive else None
+    if archive_path is not None:
+        assert archive_path.is_dir()
+        parquet_path = (archive_path / file_name).with_suffix(".parquet")
+        assert parquet_path.exists()
+        # Read back and compare
+        archived_gdf = gpd.read_parquet(parquet_path)
+        assert len(archived_gdf) == 2
+        assert archived_gdf.iloc[0]["col1"] == "a"
+    else:
+        assert not (tmp_path / "archive_folder").exists()
