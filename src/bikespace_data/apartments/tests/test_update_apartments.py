@@ -9,6 +9,7 @@ from shapely.geometry import Point, Polygon
 from bikespace_data.apartments.update_apartments import (
     get_building_evaluations,
     get_building_registrations,
+    calculate_zoning_requirement,
     get_wards_gdf,
     get_neighbourhoods_gdf,
 )
@@ -317,6 +318,102 @@ def test_get_building_evaluations(
         # Assert archive files were saved
         assert (archive_path / "building_evaluations_2023_plus.parquet").exists()
         assert (archive_path / "building_evaluations_prior_to_2023.parquet").exists()
+
+
+@pytest.mark.parametrize(
+    "test_case",
+    [
+        {
+            "description": "zone 1, rounding-sensitive",
+            "BICYCLE_ZONE": 1,
+            "CONFIRMED_UNITS": 36,
+            "short_term_min": 4,
+            "short_term_max": 8,  # 7.2 -> 8
+            "long_term_min": 17,
+            "long_term_max": 33,  # 32.4 -> 33
+            "long_term_oversized_min": 0,  # 0.85 -> 0
+            "long_term_oversized_max": 1,  # 1.65 -> 1
+        },
+        {
+            "description": "zone 2, rounding-sensitive",
+            "BICYCLE_ZONE": 2,
+            "CONFIRMED_UNITS": 46,
+            "short_term_min": 2,
+            "short_term_max": 4,  # 3.22 -> 4
+            "long_term_min": 16,
+            "long_term_max": 32,  # 31.28 -> 32
+            "long_term_oversized_min": 0,  # 0.8 -> 0
+            "long_term_oversized_max": 1,  # 1.6 -> 1
+        },
+    ],
+)
+def test_calculate_zoning_requirement(test_case):
+    """Confirms that zoning requirement calculations match expected amounts and round outputs correctly based on key examples."""
+    calculation = calculate_zoning_requirement(test_case)
+
+    assert calculation["short_term_min"] == test_case["short_term_min"]
+    assert calculation["short_term_max"] == test_case["short_term_max"]
+    assert calculation["long_term_min"] == test_case["long_term_min"]
+    assert calculation["long_term_max"] == test_case["long_term_max"]
+    assert (
+        calculation["long_term_oversized_min"] == test_case["long_term_oversized_min"]
+    )
+    assert (
+        calculation["long_term_oversized_max"] == test_case["long_term_oversized_max"]
+    )
+
+
+@pytest.mark.parametrize(
+    "test_case",
+    [
+        {
+            "description": "both inputs are NA",
+            "BICYCLE_ZONE": pd.NA,
+            "CONFIRMED_UNITS": pd.NA,
+        },
+        {
+            "description": "bicycle zone is NA",
+            "BICYCLE_ZONE": pd.NA,
+            "CONFIRMED_UNITS": 100,
+        },
+        {
+            "description": "confirmed units is NA",
+            "BICYCLE_ZONE": 1,
+            "CONFIRMED_UNITS": pd.NA,
+        },
+    ],
+)
+def test_calculate_zoning_requirement_null_inputs(test_case):
+    """Confirms that zoning requirement calculations return null values if one of the inputs (bicycle zone or number of units) is null."""
+    calculation = calculate_zoning_requirement(test_case)
+
+    assert pd.isna(calculation["short_term_min"])
+    assert pd.isna(calculation["short_term_max"])
+    assert pd.isna(calculation["long_term_min"])
+    assert pd.isna(calculation["long_term_max"])
+    assert pd.isna(calculation["long_term_oversized_min"])
+    assert pd.isna(calculation["long_term_oversized_max"])
+
+
+@pytest.mark.parametrize(
+    "test_case",
+    [
+        {
+            "description": "bicycle zone is wrong",
+            "BICYCLE_ZONE": 3,
+            "CONFIRMED_UNITS": 100,
+        },
+        {
+            "description": "number of units is wrong type",
+            "BICYCLE_ZONE": 1,
+            "CONFIRMED_UNITS": 12.5,
+        },
+    ],
+)
+def test_calculate_zoning_requirement_input_errors(test_case):
+    """Confirms that calculate_zoning_requirement raises a TypeError when an invalid input is provided."""
+    with pytest.raises(TypeError):
+        calculate_zoning_requirement(test_case)
 
 
 @pytest.fixture

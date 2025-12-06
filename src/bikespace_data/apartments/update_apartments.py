@@ -14,12 +14,6 @@ from bikespace_data.resources.toronto_open_data import request_tod_df, request_t
 from bikespace_data.utilities import StatusManager, save_geo_output
 
 
-class ZoningRequirements(TypedDict):
-    short_term_min: int | pd.api.typing.NAType
-    short_term_max: int | pd.api.typing.NAType
-    long_term: int | pd.api.typing.NAType
-
-
 def get_building_registrations(
     source_save_path: Path | None = None,
     archive_path: Path | None = None,
@@ -237,16 +231,42 @@ def get_building_evaluations(
     return output
 
 
-def calculate_zoning_requirement(row) -> ZoningRequirements:
-    """Calculate the required number of bicycle parking spaces under the current zoning by-law using the BICYCLE_ZONE and CONFIRMED_UNITS columns"""
+class ZoningRequirements(TypedDict):
+    short_term_min: int | pd.api.typing.NAType
+    short_term_max: int | pd.api.typing.NAType
+    long_term_min: int | pd.api.typing.NAType
+    long_term_max: int | pd.api.typing.NAType
+    long_term_oversized_min: int | pd.api.typing.NAType
+    long_term_oversized_max: int | pd.api.typing.NAType
 
-    unit_multipliers: dict = {}
+
+def calculate_zoning_requirement(row) -> ZoningRequirements:
+    """
+    Calculate the required number of bicycle parking spaces under the current zoning by-law using the BICYCLE_ZONE and CONFIRMED_UNITS columns.
+
+    Assumes that all buildings are in the "Apartment or Mixed Use with Dwelling Units" category and not "Residential Care Home, Retirement Home, Nursing Home" or "Student Residence" (for which there are lower rates).
+    """
+    # guard in case required fields are null or improper
     if pd.isna(row["BICYCLE_ZONE"]) or pd.isna(row["CONFIRMED_UNITS"]):
         return {
             "short_term_min": pd.NA,
             "short_term_max": pd.NA,
-            "long_term": pd.NA,
+            "long_term_min": pd.NA,
+            "long_term_max": pd.NA,
+            "long_term_oversized_min": pd.NA,
+            "long_term_oversized_max": pd.NA,
         }
+    if row["BICYCLE_ZONE"] not in [1, 2]:
+        raise TypeError(
+            f"{row['BICYCLE_ZONE']} is not an expected bicycle zone (supported values are int 1 or 2)"
+        )
+    if not isinstance(row["CONFIRMED_UNITS"], (int)):
+        raise TypeError(
+            f"{row['CONFIRMED_UNITS']} is not an expected integer (whole number)"
+        )
+
+    # set multiplier by bicycle zone
+    unit_multipliers: dict = {}
     if row["BICYCLE_ZONE"] == 1:
         unit_multipliers["short_term"] = 0.2
         unit_multipliers["long_term"] = 0.9
@@ -255,14 +275,24 @@ def calculate_zoning_requirement(row) -> ZoningRequirements:
         unit_multipliers["long_term"] = 0.68
 
     # requirement is rounded up to nearest whole number
-    short_term_req = math.ceil(unit_multipliers["short_term"] * row["CONFIRMED_UNITS"])
-    long_term_req = math.ceil(unit_multipliers["long_term"] * row["CONFIRMED_UNITS"])
+    short_term_max = math.ceil(unit_multipliers["short_term"] * row["CONFIRMED_UNITS"])
+    long_term_max = math.ceil(unit_multipliers["long_term"] * row["CONFIRMED_UNITS"])
+
+    # payment in lieu allows for 50% reduction in short term; reduction amount is rounded down (i.e. total is rounded up after dividing by two)
+    short_term_min = math.ceil(short_term_max * 0.5)
+    long_term_min = math.ceil(long_term_max * 0.5)
+
+    # number of oversized bike parking spaces is based on 5% of the long-term spaces times (including any payment in lieu adjustments), rounded down
+    long_term_oversized_min = math.floor(long_term_min * 0.05)
+    long_term_oversized_max = math.floor(long_term_max * 0.05)
 
     return {
-        # payment in lieu allows for 50% reduction in short term; reduction amount is rounded down (i.e. total is rounded up after dividing by two)
-        "short_term_min": math.ceil(short_term_req / 2),
-        "short_term_max": short_term_req,
-        "long_term": long_term_req,
+        "short_term_min": short_term_min,
+        "short_term_max": short_term_max,
+        "long_term_min": long_term_min,
+        "long_term_max": long_term_max,
+        "long_term_oversized_min": long_term_oversized_min,
+        "long_term_oversized_max": long_term_oversized_max,
     }
 
 
