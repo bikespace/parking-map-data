@@ -25821,8 +25821,18 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-07-12T23:55:10+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "20",
+        "capacity:cargo_bike": "10",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Humber College",
+        "operator:type": "public",
+        "quantity": "10",
+        "meta_feature_last_updated": "2025-12-07T17:57:25+00:00",
         "meta_osm_id": "node/11043139277"
       },
       "geometry": {
@@ -49835,14 +49845,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-28T20:48:00+00:00",
+        "meta_feature_last_updated": "2025-12-08T02:44:19+00:00",
         "meta_osm_id": "node/13032287741"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5113846,
-          43.6604065
+          -79.5114182,
+          43.660394
         ]
       }
     },
@@ -49855,14 +49865,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-28T20:48:00+00:00",
+        "meta_feature_last_updated": "2025-12-08T02:44:19+00:00",
         "meta_osm_id": "node/13032287742"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5113944,
-          43.6604032
+          -79.5114378,
+          43.6603869
         ]
       }
     },
@@ -49875,14 +49885,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-28T20:48:00+00:00",
+        "meta_feature_last_updated": "2025-12-08T02:44:19+00:00",
         "meta_osm_id": "node/13032287743"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5114049,
-          43.6603992
+          -79.5114589,
+          43.660379
         ]
       }
     },
@@ -49895,14 +49905,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-28T20:48:00+00:00",
+        "meta_feature_last_updated": "2025-12-08T02:44:19+00:00",
         "meta_osm_id": "node/13032287744"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5114146,
-          43.6603951
+          -79.5114787,
+          43.6603717
         ]
       }
     },
@@ -49915,14 +49925,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-28T20:49:07+00:00",
+        "meta_feature_last_updated": "2025-12-08T02:44:19+00:00",
         "meta_osm_id": "node/13032312846"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5118782,
-          43.6602161
+          -79.5118593,
+          43.6602231
         ]
       }
     },
@@ -49935,14 +49945,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-28T20:49:07+00:00",
+        "meta_feature_last_updated": "2025-12-08T02:44:19+00:00",
         "meta_osm_id": "node/13032312847"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5118899,
-          43.6602124
+          -79.5118783,
+          43.6602169
         ]
       }
     },
@@ -49955,14 +49965,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-28T20:49:07+00:00",
+        "meta_feature_last_updated": "2025-12-08T02:44:19+00:00",
         "meta_osm_id": "node/13032312848"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.511901,
-          43.660208
+          -79.5118975,
+          43.6602102
         ]
       }
     },
@@ -49975,14 +49985,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-28T20:49:07+00:00",
+        "meta_feature_last_updated": "2025-12-08T02:44:19+00:00",
         "meta_osm_id": "node/13032312849"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5119285,
-          43.6601977
+          -79.5119489,
+          43.6601905
         ]
       }
     },
@@ -92966,6 +92976,54 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "bike_ride": "yes",
+        "capacity": "6",
+        "capacity:cargo_bike": "3",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Toronto Transit Commission",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2025-12-07T17:57:25+00:00",
+        "meta_osm_id": "node/13359964388"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4904347,
+          43.7632931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "40",
+        "covered": "yes",
+        "description": "Bike room with two-tier racks",
+        "operator": "Toronto Transit Commission",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-12-07T17:57:25+00:00",
+        "meta_osm_id": "node/13359964390"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.6017134,
+          43.7301702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -95601,6 +95659,38 @@
               -79.1303143,
               43.7803648
             ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "bike_ride": "yes",
+        "capacity": "22",
+        "capacity:cargo_bike": "11",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Toronto Transit Commission",
+        "operator:type": "public",
+        "quantity": "11",
+        "meta_feature_last_updated": "2025-12-07T17:57:25+00:00",
+        "meta_osm_id": "way/1456732088"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.490511,
+            43.7631377
+          ],
+          [
+            -79.4905557,
+            43.7632495
           ]
         ]
       }
