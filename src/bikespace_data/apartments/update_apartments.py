@@ -529,6 +529,7 @@ def get_bike_parking_info(
     )
 
     # output
+    sm.save()
     save_geo_output(
         gdf_unmet_need,
         path=output_path / "output_files",
