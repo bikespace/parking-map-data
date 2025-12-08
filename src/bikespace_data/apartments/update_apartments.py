@@ -33,7 +33,7 @@ def get_building_registrations(
     # save original if requested, sort and drop _id to improve diffing
     if source_save_path is not None:
         (
-            df.drop(columns="_id")
+            df.drop(columns="_id", errors="ignore")
             .sort_values(by=["RSN"])
             .to_csv(source_save_path / "building_registrations.csv")
         )
@@ -116,7 +116,7 @@ def get_building_evaluations(
     # save original if requested, sort and drop _id to improve diffing
     if source_save_path is not None:
         (
-            df_2023_plus.drop(columns=["_id"])
+            df_2023_plus.drop(columns=["_id"], errors="ignore")
             .sort_values(by=["RSN", "EVALUATION COMPLETED ON"])
             .to_csv(source_save_path / "building_evaluations_2023_plus.csv")
         )
@@ -163,7 +163,7 @@ def get_building_evaluations(
     # save original if requested, sort and drop _id to improve diffing
     if source_save_path is not None:
         (
-            df_prior.drop(columns="_id")
+            df_prior.drop(columns="_id", errors="ignore")
             .sort_values(by=["RSN", "EVALUATION_COMPLETED_ON"])
             .to_csv(source_save_path / "building_evaluations_prior_to_2023.csv")
         )
