@@ -30,9 +30,13 @@ def get_building_registrations(
     )
     df = response["df"]
 
-    # save original if requested
+    # save original if requested, sort and drop _id to improve diffing
     if source_save_path is not None:
-        df.to_csv(source_save_path / "building_registrations.csv")
+        (
+            df.drop(columns="_id")
+            .sort_values(by=["RSN"])
+            .to_csv(source_save_path / "building_registrations.csv")
+        )
 
     # archive if requested
     if archive_path is not None:
@@ -109,9 +113,13 @@ def get_building_evaluations(
     )
     df_2023_plus = response_2023_plus["df"]
 
-    # save original if requested
+    # save original if requested, sort and drop _id to improve diffing
     if source_save_path is not None:
-        df_2023_plus.to_csv(source_save_path / "building_evaluations_2023_plus.csv")
+        (
+            df_2023_plus.drop(columns=["_id"])
+            .sort_values(by=["RSN", "EVALUATION COMPLETED ON"])
+            .to_csv(source_save_path / "building_evaluations_2023_plus.csv")
+        )
 
     # archive if requested
     if archive_path is not None:
@@ -152,9 +160,13 @@ def get_building_evaluations(
     )
     df_prior = response_prior["df"]
 
-    # save original if requested
+    # save original if requested, sort and drop _id to improve diffing
     if source_save_path is not None:
-        df_prior.to_csv(source_save_path / "building_evaluations_prior_to_2023.csv")
+        (
+            df_prior.drop(columns="_id")
+            .sort_values(by=["RSN", "EVALUATION_COMPLETED_ON"])
+            .to_csv(source_save_path / "building_evaluations_prior_to_2023.csv")
+        )
 
     # archive if requested
     if archive_path is not None:
