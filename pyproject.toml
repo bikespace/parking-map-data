@@ -36,7 +36,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.pytest.ini_options]
-addopts = "--cov=src --cov-branch --cov-report=term-missing:skip-covered"
+addopts = "--cov=src --cov-branch --cov-report=term-missing:skip-covered -m 'not long'"
 markers = [
     "long: marks tests as long-running (deselect with '-m \"not long\"')",
     "uses_external_resources: marks tests that depend on external resources, e.g. OSM Overpass API, City of Toronto Open Data Portal.",
