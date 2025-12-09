@@ -45,6 +45,11 @@ class ExpectedOutput(TypedDict):
 def test_update_bicycle_parking(
     tmp_path, file_size_var: float = 0.2, update_benchmarks: bool = False
 ):
+    """
+    Optional test to run update_bicycle_parking with no mocks. **This test takes a long time and calls external APIs.**
+
+    Puts the output files into tmp_path and checks that they are within a margin of error for their expected size.
+    """
     update_bicycle_parking(
         output_dir=tmp_path,
         status_path=tmp_path / "bicycle_parking/statuses/bicycle_parking_statuses.csv",
