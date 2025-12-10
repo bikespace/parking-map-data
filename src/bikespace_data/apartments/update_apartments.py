@@ -35,7 +35,10 @@ def get_building_registrations(
         (
             df.drop(columns="_id", errors="ignore")
             .sort_values(by=["RSN"])
-            .to_csv(source_save_path / "building_registrations.csv")
+            .to_csv(
+                source_save_path / "building_registrations.csv",
+                index=False,
+            )
         )
 
     # archive if requested
@@ -118,7 +121,10 @@ def get_building_evaluations(
         (
             df_2023_plus.drop(columns=["_id"], errors="ignore")
             .sort_values(by=["RSN", "EVALUATION COMPLETED ON"])
-            .to_csv(source_save_path / "building_evaluations_2023_plus.csv")
+            .to_csv(
+                source_save_path / "building_evaluations_2023_plus.csv",
+                index=False,
+            )
         )
 
     # archive if requested
@@ -165,7 +171,10 @@ def get_building_evaluations(
         (
             df_prior.drop(columns="_id", errors="ignore")
             .sort_values(by=["RSN", "EVALUATION_COMPLETED_ON"])
-            .to_csv(source_save_path / "building_evaluations_prior_to_2023.csv")
+            .to_csv(
+                source_save_path / "building_evaluations_prior_to_2023.csv",
+                index=False,
+            )
         )
 
     # archive if requested
@@ -536,7 +545,10 @@ def get_bike_parking_info(
         file_name="apartments.geojson",
         archive_name=f"archive/{today_toronto_isodate}" if archive else None,
     )
-    gdf_unmet_need.to_csv(output_path / "output_files" / "apartments.csv")
+    gdf_unmet_need.to_csv(
+        output_path / "output_files" / "apartments.csv",
+        index=False,
+    )
 
     # filtered output for mapping
     save_geo_output(
