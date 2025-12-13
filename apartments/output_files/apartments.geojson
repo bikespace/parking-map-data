@@ -132768,7 +132768,7 @@
         "bike_parking_indoor": 8,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "2675 BLOOR ST W",
-        "LATITUDE": 43.649715122,
+        "LATITUDE": 43.649715123,
         "LONGITUDE": -79.497513447,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
@@ -132796,7 +132796,7 @@
         "type": "Point",
         "coordinates": [
           -79.497513447,
-          43.649715122
+          43.649715123
         ]
       }
     },
