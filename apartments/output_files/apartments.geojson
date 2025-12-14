@@ -21073,8 +21073,8 @@
         "YEAR_BUILT": 1990,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "3179 YONGE ST",
-        "LATITUDE": 43.7273367741,
-        "LONGITUDE": -79.4020576636,
+        "LATITUDE": 43.72733247605,
+        "LONGITUDE": -79.4020560408,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -21100,8 +21100,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4020576636,
-          43.7273367741
+          -79.4020560408,
+          43.72733247605
         ]
       }
     },
@@ -105091,7 +105091,7 @@
         "bike_parking_indoor": 20,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "695 COXWELL AVE",
-        "LATITUDE": 43.6831763482,
+        "LATITUDE": 43.6831763487,
         "LONGITUDE": -79.32304457065,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
@@ -105119,7 +105119,7 @@
         "type": "Point",
         "coordinates": [
           -79.32304457065,
-          43.6831763482
+          43.6831763487
         ]
       }
     },
