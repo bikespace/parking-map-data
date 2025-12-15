@@ -17758,8 +17758,8 @@
         "bike_parking_indoor": 189,
         "bike_parking_outdoor": 8,
         "SITE_ADDRESS_y": "740 DUPONT ST",
-        "LATITUDE": 43.671532497,
-        "LONGITUDE": -79.423931124,
+        "LATITUDE": 43.6715956130908,
+        "LONGITUDE": -79.42354639953184,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -17785,8 +17785,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.423931124,
-          43.671532497
+          -79.42354639953184,
+          43.6715956130908
         ]
       }
     },
