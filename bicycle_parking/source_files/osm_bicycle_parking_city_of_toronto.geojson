@@ -95927,6 +95927,28 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "meta_feature_last_updated": "2025-12-15T22:43:27+00:00",
+        "meta_osm_id": "way/1458856656"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.3863306,
+            43.6416908
+          ],
+          [
+            -79.3864959,
+            43.6415941
+          ]
+        ]
+      }
     }
   ]
 }
