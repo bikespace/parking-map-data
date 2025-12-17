@@ -42410,8 +42410,8 @@
         "YEAR_BUILT": 1956,
         "YEAR_REGISTERED": 2019,
         "SITE_ADDRESS_y": "135 SAMMON AVE",
-        "LATITUDE": 43.6850791771,
-        "LONGITUDE": -79.3423568405,
+        "LATITUDE": 43.68507488105,
+        "LONGITUDE": -79.34235522875,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -42437,8 +42437,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3423568405,
-          43.6850791771
+          -79.34235522875,
+          43.68507488105
         ]
       }
     },
