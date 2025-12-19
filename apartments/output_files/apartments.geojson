@@ -33634,7 +33634,7 @@
         "YEAR_OF_REPLACEMENT": 2013,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "98 CAVELL AVE",
-        "LATITUDE": 43.616184074,
+        "LATITUDE": 43.6161840745,
         "LONGITUDE": -79.49590117,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
@@ -33662,7 +33662,7 @@
         "type": "Point",
         "coordinates": [
           -79.49590117,
-          43.616184074
+          43.6161840745
         ]
       }
     },
