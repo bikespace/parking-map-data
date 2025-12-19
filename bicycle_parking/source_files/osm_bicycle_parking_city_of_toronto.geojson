@@ -93512,6 +93512,88 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-12-18T13:23:41+00:00",
+        "meta_osm_id": "node/13386453839"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4517826,
+          43.6592791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "8",
+        "covered": "no",
+        "meta_feature_last_updated": "2025-12-18T13:23:41+00:00",
+        "meta_osm_id": "node/13386453840"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4517565,
+          43.6592583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "covered": "yes",
+        "description": "wave rack",
+        "fee": "no",
+        "operator": "Toronto Pan Am Sports Centre",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-12-18T13:40:26+00:00",
+        "meta_osm_id": "node/13386486769"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.1928909,
+          43.7904656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "covered": "yes",
+        "description": "wave rack",
+        "fee": "no",
+        "operator": "Toronto Pan Am Sports Centre",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2025-12-18T13:40:26+00:00",
+        "meta_osm_id": "node/13386486771"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.1929511,
+          43.7906318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -96201,6 +96283,37 @@
           [
             -79.3864959,
             43.6415941
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "5",
+        "capacity:cargo_bike": "5",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Toronto Pan Am Sports Centre",
+        "operator:type": "public",
+        "quantity": "5",
+        "meta_feature_last_updated": "2025-12-18T13:40:26+00:00",
+        "meta_osm_id": "way/1459556298"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.1924096,
+            43.7905829
+          ],
+          [
+            -79.1923943,
+            43.7905465
           ]
         ]
       }
