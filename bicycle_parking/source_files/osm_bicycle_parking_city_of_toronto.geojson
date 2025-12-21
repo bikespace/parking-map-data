@@ -27251,19 +27251,18 @@
         "bicycle_parking": "rack",
         "capacity": "12",
         "covered": "yes",
-        "description": "Two steel racks on ground floor of parking garage; temporarily moved to this location due to construction",
+        "description": "Two steel racks on ground floor of parking garage next to elevator",
         "fee": "no",
-        "note": "Construction expected to be complete mid September 2025",
         "operator": "Scarborough Health Network",
         "operator:type": "public",
-        "meta_feature_last_updated": "2025-08-26T12:58:23+00:00",
+        "meta_feature_last_updated": "2025-12-20T20:15:55+00:00",
         "meta_osm_id": "node/11353312921"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2482436,
-          43.7561433
+          -79.2484215,
+          43.7563883
         ]
       }
     },
