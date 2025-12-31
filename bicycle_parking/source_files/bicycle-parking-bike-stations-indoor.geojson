@@ -1,0 +1,222 @@
+{
+  "type": "FeatureCollection",
+  "name": "Bicycle Parking Data - Indoor - 4326",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 1,
+        "ADDRESS_POINT_ID": 14187337.0,
+        "ADDRESS_NUMBER": "25",
+        "LINEAR_NAME_FULL": "York St",
+        "ADDRESS_FULL": "25 York St",
+        "POSTAL_CODE": "M5J 2V5",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD_NAME": "Spadina-Fort York (1010)",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 13975053,
+        "LO_NUM": 25,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4735.0,
+        "MI_PRINX": 3166879,
+        "OBJECTID": "1",
+        "ID": 1,
+        "STATION_TYPE": "Bicycle Station",
+        "TRANSIT_STATION": "Union Station",
+        "FLANKING": "York St",
+        "BIKE_CAPACITY": 80,
+        "CHANGE_ROOM": "Yes",
+        "VENDING_MACHINE": "Yes",
+        "TOOLS_PUMP": "Yes",
+        "YR_INSTALL": 2009
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3812106584203,
+            43.6434230000811
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 2,
+        "ADDRESS_POINT_ID": 11382307.0,
+        "ADDRESS_NUMBER": "777",
+        "LINEAR_NAME_FULL": "Victoria Park Ave",
+        "ADDRESS_FULL": "777 Victoria Park Ave",
+        "POSTAL_CODE": "None",
+        "MUNICIPALITY": "Scarborough",
+        "CITY": "Toronto",
+        "WARD_NAME": "Scarborough Southwest (2020)",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 11382305,
+        "LO_NUM": 777,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 370.0,
+        "MI_PRINX": 3219105,
+        "OBJECTID": "2",
+        "ID": 2,
+        "STATION_TYPE": "Bicycle Station",
+        "TRANSIT_STATION": "Victoria Park Station",
+        "FLANKING": "Victoria Park Ave",
+        "BIKE_CAPACITY": 52,
+        "CHANGE_ROOM": "No",
+        "VENDING_MACHINE": "No",
+        "TOOLS_PUMP": "No",
+        "YR_INSTALL": 2012
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.2891570511807,
+            43.6945435700427
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 3,
+        "ADDRESS_POINT_ID": 10864317.0,
+        "ADDRESS_NUMBER": "97",
+        "LINEAR_NAME_FULL": "Front St W",
+        "ADDRESS_FULL": "97 Front St W",
+        "POSTAL_CODE": "M5J 1E6",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD_NAME": "Spadina-Fort York (1010)",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 10864309,
+        "LO_NUM": 97,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 3472.0,
+        "MI_PRINX": 1558768,
+        "OBJECTID": "3",
+        "ID": 3,
+        "STATION_TYPE": "Bicycle Station",
+        "TRANSIT_STATION": "Union Station",
+        "FLANKING": "Front St W",
+        "BIKE_CAPACITY": 160,
+        "CHANGE_ROOM": "Yes",
+        "VENDING_MACHINE": "Yes",
+        "TOOLS_PUMP": "Yes",
+        "YR_INSTALL": 2016
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3821167966934,
+            43.6451506888938
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 4,
+        "ADDRESS_POINT_ID": 856375.0,
+        "ADDRESS_NUMBER": "100",
+        "LINEAR_NAME_FULL": "Queen St W",
+        "ADDRESS_FULL": "100 Queen St W",
+        "POSTAL_CODE": "M5H 2N1",
+        "MUNICIPALITY": "former Toronto",
+        "CITY": "Toronto",
+        "WARD_NAME": "Spadina-Fort York (1010)",
+        "PLACE_NAME": "City Hall - Nathan Phillips Square",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 1145216,
+        "LO_NUM": 100,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 4238.0,
+        "MI_PRINX": 4326298,
+        "OBJECTID": "4",
+        "ID": 4,
+        "STATION_TYPE": "Bicycle Station",
+        "TRANSIT_STATION": "City Hall",
+        "FLANKING": "Queen St W",
+        "BIKE_CAPACITY": 300,
+        "CHANGE_ROOM": "Yes",
+        "VENDING_MACHINE": "Yes",
+        "TOOLS_PUMP": "Yes",
+        "YR_INSTALL": 2019
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3836250552132,
+            43.6528221423182
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_id": 5,
+        "ADDRESS_POINT_ID": 11714753.0,
+        "ADDRESS_NUMBER": "3955",
+        "LINEAR_NAME_FULL": "Keele St",
+        "ADDRESS_FULL": "3955 Keele St",
+        "POSTAL_CODE": "M3J 2W1",
+        "MUNICIPALITY": "North York",
+        "CITY": "Toronto",
+        "WARD_NAME": "York Centre (606)",
+        "PLACE_NAME": "None",
+        "GENERAL_USE_CODE": 115001,
+        "CENTRELINE_ID": 11714744,
+        "LO_NUM": 3955,
+        "LO_NUM_SUF": "None",
+        "HI_NUM": null,
+        "HI_NUM_SUF": "None",
+        "LINEAR_NAME_ID": 703.0,
+        "MI_PRINX": 2115912,
+        "OBJECTID": "5",
+        "ID": 5,
+        "STATION_TYPE": "Bicycle Station",
+        "TRANSIT_STATION": "Finch West Station",
+        "FLANKING": "Keele St",
+        "BIKE_CAPACITY": 68,
+        "CHANGE_ROOM": "Yes",
+        "VENDING_MACHINE": "Yes",
+        "TOOLS_PUMP": "Yes",
+        "YR_INSTALL": 2018
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4908951136414,
+            43.7650951513775
+          ]
+        ]
+      }
+    }
+  ]
+}

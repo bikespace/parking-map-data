@@ -1,0 +1,5377 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 150 Borough Dr\n\nNotes: adjacent to civic centre & Square\n\nLocation: Scarborough Civic Centre",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 2,
+        "meta_borough": "Scarborough",
+        "meta_ward_name": "Scarborough Centre",
+        "meta_ward_number": "21",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.2572409577755,
+            43.772810595742
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 71 New Forest Sq\n\nNotes: 60m south of Steeles on W side of Kennedy (closest valid address)",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 3,
+        "meta_borough": "Scarborough",
+        "meta_ward_name": "Scarborough-Agincourt",
+        "meta_ward_number": "22",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3074473906934,
+            43.8230331061332
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 95 River Grove Dr\n\nNotes: S-W corner of Birchmount & Steeles (closest valid address)",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 4,
+        "meta_borough": "Scarborough",
+        "meta_ward_name": "Scarborough-Agincourt",
+        "meta_ward_number": "22",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3173896510384,
+            43.8209470944401
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 24 Victoria Park Ave\n\nNotes: One 8-bike rack on TTC property",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 5,
+        "meta_borough": "Scarborough",
+        "meta_ward_name": "Beaches-East York",
+        "meta_ward_number": "19",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.2810262938561,
+            43.6753630680448
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 315 Bloor St W\n\nNotes: White mark",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 6,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3985624500635,
+            43.6674469424306
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 509 Bloor St W\n\nNotes: in exchange for Borden corral",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 9,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4083859964734,
+            43.6654609016074
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 612 Bloor St W",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 10,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4138388158142,
+            43.6647341700049
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 813 Bloor St W\n\nNotes: Montrose - Dufferin Streetscaping",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 11,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4217629457737,
+            43.6625538116032
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1032 Bloor St W\n\nNotes: One 8-bike rack",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 13,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4316062598435,
+            43.6609569224604
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1034 Bloor St W\n\nNotes: One 5-bike angled rack",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 14,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4319342255372,
+            43.6608848734219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 122 Bond St\n\nNotes: white mark",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 15,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3791387851816,
+            43.6573781216217
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 137 Bond St\n\nNotes: bikes face east, white mark",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 16,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3787181688475,
+            43.6578227118334
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 429 College St\n\nNotes: 5m from info pillar",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 17,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4072847841266,
+            43.6562832334016
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 802 College St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 18,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4217098646824,
+            43.6548443189396
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 940 College St\n\nNotes: Councillor request",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 19,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4266277065843,
+            43.6537429799659
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 55 John St\n\nNotes: at rotunda\n\nLocation: Metro Hall",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 20,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3889314920572,
+            43.6461537935103
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 200 King St E\n\nNotes: east side of George north of King in No Parking zone",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 21,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3701856494981,
+            43.651100464219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 150 King St W\n\nLocation: King TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 22,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3842322745632,
+            43.6482142784795
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 40,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 100 Queen St W\n\nNotes: Inside parking garage\n\nLocation: City Hall",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 23,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3836250552132,
+            43.6528221423182
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 10,
+        "operator": "City of Toronto",
+        "covered": "yes",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 686 Queen St W\n\nNotes: on the Euclid boulevard 25m north of Queen",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 24,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4079437964715,
+            43.646578203587
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 18,
+        "operator": "City of Toronto",
+        "covered": "yes",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 180 Shaw St\n\nNotes: Queen West Parking Study; Artscape Youngplace",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 25,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4175862610454,
+            43.6468989083573
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 241 Wellington St W\n\nNotes: on John St, 50m south of Wellington",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 26,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3900134101984,
+            43.6449521397727
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1140 Yonge St\n\nNotes: west of post box",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 27,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3910471597584,
+            43.6795102439657
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 522 University Ave\n\nNotes: adjacent to planters",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 29,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3893801203605,
+            43.6559184351809
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1030 King St W\n\nNotes: at Strachan  and west at Sleep Country",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 30,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4157586754681,
+            43.6415808536674
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 901 King St W\n\nNotes: white mark",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 31,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4112467839912,
+            43.641872432814
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 3530 Sheppard Ave E\n\nNotes: Mayor's Office request",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 32,
+        "meta_borough": "Scarborough",
+        "meta_ward_name": "Scarborough-Agincourt",
+        "meta_ward_number": "22",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.303096242086,
+            43.7812077532627
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 725 Bathurst St\n\nNotes: On grass, across from CSI/Theatre",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 34,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4098085572117,
+            43.6627041125525
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 702 Bathurst St\n\nNotes: north side of Herrick\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 35,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4105046596053,
+            43.6627422312458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 71 Second St\n\nNotes: 0.5m back from limit of concrete",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 36,
+        "meta_borough": "Etobicoke",
+        "meta_ward_name": "Etobicoke-Lakeshore",
+        "meta_ward_number": "03",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4997662581739,
+            43.6036684223915
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 516 Glenlake Ave\n\nNotes: TDSB request for Ursula Franklin Academy",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 37,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Parkdale-High Park",
+        "meta_ward_number": "04",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4741048220362,
+            43.6561212464489
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1186 Queen St W\n\nNotes: parking stall design; on Northcote, not Queen",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 38,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4262248352553,
+            43.6429348457192
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 24,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 798 Richmond St W\n\nNotes: on Niagara betw tree pits",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 39,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4098108572165,
+            43.6451297244944
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 12 Ossington Ave\n\nNotes: 1m south of bus stop",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 40,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4193781682054,
+            43.6444593301141
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 21 Gerrard St E\n\nNotes: White mark",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 41,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3810999113837,
+            43.6591625171397
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 277 Victoria St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 43,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3793385702209,
+            43.6565589127866
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 400 Yonge St\n\nNotes: white mark",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 44,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3826468222595,
+            43.6595417671268
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 350 Victoria St\n\nNotes: white mark",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 45,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3804798260292,
+            43.6577656354656
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 595 Bay St\n\nNotes: adjacent to planter",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 46,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3832978278682,
+            43.6562124477002
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 790 Bay St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 47,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3861750845428,
+            43.6604459643503
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 357 Bay St\n\nNotes: white mark",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 48,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3808769998818,
+            43.6508344042378
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 200 King St W\n\nLocation: King TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 49,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3857204176048,
+            43.6479052737837
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 10 Linnsmore Cres\n\nNotes: just south of doors\n\nLocation: Greenwood TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 50,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-Danforth",
+        "meta_ward_number": "14",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.330292170892,
+            43.6825720317075
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 10,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 10 Linnsmore Cres\n\nLocation: Greenwood TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 51,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-Danforth",
+        "meta_ward_number": "14",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.330292170892,
+            43.6825720317075
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 20,
+        "operator": "City of Toronto",
+        "covered": "yes",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 40 High Park Ave\n\nNotes: Public Realm project,  Installed at back of walk\n\nLocation: High Park TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 52,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Parkdale-High Park",
+        "meta_ward_number": "04",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4663681354934,
+            43.6547112224016
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 666 Queen St E",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 53,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-Danforth",
+        "meta_ward_number": "14",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3515005142531,
+            43.6586988939243
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1595 Dupont St\n\nNotes: restaurant request",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 54,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4542193055903,
+            43.6649358894462
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 87 Front St E\n\nNotes: lay-by on south side, c. Market St - BIA in favour\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 55,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3722000572823,
+            43.6487470958429
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 266 King St E",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 56,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3663420506319,
+            43.6519627216596
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 2 Bloor St W\n\nNotes: north of post-and-rings on Yonge at Cumberland Terrace entrance\n\nLocation: Bloor-Yonge TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 57,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3872300479029,
+            43.6704004360083
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 12 Madison Ave",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 58,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4033213402764,
+            43.6677591999227
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 692 Bloor St W",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 60,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4174332539337,
+            43.6639772447612
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 693 Bloor St W",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 61,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4173511984097,
+            43.6635409715405
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 48,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 675 Bloor St W\n\nNotes: 3 racks moved from Wood St for Bike Share relocation",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 62,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4162538549835,
+            43.663806234493
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 10,
+        "operator": "City of Toronto",
+        "covered": "yes",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 20 Northcote Ave\n\nNotes: on the boulevard, 40m north of Queen",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 65,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4264347476873,
+            43.6431255580551
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1978 Queen St E\n\nNotes: To replace P&R (2)",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 67,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Beaches-East York",
+        "meta_ward_number": "19",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3011363154956,
+            43.6699728610104
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 449 Parliament St\n\nNotes: adjacent to south side of No Frills",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 68,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3671626414988,
+            43.6635065844204
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 953 Gerrard St E",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 69,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-Danforth",
+        "meta_ward_number": "14",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3393969830404,
+            43.668053671131
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 621 King St W\n\nNotes: east side of planter",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 70,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4011498459826,
+            43.6440028829522
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 511 King St W\n\nNotes: west of main door",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 71,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3978494175301,
+            43.6446235513294
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 441 King St W",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 72,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3956715228578,
+            43.6451488396696
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 468 King St W\n\nNotes: west of main door",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 73,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3959267185292,
+            43.645545087493
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 500 King St W",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 74,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3968051380048,
+            43.6453156558296
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 40 Orchard View Blvd\n\nNotes: Public Library",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 75,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Eglinton-Lawrence",
+        "meta_ward_number": "08",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4000640484789,
+            43.7082699050511
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 12 Emerson Ave\n\nNotes: west side of Emerson at subway lay-by\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 76,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4413132921915,
+            43.6593829779361
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 695 Lansdowne Ave\n\nNotes: Councillor request\n\nLocation: Lansdowne TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 77,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4428104294615,
+            43.6591290436207
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 32,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 743 Pape Ave\n\nNotes: Four 8-bike racks on TTC property\n\nLocation: Pape TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 78,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-Danforth",
+        "meta_ward_number": "14",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3450123847713,
+            43.6798873239788
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 2000 Yonge St\n\nNotes: on Glebe Rd W.",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 79,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-St. Paul's",
+        "meta_ward_number": "12",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3973815441376,
+            43.7004743321706
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 222 Spadina Ave",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 80,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3978377650267,
+            43.6509286638588
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 32,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 175 Mount Olive Dr\n\nNotes: four 8-bike racks TDSB install at Smithfield M.S.",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 81,
+        "meta_borough": "Etobicoke",
+        "meta_ward_name": "Etobicoke North",
+        "meta_ward_number": "01",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.5957518765444,
+            43.7500111297374
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 892 College St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 82,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4253918390163,
+            43.654012535761
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 834 College St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 83,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4229242760469,
+            43.6544914449878
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 860 College St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 84,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4238539128414,
+            43.6544574848038
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 362 Bloor St W\n\nLocation: Spadina TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 85,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4057839572486,
+            43.6665134281721
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 28 Duncan St\n\nNotes: opposite OCADU building\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 88,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3892098795828,
+            43.6487811930649
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 72,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 61 Front St W\n\nNotes: indoor and outdoor\n\nLocation: Union GO",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 89,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3800700536371,
+            43.6452454056884
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 720 Bay St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 90,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3854849354963,
+            43.6588371126302
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 95 Front St E\n\nNotes: St Lawrence Mkt renos: angled rack reclaimed for lack of use, one 8-bike",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 91,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3714937127787,
+            43.6491812588323
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 49 Givins St\n\nNotes: Queen West Study",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 92,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4175842923766,
+            43.6464076573477
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1560 Yonge St\n\nNotes: on Delisle",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 93,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-St. Paul's",
+        "meta_ward_number": "12",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3951269012401,
+            43.6896783530003
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 490 Bloor St W",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 96,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4097622062528,
+            43.6656283409671
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 20,
+        "operator": "City of Toronto",
+        "covered": "yes",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 375 St Clair Ave W\n\nNotes: Public Realm project,  Installed at back of walk\n\nLocation: St Clair West TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 99,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-St. Paul's",
+        "meta_ward_number": "12",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4143290305209,
+            43.6836946284848
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 38 Orchard View Blvd",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 100,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Eglinton-Lawrence",
+        "meta_ward_number": "08",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3996801445734,
+            43.708216713311
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 584 Bloor St W\n\nLocation: Bathurst TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 101,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4126936121623,
+            43.6651006726937
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 213 Delaware Ave\n\nNotes: One 5-bike angled rack on TTC property\n\nLocation: Ossington TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 102,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4278708182001,
+            43.6620573990966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 736 Bay St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 103,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3856470367783,
+            43.6593434836347
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 300 Victoria St\n\nNotes: white mark",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 104,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3802376738898,
+            43.6575126331536
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 11 Charlotte St\n\nNotes: Councillor request",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 106,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3936698784778,
+            43.6463778424247
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 2198 Yonge St\n\nLocation: Eglinton TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 107,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-St. Paul's",
+        "meta_ward_number": "12",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3984238947494,
+            43.7058827894496
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 205 Spadina Ave\n\nNotes: lay-by",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 108,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3966190321934,
+            43.6504254363213
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1036 Bloor St W\n\nNotes: Montrose - Dufferin streetscaping",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 110,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4319383641102,
+            43.6608213173929
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 5 Salem Ave\n\nNotes: Montrose - Dufferin streetscaping",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 111,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4315601023945,
+            43.6608451251421
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 5 Walmer Rd\n\nLocation: Spadina TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 112,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4053783829308,
+            43.6667025082735
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 350 King St W\n\nNotes: P&D adjacent to Bell Lightbox bike parking",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 113,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3904508904479,
+            43.6466460321677
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 32,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 65 Dundas St W",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 114,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3830072851693,
+            43.6555937758623
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 22 Fort York Blvd\n\nNotes: Moved from 351 Bremner Blvd to supermarket",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 115,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.394196399307,
+            43.6405581341618
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 101 Sherbourne St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 116,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3689116973164,
+            43.6536621558492
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 163 Dan Leckie Way\n\nNotes: south side planter",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 117,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3980686081508,
+            43.6400541998146
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 82 Fort York Blvd",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 118,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3967708309412,
+            43.6400217734976
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 157 Dan Leckie Way\n\nNotes: south side planter",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 119,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3980055327274,
+            43.6398931179216
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 150 Dan Leckie Way\n\nNotes: adjacent to central planter",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 120,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.39844180131,
+            43.6396291898843
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 60 Carlton St\n\nNotes: rack is already there: bolt down",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 121,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3800330023465,
+            43.662060942439
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 35D Bathurst St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 122,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4017249691284,
+            43.642225715835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 78 Tecumseth St\n\nNotes: at south side of publication boxes",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 123,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4054414221864,
+            43.6430480473063
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 539 Parliament St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 124,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3684723713959,
+            43.6660407871926
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 636 Queen St E",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 126,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-Danforth",
+        "meta_ward_number": "14",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3525953501831,
+            43.6584322328156
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 44 Lisgar St\n\nNotes: eastern border of Lisgar Park",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 127,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4234411856628,
+            43.6420865352289
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 36 Lisgar St\n\nNotes: ignore markings to south",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 128,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4233157461113,
+            43.6417386470507
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 24,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 47 Lower River St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 129,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3555410507722,
+            43.6564985969752
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 92 Fort York Blvd",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 130,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3969681695071,
+            43.6399814003219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 30,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 35 York St\n\nNotes: indoor and outdoor",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 131,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3814651014112,
+            43.6437906731595
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1190 Dundas St E\n\nNotes: east side of planter",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 132,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-Danforth",
+        "meta_ward_number": "14",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3410336331932,
+            43.665267525614
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 60 Lisgar St\n\nNotes: eastern border of Lisgar Park",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 133,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.423617099708,
+            43.6424141048796
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1 St Clair Ave E\n\nLocation: St Clair TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 134,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-St. Paul's",
+        "meta_ward_number": "12",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3935708744087,
+            43.6879111568366
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 40,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 100 Queen St W\n\nLocation: City Hall",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 135,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3836250552132,
+            43.6528221423182
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 40,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 100 Queen St W\n\nLocation: City Hall",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 136,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3836250552132,
+            43.6528221423182
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 24,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 2 Bloor St W\n\nLocation: Bloor-Yonge TTC",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 137,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3872300479029,
+            43.6704004360083
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 300 Victoria St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 138,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3802376738898,
+            43.6575126331536
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 300 Victoria St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 139,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3802376738898,
+            43.6575126331536
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 300 Victoria St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 140,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3802376738898,
+            43.6575126331536
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 26 Dundas St E\n\nNotes: bikes face east, temporary for construction\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 141,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3799775246031,
+            43.6565175761293
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 624 Bloor St W\n\nNotes: angled rack adjacent tree box\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 147,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4143421803121,
+            43.664633544282
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 675 Bloor St W\n\nNotes: moved fr Wood St for Bike Share relocate\n\nLocation: boulevard",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 149,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4162538549835,
+            43.663806234493
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1184 Queen St W\n\nNotes: 3 posts\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 151,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4257846968092,
+            43.6430284991501
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 50 Portland St\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 154,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3999654356682,
+            43.6433952592458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 92 Sudbury St\n\nNotes: councillor request\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 155,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4231656377467,
+            43.6413458972849
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 200 King St E\n\nNotes: east side of George north of King in No Parking zone\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 156,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3701856494981,
+            43.651100464219
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 28,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 124 Spadina Ave\n\nLocation: On Camden St\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 176,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3963385316953,
+            43.6471839084783
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 213 Delaware Ave\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 177,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4278708182001,
+            43.6620573990966
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 24,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 236 Augusta Ave\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 178,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4025948745683,
+            43.6553455061522
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 145 King St W\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 184,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3839226800024,
+            43.6474556715908
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 25 Berwick Ave\n\nNotes: adjacent previous rack\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 188,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-St. Paul's",
+        "meta_ward_number": "12",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3984481407676,
+            43.7038022113874
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 33 Yonge St\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 191,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.376584165477,
+            43.647559655381
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 416 Dawes Rd\n\nNotes: S side of library\n\nLocation: back of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 192,
+        "meta_borough": "East York",
+        "meta_ward_name": "Beaches-East York",
+        "meta_ward_number": "19",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.2972298270711,
+            43.7012022928535
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 962 Queen St W\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 202,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4172248354794,
+            43.6447596251305
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1151 Queen St W\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 203,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4245496132841,
+            43.6428738481918
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 76 Kensington Ave\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 213,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.400924005423,
+            43.6545455601628
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 700 University Ave\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 214,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3911880757558,
+            43.6590077232405
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 267 Richmond St W\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 216,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3916622946625,
+            43.6487348731713
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 14,
+        "operator": "City of Toronto",
+        "covered": "no",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 300 Campbell Ave\n\nLocation: In pay and display\n\nSeasonality: \"[seasonal parking is] typically removed before plowing season (starting December 1), and re-installed in the springtime\" source: https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/",
+        "seasonal": "yes",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 217,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4501491970694,
+            43.6656792456797
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1175 Dundas St E\n\nNotes: Angled\n\nLocation: back of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 218,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-Danforth",
+        "meta_ward_number": "14",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3417606000312,
+            43.6644593860797
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1360 Queen St W\n\nNotes: Stacker\n\nLocation: back of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 219,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Parkdale-High Park",
+        "meta_ward_number": "04",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4328131013079,
+            43.6416301079083
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 166 Alberta Ave\n\nNotes: Angled\n\nLocation: end of Alberta",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 220,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Davenport",
+        "meta_ward_number": "09",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4339879435719,
+            43.6803158876593
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 5,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 180 Elizabeth St\n\nNotes: Angled\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 221,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3864697233447,
+            43.6577754677845
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 2246 Lake Shore Blvd W\n\nNotes: Stacker\n\nLocation: back of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 222,
+        "meta_borough": "Etobicoke",
+        "meta_ward_name": "Etobicoke-Lakeshore",
+        "meta_ward_number": "03",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4834708718911,
+            43.6209978264526
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 25 Overlea Blvd\n\nNotes: Stacker\n\nLocation: boulevard",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 223,
+        "meta_borough": "East York",
+        "meta_ward_name": "Don Valley West",
+        "meta_ward_number": "15",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3498166394491,
+            43.70435069335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 3205 Yonge St\n\nNotes: Stacker\n\nLocation: back of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 226,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Don Valley West",
+        "meta_ward_number": "15",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4027093518893,
+            43.7280111261944
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 384 Bloor St W\n\nNotes: Stacker",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 227,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4065841125542,
+            43.6663188368912
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 4 Thorncliffe Park Dr\n\nNotes: Stacker\n\nLocation: boulevard",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 228,
+        "meta_borough": "East York",
+        "meta_ward_name": "Don Valley West",
+        "meta_ward_number": "15",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3509147455975,
+            43.706171864224
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 415 Yonge St\n\nNotes: Stacker\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 229,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto Centre",
+        "meta_ward_number": "13",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3819666068162,
+            43.659782365876
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 438 University Ave\n\nNotes: Stacker\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 230,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Spadina-Fort York",
+        "meta_ward_number": "10",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.3887763976688,
+            43.6543626946256
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 5 Sheppard Ave E\n\nNotes: Stacker\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 231,
+        "meta_borough": "North York",
+        "meta_ward_name": "Willowdale",
+        "meta_ward_number": "18",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4098022448089,
+            43.7614006012349
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 64,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 5100 Yonge St",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 232,
+        "meta_borough": "North York",
+        "meta_ward_name": "Willowdale",
+        "meta_ward_number": "18",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4148887450114,
+            43.7672678891958
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 750 Bay St\n\nNotes: Stacker\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 234,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "University-Rosedale",
+        "meta_ward_number": "11",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.385922938112,
+            43.6596578702687
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 10,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 1210 Yonge St\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 235,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-St. Paul's",
+        "meta_ward_number": "12",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.391737955379,
+            43.6817458182319
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 16,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 2190 Yonge St\n\nLocation: front of walk",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 236,
+        "meta_borough": "Former Toronto",
+        "meta_ward_name": "Toronto-St. Paul's",
+        "meta_ward_number": "12",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.398354474049,
+            43.7053382317137
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 2391 Lake Shore Blvd W\n\nLocation: adjacent to planter",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 237,
+        "meta_borough": "Etobicoke",
+        "meta_ward_name": "Etobicoke-Lakeshore",
+        "meta_ward_number": "03",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4883603535509,
+            43.6150886595306
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": 8,
+        "operator": "City of Toronto",
+        "covered": "",
+        "access": "yes",
+        "fee": "no",
+        "description": "Address: 2404-2406 Lake Shore Blvd W\n\nLocation: adjacent to planter",
+        "seasonal": "no",
+        "ref:open.toronto.ca:bicycle-parking-racks:objectid": 238,
+        "meta_borough": "Etobicoke",
+        "meta_ward_name": "Etobicoke-Lakeshore",
+        "meta_ward_number": "03",
+        "meta_status": "Installed",
+        "meta_source": "City of Toronto",
+        "meta_source_dataset": "bicycle-parking-racks",
+        "meta_source_url": "https://open.toronto.ca/dataset/bicycle-parking-racks/",
+        "meta_source_license": "Open Government Licence - Toronto",
+        "meta_source_license_url": "https://open.toronto.ca/open-data-licence/",
+        "meta_source_last_updated": "2025-03-27T15:53:28.493324+00:00"
+      },
+      "geometry": {
+        "type": "MultiPoint",
+        "coordinates": [
+          [
+            -79.4890641907246,
+            43.6148772137222
+          ]
+        ]
+      }
+    }
+  ]
+}
