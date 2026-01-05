@@ -42,5 +42,9 @@
   "32  FREELAND ST ": {
     "latitude": 43.6444748,
     "longitude": -79.3740714
+  },
+  "99  LAKE SHORE BLVD E": {
+    "latitude": 43.6513256,
+    "longitude": -79.3462809
   }
 }
