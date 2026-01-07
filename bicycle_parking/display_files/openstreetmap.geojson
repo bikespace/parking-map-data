@@ -52454,31 +52454,6 @@
         "meta_source_license_url": "https://www.openstreetmap.org/copyright",
         "meta_source_last_updated": "2026-01-03 21:22:12+00:00",
         "meta_feature_last_updated": "2025-10-31 00:37:34+00:00",
-        "meta_osm_id": "node/13271403782"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3823328,
-          43.6594204
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "bollard",
-        "capacity": 2,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "OpenStreetMap",
-        "meta_source_license": "Open Data Commons Open Database License (ODbL)",
-        "meta_source_license_url": "https://www.openstreetmap.org/copyright",
-        "meta_source_last_updated": "2026-01-03 21:22:12+00:00",
-        "meta_feature_last_updated": "2025-10-31 00:37:34+00:00",
         "meta_osm_id": "node/13271403783"
       },
       "geometry": {
@@ -52547,60 +52522,6 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 5,
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "OpenStreetMap",
-        "meta_source_license": "Open Data Commons Open Database License (ODbL)",
-        "meta_source_license_url": "https://www.openstreetmap.org/copyright",
-        "meta_source_last_updated": "2026-01-03 21:22:12+00:00",
-        "meta_feature_last_updated": "2025-11-04 11:35:36+00:00",
-        "meta_osm_id": "node/13279645782",
-        "colour": "grey",
-        "indoor": "no",
-        "lit": "no"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3899123,
-          43.659887
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "rack",
-        "capacity": 8,
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "OpenStreetMap",
-        "meta_source_license": "Open Data Commons Open Database License (ODbL)",
-        "meta_source_license_url": "https://www.openstreetmap.org/copyright",
-        "meta_source_last_updated": "2026-01-03 21:22:12+00:00",
-        "meta_feature_last_updated": "2025-11-04 11:35:36+00:00",
-        "meta_osm_id": "node/13279645786",
-        "colour": "grey",
-        "indoor": "no",
-        "lit": "no"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3893095,
-          43.66001789999999
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": 2,
         "operator": "City of Toronto",
@@ -52662,31 +52583,6 @@
         "meta_source_license_url": "https://www.openstreetmap.org/copyright",
         "meta_source_last_updated": "2026-01-03 21:22:12+00:00",
         "meta_feature_last_updated": "2025-11-04 11:35:36+00:00",
-        "meta_osm_id": "node/13279675247"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3823283,
-          43.65941229999999
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "bollard",
-        "capacity": 2,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "OpenStreetMap",
-        "meta_source_license": "Open Data Commons Open Database License (ODbL)",
-        "meta_source_license_url": "https://www.openstreetmap.org/copyright",
-        "meta_source_last_updated": "2026-01-03 21:22:12+00:00",
-        "meta_feature_last_updated": "2025-11-04 11:35:36+00:00",
         "meta_osm_id": "node/13279675248"
       },
       "geometry": {
@@ -52694,56 +52590,6 @@
         "coordinates": [
           -79.3823328,
           43.6594204
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "bollard",
-        "capacity": 2,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "OpenStreetMap",
-        "meta_source_license": "Open Data Commons Open Database License (ODbL)",
-        "meta_source_license_url": "https://www.openstreetmap.org/copyright",
-        "meta_source_last_updated": "2026-01-03 21:22:12+00:00",
-        "meta_feature_last_updated": "2025-11-04 11:35:36+00:00",
-        "meta_osm_id": "node/13279675249"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3823346,
-          43.65942849999998
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "bollard",
-        "capacity": 2,
-        "operator": "City of Toronto",
-        "covered": "no",
-        "access": "yes",
-        "fee": "no",
-        "meta_source": "OpenStreetMap",
-        "meta_source_license": "Open Data Commons Open Database License (ODbL)",
-        "meta_source_license_url": "https://www.openstreetmap.org/copyright",
-        "meta_source_last_updated": "2026-01-03 21:22:12+00:00",
-        "meta_feature_last_updated": "2025-11-04 11:35:36+00:00",
-        "meta_osm_id": "node/13279675250"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3823384,
-          43.6594374
         ]
       }
     },
