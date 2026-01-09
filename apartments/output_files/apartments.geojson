@@ -31798,8 +31798,8 @@
         "YEAR_OF_REPLACEMENT": 2005,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "123 LA ROSE AVE",
-        "LATITUDE": 43.6852100383,
-        "LONGITUDE": -79.5218137723,
+        "LATITUDE": 43.68516183615,
+        "LONGITUDE": -79.52179809065001,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -31825,8 +31825,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5218137723,
-          43.6852100383
+          -79.52179809065001,
+          43.68516183615
         ]
       }
     },
@@ -33015,7 +33015,7 @@
         "YEAR_BUILT": 1954,
         "YEAR_REGISTERED": 2024,
         "SITE_ADDRESS_y": "12-14 THIRTY NINTH ST",
-        "LATITUDE": 43.588854109,
+        "LATITUDE": 43.58885411,
         "LONGITUDE": -79.539116113,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
@@ -33043,7 +33043,7 @@
         "type": "Point",
         "coordinates": [
           -79.539116113,
-          43.588854109
+          43.58885411
         ]
       }
     },
@@ -57669,7 +57669,7 @@
         "YEAR_OF_REPLACEMENT": 2018,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "173 STEPHEN DR",
-        "LATITUDE": 43.639649256300004,
+        "LATITUDE": 43.6396492568,
         "LONGITUDE": -79.48750579200001,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
@@ -57697,7 +57697,7 @@
         "type": "Point",
         "coordinates": [
           -79.48750579200001,
-          43.639649256300004
+          43.6396492568
         ]
       }
     },
