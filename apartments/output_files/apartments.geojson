@@ -33619,7 +33619,7 @@
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "21 TWENTY SECOND ST",
-        "LATITUDE": 43.598276056,
+        "LATITUDE": 43.598276057,
         "LONGITUDE": -79.521462199,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
@@ -33647,7 +33647,7 @@
         "type": "Point",
         "coordinates": [
           -79.521462199,
-          43.598276056
+          43.598276057
         ]
       }
     },
@@ -44056,8 +44056,8 @@
         "YEAR_BUILT": 1951,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "318 THE KINGSWAY",
-        "LATITUDE": 43.6646853023,
-        "LONGITUDE": -79.524014398,
+        "LATITUDE": 43.664676724,
+        "LONGITUDE": -79.524011119,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -44083,8 +44083,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.524014398,
-          43.6646853023
+          -79.524011119,
+          43.664676724
         ]
       }
     },
@@ -57855,8 +57855,8 @@
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2024,
         "SITE_ADDRESS_y": "24 ANGLESEY BLVD",
-        "LATITUDE": 43.6644747521,
-        "LONGITUDE": -79.5218660319,
+        "LATITUDE": 43.664466173,
+        "LONGITUDE": -79.521862753,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -57882,8 +57882,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5218660319,
-          43.6644747521
+          -79.521862753,
+          43.664466173
         ]
       }
     },
@@ -117459,7 +117459,7 @@
         "YEAR_BUILT": 1958,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "46 TWENTY SECOND ST",
-        "LATITUDE": 43.598935789,
+        "LATITUDE": 43.59893579,
         "LONGITUDE": -79.522350466,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
@@ -117487,7 +117487,7 @@
         "type": "Point",
         "coordinates": [
           -79.522350466,
-          43.598935789
+          43.59893579
         ]
       }
     },
