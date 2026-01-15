@@ -92954,6 +92954,46 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-01-14T21:19:02+00:00",
+        "meta_osm_id": "node/13456767859"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5273416,
+          43.6501658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-01-14T21:19:02+00:00",
+        "meta_osm_id": "node/13456767860"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.527306,
+          43.6502013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
