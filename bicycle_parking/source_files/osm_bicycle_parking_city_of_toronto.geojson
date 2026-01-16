@@ -6266,14 +6266,14 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2016-08-01T19:10:24+00:00",
+        "meta_feature_last_updated": "2026-01-15T16:07:50+00:00",
         "meta_osm_id": "node/4331307587"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3677954,
-          43.706372
+          -79.3677644,
+          43.7063635
         ]
       }
     },
@@ -92988,6 +92988,24 @@
         "coordinates": [
           -79.527306,
           43.6502013
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-01-15T15:48:46+00:00",
+        "meta_osm_id": "node/13458281756"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3772767,
+          43.7210209
         ]
       }
     },
