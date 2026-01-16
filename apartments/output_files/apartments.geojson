@@ -148930,8 +148930,8 @@
         "YEAR_BUILT": 1970,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "23 THIRD ST",
-        "LATITUDE": 43.5997820747,
-        "LONGITUDE": -79.4996220466,
+        "LATITUDE": 43.599773506,
+        "LONGITUDE": -79.49961878,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -148957,8 +148957,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4996220466,
-          43.5997820747
+          -79.49961878,
+          43.599773506
         ]
       }
     },
@@ -154711,8 +154711,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 5,
-        "LATITUDE": 43.6948605,
-        "LONGITUDE": -79.3506946,
+        "SITE_ADDRESS_y": "1311 PAPE AVE",
+        "LATITUDE": 43.6949148743,
+        "LONGITUDE": -79.350635287,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -154738,8 +154739,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3506946,
-          43.6948605
+          -79.350635287,
+          43.6949148743
         ]
       }
     },
