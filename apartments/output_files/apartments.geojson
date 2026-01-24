@@ -116234,7 +116234,7 @@
         "bike_parking_indoor": 489,
         "bike_parking_outdoor": 80,
         "SITE_ADDRESS_y": "1100 KING ST W",
-        "LATITUDE": 43.640120672,
+        "LATITUDE": 43.640120672500004,
         "LONGITUDE": -79.422240833,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
@@ -116262,7 +116262,7 @@
         "type": "Point",
         "coordinates": [
           -79.422240833,
-          43.640120672
+          43.640120672500004
         ]
       }
     },
