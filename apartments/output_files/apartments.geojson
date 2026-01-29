@@ -117787,7 +117787,7 @@
         "YEAR_BUILT": 1965,
         "YEAR_REGISTERED": 2024,
         "SITE_ADDRESS_y": "36 TWELFTH ST",
-        "LATITUDE": 43.596087937,
+        "LATITUDE": 43.596087938,
         "LONGITUDE": -79.509696454,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
@@ -117815,7 +117815,7 @@
         "type": "Point",
         "coordinates": [
           -79.509696454,
-          43.596087937
+          43.596087938
         ]
       }
     },
