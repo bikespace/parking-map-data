@@ -58089,8 +58089,8 @@
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "250 BIRMINGHAM ST",
-        "LATITUDE": 43.6014679321,
-        "LONGITUDE": -79.5154015755,
+        "LATITUDE": 43.601459365,
+        "LONGITUDE": -79.515398304,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -58116,8 +58116,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5154015755,
-          43.6014679321
+          -79.515398304,
+          43.601459365
         ]
       }
     },
