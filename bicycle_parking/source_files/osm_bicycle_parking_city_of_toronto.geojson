@@ -93013,6 +93013,21 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-01-31T18:27:42+00:00",
+        "meta_osm_id": "node/13514924293"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4666914,
+          43.6715501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
