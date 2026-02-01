@@ -23491,8 +23491,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 773,
         "bike_parking_outdoor": 13,
-        "LATITUDE": 43.7100911,
-        "LONGITUDE": -79.3964121,
+        "SITE_ADDRESS_y": "55 BROADWAY AVE",
+        "LATITUDE": 43.70970865556819,
+        "LONGITUDE": -79.39557828300809,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -23518,8 +23519,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3964121,
-          43.7100911
+          -79.39557828300809,
+          43.70970865556819
         ]
       }
     },
@@ -55472,8 +55473,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 2,
-        "LATITUDE": 43.6560314,
-        "LONGITUDE": -79.3968986,
+        "SITE_ADDRESS_y": "123 HURON ST",
+        "LATITUDE": 43.656018789,
+        "LONGITUDE": -79.3969267,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -55499,8 +55501,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3968986,
-          43.6560314
+          -79.3969267,
+          43.656018789
         ]
       }
     },
@@ -60621,8 +60623,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 77,
         "bike_parking_outdoor": 4,
-        "LATITUDE": 43.7334555,
-        "LONGITUDE": -79.4475573,
+        "SITE_ADDRESS_y": "20 MONTE KWINTER CRT",
+        "LATITUDE": 43.733644065,
+        "LONGITUDE": -79.447557648,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -60648,8 +60651,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4475573,
-          43.7334555
+          -79.447557648,
+          43.733644065
         ]
       }
     },
@@ -144626,8 +144629,9 @@
         "WARD": 4,
         "YEAR_BUILT": 1967,
         "YEAR_REGISTERED": 2025,
-        "LATITUDE": 43.6397142,
-        "LONGITUDE": -79.4378279,
+        "SITE_ADDRESS_y": "2 LAXTON AVE",
+        "LATITUDE": 43.639730585,
+        "LONGITUDE": -79.4378417283,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -144653,8 +144657,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4378279,
-          43.6397142
+          -79.4378417283,
+          43.639730585
         ]
       }
     },
