@@ -3266,14 +3266,14 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2012-09-23T22:36:25+00:00",
+        "meta_feature_last_updated": "2026-02-01T22:06:08+00:00",
         "meta_osm_id": "node/1929805094"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.539915,
-          43.5939498
+          -79.5398996,
+          43.5939532
         ]
       }
     },
@@ -14850,14 +14850,14 @@
         "bicycle_parking": "bollard",
         "capacity": "6",
         "covered": "no",
-        "meta_feature_last_updated": "2024-06-16T19:03:30+00:00",
+        "meta_feature_last_updated": "2026-02-01T22:06:08+00:00",
         "meta_osm_id": "node/6917140099"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5414364,
-          43.5928479
+          -79.541432,
+          43.5928396
         ]
       }
     },
@@ -93028,6 +93028,71 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "lockers",
+        "capacity": "4",
+        "note": "These are the lockers that used to be at Long Branch GO Station but have been moved temporarily for construction.",
+        "meta_feature_last_updated": "2026-02-01T22:06:08+00:00",
+        "meta_osm_id": "node/13517877457"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5412284,
+          43.5929228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-02-01T22:06:08+00:00",
+        "meta_osm_id": "node/13517912032"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5395413,
+          43.594037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-02-01T22:06:08+00:00",
+        "meta_osm_id": "node/13517912033"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.539306,
+          43.5940999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "capacity": "4",
+        "meta_feature_last_updated": "2026-02-01T22:06:08+00:00",
+        "meta_osm_id": "node/13517912087"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5299109,
+          43.5952053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -94394,51 +94459,6 @@
           [
             -79.4939294,
             43.614885
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "access": "customers",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "lockers",
-        "capacity": "4",
-        "covered": "yes",
-        "fee": "yes",
-        "note": "Bike Lockers",
-        "operator": "City of Toronto",
-        "operator:type": "government",
-        "ref:toronto.ca:lockers:title": "Long Branch",
-        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2025-10-20T23:15:48+00:00",
-        "meta_osm_id": "way/699218608"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -79.5461764,
-              43.591415
-            ],
-            [
-              -79.5461559,
-              43.591425
-            ],
-            [
-              -79.5461413,
-              43.5914093
-            ],
-            [
-              -79.5461618,
-              43.5913993
-            ],
-            [
-              -79.5461764,
-              43.591415
-            ]
           ]
         ]
       }
