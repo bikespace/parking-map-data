@@ -46,5 +46,13 @@
   "99  LAKE SHORE BLVD E": {
     "latitude": 43.6513256,
     "longitude": -79.3462809
+  },
+  "2346  WESTON RD ": {
+    "latitude": 43.7058931,
+    "longitude": -79.5312742
+  },
+  "10  TRACY ST ": {
+    "latitude": 43.6562299,
+    "longitude": -79.362439
   }
 }
