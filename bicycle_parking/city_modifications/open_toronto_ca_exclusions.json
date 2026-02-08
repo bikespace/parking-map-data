@@ -631,5 +631,11 @@
     "ids": [{ "ref:open.toronto.ca:bicycle-parking-racks:objectid": "5" }],
     "reason": "missing",
     "notes": "Could not locate via survey. Does not appear to be any TTC property at the noted address of 24 Victoria Park Ave."
+  },
+  {
+    "survey_date": "2026-02-07",
+    "ids": [{ "ref:toronto.ca:lockers:title": "Long Branch" }],
+    "reason": "removed",
+    "notes": "Lockers appear to have been removed for construction. Construction timeline slightly unclear, but overall construction on the station will not be done until 2027 at the earliest (if not later). When complete, the station will have a new secure bike storage room, per the Metrolinx website."
   }
 ]
