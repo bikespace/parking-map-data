@@ -55821,38 +55821,6 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2025-08-31T22:19:35+00:00",
-        "meta_osm_id": "node/13111142293"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3920942,
-          43.7103108
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "meta_feature_last_updated": "2025-08-31T22:19:35+00:00",
-        "meta_osm_id": "node/13111142297"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3922569,
-          43.710376
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
         "capacity": "12",
         "meta_feature_last_updated": "2025-08-31T22:09:06+00:00",
         "meta_osm_id": "node/13111161011"
@@ -93028,11 +92996,18 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
         "capacity": "4",
+        "covered": "yes",
+        "fee": "yes",
         "note": "These are the lockers that used to be at Long Branch GO Station but have been moved temporarily for construction.",
-        "meta_feature_last_updated": "2026-02-01T22:06:08+00:00",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Long Branch",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2026-02-09T12:14:50+00:00",
         "meta_osm_id": "node/13517877457"
       },
       "geometry": {
