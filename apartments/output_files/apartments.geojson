@@ -29815,7 +29815,7 @@
         "YEAR_BUILT": 1962,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "505 THE WEST MALL",
-        "LATITUDE": 43.648859107,
+        "LATITUDE": 43.648859108,
         "LONGITUDE": -79.568021211,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
@@ -29843,7 +29843,7 @@
         "type": "Point",
         "coordinates": [
           -79.568021211,
-          43.648859107
+          43.648859108
         ]
       }
     },
@@ -141972,7 +141972,7 @@
         "bike_parking_indoor": 18,
         "bike_parking_outdoor": 39,
         "SITE_ADDRESS_y": "21 RICHGROVE DR",
-        "LATITUDE": 43.675722955,
+        "LATITUDE": 43.675722956,
         "LONGITUDE": -79.565639408,
         "ward_code": "01",
         "ward_name": "Etobicoke North",
@@ -142000,7 +142000,7 @@
         "type": "Point",
         "coordinates": [
           -79.565639408,
-          43.675722955
+          43.675722956
         ]
       }
     },
