@@ -38839,8 +38839,8 @@
         "YEAR_OF_REPLACEMENT": 2010,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "5005 DUNDAS ST W",
-        "LATITUDE": 43.6460539737,
-        "LONGITUDE": -79.5307204915,
+        "LATITUDE": 43.64604968585,
+        "LONGITUDE": -79.53071885175001,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -38866,8 +38866,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5307204915,
-          43.6460539737
+          -79.53071885175001,
+          43.64604968585
         ]
       }
     },
