@@ -47983,8 +47983,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "ring",
         "capacity": "2",
+        "covered": "no",
         "fixme": "These should likely be bicycle_parking=bollard for City Post and Rings - please survey to determine",
-        "meta_feature_last_updated": "2025-08-29T22:49:07+00:00",
+        "meta_feature_last_updated": "2026-02-15T17:54:13+00:00",
         "meta_osm_id": "node/12919192613"
       },
       "geometry": {
@@ -48001,8 +48002,9 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "ring",
         "capacity": "2",
+        "covered": "no",
         "fixme": "These should likely be bicycle_parking=bollard for City Post and Rings - please survey to determine",
-        "meta_feature_last_updated": "2025-08-29T22:49:07+00:00",
+        "meta_feature_last_updated": "2026-02-15T17:54:10+00:00",
         "meta_osm_id": "node/12919192614"
       },
       "geometry": {
