@@ -93174,6 +93174,23 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "note": "How many bikes can fit at this rack? What type is it?",
+        "meta_feature_last_updated": "2026-02-27T18:57:04+00:00",
+        "meta_osm_id": "node/13606274598"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2748511,
+          43.8127672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
