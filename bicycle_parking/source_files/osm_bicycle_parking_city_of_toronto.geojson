@@ -21193,17 +21193,18 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "4",
         "covered": "no",
         "fee": "no",
         "operator": "Toronto Transit Comission",
-        "meta_feature_last_updated": "2022-04-10T17:51:51+00:00",
+        "meta_feature_last_updated": "2026-03-02T03:35:30+00:00",
         "meta_osm_id": "node/9656480072"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4364643,
-          43.6600618
+          -79.4364605,
+          43.6600627
         ]
       }
     },
@@ -31205,14 +31206,14 @@
         "image": "https://flic.kr/p/2pDJNEK",
         "operator": "Toronto Transit Commission",
         "operator:type": "public",
-        "meta_feature_last_updated": "2024-03-16T21:01:05+00:00",
+        "meta_feature_last_updated": "2026-03-02T03:10:25+00:00",
         "meta_osm_id": "node/11737649272"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3523814,
-          43.6781813
+          -79.3523631,
+          43.6781748
         ]
       }
     },
@@ -93185,6 +93186,26 @@
         "coordinates": [
           -79.2748511,
           43.8127672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "18",
+        "operator": "No Frills",
+        "quantity": "3",
+        "meta_feature_last_updated": "2026-03-01T20:28:35+00:00",
+        "meta_osm_id": "node/13610242597"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3663803,
+          43.6510011
         ]
       }
     },
