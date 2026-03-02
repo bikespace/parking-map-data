@@ -147994,7 +147994,7 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 7,
         "SITE_ADDRESS_y": "67 CURZON ST",
-        "LATITUDE": 43.665240672,
+        "LATITUDE": 43.665240673,
         "LONGITUDE": -79.331969904,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
@@ -148022,7 +148022,7 @@
         "type": "Point",
         "coordinates": [
           -79.331969904,
-          43.665240672
+          43.665240673
         ]
       }
     },
