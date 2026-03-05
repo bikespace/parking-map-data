@@ -21214,10 +21214,11 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "3",
         "covered": "yes",
         "fee": "no",
         "operator": "Toronto Transit Commission",
-        "meta_feature_last_updated": "2022-04-10T17:51:51+00:00",
+        "meta_feature_last_updated": "2026-03-04T04:12:25+00:00",
         "meta_osm_id": "node/9656480077"
       },
       "geometry": {
@@ -22813,24 +22814,33 @@
     {
       "type": "Feature",
       "properties": {
-        "access": "no",
+        "access": "private",
+        "amenity": "bicycle_parking",
         "bicycle_parking": "building",
         "bike_ride": "yes",
-        "construction:amenity": "bicycle_parking",
+        "capacity": "80",
+        "capacity:cargo_bike": "20",
+        "cargo_bike": "designated",
         "covered": "yes",
-        "description": "In construction bicycle facility at west entrance of Kennedy station of Eglinton LRT",
+        "description": "Secure bicycle room at west entrance of Kennedy station of Eglinton LRT. Has 20 stands (fits 2 bikes or 1 cargo bike each) and 40 two-tier racks.",
+        "fee": "yes",
         "image": "https://flic.kr/p/2prKo3b",
         "indoor": "yes",
+        "level": "0",
         "lit": "yes",
-        "operator": "Metrolinx",
-        "meta_feature_last_updated": "2025-04-12T20:15:36+00:00",
+        "opening_hours": "24/7",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-parking-stations/",
+        "meta_feature_last_updated": "2026-03-04T23:13:19+00:00",
         "meta_osm_id": "node/10085728372"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2649468,
-          43.7324229
+          -79.2649642,
+          43.732421
         ]
       }
     },
@@ -29597,14 +29607,14 @@
         "image": "https://flic.kr/p/2prKo3b",
         "operator": "Metrolinx",
         "quantity": "11",
-        "meta_feature_last_updated": "2025-04-25T11:07:55+00:00",
+        "meta_feature_last_updated": "2026-03-04T23:13:19+00:00",
         "meta_osm_id": "node/11506994065"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2652899,
-          43.7323806
+          -79.2651418,
+          43.7323577
         ]
       }
     },
