@@ -37253,8 +37253,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "wall_loops",
         "capacity": "8",
-        "note": "Capacity estimated. There are further informal opportunities to lock up a bike (barriers, low fences) nearby and widely used.",
-        "meta_feature_last_updated": "2025-12-17T18:55:35+00:00",
+        "description": "Capacity estimated. There are further informal opportunities to lock up a bike (barriers, low fences) nearby and widely used.",
+        "meta_feature_last_updated": "2026-03-06T03:40:17+00:00",
         "meta_osm_id": "node/12101302614"
       },
       "geometry": {
