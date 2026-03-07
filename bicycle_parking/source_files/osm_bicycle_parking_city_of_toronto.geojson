@@ -22583,11 +22583,12 @@
       "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
         "capacity": "2",
         "covered": "no",
         "fee": "no",
         "operator:type": "public",
-        "meta_feature_last_updated": "2022-09-23T00:46:08+00:00",
+        "meta_feature_last_updated": "2026-03-06T22:47:43+00:00",
         "meta_osm_id": "node/10046259010"
       },
       "geometry": {
@@ -90110,11 +90111,16 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
+        "bike_ride": "yes",
         "capacity": "8",
         "covered": "no",
-        "meta_feature_last_updated": "2025-11-13T19:14:23+00:00",
+        "fee": "no",
+        "operator": "GO Transit",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2026-03-06T13:45:18+00:00",
         "meta_osm_id": "node/13302262940"
       },
       "geometry": {
@@ -91890,10 +91896,18 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
+        "bike_ride": "yes",
+        "capacity": "14",
+        "cargo_bike": "yes",
         "covered": "yes",
-        "meta_feature_last_updated": "2025-12-02T06:00:32+00:00",
+        "fee": "no",
+        "operator": "GO Transit",
+        "operator:type": "public",
+        "quantity": "2",
+        "meta_feature_last_updated": "2026-03-06T13:45:18+00:00",
         "meta_osm_id": "node/13347211376"
       },
       "geometry": {
@@ -95733,14 +95747,16 @@
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
+        "bike_ride": "yes",
         "capacity": "6",
         "covered": "yes",
         "fee": "yes",
+        "image": "https://flic.kr/p/2rZKnMT",
         "operator": "City of Toronto",
         "operator:type": "government",
         "ref:toronto.ca:lockers:title": "Eglinton GO",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2025-11-13T19:14:23+00:00",
+        "meta_feature_last_updated": "2026-03-06T13:45:18+00:00",
         "meta_osm_id": "way/1443593232"
       },
       "geometry": {
