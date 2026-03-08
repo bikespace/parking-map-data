@@ -137750,8 +137750,8 @@
         "YEAR_OF_REPLACEMENT": 2005,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "4003 BAYVIEW AVE",
-        "LATITUDE": 43.8022250044,
-        "LONGITUDE": -79.3928562051,
+        "LATITUDE": 43.8022206997,
+        "LONGITUDE": -79.39285458055,
         "ward_code": "17",
         "ward_name": "Don Valley North",
         "ward_full": "Don Valley North (17)",
@@ -137777,8 +137777,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3928562051,
-          43.8022250044
+          -79.39285458055,
+          43.8022206997
         ]
       }
     },
