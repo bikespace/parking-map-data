@@ -93278,6 +93278,122 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "6",
+        "capacity:cargo_bike": "3",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "description": "half-size corral in parking lane",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2026-03-08T18:22:15+00:00",
+        "meta_osm_id": "node/13627154897"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4250982,
+          43.6673229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "lockers",
+        "bike_ride": "yes",
+        "capacity": "2",
+        "cargo_bike": "no",
+        "covered": "yes",
+        "description": "Bicycle lockers by Yorkdale subway station",
+        "fee": "yes",
+        "operator": "Cut",
+        "operator:type": "government",
+        "ref:toronto.ca:lockers:title": "Yorkdale Subway",
+        "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
+        "meta_feature_last_updated": "2026-03-08T18:25:45+00:00",
+        "meta_osm_id": "node/13627190874"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4478797,
+          43.7236025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-03-08T19:49:51+00:00",
+        "meta_osm_id": "node/13628483063"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.484751,
+          43.6509592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "colour": "blue",
+        "meta_feature_last_updated": "2026-03-08T20:34:51+00:00",
+        "meta_osm_id": "node/13628578942"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4898316,
+          43.6628887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "colour": "grey",
+        "meta_feature_last_updated": "2026-03-08T20:34:51+00:00",
+        "meta_osm_id": "node/13628578944"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4899276,
+          43.6631289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "colour": "grey",
+        "meta_feature_last_updated": "2026-03-08T20:34:51+00:00",
+        "meta_osm_id": "node/13628578945"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4899071,
+          43.6630881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
