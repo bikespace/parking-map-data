@@ -22824,7 +22824,7 @@
         "capacity:cargo_bike": "20",
         "cargo_bike": "designated",
         "covered": "yes",
-        "description": "Secure bicycle room at west entrance of Kennedy station of Eglinton LRT. Has 20 stands (fits 2 bikes or 1 cargo bike each) and 40 two-tier racks.",
+        "description": "Secure bicycle room at west entrance of Kennedy station of Eglinton LRT. Has 20 stands (fits 2 bikes or 1 cargo bike each) and 40 two-tier racks. Wheelholder maxwidth on racks is 7cm.",
         "fee": "yes",
         "image": "https://flic.kr/p/2prKo3b",
         "indoor": "yes",
@@ -22835,7 +22835,7 @@
         "operator:type": "government",
         "ref:open.toronto.ca": "no",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-parking-stations/",
-        "meta_feature_last_updated": "2026-03-04T23:13:19+00:00",
+        "meta_feature_last_updated": "2026-03-09T10:49:27+00:00",
         "meta_osm_id": "node/10085728372"
       },
       "geometry": {
@@ -93313,11 +93313,11 @@
         "covered": "yes",
         "description": "Bicycle lockers by Yorkdale subway station",
         "fee": "yes",
-        "operator": "Cut",
+        "operator": "City of Toronto",
         "operator:type": "government",
         "ref:toronto.ca:lockers:title": "Yorkdale Subway",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-lockers/",
-        "meta_feature_last_updated": "2026-03-08T18:25:45+00:00",
+        "meta_feature_last_updated": "2026-03-09T09:57:07+00:00",
         "meta_osm_id": "node/13627190874"
       },
       "geometry": {
