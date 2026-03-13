@@ -93527,6 +93527,129 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-03-12T16:59:16+00:00",
+        "meta_osm_id": "node/13641626209"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5501692,
+          43.6213497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-03-12T16:59:16+00:00",
+        "meta_osm_id": "node/13641626210"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5501594,
+          43.621352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-03-12T16:59:16+00:00",
+        "meta_osm_id": "node/13641626211"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.55015,
+          43.6213543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-03-12T16:59:16+00:00",
+        "meta_osm_id": "node/13641626212"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5501404,
+          43.6213564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-03-12T16:59:16+00:00",
+        "meta_osm_id": "node/13641626213"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5501305,
+          43.6213586
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "permissive",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "two-tier",
+        "capacity": "209",
+        "cargo_bike": "no",
+        "covered": "yes",
+        "description": "Underground bicycle parking at CIBC square; appears to be publicly accessible but need to clarify. All two-tier racks. May be other spots in this building as well, website states \u201cover 500 secure bicycle parking spots, with 28 dedicated showers\u201d",
+        "indoor": "yes",
+        "level": "-1",
+        "lit": "yes",
+        "operator": "CIBC Square",
+        "operator:type": "business",
+        "quantity": "209",
+        "website": "https://cibcsquare.com/about/#more-than-being-green",
+        "meta_feature_last_updated": "2026-03-12T21:01:18+00:00",
+        "meta_osm_id": "node/13643724910"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3779085,
+          43.6438235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
