@@ -59555,9 +59555,9 @@
         "covered": "no",
         "description": "stacker rack, wheelholder maxwidth 9cm",
         "fee": "no",
-        "operator": "Cut",
+        "operator": "City of Toronto",
         "operator:type": "government",
-        "meta_feature_last_updated": "2025-09-08T12:29:20+00:00",
+        "meta_feature_last_updated": "2026-03-17T01:39:45+00:00",
         "meta_osm_id": "node/13127907287"
       },
       "geometry": {
