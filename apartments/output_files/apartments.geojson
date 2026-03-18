@@ -134581,8 +134581,8 @@
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2022,
         "SITE_ADDRESS_y": "2513 LAKE SHORE BLVD W",
-        "LATITUDE": 43.6117781476,
-        "LONGITUDE": -79.4895548881,
+        "LATITUDE": 43.6117738623,
+        "LONGITUDE": -79.48955325605,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -134608,8 +134608,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4895548881,
-          43.6117781476
+          -79.48955325605,
+          43.6117738623
         ]
       }
     },
