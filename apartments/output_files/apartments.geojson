@@ -16495,7 +16495,7 @@
         "YEAR_BUILT": 1961,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "230 RIVER ST",
-        "LATITUDE": 43.66424980075,
+        "LATITUDE": 43.66424980125,
         "LONGITUDE": -79.35984663914999,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -16523,7 +16523,7 @@
         "type": "Point",
         "coordinates": [
           -79.35984663914999,
-          43.66424980075
+          43.66424980125
         ]
       }
     },
