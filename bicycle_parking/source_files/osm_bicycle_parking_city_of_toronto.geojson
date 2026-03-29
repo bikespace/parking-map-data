@@ -1127,8 +1127,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "capacity": "1",
+        "covered": "no",
         "note": "1 post/ring",
-        "meta_feature_last_updated": "2010-06-16T07:48:05+00:00",
+        "meta_feature_last_updated": "2026-03-28T22:03:20+00:00",
         "meta_osm_id": "node/773497149"
       },
       "geometry": {
@@ -32622,7 +32623,8 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-04-08T00:54:17+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-03-28T22:03:17+00:00",
         "meta_osm_id": "node/11800680792"
       },
       "geometry": {
