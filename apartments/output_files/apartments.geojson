@@ -121801,7 +121801,7 @@
         "bike_parking_indoor": 100,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "31 PHIPPS ST",
-        "LATITUDE": 43.665063591,
+        "LATITUDE": 43.665063592,
         "LONGITUDE": -79.386673529,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -121829,7 +121829,7 @@
         "type": "Point",
         "coordinates": [
           -79.386673529,
-          43.665063591
+          43.665063592
         ]
       }
     },
@@ -159181,8 +159181,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "707-711 FINCH AVE W",
-        "LATITUDE": 43.76979216909312,
-        "LONGITUDE": -79.46157778735625,
+        "LATITUDE": 43.769500991,
+        "LONGITUDE": -79.460967972,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -159208,8 +159208,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.46157778735625,
-          43.76979216909312
+          -79.460967972,
+          43.769500991
         ]
       }
     },
