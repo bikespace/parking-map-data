@@ -12,6 +12,9 @@ permissions:
 jobs:
   update-bicycle-parking-data:
     runs-on: ubuntu-latest
+    env:
+      OVERPASS_API_URL: ${{ secrets.OVERPASS_API_URL }}
+      OVERPASS_API_NAME: ${{ vars.OVERPASS_API_NAME }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4

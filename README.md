@@ -35,7 +35,7 @@ $ uv run pytest
 $ uv run pytest -s
 
 # run long-running tests
-$ uv run pytest -m long
+$ uv run pytest -m long -s
 ```
 
 Contributions to the `main` branch should be made via pull request and squash merged into `main` once an approving review has been given.
