@@ -1,10 +1,10 @@
-from overpass import ServerLoadError
 import pandas as pd
+from overpass import ServerLoadError
 from pytest import raises
 from tenacity import RetryError
 
-from bikespace_data.bicycle_parking.wrappers import BikeDataOSM
 import bikespace_data.bicycle_parking.conversions as conversions
+from bikespace_data.bicycle_parking.wrappers import BikeDataOSM
 
 mock_overpass_response = {
     "type": "FeatureCollection",
@@ -148,3 +148,35 @@ def test_fails_after_retry(mocker):
     with raises(RetryError):
         bdo = BikeDataOSM("test-osm", "test-query")
     assert overpass_mock.call_count > 1
+
+
+def test_default_overpass_server(mocker, monkeypatch):
+    """BikeDataOSM should call the default overpass server if no OVERPASS_API_URL environment variable is set."""
+
+    # simulate no environment variable
+    monkeypatch.delenv("OVERPASS_API_URL", raising=False)
+    mocker.patch("bikespace_data.bicycle_parking.wrappers.load_dotenv")
+
+    # mock overpass API constructor
+    overpass_api_mock = mocker.MagicMock()
+    mocker.patch("overpass.API", overpass_api_mock)
+
+    bdo = BikeDataOSM("test-osm", "test-query")
+    overpass_api_mock.assert_called_with(
+        endpoint="https://overpass-api.de/api/interpreter"
+    )
+
+
+def test_set_overpass_server_from_environment(mocker, monkeypatch):
+    """BikeDataOSM should call the specified overpass server if set by OVERPASS_API_URL in the environment."""
+
+    # simulate environment variable
+    test_overpass_server = "https://test-overpass.com/api/interpreter"
+    monkeypatch.setenv("OVERPASS_API_URL", test_overpass_server)
+
+    # mock overpass API constructor
+    overpass_api_mock = mocker.MagicMock()
+    mocker.patch("overpass.API", overpass_api_mock)
+
+    bdo = BikeDataOSM("test-osm", "test-query")
+    overpass_api_mock.assert_called_with(endpoint=test_overpass_server)

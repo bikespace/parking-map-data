@@ -18,13 +18,6 @@ from tenacity import retry, stop_after_attempt, wait_chain, wait_fixed
 from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
 
 
-# load overpass API url from environment or .env file, if specified
-load_dotenv(override=False)
-OVERPASS_API_URL = os.environ.get(
-    "OVERPASS_API_URL", "http://overpass-api.de/api/interpreter"
-)
-
-
 class BikeData(ABC):
     """Shared interface for bike data regardless of source"""
 
@@ -182,6 +175,12 @@ class BikeDataOSM(BikeData):
     )
     def __init__(self, dataset_name: str, overpass_query: str):
         super().__init__(dataset_name)
+
+        # load overpass API url from environment or .env file, if specified
+        load_dotenv(override=False)
+        OVERPASS_API_URL = os.environ.get(
+            "OVERPASS_API_URL", "https://overpass-api.de/api/interpreter"
+        )
 
         api = overpass.API(endpoint=OVERPASS_API_URL)
         self._response = api.get(
