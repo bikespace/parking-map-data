@@ -16,6 +16,7 @@ dependencies = [
     "pathlib>=1.0.1",
     "progress>=1.6.1",
     "pyarrow>=20.0.0",
+    "python-dotenv>=1.2.2",
     "requests>=2.32.3",
     "scikit-learn>=1.6.1",
     "shapely>=2.1.0",

@@ -1,19 +1,28 @@
 """Classes to help with downloading and managing data used for the bicycle_parking dataset."""
 
+import os
 from abc import ABC, abstractmethod
 from copy import deepcopy
 from datetime import datetime, timezone
 from http import HTTPStatus
 
-from bs4 import BeautifulSoup
 import geojson
 import geopandas
 import overpass
 import pandas as pd
 import requests
+from bs4 import BeautifulSoup
+from dotenv import load_dotenv
 from tenacity import retry, stop_after_attempt, wait_chain, wait_fixed
 
 from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
+
+
+# load overpass API url from environment or .env file, if specified
+load_dotenv(override=False)
+OVERPASS_API_URL = os.environ.get(
+    "OVERPASS_API_URL", "http://overpass-api.de/api/interpreter"
+)
 
 
 class BikeData(ABC):
@@ -174,7 +183,7 @@ class BikeDataOSM(BikeData):
     def __init__(self, dataset_name: str, overpass_query: str):
         super().__init__(dataset_name)
 
-        api = overpass.API()
+        api = overpass.API(endpoint=OVERPASS_API_URL)
         self._response = api.get(
             overpass_query, responseformat="geojson", verbosity="geom"
         )
