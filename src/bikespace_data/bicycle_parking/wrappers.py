@@ -177,10 +177,16 @@ class BikeDataOSM(BikeData):
         super().__init__(dataset_name)
 
         # load overpass API url from environment or .env file, if specified
+        overpass_default = "https://overpass-api.de/api/interpreter"
         load_dotenv(override=False)
-        OVERPASS_API_URL = os.environ.get(
-            "OVERPASS_API_URL", "https://overpass-api.de/api/interpreter"
+        OVERPASS_API_URL = os.environ.get("OVERPASS_API_URL", overpass_default)
+        OVERPASS_API_NAME = os.environ.get(
+            "OVERPASS_API_NAME",
+            "overpass-api.de"
+            if OVERPASS_API_URL == overpass_default
+            else "un-named custom overpass server",
         )
+        print(f"Requesting overpass data from {OVERPASS_API_NAME}")
 
         api = overpass.API(endpoint=OVERPASS_API_URL)
         self._response = api.get(

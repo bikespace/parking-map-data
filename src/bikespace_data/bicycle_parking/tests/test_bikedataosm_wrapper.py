@@ -1,6 +1,6 @@
 import pandas as pd
 from overpass import ServerLoadError
-from pytest import raises
+from pytest import raises, mark
 from tenacity import RetryError
 
 import bikespace_data.bicycle_parking.conversions as conversions
@@ -150,11 +150,12 @@ def test_fails_after_retry(mocker):
     assert overpass_mock.call_count > 1
 
 
-def test_default_overpass_server(mocker, monkeypatch):
+def test_default_overpass_server(mocker, monkeypatch, capsys):
     """BikeDataOSM should call the default overpass server if no OVERPASS_API_URL environment variable is set."""
 
     # simulate no environment variable
     monkeypatch.delenv("OVERPASS_API_URL", raising=False)
+    monkeypatch.delenv("OVERPASS_API_NAME", raising=False)
     mocker.patch("bikespace_data.bicycle_parking.wrappers.load_dotenv")
 
     # mock overpass API constructor
@@ -162,21 +163,43 @@ def test_default_overpass_server(mocker, monkeypatch):
     mocker.patch("overpass.API", overpass_api_mock)
 
     bdo = BikeDataOSM("test-osm", "test-query")
+
     overpass_api_mock.assert_called_with(
         endpoint="https://overpass-api.de/api/interpreter"
     )
+    captured = capsys.readouterr()
+    assert "overpass-api.de" in captured.out
 
 
-def test_set_overpass_server_from_environment(mocker, monkeypatch):
+@mark.parametrize(
+    "test_overpass_server,test_overpass_name",
+    [
+        ("https://test-overpass.com/api/interpreter", None),
+        ("https://test-overpass.com/api/interpreter", "Test Overpass"),
+    ],
+)
+def test_set_overpass_server_from_environment(
+    mocker, monkeypatch, capsys, test_overpass_server, test_overpass_name
+):
     """BikeDataOSM should call the specified overpass server if set by OVERPASS_API_URL in the environment."""
 
-    # simulate environment variable
-    test_overpass_server = "https://test-overpass.com/api/interpreter"
+    # simulate environment variables
+    mocker.patch("bikespace_data.bicycle_parking.wrappers.load_dotenv")
     monkeypatch.setenv("OVERPASS_API_URL", test_overpass_server)
+    if test_overpass_name:
+        monkeypatch.setenv("OVERPASS_API_NAME", test_overpass_name)
+    else:
+        monkeypatch.delenv("OVERPASS_API_NAME", raising=False)
 
     # mock overpass API constructor
     overpass_api_mock = mocker.MagicMock()
     mocker.patch("overpass.API", overpass_api_mock)
 
     bdo = BikeDataOSM("test-osm", "test-query")
+
     overpass_api_mock.assert_called_with(endpoint=test_overpass_server)
+    captured = capsys.readouterr()
+    if test_overpass_name:
+        assert test_overpass_name in captured.out
+    else:
+        assert "un-named" in captured.out
