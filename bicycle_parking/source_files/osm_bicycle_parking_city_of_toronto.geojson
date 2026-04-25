@@ -44098,14 +44098,14 @@
         "operator": "University of Toronto",
         "operator:type": "public",
         "quantity": "7",
-        "meta_feature_last_updated": "2025-03-01T19:30:12+00:00",
+        "meta_feature_last_updated": "2026-04-24T17:01:05+00:00",
         "meta_osm_id": "node/12628943441"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3998262,
-          43.6640483
+          -79.3998358,
+          43.6640273
         ]
       }
     },
