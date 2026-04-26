@@ -43706,14 +43706,14 @@
         "colour": "silver",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-02-01T23:12:15+00:00",
+        "meta_feature_last_updated": "2026-04-26T02:27:38+00:00",
         "meta_osm_id": "node/12550053067"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4450105,
-          43.65498
+          -79.4453216,
+          43.6552284
         ]
       }
     },
@@ -94110,6 +94110,24 @@
         "coordinates": [
           -79.5336275,
           43.7088381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "10",
+        "covered": "yes",
+        "meta_feature_last_updated": "2026-04-25T15:40:59+00:00",
+        "meta_osm_id": "node/13760866863"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5345343,
+          43.6177934
         ]
       }
     },
