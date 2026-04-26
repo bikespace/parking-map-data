@@ -46312,8 +46312,8 @@
         "YEAR_BUILT": 1954,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1 HILL HEIGHTS RD",
-        "LATITUDE": 43.6380615683,
-        "LONGITUDE": -79.4937696446,
+        "LATITUDE": 43.63805728015,
+        "LONGITUDE": -79.4937680108,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -46339,8 +46339,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4937696446,
-          43.6380615683
+          -79.4937680108,
+          43.63805728015
         ]
       }
     },
@@ -154724,8 +154724,9 @@
         "YEAR_REGISTERED": 2017,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 6,
-        "LATITUDE": 43.6751515,
-        "LONGITUDE": -79.5651265,
+        "SITE_ADDRESS_y": "620 MARTIN GROVE RD",
+        "LATITUDE": 43.675153167,
+        "LONGITUDE": -79.565146594,
         "ward_code": "01",
         "ward_name": "Etobicoke North",
         "ward_full": "Etobicoke North (01)",
@@ -154751,8 +154752,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5651265,
-          43.6751515
+          -79.565146594,
+          43.675153167
         ]
       }
     },
