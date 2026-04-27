@@ -94134,6 +94134,36 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-04-26T14:35:24+00:00",
+        "meta_osm_id": "node/13763786004"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5317352,
+          43.6633485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-04-26T16:58:06+00:00",
+        "meta_osm_id": "node/13764188846"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3648468,
+          43.7132635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
