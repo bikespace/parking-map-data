@@ -77561,8 +77561,8 @@
         "YEAR_BUILT": 1962,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "15 MALLORY CRES",
-        "LATITUDE": 43.6962315888,
-        "LONGITUDE": -79.3689911694,
+        "LATITUDE": 43.6962272924,
+        "LONGITUDE": -79.36898955320001,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -77588,8 +77588,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3689911694,
-          43.6962315888
+          -79.36898955320001,
+          43.6962272924
         ]
       }
     },
@@ -148646,7 +148646,7 @@
         "YEAR_BUILT": 1980,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "49 HENRY LANE TER",
-        "LATITUDE": 43.646859159,
+        "LATITUDE": 43.646859159499996,
         "LONGITUDE": -79.369670022,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
@@ -148674,7 +148674,7 @@
         "type": "Point",
         "coordinates": [
           -79.369670022,
-          43.646859159
+          43.646859159499996
         ]
       }
     },
