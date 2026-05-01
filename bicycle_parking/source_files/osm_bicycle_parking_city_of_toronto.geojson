@@ -336,11 +336,11 @@
     {
       "type": "Feature",
       "properties": {
-        "amenity": "bicycle_parking",
         "capacity": "15",
         "colour": "silver",
         "note": "3 racks x 5 each",
-        "meta_feature_last_updated": "2022-06-18T17:32:12+00:00",
+        "was:amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-04-30T17:25:47+00:00",
         "meta_osm_id": "node/409200520"
       },
       "geometry": {
@@ -21598,8 +21598,8 @@
     {
       "type": "Feature",
       "properties": {
-        "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2022-06-18T17:32:12+00:00",
+        "was:amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-04-30T17:25:47+00:00",
         "meta_osm_id": "node/9828726017"
       },
       "geometry": {
@@ -21613,8 +21613,8 @@
     {
       "type": "Feature",
       "properties": {
-        "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2022-06-18T17:32:12+00:00",
+        "was:amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-04-30T17:25:47+00:00",
         "meta_osm_id": "node/9828726018"
       },
       "geometry": {
