@@ -82480,8 +82480,8 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "25 HENRY LANE TER",
-        "LATITUDE": 43.64755666,
-        "LONGITUDE": -79.370208586,
+        "LATITUDE": 43.647547094000004,
+        "LONGITUDE": -79.370249872,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -82507,8 +82507,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.370208586,
-          43.64755666
+          -79.370249872,
+          43.647547094000004
         ]
       }
     },
