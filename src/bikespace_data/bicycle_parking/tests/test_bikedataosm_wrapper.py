@@ -165,8 +165,10 @@ def test_default_overpass_server(mocker, monkeypatch, capsys):
     bdo = BikeDataOSM("test-osm", "test-query")
 
     overpass_api_mock.assert_called_with(
-        endpoint="https://overpass-api.de/api/interpreter"
+        endpoint="https://overpass-api.de/api/interpreter",
+        headers=mocker.ANY,
     )
+    assert "User-Agent" in overpass_api_mock.call_args.kwargs["headers"]
     captured = capsys.readouterr()
     assert "overpass-api.de" in captured.out
 
@@ -197,7 +199,11 @@ def test_set_overpass_server_from_environment(
 
     bdo = BikeDataOSM("test-osm", "test-query")
 
-    overpass_api_mock.assert_called_with(endpoint=test_overpass_server)
+    overpass_api_mock.assert_called_with(
+        endpoint=test_overpass_server,
+        headers=mocker.ANY,
+    )
+    assert "User-Agent" in overpass_api_mock.call_args.kwargs["headers"]
     captured = capsys.readouterr()
     if test_overpass_name:
         assert test_overpass_name in captured.out
