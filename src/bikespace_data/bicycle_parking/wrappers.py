@@ -186,9 +186,14 @@ class BikeDataOSM(BikeData):
             if OVERPASS_API_URL == overpass_default
             else "un-named custom overpass server",
         )
-        print(f"Requesting overpass data from {OVERPASS_API_NAME}")
+        print(f"Requesting OpenStreetMap data from {OVERPASS_API_NAME}")
 
-        api = overpass.API(endpoint=OVERPASS_API_URL)
+        api = overpass.API(
+            endpoint=OVERPASS_API_URL,
+            headers={
+                "User-Agent": "bikespace-parking-map-data (https://github.com/bikespace/parking-map-data)"
+            },
+        )
         self._response = api.get(
             overpass_query, responseformat="geojson", verbosity="geom"
         )
