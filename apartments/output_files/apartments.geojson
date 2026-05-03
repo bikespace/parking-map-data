@@ -139601,8 +139601,8 @@
         "YEAR_OF_REPLACEMENT": 1996,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1080 EASTERN AVE",
-        "LATITUDE": 43.6658597162,
-        "LONGITUDE": -79.3160434122,
+        "LATITUDE": 43.6658554221,
+        "LONGITUDE": -79.31604180560001,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -139628,8 +139628,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3160434122,
-          43.6658597162
+          -79.31604180560001,
+          43.6658554221
         ]
       }
     },
