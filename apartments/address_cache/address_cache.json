@@ -58,5 +58,25 @@
   "711  FINCH AVE W": {
     "latitude": 43.7693585,
     "longitude": -79.4615865
+  },
+  "305  PARLIAMENT ST ": {
+    "latitude": 43.6590768,
+    "longitude": -79.3656736
+  },
+  "210  BEVERLEY ST ": {
+    "latitude": 43.6572223,
+    "longitude": -79.3955614
+  },
+  "295  DUFFERIN ST ": {
+    "latitude": 43.6399967,
+    "longitude": -79.4273036
+  },
+  "1187  QUEEN ST E": {
+    "latitude": 43.6625019,
+    "longitude": -79.3315631
+  },
+  "2376  DUNDAS ST W": {
+    "latitude": 43.6576874,
+    "longitude": -79.4523352
   }
 }
