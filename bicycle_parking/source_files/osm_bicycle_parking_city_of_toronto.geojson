@@ -56723,7 +56723,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-05-04T12:46:06+00:00",
         "meta_osm_id": "node/13112381929"
       },
       "geometry": {
@@ -56740,7 +56741,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-05-04T12:46:10+00:00",
         "meta_osm_id": "node/13112381930"
       },
       "geometry": {
