@@ -49109,9 +49109,11 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
+        "capacity": "5",
+        "covered": "no",
         "description": "wave rack",
         "operator": "Seneca Polytechnic",
-        "meta_feature_last_updated": "2025-07-21T22:43:28+00:00",
+        "meta_feature_last_updated": "2026-05-15T23:58:00+00:00",
         "meta_osm_id": "node/13016330028"
       },
       "geometry": {
