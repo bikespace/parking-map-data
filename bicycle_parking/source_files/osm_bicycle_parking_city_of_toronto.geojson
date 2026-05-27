@@ -3152,9 +3152,10 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
         "check_date": "2023-11-09",
         "covered": "no",
-        "meta_feature_last_updated": "2026-05-19T22:09:12+00:00",
+        "meta_feature_last_updated": "2026-05-26T12:27:25+00:00",
         "meta_osm_id": "node/1432347925"
       },
       "geometry": {
@@ -18340,26 +18341,6 @@
         "coordinates": [
           -79.5358874,
           43.6366194
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "access": "yes",
-        "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "capacity": "4",
-        "covered": "no",
-        "fee": "yes",
-        "meta_feature_last_updated": "2021-08-03T05:39:32+00:00",
-        "meta_osm_id": "node/8976141659"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3828403,
-          43.663169
         ]
       }
     },
@@ -94678,6 +94659,66 @@
         "coordinates": [
           -79.4253975,
           43.7013377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-05-25T15:01:53+00:00",
+        "meta_osm_id": "node/13876820126"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3828884,
+          43.6632402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-05-25T15:01:53+00:00",
+        "meta_osm_id": "node/13876820127"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3828847,
+          43.6632238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-05-25T15:01:53+00:00",
+        "meta_osm_id": "node/13876820128"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3828804,
+          43.6632077
         ]
       }
     },
