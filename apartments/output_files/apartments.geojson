@@ -56664,7 +56664,7 @@
         "bike_parking_indoor": 35,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "166 CARLTON ST",
-        "LATITUDE": 43.663298218,
+        "LATITUDE": 43.6632982185,
         "LONGITUDE": -79.373807891,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -56692,7 +56692,7 @@
         "type": "Point",
         "coordinates": [
           -79.373807891,
-          43.663298218
+          43.6632982185
         ]
       }
     },
