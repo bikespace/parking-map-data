@@ -53989,7 +53989,7 @@
         "YEAR_OF_REPLACEMENT": 2015,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "140 ADANAC DR",
-        "LATITUDE": 43.740664525,
+        "LATITUDE": 43.7406645255,
         "LONGITUDE": -79.226955071,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
@@ -54017,7 +54017,7 @@
         "type": "Point",
         "coordinates": [
           -79.226955071,
-          43.740664525
+          43.7406645255
         ]
       }
     },
