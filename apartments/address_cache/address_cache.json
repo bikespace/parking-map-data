@@ -78,5 +78,13 @@
   "2376  DUNDAS ST W": {
     "latitude": 43.6576874,
     "longitude": -79.4523352
+  },
+  "243  EGLINTON AVE W": {
+    "latitude": 43.7048138,
+    "longitude": -79.4067003
+  },
+  "2339  DUFFERIN ST ": {
+    "latitude": 43.694738,
+    "longitude": -79.4494473
   }
 }
