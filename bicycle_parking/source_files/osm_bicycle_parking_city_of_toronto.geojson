@@ -95012,6 +95012,42 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "14",
+        "covered": "yes",
+        "meta_feature_last_updated": "2026-06-07T23:12:34+00:00",
+        "meta_osm_id": "node/13918589457"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.377339,
+          43.6436608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "14",
+        "covered": "yes",
+        "meta_feature_last_updated": "2026-06-07T23:12:34+00:00",
+        "meta_osm_id": "node/13918589458"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.377433,
+          43.6436117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
