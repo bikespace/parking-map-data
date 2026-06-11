@@ -50874,14 +50874,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-08-14T20:35:22+00:00",
+        "meta_feature_last_updated": "2026-06-10T22:44:28+00:00",
         "meta_osm_id": "node/13071496996"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5530617,
-          43.631221
+          -79.5531192,
+          43.6312393
         ]
       }
     },
@@ -50894,14 +50894,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-08-14T20:35:22+00:00",
+        "meta_feature_last_updated": "2026-06-10T22:44:28+00:00",
         "meta_osm_id": "node/13071496997"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5531106,
-          43.6312438
+          -79.5531597,
+          43.6312595
         ]
       }
     },
@@ -50914,14 +50914,14 @@
         "capacity": "2",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-08-14T20:35:22+00:00",
+        "meta_feature_last_updated": "2026-06-10T22:44:28+00:00",
         "meta_osm_id": "node/13071496998"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5531571,
-          43.6312631
+          -79.5532013,
+          43.6312807
         ]
       }
     },
@@ -94145,15 +94145,20 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2026-04-26T14:35:24+00:00",
+        "bicycle_parking": "safe_loops",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-06-10T22:15:24+00:00",
         "meta_osm_id": "node/13763786004"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5317352,
-          43.6633485
+          -79.5316901,
+          43.6633495
         ]
       }
     },
@@ -95043,6 +95048,26 @@
         "coordinates": [
           -79.377433,
           43.6436117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-06-10T22:15:24+00:00",
+        "meta_osm_id": "node/13927256988"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5316564,
+          43.6631005
         ]
       }
     },
