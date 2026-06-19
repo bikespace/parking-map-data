@@ -2726,8 +2726,8 @@
         "YEAR_OF_REPLACEMENT": 1999,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "130 VAUGHAN RD",
-        "LATITUDE": 43.6847713094,
-        "LONGITUDE": -79.4220013405,
+        "LATITUDE": 43.684767015700004,
+        "LONGITUDE": -79.42199971625,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -2753,8 +2753,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4220013405,
-          43.6847713094
+          -79.42199971625,
+          43.684767015700004
         ]
       }
     },
@@ -7864,7 +7864,7 @@
         "SITE_ADDRESS_x": "1024  O'CONNOR DR ",
         "WARD": 19,
         "SITE_ADDRESS_y": "1024 O'CONNOR DR",
-        "LATITUDE": 43.71001452,
+        "LATITUDE": 43.710014520499996,
         "LONGITUDE": -79.30983689774999,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
@@ -7892,7 +7892,7 @@
         "type": "Point",
         "coordinates": [
           -79.30983689774999,
-          43.71001452
+          43.710014520499996
         ]
       }
     },
@@ -22161,7 +22161,7 @@
         "YEAR_BUILT": 1951,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "995 O'CONNOR DR",
-        "LATITUDE": 43.7091878148,
+        "LATITUDE": 43.7091878153,
         "LONGITUDE": -79.30968394235,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
@@ -22189,7 +22189,7 @@
         "type": "Point",
         "coordinates": [
           -79.30968394235,
-          43.7091878148
+          43.7091878153
         ]
       }
     },
@@ -26319,7 +26319,7 @@
         "bike_parking_indoor": 10,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "210 VAUGHAN RD",
-        "LATITUDE": 43.687311357,
+        "LATITUDE": 43.687311358,
         "LONGITUDE": -79.423463821,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
@@ -26347,7 +26347,7 @@
         "type": "Point",
         "coordinates": [
           -79.423463821,
-          43.687311357
+          43.687311358
         ]
       }
     },
@@ -98443,7 +98443,7 @@
         "YEAR_BUILT": 1959,
         "YEAR_REGISTERED": 2024,
         "SITE_ADDRESS_y": "1020 O'CONNOR DR",
-        "LATITUDE": 43.709908517,
+        "LATITUDE": 43.709908518,
         "LONGITUDE": -79.309912608,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
@@ -98471,7 +98471,7 @@
         "type": "Point",
         "coordinates": [
           -79.309912608,
-          43.709908517
+          43.709908518
         ]
       }
     },
@@ -163597,7 +163597,7 @@
         "YEAR_BUILT": 1980,
         "YEAR_REGISTERED": 2021,
         "SITE_ADDRESS_y": "1016 O'CONNOR DR",
-        "LATITUDE": 43.709773867,
+        "LATITUDE": 43.709773868,
         "LONGITUDE": -79.310016125,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
@@ -163625,7 +163625,7 @@
         "type": "Point",
         "coordinates": [
           -79.310016125,
-          43.709773867
+          43.709773868
         ]
       }
     },
