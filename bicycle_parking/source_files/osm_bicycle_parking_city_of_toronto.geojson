@@ -95364,6 +95364,22 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "check_date": "2026-01-10",
+        "meta_feature_last_updated": "2026-06-19T03:27:06+00:00",
+        "meta_osm_id": "node/13951193837"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3383298,
+          43.6801479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
