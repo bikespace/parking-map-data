@@ -37,9 +37,12 @@ cycling_network_conflation/{region}/
 │   ├── municipal.geojson              # Raw municipal download
 │   └── osm.geojson                    # Raw OSM download
 ├── output_files/
-│   ├── matches.csv                    # Canonical many-to-many match table
-│   ├── municipal_with_matches.geojson # Municipal features + match metadata (for QGIS review)
-│   └── osm_with_matches.geojson       # OSM features + match metadata (for QGIS review)
+│   ├── matches.csv                    # Full match table for development/debugging
+│   └── combined_with_matches.geojson  # Municipal + OSM features with match metadata (primary QA file)
+├── display_files/
+│   ├── matches.csv                    # Clean match table for downstream consumption
+│   ├── municipal_with_matches.json    # Lookup: municipal_id → [osm_ids]
+│   └── osm_with_matches.json          # Lookup: osm compound key → [municipal_ids]
 └── statuses/
     └── conflation_status.csv
 ```
@@ -144,10 +147,12 @@ def run_region(config: RegionConfig, output_root: Path, archive: bool = False):
     # 2. Download OSM data via overpass      → save to source_files/osm.geojson
     # 3. Load override CSV (or empty df)
     # 4. Call match_cycling_network(...)
-    # 5. Build matches.csv
-    # 6. Build municipal_with_matches.geojson (add conflation_osm_way_ids, conflation_match_count, conflation_match_status)
-    # 7. Build osm_with_matches.geojson (add conflation_municipal_ids, conflation_match_count, conflation_match_status)
-    # 8. Save outputs, update StatusManager
+    # 5. Build output_files/matches.csv (full debug table, includes unmatched municipal rows)
+    # 6. Build output_files/combined_with_matches.geojson (single FeatureCollection; source + 3 conflation properties)
+    # 7. Build display_files/matches.csv (clean table: municipal_id + osm_way_id; overrides applied)
+    # 8. Build display_files/municipal_with_matches.json (lookup dict)
+    # 9. Build display_files/osm_with_matches.json (lookup dict)
+    # 10. Save outputs, update StatusManager
 
 if __name__ == "__main__":
     # argparse: --region toronto|brampton|ottawa  (default: all)
@@ -159,25 +164,71 @@ if __name__ == "__main__":
 
 ## Output File Details
 
-### `matches.csv`
-| Column            | Description                                          |
-| ----------------- | ---------------------------------------------------- |
-| `municipal_id`    | Value of `municipal_id_col` (SEGMENT_ID for Toronto) |
-| `osm_way_id`      | OSM way ID                                           |
-| `match_type`      | `auto` or `override`                                 |
-| `override_action` | `include` / `exclude` / null                         |
-| `flags`           | Comma-separated: `endpoint_only`                     |
+### `output_files/matches.csv`
+Full many-to-many table for development and debugging. Includes every row produced or considered by the algorithm, plus one row per unmatched municipal feature (blank OSM columns).
 
-### `municipal_with_matches.geojson`
-All original columns plus: `conflation_osm_way_ids` (semicolon-separated), `conflation_match_count` (int), `conflation_match_status` (`matched` / `unmatched` / `endpoint_only`).
+| Column                                    | Description                                        |
+| ----------------------------------------- | -------------------------------------------------- |
+| `{municipal_id_col}` (e.g. `SEGMENT_ID`) | Municipal feature ID                               |
+| `osm_way_id`                              | OSM way ID; blank for unmatched municipal features |
+| `match_type`                              | `auto`, `override`, or blank for unmatched         |
+| `override_action`                         | `include` / `exclude` / null                       |
+| `flags`                                   | Comma-separated: `endpoint_only`                   |
 
-### `osm_with_matches.geojson`
-All original OSM tags plus: `conflation_municipal_ids` (semicolon-separated), `conflation_match_count` (int), `conflation_match_status`.
+### `output_files/combined_with_matches.geojson`
+Single FeatureCollection merging all municipal and OSM features. Includes a top-level `municipal_id_key` field (e.g. `"SEGMENT_ID"`) alongside the standard `type` and `features` keys. Each feature retains all original properties from its source dataset plus:
+
+| Property                      | Description                                                                           |
+| ----------------------------- | ------------------------------------------------------------------------------------- |
+| `source`                      | `municipal` or `osm`                                                                  |
+| `conflation_algo_matches`     | Semicolon-separated IDs from the other dataset matched by the algorithm (pre-override)|
+| `conflation_override_excluded`| Semicolon-separated IDs that were auto-matched but removed by a manual override       |
+| `conflation_override_included`| Semicolon-separated IDs added by a manual override                                    |
+
+IDs in these properties are always from the opposite dataset (OSM IDs for municipal features, municipal IDs for OSM features).
+
+### `display_files/matches.csv`
+Clean many-to-many table for downstream consumption. Excludes matches removed by manual override; includes unmatched municipal features (blank `osm_way_id`) and matches added via manual override.
+
+The municipal column is named after the actual ID field rather than a generic name — e.g. `SEGMENT_ID` for Toronto. This makes the column self-documenting without repeating metadata in every row.
+
+| Column                          | Description                                          |
+| ------------------------------- | ---------------------------------------------------- |
+| `{municipal_id_col}` (e.g. `SEGMENT_ID`) | Municipal feature ID                      |
+| `osm_way_id`                    | OSM way ID; blank for unmatched municipal features   |
+
+### `display_files/municipal_with_matches.json`
+Lookup object mapping each municipal feature ID to a list of matching OSM feature IDs (empty list if no matches). No geometry or other properties. Includes a top-level `municipal_id_key` field naming the column used as the ID.
+
+```json
+{
+  "municipal_id_key": "SEGMENT_ID",
+  "matches": {
+    "SEGMENT_ID_1": ["way/123456789", "way/987654321"],
+    "SEGMENT_ID_2": []
+  }
+}
+```
+
+### `display_files/osm_with_matches.json`
+Lookup object mapping each OSM feature (compound `type/id` key, e.g. `way/123456789`) to a list of matching municipal IDs (empty list if no matches). No geometry or other properties. Includes a top-level `municipal_id_key` field for consistency with the municipal lookup file.
+
+```json
+{
+  "municipal_id_key": "SEGMENT_ID",
+  "matches": {
+    "way/123456789": ["SEGMENT_ID_1"],
+    "way/111111111": []
+  }
+}
+```
 
 ### `overrides/toronto_overrides.csv`
 ```csv
-municipal_id,osm_way_id,action,note
+{municipal_id_col},osm_way_id,action,note
 ```
+e.g. for Toronto: `SEGMENT_ID,osm_way_id,action,note`
+
 (Initially empty — user adds rows to force-include or force-exclude specific pairs.)
 
 ---
@@ -210,5 +261,5 @@ Integration test (marked `@pytest.mark.uses_external_resources`): full Toronto p
 
 1. `uv run pytest src/bikespace_data/cycling_network_conflation/tests/ -v` — all unit tests pass
 2. `uv run src/bikespace_data/cycling_network_conflation/update_conflation.py --region toronto` — produces all output files without error
-3. Open `municipal_with_matches.geojson` and `osm_with_matches.geojson` in QGIS; confirm matched pairs are spatially plausible
-4. Add a test override row to `overrides/toronto_overrides.csv`, re-run, confirm it appears in `matches.csv` with `match_type=override`
+3. Open `output_files/combined_with_matches.geojson` in QGIS; confirm matched pairs are spatially plausible; verify `conflation_algo_matches`, `conflation_override_excluded`, `conflation_override_included` properties are populated correctly
+4. Add a test override row to `overrides/toronto_overrides.csv`, re-run, confirm the excluded pair appears in `output_files/matches.csv` with `override_action=exclude` but is absent from `display_files/matches.csv`
