@@ -122,14 +122,23 @@ out geom;
 2. **Buffer** each municipal linestring by `config.buffer_m` → `municipal_buffers`
 3. **Core buffer** (endpoint exclusion): trim `config.endpoint_trim_m` from each end of each municipal linestring using Shapely's `substring`, then buffer → `municipal_core_buffers`
 4. **Spatial join** OSM ways against `municipal_buffers` to get candidate pairs (`sjoin`)
-5. **Angle filter**: for each candidate pair, compute bearing of each linestring (start→end, `atan2(dy, dx)`), compute acute angle between them; exclude pairs where acute angle > `config.orthogonality_threshold_deg`
+5. **Angle filter**: for each candidate pair:
+   1. Clip the OSM way to the municipal buffer: `clipped = osm_geom.intersection(municipal_buffer)`. If the result is a `MultiLineString`, use the longest sub-geometry. If `clipped.length < 2m`, skip angle filtering — treat as an endpoint contact and let the `endpoint_only` flag handle it.
+   2. Find the midpoint of the clipped segment and project it onto the municipal linestring to get normalized parameter `t = municipal_geom.project(midpoint, normalized=True)`.
+   3. Compute the **local municipal tangent** at `t`: sample `municipal_geom.interpolate(t ± 0.01, normalized=True)`, clamped to [0, 1], and compute `atan2(dy, dx)`.
+   4. Compute the bearing of the clipped OSM segment (`atan2(dy, dx)` from its start→end).
+   5. Compute the acute angle between these two bearings; exclude pairs where it exceeds `config.orthogonality_threshold_deg`.
+
+   This approach correctly handles Z-shaped or curved municipal linestrings (by comparing against the local tangent rather than the overall start→end bearing) and short OSM segments split at intersections (by comparing only the portion of the OSM way that overlaps the buffer, not the full way).
+
+   > **Fallback if needed**: If the algorithm underperforms on curved OSM segments after manual review, step 5.4 can be replaced with a PCA/least-squares orientation of the clipped segment's coordinate array (first principal component of the point set). This is more robust than start→end bearing for curved clipped geometries but adds a numpy dependency and complexity; try it only if the simpler bearing is insufficient.
 6. **Endpoint flag**: for each surviving pair, compute fraction of OSM way's length inside `municipal_core_buffer`; if < 10%, flag as `endpoint_only`
 7. **Apply overrides**: `action=exclude` removes pair; `action=include` adds pair with `match_type=override`
 8. **Return** DataFrame: `municipal_id, osm_way_id, match_type, flags`
 
 **Key functions**:
 ```python
-def compute_linestring_bearing(geom: LineString) -> float
+def compute_linestring_bearing(geom: LineString) -> float  # pass the clipped segment, not the full OSM way
 def acute_angle_between(b1: float, b2: float) -> float
 def core_buffer(geom: LineString, trim_m: float, buffer_m: float) -> Polygon
 def match_cycling_network(
