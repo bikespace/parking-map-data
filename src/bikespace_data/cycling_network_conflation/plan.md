@@ -178,12 +178,12 @@ Full many-to-many table for development and debugging. Includes every row produc
 ### `output_files/combined_with_matches.geojson`
 Single FeatureCollection merging all municipal and OSM features. Includes a top-level `municipal_id_key` field (e.g. `"SEGMENT_ID"`) alongside the standard `type` and `features` keys. Each feature retains all original properties from its source dataset plus:
 
-| Property                      | Description                                                                           |
-| ----------------------------- | ------------------------------------------------------------------------------------- |
-| `source`                      | `municipal` or `osm`                                                                  |
-| `conflation_algo_matches`     | Semicolon-separated IDs from the other dataset matched by the algorithm (pre-override)|
-| `conflation_override_excluded`| Semicolon-separated IDs that were auto-matched but removed by a manual override       |
-| `conflation_override_included`| Semicolon-separated IDs added by a manual override                                    |
+| Property                       | Description                                                                           |
+| ------------------------------ | ------------------------------------------------------------------------------------- |
+| `_source`                      | `municipal` or `osm`                                                                  |
+| `_conflation_algo_matches`     | Semicolon-separated IDs from the other dataset matched by the algorithm (pre-override)|
+| `_conflation_override_excluded`| Semicolon-separated IDs that were auto-matched but removed by a manual override       |
+| `_conflation_override_included`| Semicolon-separated IDs added by a manual override                                    |
 
 IDs in these properties are always from the opposite dataset (OSM IDs for municipal features, municipal IDs for OSM features).
 
@@ -261,5 +261,5 @@ Integration test (marked `@pytest.mark.uses_external_resources`): full Toronto p
 
 1. `uv run pytest src/bikespace_data/cycling_network_conflation/tests/ -v` — all unit tests pass
 2. `uv run src/bikespace_data/cycling_network_conflation/update_conflation.py --region toronto` — produces all output files without error
-3. Open `output_files/combined_with_matches.geojson` in QGIS; confirm matched pairs are spatially plausible; verify `conflation_algo_matches`, `conflation_override_excluded`, `conflation_override_included` properties are populated correctly
+3. Open `output_files/combined_with_matches.geojson` in QGIS; confirm matched pairs are spatially plausible; verify `_conflation_algo_matches`, `_conflation_override_excluded`, `_conflation_override_included` properties are populated correctly
 4. Add a test override row to `overrides/toronto_overrides.csv`, re-run, confirm the excluded pair appears in `output_files/matches.csv` with `override_action=exclude` but is absent from `display_files/matches.csv`
