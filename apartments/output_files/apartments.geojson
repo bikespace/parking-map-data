@@ -74646,7 +74646,7 @@
         "YEAR_BUILT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "40 LOWER RIVER ST.",
-        "LATITUDE": 43.656257859,
+        "LATITUDE": 43.6562578595,
         "LONGITUDE": -79.355848526,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -74674,7 +74674,7 @@
         "type": "Point",
         "coordinates": [
           -79.355848526,
-          43.656257859
+          43.6562578595
         ]
       }
     },
@@ -101634,7 +101634,7 @@
         "bike_parking_indoor": 20,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "565 SHERBOURNE ST",
-        "LATITUDE": 43.670031447,
+        "LATITUDE": 43.6700314475,
         "LONGITUDE": -79.375487343,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -101662,7 +101662,7 @@
         "type": "Point",
         "coordinates": [
           -79.375487343,
-          43.670031447
+          43.6700314475
         ]
       }
     },
