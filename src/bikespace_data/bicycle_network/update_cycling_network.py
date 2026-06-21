@@ -46,6 +46,7 @@ bike_lane_types = [
     "--",
     "---",
     "N/A",
+    "&lt;Null&gt;",
 ]
 
 cycling_network_schema_optional = pa.DataFrameSchema(
