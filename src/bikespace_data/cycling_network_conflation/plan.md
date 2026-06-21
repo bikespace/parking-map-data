@@ -16,6 +16,7 @@ cycling_network_conflation/
 ├── update_conflation.py       # CLI entry point; drives per-region pipeline
 ├── region_config.py           # RegionConfig dataclass + MunicipalSource types
 ├── spatial_match.py           # Core spatial matching algorithm
+├── osm_cycling_query.overpass # Default OSM query template (uses $wikidata_id placeholder)
 ├── regions/
 │   ├── __init__.py
 │   ├── toronto.py             # Toronto config + Pandera schema (fully implemented)
@@ -49,7 +50,7 @@ cycling_network_conflation/{region}/
 
 ---
 
-## `region_config.py` — Data Classes
+## `region_config.py` — Data Classes and Query Helper
 
 ```python
 @dataclass
@@ -76,7 +77,9 @@ class RegionConfig:
 
     # OSM data
     osm_wikidata_id: str               # e.g. "Q172" for Toronto
-    osm_cycling_query: str             # Overpass query body
+    # Query is built at runtime via build_osm_cycling_query(osm_wikidata_id).
+    # Pass osm_cycling_query_template to override the default osm_cycling_query.overpass file.
+    osm_cycling_query_template: Path | None = None
 
     # Spatial matching parameters
     crs: str                           # Local UTM CRS, e.g. "EPSG:32617"
@@ -88,6 +91,34 @@ class RegionConfig:
     override_csv: Path | None = None
 ```
 
+Also in `region_config.py`, a helper that builds the Overpass query from the template file using `string.Template` substitution (modelled on the [LTS-OSM pattern](https://github.com/bikespace/LTS-OSM)):
+
+```python
+from string import Template
+from pathlib import Path
+
+_DEFAULT_QUERY_TEMPLATE = Path(__file__).parent / "osm_cycling_query.overpass"
+
+def build_osm_cycling_query(
+    wikidata_id: str,
+    template_path: Path = _DEFAULT_QUERY_TEMPLATE,
+) -> str:
+    return Template(template_path.read_text()).substitute(wikidata_id=wikidata_id)
+```
+
+The default `osm_cycling_query.overpass` template (cycling-specific, crossings excluded):
+
+```
+area["wikidata"="$wikidata_id"]->.searchArea;
+(
+  way["highway"="cycleway"](area.searchArea);
+  way["cycleway"~"lane|track|shared_lane|opposite_lane|opposite_track|shared_use|sidepath|opposite"](area.searchArea);
+  way["bicycle"="designated"]["highway"~"path|footway|pedestrian"](area.searchArea);
+  way["bicycle_road"="yes"](area.searchArea);
+);
+out geom;
+```
+
 ---
 
 ## Toronto Region Config (`regions/toronto.py`)
@@ -97,18 +128,7 @@ class RegionConfig:
 - **Municipal ID col**: `SEGMENT_ID`
 - **OSM Wikidata**: `Q172`
 - **CRS**: `EPSG:32617`
-- **OSM query** (cycling-specific, crossings excluded):
-
-```
-area["wikidata"="Q172"]->.searchArea;
-(
-  way["highway"="cycleway"](area.searchArea);
-  way["cycleway"~"lane|track|shared_lane|opposite_lane|opposite_track|shared_use|sidepath|opposite"](area.searchArea);
-  way["bicycle"="designated"]["highway"~"path|footway|pedestrian"](area.searchArea);
-  way["bicycle_road"="yes"](area.searchArea);
-);
-out geom;
-```
+- **OSM query**: built via `build_osm_cycling_query("Q172")` using the default `osm_cycling_query.overpass` template (no override needed)
 
 ---
 
@@ -133,8 +153,8 @@ out geom;
 
    > **Fallback if needed**: If the algorithm underperforms on curved OSM segments after manual review, step 5.4 can be replaced with a PCA/least-squares orientation of the clipped segment's coordinate array (first principal component of the point set). This is more robust than start→end bearing for curved clipped geometries but adds a numpy dependency and complexity; try it only if the simpler bearing is insufficient.
 6. **Endpoint flag**: for each surviving pair, compute fraction of OSM way's length inside `municipal_core_buffer`; if < 10%, flag as `endpoint_only`
-7. **Apply overrides**: `action=exclude` removes pair; `action=include` adds pair with `match_type=override`
-8. **Return** DataFrame: `municipal_id, osm_way_id, match_type, flags`
+7. **Apply overrides**: for `action=exclude`, mark the pair with `override_action=exclude` (do not remove it); for `action=include`, add the pair with `match_type=override` and `override_action=include`
+8. **Return** DataFrame: `municipal_id, osm_way_id, match_type, override_action, flags` — includes all pairs (auto-matched, override-excluded, and override-included). The caller (`run_region`) filters for display output.
 
 **Key functions**:
 ```python
@@ -144,6 +164,8 @@ def core_buffer(geom: LineString, trim_m: float, buffer_m: float) -> Polygon
 def match_cycling_network(
     municipal_gdf, osm_gdf, config, overrides_df
 ) -> pd.DataFrame
+# Returns columns: municipal_id, osm_way_id (compound key e.g. "way/123456789"),
+# match_type ("auto" | "override" | null), override_action ("include" | "exclude" | null), flags
 ```
 
 ---
@@ -154,14 +176,27 @@ def match_cycling_network(
 def run_region(config: RegionConfig, output_root: Path, archive: bool = False):
     # 1. Download + validate municipal data  → save to source_files/municipal.geojson
     # 2. Download OSM data via overpass      → save to source_files/osm.geojson
-    # 3. Load override CSV (or empty df)
+    #    (Build query via build_osm_cycling_query(config.osm_wikidata_id, config.osm_cycling_query_template))
+    # 3. Load override CSV from overrides/{region}_overrides.csv.
+    #    If the file does not exist, generate a blank version with columns
+    #    ({municipal_id_col}, osm_way_id, action, note) and save it.
+    #    Validate: "action" column must contain only "include", "exclude", or null.
+    #    The municipal ID column must match config.municipal_id_col; raise an informative
+    #    ValueError if the column is missing or misnamed.
     # 4. Call match_cycling_network(...)
-    # 5. Build output_files/matches.csv (full debug table, includes unmatched municipal rows)
-    # 6. Build output_files/combined_with_matches.geojson (single FeatureCollection; source + 3 conflation properties)
-    # 7. Build display_files/matches.csv (clean table: municipal_id + osm_way_id; overrides applied)
-    # 8. Build display_files/municipal_with_matches.json (lookup dict)
-    # 9. Build display_files/osm_with_matches.json (lookup dict)
+    # 5. Build output_files/matches.csv (full debug table; all pairs including override-excluded;
+    #    includes unmatched municipal rows with blank OSM columns)
+    # 6. Build output_files/combined_with_matches.geojson (single FeatureCollection;
+    #    _source + 3 conflation properties; reproject to EPSG:4326 before writing)
+    # 7. Derive display_files/matches.csv from output_files/matches.csv:
+    #    drop match_type, override_action, flags; exclude rows where override_action == "exclude"
+    # 8. Derive display_files/municipal_with_matches.json from display_files/matches.csv
+    # 9. Derive display_files/osm_with_matches.json from display_files/matches.csv
     # 10. Save outputs, update StatusManager
+    #     (See bicycle_network/update_cycling_network.py for StatusManager initialization pattern)
+    # 11. If archive=True: copy all output files to a date-stamped subdirectory
+    #     (e.g. output_files/archive/YYYYMMDD_HHMMSS/); use parquet for tabular data.
+    #     (See existing modules for archive patterns)
 
 if __name__ == "__main__":
     # argparse: --region toronto|brampton|ottawa  (default: all)
@@ -176,16 +211,16 @@ if __name__ == "__main__":
 ### `output_files/matches.csv`
 Full many-to-many table for development and debugging. Includes every row produced or considered by the algorithm, plus one row per unmatched municipal feature (blank OSM columns).
 
-| Column                                    | Description                                        |
-| ----------------------------------------- | -------------------------------------------------- |
-| `{municipal_id_col}` (e.g. `SEGMENT_ID`) | Municipal feature ID                               |
-| `osm_way_id`                              | OSM way ID; blank for unmatched municipal features |
-| `match_type`                              | `auto`, `override`, or blank for unmatched         |
-| `override_action`                         | `include` / `exclude` / null                       |
-| `flags`                                   | Comma-separated: `endpoint_only`                   |
+| Column                                    | Description                                                           |
+| ----------------------------------------- | --------------------------------------------------------------------- |
+| `{municipal_id_col}` (e.g. `SEGMENT_ID`) | Municipal feature ID                                                  |
+| `osm_way_id`                              | OSM compound key (e.g. `way/123456789`); blank for unmatched rows     |
+| `match_type`                              | `auto`, `override`, or blank for unmatched                            |
+| `override_action`                         | `include` / `exclude` / null                                          |
+| `flags`                                   | Comma-separated: `endpoint_only`                                      |
 
 ### `output_files/combined_with_matches.geojson`
-Single FeatureCollection merging all municipal and OSM features. Includes a top-level `municipal_id_key` field (e.g. `"SEGMENT_ID"`) alongside the standard `type` and `features` keys. Each feature retains all original properties from its source dataset plus:
+Single FeatureCollection merging all municipal and OSM features, written in **EPSG:4326** (WGS84, per RFC 7946). Reproject from `config.crs` before writing. Includes a top-level `municipal_id_key` field (e.g. `"SEGMENT_ID"`) alongside the standard `type` and `features` keys. Each feature retains all original properties from its source dataset plus:
 
 | Property                       | Description                                                                           |
 | ------------------------------ | ------------------------------------------------------------------------------------- |
@@ -197,17 +232,17 @@ Single FeatureCollection merging all municipal and OSM features. Includes a top-
 IDs in these properties are always from the opposite dataset (OSM IDs for municipal features, municipal IDs for OSM features).
 
 ### `display_files/matches.csv`
-Clean many-to-many table for downstream consumption. Excludes matches removed by manual override; includes unmatched municipal features (blank `osm_way_id`) and matches added via manual override.
+Clean many-to-many table for downstream consumption. Derived from `output_files/matches.csv` by dropping `match_type`, `override_action`, and `flags`, and excluding rows where `override_action == "exclude"`. Includes unmatched municipal features (blank `osm_way_id`) and matches added via manual override.
 
 The municipal column is named after the actual ID field rather than a generic name — e.g. `SEGMENT_ID` for Toronto. This makes the column self-documenting without repeating metadata in every row.
 
-| Column                          | Description                                          |
-| ------------------------------- | ---------------------------------------------------- |
-| `{municipal_id_col}` (e.g. `SEGMENT_ID`) | Municipal feature ID                      |
-| `osm_way_id`                    | OSM way ID; blank for unmatched municipal features   |
+| Column                          | Description                                                        |
+| ------------------------------- | ------------------------------------------------------------------ |
+| `{municipal_id_col}` (e.g. `SEGMENT_ID`) | Municipal feature ID                                   |
+| `osm_way_id`                    | OSM compound key (e.g. `way/123456789`); blank for unmatched rows |
 
 ### `display_files/municipal_with_matches.json`
-Lookup object mapping each municipal feature ID to a list of matching OSM feature IDs (empty list if no matches). No geometry or other properties. Includes a top-level `municipal_id_key` field naming the column used as the ID.
+Lookup object mapping each municipal feature ID to a list of matching OSM compound keys (empty list if no matches). No geometry or other properties. Includes a top-level `municipal_id_key` field naming the column used as the ID. Derived from `display_files/matches.csv`.
 
 ```json
 {
@@ -220,7 +255,9 @@ Lookup object mapping each municipal feature ID to a list of matching OSM featur
 ```
 
 ### `display_files/osm_with_matches.json`
-Lookup object mapping each OSM feature (compound `type/id` key, e.g. `way/123456789`) to a list of matching municipal IDs (empty list if no matches). No geometry or other properties. Includes a top-level `municipal_id_key` field for consistency with the municipal lookup file.
+Lookup object mapping each OSM compound key (e.g. `way/123456789`) to a list of matching municipal IDs. Covers all OSM features downloaded during the analysis run — features that were considered but not matched have an empty list. Features absent from the download (e.g. ways created after the run) simply won't appear; this distinguishes "considered and unmatched" from "not yet in scope." Includes a top-level `municipal_id_key` field for consistency. Derived from `display_files/matches.csv` (all OSM IDs from the OSM source file, not just those that appear in matches).
+
+**Note:** Evaluate file size after the first Toronto run. If the file is too large for downstream use, it is acceptable to cull keys with empty match lists; document this decision in a top-level `"culled_empty_matches": true` field.
 
 ```json
 {
@@ -238,16 +275,19 @@ Lookup object mapping each OSM feature (compound `type/id` key, e.g. `way/123456
 ```
 e.g. for Toronto: `SEGMENT_ID,osm_way_id,action,note`
 
-(Initially empty — user adds rows to force-include or force-exclude specific pairs.)
+`osm_way_id` values are compound keys (e.g. `way/123456789`). `action` must be `include` or `exclude`.
+
+If the file does not exist, it is auto-generated as a blank CSV with the correct column headers (using `config.municipal_id_col` for the municipal ID column). Initially empty — user adds rows to force-include or force-exclude specific pairs.
 
 ---
 
 ## Reusing Existing Code
 
-- `bikespace_data.utilities.StatusManager` — track per-region last-updated timestamps
+- `bikespace_data.utilities.StatusManager` — track per-region last-updated timestamps. See `bicycle_network/update_cycling_network.py` for the initialization pattern (status_source URL, dataset_name conventions).
 - `bikespace_data.resources.toronto_open_data.request_tod_gdf` — download Toronto municipal data
 - `overpass.API` setup pattern from `bicycle_parking/wrappers.py:165-197` — replicate (don't import) to support `OVERPASS_API_URL` env var and correct User-Agent header
 - `cycling_network_schema` and `bike_lane_types` from `bicycle_network/update_cycling_network.py` — import and extend
+- Archive pattern — see existing modules for how `archive=True` is implemented (date-stamped subdirectory, parquet for tabular data)
 
 ---
 
