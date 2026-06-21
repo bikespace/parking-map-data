@@ -46,6 +46,7 @@ markers = [
 [tool.coverage.run]
 omit = [
     "src/bikespace_data/bicycle_parking/analysis",
+    "src/bikespace_data/cycling_network_conflation/regions/*",
     ]
 
 [tool.coverage.report]
