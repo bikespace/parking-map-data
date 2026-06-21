@@ -129,6 +129,13 @@ def _build_conflation_props(
     }
 
 
+def _is_na(v) -> bool:
+    try:
+        return bool(pd.isna(v))
+    except (TypeError, ValueError):
+        return False
+
+
 def _build_combined_geojson(
     municipal_gdf: gpd.GeoDataFrame,
     osm_gdf: gpd.GeoDataFrame,
@@ -159,7 +166,7 @@ def _build_combined_geojson(
             {
                 "type": "Feature",
                 "geometry": row.geometry.__geo_interface__,
-                "properties": {k: (None if pd.isna(v) else v) for k, v in props.items()},
+                "properties": {k: (None if _is_na(v) else v) for k, v in props.items()},
             }
         )
 
@@ -190,7 +197,7 @@ def _build_combined_geojson(
             {
                 "type": "Feature",
                 "geometry": row.geometry.__geo_interface__ if row.geometry else None,
-                "properties": {k: (None if (not isinstance(v, str) and pd.isna(v)) else v) for k, v in props.items()},
+                "properties": {k: (None if _is_na(v) else v) for k, v in props.items()},
             }
         )
 
