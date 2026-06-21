@@ -1,3 +1,5 @@
+# STUB: this region config is incomplete and not registered in update_conflation.py
+
 from pathlib import Path
 
 import pandera.pandas as pa
