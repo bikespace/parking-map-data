@@ -140,7 +140,7 @@ out geom;
 
 1. **Project** both GDFs to `config.crs` (UTM) for metre-accurate distance calculations
 2. **Buffer** each municipal linestring by `config.buffer_m` → `municipal_buffers`
-3. **Core buffer** (endpoint exclusion): trim `config.endpoint_trim_m` from each end of each municipal linestring using Shapely's `substring`, then buffer → `municipal_core_buffers`
+3. **Core buffer** (endpoint exclusion): trim `config.endpoint_trim_m` from each end of each municipal linestring using Shapely's `substring`, then buffer → `municipal_core_buffers`. If a linestring is shorter than `2 * endpoint_trim_m`, skip the core buffer for that segment (set `municipal_core_buffer = None`); any OSM overlap with such a segment will be flagged `endpoint_only` in step 6.
 4. **Spatial join** OSM ways against `municipal_buffers` to get candidate pairs (`sjoin`)
 5. **Angle filter**: for each candidate pair:
    1. Clip the OSM way to the municipal buffer: `clipped = osm_geom.intersection(municipal_buffer)`. If the result is a `MultiLineString`, use the longest sub-geometry. If `clipped.length < 2m`, skip angle filtering — treat as an endpoint contact and let the `endpoint_only` flag handle it.
