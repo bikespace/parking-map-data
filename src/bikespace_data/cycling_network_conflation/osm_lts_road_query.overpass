@@ -1,5 +1,7 @@
 area["wikidata"="$wikidata_id"]->.searchArea;
 (
-  way["highway"]["area"!~"yes"]["access"!~"private"]["highway"!~"abandoned|bus_guideway|corridor|elevator|escalator|motor|planned|platform|proposed|raceway"]["bicycle"!~"no"]["service"!~"private"](area.searchArea);
+  way["highway"]["area"!~"yes"]["access"!~"private"]["highway"!~"abandoned|bus_guideway|corridor|elevator|escalator|footway|motor|planned|platform|proposed|raceway"]["bicycle"!~"no"]["service"!~"private"](area.searchArea);
+  way["highway"="footway"]["bicycle"~"designated|yes"](area.searchArea);
+  way["highway"="footway"]["cycleway"](area.searchArea);
 );
 out geom;
