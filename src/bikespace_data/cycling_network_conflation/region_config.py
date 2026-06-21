@@ -4,7 +4,7 @@ from string import Template
 
 import pandera as pa
 
-_DEFAULT_QUERY_TEMPLATE = Path(__file__).parent / "osm_cycling_query.overpass"
+_DEFAULT_QUERY_TEMPLATE = Path(__file__).parent / "osm_lts_road_query.overpass"
 
 
 @dataclass
@@ -34,7 +34,7 @@ class RegionConfig:
 
     crs: str
 
-    osm_cycling_query_template: Path | None = None
+    osm_query_template: Path | None = None
     buffer_m: float = 15.0
     orthogonality_threshold_deg: float = 45.0
     endpoint_trim_m: float = 10.0

@@ -58,6 +58,9 @@ def match_cycling_network(
     muni = municipal_gdf.to_crs(config.crs).copy()
     osm = osm_gdf.to_crs(config.crs).copy()
 
+    if "_related_highway" in osm.columns:
+        osm = osm[~osm["_related_highway"].fillna(False)]
+
     muni["_buffer"] = muni.geometry.buffer(config.buffer_m)
     muni["_core_buffer"] = muni.geometry.apply(
         lambda g: core_buffer(g, config.endpoint_trim_m, config.buffer_m)

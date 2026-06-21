@@ -1,0 +1,5 @@
+area["wikidata"="$wikidata_id"]->.searchArea;
+(
+  way["highway"]["area"!~"yes"]["access"!~"private"]["highway"!~"abandoned|bus_guideway|corridor|elevator|escalator|motor|planned|platform|proposed|raceway"]["bicycle"!~"no"]["service"!~"private"](area.searchArea);
+);
+out geom;

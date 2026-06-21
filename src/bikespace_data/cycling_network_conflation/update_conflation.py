@@ -28,11 +28,43 @@ _REGIONS: dict[str, RegionConfig] = {
 }
 
 
+def _tag_series(gdf: gpd.GeoDataFrame, tag_key: str) -> pd.Series:
+    """Extract an OSM tag value from the nested 'tags' column (or a flattened column as fallback)."""
+    if "tags" in gdf.columns:
+        return gdf["tags"].apply(
+            lambda t: t.get(tag_key, "") if isinstance(t, dict) else ""
+        )
+    if tag_key in gdf.columns:
+        return gdf[tag_key].fillna("").astype(str)
+    return pd.Series("", index=gdf.index, dtype=str)
+
+
+def _is_cycling_way(gdf: gpd.GeoDataFrame) -> pd.Series:
+    """Return True for ways that match the cycling-specific OSM criteria."""
+    highway = _tag_series(gdf, "highway")
+    cycleway = _tag_series(gdf, "cycleway")
+    bicycle = _tag_series(gdf, "bicycle")
+    bicycle_road = _tag_series(gdf, "bicycle_road")
+    cycling_values = {
+        "lane", "track", "shared_lane", "opposite_lane",
+        "opposite_track", "shared_use", "sidepath", "opposite",
+    }
+    path_values = {"path", "footway", "pedestrian"}
+    return (
+        (highway == "cycleway")
+        | cycleway.isin(cycling_values)
+        | ((bicycle == "designated") & highway.isin(path_values))
+        | (bicycle_road == "yes")
+    )
+
+
 @retry(
     wait=wait_chain(wait_fixed(60), wait_fixed(120), wait_fixed(300)),
     stop=stop_after_attempt(3),
 )
-def _download_osm_gdf(config: RegionConfig) -> tuple[gpd.GeoDataFrame, datetime]:
+def _download_osm_gdf(
+    config: RegionConfig, municipal_gdf: gpd.GeoDataFrame
+) -> tuple[gpd.GeoDataFrame, datetime]:
     overpass_default = "https://overpass-api.de/api/interpreter"
     load_dotenv(override=False)
     api_url = os.environ.get("OVERPASS_API_URL", overpass_default)
@@ -49,7 +81,7 @@ def _download_osm_gdf(config: RegionConfig) -> tuple[gpd.GeoDataFrame, datetime]
         },
     )
 
-    template_path = config.osm_cycling_query_template
+    template_path = config.osm_query_template
     query = build_osm_cycling_query(config.osm_wikidata_id, template_path) if template_path else build_osm_cycling_query(config.osm_wikidata_id)
 
     response = api.get(query, responseformat="geojson", verbosity="geom")
@@ -60,6 +92,25 @@ def _download_osm_gdf(config: RegionConfig) -> tuple[gpd.GeoDataFrame, datetime]
     osm_gdf = gpd.GeoDataFrame.from_features(features, crs="EPSG:4326")
     if ids:
         osm_gdf.index = ids
+
+    # Classify: cycling ways are always kept; lts_road ways are kept only if they
+    # overlap a municipal buffer zone (so the output stays focused on relevant roads)
+    osm_gdf["_query"] = _is_cycling_way(osm_gdf).map({True: "cycling", False: "lts_road"})
+
+    muni_proj = municipal_gdf.to_crs(config.crs)
+    buffer_union = muni_proj.geometry.buffer(config.buffer_m).union_all()
+    buffer_wgs84 = gpd.GeoSeries([buffer_union], crs=config.crs).to_crs("EPSG:4326").iloc[0]
+    is_lts = (osm_gdf["_query"] == "lts_road").to_numpy()
+    keep = ~is_lts
+    if is_lts.any():
+        keep[is_lts] = osm_gdf[is_lts].geometry.intersects(buffer_wgs84).to_numpy()
+    osm_gdf = osm_gdf[keep].copy()
+
+    # Flag roads where the cycling infrastructure is mapped as a separate parallel way;
+    # these roads should appear in the output but not match municipal cycling features
+    cycleway_col = _tag_series(osm_gdf, "cycleway")
+    cycleway_both_col = _tag_series(osm_gdf, "cycleway:both")
+    osm_gdf["_related_highway"] = (cycleway_col == "separate") | (cycleway_both_col == "separate")
 
     last_updated = datetime.now(timezone.utc)
     return osm_gdf, last_updated
@@ -256,7 +307,7 @@ def run_region(
 
     # 2. Download OSM data
     print(f"[{config.name}] Downloading OSM cycling network data...")
-    osm_gdf, osm_last_updated = _download_osm_gdf(config)
+    osm_gdf, osm_last_updated = _download_osm_gdf(config, municipal_gdf)
 
     with open(source_dir / "osm.geojson", "w") as f:
         f.write(osm_gdf.to_json(na="drop", drop_id=True, indent=2))

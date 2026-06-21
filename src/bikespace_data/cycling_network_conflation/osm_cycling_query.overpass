@@ -1,8 +1,0 @@
-area["wikidata"="$wikidata_id"]->.searchArea;
-(
-  way["highway"="cycleway"](area.searchArea);
-  way["cycleway"~"lane|track|shared_lane|opposite_lane|opposite_track|shared_use|sidepath|opposite"](area.searchArea);
-  way["bicycle"="designated"]["highway"~"path|footway|pedestrian"](area.searchArea);
-  way["bicycle_road"="yes"](area.searchArea);
-);
-out geom;
