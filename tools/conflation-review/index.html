@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conflation Review — Toronto Cycling Network</title>
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="topbar">
+  <label>
+    <input type="checkbox" id="filter-municipal" checked />
+    Show municipal
+  </label>
+  <label>
+    <input type="checkbox" id="filter-osm" checked />
+    Show OSM
+  </label>
+
+  <div class="sep"></div>
+
+  <div id="nav-group">
+    <span id="feature-counter">Loading…</span>
+    <button id="btn-prev">&#9664; Prev</button>
+    <button id="btn-next">Next &#9654;</button>
+    <input type="text" id="search-input" placeholder="Search SEGMENT_ID…" autocomplete="off" spellcheck="false" />
+  </div>
+</div>
+
+<div id="main">
+  <div id="map-container">
+    <div id="map"></div>
+    <div id="loading-overlay">
+      <div id="loading-msg">Initializing…</div>
+      <progress id="loading-progress" max="1"></progress>
+    </div>
+  </div>
+
+  <div id="panel">
+    <!-- populated by app.js -->
+  </div>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
