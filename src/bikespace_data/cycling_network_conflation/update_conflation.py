@@ -54,7 +54,8 @@ def _download_osm_gdf(config: RegionConfig) -> tuple[gpd.GeoDataFrame, datetime]
     response = api.get(query, responseformat="geojson", verbosity="geom")
     features = response.get("features", [])
 
-    ids = [f["id"] for f in features]
+    # The overpass library places OSM id/type in properties, not at the feature level
+    ids = [f["properties"]["id"] for f in features]
     osm_gdf = gpd.GeoDataFrame.from_features(features, crs="EPSG:4326")
     if ids:
         osm_gdf.index = ids
