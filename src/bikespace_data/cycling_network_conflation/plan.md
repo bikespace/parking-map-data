@@ -152,7 +152,11 @@ out geom;
    This approach correctly handles Z-shaped or curved municipal linestrings (by comparing against the local tangent rather than the overall start→end bearing) and short OSM segments split at intersections (by comparing only the portion of the OSM way that overlaps the buffer, not the full way).
 
    > **Fallback if needed**: If the algorithm underperforms on curved OSM segments after manual review, step 5.4 can be replaced with a PCA/least-squares orientation of the clipped segment's coordinate array (first principal component of the point set). This is more robust than start→end bearing for curved clipped geometries but adds a numpy dependency and complexity; try it only if the simpler bearing is insufficient.
-6. **Endpoint flag**: for each surviving pair, compute fraction of OSM way's length inside `municipal_core_buffer`; if < 10%, flag as `endpoint_only`
+6. **Endpoint flag**: for each surviving pair, flag as `endpoint_only` if `core_overlap / buffer_overlap < 10%`, where:
+   - `buffer_overlap` = length of OSM way clipped to `municipal_buffer` (the `clipped` segment already computed in step 5)
+   - `core_overlap` = length of OSM way clipped to `municipal_core_buffer`
+
+   Using `buffer_overlap` as the denominator (not the full OSM way length) ensures the flag correctly answers "of the portion of this OSM way that overlaps the municipal feature at all, is most of it confined to the endpoint zone?" A long OSM way that genuinely parallels a short municipal segment will have a high core/buffer ratio and will not be incorrectly flagged.
 7. **Apply overrides**: for `action=exclude`, mark the pair with `override_action=exclude` (do not remove it); for `action=include`, add the pair with `match_type=override` and `override_action=include`
 8. **Return** DataFrame: `municipal_id, osm_way_id, match_type, override_action, flags` — includes all pairs (auto-matched, override-excluded, and override-included). The caller (`run_region`) filters for display output.
 
