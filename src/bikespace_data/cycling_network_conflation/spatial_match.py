@@ -85,8 +85,7 @@ def match_cycling_network(
         muni_id = row[mid_col]
 
         osm_geom = row.geometry
-        muni_geom_raw = muni.loc[muni[mid_col] == muni_id, "geometry"].iloc[0]
-        muni_geom = linemerge(muni_geom_raw) if isinstance(muni_geom_raw, MultiLineString) else muni_geom_raw
+        muni_geom = muni.loc[muni[mid_col] == muni_id, "geometry"].iloc[0]
         muni_buffer = muni.loc[muni[mid_col] == muni_id, "_buffer"].iloc[0]
         muni_core_buf = muni.loc[muni[mid_col] == muni_id, "_core_buffer"].iloc[0]
 
@@ -98,7 +97,7 @@ def match_cycling_network(
 
         buffer_overlap = clipped.length
 
-        if buffer_overlap >= 2.0 and not isinstance(muni_geom, MultiLineString):
+        if buffer_overlap >= 2.0 and not isinstance(muni_geom, MultiLineString):  # safety: skip unmerged disconnected segments
             midpoint = clipped.interpolate(0.5, normalized=True)
             t = muni_geom.project(midpoint, normalized=True)
             muni_bearing = _local_tangent(muni_geom, t)

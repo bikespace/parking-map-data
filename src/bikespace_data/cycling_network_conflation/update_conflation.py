@@ -7,6 +7,7 @@ from pathlib import Path
 import geopandas as gpd
 import overpass
 import pandas as pd
+from shapely.ops import linemerge
 from dotenv import load_dotenv
 from tenacity import retry, stop_after_attempt, wait_chain, wait_fixed
 
@@ -239,6 +240,9 @@ def run_region(
         raise ValueError(f"Unknown municipal source type: {type(config.municipal_source)}")
 
     config.municipal_schema.validate(municipal_gdf, lazy=True)
+
+    municipal_gdf = municipal_gdf.copy()
+    municipal_gdf["geometry"] = municipal_gdf.geometry.apply(linemerge)
 
     with open(source_dir / "municipal.geojson", "w") as f:
         f.write(municipal_gdf.to_json(na="drop", drop_id=True, indent=2))
