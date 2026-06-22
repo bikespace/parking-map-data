@@ -92,6 +92,7 @@ def _download_osm_gdf(
     osm_gdf = gpd.GeoDataFrame.from_features(features, crs="EPSG:4326")
     if ids:
         osm_gdf.index = ids
+    osm_gdf = osm_gdf[~osm_gdf.index.duplicated(keep="first")]
 
     # Classify: cycling ways are always kept; lts_road ways are kept only if they
     # overlap a municipal buffer zone (so the output stays focused on relevant roads)
