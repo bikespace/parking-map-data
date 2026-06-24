@@ -95610,6 +95610,54 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "12",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2skk7ad",
+        "operator": "Trinity College",
+        "operator:type": "public",
+        "quantity": "6",
+        "meta_feature_last_updated": "2026-06-23T23:01:24+00:00",
+        "meta_osm_id": "node/13960995160"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3964651,
+          43.6656683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "18",
+        "covered": "no",
+        "fee": "no",
+        "image": "https://flic.kr/p/2skqH8k",
+        "operator": "Trinity College",
+        "operator:type": "public",
+        "quantity": "9",
+        "meta_feature_last_updated": "2026-06-23T23:01:24+00:00",
+        "meta_osm_id": "node/13960995161"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3963887,
+          43.6656909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
