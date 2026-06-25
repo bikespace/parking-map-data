@@ -12486,8 +12486,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
         "capacity": "15",
-        "layer": "1",
-        "meta_feature_last_updated": "2019-01-18T23:53:18+00:00",
+        "layer": "0",
+        "meta_feature_last_updated": "2026-06-25T05:32:51+00:00",
         "meta_osm_id": "node/6219731665"
       },
       "geometry": {
@@ -95652,6 +95652,25 @@
         "coordinates": [
           -79.3963887,
           43.6656909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "safe_loops",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-06-24T18:56:49+00:00",
+        "meta_osm_id": "node/13963001071"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5452963,
+          43.6818884
         ]
       }
     },
