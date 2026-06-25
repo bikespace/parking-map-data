@@ -54394,8 +54394,8 @@
         "YEAR_BUILT": 1991,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1315 NEILSON RD",
-        "LATITUDE": 43.807786956,
-        "LONGITUDE": -79.2188121812,
+        "LATITUDE": 43.8077826465,
+        "LONGITUDE": -79.21881058459999,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -54421,8 +54421,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2188121812,
-          43.807786956
+          -79.21881058459999,
+          43.8077826465
         ]
       }
     },
@@ -100506,9 +100506,8 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 5,
-        "SITE_ADDRESS_y": "1311 PAPE AVE",
-        "LATITUDE": 43.6949148743,
-        "LONGITUDE": -79.350635287,
+        "LATITUDE": 43.6948605,
+        "LONGITUDE": -79.3506946,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -100534,8 +100533,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.350635287,
-          43.6949148743
+          -79.3506946,
+          43.6948605
         ]
       }
     },
