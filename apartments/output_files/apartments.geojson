@@ -139200,13 +139200,14 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 205,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.6513256,
-        "LONGITUDE": -79.3462809,
-        "ward_code": "14",
-        "ward_name": "Toronto-Danforth",
-        "ward_full": "Toronto-Danforth (14)",
-        "neighbourhood_number": "070",
-        "neighbourhood_name": "South Riverdale",
+        "SITE_ADDRESS_y": "99 LAKE SHORE BLVD E",
+        "LATITUDE": 43.64495890258149,
+        "LONGITUDE": -79.37130545284211,
+        "ward_code": "10",
+        "ward_name": "Spadina-Fort York",
+        "ward_full": "Spadina-Fort York (10)",
+        "neighbourhood_number": "166",
+        "neighbourhood_name": "St Lawrence-East Bayfront-The Islands",
         "neighbourhood_classification": "Not an NIA or Emerging Neighbourhood",
         "neighbourhood_classification_code": "NA",
         "BICYCLE_ZONE": 1,
@@ -139227,8 +139228,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3462809,
-          43.6513256
+          -79.37130545284211,
+          43.64495890258149
         ]
       }
     },
