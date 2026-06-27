@@ -346,6 +346,23 @@ def test_build_conflation_props_override_include():
     assert props["_conflation_override_included"] == "way/1"
 
 
+def test_build_conflation_props_endpoint_only_match():
+    """_build_conflation_props separates endpoint_only matches from plain algo matches.
+
+    A row flagged 'endpoint_only' should appear in _conflation_endpoint_only_matches
+    and NOT in _conflation_algo_matches.
+    """
+    df = pd.DataFrame([
+        {"SEGMENT_ID": 1, "osm_way_id": "way/1", "match_type": "auto", "override_action": None, "flags": "endpoint_only"},
+        {"SEGMENT_ID": 1, "osm_way_id": "way/2", "match_type": "auto", "override_action": None, "flags": ""},
+    ])
+    props = _build_conflation_props(
+        1, "SEGMENT_ID", df, source_col="municipal", match_col="osm_way_id"
+    )
+    assert props["_conflation_algo_matches"] == "way/2"
+    assert props["_conflation_endpoint_only_matches"] == "way/1"
+
+
 def test_build_conflation_props_no_matches():
     """_build_conflation_props returns empty strings for a feature with no matches.
 

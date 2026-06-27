@@ -159,8 +159,17 @@ def _build_conflation_props(
     """Return the three _conflation_* property values for one feature."""
     rows = matches_df[matches_df[id_col] == feature_id]
 
-    algo_ids = rows.loc[
-        (rows["match_type"] == "auto") & (rows["override_action"] != "exclude"),
+    auto_rows = rows.loc[
+        (rows["match_type"] == "auto") & (rows["override_action"] != "exclude")
+    ]
+
+    algo_ids = auto_rows.loc[
+        auto_rows["flags"].isna() | (auto_rows["flags"] == ""),
+        match_col,
+    ].dropna().tolist()
+
+    endpoint_only_ids = auto_rows.loc[
+        auto_rows["flags"] == "endpoint_only",
         match_col,
     ].dropna().tolist()
 
@@ -176,6 +185,7 @@ def _build_conflation_props(
 
     return {
         "_conflation_algo_matches": ";".join(str(x) for x in algo_ids),
+        "_conflation_endpoint_only_matches": ";".join(str(x) for x in endpoint_only_ids),
         "_conflation_override_excluded": ";".join(str(x) for x in excluded_ids),
         "_conflation_override_included": ";".join(str(x) for x in included_ids),
     }
@@ -230,8 +240,15 @@ def _build_combined_geojson(
 
         osm_rows = matches_df[matches_df["osm_way_id"] == osm_way_id]
 
-        algo_muni_ids = osm_rows.loc[
-            (osm_rows["match_type"] == "auto") & (osm_rows["override_action"] != "exclude"),
+        auto_osm_rows = osm_rows.loc[
+            (osm_rows["match_type"] == "auto") & (osm_rows["override_action"] != "exclude")
+        ]
+        algo_muni_ids = auto_osm_rows.loc[
+            auto_osm_rows["flags"].isna() | (auto_osm_rows["flags"] == ""),
+            mid_col,
+        ].dropna().tolist()
+        endpoint_only_muni_ids = auto_osm_rows.loc[
+            auto_osm_rows["flags"] == "endpoint_only",
             mid_col,
         ].dropna().tolist()
         excluded_muni_ids = osm_rows.loc[
@@ -242,6 +259,7 @@ def _build_combined_geojson(
         ].dropna().tolist()
 
         props["_conflation_algo_matches"] = ";".join(str(x) for x in algo_muni_ids)
+        props["_conflation_endpoint_only_matches"] = ";".join(str(x) for x in endpoint_only_muni_ids)
         props["_conflation_override_excluded"] = ";".join(str(x) for x in excluded_muni_ids)
         props["_conflation_override_included"] = ";".join(str(x) for x in included_muni_ids)
 
