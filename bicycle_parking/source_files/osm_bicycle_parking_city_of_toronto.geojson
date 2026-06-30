@@ -49119,18 +49119,18 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "capacity": "2",
-        "covered": "yes",
+        "bicycle_parking": "wave",
+        "capacity": "3",
+        "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-22T19:38:30+00:00",
+        "meta_feature_last_updated": "2026-06-29T19:40:29+00:00",
         "meta_osm_id": "node/13017854122"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5193356,
-          43.6614654
+          -79.5194796,
+          43.6615231
         ]
       }
     },
@@ -49138,18 +49138,18 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "capacity": "2",
-        "covered": "yes",
+        "bicycle_parking": "wave",
+        "capacity": "3",
+        "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-07-22T19:38:30+00:00",
+        "meta_feature_last_updated": "2026-06-29T19:40:29+00:00",
         "meta_osm_id": "node/13017854123"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5193277,
-          43.6614654
+          -79.5194765,
+          43.6615157
         ]
       }
     },
@@ -75989,7 +75989,8 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2025-10-18T00:48:43+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-06-29T20:10:58+00:00",
         "meta_osm_id": "node/13239959290"
       },
       "geometry": {
@@ -76004,7 +76005,8 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2025-10-18T00:48:43+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-06-29T20:11:01+00:00",
         "meta_osm_id": "node/13239959292"
       },
       "geometry": {
