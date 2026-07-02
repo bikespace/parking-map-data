@@ -80572,8 +80572,8 @@
         "YEAR_BUILT": 1928,
         "YEAR_REGISTERED": 2022,
         "SITE_ADDRESS_y": "142 WELLESLEY STREET E",
-        "LATITUDE": 43.6667305707,
-        "LONGITUDE": -79.3767458291,
+        "LATITUDE": 43.666726277,
+        "LONGITUDE": -79.376744213,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -80599,8 +80599,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3767458291,
-          43.6667305707
+          -79.376744213,
+          43.666726277
         ]
       }
     },
