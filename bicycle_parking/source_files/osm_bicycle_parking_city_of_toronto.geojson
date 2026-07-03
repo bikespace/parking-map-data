@@ -38348,11 +38348,11 @@
         "capacity": "2",
         "covered": "yes",
         "fee": "no",
-        "operator": "Toronto Transit Comission",
+        "operator": "Toronto Transit Commission",
         "operator:type": "public",
         "quantity": "1",
         "ref:open.toronto.ca": "no",
-        "meta_feature_last_updated": "2024-08-19T23:49:14+00:00",
+        "meta_feature_last_updated": "2026-07-02T20:40:01+00:00",
         "meta_osm_id": "node/12121255022"
       },
       "geometry": {
@@ -95700,6 +95700,158 @@
         "coordinates": [
           -79.3907897,
           43.6525948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-02T23:28:01+00:00",
+        "meta_osm_id": "node/13984315761"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5470147,
+          43.6783423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-02T23:28:01+00:00",
+        "meta_osm_id": "node/13984315762"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5470287,
+          43.6783398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-02T23:28:01+00:00",
+        "meta_osm_id": "node/13984315763"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5470433,
+          43.6783363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-02T23:28:01+00:00",
+        "meta_osm_id": "node/13984315764"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5470579,
+          43.6783335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-02T23:28:01+00:00",
+        "meta_osm_id": "node/13984315765"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5470728,
+          43.6783307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-02T23:28:01+00:00",
+        "meta_osm_id": "node/13984315766"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5470869,
+          43.6783274
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-02T23:28:01+00:00",
+        "meta_osm_id": "node/13984315767"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5471031,
+          43.6783245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-02T23:28:01+00:00",
+        "meta_osm_id": "node/13984315768"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5471154,
+          43.6783223
         ]
       }
     },
