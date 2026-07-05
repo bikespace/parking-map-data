@@ -2641,14 +2641,14 @@
         "amenity": "bicycle_parking",
         "description": "Ring post",
         "operator": "City of Toronto",
-        "meta_feature_last_updated": "2025-02-17T19:58:52+00:00",
+        "meta_feature_last_updated": "2026-07-05T05:29:16+00:00",
         "meta_osm_id": "node/1140227583"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.395221,
-          43.690936
+          -79.3951888,
+          43.6909499
         ]
       }
     },
@@ -95852,6 +95852,24 @@
         "coordinates": [
           -79.5471154,
           43.6783223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-04T20:43:44+00:00",
+        "meta_osm_id": "node/13988813913"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5559061,
+          43.6322438
         ]
       }
     },
