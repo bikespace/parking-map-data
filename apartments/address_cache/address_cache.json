@@ -86,5 +86,33 @@
   "2339  DUFFERIN ST ": {
     "latitude": 43.694738,
     "longitude": -79.4494473
+  },
+  "180  SHERBOURNE ST ": {
+    "latitude": 43.6563018,
+    "longitude": -79.3703752
+  },
+  "299  THE KINGSWAY  ": {
+    "latitude": 43.6638437,
+    "longitude": -79.5207358
+  },
+  "125  STAFFORD RD ": {
+    "latitude": 43.7702455,
+    "longitude": -79.4415745
+  },
+  "1000  BATHURST ST ": {
+    "latitude": 43.6705101,
+    "longitude": -79.4135163
+  },
+  "90  DUNN AVE ": {
+    "latitude": 43.6344891,
+    "longitude": -79.4323619
+  },
+  "485  PERTH AVE ": {
+    "latitude": 43.66748,
+    "longitude": -79.45292
+  },
+  "4701  BATHURST ST ": {
+    "latitude": 43.770922,
+    "longitude": -79.4418055
   }
 }
