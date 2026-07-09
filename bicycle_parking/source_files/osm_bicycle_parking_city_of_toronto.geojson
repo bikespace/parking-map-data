@@ -486,9 +486,10 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
+        "check_date": "2026-07-08",
         "covered": "yes",
         "shelter": "yes",
-        "meta_feature_last_updated": "2009-11-14T07:23:20+00:00",
+        "meta_feature_last_updated": "2026-07-09T03:34:52+00:00",
         "meta_osm_id": "node/490365016"
       },
       "geometry": {
@@ -49120,17 +49121,16 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "wave",
-        "capacity": "3",
-        "covered": "no",
+        "capacity": "5",
         "fee": "no",
-        "meta_feature_last_updated": "2026-06-29T19:40:29+00:00",
+        "meta_feature_last_updated": "2026-07-08T15:42:33+00:00",
         "meta_osm_id": "node/13017854122"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5194796,
-          43.6615231
+          -79.5194873,
+          43.6615111
         ]
       }
     },
@@ -49139,17 +49139,16 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "wave",
-        "capacity": "3",
-        "covered": "no",
+        "capacity": "5",
         "fee": "no",
-        "meta_feature_last_updated": "2026-06-29T19:40:29+00:00",
+        "meta_feature_last_updated": "2026-07-08T15:42:33+00:00",
         "meta_osm_id": "node/13017854123"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5194765,
-          43.6615157
+          -79.5194849,
+          43.6615057
         ]
       }
     },
