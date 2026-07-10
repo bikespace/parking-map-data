@@ -27,7 +27,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     "hypothesis>=6.138.13", # required for pandera.DataFrameSchema.example
-    "pytest>=8.3.5",
+    "pytest>=9.0.3",
     "pytest-mock>=3.14.1",
     "pytest-cov>=6.2.1",
 ]
