@@ -26,8 +26,8 @@ class StatusManager:
                 .convert_dtypes()
                 .astype(
                     {
-                        "last_updated": "datetime64[ns, UTC]",
-                        "last_checked": "datetime64[ns, UTC]",
+                        "last_updated": "datetime64[us, UTC]",
+                        "last_checked": "datetime64[us, UTC]",
                     }
                 )
             )
@@ -82,12 +82,12 @@ class StatusManager:
             last_updated.astimezone(timezone.utc)
             if last_updated.tzinfo is not None
             else last_updated.replace(tzinfo=timezone.utc),
-        ).as_unit("ns")
+        )
         last_checked_ts = pd.Timestamp(
             last_checked.astimezone(timezone.utc)
             if last_checked.tzinfo is not None
             else last_checked.replace(tzinfo=timezone.utc),
-        ).as_unit("ns")
+        )
         self._status_table = pd.concat(
             df.dropna(axis="columns", how="all")
             for df in [

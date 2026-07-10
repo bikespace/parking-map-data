@@ -13,9 +13,9 @@ from bikespace_data.utilities import StatusManager, status_manager_date_format
 sm_schema = pa.DataFrameSchema(
     columns={
         "dataset_name": pa.Column(str),
-        "last_updated": pa.Column(pd.DatetimeTZDtype(tz=timezone.utc)),
+        "last_updated": pa.Column(pd.DatetimeTZDtype(unit="us", tz=timezone.utc)),
         "num_features": pa.Column(int),
-        "last_checked": pa.Column(pd.DatetimeTZDtype(tz=timezone.utc)),
+        "last_checked": pa.Column(pd.DatetimeTZDtype(unit="us", tz=timezone.utc)),
         "days_since_source_update": pa.Column(int),
     },
     index=pa.Index(int),
