@@ -3,7 +3,7 @@ from typing import Literal
 
 import geojson
 import geopandas as gpd
-from pandas.api.types import is_datetime64_any_dtype
+from pandas.api.types import is_datetime64_any_dtype, is_object_dtype, is_string_dtype
 
 from bikespace_data.bicycle_parking.custom_types import GeoJSONFeatureCollection
 
@@ -12,7 +12,11 @@ def dt_cols_to_str(gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     """Convert dtype for datetime columns to string"""
     json_not_supported_cols = gdf.columns[
         [is_datetime64_any_dtype(gdf[c]) for c in gdf.columns]
-    ].union(gdf.columns[gdf.dtypes == "object"])
+    ].union(
+        gdf.columns[
+            [is_object_dtype(gdf[c]) or is_string_dtype(gdf[c]) for c in gdf.columns]
+        ]
+    )
     if len(json_not_supported_cols) > 0:
         gdf = gdf.astype({c: "string" for c in json_not_supported_cols})
     return gdf
