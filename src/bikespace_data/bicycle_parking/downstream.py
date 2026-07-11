@@ -14,7 +14,12 @@ def summarize_freq(mylist: pd.Series):
     mylist = mylist.replace({None: pd.NA, "": pd.NA})
     items = list(mylist.value_counts(dropna=False).items())
     if len(items) > 1:
-        return ", ".join([f"{value} (n={count})" for value, count in items])
+        return ", ".join(
+            [
+                f"{pd.NA if pd.isna(value) else value} (n={count})"
+                for value, count in items
+            ]
+        )
     else:
         return items[0][0]
 

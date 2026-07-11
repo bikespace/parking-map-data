@@ -3,33 +3,33 @@ name = "bikespace-data"
 version = "0.1.0"
 description = "New BikeSpace Toronto Bicycle Parking Map Data"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.14"
 dependencies = [
-    "beautifulsoup4>=4.13.3",
-    "geojson>=3.2.0",
-    "geopandas>=1.1.1",
+    "beautifulsoup4>=4.15.0",
+    "geojson>=3.3.0",
+    "geopandas>=1.1.4",
     "geopy>=2.4.1",
-    "numpy>=2.2.4",
-    "overpass>=0.7.2",
-    "pandas>=2.2.3",
-    "pandera[geopandas]>=0.24.0",
+    "numpy>=2.5.1",
+    "overpass>=0.8.2",
+    "pandas>=3.0.3",
+    "pandera[geopandas]>=0.32.1",
     "pathlib>=1.0.1",
     "progress>=1.6.1",
-    "pyarrow>=20.0.0",
+    "pyarrow>=24.0.0",
     "python-dotenv>=1.2.2",
-    "requests>=2.32.3",
-    "scikit-learn>=1.6.1",
-    "shapely>=2.1.0",
-    "tenacity>=9.1.2",
-    "tqdm>=4.67.1",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.0",
+    "shapely>=2.1.2",
+    "tenacity>=9.1.4",
+    "tqdm>=4.68.4",
 ]
 
 [dependency-groups]
 dev = [
-    "hypothesis>=6.138.13", # required for pandera.DataFrameSchema.example
-    "pytest>=8.3.5",
-    "pytest-mock>=3.14.1",
-    "pytest-cov>=6.2.1",
+    "hypothesis>=6.156.4", # required for pandera.DataFrameSchema.example
+    "pytest>=9.1.1",
+    "pytest-mock>=3.15.1",
+    "pytest-cov>=7.1.0",
 ]
 
 [build-system]

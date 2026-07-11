@@ -26,8 +26,8 @@ class StatusManager:
                 .convert_dtypes()
                 .astype(
                     {
-                        "last_updated": "datetime64[ns, UTC]",
-                        "last_checked": "datetime64[ns, UTC]",
+                        "last_updated": "datetime64[us, UTC]",
+                        "last_checked": "datetime64[us, UTC]",
                     }
                 )
             )
