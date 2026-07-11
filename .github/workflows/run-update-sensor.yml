@@ -9,6 +9,9 @@ on: # workflow_dispatch
 permissions:
   contents: write
 
+env:
+  UV_VERSION: "0.11.28"
+
 jobs:
   update-bicycle-parking-data:
     runs-on: ubuntu-latest
@@ -17,14 +20,14 @@ jobs:
       OVERPASS_API_NAME: ${{ vars.OVERPASS_API_NAME }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v8
         with:
-          version: "0.6.14"
+          version: "$UV_VERSION"
           enable-cache: true
       - name: "Set up Python"
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version-file: ".python-version"
       - name: Get Day of Week
@@ -70,14 +73,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v8
         with:
-          version: "0.6.14"
+          version: "$UV_VERSION"
           enable-cache: true
       - name: "Set up Python"
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version-file: ".python-version"
       - name: Install the project
@@ -116,14 +119,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       - name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v8
         with:
-          version: "0.6.14"
+          version: "$UV_VERSION"
           enable-cache: true
       - name: "Set up Python"
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version-file: ".python-version"
       - name: Get Day of Week
