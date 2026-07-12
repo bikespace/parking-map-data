@@ -186,7 +186,7 @@ class BikeDataOSM(BikeData):
             if OVERPASS_API_URL == overpass_default
             else "un-named custom overpass server",
         )
-        print(f"Requesting OpenStreetMap data from {OVERPASS_API_NAME} (dummy change)")
+        print(f"Requesting OpenStreetMap data from {OVERPASS_API_NAME}")
 
         api = overpass.API(
             endpoint=OVERPASS_API_URL,
