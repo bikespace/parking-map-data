@@ -3966,14 +3966,18 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2014-04-10T13:38:39+00:00",
+        "bicycle_parking": "bollard",
+        "capacity": "4",
+        "fee": "no",
+        "surface": "concrete",
+        "meta_feature_last_updated": "2026-07-11T14:16:30+00:00",
         "meta_osm_id": "node/2781448321"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5467545,
-          43.6016924
+          -79.5468547,
+          43.6016929
         ]
       }
     },
@@ -12132,14 +12136,14 @@
         "operator": "York University",
         "operator:type": "public",
         "quantity": "4",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2026-07-13T01:12:05+00:00",
         "meta_osm_id": "node/6068851747"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5032998,
-          43.773392
+          -79.503279,
+          43.7733692
         ]
       }
     },
@@ -12224,14 +12228,14 @@
         "operator": "York University",
         "operator:type": "public",
         "quantity": "4",
-        "meta_feature_last_updated": "2025-07-25T00:03:39+00:00",
+        "meta_feature_last_updated": "2026-07-13T01:12:05+00:00",
         "meta_osm_id": "node/6068854614"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5030763,
-          43.772873
+          -79.5030905,
+          43.7728852
         ]
       }
     },
@@ -30484,14 +30488,14 @@
         "operator": "GO Transit",
         "operator:type": "public",
         "website": "https://www.gotransit.com/en/free-parking-at-go-stations/reserved-bicycle-parking",
-        "meta_feature_last_updated": "2024-02-18T20:45:02+00:00",
+        "meta_feature_last_updated": "2026-07-12T19:40:04+00:00",
         "meta_osm_id": "node/11638911446"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2544432,
-          43.7172595
+          -79.2545326,
+          43.7171347
         ]
       }
     },
@@ -96094,6 +96098,224 @@
         "coordinates": [
           -79.515407,
           43.6342045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "capacity:cargo_bike": "2",
+        "cargo_bike": "yes",
+        "covered": "yes",
+        "fee": "no",
+        "operator": "Staples",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2026-07-12T19:40:04+00:00",
+        "meta_osm_id": "node/14006978245"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.1962696,
+          43.8003828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "3",
+        "capacity:cargo_bike": "1",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "TD Bank",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2026-07-12T19:40:04+00:00",
+        "meta_osm_id": "node/14006978247"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.1404859,
+          43.7894085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "8",
+        "colour": "grey",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2026-07-13T01:12:05+00:00",
+        "meta_osm_id": "node/14007472973"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5033034,
+          43.7733643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "8",
+        "colour": "grey",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2026-07-13T01:12:05+00:00",
+        "meta_osm_id": "node/14007472974"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5033203,
+          43.7734046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "8",
+        "colour": "grey",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2026-07-13T01:12:05+00:00",
+        "meta_osm_id": "node/14007472975"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5032972,
+          43.7734101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "8",
+        "colour": "grey",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2026-07-13T01:12:05+00:00",
+        "meta_osm_id": "node/14007472976"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5030625,
+          43.7728925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "8",
+        "colour": "grey",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2026-07-13T01:12:05+00:00",
+        "meta_osm_id": "node/14007472977"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5030755,
+          43.7728429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "8",
+        "colour": "grey",
+        "covered": "no",
+        "fee": "no",
+        "note": "post and ring",
+        "operator": "York University",
+        "operator:type": "public",
+        "quantity": "4",
+        "meta_feature_last_updated": "2026-07-13T01:12:05+00:00",
+        "meta_osm_id": "node/14007472978"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5030455,
+          43.7728503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "3",
+        "covered": "no",
+        "surface": "concrete",
+        "meta_feature_last_updated": "2026-07-13T07:05:09+00:00",
+        "meta_osm_id": "node/14007933696"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5410064,
+          43.5929302
         ]
       }
     },
