@@ -10225,7 +10225,6 @@
         "short_term_max": 0,
         "total_req_min": 0,
         "total_unmet_min": 0,
-        "pc_unmet": NaN,
         "long_term_oversized_min": 0,
         "long_term_oversized_max": 0
       },
@@ -11829,7 +11828,6 @@
         "short_term_max": 0,
         "total_req_min": 0,
         "total_unmet_min": 0,
-        "pc_unmet": NaN,
         "long_term_oversized_min": 0,
         "long_term_oversized_max": 0
       },
@@ -40531,7 +40529,6 @@
         "short_term_max": 0,
         "total_req_min": 0,
         "total_unmet_min": 0,
-        "pc_unmet": NaN,
         "long_term_oversized_min": 0,
         "long_term_oversized_max": 0
       },
@@ -49939,7 +49936,6 @@
         "short_term_max": 0,
         "total_req_min": 0,
         "total_unmet_min": 0,
-        "pc_unmet": NaN,
         "long_term_oversized_min": 0,
         "long_term_oversized_max": 0
       },
@@ -75399,7 +75395,6 @@
         "short_term_max": 0,
         "total_req_min": 0,
         "total_unmet_min": 0,
-        "pc_unmet": NaN,
         "long_term_oversized_min": 0,
         "long_term_oversized_max": 0
       },
@@ -81213,7 +81208,6 @@
         "short_term_max": 0,
         "total_req_min": 0,
         "total_unmet_min": 0,
-        "pc_unmet": NaN,
         "long_term_oversized_min": 0,
         "long_term_oversized_max": 0
       },

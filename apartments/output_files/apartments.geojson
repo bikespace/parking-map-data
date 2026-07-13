@@ -21092,8 +21092,7 @@
         "long_term_min_unmet": 0,
         "long_term_max_unmet": 0,
         "total_unmet_min": 0,
-        "total_req_min": 0,
-        "pc_unmet": NaN
+        "total_req_min": 0
       },
       "geometry": {
         "type": "Point",
@@ -24388,8 +24387,7 @@
         "long_term_min_unmet": 0,
         "long_term_max_unmet": 0,
         "total_unmet_min": 0,
-        "total_req_min": 0,
-        "pc_unmet": NaN
+        "total_req_min": 0
       },
       "geometry": {
         "type": "Point",
@@ -83766,8 +83764,7 @@
         "long_term_min_unmet": 0,
         "long_term_max_unmet": 0,
         "total_unmet_min": 0,
-        "total_req_min": 0,
-        "pc_unmet": NaN
+        "total_req_min": 0
       },
       "geometry": {
         "type": "Point",
@@ -103241,8 +103238,7 @@
         "long_term_min_unmet": 0,
         "long_term_max_unmet": 0,
         "total_unmet_min": 0,
-        "total_req_min": 0,
-        "pc_unmet": NaN
+        "total_req_min": 0
       },
       "geometry": {
         "type": "Point",
@@ -155880,8 +155876,7 @@
         "long_term_min_unmet": 0,
         "long_term_max_unmet": 0,
         "total_unmet_min": 0,
-        "total_req_min": 0,
-        "pc_unmet": NaN
+        "total_req_min": 0
       },
       "geometry": {
         "type": "Point",
@@ -167912,8 +167907,7 @@
         "long_term_min_unmet": 0,
         "long_term_max_unmet": 0,
         "total_unmet_min": 0,
-        "total_req_min": 0,
-        "pc_unmet": NaN
+        "total_req_min": 0
       },
       "geometry": {
         "type": "Point",
