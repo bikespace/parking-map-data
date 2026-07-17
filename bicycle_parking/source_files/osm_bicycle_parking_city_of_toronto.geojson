@@ -32134,15 +32134,17 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "capacity": "12",
-        "meta_feature_last_updated": "2024-05-11T22:03:35+00:00",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-16T16:54:43+00:00",
         "meta_osm_id": "node/11772476138"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5255722,
-          43.6518415
+          -79.5255991,
+          43.6518586
         ]
       }
     },
@@ -39090,15 +39092,20 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-09-21T22:18:07+00:00",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-16T16:54:43+00:00",
         "meta_osm_id": "node/12191557103"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5251548,
-          43.6521403
+          -79.525169,
+          43.6521421
         ]
       }
     },
@@ -96376,6 +96383,121 @@
         "coordinates": [
           -79.5875947,
           43.6445483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-16T16:54:43+00:00",
+        "meta_osm_id": "node/14020412425"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5251556,
+          43.6521352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-16T16:54:43+00:00",
+        "meta_osm_id": "node/14020412426"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.52559,
+          43.6518539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-16T16:54:43+00:00",
+        "meta_osm_id": "node/14020412427"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5255809,
+          43.6518493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-16T16:54:43+00:00",
+        "meta_osm_id": "node/14020412428"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5255721,
+          43.651845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-16T16:54:43+00:00",
+        "meta_osm_id": "node/14020412429"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5255635,
+          43.6518406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-07-16T16:54:43+00:00",
+        "meta_osm_id": "node/14020412430"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5255551,
+          43.651837
         ]
       }
     },
