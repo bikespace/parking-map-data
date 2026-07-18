@@ -14400,8 +14400,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "39 DURNFORD RD",
-        "LATITUDE": 43.799771853,
-        "LONGITUDE": -79.150262267,
+        "LATITUDE": 43.799425890500004,
+        "LONGITUDE": -79.15000537450001,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -14427,8 +14427,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.150262267,
-          43.799771853
+          -79.15000537450001,
+          43.799425890500004
         ]
       }
     },
@@ -14543,8 +14543,8 @@
         "YEAR_OF_REPLACEMENT": 2006,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "20 TRUDELLE ST",
-        "LATITUDE": 43.7404592839,
-        "LONGITUDE": -79.2437182596,
+        "LATITUDE": 43.74034617595,
+        "LONGITUDE": -79.2442521118,
         "ward_code": "21",
         "ward_name": "Scarborough Centre",
         "ward_full": "Scarborough Centre (21)",
@@ -14570,8 +14570,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2437182596,
-          43.7404592839
+          -79.2442521118,
+          43.74034617595
         ]
       }
     },
@@ -14873,8 +14873,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "707-711 FINCH AVE W",
-        "LATITUDE": 43.769500991,
-        "LONGITUDE": -79.460967972,
+        "LATITUDE": 43.76979216909312,
+        "LONGITUDE": -79.46157778735625,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -14900,8 +14900,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.460967972,
-          43.769500991
+          -79.46157778735625,
+          43.76979216909312
         ]
       }
     },
@@ -26435,8 +26435,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "37 DURNFORD RD",
-        "LATITUDE": 43.79936022,
-        "LONGITUDE": -79.150044554,
+        "LATITUDE": 43.799220074,
+        "LONGITUDE": -79.149896518,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -26462,8 +26462,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.150044554,
-          43.79936022
+          -79.149896518,
+          43.799220074
         ]
       }
     },
@@ -55706,8 +55706,8 @@
         "YEAR_BUILT": 1957,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "20 VARNA DR",
-        "LATITUDE": 43.7194419613,
-        "LONGITUDE": -79.4399793206,
+        "LATITUDE": 43.71943766465,
+        "LONGITUDE": -79.4399776923,
         "ward_code": "08",
         "ward_name": "Eglinton-Lawrence",
         "ward_full": "Eglinton-Lawrence (08)",
@@ -55733,8 +55733,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4399793206,
-          43.7194419613
+          -79.4399776923,
+          43.71943766465
         ]
       }
     },
@@ -68387,7 +68387,7 @@
         "bike_parking_indoor": 20,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "555 SHERBOURNE ST",
-        "LATITUDE": 43.669056443,
+        "LATITUDE": 43.6690564435,
         "LONGITUDE": -79.375027211,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -68415,7 +68415,7 @@
         "type": "Point",
         "coordinates": [
           -79.375027211,
-          43.669056443
+          43.6690564435
         ]
       }
     },
@@ -74592,8 +74592,8 @@
         "YEAR_OF_REPLACEMENT": 2008,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "10 WILLOWRIDGE RD",
-        "LATITUDE": 43.67512426653738,
-        "LONGITUDE": -79.56850188615509,
+        "LATITUDE": 43.675076517,
+        "LONGITUDE": -79.568401265,
         "ward_code": "01",
         "ward_name": "Etobicoke North",
         "ward_full": "Etobicoke North (01)",
@@ -74619,8 +74619,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.56850188615509,
-          43.67512426653738
+          -79.568401265,
+          43.675076517
         ]
       }
     },
@@ -82153,8 +82153,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "23 DURNFORD RD",
-        "LATITUDE": 43.79845735,
-        "LONGITUDE": -79.149242668,
+        "LATITUDE": 43.798768639,
+        "LONGITUDE": -79.149495575,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -82180,8 +82180,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.149242668,
-          43.79845735
+          -79.149495575,
+          43.798768639
         ]
       }
     },
@@ -84720,8 +84720,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 12,
         "SITE_ADDRESS_y": "7 ROCHEFORT",
-        "LATITUDE": 43.717785179,
-        "LONGITUDE": -79.337222836,
+        "LATITUDE": 43.71812960676254,
+        "LONGITUDE": -79.33682722742478,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -84747,8 +84747,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.337222836,
-          43.717785179
+          -79.33682722742478,
+          43.71812960676254
         ]
       }
     },
@@ -85143,8 +85143,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 30,
         "SITE_ADDRESS_y": "165 BARRINGTON AVE",
-        "LATITUDE": 43.69435148612587,
-        "LONGITUDE": -79.30291904256414,
+        "LATITUDE": 43.693762419,
+        "LONGITUDE": -79.302579904,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -85170,8 +85170,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.30291904256414,
-          43.69435148612587
+          -79.302579904,
+          43.693762419
         ]
       }
     },
@@ -88261,8 +88261,8 @@
         "YEAR_BUILT": 1956,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "319 THE KINGSWAY",
-        "LATITUDE": 43.665203195749996,
-        "LONGITUDE": -79.52351328805,
+        "LATITUDE": 43.66517650675,
+        "LONGITUDE": -79.52345285005,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -88288,8 +88288,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.52351328805,
-          43.665203195749996
+          -79.52345285005,
+          43.66517650675
         ]
       }
     },
@@ -96619,8 +96619,8 @@
         "YEAR_OF_REPLACEMENT": 2005,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "4003 BAYVIEW AVE",
-        "LATITUDE": 43.8022206997,
-        "LONGITUDE": -79.39285458055,
+        "LATITUDE": 43.8018880932,
+        "LONGITUDE": -79.39254812855,
         "ward_code": "17",
         "ward_name": "Don Valley North",
         "ward_full": "Don Valley North (17)",
@@ -96646,8 +96646,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.39285458055,
-          43.8022206997
+          -79.39254812855,
+          43.8018880932
         ]
       }
     },
@@ -99572,8 +99572,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "21 DURNFORD RD",
-        "LATITUDE": 43.798928736,
-        "LONGITUDE": -79.149462154,
+        "LATITUDE": 43.799004331999996,
+        "LONGITUDE": -79.149605318,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -99599,8 +99599,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.149462154,
-          43.798928736
+          -79.149605318,
+          43.799004331999996
         ]
       }
     },
@@ -99803,8 +99803,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "17 DURNFORD RD",
-        "LATITUDE": 43.798355204,
-        "LONGITUDE": -79.149608006,
+        "LATITUDE": 43.798717566,
+        "LONGITUDE": -79.149678244,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -99830,8 +99830,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.149608006,
-          43.798355204
+          -79.149678244,
+          43.798717566
         ]
       }
     },
@@ -103308,8 +103308,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "35 DURNFORD RD",
-        "LATITUDE": 43.799334653,
-        "LONGITUDE": -79.149625429,
+        "LATITUDE": 43.7992072905,
+        "LONGITUDE": -79.1496869555,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -103335,8 +103335,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.149625429,
-          43.799334653
+          -79.1496869555,
+          43.7992072905
         ]
       }
     },
@@ -105976,8 +105976,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 12,
         "SITE_ADDRESS_y": "290 THE KINGSWAY",
-        "LATITUDE": 43.663342704,
-        "LONGITUDE": -79.521030395,
+        "LATITUDE": 43.6633258835,
+        "LONGITUDE": -79.52099678799999,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -106003,8 +106003,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.521030395,
-          43.663342704
+          -79.52099678799999,
+          43.6633258835
         ]
       }
     },
@@ -123496,7 +123496,7 @@
         "YEAR_BUILT": 1970,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "27 SCARLETTWOOD CRT",
-        "LATITUDE": 43.693274018,
+        "LATITUDE": 43.6932740185,
         "LONGITUDE": -79.516001007,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
@@ -123524,7 +123524,7 @@
         "type": "Point",
         "coordinates": [
           -79.516001007,
-          43.693274018
+          43.6932740185
         ]
       }
     },
@@ -159148,8 +159148,8 @@
         "bike_parking_indoor": 30,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "424 YONGE ST",
-        "LATITUDE": 43.660295635,
-        "LONGITUDE": -79.383058424,
+        "LATITUDE": 43.660448199,
+        "LONGITUDE": -79.3831425535,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -159175,8 +159175,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.383058424,
-          43.660295635
+          -79.3831425535,
+          43.660448199
         ]
       }
     },
@@ -160265,8 +160265,8 @@
         "YEAR_OF_REPLACEMENT": 2003,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1775 EGLINTON AVE W",
-        "LATITUDE": 43.69584972781326,
-        "LONGITUDE": -79.44888053958157,
+        "LATITUDE": 43.695804638,
+        "LONGITUDE": -79.448776283,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -160292,8 +160292,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.44888053958157,
-          43.69584972781326
+          -79.448776283,
+          43.695804638
         ]
       }
     },
@@ -160313,8 +160313,8 @@
         "bike_parking_indoor": 18,
         "bike_parking_outdoor": 39,
         "SITE_ADDRESS_y": "21 RICHGROVE DR",
-        "LATITUDE": 43.675722956,
-        "LONGITUDE": -79.565639408,
+        "LATITUDE": 43.6763998066246,
+        "LONGITUDE": -79.56548811019564,
         "ward_code": "01",
         "ward_name": "Etobicoke North",
         "ward_full": "Etobicoke North (01)",
@@ -160340,8 +160340,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.565639408,
-          43.675722956
+          -79.56548811019564,
+          43.6763998066246
         ]
       }
     },
@@ -166485,8 +166485,8 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "625 FINCH AVE W",
-        "LATITUDE": 43.77115054933274,
-        "LONGITUDE": -79.4558187836685,
+        "LATITUDE": 43.771095479,
+        "LONGITUDE": -79.454476959,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -166512,8 +166512,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4558187836685,
-          43.77115054933274
+          -79.454476959,
+          43.771095479
         ]
       }
     },
