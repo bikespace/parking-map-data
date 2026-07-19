@@ -26574,8 +26574,8 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "90 PARMA CRT",
-        "LATITUDE": 43.717195772,
-        "LONGITUDE": -79.300999236,
+        "LATITUDE": 43.7170244645,
+        "LONGITUDE": -79.3003576095,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -26601,8 +26601,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.300999236,
-          43.717195772
+          -79.3003576095,
+          43.7170244645
         ]
       }
     },
@@ -46712,8 +46712,8 @@
         "YEAR_BUILT": 1951,
         "YEAR_REGISTERED": 2021,
         "SITE_ADDRESS_y": "1000 O'CONNOR DR",
-        "LATITUDE": 43.7092735859,
-        "LONGITUDE": -79.3104170385,
+        "LATITUDE": 43.70926928745,
+        "LONGITUDE": -79.31041543125,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -46739,8 +46739,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3104170385,
-          43.7092735859
+          -79.31041543125,
+          43.70926928745
         ]
       }
     },
@@ -57158,8 +57158,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 4,
         "SITE_ADDRESS_y": "2916 ST CLAIR AVE E",
-        "LATITUDE": 43.708388608,
-        "LONGITUDE": -79.3004481732,
+        "LATITUDE": 43.7084092682,
+        "LONGITUDE": -79.3006290206,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -57185,8 +57185,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3004481732,
-          43.708388608
+          -79.3006290206,
+          43.7084092682
         ]
       }
     },
@@ -58047,8 +58047,8 @@
         "YEAR_BUILT": 1960,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "2914 ST CLAIR AVE E",
-        "LATITUDE": 43.708295468,
-        "LONGITUDE": -79.300676323,
+        "LATITUDE": 43.7084092682,
+        "LONGITUDE": -79.3006290206,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -58074,8 +58074,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.300676323,
-          43.708295468
+          -79.3006290206,
+          43.7084092682
         ]
       }
     },
@@ -59550,8 +59550,8 @@
         "bike_parking_indoor": 233,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "5249 DUNDAS ST W",
-        "LATITUDE": 43.63868271519043,
-        "LONGITUDE": -79.53730226741698,
+        "LATITUDE": 43.638526443,
+        "LONGITUDE": -79.537577214,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -59577,8 +59577,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.53730226741698,
-          43.63868271519043
+          -79.537577214,
+          43.638526443
         ]
       }
     },
@@ -102800,8 +102800,8 @@
         "YEAR_OF_REPLACEMENT": 1993,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "5 WAKUNDA PL",
-        "LATITUDE": 43.7155652564,
-        "LONGITUDE": -79.3046724013,
+        "LATITUDE": 43.7156631611,
+        "LONGITUDE": -79.30438171345,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -102827,8 +102827,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3046724013,
-          43.7155652564
+          -79.30438171345,
+          43.7156631611
         ]
       }
     },
@@ -155620,8 +155620,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 QUEEN ST E",
-        "LATITUDE": 43.6747570284,
-        "LONGITUDE": -79.2771547349,
+        "LATITUDE": 43.6747312696,
+        "LONGITUDE": -79.27727203705,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -155647,8 +155647,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2771547349,
-          43.6747570284
+          -79.27727203705,
+          43.6747312696
         ]
       }
     },
@@ -155668,8 +155668,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 QUEEN ST E",
-        "LATITUDE": 43.6746668318,
-        "LONGITUDE": -79.2776535124,
+        "LATITUDE": 43.6746861713,
+        "LONGITUDE": -79.27752142579999,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -155695,8 +155695,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2776535124,
-          43.6746668318
+          -79.27752142579999,
+          43.6746861713
         ]
       }
     },
@@ -166715,8 +166715,8 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1290 DANFORTH RD",
-        "LATITUDE": 43.740755193,
-        "LONGITUDE": -79.246090296,
+        "LATITUDE": 43.740733258,
+        "LONGITUDE": -79.2460768475,
         "ward_code": "21",
         "ward_name": "Scarborough Centre",
         "ward_full": "Scarborough Centre (21)",
@@ -166742,8 +166742,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.246090296,
-          43.740755193
+          -79.2460768475,
+          43.740733258
         ]
       }
     },
@@ -166762,8 +166762,8 @@
         "YEAR_OF_REPLACEMENT": 2011,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "11 VALLEY WOODS RD",
-        "LATITUDE": 43.753528497,
-        "LONGITUDE": -79.332105745,
+        "LATITUDE": 43.753193723337645,
+        "LONGITUDE": -79.33307391318317,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -166789,8 +166789,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.332105745,
-          43.753528497
+          -79.33307391318317,
+          43.753193723337645
         ]
       }
     },
