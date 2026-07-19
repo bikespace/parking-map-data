@@ -33084,14 +33084,14 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2024-04-25T00:49:24+00:00",
+        "meta_feature_last_updated": "2026-07-18T14:42:45+00:00",
         "meta_osm_id": "node/11845815817"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4149598,
-          43.6417451
+          -79.4149669,
+          43.6417996
         ]
       }
     },
@@ -35607,14 +35607,14 @@
         "operator": "University of Toronto",
         "operator:type": "public",
         "quantity": "11",
-        "meta_feature_last_updated": "2024-07-14T02:48:50+00:00",
+        "meta_feature_last_updated": "2026-07-18T15:22:00+00:00",
         "meta_osm_id": "node/12052318809"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3944051,
-          43.6635763
+          -79.3944156,
+          43.6635377
         ]
       }
     },
@@ -96498,6 +96498,73 @@
         "coordinates": [
           -79.5255551,
           43.651837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-07-18T14:42:45+00:00",
+        "meta_osm_id": "node/14024263638"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4149478,
+          43.641709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-07-18T14:42:45+00:00",
+        "meta_osm_id": "node/14024263639"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4149558,
+          43.6417426
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-07-18T14:45:35+00:00",
+        "meta_osm_id": "node/14024266397"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.415283,
+          43.6419303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "7",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Bridlewood Mall",
+        "operator:type": "business",
+        "meta_feature_last_updated": "2026-07-18T21:27:29+00:00",
+        "meta_osm_id": "node/14024972532"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.317791,
+          43.7982387
         ]
       }
     },
