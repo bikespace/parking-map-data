@@ -76601,8 +76601,8 @@
         "YEAR_BUILT": 1953,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "1008 O'CONNOR DR",
-        "LATITUDE": 43.7095271974,
-        "LONGITUDE": -79.3102178135,
+        "LATITUDE": 43.709522899199996,
+        "LONGITUDE": -79.31021620575001,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -76628,8 +76628,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3102178135,
-          43.7095271974
+          -79.31021620575001,
+          43.709522899199996
         ]
       }
     },
