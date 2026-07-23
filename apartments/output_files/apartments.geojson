@@ -57717,8 +57717,8 @@
         "YEAR_BUILT": 2009,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "252 SACKVILLE ST",
-        "LATITUDE": 43.660500875,
-        "LONGITUDE": -79.36342677,
+        "LATITUDE": 43.660522,
+        "LONGITUDE": -79.3634217015,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -57744,8 +57744,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.36342677,
-          43.660500875
+          -79.3634217015,
+          43.660522
         ]
       }
     },
@@ -59693,8 +59693,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 B QUEEN ST E",
-        "LATITUDE": 43.6747570284,
-        "LONGITUDE": -79.2771547349,
+        "LATITUDE": 43.6747312696,
+        "LONGITUDE": -79.27727203705,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -59720,8 +59720,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2771547349,
-          43.6747570284
+          -79.27727203705,
+          43.6747312696
         ]
       }
     },
@@ -86358,8 +86358,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 G QUEEN ST E",
-        "LATITUDE": 43.6747570284,
-        "LONGITUDE": -79.2771547349,
+        "LATITUDE": 43.6747312696,
+        "LONGITUDE": -79.27727203705,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -86385,8 +86385,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2771547349,
-          43.6747570284
+          -79.27727203705,
+          43.6747312696
         ]
       }
     },
@@ -103681,8 +103681,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1447 KING ST W",
-        "LATITUDE": 43.6366736608,
-        "LONGITUDE": -79.4376587469,
+        "LATITUDE": 43.6366693719,
+        "LONGITUDE": -79.43765712244999,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -103708,8 +103708,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4376587469,
-          43.6366736608
+          -79.43765712244999,
+          43.6366693719
         ]
       }
     },
@@ -132700,8 +132700,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 F QUEEN ST E",
-        "LATITUDE": 43.6746668318,
-        "LONGITUDE": -79.2776535124,
+        "LATITUDE": 43.6746861713,
+        "LONGITUDE": -79.27752142579999,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -132727,8 +132727,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2776535124,
-          43.6746668318
+          -79.27752142579999,
+          43.6746861713
         ]
       }
     },
@@ -164107,8 +164107,8 @@
         "YEAR_BUILT": 1954,
         "YEAR_REGISTERED": 2021,
         "SITE_ADDRESS_y": "1012 O'CONNOR DR",
-        "LATITUDE": 43.7096518084,
-        "LONGITUDE": -79.3101171407,
+        "LATITUDE": 43.7096475102,
+        "LONGITUDE": -79.31011553385,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -164134,8 +164134,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3101171407,
-          43.7096518084
+          -79.31011553385,
+          43.7096475102
         ]
       }
     },
