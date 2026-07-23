@@ -45331,25 +45331,6 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_source": "OpenStreetMap",
-        "meta_source_license": "Open Data Commons Open Database License (ODbL)",
-        "meta_source_license_url": "https://www.openstreetmap.org/copyright",
-        "meta_source_last_updated": "2026-07-22 00:10:14+00:00",
-        "meta_feature_last_updated": "2025-05-26 20:33:50+00:00",
-        "meta_osm_id": "node/12865422089"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.50556700000001,
-          43.675294
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
         "capacity": 8,
         "operator": "City of Toronto",

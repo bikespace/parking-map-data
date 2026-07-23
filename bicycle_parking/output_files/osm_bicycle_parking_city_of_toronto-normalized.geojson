@@ -55729,25 +55729,6 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2025-05-26T20:33:50+00:00",
-        "meta_osm_id": "node/12865422089",
-        "meta_source": "OpenStreetMap",
-        "meta_source_license": "Open Data Commons Open Database License (ODbL)",
-        "meta_source_license_url": "https://www.openstreetmap.org/copyright",
-        "meta_source_last_updated": "2026-07-22T00:10:14+00:00"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.505567,
-          43.675294
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
         "meta_feature_last_updated": "2025-09-06T20:52:05+00:00",
         "meta_osm_id": "node/12865454218",
         "bicycle_parking": "rack",
