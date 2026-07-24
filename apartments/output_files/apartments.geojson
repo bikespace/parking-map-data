@@ -55797,8 +55797,8 @@
         "WARD": 13,
         "YEAR_BUILT": 1972,
         "SITE_ADDRESS_y": "389 CHURCH STREET",
-        "LATITUDE": 43.6615311036,
-        "LONGITUDE": -79.3788620855,
+        "LATITUDE": 43.661526811,
+        "LONGITUDE": -79.378860469,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -55824,8 +55824,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3788620855,
-          43.6615311036
+          -79.378860469,
+          43.661526811
         ]
       }
     },
@@ -86310,8 +86310,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 A QUEEN ST E",
-        "LATITUDE": 43.6746668318,
-        "LONGITUDE": -79.2776535124,
+        "LATITUDE": 43.6746861713,
+        "LONGITUDE": -79.27752142579999,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -86337,8 +86337,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2776535124,
-          43.6746668318
+          -79.27752142579999,
+          43.6746861713
         ]
       }
     },
@@ -88308,8 +88308,8 @@
         "YEAR_OF_REPLACEMENT": 2017,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "3036 BATHURST ST",
-        "LATITUDE": 43.718503226,
-        "LONGITUDE": -79.429840681,
+        "LATITUDE": 43.718495501999996,
+        "LONGITUDE": -79.429868216,
         "ward_code": "08",
         "ward_name": "Eglinton-Lawrence",
         "ward_full": "Eglinton-Lawrence (08)",
@@ -88335,8 +88335,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.429840681,
-          43.718503226
+          -79.429868216,
+          43.718495501999996
         ]
       }
     },
