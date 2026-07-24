@@ -59867,7 +59867,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-07-23T11:44:49+00:00",
         "meta_osm_id": "node/13134416567"
       },
       "geometry": {
@@ -59884,7 +59885,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-10T15:20:08+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-07-23T11:44:32+00:00",
         "meta_osm_id": "node/13134416568"
       },
       "geometry": {
@@ -93353,8 +93355,10 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
         "colour": "blue",
-        "meta_feature_last_updated": "2026-03-08T20:34:51+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-07-23T20:27:42+00:00",
         "meta_osm_id": "node/13628578942"
       },
       "geometry": {
@@ -93369,8 +93373,11 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "7",
         "colour": "grey",
-        "meta_feature_last_updated": "2026-03-08T20:34:51+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-07-23T20:28:45+00:00",
         "meta_osm_id": "node/13628578944"
       },
       "geometry": {
@@ -93385,8 +93392,11 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "7",
         "colour": "grey",
-        "meta_feature_last_updated": "2026-03-08T20:34:51+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-07-23T20:28:41+00:00",
         "meta_osm_id": "node/13628578945"
       },
       "geometry": {
