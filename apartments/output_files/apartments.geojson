@@ -76556,8 +76556,8 @@
         "SITE_ADDRESS_x": "1024  O'CONNOR DR ",
         "WARD": 19,
         "SITE_ADDRESS_y": "1024 O'CONNOR DR",
-        "LATITUDE": 43.710014520499996,
-        "LONGITUDE": -79.30983689774999,
+        "LATITUDE": 43.710010222,
+        "LONGITUDE": -79.30983529,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -76583,8 +76583,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.30983689774999,
-          43.710014520499996
+          -79.30983529,
+          43.710010222
         ]
       }
     },
@@ -122977,8 +122977,8 @@
         "YEAR_OF_REPLACEMENT": 2001,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "59 EDGEWOOD AVE",
-        "LATITUDE": 43.6716543566,
-        "LONGITUDE": -79.3130970785,
+        "LATITUDE": 43.6716500618,
+        "LONGITUDE": -79.31309547225,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -123004,8 +123004,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3130970785,
-          43.6716543566
+          -79.31309547225,
+          43.6716500618
         ]
       }
     },
