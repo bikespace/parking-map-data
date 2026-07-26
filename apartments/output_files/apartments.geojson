@@ -136674,8 +136674,8 @@
         "bike_parking_indoor": 31,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "109 VAUGHAN RD",
-        "LATITUDE": 43.68419141935,
-        "LONGITUDE": -79.42096304005,
+        "LATITUDE": 43.684187125,
+        "LONGITUDE": -79.420961416,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -136701,8 +136701,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.42096304005,
-          43.68419141935
+          -79.420961416,
+          43.684187125
         ]
       }
     },
