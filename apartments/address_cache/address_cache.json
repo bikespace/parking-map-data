@@ -114,5 +114,517 @@
   "4701  BATHURST ST ": {
     "latitude": 43.770922,
     "longitude": -79.4418055
+  },
+  "686  BATHURST ST ": {
+    "latitude": 43.66215,
+    "longitude": -79.41025
+  },
+  "531-535  PARLIAMENT ST ": {
+    "latitude": 43.649045,
+    "longitude": -79.3616463
+  },
+  "425  SHERBOURNE ST ": {
+    "latitude": 43.665184,
+    "longitude": -79.3735501
+  },
+  "1550  QUEEN ST E": {
+    "latitude": 43.665824,
+    "longitude": -79.3197967
+  },
+  "2265  QUEEN ST E": {
+    "latitude": 43.6712319,
+    "longitude": -79.2936337
+  },
+  "85  BEECH AVE ": {
+    "latitude": 43.6731253,
+    "longitude": -79.2874408
+  },
+  "53-55  DAWES RD ": {
+    "latitude": 43.6933348,
+    "longitude": -79.2971998
+  },
+  "611  COSBURN AVE ": {
+    "latitude": 43.694111,
+    "longitude": -79.3271901
+  },
+  "117  COSBURN AVE ": {
+    "latitude": 43.6892774,
+    "longitude": -79.3474471
+  },
+  "11  FERNWOOD GDNS ": {
+    "latitude": 43.6916,
+    "longitude": -79.35684
+  },
+  "331  BARTLETT AVE N": {
+    "latitude": 43.67108,
+    "longitude": -79.43698
+  },
+  "8  GLOUCESTER ST ": {
+    "latitude": 43.6669,
+    "longitude": -79.38477
+  },
+  "1169  DANFORTH AVE ": {
+    "latitude": 43.68106,
+    "longitude": -79.33314
+  },
+  "7  HEATH ST E": {
+    "latitude": 43.6899285,
+    "longitude": -79.3941815
+  },
+  "646  BROADVIEW AVE ": {
+    "latitude": 43.6733224,
+    "longitude": -79.3566253
+  },
+  "160  PINEGROVE AVE ": {
+    "latitude": 43.7019756,
+    "longitude": -79.2566488
+  },
+  "26  ENGELHART CRES ": {
+    "latitude": 43.7227625,
+    "longitude": -79.299387
+  },
+  "2170  GERRARD ST E": {
+    "latitude": 43.6835515,
+    "longitude": -79.303156
+  },
+  "30  MUTUAL ST ": {
+    "latitude": 43.65416,
+    "longitude": -79.37486
+  },
+  "20  NEW HEIGHTS CRT ": {
+    "latitude": 43.72274,
+    "longitude": -79.4462
+  },
+  "23  THUNDER GRV ": {
+    "latitude": 43.80892,
+    "longitude": -79.26445
+  },
+  "170  FAIRVIEW MALL DR ": {
+    "latitude": 43.78023,
+    "longitude": -79.34275
+  },
+  "555  COLLEGE ST ": {
+    "latitude": 43.65535,
+    "longitude": -79.41199
+  },
+  "425  WELLINGTON ST W": {
+    "latitude": 43.6434898,
+    "longitude": -79.3957769
+  },
+  "109  RUNNYMEDE RD ": {
+    "latitude": 43.65044,
+    "longitude": -79.47572
+  },
+  "270  RYDING AVE ": {
+    "latitude": 43.66886,
+    "longitude": -79.48017
+  },
+  "15  GORE VALE AVE ": {
+    "latitude": 43.6465,
+    "longitude": -79.41169
+  },
+  "922  BATHURST ST ": {
+    "latitude": 43.6687784,
+    "longitude": -79.4129863
+  },
+  "44  LILLIAN ST ": {
+    "latitude": 43.7057307,
+    "longitude": -79.3937389
+  },
+  "748  BATHURST ST ": {
+    "latitude": 43.66409,
+    "longitude": -79.41103
+  },
+  "100  MILL ST ": {
+    "latitude": 43.6521242,
+    "longitude": -79.35442
+  },
+  "55  WARRENDER AVE ": {
+    "latitude": 43.675811,
+    "longitude": -79.5547022
+  },
+  "22  ENGELHART CRES ": {
+    "latitude": 43.722611,
+    "longitude": -79.2997865
+  },
+  "1701  BATHURST ST ": {
+    "latitude": 43.696646,
+    "longitude": -79.4234575
+  },
+  "831  COSBURN AVE ": {
+    "latitude": 43.6960172,
+    "longitude": -79.3186631
+  },
+  "2  GAMBLE AVE ": {
+    "latitude": 43.6894003,
+    "longitude": -79.3546648
+  },
+  "2929  BATHURST ST ": {
+    "latitude": 43.7158895,
+    "longitude": -79.4286512
+  },
+  "256  RONCESVALLES AVE ": {
+    "latitude": 43.6464431,
+    "longitude": -79.4493235
+  },
+  "675  DOVERCOURT RD ": {
+    "latitude": 43.659122,
+    "longitude": -79.4284245
+  },
+  "28  MACPHERSON AVE ": {
+    "latitude": 43.6791193,
+    "longitude": -79.3919069
+  },
+  "1430  GERRARD ST E": {
+    "latitude": 43.67248,
+    "longitude": -79.3223
+  },
+  "1435  DANFORTH AVE ": {
+    "latitude": 43.6824459,
+    "longitude": -79.3265282
+  },
+  "1638  QUEEN ST E": {
+    "latitude": 43.6668513,
+    "longitude": -79.3154557
+  },
+  "494  MORTIMER AVE ": {
+    "latitude": 43.6897734,
+    "longitude": -79.330914
+  },
+  "870  MILLWOOD RD ": {
+    "latitude": 43.70444,
+    "longitude": -79.36574
+  },
+  "58  GLEN EVEREST RD ": {
+    "latitude": 43.70221,
+    "longitude": -79.25316
+  },
+  "25  NASHVILLE AVE ": {
+    "latitude": 43.6827589,
+    "longitude": -79.4754416
+  },
+  "24  ANGLESEY BLVD ": {
+    "latitude": 43.6644384,
+    "longitude": -79.5219072
+  },
+  "250  BIRMINGHAM ST ": {
+    "latitude": 43.6012802,
+    "longitude": -79.515968
+  },
+  "2916  ST CLAIR AVE E": {
+    "latitude": 43.70838,
+    "longitude": -79.30044
+  },
+  "2914  ST CLAIR AVE E": {
+    "latitude": 43.7082481,
+    "longitude": -79.3006442
+  },
+  "7  WINGREEN CRT ": {
+    "latitude": 43.7385902,
+    "longitude": -79.3427401
+  },
+  "480  WILSON AVE ": {
+    "latitude": 43.73547,
+    "longitude": -79.44424
+  },
+  "70  GEORGE BUTCHART DR ": {
+    "latitude": 43.73607,
+    "longitude": -79.48306
+  },
+  "1  FERNWOOD GDNS ": {
+    "latitude": 43.6914272,
+    "longitude": -79.3569484
+  },
+  "131  MILL ST ": {
+    "latitude": 43.6511634,
+    "longitude": -79.3565758
+  },
+  "20  SAMUEL WOOD WAY ": {
+    "latitude": 43.6351497,
+    "longitude": -79.5403785
+  },
+  "18  TRETTI WAY ": {
+    "latitude": 43.73236,
+    "longitude": -79.44772
+  },
+  "670  ST CLAIR AVE W": {
+    "latitude": 43.6820774,
+    "longitude": -79.4253429
+  },
+  "67  CURZON ST ": {
+    "latitude": 43.6651744,
+    "longitude": -79.3319833
+  },
+  "109  BEECH AVE ": {
+    "latitude": 43.6735652,
+    "longitude": -79.2878218
+  },
+  "330  CHISHOLM AVE ": {
+    "latitude": 43.697482,
+    "longitude": -79.3072981
+  },
+  "90  BLACKFRIAR AVE ": {
+    "latitude": 43.6985679,
+    "longitude": -79.5617891
+  },
+  "546  INDIAN GRV ": {
+    "latitude": 43.6656341,
+    "longitude": -79.4624705
+  },
+  "21  TWENTY SECOND ST ": {
+    "latitude": 43.59828,
+    "longitude": -79.52146
+  },
+  "5  FERNWOOD GDNS ": {
+    "latitude": 43.69167,
+    "longitude": -79.35646
+  },
+  "18  ENGELHART CRES ": {
+    "latitude": 43.722373,
+    "longitude": -79.3002111
+  },
+  "1225  YORK MILLS RD ": {
+    "latitude": 43.75952,
+    "longitude": -79.33112
+  },
+  "151  MILL ST ": {
+    "latitude": 43.6514023,
+    "longitude": -79.3556126
+  },
+  "181  MILL ST ": {
+    "latitude": 43.6517006,
+    "longitude": -79.3547887
+  },
+  "31  PHIPPS ST ": {
+    "latitude": 43.66506,
+    "longitude": -79.38667
+  },
+  "325  YORKLAND BLVD ": {
+    "latitude": 43.7741115,
+    "longitude": -79.3332892
+  },
+  "160-162  CLOSE AVE ": {
+    "latitude": 43.638879,
+    "longitude": -79.43524
+  },
+  "410  DUFFERIN ST ": {
+    "latitude": 43.64424,
+    "longitude": -79.42977
+  },
+  "54  GLEN EVEREST RD ": {
+    "latitude": 43.70204,
+    "longitude": -79.25321
+  },
+  "3385  DUNDAS ST W": {
+    "latitude": 43.6653908,
+    "longitude": -79.4841715
+  },
+  "93  MALLORY CRES ": {
+    "latitude": 43.6974757,
+    "longitude": -79.3669
+  },
+  "435  WELLINGTON ST W": {
+    "latitude": 43.6433328,
+    "longitude": -79.3965115
+  },
+  "333  HARBORD ST ": {
+    "latitude": 43.6594058,
+    "longitude": -79.4189739
+  },
+  "12  VAUGHAN RD ": {
+    "latitude": 43.681335,
+    "longitude": -79.418144
+  },
+  "450  FRONT ST W": {
+    "latitude": 43.6424499,
+    "longitude": -79.3955009
+  },
+  "184  MARLEE AVE ": {
+    "latitude": 43.7050922,
+    "longitude": -79.4424289
+  },
+  "869  BROADVIEW AVE ": {
+    "latitude": 43.68003,
+    "longitude": -79.35775
+  },
+  "318  THE KINGSWAY  ": {
+    "latitude": 43.6646905,
+    "longitude": -79.5239783
+  },
+  "2675  BLOOR ST W": {
+    "latitude": 43.649642,
+    "longitude": -79.4974893
+  },
+  "121  FOURTH ST ": {
+    "latitude": 43.6024,
+    "longitude": -79.50197
+  },
+  "858  DAVENPORT RD ": {
+    "latitude": 43.676235,
+    "longitude": -79.4212156
+  },
+  "46  TWENTY SECOND ST ": {
+    "latitude": 43.59894,
+    "longitude": -79.52235
+  },
+  "36  TWELFTH ST ": {
+    "latitude": 43.59609,
+    "longitude": -79.5097
+  },
+  "116  GLEN MANOR DR ": {
+    "latitude": 43.6714165,
+    "longitude": -79.2926104
+  },
+  "699  BALLIOL ST ": {
+    "latitude": 43.70151,
+    "longitude": -79.37504
+  },
+  "250  OAKWOOD AVE ": {
+    "latitude": 43.6832687,
+    "longitude": -79.4373482
+  },
+  "400  DUFFERIN ST ": {
+    "latitude": 43.64382,
+    "longitude": -79.42953
+  },
+  "15  SOLIDARITY WAY ": {
+    "latitude": 43.63892,
+    "longitude": -79.41118
+  },
+  "25  DALHOUSIE ST ": {
+    "latitude": 43.65423,
+    "longitude": -79.3754
+  },
+  "5  ZAPPACOSTA DR ": {
+    "latitude": 43.75078,
+    "longitude": -79.54022
+  },
+  "1496  QUEEN ST W": {
+    "latitude": 43.640478,
+    "longitude": -79.4377958
+  },
+  "800  VAUGHAN RD ": {
+    "latitude": 43.6950155,
+    "longitude": -79.4489945
+  },
+  "740  DUPONT ST ": {
+    "latitude": 43.6713577,
+    "longitude": -79.4235154
+  },
+  "376  BRUNSWICK AVE ": {
+    "latitude": 43.66839,
+    "longitude": -79.40868
+  },
+  "380  SHERBOURNE ST ": {
+    "latitude": 43.6634062,
+    "longitude": -79.3733758
+  },
+  "23  THIRD ST ": {
+    "latitude": 43.63302,
+    "longitude": -79.355798
+  },
+  "1636  QUEEN ST E": {
+    "latitude": 43.6666866,
+    "longitude": -79.315584
+  },
+  "98  LEUTY AVE ": {
+    "latitude": 43.670558,
+    "longitude": -79.2966304
+  },
+  "29  KILDONAN RD ": {
+    "latitude": 43.6825666,
+    "longitude": -79.3052332
+  },
+  "17  STATION RD ": {
+    "latitude": 43.6138,
+    "longitude": -79.4933
+  },
+  "272  BIRMINGHAM ST ": {
+    "latitude": 43.6008551,
+    "longitude": -79.51783
+  },
+  "131  COXWELL AVE ": {
+    "latitude": 43.670061,
+    "longitude": -79.3179159
+  },
+  "32  ROWANWOOD AVE ": {
+    "latitude": 43.6798927,
+    "longitude": -79.3883069
+  },
+  "26  SARANAC BLVD ": {
+    "latitude": 43.7222406,
+    "longitude": -79.4329518
+  },
+  "2149  GERRARD ST E": {
+    "latitude": 43.68307,
+    "longitude": -79.30347
+  },
+  "2901  ST CLAIR AVE E": {
+    "latitude": 43.70765,
+    "longitude": -79.30142
+  },
+  "2905  ST CLAIR AVE E": {
+    "latitude": 43.70776,
+    "longitude": -79.30108
+  },
+  "2477  QUEEN ST E": {
+    "latitude": 43.67344,
+    "longitude": -79.28267
+  },
+  "39  LEACREST RD ": {
+    "latitude": 43.6970349,
+    "longitude": -79.3653344
+  },
+  "18  FOURTEENTH ST ": {
+    "latitude": 43.59988,
+    "longitude": -79.51362
+  },
+  "12-14  THIRTY NINTH ST ": {
+    "latitude": 43.5904723,
+    "longitude": -79.5395247
+  },
+  "877  YONGE ST ": {
+    "latitude": 43.674274,
+    "longitude": -79.3879807
+  },
+  "425  BROADVIEW AVE ": {
+    "latitude": 43.66676,
+    "longitude": -79.35287
+  },
+  "94  EASTDALE AVE ": {
+    "latitude": 43.6945111,
+    "longitude": -79.3017506
+  },
+  "1705  BATHURST ST ": {
+    "latitude": 43.6969242,
+    "longitude": -79.4236108
+  },
+  "140  COSBURN AVE ": {
+    "latitude": 43.69,
+    "longitude": -79.34734
+  },
+  "11  VALLEY WOODS RD ": {
+    "latitude": 43.753516,
+    "longitude": -79.3320954
+  },
+  "16  FERNWOOD GDNS ": {
+    "latitude": 43.6909523,
+    "longitude": -79.3570623
+  },
+  "730  HILLSDALE AVE E": {
+    "latitude": 43.7082202,
+    "longitude": -79.3764688
+  },
+  "33  DUNFIELD AVE ": {
+    "latitude": 43.7056594,
+    "longitude": -79.3941933
+  },
+  "36  BRENTCLIFFE RD ": {
+    "latitude": 43.7140312,
+    "longitude": -79.3599356
+  },
+  "15  VENA WAY ": {
+    "latitude": 43.75024,
+    "longitude": -79.54065
   }
 }
