@@ -96648,6 +96648,46 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "8",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2026-07-29T15:35:21+00:00",
+        "meta_osm_id": "node/14058959298"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.356369,
+          43.6447334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "26",
+        "covered": "no",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "meta_feature_last_updated": "2026-07-29T15:35:21+00:00",
+        "meta_osm_id": "node/14058980967"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3539918,
+          43.6445417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
