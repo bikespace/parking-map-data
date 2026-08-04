@@ -96710,6 +96710,66 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-08-03T18:49:51+00:00",
+        "meta_osm_id": "node/14071110684"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3560349,
+          43.6474828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-08-03T18:52:11+00:00",
+        "meta_osm_id": "node/14071127239"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.354903,
+          43.6460952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-08-03T18:54:23+00:00",
+        "meta_osm_id": "node/14071127694"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3545211,
+          43.6456408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-08-03T18:58:26+00:00",
+        "meta_osm_id": "node/14071156775"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3509131,
+          43.6431666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
