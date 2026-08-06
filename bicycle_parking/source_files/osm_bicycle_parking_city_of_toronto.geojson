@@ -48883,12 +48883,13 @@
         "bicycle_parking": "rack",
         "bike_ride": "yes",
         "capacity": "7",
+        "check_date": "2026-08-05",
         "covered": "no",
         "description": "bike rack on the grass by the railpath trail",
         "fee": "no",
         "operator": "Metrolinx",
         "operator:type": "public",
-        "meta_feature_last_updated": "2025-07-11T21:37:11+00:00",
+        "meta_feature_last_updated": "2026-08-05T17:44:12+00:00",
         "meta_osm_id": "node/12994976201"
       },
       "geometry": {
@@ -59529,12 +59530,13 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "safe_loops",
         "capacity": "8",
+        "check_date": "2026-08-05",
         "covered": "no",
         "description": "stacker rack, wheelholder maxwidth 9cm",
         "fee": "no",
         "operator": "City of Toronto",
         "operator:type": "government",
-        "meta_feature_last_updated": "2026-03-17T01:39:45+00:00",
+        "meta_feature_last_updated": "2026-08-05T20:32:36+00:00",
         "meta_osm_id": "node/13127907287"
       },
       "geometry": {
@@ -99558,6 +99560,56 @@
               -79.3018911,
               43.8233225
             ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "20",
+        "covered": "no",
+        "description": "A row of 10 post-and-rings",
+        "meta_feature_last_updated": "2026-08-05T17:44:12+00:00",
+        "meta_osm_id": "way/1547520500"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.4499291,
+            43.6572779
+          ],
+          [
+            -79.449838,
+            43.6571844
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "20",
+        "covered": "no",
+        "description": "A row of 10 post-and-rings",
+        "meta_feature_last_updated": "2026-08-05T17:44:12+00:00",
+        "meta_osm_id": "way/1547520501"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.4499773,
+            43.6572621
+          ],
+          [
+            -79.4498863,
+            43.6571687
           ]
         ]
       }
