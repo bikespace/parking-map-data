@@ -1132,11 +1132,11 @@
     {
       "type": "Feature",
       "properties": {
-        "amenity": "bicycle_parking",
         "capacity": "1",
         "covered": "no",
-        "note": "1 post/ring",
-        "meta_feature_last_updated": "2026-03-28T22:03:20+00:00",
+        "disused:amenity": "bicycle_parking",
+        "note": "1 post, ring missing",
+        "meta_feature_last_updated": "2026-08-08T17:24:35+00:00",
         "meta_osm_id": "node/773497149"
       },
       "geometry": {
@@ -32546,22 +32546,6 @@
         "coordinates": [
           -79.3939166,
           43.6560343
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
-        "covered": "no",
-        "meta_feature_last_updated": "2026-03-28T22:03:17+00:00",
-        "meta_osm_id": "node/11800680792"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.3923701,
-          43.6561921
         ]
       }
     },
@@ -96872,6 +96856,21 @@
         "coordinates": [
           -79.4006938,
           43.6364257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-08-08T18:28:37+00:00",
+        "meta_osm_id": "node/14080792362"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3564307,
+          43.6479579
         ]
       }
     },
