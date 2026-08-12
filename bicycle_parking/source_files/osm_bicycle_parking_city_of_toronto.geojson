@@ -45345,7 +45345,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bike_share_toronto",
         "capacity": "15",
-        "meta_feature_last_updated": "2025-05-02T20:18:53+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-08-11T18:37:27+00:00",
         "meta_osm_id": "node/12804897890"
       },
       "geometry": {
@@ -96975,6 +96976,54 @@
         "coordinates": [
           -79.3564663,
           43.6562411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "12",
+        "capacity:cargo_bike": "1",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Toronto District School Board",
+        "operator:type": "public",
+        "meta_feature_last_updated": "2026-08-11T11:11:21+00:00",
+        "meta_osm_id": "node/14087391770"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.1795059,
+          43.7934382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "12",
+        "cargo_bike": "yes",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Toronto Catholic District School Board",
+        "operator:type": "public",
+        "quantity": "3",
+        "meta_feature_last_updated": "2026-08-11T11:11:21+00:00",
+        "meta_osm_id": "node/14087391771"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.1751766,
+          43.7934909
         ]
       }
     },
