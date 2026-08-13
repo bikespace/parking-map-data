@@ -252,8 +252,9 @@
         "WARD": 11,
         "YEAR_BUILT": 1947,
         "YEAR_REGISTERED": 2025,
-        "LATITUDE": 43.66215,
-        "LONGITUDE": -79.41025,
+        "SITE_ADDRESS_y": "686 BATHURST ST",
+        "LATITUDE": 43.662147387,
+        "LONGITUDE": -79.410252896,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -279,8 +280,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.41025,
-          43.66215
+          -79.410252896,
+          43.662147387
         ]
       }
     },
@@ -3375,8 +3376,8 @@
         "YEAR_OF_REPLACEMENT": 2002,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "5430 YONGE ST",
-        "LATITUDE": 43.7759712605,
-        "LONGITUDE": -79.4152224497,
+        "LATITUDE": 43.775966958249995,
+        "LONGITUDE": -79.41522082235,
         "ward_code": "18",
         "ward_name": "Willowdale",
         "ward_full": "Willowdale (18)",
@@ -3402,8 +3403,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4152224497,
-          43.7759712605
+          -79.41522082235,
+          43.775966958249995
         ]
       }
     },
@@ -4078,13 +4079,14 @@
         "WARD": 13,
         "YEAR_BUILT": 1888,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.649045,
-        "LONGITUDE": -79.3616463,
-        "ward_code": "10",
-        "ward_name": "Spadina-Fort York",
-        "ward_full": "Spadina-Fort York (10)",
-        "neighbourhood_number": "166",
-        "neighbourhood_name": "St Lawrence-East Bayfront-The Islands",
+        "SITE_ADDRESS_y": "531-535 PARLIAMENT ST",
+        "LATITUDE": 43.665633289,
+        "LONGITUDE": -79.368248349,
+        "ward_code": "13",
+        "ward_name": "Toronto Centre",
+        "ward_full": "Toronto Centre (13)",
+        "neighbourhood_number": "071",
+        "neighbourhood_name": "Cabbagetown-South St.James Town",
         "neighbourhood_classification": "Not an NIA or Emerging Neighbourhood",
         "neighbourhood_classification_code": "NA",
         "BICYCLE_ZONE": 1,
@@ -4105,8 +4107,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3616463,
-          43.649045
+          -79.368248349,
+          43.665633289
         ]
       }
     },
@@ -4172,8 +4174,9 @@
         "WARD": 13,
         "YEAR_BUILT": 1876,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.665184,
-        "LONGITUDE": -79.3735501,
+        "SITE_ADDRESS_y": "425 SHERBOURNE ST",
+        "LATITUDE": 43.6652486934,
+        "LONGITUDE": -79.373623999,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -4199,8 +4202,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3735501,
-          43.665184
+          -79.373623999,
+          43.6652486934
         ]
       }
     },
@@ -4456,8 +4459,9 @@
         "WARD": 14,
         "YEAR_BUILT": 1948,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.665824,
-        "LONGITUDE": -79.3197967,
+        "SITE_ADDRESS_y": "1550 QUEEN ST E",
+        "LATITUDE": 43.66580976,
+        "LONGITUDE": -79.319807111,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -4483,8 +4487,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3197967,
-          43.665824
+          -79.319807111,
+          43.66580976
         ]
       }
     },
@@ -4641,8 +4645,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1928,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.6712319,
-        "LONGITUDE": -79.2936337,
+        "SITE_ADDRESS_y": "2265 QUEEN ST E",
+        "LATITUDE": 43.67114612,
+        "LONGITUDE": -79.293656455,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -4668,8 +4673,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2936337,
-          43.6712319
+          -79.293656455,
+          43.67114612
         ]
       }
     },
@@ -4778,8 +4783,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1924,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6731253,
-        "LONGITUDE": -79.2874408,
+        "SITE_ADDRESS_y": "85 BEECH AVE",
+        "LATITUDE": 43.67308603,
+        "LONGITUDE": -79.287426652,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -4805,8 +4811,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2874408,
-          43.6731253
+          -79.287426652,
+          43.67308603
         ]
       }
     },
@@ -4918,8 +4924,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 6,
         "SITE_ADDRESS_y": "2178 QUEEN ST E",
-        "LATITUDE": 43.6722063299,
-        "LONGITUDE": -79.2908934269,
+        "LATITUDE": 43.67220203395,
+        "LONGITUDE": -79.29089182445,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -4945,8 +4951,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2908934269,
-          43.6722063299
+          -79.29089182445,
+          43.67220203395
         ]
       }
     },
@@ -4963,15 +4969,16 @@
         "WARD": 19,
         "YEAR_BUILT": 1965,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6933348,
-        "LONGITUDE": -79.2971998,
+        "SITE_ADDRESS_y": "53-55 DAWES RD",
+        "LATITUDE": 43.6901791466029,
+        "LONGITUDE": -79.29662620519822,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
-        "neighbourhood_number": "061",
-        "neighbourhood_name": "Taylor-Massey",
-        "neighbourhood_classification": "Neighbourhood Improvement Area",
-        "neighbourhood_classification_code": "NIA",
+        "neighbourhood_number": "062",
+        "neighbourhood_name": "East End-Danforth",
+        "neighbourhood_classification": "Not an NIA or Emerging Neighbourhood",
+        "neighbourhood_classification_code": "NA",
         "BICYCLE_ZONE": 1,
         "short_term_min": 2,
         "short_term_max": 4,
@@ -4990,8 +4997,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2971998,
-          43.6933348
+          -79.29662620519822,
+          43.6901791466029
         ]
       }
     },
@@ -5439,8 +5446,8 @@
         "YEAR_BUILT": 1988,
         "YEAR_REGISTERED": 2020,
         "SITE_ADDRESS_y": "2526 DANFORTH AVE",
-        "LATITUDE": 43.6883174325,
-        "LONGITUDE": -79.3025563055,
+        "LATITUDE": 43.68831313525,
+        "LONGITUDE": -79.30255470025,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -5466,8 +5473,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3025563055,
-          43.6883174325
+          -79.30255470025,
+          43.68831313525
         ]
       }
     },
@@ -7519,8 +7526,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1951,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.694111,
-        "LONGITUDE": -79.3271901,
+        "SITE_ADDRESS_y": "611 COSBURN AVE",
+        "LATITUDE": 43.6941375309,
+        "LONGITUDE": -79.3272137996,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -7546,8 +7554,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3271901,
-          43.694111
+          -79.3272137996,
+          43.6941375309
         ]
       }
     },
@@ -7612,8 +7620,9 @@
         "WARD": 14,
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6892774,
-        "LONGITUDE": -79.3474471,
+        "SITE_ADDRESS_y": "117 COSBURN AVE",
+        "LATITUDE": 43.6893704091,
+        "LONGITUDE": -79.3475467129,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -7639,8 +7648,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3474471,
-          43.6892774
+          -79.3475467129,
+          43.6893704091
         ]
       }
     },
@@ -8452,8 +8461,9 @@
         "WARD": 14,
         "YEAR_BUILT": 1965,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6916,
-        "LONGITUDE": -79.35684,
+        "SITE_ADDRESS_y": "11 FERNWOOD GDNS",
+        "LATITUDE": 43.691599597,
+        "LONGITUDE": -79.356843843,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -8479,8 +8489,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.35684,
-          43.6916
+          -79.356843843,
+          43.691599597
         ]
       }
     },
@@ -8498,8 +8508,8 @@
         "YEAR_BUILT": 1962,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "15 MALLORY CRES",
-        "LATITUDE": 43.6962315888,
-        "LONGITUDE": -79.3689911694,
+        "LATITUDE": 43.6962272924,
+        "LONGITUDE": -79.36898955320001,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -8525,8 +8535,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3689911694,
-          43.6962315888
+          -79.36898955320001,
+          43.6962272924
         ]
       }
     },
@@ -9106,8 +9116,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 20,
         "bike_parking_outdoor": 5,
-        "LATITUDE": 43.67108,
-        "LONGITUDE": -79.43698,
+        "SITE_ADDRESS_y": "331 BARTLETT AVE N",
+        "LATITUDE": 43.67108049,
+        "LONGITUDE": -79.436975378,
         "ward_code": "09",
         "ward_name": "Davenport",
         "ward_full": "Davenport (09)",
@@ -9133,8 +9144,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.43698,
-          43.67108
+          -79.436975378,
+          43.67108049
         ]
       }
     },
@@ -9154,7 +9165,7 @@
         "bike_parking_indoor": 658,
         "bike_parking_outdoor": 5,
         "SITE_ADDRESS_y": "25 ORDNANCE ST",
-        "LATITUDE": 43.639152469,
+        "LATITUDE": 43.63915246,
         "LONGITUDE": -79.410262481,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
@@ -9182,7 +9193,7 @@
         "type": "Point",
         "coordinates": [
           -79.410262481,
-          43.639152469
+          43.63915246
         ]
       }
     },
@@ -9297,8 +9308,8 @@
         "YEAR_OF_REPLACEMENT": 2017,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "72 CLINTON ST",
-        "LATITUDE": 43.6556979922,
-        "LONGITUDE": -79.414959496,
+        "LATITUDE": 43.6556937006,
+        "LONGITUDE": -79.414957874,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -9324,8 +9335,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.414959496,
-          43.6556979922
+          -79.414957874,
+          43.6556937006
         ]
       }
     },
@@ -10061,8 +10072,8 @@
         "bike_parking_indoor": 60,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "2 CLARENDON AVE",
-        "LATITUDE": 43.6835915113,
-        "LONGITUDE": -79.4007570137,
+        "LATITUDE": 43.683582922,
+        "LONGITUDE": -79.400753772,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -10088,8 +10099,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4007570137,
-          43.6835915113
+          -79.400753772,
+          43.683582922
         ]
       }
     },
@@ -10763,8 +10774,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 231,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.6669,
-        "LONGITUDE": -79.38477,
+        "SITE_ADDRESS_y": "8 GLOUCESTER ST",
+        "LATITUDE": 43.666895137,
+        "LONGITUDE": -79.384772592,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -10790,8 +10802,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.38477,
-          43.6669
+          -79.384772592,
+          43.666895137
         ]
       }
     },
@@ -10904,8 +10916,8 @@
         "YEAR_OF_REPLACEMENT": 2006,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "859 DUNDAS ST E",
-        "LATITUDE": 43.6621159617,
-        "LONGITUDE": -79.35167947,
+        "LATITUDE": 43.66211166785,
+        "LONGITUDE": -79.35167785799999,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -10931,8 +10943,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.35167947,
-          43.6621159617
+          -79.35167785799999,
+          43.66211166785
         ]
       }
     },
@@ -11461,8 +11473,9 @@
         "WARD": 14,
         "YEAR_BUILT": 1926,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.68106,
-        "LONGITUDE": -79.33314,
+        "SITE_ADDRESS_y": "1169 DANFORTH AVE",
+        "LATITUDE": 43.68105642,
+        "LONGITUDE": -79.333142397,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -11488,8 +11501,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.33314,
-          43.68106
+          -79.333142397,
+          43.68105642
         ]
       }
     },
@@ -11980,8 +11993,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 5,
-        "LATITUDE": 43.6899285,
-        "LONGITUDE": -79.3941815,
+        "SITE_ADDRESS_y": "7 HEATH ST E",
+        "LATITUDE": 43.689891751,
+        "LONGITUDE": -79.393928595,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -12007,8 +12021,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3941815,
-          43.6899285
+          -79.393928595,
+          43.689891751
         ]
       }
     },
@@ -13628,8 +13642,9 @@
         "WARD": 14,
         "YEAR_BUILT": 1922,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6733224,
-        "LONGITUDE": -79.3566253,
+        "SITE_ADDRESS_y": "646 BROADVIEW AVE",
+        "LATITUDE": 43.673396363,
+        "LONGITUDE": -79.356605081,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -13655,8 +13670,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3566253,
-          43.6733224
+          -79.356605081,
+          43.673396363
         ]
       }
     },
@@ -14102,8 +14117,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 4,
         "bike_parking_outdoor": 7,
-        "LATITUDE": 43.7019756,
-        "LONGITUDE": -79.2566488,
+        "SITE_ADDRESS_y": "160 PINEGROVE AVE",
+        "LATITUDE": 43.7018391514,
+        "LONGITUDE": -79.2568702824,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -14129,8 +14145,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2566488,
-          43.7019756
+          -79.2568702824,
+          43.7018391514
         ]
       }
     },
@@ -14193,8 +14209,9 @@
         "WARD": 20,
         "YEAR_BUILT": 2023,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.7227625,
-        "LONGITUDE": -79.299387,
+        "SITE_ADDRESS_y": "26 ENGELHART CRES",
+        "LATITUDE": 43.722771953,
+        "LONGITUDE": -79.299406046,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -14220,8 +14237,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.299387,
-          43.7227625
+          -79.299406046,
+          43.722771953
         ]
       }
     },
@@ -14383,8 +14400,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "39 DURNFORD RD",
-        "LATITUDE": 43.799771853,
-        "LONGITUDE": -79.150262267,
+        "LATITUDE": 43.799425890500004,
+        "LONGITUDE": -79.15000537450001,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -14410,8 +14427,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.150262267,
-          43.799771853
+          -79.15000537450001,
+          43.799425890500004
         ]
       }
     },
@@ -14526,8 +14543,8 @@
         "YEAR_OF_REPLACEMENT": 2006,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "20 TRUDELLE ST",
-        "LATITUDE": 43.7404592839,
-        "LONGITUDE": -79.2437182596,
+        "LATITUDE": 43.740346176450004,
+        "LONGITUDE": -79.2442521118,
         "ward_code": "21",
         "ward_name": "Scarborough Centre",
         "ward_full": "Scarborough Centre (21)",
@@ -14553,8 +14570,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2437182596,
-          43.7404592839
+          -79.2442521118,
+          43.740346176450004
         ]
       }
     },
@@ -15479,8 +15496,8 @@
         "bike_parking_indoor": 100,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "25 WOOD ST",
-        "LATITUDE": 43.662243751,
-        "LONGITUDE": -79.381865281,
+        "LATITUDE": 43.662188959999995,
+        "LONGITUDE": -79.3818290285,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -15506,8 +15523,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.381865281,
-          43.662243751
+          -79.3818290285,
+          43.662188959999995
         ]
       }
     },
@@ -15525,7 +15542,7 @@
         "YEAR_BUILT": 2006,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "176 THE ESPLANADE",
-        "LATITUDE": 43.649017812,
+        "LATITUDE": 43.6490178125,
         "LONGITUDE": -79.367964945,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -15553,7 +15570,7 @@
         "type": "Point",
         "coordinates": [
           -79.367964945,
-          43.649017812
+          43.6490178125
         ]
       }
     },
@@ -16420,8 +16437,8 @@
         "WARD": 19,
         "YEAR_BUILT": 1951,
         "SITE_ADDRESS_y": "1139 O'CONNOR DR",
-        "LATITUDE": 43.7114376749,
-        "LONGITUDE": -79.3078956606,
+        "LATITUDE": 43.71143337545,
+        "LONGITUDE": -79.3078940538,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -16447,8 +16464,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3078956606,
-          43.7114376749
+          -79.3078940538,
+          43.71143337545
         ]
       }
     },
@@ -16701,7 +16718,7 @@
         "YEAR_BUILT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "40 LOWER RIVER ST.",
-        "LATITUDE": 43.656257859,
+        "LATITUDE": 43.6562578595,
         "LONGITUDE": -79.355848526,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -16729,7 +16746,7 @@
         "type": "Point",
         "coordinates": [
           -79.355848526,
-          43.656257859
+          43.6562578595
         ]
       }
     },
@@ -16841,8 +16858,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1930,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6835515,
-        "LONGITUDE": -79.303156,
+        "SITE_ADDRESS_y": "2170 GERRARD ST E",
+        "LATITUDE": 43.683540664,
+        "LONGITUDE": -79.303119349,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -16868,8 +16886,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.303156,
-          43.6835515
+          -79.303119349,
+          43.683540664
         ]
       }
     },
@@ -17075,8 +17093,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 637,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.65416,
-        "LONGITUDE": -79.37486,
+        "SITE_ADDRESS_y": "30 MUTUAL ST",
+        "LATITUDE": 43.654159179,
+        "LONGITUDE": -79.374861246,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -17102,8 +17121,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.37486,
-          43.65416
+          -79.374861246,
+          43.654159179
         ]
       }
     },
@@ -17169,8 +17188,9 @@
         "YEAR_BUILT": 2021,
         "bike_parking_indoor": 2,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.72274,
-        "LONGITUDE": -79.4462,
+        "SITE_ADDRESS_y": "20 NEW HEIGHTS CRT",
+        "LATITUDE": 43.72278105597972,
+        "LONGITUDE": -79.4462988235644,
         "ward_code": "08",
         "ward_name": "Eglinton-Lawrence",
         "ward_full": "Eglinton-Lawrence (08)",
@@ -17196,8 +17216,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4462,
-          43.72274
+          -79.4462988235644,
+          43.72278105597972
         ]
       }
     },
@@ -17312,8 +17332,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 2,
         "bike_parking_outdoor": 10,
-        "LATITUDE": 43.80892,
-        "LONGITUDE": -79.26445,
+        "SITE_ADDRESS_y": "23 THUNDER GRV",
+        "LATITUDE": 43.808917901,
+        "LONGITUDE": -79.264451449,
         "ward_code": "23",
         "ward_name": "Scarborough North",
         "ward_full": "Scarborough North (23)",
@@ -17339,8 +17360,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.26445,
-          43.80892
+          -79.264451449,
+          43.808917901
         ]
       }
     },
@@ -17404,8 +17425,9 @@
         "YEAR_BUILT": 2021,
         "bike_parking_indoor": 100,
         "bike_parking_outdoor": 5,
-        "LATITUDE": 43.78023,
-        "LONGITUDE": -79.34275,
+        "SITE_ADDRESS_y": "170 FAIRVIEW MALL DR",
+        "LATITUDE": 43.780229226,
+        "LONGITUDE": -79.342751822,
         "ward_code": "17",
         "ward_name": "Don Valley North",
         "ward_full": "Don Valley North (17)",
@@ -17431,8 +17453,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.34275,
-          43.78023
+          -79.342751822,
+          43.780229226
         ]
       }
     },
@@ -17452,8 +17474,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 62,
         "bike_parking_outdoor": 7,
-        "LATITUDE": 43.65535,
-        "LONGITUDE": -79.41199,
+        "SITE_ADDRESS_y": "555 COLLEGE ST",
+        "LATITUDE": 43.655348611,
+        "LONGITUDE": -79.411985181,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -17479,8 +17502,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.41199,
-          43.65535
+          -79.411985181,
+          43.655348611
         ]
       }
     },
@@ -17499,8 +17522,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 86,
         "bike_parking_outdoor": 3,
-        "LATITUDE": 43.6434898,
-        "LONGITUDE": -79.3957769,
+        "SITE_ADDRESS_y": "425 WELLINGTON ST W",
+        "LATITUDE": 43.64297162605219,
+        "LONGITUDE": -79.39638654547771,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -17526,8 +17550,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3957769,
-          43.6434898
+          -79.39638654547771,
+          43.64297162605219
         ]
       }
     },
@@ -19510,8 +19534,9 @@
         "WARD": 4,
         "YEAR_BUILT": 1952,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.65044,
-        "LONGITUDE": -79.47572,
+        "SITE_ADDRESS_y": "109 RUNNYMEDE RD",
+        "LATITUDE": 43.650437795,
+        "LONGITUDE": -79.47571621,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -19537,8 +19562,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.47572,
-          43.65044
+          -79.47571621,
+          43.650437795
         ]
       }
     },
@@ -20025,8 +20050,9 @@
         "SITE_ADDRESS_x": "270  RYDING AVE ",
         "WARD": 5,
         "YEAR_BUILT": 1958,
-        "LATITUDE": 43.66886,
-        "LONGITUDE": -79.48017,
+        "SITE_ADDRESS_y": "270 RYDING AVE",
+        "LATITUDE": 43.668858212,
+        "LONGITUDE": -79.480168532,
         "ward_code": "05",
         "ward_name": "York South-Weston",
         "ward_full": "York South-Weston (05)",
@@ -20052,8 +20078,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.48017,
-          43.66886
+          -79.480168532,
+          43.668858212
         ]
       }
     },
@@ -21089,8 +21115,9 @@
         "WARD": 10,
         "YEAR_BUILT": 1926,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6465,
-        "LONGITUDE": -79.41169,
+        "SITE_ADDRESS_y": "15 GORE VALE AVE",
+        "LATITUDE": 43.646503767,
+        "LONGITUDE": -79.41168935,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -21116,8 +21143,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.41169,
-          43.6465
+          -79.41168935,
+          43.646503767
         ]
       }
     },
@@ -21421,8 +21448,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 8,
         "bike_parking_outdoor": 6,
-        "LATITUDE": 43.6687784,
-        "LONGITUDE": -79.4129863,
+        "SITE_ADDRESS_y": "922 BATHURST ST",
+        "LATITUDE": 43.66877501,
+        "LONGITUDE": -79.412965543,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -21448,8 +21476,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4129863,
-          43.6687784
+          -79.412965543,
+          43.66877501
         ]
       }
     },
@@ -21751,8 +21779,8 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1400 BATHURST ST",
-        "LATITUDE": 43.6806482749,
-        "LONGITUDE": -79.418061916,
+        "LATITUDE": 43.680643981450004,
+        "LONGITUDE": -79.4180602925,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -21778,8 +21806,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.418061916,
-          43.6806482749
+          -79.4180602925,
+          43.680643981450004
         ]
       }
     },
@@ -24013,8 +24041,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 627,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.7057307,
-        "LONGITUDE": -79.3937389,
+        "SITE_ADDRESS_y": "44 LILLIAN ST",
+        "LATITUDE": 43.705786822,
+        "LONGITUDE": -79.393735289,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -24040,8 +24069,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3937389,
-          43.7057307
+          -79.393735289,
+          43.705786822
         ]
       }
     },
@@ -24058,8 +24087,9 @@
         "WARD": 11,
         "YEAR_BUILT": 2024,
         "YEAR_REGISTERED": 2025,
-        "LATITUDE": 43.66409,
-        "LONGITUDE": -79.41103,
+        "SITE_ADDRESS_y": "748 BATHURST ST",
+        "LATITUDE": 43.6641378977989,
+        "LONGITUDE": -79.41112979358672,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -24085,8 +24115,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.41103,
-          43.66409
+          -79.41112979358672,
+          43.6641378977989
         ]
       }
     },
@@ -24294,8 +24324,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 4,
-        "LATITUDE": 43.6521242,
-        "LONGITUDE": -79.35442,
+        "SITE_ADDRESS_y": "100 MILL ST",
+        "LATITUDE": 43.651759044443246,
+        "LONGITUDE": -79.35712948365706,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -24321,8 +24352,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.35442,
-          43.6521242
+          -79.35712948365706,
+          43.651759044443246
         ]
       }
     },
@@ -24615,8 +24646,8 @@
         "YEAR_OF_REPLACEMENT": 2010,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "5005 DUNDAS ST W",
-        "LATITUDE": 43.6460539737,
-        "LONGITUDE": -79.5307204915,
+        "LATITUDE": 43.64604968585,
+        "LONGITUDE": -79.53071885175001,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -24642,8 +24673,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5307204915,
-          43.6460539737
+          -79.53071885175001,
+          43.64604968585
         ]
       }
     },
@@ -24847,7 +24878,7 @@
         "WARD": 17,
         "YEAR_BUILT": 1973,
         "SITE_ADDRESS_y": "8 TREE SPARROWAY",
-        "LATITUDE": 43.791324582,
+        "LATITUDE": 43.791324573,
         "LONGITUDE": -79.369928562,
         "ward_code": "17",
         "ward_name": "Don Valley North",
@@ -24875,7 +24906,7 @@
         "type": "Point",
         "coordinates": [
           -79.369928562,
-          43.791324582
+          43.791324573
         ]
       }
     },
@@ -24940,8 +24971,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 197,
         "bike_parking_outdoor": 40,
-        "LATITUDE": 43.675811,
-        "LONGITUDE": -79.5547022,
+        "SITE_ADDRESS_y": "55 WARRENDER AVE",
+        "LATITUDE": 43.675820403583614,
+        "LONGITUDE": -79.55485839413227,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -24967,8 +24999,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5547022,
-          43.675811
+          -79.55485839413227,
+          43.675820403583614
         ]
       }
     },
@@ -25272,8 +25304,9 @@
         "WARD": 4,
         "YEAR_BUILT": 1967,
         "YEAR_REGISTERED": 2025,
-        "LATITUDE": 43.6397142,
-        "LONGITUDE": -79.4378279,
+        "SITE_ADDRESS_y": "2 LAXTON AVE",
+        "LATITUDE": 43.639730585,
+        "LONGITUDE": -79.4378417283,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -25299,8 +25332,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4378279,
-          43.6397142
+          -79.4378417283,
+          43.639730585
         ]
       }
     },
@@ -25646,8 +25679,9 @@
         "WARD": 20,
         "YEAR_BUILT": 2023,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.722611,
-        "LONGITUDE": -79.2997865,
+        "SITE_ADDRESS_y": "22 ENGELHART CRES",
+        "LATITUDE": 43.722622055,
+        "LONGITUDE": -79.299806622,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -25673,8 +25707,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2997865,
-          43.722611
+          -79.299806622,
+          43.722622055
         ]
       }
     },
@@ -25694,8 +25728,8 @@
         "bike_parking_indoor": 12,
         "bike_parking_outdoor": 12,
         "SITE_ADDRESS_y": "55 MADISON AVE",
-        "LATITUDE": 43.6700017507,
-        "LONGITUDE": -79.4035877513,
+        "LATITUDE": 43.66999745735,
+        "LONGITUDE": -79.40358613065,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -25721,8 +25755,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4035877513,
-          43.6700017507
+          -79.40358613065,
+          43.66999745735
         ]
       }
     },
@@ -26401,8 +26435,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "37 DURNFORD RD",
-        "LATITUDE": 43.79936022,
-        "LONGITUDE": -79.150044554,
+        "LATITUDE": 43.799220074,
+        "LONGITUDE": -79.149896518,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -26428,8 +26462,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.150044554,
-          43.79936022
+          -79.149896518,
+          43.799220074
         ]
       }
     },
@@ -26540,8 +26574,8 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "90 PARMA CRT",
-        "LATITUDE": 43.717195772,
-        "LONGITUDE": -79.300999236,
+        "LATITUDE": 43.7170244645,
+        "LONGITUDE": -79.3003576095,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -26567,8 +26601,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.300999236,
-          43.717195772
+          -79.3003576095,
+          43.7170244645
         ]
       }
     },
@@ -27012,7 +27046,7 @@
         "bike_parking_indoor": 20,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "565 SHERBOURNE ST",
-        "LATITUDE": 43.670031447,
+        "LATITUDE": 43.6700314475,
         "LONGITUDE": -79.375487343,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -27040,7 +27074,7 @@
         "type": "Point",
         "coordinates": [
           -79.375487343,
-          43.670031447
+          43.6700314475
         ]
       }
     },
@@ -27338,8 +27372,9 @@
         "WARD": 12,
         "YEAR_BUILT": 1953,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.696646,
-        "LONGITUDE": -79.4234575,
+        "SITE_ADDRESS_y": "1701 BATHURST ST",
+        "LATITUDE": 43.6966678221,
+        "LONGITUDE": -79.4234945595,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -27365,8 +27400,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4234575,
-          43.696646
+          -79.4234945595,
+          43.6966678221
         ]
       }
     },
@@ -27476,8 +27511,8 @@
         "YEAR_BUILT": 1959,
         "YEAR_REGISTERED": 2024,
         "SITE_ADDRESS_y": "1020 O'CONNOR DR",
-        "LATITUDE": 43.7099171147,
-        "LONGITUDE": -79.309915823,
+        "LATITUDE": 43.709908518,
+        "LONGITUDE": -79.309912608,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -27503,8 +27538,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.309915823,
-          43.7099171147
+          -79.309912608,
+          43.709908518
         ]
       }
     },
@@ -27521,8 +27556,8 @@
         "YEAR_BUILT": 1958,
         "YEAR_REGISTERED": 2021,
         "SITE_ADDRESS_y": "1004 O'CONNOR DR",
-        "LATITUDE": 43.7093915455,
-        "LONGITUDE": -79.3103269723,
+        "LATITUDE": 43.70938724725,
+        "LONGITUDE": -79.31032536465,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -27548,8 +27583,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3103269723,
-          43.7093915455
+          -79.31032536465,
+          43.70938724725
         ]
       }
     },
@@ -27890,8 +27925,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6960172,
-        "LONGITUDE": -79.3186631,
+        "SITE_ADDRESS_y": "831 COSBURN AVE",
+        "LATITUDE": 43.6958957946,
+        "LONGITUDE": -79.3187940759,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -27917,8 +27953,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3186631,
-          43.6960172
+          -79.3187940759,
+          43.6958957946
         ]
       }
     },
@@ -28452,8 +28488,9 @@
         "WARD": 14,
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6894003,
-        "LONGITUDE": -79.3546648,
+        "SITE_ADDRESS_y": "2 GAMBLE AVE",
+        "LATITUDE": 43.6894852292,
+        "LONGITUDE": -79.3546084396,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -28479,8 +28516,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3546648,
-          43.6894003
+          -79.3546084396,
+          43.6894852292
         ]
       }
     },
@@ -30480,8 +30517,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 6,
         "SITE_ADDRESS_y": "3050 DUFFERIN ST",
-        "LATITUDE": 43.7131568657,
-        "LONGITUDE": -79.4551622078,
+        "LATITUDE": 43.713152569849996,
+        "LONGITUDE": -79.4551605769,
         "ward_code": "08",
         "ward_name": "Eglinton-Lawrence",
         "ward_full": "Eglinton-Lawrence (08)",
@@ -30507,8 +30544,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4551622078,
-          43.7131568657
+          -79.4551605769,
+          43.713152569849996
         ]
       }
     },
@@ -30948,8 +30985,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 3,
-        "LATITUDE": 43.7158895,
-        "LONGITUDE": -79.4286512,
+        "SITE_ADDRESS_y": "2929 BATHURST ST",
+        "LATITUDE": 43.7158403312,
+        "LONGITUDE": -79.4286561734,
         "ward_code": "08",
         "ward_name": "Eglinton-Lawrence",
         "ward_full": "Eglinton-Lawrence (08)",
@@ -30975,8 +31013,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4286512,
-          43.7158895
+          -79.4286561734,
+          43.7158403312
         ]
       }
     },
@@ -34450,8 +34488,8 @@
         "YEAR_BUILT": 1952,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "162 BERRY RD",
-        "LATITUDE": 43.6371233389,
-        "LONGITUDE": -79.4904689294,
+        "LATITUDE": 43.637119050449996,
+        "LONGITUDE": -79.4904672962,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -34477,8 +34515,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4904689294,
-          43.6371233389
+          -79.4904672962,
+          43.637119050449996
         ]
       }
     },
@@ -40697,7 +40735,7 @@
         "YEAR_OF_REPLACEMENT": 2015,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "140 ADANAC DR",
-        "LATITUDE": 43.740664525,
+        "LATITUDE": 43.7406645255,
         "LONGITUDE": -79.226955071,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
@@ -40725,7 +40763,7 @@
         "type": "Point",
         "coordinates": [
           -79.226955071,
-          43.740664525
+          43.7406645255
         ]
       }
     },
@@ -41075,8 +41113,8 @@
         "YEAR_BUILT": 1991,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1315 NEILSON RD",
-        "LATITUDE": 43.807786956,
-        "LONGITUDE": -79.2188121812,
+        "LATITUDE": 43.8077826465,
+        "LONGITUDE": -79.21881058459999,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -41102,8 +41140,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2188121812,
-          43.807786956
+          -79.21881058459999,
+          43.8077826465
         ]
       }
     },
@@ -41308,8 +41346,8 @@
         "YEAR_OF_REPLACEMENT": 2003,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "11 RANDOLPH AVE",
-        "LATITUDE": 43.6582989772,
-        "LONGITUDE": -79.4502110226,
+        "LATITUDE": 43.6582946861,
+        "LONGITUDE": -79.4502093948,
         "ward_code": "09",
         "ward_name": "Davenport",
         "ward_full": "Davenport (09)",
@@ -41335,8 +41373,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4502110226,
-          43.6582989772
+          -79.4502093948,
+          43.6582946861
         ]
       }
     },
@@ -42003,8 +42041,9 @@
         "WARD": 4,
         "YEAR_BUILT": 1940,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.6464431,
-        "LONGITUDE": -79.4493235,
+        "SITE_ADDRESS_y": "256 RONCESVALLES AVE",
+        "LATITUDE": 43.6464968961,
+        "LONGITUDE": -79.4493527834,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -42030,8 +42069,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4493235,
-          43.6464431
+          -79.4493527834,
+          43.6464968961
         ]
       }
     },
@@ -42373,8 +42412,9 @@
         "WARD": 9,
         "YEAR_BUILT": 1940,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.659122,
-        "LONGITUDE": -79.4284245,
+        "SITE_ADDRESS_y": "675 DOVERCOURT RD",
+        "LATITUDE": 43.659196197,
+        "LONGITUDE": -79.42829799,
         "ward_code": "09",
         "ward_name": "Davenport",
         "ward_full": "Davenport (09)",
@@ -42400,8 +42440,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4284245,
-          43.659122
+          -79.42829799,
+          43.659196197
         ]
       }
     },
@@ -42420,8 +42460,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 15,
-        "LATITUDE": 43.6791193,
-        "LONGITUDE": -79.3919069,
+        "SITE_ADDRESS_y": "28 MACPHERSON AVE",
+        "LATITUDE": 43.679065098,
+        "LONGITUDE": -79.391918658,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -42447,8 +42488,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3919069,
-          43.6791193
+          -79.391918658,
+          43.679065098
         ]
       }
     },
@@ -42945,8 +42986,8 @@
         "YEAR_OF_REPLACEMENT": 2010,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "55 THE ESPLANADE",
-        "LATITUDE": 43.6462124055,
-        "LONGITUDE": -79.3747276084,
+        "LATITUDE": 43.64646515125,
+        "LONGITUDE": -79.3743820032,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -42972,8 +43013,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3747276084,
-          43.6462124055
+          -79.3743820032,
+          43.64646515125
         ]
       }
     },
@@ -43369,7 +43410,7 @@
         "bike_parking_indoor": 35,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "166 CARLTON ST",
-        "LATITUDE": 43.663298218,
+        "LATITUDE": 43.6632982185,
         "LONGITUDE": -79.373807891,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -43397,7 +43438,7 @@
         "type": "Point",
         "coordinates": [
           -79.373807891,
-          43.663298218
+          43.6632982185
         ]
       }
     },
@@ -44224,8 +44265,9 @@
         "SITE_ADDRESS_x": "1430  GERRARD ST E",
         "WARD": 14,
         "YEAR_BUILT": 1927,
-        "LATITUDE": 43.67248,
-        "LONGITUDE": -79.3223,
+        "SITE_ADDRESS_y": "1430 GERRARD ST E",
+        "LATITUDE": 43.672476824,
+        "LONGITUDE": -79.322298173,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -44251,8 +44293,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3223,
-          43.67248
+          -79.322298173,
+          43.672476824
         ]
       }
     },
@@ -44595,8 +44637,9 @@
         "WARD": 14,
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.6824459,
-        "LONGITUDE": -79.3265282,
+        "SITE_ADDRESS_y": "1435 DANFORTH AVE",
+        "LATITUDE": 43.6824639351,
+        "LONGITUDE": -79.3265605311,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -44622,8 +44665,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3265282,
-          43.6824459
+          -79.3265605311,
+          43.6824639351
         ]
       }
     },
@@ -44687,8 +44730,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1930,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.6668513,
-        "LONGITUDE": -79.3154557,
+        "SITE_ADDRESS_y": "1638 QUEEN ST E",
+        "LATITUDE": 43.666846539,
+        "LONGITUDE": -79.31548812,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -44714,8 +44758,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3154557,
-          43.6668513
+          -79.31548812,
+          43.666846539
         ]
       }
     },
@@ -45633,8 +45677,8 @@
         "YEAR_BUILT": 1990,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "3179 YONGE ST",
-        "LATITUDE": 43.7273367741,
-        "LONGITUDE": -79.4020576636,
+        "LATITUDE": 43.72733247605,
+        "LONGITUDE": -79.4020560408,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -45660,8 +45704,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4020576636,
-          43.7273367741
+          -79.4020560408,
+          43.72733247605
         ]
       }
     },
@@ -46668,8 +46712,8 @@
         "YEAR_BUILT": 1951,
         "YEAR_REGISTERED": 2021,
         "SITE_ADDRESS_y": "1000 O'CONNOR DR",
-        "LATITUDE": 43.7092735859,
-        "LONGITUDE": -79.3104170385,
+        "LATITUDE": 43.70926928745,
+        "LONGITUDE": -79.31041543125,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -46695,8 +46739,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3104170385,
-          43.7092735859
+          -79.31041543125,
+          43.70926928745
         ]
       }
     },
@@ -47092,8 +47136,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 5,
-        "LATITUDE": 43.6897734,
-        "LONGITUDE": -79.330914,
+        "SITE_ADDRESS_y": "494 MORTIMER AVE",
+        "LATITUDE": 43.6898618221,
+        "LONGITUDE": -79.3309441694,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -47119,8 +47164,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.330914,
-          43.6897734
+          -79.3309441694,
+          43.6898618221
         ]
       }
     },
@@ -47850,8 +47895,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 6,
         "bike_parking_outdoor": 2,
-        "LATITUDE": 43.70444,
-        "LONGITUDE": -79.36574,
+        "SITE_ADDRESS_y": "870 MILLWOOD RD",
+        "LATITUDE": 43.704444246,
+        "LONGITUDE": -79.365738854,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -47877,8 +47923,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.36574,
-          43.70444
+          -79.365738854,
+          43.704444246
         ]
       }
     },
@@ -48036,8 +48082,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 1,
-        "LATITUDE": 43.70221,
-        "LONGITUDE": -79.25316,
+        "SITE_ADDRESS_y": "58 GLEN EVEREST RD",
+        "LATITUDE": 43.70221353,
+        "LONGITUDE": -79.253160371,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -48063,8 +48110,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.25316,
-          43.70221
+          -79.253160371,
+          43.70221353
         ]
       }
     },
@@ -48133,8 +48180,8 @@
         "bike_parking_indoor": 20,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "568 BIRCHMOUNT RD",
-        "LATITUDE": 43.7127945342,
-        "LONGITUDE": -79.2713034993,
+        "LATITUDE": 43.712785934,
+        "LONGITUDE": -79.271300297,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -48160,8 +48207,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2713034993,
-          43.7127945342
+          -79.271300297,
+          43.712785934
         ]
       }
     },
@@ -50470,7 +50517,7 @@
         "YEAR_REGISTERED": 2017,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 18,
-        "SITE_ADDRESS_y": "70 WILSON PARK RD",
+        "SITE_ADDRESS_y": "70 WILSON PARK RD--CLOSED",
         "LATITUDE": 43.638628857,
         "LONGITUDE": -79.4424836843,
         "ward_code": "04",
@@ -53239,8 +53286,9 @@
         "WARD": 5,
         "YEAR_BUILT": 1951,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6827589,
-        "LONGITUDE": -79.4754416,
+        "SITE_ADDRESS_y": "25 NASHVILLE AVE",
+        "LATITUDE": 43.682606824,
+        "LONGITUDE": -79.475496625,
         "ward_code": "05",
         "ward_name": "York South-Weston",
         "ward_full": "York South-Weston (05)",
@@ -53266,8 +53314,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4754416,
-          43.6827589
+          -79.475496625,
+          43.682606824
         ]
       }
     },
@@ -53840,8 +53888,8 @@
         "YEAR_OF_REPLACEMENT": 2018,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "173 STEPHEN DR",
-        "LATITUDE": 43.6396535446,
-        "LONGITUDE": -79.487507425,
+        "LATITUDE": 43.6396492568,
+        "LONGITUDE": -79.48750579200001,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -53867,8 +53915,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.487507425,
-          43.6396535446
+          -79.48750579200001,
+          43.6396492568
         ]
       }
     },
@@ -54025,8 +54073,9 @@
         "WARD": 2,
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.6644384,
-        "LONGITUDE": -79.5219072,
+        "SITE_ADDRESS_y": "24 ANGLESEY BLVD",
+        "LATITUDE": 43.664466173,
+        "LONGITUDE": -79.521862753,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -54052,8 +54101,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5219072,
-          43.6644384
+          -79.521862753,
+          43.664466173
         ]
       }
     },
@@ -55001,8 +55050,9 @@
         "WARD": 3,
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6012802,
-        "LONGITUDE": -79.515968,
+        "SITE_ADDRESS_y": "250 BIRMINGHAM ST",
+        "LATITUDE": 43.601459365,
+        "LONGITUDE": -79.515398304,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -55028,8 +55078,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.515968,
-          43.6012802
+          -79.515398304,
+          43.601459365
         ]
       }
     },
@@ -55656,8 +55706,8 @@
         "YEAR_BUILT": 1957,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "20 VARNA DR",
-        "LATITUDE": 43.7194419613,
-        "LONGITUDE": -79.4399793206,
+        "LATITUDE": 43.71943766465,
+        "LONGITUDE": -79.4399776923,
         "ward_code": "08",
         "ward_name": "Eglinton-Lawrence",
         "ward_full": "Eglinton-Lawrence (08)",
@@ -55683,8 +55733,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4399793206,
-          43.7194419613
+          -79.4399776923,
+          43.71943766465
         ]
       }
     },
@@ -55747,8 +55797,8 @@
         "WARD": 13,
         "YEAR_BUILT": 1972,
         "SITE_ADDRESS_y": "389 CHURCH STREET",
-        "LATITUDE": 43.6615353962,
-        "LONGITUDE": -79.378863702,
+        "LATITUDE": 43.661526811,
+        "LONGITUDE": -79.378860469,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -55774,8 +55824,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.378863702,
-          43.6615353962
+          -79.378860469,
+          43.661526811
         ]
       }
     },
@@ -57107,8 +57157,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 4,
-        "LATITUDE": 43.70838,
-        "LONGITUDE": -79.30044,
+        "SITE_ADDRESS_y": "2916 ST CLAIR AVE E",
+        "LATITUDE": 43.7084092682,
+        "LONGITUDE": -79.3006290206,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -57134,8 +57185,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.30044,
-          43.70838
+          -79.3006290206,
+          43.7084092682
         ]
       }
     },
@@ -57524,8 +57575,8 @@
         "YEAR_BUILT": 1928,
         "YEAR_REGISTERED": 2022,
         "SITE_ADDRESS_y": "140 WELLESLEY ST E",
-        "LATITUDE": 43.6667828801,
-        "LONGITUDE": -79.3769600054,
+        "LATITUDE": 43.666774294,
+        "LONGITUDE": -79.376956773,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -57551,8 +57602,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3769600054,
-          43.6667828801
+          -79.376956773,
+          43.666774294
         ]
       }
     },
@@ -57666,8 +57717,8 @@
         "YEAR_BUILT": 2009,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "252 SACKVILLE ST",
-        "LATITUDE": 43.660500875,
-        "LONGITUDE": -79.36342677,
+        "LATITUDE": 43.660522,
+        "LONGITUDE": -79.3634217015,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -57693,8 +57744,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.36342677,
-          43.660500875
+          -79.3634217015,
+          43.660522
         ]
       }
     },
@@ -57995,8 +58046,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1960,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.7082481,
-        "LONGITUDE": -79.3006442,
+        "SITE_ADDRESS_y": "2914 ST CLAIR AVE E",
+        "LATITUDE": 43.7084092682,
+        "LONGITUDE": -79.3006290206,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -58022,8 +58074,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3006442,
-          43.7082481
+          -79.3006290206,
+          43.7084092682
         ]
       }
     },
@@ -58183,7 +58235,7 @@
         "YEAR_OF_REPLACEMENT": 2013,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "98 CAVELL AVE",
-        "LATITUDE": 43.616184074,
+        "LATITUDE": 43.6161840745,
         "LONGITUDE": -79.49590117,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
@@ -58211,7 +58263,7 @@
         "type": "Point",
         "coordinates": [
           -79.49590117,
-          43.616184074
+          43.6161840745
         ]
       }
     },
@@ -58603,8 +58655,9 @@
         "WARD": 16,
         "YEAR_BUILT": 1959,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.7385902,
-        "LONGITUDE": -79.3427401,
+        "SITE_ADDRESS_y": "7 WINGREEN CRT",
+        "LATITUDE": 43.7386434088,
+        "LONGITUDE": -79.3427110169,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -58630,8 +58683,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3427401,
-          43.7385902
+          -79.3427110169,
+          43.7386434088
         ]
       }
     },
@@ -59071,8 +59124,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.73547,
-        "LONGITUDE": -79.44424,
+        "SITE_ADDRESS_y": "480 WILSON AVE",
+        "LATITUDE": 43.73551774672559,
+        "LONGITUDE": -79.44434051845823,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -59098,8 +59152,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.44424,
-          43.73547
+          -79.44434051845823,
+          43.73551774672559
         ]
       }
     },
@@ -59258,8 +59312,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 77,
         "bike_parking_outdoor": 4,
-        "LATITUDE": 43.7334555,
-        "LONGITUDE": -79.4475573,
+        "SITE_ADDRESS_y": "20 MONTE KWINTER CRT",
+        "LATITUDE": 43.733644065,
+        "LONGITUDE": -79.447557648,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -59285,8 +59340,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4475573,
-          43.7334555
+          -79.447557648,
+          43.733644065
         ]
       }
     },
@@ -59446,8 +59501,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 53,
         "bike_parking_outdoor": 5,
-        "LATITUDE": 43.73607,
-        "LONGITUDE": -79.48306,
+        "SITE_ADDRESS_y": "70 GEORGE BUTCHART DR",
+        "LATITUDE": 43.73611874081618,
+        "LONGITUDE": -79.48315930456873,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -59473,8 +59529,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.48306,
-          43.73607
+          -79.48315930456873,
+          43.73611874081618
         ]
       }
     },
@@ -59494,8 +59550,8 @@
         "bike_parking_indoor": 233,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "5249 DUNDAS ST W",
-        "LATITUDE": 43.63868271519043,
-        "LONGITUDE": -79.53730226741698,
+        "LATITUDE": 43.638526443,
+        "LONGITUDE": -79.537577214,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -59521,8 +59577,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.53730226741698,
-          43.63868271519043
+          -79.537577214,
+          43.638526443
         ]
       }
     },
@@ -59637,8 +59693,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 B QUEEN ST E",
-        "LATITUDE": 43.6747570284,
-        "LONGITUDE": -79.2771547349,
+        "LATITUDE": 43.6747312696,
+        "LONGITUDE": -79.27727203705,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -59664,8 +59720,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2771547349,
-          43.6747570284
+          -79.27727203705,
+          43.6747312696
         ]
       }
     },
@@ -60145,8 +60201,9 @@
         "WARD": 14,
         "YEAR_BUILT": 1965,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6914272,
-        "LONGITUDE": -79.3569484,
+        "SITE_ADDRESS_y": "1 FERNWOOD GDNS",
+        "LATITUDE": 43.691747719,
+        "LONGITUDE": -79.356099645,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -60172,8 +60229,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3569484,
-          43.6914272
+          -79.356099645,
+          43.691747719
         ]
       }
     },
@@ -63207,8 +63264,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 204,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.6511634,
-        "LONGITUDE": -79.3565758,
+        "SITE_ADDRESS_y": "131 MILL ST",
+        "LATITUDE": 43.65128412037885,
+        "LONGITUDE": -79.35683352036396,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -63234,8 +63292,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3565758,
-          43.6511634
+          -79.35683352036396,
+          43.65128412037885
         ]
       }
     },
@@ -63252,8 +63310,9 @@
         "WARD": 3,
         "YEAR_BUILT": 2023,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.6351497,
-        "LONGITUDE": -79.5403785,
+        "SITE_ADDRESS_y": "20 SAMUEL WOOD WAY",
+        "LATITUDE": 43.634971215,
+        "LONGITUDE": -79.540239778,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -63279,8 +63338,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5403785,
-          43.6351497
+          -79.540239778,
+          43.634971215
         ]
       }
     },
@@ -63346,7 +63405,7 @@
         "bike_parking_indoor": 489,
         "bike_parking_outdoor": 80,
         "SITE_ADDRESS_y": "1100 KING ST W",
-        "LATITUDE": 43.640120672,
+        "LATITUDE": 43.640120672500004,
         "LONGITUDE": -79.422240833,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
@@ -63374,7 +63433,7 @@
         "type": "Point",
         "coordinates": [
           -79.422240833,
-          43.640120672
+          43.640120672500004
         ]
       }
     },
@@ -63583,8 +63642,8 @@
         "bike_parking_indoor": 327,
         "bike_parking_outdoor": 36,
         "SITE_ADDRESS_y": "200 REDPATH AVE",
-        "LATITUDE": 43.71033050861589,
-        "LONGITUDE": -79.39410811956758,
+        "LATITUDE": 43.710283878,
+        "LONGITUDE": -79.394006905,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -63610,8 +63669,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.39410811956758,
-          43.71033050861589
+          -79.394006905,
+          43.710283878
         ]
       }
     },
@@ -63630,8 +63689,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 134,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.73236,
-        "LONGITUDE": -79.44772,
+        "SITE_ADDRESS_y": "18 TRETTI WAY - WARD 06",
+        "LATITUDE": 43.73240490298462,
+        "LONGITUDE": -79.4478188126477,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -63657,8 +63717,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.44772,
-          43.73236
+          -79.4478188126477,
+          43.73240490298462
         ]
       }
     },
@@ -63722,8 +63782,8 @@
         "YEAR_BUILT": 2010,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "92 CARLTON ST",
-        "LATITUDE": 43.6622943764,
-        "LONGITUDE": -79.3782139337,
+        "LATITUDE": 43.6622900837,
+        "LONGITUDE": -79.37821231735,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -63749,8 +63809,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3782139337,
-          43.6622943764
+          -79.37821231735,
+          43.6622900837
         ]
       }
     },
@@ -66864,8 +66924,8 @@
         "YEAR_BUILT": 1948,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "130 MACPHERSON AVE",
-        "LATITUDE": 43.6783605408,
-        "LONGITUDE": -79.3950701921,
+        "LATITUDE": 43.6783562469,
+        "LONGITUDE": -79.39506857255,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -66891,8 +66951,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3950701921,
-          43.6783605408
+          -79.39506857255,
+          43.6783562469
         ]
       }
     },
@@ -67001,8 +67061,9 @@
         "WARD": 12,
         "YEAR_BUILT": 1956,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6820774,
-        "LONGITUDE": -79.4253429,
+        "SITE_ADDRESS_y": "670 ST CLAIR AVE W",
+        "LATITUDE": 43.6820736311,
+        "LONGITUDE": -79.4253515948,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -67028,8 +67089,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4253429,
-          43.6820774
+          -79.4253515948,
+          43.6820736311
         ]
       }
     },
@@ -67475,8 +67536,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 1,
         "SITE_ADDRESS_y": "109 PEMBROKE ST",
-        "LATITUDE": 43.660120206,
-        "LONGITUDE": -79.3728278301,
+        "LATITUDE": 43.660115913,
+        "LONGITUDE": -79.37282621455,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -67502,8 +67563,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3728278301,
-          43.660120206
+          -79.37282621455,
+          43.660115913
         ]
       }
     },
@@ -68277,8 +68338,8 @@
         "YEAR_BUILT": 1961,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "230 RIVER ST",
-        "LATITUDE": 43.6642540945,
-        "LONGITUDE": -79.3598482523,
+        "LATITUDE": 43.66424980125,
+        "LONGITUDE": -79.35984663914999,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -68304,8 +68365,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3598482523,
-          43.6642540945
+          -79.35984663914999,
+          43.66424980125
         ]
       }
     },
@@ -68326,7 +68387,7 @@
         "bike_parking_indoor": 20,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "555 SHERBOURNE ST",
-        "LATITUDE": 43.669056443,
+        "LATITUDE": 43.6690564435,
         "LONGITUDE": -79.375027211,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
@@ -68354,7 +68415,7 @@
         "type": "Point",
         "coordinates": [
           -79.375027211,
-          43.669056443
+          43.6690564435
         ]
       }
     },
@@ -68518,8 +68579,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 7,
-        "LATITUDE": 43.6651744,
-        "LONGITUDE": -79.3319833,
+        "SITE_ADDRESS_y": "67 CURZON ST",
+        "LATITUDE": 43.665240673,
+        "LONGITUDE": -79.331969904,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -68545,8 +68607,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3319833,
-          43.6651744
+          -79.331969904,
+          43.665240673
         ]
       }
     },
@@ -68803,8 +68865,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 10,
-        "LATITUDE": 43.6735652,
-        "LONGITUDE": -79.2878218,
+        "SITE_ADDRESS_y": "109 BEECH AVE",
+        "LATITUDE": 43.673706805,
+        "LONGITUDE": -79.287609307,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -68830,8 +68893,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2878218,
-          43.6735652
+          -79.287609307,
+          43.673706805
         ]
       }
     },
@@ -69556,8 +69619,8 @@
         "YEAR_OF_REPLACEMENT": 2009,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "551 EGLINTON AVE E",
-        "LATITUDE": 43.7104732905,
-        "LONGITUDE": -79.3785880328,
+        "LATITUDE": 43.710468993250004,
+        "LONGITUDE": -79.37858641439999,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -69583,8 +69646,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3785880328,
-          43.7104732905
+          -79.37858641439999,
+          43.710468993250004
         ]
       }
     },
@@ -70643,8 +70706,8 @@
         "YEAR_BUILT": 1965,
         "YEAR_REGISTERED": 2022,
         "SITE_ADDRESS_y": "994 O'CONNOR DR",
-        "LATITUDE": 43.7090513508,
-        "LONGITUDE": -79.3106659007,
+        "LATITUDE": 43.709047052900004,
+        "LONGITUDE": -79.31066429335,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -70670,8 +70733,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3106659007,
-          43.7090513508
+          -79.31066429335,
+          43.709047052900004
         ]
       }
     },
@@ -70691,8 +70754,8 @@
         "bike_parking_indoor": 10,
         "bike_parking_outdoor": 10,
         "SITE_ADDRESS_y": "990 O'CONNOR DR",
-        "LATITUDE": 43.7089282139,
-        "LONGITUDE": -79.3107669279,
+        "LATITUDE": 43.70892391545,
+        "LONGITUDE": -79.31076532045,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -70718,8 +70781,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3107669279,
-          43.7089282139
+          -79.31076532045,
+          43.70892391545
         ]
       }
     },
@@ -70735,8 +70798,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1940,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.697482,
-        "LONGITUDE": -79.3072981,
+        "SITE_ADDRESS_y": "330 CHISHOLM AVE",
+        "LATITUDE": 43.6972667157,
+        "LONGITUDE": -79.3072954305,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -70762,8 +70826,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3072981,
-          43.697482
+          -79.3072954305,
+          43.6972667157
         ]
       }
     },
@@ -70781,8 +70845,8 @@
         "YEAR_BUILT": 1956,
         "YEAR_REGISTERED": 2019,
         "SITE_ADDRESS_y": "135 SAMMON AVE",
-        "LATITUDE": 43.6850791771,
-        "LONGITUDE": -79.3423568405,
+        "LATITUDE": 43.68507488105,
+        "LONGITUDE": -79.34235522875,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -70808,8 +70872,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3423568405,
-          43.6850791771
+          -79.34235522875,
+          43.68507488105
         ]
       }
     },
@@ -72884,8 +72948,9 @@
         "WARD": 1,
         "YEAR_BUILT": 1962,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.6985679,
-        "LONGITUDE": -79.5617891,
+        "SITE_ADDRESS_y": "90 BLACKFRIAR AVE",
+        "LATITUDE": 43.698879085,
+        "LONGITUDE": -79.561991634,
         "ward_code": "01",
         "ward_name": "Etobicoke North",
         "ward_full": "Etobicoke North (01)",
@@ -72911,8 +72976,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5617891,
-          43.6985679
+          -79.561991634,
+          43.698879085
         ]
       }
     },
@@ -73968,8 +74033,8 @@
         "YEAR_OF_REPLACEMENT": 2017,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "600 ROGERS RD",
-        "LATITUDE": 43.682227677,
-        "LONGITUDE": -79.47249628,
+        "LATITUDE": 43.6822278725,
+        "LONGITUDE": -79.47246992550001,
         "ward_code": "05",
         "ward_name": "York South-Weston",
         "ward_full": "York South-Weston (05)",
@@ -73995,8 +74060,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.47249628,
-          43.682227677
+          -79.47246992550001,
+          43.6822278725
         ]
       }
     },
@@ -74294,8 +74359,9 @@
         "RSN": 5415712,
         "SITE_ADDRESS_x": "546  INDIAN GRV ",
         "WARD": 4,
-        "LATITUDE": 43.6656341,
-        "LONGITUDE": -79.4624705,
+        "SITE_ADDRESS_y": "546 INDIAN GRV",
+        "LATITUDE": 43.665530372,
+        "LONGITUDE": -79.462449385,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -74321,8 +74387,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4624705,
-          43.6656341
+          -79.462449385,
+          43.665530372
         ]
       }
     },
@@ -74526,8 +74592,8 @@
         "YEAR_OF_REPLACEMENT": 2008,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "10 WILLOWRIDGE RD",
-        "LATITUDE": 43.67512426653738,
-        "LONGITUDE": -79.56850188615509,
+        "LATITUDE": 43.675076517,
+        "LONGITUDE": -79.568401265,
         "ward_code": "01",
         "ward_name": "Etobicoke North",
         "ward_full": "Etobicoke North (01)",
@@ -74553,8 +74619,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.56850188615509,
-          43.67512426653738
+          -79.568401265,
+          43.675076517
         ]
       }
     },
@@ -75417,8 +75483,9 @@
         "WARD": 3,
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.59828,
-        "LONGITUDE": -79.52146,
+        "SITE_ADDRESS_y": "21 TWENTY SECOND ST",
+        "LATITUDE": 43.598276057,
+        "LONGITUDE": -79.521462199,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -75444,8 +75511,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.52146,
-          43.59828
+          -79.521462199,
+          43.598276057
         ]
       }
     },
@@ -76489,8 +76556,8 @@
         "SITE_ADDRESS_x": "1024  O'CONNOR DR ",
         "WARD": 19,
         "SITE_ADDRESS_y": "1024 O'CONNOR DR",
-        "LATITUDE": 43.710018819,
-        "LONGITUDE": -79.3098385055,
+        "LATITUDE": 43.710010222,
+        "LONGITUDE": -79.30983529,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -76516,8 +76583,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3098385055,
-          43.710018819
+          -79.30983529,
+          43.710010222
         ]
       }
     },
@@ -76534,8 +76601,8 @@
         "YEAR_BUILT": 1953,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "1008 O'CONNOR DR",
-        "LATITUDE": 43.7095271974,
-        "LONGITUDE": -79.3102178135,
+        "LATITUDE": 43.709522899199996,
+        "LONGITUDE": -79.31021620575001,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -76561,8 +76628,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3102178135,
-          43.7095271974
+          -79.31021620575001,
+          43.709522899199996
         ]
       }
     },
@@ -77099,8 +77166,8 @@
         "bike_parking_indoor": 81,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "33 WOOD ST",
-        "LATITUDE": 43.662341118,
-        "LONGITUDE": -79.381432692,
+        "LATITUDE": 43.6623196945,
+        "LONGITUDE": -79.381377148,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -77126,8 +77193,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.381432692,
-          43.662341118
+          -79.381377148,
+          43.6623196945
         ]
       }
     },
@@ -80287,8 +80354,9 @@
         "WARD": 14,
         "YEAR_BUILT": 1965,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.69167,
-        "LONGITUDE": -79.35646,
+        "SITE_ADDRESS_y": "5 FERNWOOD GDNS",
+        "LATITUDE": 43.691669118,
+        "LONGITUDE": -79.356463305,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -80314,8 +80382,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.35646,
-          43.69167
+          -79.356463305,
+          43.691669118
         ]
       }
     },
@@ -81615,8 +81683,9 @@
         "WARD": 20,
         "YEAR_BUILT": 1970,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.722373,
-        "LONGITUDE": -79.3002111,
+        "SITE_ADDRESS_y": "18 ENGELHART CRES",
+        "LATITUDE": 43.722377951,
+        "LONGITUDE": -79.300224712,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -81642,8 +81711,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3002111,
-          43.722373
+          -79.300224712,
+          43.722377951
         ]
       }
     },
@@ -81709,8 +81778,8 @@
         "YEAR_BUILT": 1928,
         "YEAR_REGISTERED": 2022,
         "SITE_ADDRESS_y": "142 WELLESLEY STREET E",
-        "LATITUDE": 43.6667348644,
-        "LONGITUDE": -79.3767474452,
+        "LATITUDE": 43.666726277,
+        "LONGITUDE": -79.376744213,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -81736,8 +81805,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3767474452,
-          43.6667348644
+          -79.376744213,
+          43.666726277
         ]
       }
     },
@@ -82084,8 +82153,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "23 DURNFORD RD",
-        "LATITUDE": 43.79845735,
-        "LONGITUDE": -79.149242668,
+        "LATITUDE": 43.798768639,
+        "LONGITUDE": -79.149495575,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -82111,8 +82180,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.149242668,
-          43.79845735
+          -79.149495575,
+          43.798768639
         ]
       }
     },
@@ -83202,8 +83271,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 136,
         "bike_parking_outdoor": 8,
-        "LATITUDE": 43.75952,
-        "LONGITUDE": -79.33112,
+        "SITE_ADDRESS_y": "1225 YORK MILLS RD",
+        "LATITUDE": 43.75961120822012,
+        "LONGITUDE": -79.3310532885708,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -83229,8 +83299,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.33112,
-          43.75952
+          -79.3310532885708,
+          43.75961120822012
         ]
       }
     },
@@ -83344,8 +83414,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 204,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.6514023,
-        "LONGITUDE": -79.3556126,
+        "SITE_ADDRESS_y": "151 MILL ST",
+        "LATITUDE": 43.65161353320759,
+        "LONGITUDE": -79.3555365595102,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -83371,8 +83442,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3556126,
-          43.6514023
+          -79.3555365595102,
+          43.65161353320759
         ]
       }
     },
@@ -83391,8 +83462,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 278,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.6517006,
-        "LONGITUDE": -79.3547887,
+        "SITE_ADDRESS_y": "181 MILL ST",
+        "LATITUDE": 43.65170334018839,
+        "LONGITUDE": -79.35515955356163,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -83418,8 +83490,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3547887,
-          43.6517006
+          -79.35515955356163,
+          43.65170334018839
         ]
       }
     },
@@ -83486,8 +83558,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 100,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.66506,
-        "LONGITUDE": -79.38667,
+        "SITE_ADDRESS_y": "31 PHIPPS ST",
+        "LATITUDE": 43.665063592,
+        "LONGITUDE": -79.386673529,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -83513,8 +83586,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.38667,
-          43.66506
+          -79.386673529,
+          43.665063592
         ]
       }
     },
@@ -83579,8 +83652,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 209,
         "bike_parking_outdoor": 27,
-        "LATITUDE": 43.7741115,
-        "LONGITUDE": -79.3332892,
+        "SITE_ADDRESS_y": "325 YORKLAND BLVD",
+        "LATITUDE": 43.774000490563274,
+        "LONGITUDE": -79.33283467391051,
         "ward_code": "17",
         "ward_name": "Don Valley North",
         "ward_full": "Don Valley North (17)",
@@ -83606,8 +83680,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3332892,
-          43.7741115
+          -79.33283467391051,
+          43.774000490563274
         ]
       }
     },
@@ -83626,8 +83700,9 @@
         "YEAR_REGISTERED": 2017,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 6,
-        "LATITUDE": 43.6751515,
-        "LONGITUDE": -79.5651265,
+        "SITE_ADDRESS_y": "620 MARTIN GROVE RD",
+        "LATITUDE": 43.675153167,
+        "LONGITUDE": -79.565146594,
         "ward_code": "01",
         "ward_name": "Etobicoke North",
         "ward_full": "Etobicoke North (01)",
@@ -83653,8 +83728,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5651265,
-          43.6751515
+          -79.565146594,
+          43.675153167
         ]
       }
     },
@@ -85068,8 +85143,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 30,
         "SITE_ADDRESS_y": "165 BARRINGTON AVE",
-        "LATITUDE": 43.69435148612587,
-        "LONGITUDE": -79.30291904256414,
+        "LATITUDE": 43.693762419,
+        "LONGITUDE": -79.302579904,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -85095,8 +85170,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.30291904256414,
-          43.69435148612587
+          -79.302579904,
+          43.693762419
         ]
       }
     },
@@ -85254,8 +85329,9 @@
         "WARD": 4,
         "YEAR_BUILT": 1920,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.638879,
-        "LONGITUDE": -79.43524,
+        "SITE_ADDRESS_y": "160-162 CLOSE AVE",
+        "LATITUDE": 43.638753591,
+        "LONGITUDE": -79.435622465,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -85281,8 +85357,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.43524,
-          43.638879
+          -79.435622465,
+          43.638753591
         ]
       }
     },
@@ -86137,8 +86213,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 300,
         "bike_parking_outdoor": 10,
-        "LATITUDE": 43.64424,
-        "LONGITUDE": -79.42977,
+        "SITE_ADDRESS_y": "410 DUFFERIN ST",
+        "LATITUDE": 43.64430474395821,
+        "LONGITUDE": -79.42979970702034,
         "ward_code": "09",
         "ward_name": "Davenport",
         "ward_full": "Davenport (09)",
@@ -86164,8 +86241,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.42977,
-          43.64424
+          -79.42979970702034,
+          43.64430474395821
         ]
       }
     },
@@ -86233,8 +86310,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 A QUEEN ST E",
-        "LATITUDE": 43.6746668318,
-        "LONGITUDE": -79.2776535124,
+        "LATITUDE": 43.6746861713,
+        "LONGITUDE": -79.27752142579999,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -86260,8 +86337,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2776535124,
-          43.6746668318
+          -79.27752142579999,
+          43.6746861713
         ]
       }
     },
@@ -86281,8 +86358,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 G QUEEN ST E",
-        "LATITUDE": 43.6747570284,
-        "LONGITUDE": -79.2771547349,
+        "LATITUDE": 43.6747312696,
+        "LONGITUDE": -79.27727203705,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -86308,8 +86385,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2771547349,
-          43.6747570284
+          -79.27727203705,
+          43.6747312696
         ]
       }
     },
@@ -86511,8 +86588,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 1,
-        "LATITUDE": 43.70204,
-        "LONGITUDE": -79.25321,
+        "SITE_ADDRESS_y": "54 GLEN EVEREST RD",
+        "LATITUDE": 43.702036304,
+        "LONGITUDE": -79.253210017,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -86538,8 +86616,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.25321,
-          43.70204
+          -79.253210017,
+          43.702036304
         ]
       }
     },
@@ -87299,8 +87377,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.6653908,
-        "LONGITUDE": -79.4841715,
+        "SITE_ADDRESS_y": "3385 DUNDAS ST W",
+        "LATITUDE": 43.6654461573934,
+        "LONGITUDE": -79.48462558700534,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -87326,8 +87405,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4841715,
-          43.6653908
+          -79.48462558700534,
+          43.6654461573934
         ]
       }
     },
@@ -88182,8 +88261,8 @@
         "YEAR_BUILT": 1956,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "319 THE KINGSWAY",
-        "LATITUDE": 43.6652074855,
-        "LONGITUDE": -79.5235149281,
+        "LATITUDE": 43.66517650675,
+        "LONGITUDE": -79.52345285005,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -88209,8 +88288,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5235149281,
-          43.6652074855
+          -79.52345285005,
+          43.66517650675
         ]
       }
     },
@@ -88229,8 +88308,8 @@
         "YEAR_OF_REPLACEMENT": 2017,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "3036 BATHURST ST",
-        "LATITUDE": 43.718503226,
-        "LONGITUDE": -79.429840681,
+        "LATITUDE": 43.718495501999996,
+        "LONGITUDE": -79.429868216,
         "ward_code": "08",
         "ward_name": "Eglinton-Lawrence",
         "ward_full": "Eglinton-Lawrence (08)",
@@ -88256,8 +88335,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.429840681,
-          43.718503226
+          -79.429868216,
+          43.718495501999996
         ]
       }
     },
@@ -91129,8 +91208,9 @@
         "WARD": 15,
         "YEAR_BUILT": 1951,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6974757,
-        "LONGITUDE": -79.3669,
+        "SITE_ADDRESS_y": "93 MALLORY CRES",
+        "LATITUDE": 43.697497223,
+        "LONGITUDE": -79.366926359,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -91156,8 +91236,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3669,
-          43.6974757
+          -79.366926359,
+          43.697497223
         ]
       }
     },
@@ -93383,8 +93463,8 @@
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2022,
         "SITE_ADDRESS_y": "2513 LAKE SHORE BLVD W",
-        "LATITUDE": 43.6117781476,
-        "LONGITUDE": -79.4895548881,
+        "LATITUDE": 43.6117738623,
+        "LONGITUDE": -79.48955325605,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -93410,8 +93490,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4895548881,
-          43.6117781476
+          -79.48955325605,
+          43.6117738623
         ]
       }
     },
@@ -94136,8 +94216,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 88,
         "bike_parking_outdoor": 5,
-        "LATITUDE": 43.6433328,
-        "LONGITUDE": -79.3965115,
+        "SITE_ADDRESS_y": "435 WELLINGTON ST W",
+        "LATITUDE": 43.643387389854944,
+        "LONGITUDE": -79.3964235370256,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -94163,8 +94244,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3965115,
-          43.6433328
+          -79.3964235370256,
+          43.643387389854944
         ]
       }
     },
@@ -94420,13 +94501,14 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 205,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.6513256,
-        "LONGITUDE": -79.3462809,
-        "ward_code": "14",
-        "ward_name": "Toronto-Danforth",
-        "ward_full": "Toronto-Danforth (14)",
-        "neighbourhood_number": "070",
-        "neighbourhood_name": "South Riverdale",
+        "SITE_ADDRESS_y": "99 LAKE SHORE BLVD E",
+        "LATITUDE": 43.64495890258149,
+        "LONGITUDE": -79.37130545284211,
+        "ward_code": "10",
+        "ward_name": "Spadina-Fort York",
+        "ward_full": "Spadina-Fort York (10)",
+        "neighbourhood_number": "166",
+        "neighbourhood_name": "St Lawrence-East Bayfront-The Islands",
         "neighbourhood_classification": "Not an NIA or Emerging Neighbourhood",
         "neighbourhood_classification_code": "NA",
         "BICYCLE_ZONE": 1,
@@ -94447,8 +94529,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3462809,
-          43.6513256
+          -79.37130545284211,
+          43.64495890258149
         ]
       }
     },
@@ -95643,8 +95725,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 6,
-        "LATITUDE": 43.6594058,
-        "LONGITUDE": -79.4189739,
+        "SITE_ADDRESS_y": "333 HARBORD ST",
+        "LATITUDE": 43.6594515888,
+        "LONGITUDE": -79.4190080262,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -95670,8 +95753,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4189739,
-          43.6594058
+          -79.4190080262,
+          43.6594515888
         ]
       }
     },
@@ -95876,8 +95959,8 @@
         "YEAR_BUILT": 1890,
         "YEAR_REGISTERED": 2022,
         "SITE_ADDRESS_y": "51 MADISON AVE",
-        "LATITUDE": 43.6698858155,
-        "LONGITUDE": -79.4035334052,
+        "LATITUDE": 43.669877229,
+        "LONGITUDE": -79.403530164,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -95903,8 +95986,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4035334052,
-          43.6698858155
+          -79.403530164,
+          43.669877229
         ]
       }
     },
@@ -95922,8 +96005,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 3,
-        "LATITUDE": 43.681335,
-        "LONGITUDE": -79.418144,
+        "SITE_ADDRESS_y": "12 VAUGHAN RD",
+        "LATITUDE": 43.681345773,
+        "LONGITUDE": -79.418137332,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -95949,8 +96033,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.418144,
-          43.681335
+          -79.418137332,
+          43.681345773
         ]
       }
     },
@@ -96015,8 +96099,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 180,
         "bike_parking_outdoor": 4,
-        "LATITUDE": 43.6424499,
-        "LONGITUDE": -79.3955009,
+        "SITE_ADDRESS_y": "450 FRONT ST W",
+        "LATITUDE": 43.642307512,
+        "LONGITUDE": -79.396725168,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -96042,8 +96127,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3955009,
-          43.6424499
+          -79.396725168,
+          43.642307512
         ]
       }
     },
@@ -96063,8 +96148,8 @@
         "bike_parking_indoor": 15,
         "bike_parking_outdoor": 4,
         "SITE_ADDRESS_y": "147 QUEEN ST E",
-        "LATITUDE": 43.6535746622,
-        "LONGITUDE": -79.3726782657,
+        "LATITUDE": 43.653617025100004,
+        "LONGITUDE": -79.37268565735,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -96090,8 +96175,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3726782657,
-          43.6535746622
+          -79.37268565735,
+          43.653617025100004
         ]
       }
     },
@@ -96534,8 +96619,8 @@
         "YEAR_OF_REPLACEMENT": 2005,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "4003 BAYVIEW AVE",
-        "LATITUDE": 43.8022250044,
-        "LONGITUDE": -79.3928562051,
+        "LATITUDE": 43.8018880932,
+        "LONGITUDE": -79.39254812855,
         "ward_code": "17",
         "ward_name": "Don Valley North",
         "ward_full": "Don Valley North (17)",
@@ -96561,8 +96646,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3928562051,
-          43.8022250044
+          -79.39254812855,
+          43.8018880932
         ]
       }
     },
@@ -97798,8 +97883,8 @@
         "YEAR_OF_REPLACEMENT": 1999,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "130 VAUGHAN RD",
-        "LATITUDE": 43.6847713094,
-        "LONGITUDE": -79.4220013405,
+        "LATITUDE": 43.684767015700004,
+        "LONGITUDE": -79.42199971625,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -97825,8 +97910,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4220013405,
-          43.6847713094
+          -79.42199971625,
+          43.684767015700004
         ]
       }
     },
@@ -98493,8 +98578,9 @@
         "WARD": 8,
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.7050922,
-        "LONGITUDE": -79.4424289,
+        "SITE_ADDRESS_y": "184 MARLEE AVE",
+        "LATITUDE": 43.704825815,
+        "LONGITUDE": -79.442425865,
         "ward_code": "08",
         "ward_name": "Eglinton-Lawrence",
         "ward_full": "Eglinton-Lawrence (08)",
@@ -98520,8 +98606,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4424289,
-          43.7050922
+          -79.442425865,
+          43.704825815
         ]
       }
     },
@@ -99486,8 +99572,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "21 DURNFORD RD",
-        "LATITUDE": 43.798928736,
-        "LONGITUDE": -79.149462154,
+        "LATITUDE": 43.799004331999996,
+        "LONGITUDE": -79.149605318,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -99513,8 +99599,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.149462154,
-          43.798928736
+          -79.149605318,
+          43.799004331999996
         ]
       }
     },
@@ -99717,8 +99803,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "17 DURNFORD RD",
-        "LATITUDE": 43.798355204,
-        "LONGITUDE": -79.149608006,
+        "LATITUDE": 43.798717566,
+        "LONGITUDE": -79.149678244,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -99744,8 +99830,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.149608006,
-          43.798355204
+          -79.149678244,
+          43.798717566
         ]
       }
     },
@@ -102005,8 +102091,9 @@
         "WARD": 14,
         "YEAR_BUILT": 2004,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.68003,
-        "LONGITUDE": -79.35775,
+        "SITE_ADDRESS_y": "869 BROADVIEW AVE",
+        "LATITUDE": 43.680034034,
+        "LONGITUDE": -79.357751452,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -102032,8 +102119,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.35775,
-          43.68003
+          -79.357751452,
+          43.680034034
         ]
       }
     },
@@ -102713,8 +102800,8 @@
         "YEAR_OF_REPLACEMENT": 1993,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "5 WAKUNDA PL",
-        "LATITUDE": 43.7155652564,
-        "LONGITUDE": -79.3046724013,
+        "LATITUDE": 43.7156631611,
+        "LONGITUDE": -79.30438171345,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -102740,8 +102827,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3046724013,
-          43.7155652564
+          -79.30438171345,
+          43.7156631611
         ]
       }
     },
@@ -103221,8 +103308,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "35 DURNFORD RD",
-        "LATITUDE": 43.799334653,
-        "LONGITUDE": -79.149625429,
+        "LATITUDE": 43.7992072905,
+        "LONGITUDE": -79.1496869555,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -103248,8 +103335,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.149625429,
-          43.799334653
+          -79.1496869555,
+          43.7992072905
         ]
       }
     },
@@ -103594,8 +103681,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1447 KING ST W",
-        "LATITUDE": 43.6366736608,
-        "LONGITUDE": -79.4376587469,
+        "LATITUDE": 43.6366693719,
+        "LONGITUDE": -79.43765712244999,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -103621,8 +103708,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4376587469,
-          43.6366736608
+          -79.43765712244999,
+          43.6366693719
         ]
       }
     },
@@ -103642,8 +103729,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 15,
         "SITE_ADDRESS_y": "1475 KING ST W",
-        "LATITUDE": 43.636122133,
-        "LONGITUDE": -79.439605046,
+        "LATITUDE": 43.6361307104,
+        "LONGITUDE": -79.4396082972,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -103669,8 +103756,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.439605046,
-          43.636122133
+          -79.4396082972,
+          43.6361307104
         ]
       }
     },
@@ -103926,8 +104013,8 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "102 TYNDALL AVE",
-        "LATITUDE": 43.6366904799,
-        "LONGITUDE": -79.428980996,
+        "LATITUDE": 43.63668618995,
+        "LONGITUDE": -79.42897937250001,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -103953,8 +104040,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.428980996,
-          43.6366904799
+          -79.42897937250001,
+          43.63668618995
         ]
       }
     },
@@ -104391,8 +104478,9 @@
         "WARD": 2,
         "YEAR_BUILT": 1951,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6646905,
-        "LONGITUDE": -79.5239783,
+        "SITE_ADDRESS_y": "318 THE KINGSWAY",
+        "LATITUDE": 43.664676724,
+        "LONGITUDE": -79.524011119,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -104418,8 +104506,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5239783,
-          43.6646905
+          -79.524011119,
+          43.664676724
         ]
       }
     },
@@ -104530,8 +104618,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 8,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.649642,
-        "LONGITUDE": -79.4974893,
+        "SITE_ADDRESS_y": "2675 BLOOR ST W",
+        "LATITUDE": 43.649715123,
+        "LONGITUDE": -79.497513447,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -104557,8 +104646,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4974893,
-          43.649642
+          -79.497513447,
+          43.649715123
         ]
       }
     },
@@ -104854,8 +104943,8 @@
         "YEAR_BUILT": 1954,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1 HILL HEIGHTS RD",
-        "LATITUDE": 43.6380615683,
-        "LONGITUDE": -79.4937696446,
+        "LATITUDE": 43.63805728015,
+        "LONGITUDE": -79.4937680108,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -104881,8 +104970,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4937696446,
-          43.6380615683
+          -79.4937680108,
+          43.63805728015
         ]
       }
     },
@@ -105887,8 +105976,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 12,
         "SITE_ADDRESS_y": "290 THE KINGSWAY",
-        "LATITUDE": 43.663342704,
-        "LONGITUDE": -79.521030395,
+        "LATITUDE": 43.6633258835,
+        "LONGITUDE": -79.52099678799999,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -105914,8 +106003,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.521030395,
-          43.663342704
+          -79.52099678799999,
+          43.6633258835
         ]
       }
     },
@@ -106452,8 +106541,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 5,
-        "LATITUDE": 43.6024,
-        "LONGITUDE": -79.50197,
+        "SITE_ADDRESS_y": "121 FOURTH ST",
+        "LATITUDE": 43.6024061255,
+        "LONGITUDE": -79.5019729509,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -106479,8 +106569,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.50197,
-          43.6024
+          -79.5019729509,
+          43.6024061255
         ]
       }
     },
@@ -108608,8 +108698,8 @@
         "YEAR_BUILT": 1980,
         "YEAR_REGISTERED": 2021,
         "SITE_ADDRESS_y": "1016 O'CONNOR DR",
-        "LATITUDE": 43.7097824646,
-        "LONGITUDE": -79.3100193403,
+        "LATITUDE": 43.709773868,
+        "LONGITUDE": -79.310016125,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -108635,8 +108725,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3100193403,
-          43.7097824646
+          -79.310016125,
+          43.709773868
         ]
       }
     },
@@ -108654,8 +108744,8 @@
         "YEAR_BUILT": 1951,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "995 O'CONNOR DR",
-        "LATITUDE": 43.7091921136,
-        "LONGITUDE": -79.3096855497,
+        "LATITUDE": 43.7091878153,
+        "LONGITUDE": -79.30968394235,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -108681,8 +108771,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3096855497,
-          43.7091921136
+          -79.30968394235,
+          43.7091878153
         ]
       }
     },
@@ -109891,8 +109981,9 @@
         "WARD": 12,
         "YEAR_BUILT": 1928,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.676235,
-        "LONGITUDE": -79.4212156,
+        "SITE_ADDRESS_y": "858 DAVENPORT RD",
+        "LATITUDE": 43.676233475,
+        "LONGITUDE": -79.421216613,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -109918,8 +110009,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4212156,
-          43.676235
+          -79.421216613,
+          43.676233475
         ]
       }
     },
@@ -109984,8 +110075,8 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "25 HENRY LANE TER",
-        "LATITUDE": 43.64755666,
-        "LONGITUDE": -79.370208586,
+        "LATITUDE": 43.647547094000004,
+        "LONGITUDE": -79.370249872,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -110011,8 +110102,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.370208586,
-          43.64755666
+          -79.370249872,
+          43.647547094000004
         ]
       }
     },
@@ -110263,8 +110354,9 @@
         "WARD": 3,
         "YEAR_BUILT": 1958,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.59894,
-        "LONGITUDE": -79.52235,
+        "SITE_ADDRESS_y": "46 TWENTY SECOND ST",
+        "LATITUDE": 43.59893579,
+        "LONGITUDE": -79.522350466,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -110290,8 +110382,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.52235,
-          43.59894
+          -79.522350466,
+          43.59893579
         ]
       }
     },
@@ -110590,8 +110682,9 @@
         "WARD": 3,
         "YEAR_BUILT": 1965,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.59609,
-        "LONGITUDE": -79.5097,
+        "SITE_ADDRESS_y": "36 TWELFTH ST",
+        "LATITUDE": 43.596087938,
+        "LONGITUDE": -79.509696454,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -110617,8 +110710,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5097,
-          43.59609
+          -79.509696454,
+          43.596087938
         ]
       }
     },
@@ -113911,7 +114004,7 @@
         "YEAR_BUILT": 1973,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "2 TREE SPARROWAY",
-        "LATITUDE": 43.791511427,
+        "LATITUDE": 43.7915114225,
         "LONGITUDE": -79.369045359,
         "ward_code": "17",
         "ward_name": "Don Valley North",
@@ -113939,7 +114032,7 @@
         "type": "Point",
         "coordinates": [
           -79.369045359,
-          43.791511427
+          43.7915114225
         ]
       }
     },
@@ -115965,8 +116058,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1950,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.6714165,
-        "LONGITUDE": -79.2926104,
+        "SITE_ADDRESS_y": "116 GLEN MANOR DR",
+        "LATITUDE": 43.6713533112,
+        "LONGITUDE": -79.2926872209,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -115992,8 +116086,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2926104,
-          43.6714165
+          -79.2926872209,
+          43.6713533112
         ]
       }
     },
@@ -116010,8 +116104,8 @@
         "YEAR_BUILT": 1928,
         "YEAR_REGISTERED": 2020,
         "SITE_ADDRESS_y": "74 HUBBARD BLVD",
-        "LATITUDE": 43.6691053883,
-        "LONGITUDE": -79.2911282812,
+        "LATITUDE": 43.669096797,
+        "LONGITUDE": -79.291125075,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -116037,8 +116131,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2911282812,
-          43.6691053883
+          -79.291125075,
+          43.669096797
         ]
       }
     },
@@ -116900,7 +116994,7 @@
         "YEAR_BUILT": 1962,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "505 THE WEST MALL",
-        "LATITUDE": 43.648859107,
+        "LATITUDE": 43.648859108,
         "LONGITUDE": -79.568021211,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
@@ -116928,7 +117022,7 @@
         "type": "Point",
         "coordinates": [
           -79.568021211,
-          43.648859107
+          43.648859108
         ]
       }
     },
@@ -119076,8 +119170,9 @@
         "WARD": 15,
         "YEAR_BUILT": 1962,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.70151,
-        "LONGITUDE": -79.37504,
+        "SITE_ADDRESS_y": "699 BALLIOL ST",
+        "LATITUDE": 43.701514098,
+        "LONGITUDE": -79.375044873,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -119103,8 +119198,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.37504,
-          43.70151
+          -79.375044873,
+          43.701514098
         ]
       }
     },
@@ -120500,7 +120595,7 @@
         "YEAR_BUILT": 1980,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "49 HENRY LANE TER",
-        "LATITUDE": 43.646859159,
+        "LATITUDE": 43.646859159499996,
         "LONGITUDE": -79.369670022,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
@@ -120528,7 +120623,7 @@
         "type": "Point",
         "coordinates": [
           -79.369670022,
-          43.646859159
+          43.646859159499996
         ]
       }
     },
@@ -120547,8 +120642,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 773,
         "bike_parking_outdoor": 13,
-        "LATITUDE": 43.7100911,
-        "LONGITUDE": -79.3964121,
+        "SITE_ADDRESS_y": "55 BROADWAY AVE",
+        "LATITUDE": 43.70970865556819,
+        "LONGITUDE": -79.39557828300809,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -120574,8 +120670,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3964121,
-          43.7100911
+          -79.39557828300809,
+          43.70970865556819
         ]
       }
     },
@@ -122129,8 +122225,8 @@
         "YEAR_BUILT": 1955,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "40 CRAIGTON DR",
-        "LATITUDE": 43.727425208,
-        "LONGITUDE": -79.2987499996,
+        "LATITUDE": 43.727420907500004,
+        "LONGITUDE": -79.2987483933,
         "ward_code": "21",
         "ward_name": "Scarborough Centre",
         "ward_full": "Scarborough Centre (21)",
@@ -122156,8 +122252,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2987499996,
-          43.727425208
+          -79.2987483933,
+          43.727420907500004
         ]
       }
     },
@@ -122881,8 +122977,8 @@
         "YEAR_OF_REPLACEMENT": 2001,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "59 EDGEWOOD AVE",
-        "LATITUDE": 43.6716543566,
-        "LONGITUDE": -79.3130970785,
+        "LATITUDE": 43.6716500618,
+        "LONGITUDE": -79.31309547225,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -122908,8 +123004,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3130970785,
-          43.6716543566
+          -79.31309547225,
+          43.6716500618
         ]
       }
     },
@@ -123162,7 +123258,7 @@
         "YEAR_BUILT": 1973,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "6 TREE SPARROWAY",
-        "LATITUDE": 43.791384199,
+        "LATITUDE": 43.7913841945,
         "LONGITUDE": -79.369630481,
         "ward_code": "17",
         "ward_name": "Don Valley North",
@@ -123190,7 +123286,7 @@
         "type": "Point",
         "coordinates": [
           -79.369630481,
-          43.791384199
+          43.7913841945
         ]
       }
     },
@@ -123400,7 +123496,7 @@
         "YEAR_BUILT": 1970,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "27 SCARLETTWOOD CRT",
-        "LATITUDE": 43.693274018,
+        "LATITUDE": 43.6932740185,
         "LONGITUDE": -79.516001007,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
@@ -123428,7 +123524,7 @@
         "type": "Point",
         "coordinates": [
           -79.516001007,
-          43.693274018
+          43.6932740185
         ]
       }
     },
@@ -124865,8 +124961,8 @@
         "YEAR_BUILT": 1955,
         "YEAR_REGISTERED": 2021,
         "SITE_ADDRESS_y": "7 ROSSEAU RD",
-        "LATITUDE": 43.7419930803,
-        "LONGITUDE": -79.4364254778,
+        "LATITUDE": 43.74198878165,
+        "LONGITUDE": -79.4364238484,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -124892,8 +124988,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4364254778,
-          43.7419930803
+          -79.4364238484,
+          43.74198878165
         ]
       }
     },
@@ -129015,8 +129111,9 @@
         "WARD": 9,
         "YEAR_BUILT": 1929,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6832687,
-        "LONGITUDE": -79.4373482,
+        "SITE_ADDRESS_y": "250 OAKWOOD AVE",
+        "LATITUDE": 43.683241796,
+        "LONGITUDE": -79.437382923,
         "ward_code": "09",
         "ward_name": "Davenport",
         "ward_full": "Davenport (09)",
@@ -129042,8 +129139,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4373482,
-          43.6832687
+          -79.437382923,
+          43.683241796
         ]
       }
     },
@@ -130002,8 +130099,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 300,
         "bike_parking_outdoor": 10,
-        "LATITUDE": 43.64382,
-        "LONGITUDE": -79.42953,
+        "SITE_ADDRESS_y": "400 DUFFERIN ST",
+        "LATITUDE": 43.643907415812585,
+        "LONGITUDE": -79.42967310572098,
         "ward_code": "09",
         "ward_name": "Davenport",
         "ward_full": "Davenport (09)",
@@ -130029,8 +130127,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.42953,
-          43.64382
+          -79.42967310572098,
+          43.643907415812585
         ]
       }
     },
@@ -130049,8 +130147,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 529,
         "bike_parking_outdoor": 12,
-        "LATITUDE": 43.63892,
-        "LONGITUDE": -79.41118,
+        "SITE_ADDRESS_y": "15 SOLIDARITY WAY",
+        "LATITUDE": 43.63898678836078,
+        "LONGITUDE": -79.41129264893291,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -130076,8 +130175,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.41118,
-          43.63892
+          -79.41129264893291,
+          43.63898678836078
         ]
       }
     },
@@ -130096,8 +130195,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 637,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.65423,
-        "LONGITUDE": -79.3754,
+        "SITE_ADDRESS_y": "25 DALHOUSIE ST",
+        "LATITUDE": 43.654225481,
+        "LONGITUDE": -79.375397511,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -130123,8 +130223,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3754,
-          43.65423
+          -79.375397511,
+          43.654225481
         ]
       }
     },
@@ -130143,8 +130243,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 150,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.75078,
-        "LONGITUDE": -79.54022,
+        "SITE_ADDRESS_y": "5 ZAPPACOSTA DR",
+        "LATITUDE": 43.75083098290721,
+        "LONGITUDE": -79.54032546917622,
         "ward_code": "07",
         "ward_name": "Humber River-Black Creek",
         "ward_full": "Humber River-Black Creek (07)",
@@ -130170,8 +130271,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.54022,
-          43.75078
+          -79.54032546917622,
+          43.75083098290721
         ]
       }
     },
@@ -131416,8 +131517,9 @@
         "SITE_ADDRESS_x": "1496  QUEEN ST W",
         "WARD": 4,
         "YEAR_BUILT": 1870,
-        "LATITUDE": 43.640478,
-        "LONGITUDE": -79.4377958,
+        "SITE_ADDRESS_y": "1496 QUEEN ST W",
+        "LATITUDE": 43.640614384,
+        "LONGITUDE": -79.437848643,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -131443,8 +131545,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4377958,
-          43.640478
+          -79.437848643,
+          43.640614384
         ]
       }
     },
@@ -131795,8 +131897,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 6,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.6950155,
-        "LONGITUDE": -79.4489945,
+        "SITE_ADDRESS_y": "800 VAUGHAN RD",
+        "LATITUDE": 43.694997529,
+        "LONGITUDE": -79.448931215,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -131822,8 +131925,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4489945,
-          43.6950155
+          -79.448931215,
+          43.694997529
         ]
       }
     },
@@ -132404,7 +132507,7 @@
         "WARD": 5,
         "YEAR_BUILT": 1970,
         "YEAR_REGISTERED": 2023,
-        "SITE_ADDRESS_y": "5 GREENBROOK DR\r\n\r\n",
+        "SITE_ADDRESS_y": "5 GREENBROOK DR",
         "LATITUDE": 43.6964928212,
         "LONGITUDE": -79.4764300653,
         "ward_code": "05",
@@ -132452,8 +132555,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 189,
         "bike_parking_outdoor": 8,
-        "LATITUDE": 43.6713577,
-        "LONGITUDE": -79.4235154,
+        "SITE_ADDRESS_y": "740 DUPONT ST",
+        "LATITUDE": 43.6715956130908,
+        "LONGITUDE": -79.42354639953184,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -132479,8 +132583,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4235154,
-          43.6713577
+          -79.42354639953184,
+          43.6715956130908
         ]
       }
     },
@@ -132596,8 +132700,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 F QUEEN ST E",
-        "LATITUDE": 43.6746668318,
-        "LONGITUDE": -79.2776535124,
+        "LATITUDE": 43.6746861713,
+        "LONGITUDE": -79.27752142579999,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -132623,8 +132727,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2776535124,
-          43.6746668318
+          -79.27752142579999,
+          43.6746861713
         ]
       }
     },
@@ -134416,8 +134520,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 4,
         "bike_parking_outdoor": 6,
-        "LATITUDE": 43.66839,
-        "LONGITUDE": -79.40868,
+        "SITE_ADDRESS_y": "376 BRUNSWICK AVE",
+        "LATITUDE": 43.668393896,
+        "LONGITUDE": -79.4086851275,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -134443,8 +134548,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.40868,
-          43.66839
+          -79.4086851275,
+          43.668393896
         ]
       }
     },
@@ -134748,8 +134853,8 @@
         "YEAR_BUILT": 1989,
         "YEAR_REGISTERED": 2019,
         "SITE_ADDRESS_y": "607 ST CLAIR AVE W",
-        "LATITUDE": 43.6819035440939,
-        "LONGITUDE": -79.42295022917911,
+        "LATITUDE": 43.68206393,
+        "LONGITUDE": -79.422651317,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -134775,8 +134880,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.42295022917911,
-          43.6819035440939
+          -79.422651317,
+          43.68206393
         ]
       }
     },
@@ -136569,8 +136674,8 @@
         "bike_parking_indoor": 31,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "109 VAUGHAN RD",
-        "LATITUDE": 43.6841957137,
-        "LONGITUDE": -79.4209646641,
+        "LATITUDE": 43.684187125,
+        "LONGITUDE": -79.420961416,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -136596,8 +136701,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4209646641,
-          43.6841957137
+          -79.420961416,
+          43.684187125
         ]
       }
     },
@@ -137928,8 +138033,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 8,
-        "LATITUDE": 43.6634062,
-        "LONGITUDE": -79.3733758,
+        "SITE_ADDRESS_y": "380 SHERBOURNE ST",
+        "LATITUDE": 43.6633746222,
+        "LONGITUDE": -79.3733862471,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -137955,8 +138061,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3733758,
-          43.6634062
+          -79.3733862471,
+          43.6633746222
         ]
       }
     },
@@ -138533,35 +138639,36 @@
         "WARD": 3,
         "YEAR_BUILT": 1970,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.63302,
-        "LONGITUDE": -79.355798,
-        "ward_code": "10",
-        "ward_name": "Spadina-Fort York",
-        "ward_full": "Spadina-Fort York (10)",
-        "neighbourhood_number": "166",
-        "neighbourhood_name": "St Lawrence-East Bayfront-The Islands",
+        "SITE_ADDRESS_y": "23 THIRD ST",
+        "LATITUDE": 43.599773506,
+        "LONGITUDE": -79.49961878,
+        "ward_code": "03",
+        "ward_name": "Etobicoke-Lakeshore",
+        "ward_full": "Etobicoke-Lakeshore (03)",
+        "neighbourhood_number": "018",
+        "neighbourhood_name": "New Toronto",
         "neighbourhood_classification": "Not an NIA or Emerging Neighbourhood",
         "neighbourhood_classification_code": "NA",
-        "BICYCLE_ZONE": 1,
-        "short_term_min": 2,
-        "short_term_max": 3,
-        "long_term_min": 5,
-        "long_term_max": 10,
+        "BICYCLE_ZONE": 2,
+        "short_term_min": 1,
+        "short_term_max": 1,
+        "long_term_min": 4,
+        "long_term_max": 8,
         "long_term_oversized_min": 0,
         "long_term_oversized_max": 0,
-        "short_term_min_unmet": 2,
-        "short_term_max_unmet": 3,
-        "long_term_min_unmet": 5,
-        "long_term_max_unmet": 10,
-        "total_unmet_min": 7,
-        "total_req_min": 7,
+        "short_term_min_unmet": 1,
+        "short_term_max_unmet": 1,
+        "long_term_min_unmet": 4,
+        "long_term_max_unmet": 8,
+        "total_unmet_min": 5,
+        "total_req_min": 5,
         "pc_unmet": 1.0
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.355798,
-          43.63302
+          -79.49961878,
+          43.599773506
         ]
       }
     },
@@ -140878,8 +140985,8 @@
         "bike_parking_indoor": 2,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "44 CHARLES ST W",
-        "LATITUDE": 43.6687248258,
-        "LONGITUDE": -79.3882538095,
+        "LATITUDE": 43.6687205329,
+        "LONGITUDE": -79.38825219124999,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -140905,8 +141012,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3882538095,
-          43.6687248258
+          -79.38825219124999,
+          43.6687205329
         ]
       }
     },
@@ -141208,9 +141315,9 @@
         "YEAR_REGISTERED": 2019,
         "bike_parking_indoor": 20,
         "bike_parking_outdoor": 0,
-        "SITE_ADDRESS_y": "1577 DANFORTH AVE",
-        "LATITUDE": 43.6831806444,
-        "LONGITUDE": -79.3230461793,
+        "SITE_ADDRESS_y": "695 COXWELL AVE",
+        "LATITUDE": 43.6831763487,
+        "LONGITUDE": -79.32304457065,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -141236,8 +141343,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3230461793,
-          43.6831806444
+          -79.32304457065,
+          43.6831763487
         ]
       }
     },
@@ -141630,8 +141737,8 @@
         "YEAR_BUILT": 1957,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "22 VARNA DR",
-        "LATITUDE": 43.7196194362,
-        "LONGITUDE": -79.4407985931,
+        "LATITUDE": 43.7196151391,
+        "LONGITUDE": -79.44079696455,
         "ward_code": "08",
         "ward_name": "Eglinton-Lawrence",
         "ward_full": "Eglinton-Lawrence (08)",
@@ -141657,8 +141764,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4407985931,
-          43.7196194362
+          -79.44079696455,
+          43.7196151391
         ]
       }
     },
@@ -143373,8 +143480,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 5,
         "SITE_ADDRESS_y": "101 ONTARIO ST",
-        "LATITUDE": 43.654589844,
-        "LONGITUDE": -79.366707521,
+        "LATITUDE": 43.654551799000004,
+        "LONGITUDE": -79.36668852599999,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -143400,8 +143507,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.366707521,
-          43.654589844
+          -79.36668852599999,
+          43.654551799000004
         ]
       }
     },
@@ -143840,8 +143947,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1930,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.6666866,
-        "LONGITUDE": -79.315584,
+        "SITE_ADDRESS_y": "1636 QUEEN ST E",
+        "LATITUDE": 43.666831284,
+        "LONGITUDE": -79.315638971,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -143867,8 +143975,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.315584,
-          43.6666866
+          -79.315638971,
+          43.666831284
         ]
       }
     },
@@ -143928,8 +144036,9 @@
         "RSN": 5251786,
         "SITE_ADDRESS_x": "98  LEUTY AVE ",
         "WARD": 19,
-        "LATITUDE": 43.670558,
-        "LONGITUDE": -79.2966304,
+        "SITE_ADDRESS_y": "98 LEUTY AVE",
+        "LATITUDE": 43.670502765,
+        "LONGITUDE": -79.296702565,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -143955,8 +144064,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2966304,
-          43.670558
+          -79.296702565,
+          43.670502765
         ]
       }
     },
@@ -144161,8 +144270,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1955,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6825666,
-        "LONGITUDE": -79.3052332,
+        "SITE_ADDRESS_y": "29 KILDONAN RD",
+        "LATITUDE": 43.682622252,
+        "LONGITUDE": -79.305233621,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -144188,8 +144298,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3052332,
-          43.6825666
+          -79.305233621,
+          43.682622252
         ]
       }
     },
@@ -146322,8 +146432,9 @@
         "WARD": 3,
         "YEAR_BUILT": 1959,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6138,
-        "LONGITUDE": -79.4933,
+        "SITE_ADDRESS_y": "17 STATION RD",
+        "LATITUDE": 43.613801842,
+        "LONGITUDE": -79.493300533,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -146349,8 +146460,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4933,
-          43.6138
+          -79.493300533,
+          43.613801842
         ]
       }
     },
@@ -146461,8 +146572,9 @@
         "WARD": 3,
         "YEAR_BUILT": 1965,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.6008551,
-        "LONGITUDE": -79.51783,
+        "SITE_ADDRESS_y": "272 BIRMINGHAM ST",
+        "LATITUDE": 43.6010094451,
+        "LONGITUDE": -79.5177436619,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -146488,8 +146600,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.51783,
-          43.6008551
+          -79.5177436619,
+          43.6010094451
         ]
       }
     },
@@ -146598,8 +146710,9 @@
         "RSN": 5382234,
         "SITE_ADDRESS_x": "131  COXWELL AVE ",
         "WARD": 19,
-        "LATITUDE": 43.670061,
-        "LONGITUDE": -79.3179159,
+        "SITE_ADDRESS_y": "131 COXWELL AVE",
+        "LATITUDE": 43.670050998,
+        "LONGITUDE": -79.317818326,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -146625,8 +146738,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3179159,
-          43.670061
+          -79.317818326,
+          43.670050998
         ]
       }
     },
@@ -146692,8 +146805,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 16,
-        "LATITUDE": 43.6798927,
-        "LONGITUDE": -79.3883069,
+        "SITE_ADDRESS_y": "32 ROWANWOOD AVE",
+        "LATITUDE": 43.679893419,
+        "LONGITUDE": -79.388330017,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -146719,8 +146833,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3883069,
-          43.6798927
+          -79.388330017,
+          43.679893419
         ]
       }
     },
@@ -148531,8 +148645,8 @@
         "bike_parking_indoor": 40,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "200 MADISON AVE",
-        "LATITUDE": 43.676442017,
-        "LONGITUDE": -79.406812986,
+        "LATITUDE": 43.676576116,
+        "LONGITUDE": -79.40668972,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -148558,8 +148672,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.406812986,
-          43.676442017
+          -79.40668972,
+          43.676576116
         ]
       }
     },
@@ -151327,8 +151441,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 2,
-        "LATITUDE": 43.6560314,
-        "LONGITUDE": -79.3968986,
+        "SITE_ADDRESS_y": "123 HURON ST",
+        "LATITUDE": 43.656018789,
+        "LONGITUDE": -79.3969267,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -151354,8 +151469,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3968986,
-          43.6560314
+          -79.3969267,
+          43.656018789
         ]
       }
     },
@@ -151606,8 +151721,8 @@
         "YEAR_BUILT": 1993,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "95 WOOD ST",
-        "LATITUDE": 43.6627856598,
-        "LONGITUDE": -79.378610577,
+        "LATITUDE": 43.6627813664,
+        "LONGITUDE": -79.3786089605,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -151633,8 +151748,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.378610577,
-          43.6627856598
+          -79.3786089605,
+          43.6627813664
         ]
       }
     },
@@ -152352,8 +152467,9 @@
         "WARD": 8,
         "YEAR_BUILT": 1952,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.7222406,
-        "LONGITUDE": -79.4329518,
+        "SITE_ADDRESS_y": "26 SARANAC BLVD",
+        "LATITUDE": 43.7224053398,
+        "LONGITUDE": -79.4330906045,
         "ward_code": "08",
         "ward_name": "Eglinton-Lawrence",
         "ward_full": "Eglinton-Lawrence (08)",
@@ -152379,8 +152495,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4329518,
-          43.7222406
+          -79.4330906045,
+          43.7224053398
         ]
       }
     },
@@ -152584,8 +152700,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 6,
-        "LATITUDE": 43.68307,
-        "LONGITUDE": -79.30347,
+        "SITE_ADDRESS_y": "2149 GERRARD ST E",
+        "LATITUDE": 43.683069933,
+        "LONGITUDE": -79.303474146,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -152611,8 +152728,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.30347,
-          43.68307
+          -79.303474146,
+          43.683069933
         ]
       }
     },
@@ -153666,8 +153783,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1960,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.70765,
-        "LONGITUDE": -79.30142,
+        "SITE_ADDRESS_y": "2901 ST CLAIR AVE E",
+        "LATITUDE": 43.7076566166,
+        "LONGITUDE": -79.3014278686,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -153693,8 +153811,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.30142,
-          43.70765
+          -79.3014278686,
+          43.7076566166
         ]
       }
     },
@@ -153711,8 +153829,9 @@
         "WARD": 19,
         "YEAR_BUILT": 1940,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.70776,
-        "LONGITUDE": -79.30108,
+        "SITE_ADDRESS_y": "2905 ST CLAIR AVE E",
+        "LATITUDE": 43.7077653626,
+        "LONGITUDE": -79.3010798031,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -153738,8 +153857,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.30108,
-          43.70776
+          -79.3010798031,
+          43.7077653626
         ]
       }
     },
@@ -153989,8 +154108,8 @@
         "YEAR_OF_REPLACEMENT": 2005,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "123 LA ROSE AVE",
-        "LATITUDE": 43.6852100383,
-        "LONGITUDE": -79.5218137723,
+        "LATITUDE": 43.68516183615,
+        "LONGITUDE": -79.52179809065001,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -154016,8 +154135,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5218137723,
-          43.6852100383
+          -79.52179809065001,
+          43.68516183615
         ]
       }
     },
@@ -154794,8 +154913,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 10,
-        "LATITUDE": 43.67344,
-        "LONGITUDE": -79.28267,
+        "SITE_ADDRESS_y": "2477 QUEEN ST E",
+        "LATITUDE": 43.6734524134,
+        "LONGITUDE": -79.2826756397,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -154821,8 +154941,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.28267,
-          43.67344
+          -79.2826756397,
+          43.6734524134
         ]
       }
     },
@@ -155500,8 +155620,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 QUEEN ST E",
-        "LATITUDE": 43.6747570284,
-        "LONGITUDE": -79.2771547349,
+        "LATITUDE": 43.6747312696,
+        "LONGITUDE": -79.27727203705,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -155527,8 +155647,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2771547349,
-          43.6747570284
+          -79.27727203705,
+          43.6747312696
         ]
       }
     },
@@ -155548,8 +155668,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 QUEEN ST E",
-        "LATITUDE": 43.6746668318,
-        "LONGITUDE": -79.2776535124,
+        "LATITUDE": 43.6746861713,
+        "LONGITUDE": -79.27752142579999,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -155575,8 +155695,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2776535124,
-          43.6746668318
+          -79.27752142579999,
+          43.6746861713
         ]
       }
     },
@@ -156629,8 +156749,9 @@
         "WARD": 15,
         "YEAR_BUILT": 1951,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.6970349,
-        "LONGITUDE": -79.3653344,
+        "SITE_ADDRESS_y": "39 LEACREST RD",
+        "LATITUDE": 43.697040849,
+        "LONGITUDE": -79.365349715,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -156656,8 +156777,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3653344,
-          43.6970349
+          -79.365349715,
+          43.697040849
         ]
       }
     },
@@ -157189,8 +157310,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.59988,
-        "LONGITUDE": -79.51362,
+        "SITE_ADDRESS_y": "18 FOURTEENTH ST",
+        "LATITUDE": 43.599882427,
+        "LONGITUDE": -79.513619138,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -157216,8 +157338,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.51362,
-          43.59988
+          -79.513619138,
+          43.599882427
         ]
       }
     },
@@ -157515,8 +157637,9 @@
         "WARD": 3,
         "YEAR_BUILT": 1954,
         "YEAR_REGISTERED": 2024,
-        "LATITUDE": 43.5904723,
-        "LONGITUDE": -79.5395247,
+        "SITE_ADDRESS_y": "12-14 THIRTY NINTH ST",
+        "LATITUDE": 43.58885411,
+        "LONGITUDE": -79.539116113,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -157542,8 +157665,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5395247,
-          43.5904723
+          -79.539116113,
+          43.58885411
         ]
       }
     },
@@ -157655,8 +157778,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.674274,
-        "LONGITUDE": -79.3879807,
+        "SITE_ADDRESS_y": "877 YONGE ST",
+        "LATITUDE": 43.674248952,
+        "LONGITUDE": -79.387972597,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -157682,8 +157806,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3879807,
-          43.674274
+          -79.387972597,
+          43.674248952
         ]
       }
     },
@@ -158031,8 +158155,8 @@
         "YEAR_OF_REPLACEMENT": 2012,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "2567 YONGE ST",
-        "LATITUDE": 43.7140481865,
-        "LONGITUDE": -79.3993963134,
+        "LATITUDE": 43.71404388925,
+        "LONGITUDE": -79.3993946917,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -158058,8 +158182,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3993963134,
-          43.7140481865
+          -79.3993946917,
+          43.71404388925
         ]
       }
     },
@@ -158785,8 +158909,8 @@
         "bike_parking_indoor": 10,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "7-9 ROANOKE RD",
-        "LATITUDE": 43.74126562970837,
-        "LONGITUDE": -79.32750865715619,
+        "LATITUDE": 43.7410579572,
+        "LONGITUDE": -79.3274491522,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -158812,8 +158936,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.32750865715619,
-          43.74126562970837
+          -79.3274491522,
+          43.7410579572
         ]
       }
     },
@@ -159024,8 +159148,8 @@
         "bike_parking_indoor": 30,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "424 YONGE ST",
-        "LATITUDE": 43.660295635,
-        "LONGITUDE": -79.383058424,
+        "LATITUDE": 43.660448199,
+        "LONGITUDE": -79.3831425535,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -159051,8 +159175,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.383058424,
-          43.660295635
+          -79.3831425535,
+          43.660448199
         ]
       }
     },
@@ -159956,8 +160080,8 @@
         "YEAR_OF_REPLACEMENT": 1996,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1080 EASTERN AVE",
-        "LATITUDE": 43.6658597162,
-        "LONGITUDE": -79.3160434122,
+        "LATITUDE": 43.6658554221,
+        "LONGITUDE": -79.31604180560001,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -159983,8 +160107,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3160434122,
-          43.6658597162
+          -79.31604180560001,
+          43.6658554221
         ]
       }
     },
@@ -160141,8 +160265,8 @@
         "YEAR_OF_REPLACEMENT": 2003,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1775 EGLINTON AVE W",
-        "LATITUDE": 43.69584972781326,
-        "LONGITUDE": -79.44888053958157,
+        "LATITUDE": 43.695804638,
+        "LONGITUDE": -79.448776283,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -160168,8 +160292,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.44888053958157,
-          43.69584972781326
+          -79.448776283,
+          43.695804638
         ]
       }
     },
@@ -161465,7 +161589,7 @@
         "bike_parking_indoor": 8,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "2715 ISLINGTON AVE",
-        "LATITUDE": 43.741665101,
+        "LATITUDE": 43.741665101500004,
         "LONGITUDE": -79.566395335,
         "ward_code": "01",
         "ward_name": "Etobicoke North",
@@ -161493,7 +161617,7 @@
         "type": "Point",
         "coordinates": [
           -79.566395335,
-          43.741665101
+          43.741665101500004
         ]
       }
     },
@@ -161695,8 +161819,9 @@
         "WARD": 14,
         "YEAR_BUILT": 1920,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.66676,
-        "LONGITUDE": -79.35287,
+        "SITE_ADDRESS_y": "425 BROADVIEW AVE",
+        "LATITUDE": 43.66676056,
+        "LONGITUDE": -79.352874184,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -161722,8 +161847,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.35287,
-          43.66676
+          -79.352874184,
+          43.66676056
         ]
       }
     },
@@ -161885,8 +162010,8 @@
         "YEAR_BUILT": 1993,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "78 HOLLY ST",
-        "LATITUDE": 43.7063503756,
-        "LONGITUDE": -79.3969151981,
+        "LATITUDE": 43.706346079300005,
+        "LONGITUDE": -79.39691357654999,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -161912,8 +162037,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3969151981,
-          43.7063503756
+          -79.39691357654999,
+          43.706346079300005
         ]
       }
     },
@@ -162073,8 +162198,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 30,
         "bike_parking_outdoor": 4,
-        "LATITUDE": 43.6945111,
-        "LONGITUDE": -79.3017506,
+        "SITE_ADDRESS_y": "94 EASTDALE AVE",
+        "LATITUDE": 43.695029893,
+        "LONGITUDE": -79.301722222,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -162100,8 +162226,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3017506,
-          43.6945111
+          -79.301722222,
+          43.695029893
         ]
       }
     },
@@ -163183,8 +163309,9 @@
         "YEAR_REGISTERED": 2026,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 8,
-        "LATITUDE": 43.6562299,
-        "LONGITUDE": -79.362439,
+        "SITE_ADDRESS_y": "10 TRACY ST",
+        "LATITUDE": 43.656602997,
+        "LONGITUDE": -79.362624673,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -163210,8 +163337,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.362439,
-          43.6562299
+          -79.362624673,
+          43.656602997
         ]
       }
     },
@@ -163888,8 +164015,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 5,
-        "LATITUDE": 43.6969242,
-        "LONGITUDE": -79.4236108,
+        "SITE_ADDRESS_y": "1705 BATHURST ST",
+        "LATITUDE": 43.6969498333,
+        "LONGITUDE": -79.4236449514,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -163915,8 +164043,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4236108,
-          43.6969242
+          -79.4236449514,
+          43.6969498333
         ]
       }
     },
@@ -163980,8 +164108,8 @@
         "YEAR_BUILT": 1954,
         "YEAR_REGISTERED": 2021,
         "SITE_ADDRESS_y": "1012 O'CONNOR DR",
-        "LATITUDE": 43.7096518084,
-        "LONGITUDE": -79.3101171407,
+        "LATITUDE": 43.7096475102,
+        "LONGITUDE": -79.31011553385,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -164007,8 +164135,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3101171407,
-          43.7096518084
+          -79.31011553385,
+          43.7096475102
         ]
       }
     },
@@ -164400,8 +164528,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 12,
-        "LATITUDE": 43.69,
-        "LONGITUDE": -79.34734,
+        "SITE_ADDRESS_y": "140 COSBURN AVE",
+        "LATITUDE": 43.690005138,
+        "LONGITUDE": -79.3473462315,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -164427,8 +164556,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.34734,
-          43.69
+          -79.3473462315,
+          43.690005138
         ]
       }
     },
@@ -165200,7 +165329,7 @@
         "bike_parking_indoor": 10,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "210 VAUGHAN RD",
-        "LATITUDE": 43.687311357,
+        "LATITUDE": 43.687311358,
         "LONGITUDE": -79.423463821,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
@@ -165228,7 +165357,7 @@
         "type": "Point",
         "coordinates": [
           -79.423463821,
-          43.687311357
+          43.687311358
         ]
       }
     },
@@ -166357,8 +166486,8 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "625 FINCH AVE W",
-        "LATITUDE": 43.77115054933274,
-        "LONGITUDE": -79.4558187836685,
+        "LATITUDE": 43.771095479,
+        "LONGITUDE": -79.454476959,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -166384,8 +166513,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4558187836685,
-          43.77115054933274
+          -79.454476959,
+          43.771095479
         ]
       }
     },
@@ -166587,8 +166716,8 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1290 DANFORTH RD",
-        "LATITUDE": 43.740755193,
-        "LONGITUDE": -79.246090296,
+        "LATITUDE": 43.7407332585,
+        "LONGITUDE": -79.2460768475,
         "ward_code": "21",
         "ward_name": "Scarborough Centre",
         "ward_full": "Scarborough Centre (21)",
@@ -166614,8 +166743,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.246090296,
-          43.740755193
+          -79.2460768475,
+          43.7407332585
         ]
       }
     },
@@ -166633,8 +166762,9 @@
         "YEAR_BUILT": 1967,
         "YEAR_OF_REPLACEMENT": 2011,
         "YEAR_REGISTERED": 2023,
-        "LATITUDE": 43.753516,
-        "LONGITUDE": -79.3320954,
+        "SITE_ADDRESS_y": "11 VALLEY WOODS RD",
+        "LATITUDE": 43.753193723337645,
+        "LONGITUDE": -79.33307391318317,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -166660,8 +166790,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3320954,
-          43.753516
+          -79.33307391318317,
+          43.753193723337645
         ]
       }
     },
@@ -167015,8 +167145,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 5,
-        "LATITUDE": 43.6909523,
-        "LONGITUDE": -79.3570623,
+        "SITE_ADDRESS_y": "16 FERNWOOD GDNS",
+        "LATITUDE": 43.691632295,
+        "LONGITUDE": -79.357334424,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -167042,8 +167173,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3570623,
-          43.6909523
+          -79.357334424,
+          43.691632295
         ]
       }
     },
@@ -167666,8 +167797,9 @@
         "YEAR_REGISTERED": 2023,
         "bike_parking_indoor": 138,
         "bike_parking_outdoor": 28,
-        "LATITUDE": 43.7082202,
-        "LONGITUDE": -79.3764688,
+        "SITE_ADDRESS_y": "730 HILLSDALE AVE E",
+        "LATITUDE": 43.70796757617472,
+        "LONGITUDE": -79.37645824359099,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -167693,8 +167825,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3764688,
-          43.7082202
+          -79.37645824359099,
+          43.70796757617472
         ]
       }
     },
@@ -167713,8 +167845,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.7056594,
-        "LONGITUDE": -79.3941933,
+        "SITE_ADDRESS_y": "33 DUNFIELD AVE",
+        "LATITUDE": 43.705694418,
+        "LONGITUDE": -79.394588028,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -167740,8 +167873,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3941933,
-          43.7056594
+          -79.394588028,
+          43.705694418
         ]
       }
     },
@@ -167897,8 +168030,9 @@
         "YEAR_REGISTERED": 2024,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.7140312,
-        "LONGITUDE": -79.3599356,
+        "SITE_ADDRESS_y": "36 BRENTCLIFFE RD",
+        "LATITUDE": 43.71386463959005,
+        "LONGITUDE": -79.35995601769098,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -167924,8 +168058,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3599356,
-          43.7140312
+          -79.35995601769098,
+          43.71386463959005
         ]
       }
     },
@@ -168041,8 +168175,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 150,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.75024,
-        "LONGITUDE": -79.54065,
+        "SITE_ADDRESS_y": "15 VENA WAY",
+        "LATITUDE": 43.75028464579235,
+        "LONGITUDE": -79.54075013097292,
         "ward_code": "07",
         "ward_name": "Humber River-Black Creek",
         "ward_full": "Humber River-Black Creek (07)",
@@ -168068,8 +168203,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.54065,
-          43.75024
+          -79.54075013097292,
+          43.75028464579235
         ]
       }
     },
