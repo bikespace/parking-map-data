@@ -18854,14 +18854,14 @@
         "name": "Rosedale Station Bike Parking",
         "operator": "Toronto Transit Commission",
         "operator:type": "public",
-        "meta_feature_last_updated": "2025-02-17T19:58:52+00:00",
+        "meta_feature_last_updated": "2026-08-14T02:40:35+00:00",
         "meta_osm_id": "node/9165674727"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3887284,
-          43.6770162
+          -79.3887441,
+          43.6770167
         ]
       }
     },
@@ -97040,6 +97040,88 @@
         "coordinates": [
           -79.5002318,
           43.7723067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "meta_feature_last_updated": "2026-08-13T17:41:12+00:00",
+        "meta_osm_id": "node/14092781993"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5002351,
+          43.7723187
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "meta_feature_last_updated": "2026-08-13T17:41:12+00:00",
+        "meta_osm_id": "node/14092781994"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5002372,
+          43.7723311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "meta_feature_last_updated": "2026-08-13T17:41:12+00:00",
+        "meta_osm_id": "node/14092781995"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5002393,
+          43.77234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "meta_feature_last_updated": "2026-08-13T17:41:12+00:00",
+        "meta_osm_id": "node/14092781996"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.500242,
+          43.7723509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-08-14T02:08:19+00:00",
+        "meta_osm_id": "node/14093576276"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3586598,
+          43.6768191
         ]
       }
     },
