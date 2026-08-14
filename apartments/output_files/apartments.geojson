@@ -25066,8 +25066,8 @@
         "YEAR_BUILT": 2001,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "17 BROOKBANKS DR",
-        "LATITUDE": 43.751291266,
-        "LONGITUDE": -79.332886312,
+        "LATITUDE": 43.7516584229,
+        "LONGITUDE": -79.3321264402,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -25093,8 +25093,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.332886312,
-          43.751291266
+          -79.3321264402,
+          43.7516584229
         ]
       }
     },
@@ -42744,8 +42744,8 @@
         "bike_parking_indoor": 12,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "707 ST CLAIR AVE W",
-        "LATITUDE": 43.6812230253,
-        "LONGITUDE": -79.4266148086,
+        "LATITUDE": 43.68121873115,
+        "LONGITUDE": -79.42661318379999,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -42771,8 +42771,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4266148086,
-          43.6812230253
+          -79.42661318379999,
+          43.68121873115
         ]
       }
     },
