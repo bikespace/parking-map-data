@@ -29487,7 +29487,7 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
-        "capacity": "5",
+        "capacity": "7",
         "cargo_bike": "yes",
         "colour": "black",
         "covered": "no",
@@ -29496,7 +29496,7 @@
         "indoor": "no",
         "lit": "yes",
         "operator": "Scarborough Health Network",
-        "meta_feature_last_updated": "2024-01-10T22:31:34+00:00",
+        "meta_feature_last_updated": "2026-08-15T09:01:13+00:00",
         "meta_osm_id": "node/11506910611"
       },
       "geometry": {
@@ -97128,6 +97128,27 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "32",
+        "covered": "no",
+        "fee": "no",
+        "quantity": "4",
+        "meta_feature_last_updated": "2026-08-15T01:51:15+00:00",
+        "meta_osm_id": "node/14095883786"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2869276,
+          43.6958722
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -99966,6 +99987,27 @@
           [
             -79.4498863,
             43.6571687
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-08-14T16:42:46+00:00",
+        "meta_osm_id": "way/1549696096"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.5083412,
+            43.773675
+          ],
+          [
+            -79.5083321,
+            43.7736512
           ]
         ]
       }
