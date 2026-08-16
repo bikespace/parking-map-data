@@ -23194,8 +23194,8 @@
         "YEAR_OF_REPLACEMENT": 2005,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "154 VAUGHAN RD",
-        "LATITUDE": 43.6855290809,
-        "LONGITUDE": -79.4222487062,
+        "LATITUDE": 43.68552478695,
+        "LONGITUDE": -79.4222470821,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -23221,8 +23221,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4222487062,
-          43.6855290809
+          -79.4222470821,
+          43.68552478695
         ]
       }
     },
@@ -108837,8 +108837,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1430 WOODBINE AVE",
-        "LATITUDE": 43.6985761673,
-        "LONGITUDE": -79.3187961632,
+        "LATITUDE": 43.69857187015,
+        "LONGITUDE": -79.3187945551,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -108864,8 +108864,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3187961632,
-          43.6985761673
+          -79.3187945551,
+          43.69857187015
         ]
       }
     },
