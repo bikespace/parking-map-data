@@ -130148,8 +130148,8 @@
         "bike_parking_indoor": 529,
         "bike_parking_outdoor": 12,
         "SITE_ADDRESS_y": "15 SOLIDARITY WAY",
-        "LATITUDE": 43.63898678836078,
-        "LONGITUDE": -79.41129264893291,
+        "LATITUDE": 43.638920157,
+        "LONGITUDE": -79.411180906,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -130175,8 +130175,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.41129264893291,
-          43.63898678836078
+          -79.411180906,
+          43.638920157
         ]
       }
     },
