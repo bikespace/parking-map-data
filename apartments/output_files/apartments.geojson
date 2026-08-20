@@ -57063,8 +57063,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "19 DURNFORD RD",
-        "LATITUDE": 43.798799318,
-        "LONGITUDE": -79.149848619,
+        "LATITUDE": 43.798939622999995,
+        "LONGITUDE": -79.14979855050001,
         "ward_code": "25",
         "ward_name": "Scarborough-Rouge Park",
         "ward_full": "Scarborough-Rouge Park (25)",
@@ -57090,8 +57090,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.149848619,
-          43.798799318
+          -79.14979855050001,
+          43.798939622999995
         ]
       }
     },
@@ -110121,8 +110121,8 @@
         "YEAR_BUILT": 1990,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "60 RICHMOND ST E",
-        "LATITUDE": 43.6525396289,
-        "LONGITUDE": -79.3761942758,
+        "LATITUDE": 43.65253533695,
+        "LONGITUDE": -79.3761926604,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -110148,8 +110148,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3761942758,
-          43.6525396289
+          -79.3761926604,
+          43.65253533695
         ]
       }
     },
