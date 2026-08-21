@@ -21030,8 +21030,8 @@
         "YEAR_BUILT": 1988,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "679 QUEENS QUAY W",
-        "LATITUDE": 43.634496448,
-        "LONGITUDE": -79.39997992,
+        "LATITUDE": 43.634539703,
+        "LONGITUDE": -79.399993804,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -21057,8 +21057,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.39997992,
-          43.634496448
+          -79.399993804,
+          43.634539703
         ]
       }
     },
@@ -24692,8 +24692,8 @@
         "YEAR_BUILT": 1970,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "2 PHIN AVE",
-        "LATITUDE": 43.6788050577,
-        "LONGITUDE": -79.3358716026,
+        "LATITUDE": 43.67870218335,
+        "LONGITUDE": -79.3361214418,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -24719,8 +24719,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3358716026,
-          43.6788050577
+          -79.3361214418,
+          43.67870218335
         ]
       }
     },
@@ -40639,8 +40639,8 @@
         "YEAR_OF_REPLACEMENT": 2008,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "30 GILDER DR",
-        "LATITUDE": 43.7371458262,
-        "LONGITUDE": -79.2565312101,
+        "LATITUDE": 43.7371415241,
+        "LONGITUDE": -79.25652961005,
         "ward_code": "21",
         "ward_name": "Scarborough Centre",
         "ward_full": "Scarborough Centre (21)",
@@ -40666,8 +40666,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2565312101,
-          43.7371458262
+          -79.25652961005,
+          43.7371415241
         ]
       }
     },
@@ -67536,8 +67536,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 1,
         "SITE_ADDRESS_y": "109 PEMBROKE ST",
-        "LATITUDE": 43.660115913,
-        "LONGITUDE": -79.37282621455,
+        "LATITUDE": 43.66011162,
+        "LONGITUDE": -79.372824599,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -67563,8 +67563,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.37282621455,
-          43.660115913
+          -79.372824599,
+          43.66011162
         ]
       }
     },
@@ -94736,8 +94736,8 @@
         "YEAR_BUILT": 1955,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "1420 KINGSTON RD",
-        "LATITUDE": 43.6874626683,
-        "LONGITUDE": -79.2720047537,
+        "LATITUDE": 43.68745837065,
+        "LONGITUDE": -79.27200315335,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -94763,8 +94763,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2720047537,
-          43.6874626683
+          -79.27200315335,
+          43.68745837065
         ]
       }
     },
@@ -114522,7 +114522,7 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 16,
         "SITE_ADDRESS_y": "10 YORKWOODS GT",
-        "LATITUDE": 43.751648415,
+        "LATITUDE": 43.7516484155,
         "LONGITUDE": -79.513392929,
         "ward_code": "07",
         "ward_name": "Humber River-Black Creek",
@@ -114550,7 +114550,7 @@
         "type": "Point",
         "coordinates": [
           -79.513392929,
-          43.751648415
+          43.7516484155
         ]
       }
     },
