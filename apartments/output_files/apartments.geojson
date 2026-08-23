@@ -14872,7 +14872,7 @@
         "YEAR_REGISTERED": 2017,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 18,
-        "SITE_ADDRESS_y": "707-711 FINCH AVE W",
+        "SITE_ADDRESS_y": "707 FINCH AVE W",
         "LATITUDE": 43.76979216909312,
         "LONGITUDE": -79.46157778735625,
         "ward_code": "06",
@@ -41903,8 +41903,8 @@
         "YEAR_OF_REPLACEMENT": 2005,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "300 DUFFERIN ST",
-        "LATITUDE": 43.6395518816,
-        "LONGITUDE": -79.4281871995,
+        "LATITUDE": 43.639547591799996,
+        "LONGITUDE": -79.42818557625,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -41930,8 +41930,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4281871995,
-          43.6395518816
+          -79.42818557625,
+          43.639547591799996
         ]
       }
     },
