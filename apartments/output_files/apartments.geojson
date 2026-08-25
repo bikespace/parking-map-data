@@ -41903,8 +41903,8 @@
         "YEAR_OF_REPLACEMENT": 2005,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "300 DUFFERIN ST",
-        "LATITUDE": 43.639547591799996,
-        "LONGITUDE": -79.42818557625,
+        "LATITUDE": 43.6395518816,
+        "LONGITUDE": -79.4281871995,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -41930,8 +41930,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.42818557625,
-          43.639547591799996
+          -79.4281871995,
+          43.6395518816
         ]
       }
     },
@@ -121946,8 +121946,8 @@
         "YEAR_OF_REPLACEMENT": 2017,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1286 WILSON AVE",
-        "LATITUDE": 43.724294732,
-        "LONGITUDE": -79.493841391,
+        "LATITUDE": 43.724339125499995,
+        "LONGITUDE": -79.493865782,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -121973,8 +121973,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.493841391,
-          43.724294732
+          -79.493865782,
+          43.724339125499995
         ]
       }
     },
@@ -143621,8 +143621,8 @@
         "YEAR_BUILT": 1910,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "2 PROSPECT ST",
-        "LATITUDE": 43.6667667454,
-        "LONGITUDE": -79.3716022421,
+        "LATITUDE": 43.666762451699995,
+        "LONGITUDE": -79.37160062654999,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -143648,8 +143648,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3716022421,
-          43.6667667454
+          -79.37160062654999,
+          43.666762451699995
         ]
       }
     },
