@@ -97554,6 +97554,56 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-08-24T17:30:17+00:00",
+        "meta_osm_id": "node/14120381453"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4334808,
+          43.6706055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "operator": "Artisan Factory",
+        "operator:type": "private",
+        "meta_feature_last_updated": "2026-08-24T17:30:17+00:00",
+        "meta_osm_id": "node/14120381454"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4345231,
+          43.6705567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-08-25T04:39:49+00:00",
+        "meta_osm_id": "node/14121624610"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5845947,
+          43.7436764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
