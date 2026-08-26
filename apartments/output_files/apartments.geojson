@@ -14543,8 +14543,8 @@
         "YEAR_OF_REPLACEMENT": 2006,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "20 TRUDELLE ST",
-        "LATITUDE": 43.740346176450004,
-        "LONGITUDE": -79.2442521118,
+        "LATITUDE": 43.74045498145,
+        "LONGITUDE": -79.2437166618,
         "ward_code": "21",
         "ward_name": "Scarborough Centre",
         "ward_full": "Scarborough Centre (21)",
@@ -14570,8 +14570,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2442521118,
-          43.740346176450004
+          -79.2437166618,
+          43.74045498145
         ]
       }
     },
@@ -94076,8 +94076,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 30,
-        "LATITUDE": 43.661632,
-        "LONGITUDE": -79.3364989,
+        "SITE_ADDRESS_y": "1075 QUEEN ST E",
+        "LATITUDE": 43.661683738,
+        "LONGITUDE": -79.33657326,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -94103,8 +94104,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3364989,
-          43.661632
+          -79.33657326,
+          43.661683738
         ]
       }
     },
