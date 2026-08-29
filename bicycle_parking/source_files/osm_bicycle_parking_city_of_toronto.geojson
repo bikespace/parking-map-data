@@ -4481,12 +4481,11 @@
         "addr:city": "Toronto",
         "addr:housenumber": "777",
         "addr:street": "Victoria Park Ave",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
         "bike_ride": "yes",
         "capacity": "52",
-        "construction:amenity": "bicycle_parking",
-        "construction:bicycle_parking": "building",
         "covered": "yes",
-        "description": "As of September 2025, the Victoria Park bicycle parking station is temporarily closed due to construction.",
         "fee": "yes",
         "image": "https://flic.kr/p/2qhawgP",
         "indoor": "yes",
@@ -4499,7 +4498,7 @@
         "start_date": "2012",
         "supervised": "no",
         "website": "https://www.toronto.ca/services-payments/streets-parking-transportation/cycling-in-toronto/bicycle-parking/bicycle-parking-stations/",
-        "meta_feature_last_updated": "2026-01-21T13:30:58+00:00",
+        "meta_feature_last_updated": "2026-08-29T13:20:51+00:00",
         "meta_osm_id": "node/2949659167"
       },
       "geometry": {
