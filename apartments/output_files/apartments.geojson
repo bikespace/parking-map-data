@@ -58422,8 +58422,9 @@
         "YEAR_REGISTERED": 2026,
         "bike_parking_indoor": 400,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.6952766,
-        "LONGITUDE": -79.3014679,
+        "SITE_ADDRESS_y": "100 EASTDALE AVE",
+        "LATITUDE": 43.69513669,
+        "LONGITUDE": -79.301487607,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -58449,8 +58450,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3014679,
-          43.6952766
+          -79.301487607,
+          43.69513669
         ]
       }
     },
@@ -63405,7 +63406,7 @@
         "bike_parking_indoor": 489,
         "bike_parking_outdoor": 80,
         "SITE_ADDRESS_y": "1100 KING ST W",
-        "LATITUDE": 43.640120672500004,
+        "LATITUDE": 43.640120673,
         "LONGITUDE": -79.422240833,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
@@ -63433,7 +63434,7 @@
         "type": "Point",
         "coordinates": [
           -79.422240833,
-          43.640120672500004
+          43.640120673
         ]
       }
     },
@@ -67016,8 +67017,8 @@
         "YEAR_BUILT": 1900,
         "YEAR_REGISTERED": 2020,
         "SITE_ADDRESS_y": "595 ST CLAIR AVE W",
-        "LATITUDE": 43.6821585882,
-        "LONGITUDE": -79.4220166514,
+        "LATITUDE": 43.6821542941,
+        "LONGITUDE": -79.42201502719999,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -67043,8 +67044,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4220166514,
-          43.6821585882
+          -79.42201502719999,
+          43.6821542941
         ]
       }
     },
@@ -154063,8 +154064,8 @@
         "bike_parking_indoor": 4,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "1447 ROYAL YORK RD",
-        "LATITUDE": 43.6865275325,
-        "LONGITUDE": -79.5276550192,
+        "LATITUDE": 43.68652324125,
+        "LONGITUDE": -79.5276533781,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -154090,8 +154091,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5276550192,
-          43.6865275325
+          -79.5276533781,
+          43.68652324125
         ]
       }
     },
