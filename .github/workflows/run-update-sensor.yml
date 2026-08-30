@@ -186,7 +186,7 @@ jobs:
     - name: Install the project
       run: uv sync --all-extras
     - name: Run bike theft download script
-      run: uv run src/bikespace_data/bike_thefts/update_bike_theft.py
+      run: uv run src/bikespace_data/bike_thefts/update_bike_thefts.py
     - name: Run bike theft ETL script
       run: uv run src/bikespace_data/bike_thefts/bike-thefts-etl.py
     - name: Check if there are changes that need to be committed
