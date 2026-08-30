@@ -165,3 +165,52 @@ jobs:
           git pull origin data
           git cherry-pick main --strategy-option=theirs
           git push origin data
+
+  update-bike-theft-data:
+  # run after the "needs" job regardless of whether it fails or succeeds
+  if: ${{ always() }}
+  needs: update-apartments-data
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout
+      uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+    - name: Install uv
+      uses: astral-sh/setup-uv@11f9893b081a58869d3b5fccaea48c9e9e46f990 # v8.3.2
+      with:
+        version: ${{ env.UV_VERSION }}
+        enable-cache: true
+    - name: "Set up Python"
+      uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+      with:
+        python-version-file: ".python-version"
+    - name: Install the project
+      run: uv sync --all-extras
+    - name: Run bike theft download script
+      run: uv run src/bikespace_data/bike_thefts/update_bike_theft.py
+    - name: Run bike theft ETL script
+      run: uv run src/bikespace_data/bike_thefts/bike-thefts-etl.py
+    - name: Check if there are changes that need to be committed
+      run: |
+        if [ -z "$(git status --porcelain)" ]; then 
+          echo "should_commit=False" >> "$GITHUB_ENV"
+        else 
+          echo "should_commit=True" >> "$GITHUB_ENV"
+        fi
+    - name: Git setup
+      if: ${{ env.should_commit == 'True' }}
+      run: |
+        git config user.email ${{ secrets.BOT_EMAIL }}
+        git config user.name "tallcoleman-bot"
+        git fetch --depth=1
+    - name: Build commit on main (not pushed)
+      if: ${{ env.should_commit == 'True' }}
+      run: |
+        git add bike_theft
+        git commit -m "BOT - ran data pipeline update (bike_theft)"
+    - name: Cherry pick and push commit to data branch
+      if: ${{ env.should_commit == 'True' }}
+      run: |
+        git switch data
+        git pull origin data
+        git cherry-pick main --strategy-option=theirs
+        git push origin data
