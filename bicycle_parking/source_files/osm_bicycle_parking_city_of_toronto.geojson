@@ -3912,22 +3912,23 @@
         "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
-        "capacity": "6",
+        "capacity": "4",
         "colour": "red",
         "covered": "no",
-        "description": "rack comprised of three red stands",
+        "description": "rack comprised of two red ring and posts",
         "fee": "no",
-        "operator": "City of Toronto",
+        "operator": "TTC",
         "operator:type": "government",
+        "operator:wikidata": "Q17978",
         "ref:open.toronto.ca:street-furniture-bicycle-parking:id": "BP-10390",
-        "meta_feature_last_updated": "2024-08-19T23:49:14+00:00",
+        "meta_feature_last_updated": "2026-08-29T18:23:53+00:00",
         "meta_osm_id": "node/2781445515"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4754668,
-          43.6517691
+          -79.4754361,
+          43.651796
         ]
       }
     },
@@ -98029,6 +98030,60 @@
         "coordinates": [
           -79.4106181,
           43.6484604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "unknown",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "3",
+        "meta_feature_last_updated": "2026-08-29T22:30:18+00:00",
+        "meta_osm_id": "node/14133978276"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4495512,
+          43.6532266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "colour": "silver",
+        "meta_feature_last_updated": "2026-08-30T08:03:06+00:00",
+        "meta_osm_id": "node/14134499764"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.425964,
+          43.662463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "6",
+        "colour": "silver",
+        "meta_feature_last_updated": "2026-08-30T08:03:06+00:00",
+        "meta_osm_id": "node/14134499766"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4259516,
+          43.6624223
         ]
       }
     },
