@@ -11288,8 +11288,8 @@
         "YEAR_OF_REPLACEMENT": 2010,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "369 PAPE AVE",
-        "LATITUDE": 43.6698117311,
-        "LONGITUDE": -79.3407107259,
+        "LATITUDE": 43.66980743655,
+        "LONGITUDE": -79.34070911494999,
         "ward_code": "14",
         "ward_name": "Toronto-Danforth",
         "ward_full": "Toronto-Danforth (14)",
@@ -11315,8 +11315,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3407107259,
-          43.6698117311
+          -79.34070911494999,
+          43.66980743655
         ]
       }
     },
