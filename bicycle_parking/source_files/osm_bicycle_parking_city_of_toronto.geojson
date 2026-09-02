@@ -95495,9 +95495,10 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "private",
         "amenity": "bicycle_parking",
         "bicycle_parking": "shed",
-        "meta_feature_last_updated": "2026-06-21T12:33:27+00:00",
+        "meta_feature_last_updated": "2026-09-01T14:31:04+00:00",
         "meta_osm_id": "node/13955561017"
       },
       "geometry": {
@@ -95511,9 +95512,10 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "private",
         "amenity": "bicycle_parking",
         "bicycle_parking": "shed",
-        "meta_feature_last_updated": "2026-06-21T12:33:27+00:00",
+        "meta_feature_last_updated": "2026-09-01T14:31:04+00:00",
         "meta_osm_id": "node/13955561018"
       },
       "geometry": {
