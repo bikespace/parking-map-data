@@ -159150,8 +159150,8 @@
         "bike_parking_indoor": 30,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "424 YONGE ST",
-        "LATITUDE": 43.660448199,
-        "LONGITUDE": -79.3831425535,
+        "LATITUDE": 43.660600763,
+        "LONGITUDE": -79.383226683,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -159177,8 +159177,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3831425535,
-          43.660448199
+          -79.383226683,
+          43.660600763
         ]
       }
     },
