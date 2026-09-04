@@ -114006,7 +114006,7 @@
         "YEAR_BUILT": 1973,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "2 TREE SPARROWAY",
-        "LATITUDE": 43.7915114225,
+        "LATITUDE": 43.791511418,
         "LONGITUDE": -79.369045359,
         "ward_code": "17",
         "ward_name": "Don Valley North",
@@ -114034,7 +114034,7 @@
         "type": "Point",
         "coordinates": [
           -79.369045359,
-          43.7915114225
+          43.791511418
         ]
       }
     },
@@ -123260,7 +123260,7 @@
         "YEAR_BUILT": 1973,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "6 TREE SPARROWAY",
-        "LATITUDE": 43.7913841945,
+        "LATITUDE": 43.79138419,
         "LONGITUDE": -79.369630481,
         "ward_code": "17",
         "ward_name": "Don Valley North",
@@ -123288,7 +123288,7 @@
         "type": "Point",
         "coordinates": [
           -79.369630481,
-          43.7913841945
+          43.79138419
         ]
       }
     },
