@@ -77167,8 +77167,8 @@
         "bike_parking_indoor": 81,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "33 WOOD ST",
-        "LATITUDE": 43.6623196945,
-        "LONGITUDE": -79.381377148,
+        "LATITUDE": 43.662298271,
+        "LONGITUDE": -79.381321604,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -77194,8 +77194,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.381377148,
-          43.6623196945
+          -79.381321604,
+          43.662298271
         ]
       }
     },
@@ -117466,8 +117466,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 12,
         "SITE_ADDRESS_y": "292 THE KINGSWAY",
-        "LATITUDE": 43.663489134,
-        "LONGITUDE": -79.521317056,
+        "LATITUDE": 43.6633990985,
+        "LONGITUDE": -79.5211401185,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -117493,8 +117493,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.521317056,
-          43.663489134
+          -79.5211401185,
+          43.6633990985
         ]
       }
     },
