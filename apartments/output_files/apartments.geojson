@@ -9024,8 +9024,8 @@
         "YEAR_OF_REPLACEMENT": 2017,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "20 WEST LODGE AVE",
-        "LATITUDE": 43.6421900653,
-        "LONGITUDE": -79.4363583389,
+        "LATITUDE": 43.64221906815,
+        "LONGITUDE": -79.43628991445,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -9051,8 +9051,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4363583389,
-          43.6421900653
+          -79.43628991445,
+          43.64221906815
         ]
       }
     },
