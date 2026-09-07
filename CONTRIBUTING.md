@@ -106,7 +106,7 @@ For more complex cases (e.g. where there are multiple source, output, display, o
 ├── archive/  # saves weekly copies in YYYY-MM-DD named folders
 ├── README.md  # data user documentation
 ├── source_files/  
-├── output_files/    # e.g. multiple source files
+├── output_files/
 ├── display_files/
 ├── statuses/
 ```
