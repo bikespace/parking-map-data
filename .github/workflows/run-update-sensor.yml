@@ -203,7 +203,7 @@ jobs:
       - name: Build commit on main (not pushed)
         if: ${{ env.should_commit == 'True' }}
         run: |
-          git add src/bikespace_data/bike_thefts
+          git add bike_thefts
           git commit -m "BOT - ran data pipeline update (bike_thefts)"
       - name: Cherry pick and push commit to data branch
         if: ${{ env.should_commit == 'True' }}
