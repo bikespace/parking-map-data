@@ -24505,7 +24505,7 @@
         "YEAR_OF_REPLACEMENT": 1999,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "400 MCCOWAN RD",
-        "LATITUDE": 43.741102061,
+        "LATITUDE": 43.7411020615,
         "LONGITUDE": -79.241172366,
         "ward_code": "21",
         "ward_name": "Scarborough Centre",
@@ -24533,7 +24533,7 @@
         "type": "Point",
         "coordinates": [
           -79.241172366,
-          43.741102061
+          43.7411020615
         ]
       }
     },
@@ -135971,8 +135971,9 @@
         "YEAR_REGISTERED": 2025,
         "bike_parking_indoor": 100,
         "bike_parking_outdoor": 30,
-        "LATITUDE": 43.7464971,
-        "LONGITUDE": -79.2850936,
+        "SITE_ADDRESS_y": "1236 BIRCHMOUNT RD",
+        "LATITUDE": 43.7464304774,
+        "LONGITUDE": -79.2851371956,
         "ward_code": "21",
         "ward_name": "Scarborough Centre",
         "ward_full": "Scarborough Centre (21)",
@@ -135998,8 +135999,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2850936,
-          43.7464971
+          -79.2851371956,
+          43.7464304774
         ]
       }
     },
