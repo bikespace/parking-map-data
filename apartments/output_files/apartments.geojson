@@ -43128,8 +43128,8 @@
         "bike_parking_indoor": 9,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "177 MUTUAL ST",
-        "LATITUDE": 43.6595590254,
-        "LONGITUDE": -79.3765361369,
+        "LATITUDE": 43.6595547332,
+        "LONGITUDE": -79.37653452095,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -43155,8 +43155,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3765361369,
-          43.6595590254
+          -79.37653452095,
+          43.6595547332
         ]
       }
     },
@@ -137472,8 +137472,8 @@
         "bike_parking_indoor": 100,
         "bike_parking_outdoor": 10,
         "SITE_ADDRESS_y": "110 THE ESPLANADE",
-        "LATITUDE": 43.6480302618,
-        "LONGITUDE": -79.3723912336,
+        "LATITUDE": 43.648025969900004,
+        "LONGITUDE": -79.37238961930001,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -137499,8 +137499,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3723912336,
-          43.6480302618
+          -79.37238961930001,
+          43.648025969900004
         ]
       }
     },
