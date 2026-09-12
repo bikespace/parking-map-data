@@ -13,3 +13,4 @@ __pycache__/
 /bike_thefts/statuses/
 /src/bikespace_data/bike_thefts/*.geojson
 /src/bikespace_data/bike_thefts/statuses/
+/src/bikespace_data/bike_thefts/source_files/
