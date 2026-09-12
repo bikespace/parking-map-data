@@ -46667,8 +46667,8 @@
         "YEAR_OF_REPLACEMENT": 2015,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "850 O'CONNOR DR",
-        "LATITUDE": 43.7070607671,
-        "LONGITUDE": -79.3122799086,
+        "LATITUDE": 43.70705646905,
+        "LONGITUDE": -79.3122783008,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -46694,8 +46694,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3122799086,
-          43.7070607671
+          -79.3122783008,
+          43.70705646905
         ]
       }
     },
@@ -160931,8 +160931,8 @@
         "YEAR_BUILT": 1970,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "2765 YONGE ST",
-        "LATITUDE": 43.7184879937,
-        "LONGITUDE": -79.4001063407,
+        "LATITUDE": 43.718483696350006,
+        "LONGITUDE": -79.40010471835001,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -160958,8 +160958,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4001063407,
-          43.7184879937
+          -79.40010471835001,
+          43.718483696350006
         ]
       }
     },
