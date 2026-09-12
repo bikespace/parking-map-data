@@ -9,6 +9,7 @@ dependencies = [
     "geojson>=3.3.0",
     "geopandas>=1.1.4",
     "geopy>=2.4.1",
+    "matplotlib>=3.11.2",
     "numpy>=2.5.1",
     "overpass>=0.8.2",
     "pandas>=3.0.3",

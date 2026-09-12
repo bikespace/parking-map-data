@@ -21,7 +21,7 @@ def test_pick_resource_id_prefers_geojson_and_csv_fallback(mocker):
         "result": {
             "resources": [
                 {"id": "r1", "format": "CSV"},
-                {"id": "r2", "format": "GeoJSON"},
+                {"id": "r2", "format": "GeoJSON", "url": "https://example.com/data.geojson"},
                 {"id": "r3", "format": "XML"},
             ]
         }
@@ -38,6 +38,24 @@ def test_pick_resource_id_prefers_geojson_and_csv_fallback(mocker):
 
     # prefers geojson
     assert _pick_resource_id("bicycle-thefts") == "r2"
+
+    # a "GeoJSON"-labeled resource whose URL doesn't actually point to a .geojson file
+    # (e.g. Toronto Open Data's mislabeled "datastore dump" resources) is not trusted;
+    # falls back to CSV instead
+    meta_mislabeled = {
+        "result": {
+            "resources": [
+                {"id": "r1", "format": "CSV"},
+                {
+                    "id": "r2",
+                    "format": "GeoJSON",
+                    "url": "https://example.com/datastore/dump/r2",
+                },
+            ]
+        }
+    }
+    mock_resp.json.return_value = meta_mislabeled
+    assert _pick_resource_id("bicycle-thefts") == "r1"
 
     # if no geojson present, prefers csv
     meta2 = {"result": {"resources": [{"id": "a", "format": "XML"}, {"id": "b", "format": "CSV"}]}}

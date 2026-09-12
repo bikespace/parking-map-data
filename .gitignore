@@ -7,3 +7,9 @@ __pycache__/
 .coverage*
 /.hypothesis
 .env
+
+# generated dataset outputs (published on the `data` branch, not `main`)
+/bicycle_theft/
+/notebooks/bicycle_theft/
+/notebooks/output/
+/cache/

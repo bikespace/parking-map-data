@@ -43,7 +43,10 @@ def _pick_resource_id(dataset_name: str, prefer_geojson: bool = True) -> str:
 
     if prefer_geojson:
         for rs in resources:
-            if rs.get("format", "").lower() == "geojson":
+            # The Toronto Open Data "datastore dump" resource is often mislabeled
+            # as GeoJSON but actually serves CSV content regardless of extension;
+            # only trust resources whose URL genuinely points to a .geojson file.
+            if rs.get("format", "").lower() == "geojson" and rs.get("url", "").lower().endswith(".geojson"):
                 return rs["id"]
     # prefer CSV if no geojson found
     for rs in resources:
@@ -63,8 +66,8 @@ def _to_gdf_from_df(df: pd.DataFrame) -> gpd.GeoDataFrame:
     If not, returns a GeoDataFrame converted from the DataFrame (may not have a geometry column).
     """
     # Common possible coordinate column names
-    lon_cols: Iterable[str] = ["longitude", "lon", "LONGITUDE", "LON", "X"]
-    lat_cols: Iterable[str] = ["latitude", "lat", "LATITUDE", "LAT", "Y"]
+    lon_cols: Iterable[str] = ["longitude", "lon", "LONGITUDE", "LON", "LONG_WGS84", "X"]
+    lat_cols: Iterable[str] = ["latitude", "lat", "LATITUDE", "LAT", "LAT_WGS84", "Y"]
 
     df_cols = set(df.columns)
 
@@ -123,8 +126,11 @@ def update_bicycle_thefts(
         gdf = _to_gdf_from_df(df)
         used_format = "csv"
 
-    # determine last_updated
-    last_updated = datetime.fromisoformat(metadata["last_modified"])
+    # determine last_updated (prefer last_modified, fall back to metadata_modified)
+    last_modified_str = metadata.get("last_modified") or metadata.get("metadata_modified")
+    if not last_modified_str:
+        raise KeyError(f"Neither 'last_modified' nor 'metadata_modified' found in resource metadata for {dataset_name}")
+    last_updated = datetime.fromisoformat(last_modified_str)
     if last_updated.tzinfo is None:
         last_updated = last_updated.replace(tzinfo=timezone.utc)
 
@@ -166,8 +172,11 @@ def update_bicycle_thefts(
         if not isinstance(gdf, gpd.GeoDataFrame):
             gdf = gpd.GeoDataFrame(gdf)
 
-        # convert dtypes for stability
-        gdf = gdf.convert_dtypes()
+        # convert dtypes for stability; rewrap as GeoDataFrame since convert_dtypes()
+        # returns a plain DataFrame in newer pandas versions
+        _crs = gdf.crs
+        _geom_col = gdf.geometry.name
+        gdf = gpd.GeoDataFrame(gdf.convert_dtypes(), geometry=_geom_col, crs=_crs)
 
         output_file_name = f"{dataset_name}-normalized.geojson"
         save_geo_output(

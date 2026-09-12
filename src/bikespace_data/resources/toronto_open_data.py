@@ -32,8 +32,13 @@ def request_tod_gdf(dataset_name: str, resource_id: str) -> TODResponseGDF:
     [meta_resource] = [
         rs for rs in meta_all["result"]["resources"] if rs["id"] == resource_id
     ]
-    gdf: gpd.GeoDataFrame = (
-        gpd.read_file(meta_resource["url"]).replace("None", pd.NA).convert_dtypes()
+    _raw = gpd.read_file(meta_resource["url"])
+    _crs = _raw.crs
+    _geom_col = _raw.geometry.name
+    gdf: gpd.GeoDataFrame = gpd.GeoDataFrame(
+        _raw.replace("None", pd.NA).convert_dtypes(),
+        geometry=_geom_col,
+        crs=_crs,
     )
     return {
         "gdf": gdf,
