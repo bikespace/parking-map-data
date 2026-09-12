@@ -6,8 +6,4 @@ __pycache__/
 .ipynb_checkpoints
 .coverage*
 /.hypothesis
-
-# development only - do not merge into main
-./bicycle_parking/
-./apartments/
-./bicycle_network/
+.env

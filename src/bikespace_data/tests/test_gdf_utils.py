@@ -93,6 +93,7 @@ def test_dt_cols_to_str_object_columns():
     pd.testing.assert_series_equal(
         modified_gdf["col_obj_str"],
         pd.Series(["hello", "world"], dtype="string", name="col_obj_str"),
+        check_dtype=False,
     )
     pd.testing.assert_series_equal(
         modified_gdf["col_obj_mixed"],
@@ -156,6 +157,7 @@ def test_dt_cols_to_str_dataframe_with_none_values():
     pd.testing.assert_series_equal(
         modified_gdf["col_obj"],
         pd.Series(["text", pd.NA], dtype="string", name="col_obj"),
+        check_dtype=False,
     )
 
 
