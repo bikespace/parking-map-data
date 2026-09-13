@@ -14873,8 +14873,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "707 FINCH AVE W",
-        "LATITUDE": 43.76979216909312,
-        "LONGITUDE": -79.46157778735625,
+        "LATITUDE": 43.769500992,
+        "LONGITUDE": -79.460967972,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -14900,8 +14900,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.46157778735625,
-          43.76979216909312
+          -79.460967972,
+          43.769500992
         ]
       }
     },
@@ -59694,8 +59694,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 B QUEEN ST E",
-        "LATITUDE": 43.6747312696,
-        "LONGITUDE": -79.27727203705,
+        "LATITUDE": 43.6747570284,
+        "LONGITUDE": -79.2771547349,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -59721,8 +59721,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.27727203705,
-          43.6747312696
+          -79.2771547349,
+          43.6747570284
         ]
       }
     },
@@ -84721,8 +84721,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 12,
         "SITE_ADDRESS_y": "7 ROCHEFORT",
-        "LATITUDE": 43.71812960676254,
-        "LONGITUDE": -79.33682722742478,
+        "LATITUDE": 43.717785179,
+        "LONGITUDE": -79.337222836,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -84748,8 +84748,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.33682722742478,
-          43.71812960676254
+          -79.337222836,
+          43.717785179
         ]
       }
     },
@@ -86311,8 +86311,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 A QUEEN ST E",
-        "LATITUDE": 43.6746861713,
-        "LONGITUDE": -79.27752142579999,
+        "LATITUDE": 43.6746668318,
+        "LONGITUDE": -79.2776535124,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -86338,8 +86338,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.27752142579999,
-          43.6746861713
+          -79.2776535124,
+          43.6746668318
         ]
       }
     },
@@ -86359,8 +86359,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 G QUEEN ST E",
-        "LATITUDE": 43.6747312696,
-        "LONGITUDE": -79.27727203705,
+        "LATITUDE": 43.6747570284,
+        "LONGITUDE": -79.2771547349,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -86386,8 +86386,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.27727203705,
-          43.6747312696
+          -79.2771547349,
+          43.6747570284
         ]
       }
     },
@@ -132702,8 +132702,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 F QUEEN ST E",
-        "LATITUDE": 43.6746861713,
-        "LONGITUDE": -79.27752142579999,
+        "LATITUDE": 43.6746668318,
+        "LONGITUDE": -79.2776535124,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -132729,8 +132729,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.27752142579999,
-          43.6746861713
+          -79.2776535124,
+          43.6746668318
         ]
       }
     },
@@ -155623,8 +155623,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 QUEEN ST E",
-        "LATITUDE": 43.6747312696,
-        "LONGITUDE": -79.27727203705,
+        "LATITUDE": 43.6747570284,
+        "LONGITUDE": -79.2771547349,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -155650,8 +155650,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.27727203705,
-          43.6747312696
+          -79.2771547349,
+          43.6747570284
         ]
       }
     },
