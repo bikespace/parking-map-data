@@ -28,7 +28,7 @@ def save_geo_output(
 ):
     """Save GeoJSON dict or GeoPandas Geodataframe to file. If archive_name is specified, the file will also be saved in an archive folder in the same path."""
 
-    path.mkdir(exist_ok=True, parents=True)
+    (path / file_name).parent.mkdir(exist_ok=True, parents=True)
     if archive_name:
         (path / archive_name).mkdir(exist_ok=True, parents=True)
 
