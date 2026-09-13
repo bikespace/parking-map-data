@@ -25749,14 +25749,14 @@
         "description": "Note specifies that bikes left longer than 5 days will be removed",
         "fee": "no",
         "quantity": "3",
-        "meta_feature_last_updated": "2025-09-27T20:18:13+00:00",
+        "meta_feature_last_updated": "2026-09-12T22:37:23+00:00",
         "meta_osm_id": "node/11023038383"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3826042,
-          43.6447036
+          -79.3826319,
+          43.6446654
         ]
       }
     },
@@ -99018,6 +99018,26 @@
         "coordinates": [
           -79.3567534,
           43.6539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "6",
+        "covered": "yes",
+        "fee": "no",
+        "level": "0",
+        "meta_feature_last_updated": "2026-09-12T18:48:08+00:00",
+        "meta_osm_id": "node/14175714420"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4700349,
+          43.6743295
         ]
       }
     },
