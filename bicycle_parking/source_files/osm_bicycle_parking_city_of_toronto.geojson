@@ -25289,8 +25289,17 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2023-05-21T14:14:41+00:00",
+        "bicycle_parking": "rack",
+        "bike_ride": "yes",
+        "capacity": "8",
+        "covered": "no",
+        "description": "stacker rack; wheelholder maxwidth 9cm",
+        "fee": "no",
+        "operator": "City of Toronto",
+        "operator:type": "government",
+        "meta_feature_last_updated": "2026-09-13T19:24:11+00:00",
         "meta_osm_id": "node/10916031250"
       },
       "geometry": {
@@ -93078,11 +93087,18 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "11",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2026-01-15T15:48:46+00:00",
+        "operator": "Bike Share Toronto",
+        "operator:type": "public",
+        "payment:account_cards": "yes",
+        "payment:app": "yes",
+        "payment:cards": "yes",
+        "meta_feature_last_updated": "2026-09-13T22:50:28+00:00",
         "meta_osm_id": "node/13458281756"
       },
       "geometry": {
@@ -99038,6 +99054,27 @@
         "coordinates": [
           -79.4700349,
           43.6743295
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "private",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "building",
+        "capacity": "300",
+        "covered": "yes",
+        "fee": "no",
+        "level": "1",
+        "meta_feature_last_updated": "2026-09-13T20:39:55+00:00",
+        "meta_osm_id": "node/14178575448"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3590615,
+          43.6617206
         ]
       }
     },
