@@ -143861,8 +143861,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 20,
         "SITE_ADDRESS_y": "15 HUBBARD BLVD",
-        "LATITUDE": 43.667990229,
-        "LONGITUDE": -79.2933921123,
+        "LATITUDE": 43.6679859335,
+        "LONGITUDE": -79.29339050915,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -143888,8 +143888,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2933921123,
-          43.667990229
+          -79.29339050915,
+          43.6679859335
         ]
       }
     },
