@@ -111103,8 +111103,8 @@
         "YEAR_OF_REPLACEMENT": 2016,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1 CHURCH ST",
-        "LATITUDE": 43.6470328516,
-        "LONGITUDE": -79.3728697107,
+        "LATITUDE": 43.647028559800006,
+        "LONGITUDE": -79.37286809585001,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
         "ward_full": "Spadina-Fort York (10)",
@@ -111130,8 +111130,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3728697107,
-          43.6470328516
+          -79.37286809585001,
+          43.647028559800006
         ]
       }
     },
