@@ -16624,7 +16624,7 @@
         "YEAR_BUILT": 2019,
         "YEAR_REGISTERED": 2019,
         "SITE_ADDRESS_y": "15 ROEHAMPTON AVE",
-        "LATITUDE": 43.707942687,
+        "LATITUDE": 43.7079426875,
         "LONGITUDE": -79.39786072,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
@@ -16652,7 +16652,7 @@
         "type": "Point",
         "coordinates": [
           -79.39786072,
-          43.707942687
+          43.7079426875
         ]
       }
     },
@@ -105696,8 +105696,8 @@
         "YEAR_OF_REPLACEMENT": 2000,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "2745 YONGE ST",
-        "LATITUDE": 43.7180441891,
-        "LONGITUDE": -79.4001039683,
+        "LATITUDE": 43.71803989155,
+        "LONGITUDE": -79.40010234614999,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -105723,8 +105723,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4001039683,
-          43.7180441891
+          -79.40010234614999,
+          43.71803989155
         ]
       }
     },
