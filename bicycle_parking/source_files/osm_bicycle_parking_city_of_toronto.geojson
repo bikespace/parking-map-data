@@ -3060,17 +3060,17 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "bicycle_parking": "stands",
-        "capacity": "6",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
         "covered": "no",
-        "meta_feature_last_updated": "2021-08-12T21:55:22+00:00",
+        "meta_feature_last_updated": "2026-09-18T15:24:15+00:00",
         "meta_osm_id": "node/1357787151"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3782717,
-          43.6505307
+          -79.3782455,
+          43.6505344
         ]
       }
     },
@@ -99193,6 +99193,188 @@
     {
       "type": "Feature",
       "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2026-09-18T15:24:15+00:00",
+        "meta_osm_id": "node/14191984493"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3789222,
+          43.6518382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2026-09-18T15:24:15+00:00",
+        "meta_osm_id": "node/14191984494"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3781465,
+          43.6505476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2026-09-18T15:24:15+00:00",
+        "meta_osm_id": "node/14191984495"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3789515,
+          43.6519054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2026-09-18T15:24:15+00:00",
+        "meta_osm_id": "node/14191984496"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3789421,
+          43.6518718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2026-09-18T15:24:15+00:00",
+        "meta_osm_id": "node/14191984498"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.378058,
+          43.6504431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "meta_feature_last_updated": "2026-09-18T15:24:15+00:00",
+        "meta_osm_id": "node/14191984499"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3780966,
+          43.6505588
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "colour": "silver",
+        "covered": "no",
+        "indoor": "no",
+        "meta_feature_last_updated": "2026-09-18T20:55:40+00:00",
+        "meta_osm_id": "node/14194602003"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3112883,
+          43.8084305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "bollard",
+        "capacity": "2",
+        "colour": "silver",
+        "covered": "no",
+        "indoor": "no",
+        "meta_feature_last_updated": "2026-09-18T20:55:40+00:00",
+        "meta_osm_id": "node/14194602004"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.311323,
+          43.808406
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "6",
+        "colour": "silver",
+        "covered": "no",
+        "indoor": "no",
+        "meta_feature_last_updated": "2026-09-19T01:43:10+00:00",
+        "meta_osm_id": "node/14195770297"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.480508,
+          43.726873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "6",
+        "colour": "silver",
+        "covered": "no",
+        "indoor": "no",
+        "meta_feature_last_updated": "2026-09-19T01:43:10+00:00",
+        "meta_osm_id": "node/14195770298"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4804964,
+          43.7268491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -99447,9 +99629,10 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "56",
         "covered": "yes",
         "description": "Ring post silver",
-        "meta_feature_last_updated": "2021-11-06T20:37:30+00:00",
+        "meta_feature_last_updated": "2026-09-18T22:21:40+00:00",
         "meta_osm_id": "way/396823353"
       },
       "geometry": {
@@ -99524,8 +99707,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "24",
         "covered": "no",
-        "meta_feature_last_updated": "2021-10-07T22:05:19+00:00",
+        "meta_feature_last_updated": "2026-09-18T22:25:43+00:00",
         "meta_osm_id": "way/469168683"
       },
       "geometry": {
