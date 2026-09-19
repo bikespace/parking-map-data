@@ -103542,8 +103542,8 @@
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "77 RANKIN CRES",
-        "LATITUDE": 43.658340191,
-        "LONGITUDE": -79.446051646,
+        "LATITUDE": 43.658365617499996,
+        "LONGITUDE": -79.446106399,
         "ward_code": "09",
         "ward_name": "Davenport",
         "ward_full": "Davenport (09)",
@@ -103569,8 +103569,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.446051646,
-          43.658340191
+          -79.446106399,
+          43.658365617499996
         ]
       }
     },
