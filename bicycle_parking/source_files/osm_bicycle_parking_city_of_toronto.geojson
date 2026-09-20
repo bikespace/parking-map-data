@@ -48877,18 +48877,17 @@
         "capacity": "7",
         "check_date": "2026-08-05",
         "covered": "no",
-        "description": "bike rack on the grass by the railpath trail",
         "fee": "no",
         "operator": "Metrolinx",
         "operator:type": "public",
-        "meta_feature_last_updated": "2026-08-05T17:44:12+00:00",
+        "meta_feature_last_updated": "2026-09-19T18:07:22+00:00",
         "meta_osm_id": "node/12994976201"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4518978,
-          43.6591553
+          -79.4519613,
+          43.6593645
         ]
       }
     },
@@ -99369,6 +99368,51 @@
         "coordinates": [
           -79.4804964,
           43.7268491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-09-19T19:57:08+00:00",
+        "meta_osm_id": "node/14197458574"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3513072,
+          43.6425935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-09-19T20:01:15+00:00",
+        "meta_osm_id": "node/14197463171"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3503925,
+          43.6425116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-09-19T20:00:11+00:00",
+        "meta_osm_id": "node/14197467005"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3504933,
+          43.6426196
         ]
       }
     },
