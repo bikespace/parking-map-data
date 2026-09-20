@@ -61077,8 +61077,8 @@
         "YEAR_OF_REPLACEMENT": 2015,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "2425 JANE ST",
-        "LATITUDE": 43.7313917066,
-        "LONGITUDE": -79.5103100485,
+        "LATITUDE": 43.7313874108,
+        "LONGITUDE": -79.51030840775,
         "ward_code": "06",
         "ward_name": "York Centre",
         "ward_full": "York Centre (06)",
@@ -61104,8 +61104,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5103100485,
-          43.7313917066
+          -79.51030840775,
+          43.7313874108
         ]
       }
     },
@@ -74593,8 +74593,8 @@
         "YEAR_OF_REPLACEMENT": 2008,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "10 WILLOWRIDGE RD",
-        "LATITUDE": 43.675076517,
-        "LONGITUDE": -79.568401265,
+        "LATITUDE": 43.67512426653738,
+        "LONGITUDE": -79.56850188615509,
         "ward_code": "01",
         "ward_name": "Etobicoke North",
         "ward_full": "Etobicoke North (01)",
@@ -74620,8 +74620,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.568401265,
-          43.675076517
+          -79.56850188615509,
+          43.67512426653738
         ]
       }
     },
@@ -78441,8 +78441,9 @@
         "YEAR_BUILT": 2026,
         "bike_parking_indoor": 12,
         "bike_parking_outdoor": 0,
-        "LATITUDE": 43.6705101,
-        "LONGITUDE": -79.4135163,
+        "SITE_ADDRESS_y": "1000 BATHURST ST",
+        "LATITUDE": 43.67050446,
+        "LONGITUDE": -79.41350556,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -78468,8 +78469,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4135163,
-          43.6705101
+          -79.41350556,
+          43.67050446
         ]
       }
     },
@@ -109364,8 +109365,8 @@
         "YEAR_OF_REPLACEMENT": 2005,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "1530 VICTORIA PARK AVE",
-        "LATITUDE": 43.72549195057599,
-        "LONGITUDE": -79.30404743854315,
+        "LATITUDE": 43.725403998,
+        "LONGITUDE": -79.3038141,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -109391,8 +109392,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.30404743854315,
-          43.72549195057599
+          -79.3038141,
+          43.725403998
         ]
       }
     },
@@ -166766,8 +166767,8 @@
         "YEAR_OF_REPLACEMENT": 2011,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "11 VALLEY WOODS RD",
-        "LATITUDE": 43.753193723337645,
-        "LONGITUDE": -79.33307391318317,
+        "LATITUDE": 43.753528497,
+        "LONGITUDE": -79.332105745,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -166793,8 +166794,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.33307391318317,
-          43.753193723337645
+          -79.332105745,
+          43.753528497
         ]
       }
     },
