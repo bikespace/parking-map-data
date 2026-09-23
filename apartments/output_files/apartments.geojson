@@ -152237,8 +152237,8 @@
         "YEAR_BUILT": 2003,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "659 NORTHCLIFFE BLVD",
-        "LATITUDE": 43.695812449,
-        "LONGITUDE": -79.4472340895,
+        "LATITUDE": 43.6958081545,
+        "LONGITUDE": -79.44723246075,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
         "ward_full": "Toronto-St. Paul's (12)",
@@ -152264,8 +152264,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4472340895,
-          43.695812449
+          -79.44723246075,
+          43.6958081545
         ]
       }
     },
