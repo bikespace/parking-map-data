@@ -1,19 +1,16 @@
-"""Bicycle-theft rate analysis by City of Toronto neighbourhood.
+"""Bicycle-theft rate analysis by zone.
 
 Functions:
 - load_thefts_gdf
 - load_tts_zones
 - detect_tts_weight_col
-- assign_thefts_to_neighbourhoods
+- assign_thefts_to_zones
 - filter_to_complete_years
 - aggregate_theft_rates
 - plot_theft_rates
 
-Zones are the City's 158 official neighbourhoods (see
-`bikespace_data.resources.toronto_boundaries.get_neighbourhoods_gdf`) rather than
-computed Voronoi cells: neighbourhoods are already a disjoint, full-city partition
-that a reader can recognize by name, so no clipping/sliver-removal/merging step is
-needed to make the zones legible.
+Works on any set of disjoint zone polygons with a `zone_id` column; the runner uses the
+trip-balanced Manhattan zones from `bikespace_data.bicycle_theft.manhattan_zones`.
 """
 from __future__ import annotations
 
@@ -70,72 +67,86 @@ def detect_tts_weight_col(tts: gpd.GeoDataFrame) -> tuple[Optional[str], gpd.Geo
     """Return (weight_col, possibly_augmented_tts).
 
     Tries the following in order:
-    1. Compute bike_trips_est = TTS2022 * mode_bike (percent or proportion) if both columns exist
-    2. Use one of: TTS2022, TTS, trips, bike_trips, TRIPS
+    1. Estimate daily bike trips made by each zone's residents:
+       population * trips_5up_per_person * bike mode share (percent or proportion)
+    2. Use one of: trips, bike_trips, TRIPS
     3. Return None if no usable column found (callers should treat every zone as equally weighted)
+
+    Note `TTS2022` in the School of Cities data is the zone ID, not a trip count, so it must never
+    be used as a weight. The estimate in (1) is residence-based: it undercounts places people
+    cycle to (e.g. downtown) and overcounts places they cycle from.
     """
-    if "TTS2022" in tts.columns and "mode_bike" in tts.columns:
+    if {"population", "trips_5up_per_person", "mode_bike"}.issubset(tts.columns):
+        population = pd.to_numeric(tts["population"], errors="coerce").fillna(0)
+        trips_per_person = pd.to_numeric(tts["trips_5up_per_person"], errors="coerce").fillna(0)
         mb = pd.to_numeric(tts["mode_bike"], errors="coerce").fillna(0)
-        prop = mb / 100.0 if mb.max() > 1.5 else mb
+        share = mb / 100.0 if mb.max() > 1.5 else mb
         tts = tts.copy()
-        tts["bike_trips_est"] = tts["TTS2022"] * prop
+        tts["bike_trips_est"] = population * trips_per_person * share
         return "bike_trips_est", tts
 
-    for col in ("TTS2022", "TTS", "trips", "bike_trips", "TRIPS"):
+    for col in ("trips", "bike_trips", "TRIPS"):
         if col in tts.columns and pd.api.types.is_numeric_dtype(tts[col]):
             return col, tts
 
     return None, tts
 
 
-def assign_thefts_to_neighbourhoods(
-    thefts_gdf: gpd.GeoDataFrame, neighbourhoods_gdf: gpd.GeoDataFrame
+def assign_thefts_to_zones(
+    thefts_gdf: gpd.GeoDataFrame, zones_gdf: gpd.GeoDataFrame
 ) -> pd.Series:
-    """Assign each theft point to the neighbourhood it falls within, with a nearest-neighbourhood
-    fallback for points that miss every polygon (e.g. a point that lands just outside a boundary
-    edge due to geocoding noise).
+    """Assign each theft point to the zone it falls within, with a nearest-zone fallback for
+    points that miss every polygon (e.g. a point that lands just outside a boundary edge due to
+    geocoding noise).
 
-    Returns a Series indexed by neighbourhood_number containing theft counts.
+    Returns a Series indexed by zone_id containing theft counts.
     """
-    if thefts_gdf.crs != neighbourhoods_gdf.crs:
-        thefts_gdf = thefts_gdf.to_crs(neighbourhoods_gdf.crs)
+    if thefts_gdf.crs != zones_gdf.crs:
+        thefts_gdf = thefts_gdf.to_crs(zones_gdf.crs)
 
-    zones = neighbourhoods_gdf[["neighbourhood_number", "geometry"]]
+    zones = zones_gdf[["zone_id", "geometry"]]
     joined = gpd.sjoin(thefts_gdf, zones, predicate="within", how="left").drop(
         columns=["index_right"]
     )
 
-    missing = joined[joined["neighbourhood_number"].isna()]
+    missing = joined[joined["zone_id"].isna()]
     if len(missing) > 0:
-        missing_proj = missing.to_crs(AREA_CRS).drop(columns=["neighbourhood_number"])
+        missing_proj = missing.to_crs(AREA_CRS).drop(columns=["zone_id"])
         zones_proj = zones.to_crs(AREA_CRS)
         nearest = gpd.sjoin_nearest(missing_proj, zones_proj, how="left").drop(
             columns=["index_right"], errors="ignore"
         )
-        joined.loc[nearest.index, "neighbourhood_number"] = nearest[
-            "neighbourhood_number"
+        joined.loc[nearest.index, "zone_id"] = nearest[
+            "zone_id"
         ].values
 
-    return joined.groupby("neighbourhood_number").size().rename("theft_count")
+    return joined.groupby("zone_id").size().rename("theft_count")
 
 
 def _apportion_by_area(
     source_gdf: gpd.GeoDataFrame,
     weight_col: str,
-    neighbourhoods_gdf: gpd.GeoDataFrame,
+    zones_gdf: gpd.GeoDataFrame,
+    min_covered_fraction: float = 0.5,
 ) -> pd.Series:
-    """Split each source_gdf row's weight_col value across the neighbourhoods it overlaps,
-    in proportion to the share of that row's area falling in each neighbourhood.
+    """Split each source_gdf row's weight_col value across the zones it overlaps,
+    in proportion to the share of that row's area falling in each zone.
 
-    This avoids double-counting a value into every neighbourhood a source polygon merely
+    This avoids double-counting a value into every zone a source polygon merely
     touches (which a plain `intersects()` sum would do).
+
+    Lakeshore source zones extend out over open water, where nobody lives or rides. When at
+    least `min_covered_fraction` of a source polygon lies inside the zones, its whole
+    weight is spread over that covered (land) part rather than losing the over-water share. A
+    polygon mostly outside the zones (i.e. in a neighbouring municipality) keeps the
+    plain area share, so only its sliver inside the city is counted.
     """
     src_proj = source_gdf.to_crs(AREA_CRS).reset_index(drop=True)
     src_proj["_source_id"] = src_proj.index
     src_proj["_source_area"] = src_proj.geometry.area
     src_proj = src_proj[src_proj["_source_area"] > 0]
 
-    zones_proj = neighbourhoods_gdf[["neighbourhood_number", "geometry"]].to_crs(AREA_CRS)
+    zones_proj = zones_gdf[["zone_id", "geometry"]].to_crs(AREA_CRS)
 
     overlay = gpd.overlay(
         src_proj[["_source_id", "_source_area", weight_col, "geometry"]],
@@ -147,10 +158,11 @@ def _apportion_by_area(
         return pd.Series(dtype=float, name="bike_trips")
 
     overlay["_piece_area"] = overlay.geometry.area
-    overlay["_weight_share"] = overlay[weight_col] * (
-        overlay["_piece_area"] / overlay["_source_area"]
-    )
-    return overlay.groupby("neighbourhood_number")["_weight_share"].sum().rename("bike_trips")
+    covered_area = overlay.groupby("_source_id")["_piece_area"].transform("sum")
+    mostly_covered = covered_area / overlay["_source_area"] >= min_covered_fraction
+    share_denominator = overlay["_source_area"].where(~mostly_covered, covered_area)
+    overlay["_weight_share"] = overlay[weight_col] * (overlay["_piece_area"] / share_denominator)
+    return overlay.groupby("zone_id")["_weight_share"].sum().rename("bike_trips")
 
 
 def filter_to_complete_years(
@@ -184,13 +196,13 @@ def filter_to_complete_years(
 
 
 def aggregate_theft_rates(
-    neighbourhoods_gdf: gpd.GeoDataFrame,
+    zones_gdf: gpd.GeoDataFrame,
     thefts_gdf: gpd.GeoDataFrame,
     tts_zones_gdf: gpd.GeoDataFrame,
     tts_weight_col: Optional[str] = None,
     year_col: str = "OCC_YEAR",
 ) -> gpd.GeoDataFrame:
-    """Aggregate theft counts and TTS bike-trip estimates by neighbourhood and compute a theft
+    """Aggregate theft counts and TTS bike-trip estimates by zone and compute a theft
     rate per 1000 bike trips.
 
     `bike_trips` is a TTS estimate for a single typical day, but `thefts_gdf` is normally a
@@ -199,18 +211,17 @@ def aggregate_theft_rates(
     years (see `filter_to_complete_years`) and converted to a per-day estimate before computing
     the rate, so both sides of the ratio are on the same time scale. If `year_col` isn't usable,
     falls back to the raw theft count (the resulting rate should then be treated as a rough,
-    same-scale comparison across neighbourhoods rather than a literal daily rate).
+    same-scale comparison across zones rather than a literal daily rate).
 
-    `neighbourhoods_gdf` must have a `neighbourhood_number` column (see
-    `get_neighbourhoods_gdf`). If `tts_zones_gdf` has no usable weight column, every zone is
+    `zones_gdf` must have a `zone_id` column. If `tts_zones_gdf` has no usable weight column, every zone is
     counted as weight 1 (i.e. `bike_trips` becomes a proxy for TTS zone coverage rather than an
     actual trip estimate).
     """
-    th_counts = assign_thefts_to_neighbourhoods(thefts_gdf, neighbourhoods_gdf)
+    th_counts = assign_thefts_to_zones(thefts_gdf, zones_gdf)
 
     complete_thefts, num_years = filter_to_complete_years(thefts_gdf, year_col=year_col)
     if num_years > 0:
-        annual_thefts = assign_thefts_to_neighbourhoods(complete_thefts, neighbourhoods_gdf) / num_years
+        annual_thefts = assign_thefts_to_zones(complete_thefts, zones_gdf) / num_years
         daily_thefts = (annual_thefts / 365).rename("daily_theft_estimate")
     else:
         daily_thefts = th_counts.astype(float).rename("daily_theft_estimate")
@@ -220,23 +231,25 @@ def aggregate_theft_rates(
         if not tts_weight_col or tts_weight_col not in tts.columns:
             tts_weight_col = "_zone_weight"
             tts[tts_weight_col] = 1.0
-        usage = _apportion_by_area(tts, tts_weight_col, neighbourhoods_gdf)
+        usage = _apportion_by_area(tts, tts_weight_col, zones_gdf)
     else:
         usage = pd.Series(dtype=float, name="bike_trips")
 
-    result = neighbourhoods_gdf.merge(
-        th_counts, left_on="neighbourhood_number", right_index=True, how="left"
+    result = zones_gdf.merge(
+        th_counts, left_on="zone_id", right_index=True, how="left"
     )
     result = result.merge(
-        daily_thefts, left_on="neighbourhood_number", right_index=True, how="left"
+        daily_thefts, left_on="zone_id", right_index=True, how="left"
     )
-    result = result.merge(usage, left_on="neighbourhood_number", right_index=True, how="left")
+    result = result.merge(usage, left_on="zone_id", right_index=True, how="left")
     result["theft_count"] = result["theft_count"].fillna(0).astype(int)
     result["daily_theft_estimate"] = result["daily_theft_estimate"].fillna(0)
     result["bike_trips"] = result["bike_trips"].fillna(0)
     result["theft_years_of_data"] = num_years
+    # `.where` keeps the column float (NaN where there are no trips); replacing 0 with pd.NA
+    # would turn it into an object column that gets written to GeoJSON as strings
     result["theft_per_1000_trips"] = (
-        result["daily_theft_estimate"] / result["bike_trips"].replace({0: pd.NA})
+        result["daily_theft_estimate"] / result["bike_trips"].where(result["bike_trips"] > 0)
     ) * 1000
     return result
 
@@ -244,15 +257,13 @@ def aggregate_theft_rates(
 def plot_theft_rates(
     rates_gdf: gpd.GeoDataFrame,
     out_path: Path,
-    min_bike_trips: int = 10,
+    min_bike_trips: int = 100,
     n_quantiles: int = 5,
-    top_n_labels: int = 5,
 ) -> None:
-    """Plot a quantile-colored choropleth of theft_per_1000_trips by neighbourhood and save as PNG.
+    """Plot a quantile-colored choropleth of theft_per_1000_trips by zone and save as PNG.
 
-    Neighbourhoods with fewer than `min_bike_trips` estimated bike trips are greyed out (the rate
-    is too noisy to be meaningful), and the `top_n_labels` highest-rate neighbourhoods are labeled
-    by name so a reader can immediately see which places are worst, not just how dark they are.
+    Zones with fewer than `min_bike_trips` estimated bike trips are greyed out (the rate is too
+    noisy to be meaningful).
     """
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)
@@ -295,22 +306,7 @@ def plot_theft_rates(
         cbar = fig.colorbar(sm, ax=ax, fraction=0.036, pad=0.04)
         cbar.set_label("Est. thefts per 1000 bike trips, typical day (quantiles)")
 
-    import matplotlib.patheffects as path_effects
-
-    top_zones = main.dropna(subset=["plot_rate_num"]).nlargest(top_n_labels, "plot_rate_num")
-    for _, row in top_zones.iterrows():
-        centroid = row.geometry.centroid
-        ax.annotate(
-            row["neighbourhood_name"],
-            xy=(centroid.x, centroid.y),
-            fontsize=7,
-            fontweight="bold",
-            ha="center",
-            color="white",
-            path_effects=[path_effects.withStroke(linewidth=2.5, foreground="black")],
-        )
-
-    plt.title("Estimated bicycle theft rate per 1000 bike trips by neighbourhood")
+    plt.title("Estimated bicycle theft rate per 1000 bike trips")
     plt.axis("off")
     plt.tight_layout()
     fig.savefig(out_path, dpi=150)
