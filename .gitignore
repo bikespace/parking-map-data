@@ -8,12 +8,6 @@ __pycache__/
 /.hypothesis
 .env
 
-# generated dataset outputs (published on the `data` branch, not `main`)
-/bicycle_theft/
-/notebooks/bicycle_theft/
-/notebooks/output/
-/cache/
-
 # Generated bike theft data outputs
 /src/bikespace_data/bike_thefts/*.geojson
 /src/bikespace_data/bike_thefts/statuses/
