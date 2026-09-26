@@ -48740,8 +48740,8 @@
         "YEAR_BUILT": 1989,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "120 TOWN HAVEN PL",
-        "LATITUDE": 43.7332452174,
-        "LONGITUDE": -79.2592760831,
+        "LATITUDE": 43.7332409107,
+        "LONGITUDE": -79.25927448255001,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -48767,8 +48767,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2592760831,
-          43.7332452174
+          -79.25927448255001,
+          43.7332409107
         ]
       }
     },
@@ -83745,8 +83745,9 @@
         "RSN": 5864639,
         "SITE_ADDRESS_x": "90  DUNN AVE ",
         "WARD": 4,
-        "LATITUDE": 43.6344891,
-        "LONGITUDE": -79.4323619,
+        "SITE_ADDRESS_y": "90 DUNN AVE",
+        "LATITUDE": 43.634375051,
+        "LONGITUDE": -79.432341375,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -83771,8 +83772,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4323619,
-          43.6344891
+          -79.432341375,
+          43.634375051
         ]
       }
     },
@@ -152053,7 +152054,7 @@
         "WARD": 13,
         "YEAR_BUILT": 1988,
         "YEAR_REGISTERED": 2017,
-        "SITE_ADDRESS_y": "223 SHERBOURNE ST",
+        "SITE_ADDRESS_y": "319 DUNDAS ST E",
         "LATITUDE": 43.6582200015,
         "LONGITUDE": -79.3706451728,
         "ward_code": "13",
