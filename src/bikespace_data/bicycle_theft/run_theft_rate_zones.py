@@ -45,9 +45,10 @@ from bikespace_data.bicycle_theft.theft_rate_zones import (
 from bikespace_data.resources.toronto_boundaries import get_neighbourhoods_gdf
 from bikespace_data.utilities import save_geo_output
 
+# pinned to a commit so upstream changes can't silently alter or break the output
 TTS_DEFAULT_SOURCE = (
-    "https://raw.githubusercontent.com/schoolofcities/"
-    "transportation-tomorrow-survey/main/data/tts2022zones_data.geojson"
+    "https://raw.githubusercontent.com/schoolofcities/transportation-tomorrow-survey/"
+    "2da4782bf90e921c7037760c20a866609734b10d/data/tts2022zones_data.geojson"
 )
 THEFTS_DEFAULT = (
     "https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/"
@@ -91,21 +92,20 @@ def generate_theft_rate_zones(
     print("\nLoading Toronto city outline …")
     city = get_neighbourhoods_gdf()
 
+    # fail rather than fall back: without bike-trip weights the rates are meaningless, and
+    # publishing them would overwrite good data on the data branch
     print(f"\nLoading TTS zones from {tts_source} …")
-    try:
-        tts = load_tts_zones(tts_source)
-        print(f"  {len(tts)} TTS zones, CRS={tts.crs}")
-    except Exception as e:
-        print(f"  Warning: could not load TTS source: {e}")
-        tts = gpd.GeoDataFrame(columns=["geometry"], crs="EPSG:4326")
+    tts = load_tts_zones(tts_source)
+    print(f"  {len(tts)} TTS zones, CRS={tts.crs}")
+    if len(tts) == 0:
+        raise RuntimeError("No TTS zones loaded — check the TTS source and file contents.")
 
-    tts_weight_col = None
-    if len(tts) > 0:
-        tts_weight_col, tts = detect_tts_weight_col(tts)
-        if tts_weight_col:
-            print(f"  Using TTS weight column: {tts_weight_col}")
-        else:
-            print("  No numeric weight column found in TTS zones; counting zone coverage instead")
+    tts_weight_col, tts = detect_tts_weight_col(tts)
+    if tts_weight_col is None:
+        raise RuntimeError(
+            "No bike-trip weight column found in TTS zones — the source schema may have changed."
+        )
+    print(f"  Using TTS weight column: {tts_weight_col}")
 
     print(f"\nBuilding {n_zones} trip-balanced Manhattan zones …")
     zones = build_manhattan_zones(city, tts, tts_weight_col, n_zones=n_zones)

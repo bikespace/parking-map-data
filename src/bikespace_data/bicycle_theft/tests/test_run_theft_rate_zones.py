@@ -71,9 +71,23 @@ def test_generate_theft_rate_zones_writes_expected_outputs(mocker, tmp_path):
     }
 
 
-def test_generate_theft_rate_zones_survives_unreachable_tts_source(mocker, tmp_path):
-    """If the TTS source can't be loaded (e.g. network error), the script should still
-    produce output with bike_trips=0 for every zone rather than crashing."""
+@pytest.mark.parametrize(
+    "tts_patch",
+    [
+        {"side_effect": Exception("network error")},
+        {"return_value": gpd.GeoDataFrame(geometry=[], crs="EPSG:4326")},
+        # a zone with no usable bike-trip column, e.g. after an upstream schema change
+        {
+            "return_value": gpd.GeoDataFrame(
+                {"TTS2022": [1]}, geometry=[Point(-79.4, 43.655).buffer(0.01)], crs="EPSG:4326"
+            )
+        },
+    ],
+    ids=["unreachable", "empty", "no_weight_column"],
+)
+def test_generate_theft_rate_zones_bad_tts_source_writes_nothing(mocker, tmp_path, tts_patch):
+    """Without usable TTS bike-trip data the rates are meaningless, so the script must fail
+    before writing any output (the workflow then has nothing to commit to the data branch)."""
     thefts = gpd.GeoDataFrame(geometry=[Point(-79.4, 43.655)], crs="EPSG:4326")
 
     mocker.patch(
@@ -86,18 +100,20 @@ def test_generate_theft_rate_zones_survives_unreachable_tts_source(mocker, tmp_p
     )
     mocker.patch(
         "bikespace_data.bicycle_theft.run_theft_rate_zones.load_tts_zones",
-        side_effect=Exception("network error"),
+        **tts_patch,
     )
 
-    result = generate_theft_rate_zones(
-        thefts_path=Path("unused.geojson"),
-        tts_source="unused",
-        output_dir=tmp_path / "output_files",
-        display_dir=tmp_path / "display_files",
-        n_zones=4,
-    )
+    with pytest.raises(Exception):
+        generate_theft_rate_zones(
+            thefts_path=Path("unused.geojson"),
+            tts_source="unused",
+            output_dir=tmp_path / "output_files",
+            display_dir=tmp_path / "display_files",
+            n_zones=4,
+        )
 
-    assert (result["bike_trips"] == 0).all()
+    assert not (tmp_path / "output_files").exists()
+    assert not (tmp_path / "display_files").exists()
 
 
 def test_generate_theft_rate_zones_no_thefts_raises(mocker, tmp_path):
