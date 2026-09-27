@@ -8977,8 +8977,8 @@
         "bike_parking_indoor": 10,
         "bike_parking_outdoor": 10,
         "SITE_ADDRESS_y": "15 O'HARA AVE",
-        "LATITUDE": 43.6419136101,
-        "LONGITUDE": -79.4340999173,
+        "LATITUDE": 43.64190932005,
+        "LONGITUDE": -79.43409829264999,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -9004,8 +9004,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4340999173,
-          43.6419136101
+          -79.43409829264999,
+          43.64190932005
         ]
       }
     },
@@ -33651,8 +33651,9 @@
         "YEAR_REGISTERED": 2026,
         "bike_parking_indoor": 6,
         "bike_parking_outdoor": 6,
-        "LATITUDE": 43.7058931,
-        "LONGITUDE": -79.5312742,
+        "SITE_ADDRESS_y": "2346 WESTON RD",
+        "LATITUDE": 43.705775018,
+        "LONGITUDE": -79.531241946,
         "ward_code": "05",
         "ward_name": "York South-Weston",
         "ward_full": "York South-Weston (05)",
@@ -33678,8 +33679,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5312742,
-          43.7058931
+          -79.531241946,
+          43.705775018
         ]
       }
     },
@@ -102804,8 +102805,8 @@
         "YEAR_OF_REPLACEMENT": 1993,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "5 WAKUNDA PL",
-        "LATITUDE": 43.7156631611,
-        "LONGITUDE": -79.30438171345,
+        "LATITUDE": 43.7156588622,
+        "LONGITUDE": -79.30438010665,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -102831,8 +102832,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.30438171345,
-          43.7156631611
+          -79.30438010665,
+          43.7156588622
         ]
       }
     },
@@ -119932,8 +119933,9 @@
         "WARD": 18,
         "YEAR_BUILT": 1935,
         "YEAR_OF_REPLACEMENT": 2026,
-        "LATITUDE": 43.770922,
-        "LONGITUDE": -79.4418055,
+        "SITE_ADDRESS_y": "4701 BATHURST ST",
+        "LATITUDE": 43.770952037,
+        "LONGITUDE": -79.441817958,
         "ward_code": "18",
         "ward_name": "Willowdale",
         "ward_full": "Willowdale (18)",
@@ -119959,8 +119961,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4418055,
-          43.770922
+          -79.441817958,
+          43.770952037
         ]
       }
     },
@@ -155954,8 +155956,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 10,
         "SITE_ADDRESS_y": "7 O'HARA AVE",
-        "LATITUDE": 43.6416711241,
-        "LONGITUDE": -79.4340706425,
+        "LATITUDE": 43.64166683405,
+        "LONGITUDE": -79.43406901825,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -155981,8 +155983,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4340706425,
-          43.6416711241
+          -79.43406901825,
+          43.64166683405
         ]
       }
     },
