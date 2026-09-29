@@ -21872,14 +21872,14 @@
         "bicycle_parking": "rack",
         "colour": "blue",
         "covered": "no",
-        "meta_feature_last_updated": "2026-09-27T20:52:16+00:00",
+        "meta_feature_last_updated": "2026-09-28T19:48:48+00:00",
         "meta_osm_id": "node/9846397733"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.1308105,
-          43.7792256
+          -79.1309064,
+          43.7791791
         ]
       }
     },
