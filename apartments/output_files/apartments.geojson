@@ -75533,8 +75533,8 @@
         "YEAR_OF_REPLACEMENT": 2008,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "340 ROYAL YORK RD",
-        "LATITUDE": 43.6169208542,
-        "LONGITUDE": -79.499346131,
+        "LATITUDE": 43.6169165681,
+        "LONGITUDE": -79.499344497,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -75560,8 +75560,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.499346131,
-          43.6169208542
+          -79.499344497,
+          43.6169165681
         ]
       }
     },
