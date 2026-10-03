@@ -51223,8 +51223,8 @@
         "YEAR_BUILT": 1990,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "20 SANDERLING PL",
-        "LATITUDE": 43.7339142779,
-        "LONGITUDE": -79.3489216558,
+        "LATITUDE": 43.73390997795,
+        "LONGITUDE": -79.34892004139999,
         "ward_code": "16",
         "ward_name": "Don Valley East",
         "ward_full": "Don Valley East (16)",
@@ -51250,8 +51250,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3489216558,
-          43.7339142779
+          -79.34892004139999,
+          43.73390997795
         ]
       }
     },
@@ -98725,8 +98725,8 @@
         "YEAR_OF_REPLACEMENT": 2008,
         "YEAR_REGISTERED": 2018,
         "SITE_ADDRESS_y": "2 MURRAY ST",
-        "LATITUDE": 43.6562993679,
-        "LONGITUDE": -79.3909386716,
+        "LATITUDE": 43.65629507645,
+        "LONGITUDE": -79.39093705330001,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -98752,8 +98752,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3909386716,
-          43.6562993679
+          -79.39093705330001,
+          43.65629507645
         ]
       }
     },
@@ -140993,8 +140993,8 @@
         "bike_parking_indoor": 2,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "44 CHARLES ST W",
-        "LATITUDE": 43.6687205329,
-        "LONGITUDE": -79.38825219124999,
+        "LATITUDE": 43.66871624,
+        "LONGITUDE": -79.388250573,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
         "ward_full": "University-Rosedale (11)",
@@ -141020,8 +141020,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.38825219124999,
-          43.6687205329
+          -79.388250573,
+          43.66871624
         ]
       }
     },
