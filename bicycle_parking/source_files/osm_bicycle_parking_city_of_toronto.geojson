@@ -93541,14 +93541,14 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2026-03-10T19:39:23+00:00",
+        "meta_feature_last_updated": "2026-10-02T19:13:44+00:00",
         "meta_osm_id": "node/13634795911"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.458932,
-          43.6647207
+          -79.4588357,
+          43.6646469
         ]
       }
     },
@@ -97600,21 +97600,6 @@
     {
       "type": "Feature",
       "properties": {
-        "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2026-08-24T17:30:17+00:00",
-        "meta_osm_id": "node/14120381453"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4334808,
-          43.6706055
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "access": "yes",
         "amenity": "bicycle_parking",
         "operator": "Artisan Factory",
@@ -98104,7 +98089,8 @@
         "bicycle_parking": "bollard",
         "capacity": "2",
         "colour": "silver",
-        "meta_feature_last_updated": "2026-08-30T08:03:06+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-03T13:22:38+00:00",
         "meta_osm_id": "node/14134499764"
       },
       "geometry": {
@@ -98122,7 +98108,8 @@
         "bicycle_parking": "bollard",
         "capacity": "6",
         "colour": "silver",
-        "meta_feature_last_updated": "2026-08-30T08:03:06+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-03T13:22:53+00:00",
         "meta_osm_id": "node/14134499766"
       },
       "geometry": {
@@ -99618,6 +99605,21 @@
         "coordinates": [
           -79.4512528,
           43.67579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "bicycle_parking",
+        "meta_feature_last_updated": "2026-10-03T07:22:21+00:00",
+        "meta_osm_id": "node/14245106318"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.3694096,
+          43.7149841
         ]
       }
     },
