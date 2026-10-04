@@ -99626,6 +99626,26 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "3",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-10-04T02:48:41+00:00",
+        "meta_osm_id": "node/14247076359"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4095447,
+          43.6742789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -102547,6 +102567,52 @@
           [
             -79.4650817,
             43.692251
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "area": "yes",
+        "bicycle_parking": "two-tier",
+        "bike_ride": "yes",
+        "capacity": "16",
+        "cargo_bike": "no",
+        "covered": "yes",
+        "fee": "no",
+        "operator": "Toronto Transit Commission",
+        "operator:type": "public",
+        "ref:open.toronto.ca": "no",
+        "meta_feature_last_updated": "2026-10-04T02:48:41+00:00",
+        "meta_osm_id": "way/1564800082"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.4074948,
+              43.6750068
+            ],
+            [
+              -79.407433,
+              43.6750211
+            ],
+            [
+              -79.4074238,
+              43.6750003
+            ],
+            [
+              -79.4074856,
+              43.674986
+            ],
+            [
+              -79.4074948,
+              43.6750068
+            ]
           ]
         ]
       }
