@@ -57208,7 +57208,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-08T18:24:36+00:00",
         "meta_osm_id": "node/13112381973"
       },
       "geometry": {
@@ -57225,7 +57226,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-08T18:24:35+00:00",
         "meta_osm_id": "node/13112381974"
       },
       "geometry": {
@@ -57242,7 +57244,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-08T18:24:22+00:00",
         "meta_osm_id": "node/13112381975"
       },
       "geometry": {
@@ -57259,7 +57262,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-08T18:23:42+00:00",
         "meta_osm_id": "node/13112381978"
       },
       "geometry": {
@@ -57276,7 +57280,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-08T18:23:46+00:00",
         "meta_osm_id": "node/13112381979"
       },
       "geometry": {
@@ -57293,7 +57298,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-08T18:23:49+00:00",
         "meta_osm_id": "node/13112381980"
       },
       "geometry": {
@@ -57310,7 +57316,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-08T18:23:51+00:00",
         "meta_osm_id": "node/13112381982"
       },
       "geometry": {
@@ -99821,6 +99828,65 @@
         "coordinates": [
           -79.3873474,
           43.6519437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "6",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-10-08T16:19:04+00:00",
+        "meta_osm_id": "node/14265262129"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4266171,
+          43.7766632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "permissive",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "covered": "no",
+        "fee": "no",
+        "operator": "Scarboro Golf Club",
+        "operator:type": "private",
+        "meta_feature_last_updated": "2026-10-08T23:24:18+00:00",
+        "meta_osm_id": "node/14266085580"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.2107556,
+          43.7522442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "capacity": "2",
+        "meta_feature_last_updated": "2026-10-09T00:28:06+00:00",
+        "meta_osm_id": "node/14266226619"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.5189646,
+          43.6995781
         ]
       }
     },
