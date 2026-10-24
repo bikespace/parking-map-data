@@ -2,18 +2,20 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Mapping
 
+import geopandas as gpd
 import pandas as pd
-from bikespace_data.resources.toronto_open_data import request_tod_gdf
+import requests
 from bikespace_data.utilities import StatusManager, save_geo_output
 
 # This script fetches bike stolen report then process ETL to generate a GeoJSON file for the BikeSpace app.
-# The data is sourced from the Toronto Open Data Portal.
+# The data is sourced from the Toronto Police ArcGIS service.
 # Run command: python -m bikespace_data.bike_thefts.update_bike_thefts
 
-# Database and resource name
-DATASET_NAME = "bicycle-thefts"
-RESOURCE_ID = "e7fe6133-17d8-4a39-88af-352440dec684"
-
+# Toronto Police bicycle theft layer
+LAYER_URL = (
+    "https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/"
+    "Bicycle_Thefts_Open_Data/FeatureServer/0"
+)
 # File Paths for output and source files
 OUTPUT_DIR = "bike_thefts"
 OUTPUT_FILE = "stolen_bike_reports.geojson"
@@ -75,6 +77,50 @@ LOCATION_TYPE_MAP = {
 }
 
 EXCLUDED_PREMISES = {"APARTMENT", "COMMERCIAL"}
+
+def request_arcgis_json(url: str, params: dict) -> dict:
+    response = requests.get(url, params=params, timeout=120)
+    response.raise_for_status()
+    payload = response.json()
+    if "error" in payload:
+        raise RuntimeError(f"ArcGIS request failed: {payload['error']}")
+    return payload
+
+
+def fetch_thefts(metadata: dict) -> gpd.GeoDataFrame:
+    """Download every layer query page and normalize the source fields."""
+    features = []
+    page_size = metadata["maxRecordCount"]
+    while True:
+        page = request_arcgis_json(f"{LAYER_URL}/query", {
+            "where": "1=1",
+            "outFields": "*",
+            "f": "geojson",
+            "outSR": 4326,
+            "orderByFields": metadata["objectIdField"],
+            "resultOffset": len(features),
+            "resultRecordCount": page_size,
+        })
+        batch = page["features"]
+        exceeded = page.get("properties", {}).get("exceededTransferLimit", False)
+        if not batch:
+            if exceeded:
+                raise RuntimeError("ArcGIS returned an empty page with more results pending")
+            break
+        features.extend(batch)
+        if not exceeded and len(batch) < page_size:
+            break
+
+    if not features:
+        raise RuntimeError("ArcGIS returned no bicycle theft reports")
+    gdf = gpd.GeoDataFrame.from_features(features, crs="EPSG:4326")
+    gdf["_id"] = gdf[metadata["objectIdField"]]
+    for column in ("OCC_DATE", "REPORT_DATE"):
+        gdf[column] = pd.to_datetime(gdf[column], unit="ms", utc=True).dt.strftime(
+            "%Y-%m-%dT%H:%M:%S%z"
+        )
+    return gdf.replace("None", pd.NA).convert_dtypes()
+
 
 # Function to map bike colors
 def normalize_color(raw_color) -> str:
@@ -153,10 +199,10 @@ def main(
 
     # Display information about the data fetching process
     print("Starting the bike theft data update process...")
-    print(f"Dataset: {DATASET_NAME}, Resource ID: {RESOURCE_ID}")
+    print(f"Source: {LAYER_URL}")
     print(f"Output directory: {output_dir}, Output file: {output_file}")
     print(f"Source file: {output_source_file}, Status path: {status_path}")
-    print("Fetching bike theft data from Toronto Open Data Portal...")
+    print("Fetching bike theft data from Toronto Police ArcGIS...")
 
     # Update the status manager with the source and save paths
     status_manager = StatusManager(
@@ -164,12 +210,12 @@ def main(
         status_save=status_path,
     )
         
-    result = request_tod_gdf(DATASET_NAME, RESOURCE_ID)
+    metadata = request_arcgis_json(LAYER_URL, {"f": "json"})
     
     # Check if the data has been updated since the last fetch
-    portal_last_modified = datetime.fromisoformat(
-        result["metadata"]["last_modified"]
-    ).replace(tzinfo=timezone.utc)
+    portal_last_modified = datetime.fromtimestamp(
+        metadata["editingInfo"]["lastEditDate"] / 1000, tz=timezone.utc
+    )
     
     # Get last update 
     status_last_modified = status_manager.last_updated(
@@ -186,12 +232,25 @@ def main(
         return
 
     # Explode the GeoDataFrame to ensure each geometry is a single feature
-    gdf = result["gdf"].explode(index_parts=False)
+    gdf = fetch_thefts(metadata).explode(index_parts=False)
     
     # Save a raw dataset in the sources_file for reference
     (output_dir / output_source_file).parent.mkdir(parents=True, exist_ok=True)
-    save_geo_output(gdf, path=output_dir, file_name=output_source_file)
+    save_geo_output(gdf, path=output_dir, file_name=output_source_file)  
+    
+    # Save a raw dataset in CSV format for easier analysis and debugging
+    csv_path = (output_dir / output_source_file).with_suffix(".csv")
+    gdf.drop(columns=["geometry"]).to_csv(csv_path, index=False)
+      
+    
+    # Get only last 5 years thefts data
+    dates = pd.to_datetime(gdf["OCC_DATE"], utc=True, errors="coerce")
+    today = pd.Timestamp.now(tz="UTC").normalize()
+    cutoff = today - pd.DateOffset(years=5)
 
+    gdf = gdf[dates.between(cutoff, today + pd.Timedelta(days=1), inclusive="left")].copy()
+    
+    
     # Filter out excluded premises
     gdf = gdf[~gdf["PREMISES_TYPE"].str.upper().isin(EXCLUDED_PREMISES)].copy()
 
@@ -227,6 +286,10 @@ def main(
     # Save in GeoJSON format after normalization
     save_geo_output(output_gdf, path=output_dir, file_name=output_file)
     
+    # Save in CSV format for easier analysis and debugging
+    output_csv_file = output_file.replace(".geojson", ".csv")
+    output_gdf.to_csv(output_dir / output_csv_file, index=False)
+
     # Update status manager with last updated timestamp and number of features
     status_manager.add(
         dataset_name="bike-thefts",
