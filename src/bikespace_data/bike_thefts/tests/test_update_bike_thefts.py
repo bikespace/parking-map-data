@@ -35,6 +35,7 @@ def test_pagination_and_normalization(monkeypatch):
     assert gdf['_id'].tolist() == [1, 2]
     assert gdf['OCC_DATE'].str[:10].tolist() == ['2014-01-01'] * 2
     assert gdf['OCC_YEAR'].tolist() == ['2014'] * 2
+    assert gdf.crs is not None
     assert gdf.crs.to_epsg() == 4326
     assert gdf.geometry.x.iloc[0] == pytest.approx(-79.4)
     assert gdf.geometry.y.iloc[0] == pytest.approx(43.6)

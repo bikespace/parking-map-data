@@ -1,6 +1,6 @@
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Mapping
+from collections.abc import Mapping
 
 import geopandas as gpd
 import pandas as pd
@@ -238,22 +238,10 @@ def main(
     (output_dir / output_source_file).parent.mkdir(parents=True, exist_ok=True)
     save_geo_output(gdf, path=output_dir, file_name=output_source_file)  
     
-    # Save a raw dataset in CSV format for easier analysis and debugging
+    # Sort & Save a raw dataset in CSV format for easier analysis and debugging
     csv_path = (output_dir / output_source_file).with_suffix(".csv")
-    gdf.drop(columns=["geometry"]).to_csv(csv_path, index=False)
-      
-    
-    # Get only last 5 years thefts data
-    dates = pd.to_datetime(gdf["OCC_DATE"], utc=True, errors="coerce")
-    today = pd.Timestamp.now(tz="UTC").normalize()
-    cutoff = today - pd.DateOffset(years=5)
-
-    gdf = gdf[dates.between(cutoff, today + pd.Timedelta(days=1), inclusive="left")].copy()
-    
-    
-    # Filter out excluded premises
-    gdf = gdf[~gdf["PREMISES_TYPE"].str.upper().isin(EXCLUDED_PREMISES)].copy()
-
+    gdf.sort_values("_id").drop(columns=["geometry"]).to_csv(csv_path, index=False)
+         
     # Normalize columns and create the complete application-facing schema.
     gdf["id"] = gdf["_id"].apply(
         lambda value: "" if pd.isna(value) else str(value)
