@@ -232,7 +232,7 @@ def main(
         return
 
     # Explode the GeoDataFrame to ensure each geometry is a single feature
-    gdf = fetch_thefts(metadata).explode(index_parts=False)
+    gdf = fetch_thefts(metadata)
     
     # Save a raw dataset in the sources_file for reference
     (output_dir / output_source_file).parent.mkdir(parents=True, exist_ok=True)
