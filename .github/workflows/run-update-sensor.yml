@@ -64,7 +64,7 @@ jobs:
         run: |
           git switch data
           git pull origin data
-          git cherry-pick main --strategy-option=theirs
+          git cherry-pick main --empty=drop --strategy-option=theirs
           git push origin data
   update-cycling-network-data:
     # run after the "needs" job regardless of whether it fails or succeeds
@@ -110,7 +110,7 @@ jobs:
         run: |
           git switch data
           git pull origin data
-          git cherry-pick main --strategy-option=theirs
+          git cherry-pick main --empty=drop --strategy-option=theirs
           git push origin data
   update-apartments-data:
     # run after the "needs" job regardless of whether it fails or succeeds
@@ -163,7 +163,7 @@ jobs:
         run: |
           git switch data
           git pull origin data
-          git cherry-pick main --strategy-option=theirs
+          git cherry-pick main --empty=drop --strategy-option=theirs
           git push origin data
 
   update-bike-theft-data:
@@ -210,7 +210,7 @@ jobs:
         run: |
           git switch data
           git pull origin data
-          git cherry-pick main --strategy-option=theirs
+          git cherry-pick main --empty=drop --strategy-option=theirs
           git push origin data
 
   update-theft-rate-zones:
@@ -258,5 +258,5 @@ jobs:
         run: |
           git switch data
           git pull origin data
-          git cherry-pick main --strategy-option=theirs
+          git cherry-pick main --empty=drop --strategy-option=theirs
           git push origin data
