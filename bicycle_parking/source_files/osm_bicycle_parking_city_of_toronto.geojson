@@ -52206,7 +52206,8 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
-        "meta_feature_last_updated": "2025-08-24T15:19:36+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-25T15:37:31+00:00",
         "meta_osm_id": "node/13094640990"
       },
       "geometry": {
