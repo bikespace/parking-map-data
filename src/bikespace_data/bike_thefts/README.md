@@ -1,6 +1,6 @@
 # Bike Theft Data
 
-These scripts download, filter, and transform bicycle theft reports from the City of Toronto Open Data Portal. The goal is to provide a clean and uniform data set of reported bicycle thefts in Toronto.
+These scripts download, filter, and transform bicycle theft reports from the [Toronto Police ArcGIS service](https://services.arcgis.com/S9th0jAJ7bqgIRjw/arcgis/rest/services/Bicycle_Thefts_Open_Data/FeatureServer/0). The goal is to provide a clean and uniform data set of reported bicycle thefts in Toronto.
 
 See [documentation in the `data` branch](https://github.com/bikespace/parking-map-data/blob/data/bike_thefts/README.md) for additional details.
 
@@ -25,5 +25,7 @@ $ uv run pytest PATH_TO_TEST_FILE
 Output folders are as follows:
 
 * `source_files`: data received from the original source before filtering or transformation
-* `stolen_bike_reports_raw.geojson`: filtered and transformed bicycle theft data used by the application
+* `stolen_bike_reports.geojson`: filtered and transformed bicycle theft data used by the application
 * `statuses`: status metadata for the update process
+
+The fetch uses `LAYER_URL` for metadata and its `/query` path for paginated GeoJSON downloads of all reports. ArcGIS object IDs and millisecond dates are normalized to the existing output schema, geometry is requested in EPSG:4326, and the layer’s last edit timestamp is used to skip unchanged data.
