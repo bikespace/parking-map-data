@@ -17241,7 +17241,10 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2020-09-29T19:30:13+00:00",
+        "bicycle_parking": "stands",
+        "capacity": "16",
+        "covered": "yes",
+        "meta_feature_last_updated": "2026-10-26T22:24:45+00:00",
         "meta_osm_id": "node/7956118972"
       },
       "geometry": {
@@ -60688,7 +60691,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-13T15:39:44+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-10-26T19:01:17+00:00",
         "meta_osm_id": "node/13141019870"
       },
       "geometry": {
