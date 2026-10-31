@@ -100012,6 +100012,29 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "6",
+        "check_date": "2026-10-30",
+        "colour": "black",
+        "covered": "no",
+        "fee": "no",
+        "indoor": "no",
+        "meta_feature_last_updated": "2026-10-30T17:05:47+00:00",
+        "meta_osm_id": "node/14334414602"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4681749,
+          43.6354102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
