@@ -2,4 +2,4 @@
 * text=auto
 
 # Skip for GitHub's language detection stats (linguist)
-src/bikespace_data/bicycle_parking/analysis linguist-detectable=false
+src/bikespace_data/bicycle_parking/analysis/** linguist-detectable=false
