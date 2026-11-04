@@ -40642,8 +40642,8 @@
         "YEAR_OF_REPLACEMENT": 2008,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "30 GILDER DR",
-        "LATITUDE": 43.7371415241,
-        "LONGITUDE": -79.25652961005,
+        "LATITUDE": 43.7371458262,
+        "LONGITUDE": -79.2565312101,
         "ward_code": "21",
         "ward_name": "Scarborough Centre",
         "ward_full": "Scarborough Centre (21)",
@@ -40669,8 +40669,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.25652961005,
-          43.7371415241
+          -79.2565312101,
+          43.7371458262
         ]
       }
     },
