@@ -59554,8 +59554,8 @@
         "bike_parking_indoor": 233,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "5249 DUNDAS ST W",
-        "LATITUDE": 43.638526443,
-        "LONGITUDE": -79.537577214,
+        "LATITUDE": 43.638741653,
+        "LONGITUDE": -79.537397853,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -59581,8 +59581,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.537577214,
-          43.638526443
+          -79.537397853,
+          43.638741653
         ]
       }
     },
@@ -88270,8 +88270,8 @@
         "YEAR_BUILT": 1956,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "319 THE KINGSWAY",
-        "LATITUDE": 43.66517650675,
-        "LONGITUDE": -79.52345285005,
+        "LATITUDE": 43.6652074855,
+        "LONGITUDE": -79.5235149281,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -88297,8 +88297,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.52345285005,
-          43.66517650675
+          -79.5235149281,
+          43.6652074855
         ]
       }
     },
@@ -105987,8 +105987,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 12,
         "SITE_ADDRESS_y": "290 THE KINGSWAY",
-        "LATITUDE": 43.6633258835,
-        "LONGITUDE": -79.52099678799999,
+        "LATITUDE": 43.663342704,
+        "LONGITUDE": -79.521030395,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -106014,8 +106014,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.52099678799999,
-          43.6633258835
+          -79.521030395,
+          43.663342704
         ]
       }
     },
@@ -117475,8 +117475,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 12,
         "SITE_ADDRESS_y": "292 THE KINGSWAY",
-        "LATITUDE": 43.6633990985,
-        "LONGITUDE": -79.5211401185,
+        "LATITUDE": 43.663489134,
+        "LONGITUDE": -79.521317056,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
         "ward_full": "Etobicoke Centre (02)",
@@ -117502,8 +117502,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.5211401185,
-          43.6633990985
+          -79.521317056,
+          43.663489134
         ]
       }
     },
