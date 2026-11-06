@@ -85339,8 +85339,8 @@
         "YEAR_BUILT": 1920,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "160-162 CLOSE AVE",
-        "LATITUDE": 43.638753591,
-        "LONGITUDE": -79.435622465,
+        "LATITUDE": 43.63879883096115,
+        "LONGITUDE": -79.43572480631519,
         "ward_code": "04",
         "ward_name": "Parkdale-High Park",
         "ward_full": "Parkdale-High Park (04)",
@@ -85366,8 +85366,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.435622465,
-          43.638753591
+          -79.43572480631519,
+          43.63879883096115
         ]
       }
     },
