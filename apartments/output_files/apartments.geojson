@@ -102478,8 +102478,8 @@
         "bike_parking_indoor": 20,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "763 WOODBINE AVE",
-        "LATITUDE": 43.680812660858656,
-        "LONGITUDE": -79.31048999576761,
+        "LATITUDE": 43.680685276,
+        "LONGITUDE": -79.310509014,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -102505,8 +102505,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.31048999576761,
-          43.680812660858656
+          -79.310509014,
+          43.680685276
         ]
       }
     },
