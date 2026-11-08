@@ -10211,8 +10211,9 @@
         "WARD": 13,
         "YEAR_BUILT": 1930,
         "YEAR_REGISTERED": 2026,
-        "LATITUDE": 43.6563018,
-        "LONGITUDE": -79.3703752,
+        "SITE_ADDRESS_y": "180 SHERBOURNE ST",
+        "LATITUDE": 43.6562646532,
+        "LONGITUDE": -79.3705326712,
         "ward_code": "13",
         "ward_name": "Toronto Centre",
         "ward_full": "Toronto Centre (13)",
@@ -10238,8 +10239,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3703752,
-          43.6563018
+          -79.3705326712,
+          43.6562646532
         ]
       }
     },
