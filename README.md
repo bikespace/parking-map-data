@@ -13,29 +13,6 @@ The scripts in `src/../bicycle_parking` download, filter, and transform data fro
 See the [bicycle parking data README](https://github.com/bikespace/parking-map-data/blob/data/bicycle_parking/README.md) for more details.
 
 
-### Development
+## Development
 
-You will need [uv installed](https://docs.astral.sh/uv/getting-started/installation/) to run the scripts.
-
-Each dataset has a folder of scripts in `src/bikespace_data/` and a main script usually named `update_DATASET_NAME.py`. Dataset-specific tests are kept within each dataset folder, and tests for shared code are kept in `src/bikespace_data/tests/`.
-
-Other `src/bikespace_data/` folders are as follows:
-
-- `resources/` for helper code to fetch data from external services (e.g. City of Toronto Open Data Portal)
-- `utilities` for other tools used by multiple datasets, e.g. StatusManager and helper functions for working with GeoDataFrames.
-
-The scripts are run on a schedule using the workflows in `.github/workflows`. The general flow is that the scripts will generate updated data files and then commit them to the `data` branch. This keeps a clear separation between production code (`main`) and the data outputs (`data`).
-
-How to run tests (options are pre-configured in pyproject.toml):
-```bash
-# run all tests
-$ uv run pytest
-
-# show print output
-$ uv run pytest -s
-
-# run long-running tests
-$ uv run pytest -m long -s
-```
-
-Contributions to the `main` branch should be made via pull request and squash merged into `main` once an approving review has been given.
+See CONTRIBUTING.md
