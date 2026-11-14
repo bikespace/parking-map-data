@@ -14230,8 +14230,10 @@
         "access": "destination",
         "amenity": "bicycle_parking",
         "bicycle_parking": "rack",
+        "capacity": "8",
+        "covered": "no",
         "description": "bicycle parking for customers of Terrazza restaurant",
-        "meta_feature_last_updated": "2019-09-28T01:48:42+00:00",
+        "meta_feature_last_updated": "2026-11-14T13:23:11+00:00",
         "meta_osm_id": "node/6831851985"
       },
       "geometry": {
@@ -57346,7 +57348,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "hoop",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-11-14T14:31:33+00:00",
         "meta_osm_id": "node/13112381986"
       },
       "geometry": {
@@ -57363,7 +57366,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-11-14T14:31:42+00:00",
         "meta_osm_id": "node/13112381987"
       },
       "geometry": {
@@ -57380,7 +57384,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-11-14T14:31:45+00:00",
         "meta_osm_id": "node/13112381989"
       },
       "geometry": {
@@ -100786,7 +100791,9 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2019-03-20T14:13:57+00:00",
+        "bicycle_parking": "stands",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-11-14T12:58:23+00:00",
         "meta_osm_id": "way/678162422"
       },
       "geometry": {
