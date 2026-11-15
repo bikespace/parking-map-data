@@ -54306,10 +54306,14 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "hoop",
-        "capacity": "6",
-        "meta_feature_last_updated": "2025-08-30T00:39:22+00:00",
+        "bicycle_parking": "safe_loops",
+        "capacity": "4",
+        "covered": "no",
+        "fee": "no",
+        "panoramax": "c210fb35-26dc-4bc4-bfe6-f6c045c76707",
+        "meta_feature_last_updated": "2026-11-15T15:49:42+00:00",
         "meta_osm_id": "node/13108021979"
       },
       "geometry": {
@@ -54323,12 +54327,14 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "hoops",
-        "capacity": "6",
+        "bicycle_parking": "safe_loops",
+        "capacity": "4",
         "covered": "no",
         "fee": "no",
-        "meta_feature_last_updated": "2025-08-30T00:39:22+00:00",
+        "panoramax": "5959477e-6619-4d28-aee0-2e95c7cf5976",
+        "meta_feature_last_updated": "2026-11-15T15:49:42+00:00",
         "meta_osm_id": "node/13108021980"
       },
       "geometry": {
@@ -57345,11 +57351,14 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
         "amenity": "bicycle_parking",
-        "bicycle_parking": "hoop",
-        "capacity": "2",
+        "bicycle_parking": "rack",
+        "capacity": "4",
         "covered": "no",
-        "meta_feature_last_updated": "2026-11-14T14:31:33+00:00",
+        "fee": "no",
+        "panoramax": "0f82db75-8d01-4d6d-916d-b53465b9176a",
+        "meta_feature_last_updated": "2026-11-15T15:52:55+00:00",
         "meta_osm_id": "node/13112381986"
       },
       "geometry": {
@@ -100792,8 +100801,9 @@
       "properties": {
         "amenity": "bicycle_parking",
         "bicycle_parking": "stands",
+        "capacity": "30",
         "covered": "no",
-        "meta_feature_last_updated": "2026-11-14T12:58:23+00:00",
+        "meta_feature_last_updated": "2026-11-14T15:39:43+00:00",
         "meta_osm_id": "way/678162422"
       },
       "geometry": {
