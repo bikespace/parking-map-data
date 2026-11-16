@@ -50,3 +50,4 @@ Cross Tabulation Features
 - [ ] Filters
 - [x] Comma-defined table output
 - [ ] Column format output
+- [ ] Expansion factor on or off (this one is tricky)
