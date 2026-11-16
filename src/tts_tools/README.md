@@ -13,7 +13,7 @@ The API should enable:
 
 ```sh
 # run pytest
-uv run pytest src/bikespace_data/tts_tools --cov-reset --cov=src/bikespace_data/tts_tools
+uv run pytest -s src/tts_tools --cov-reset --cov=src/tts_tools
 ```
 
 ## Options Covered
