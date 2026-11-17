@@ -4,7 +4,8 @@ Bicycle-theft rate by zone
 
 Splits Toronto into trip-balanced zones (Voronoi cells in Manhattan distance on the street grid,
 see manhattan_zones.py), joins bicycle-theft locations and TTS bike-usage zone data to them,
-computes theft rates per 1000 bike trips, and saves output
+computes theft rates per 1000 bike trips, removes Lake Ontario from the zone
+polygons, and saves output
 and display GeoJSON files (plus a diagnostic PNG heat-map) alongside the rest of the
 bicycle_theft dataset outputs, so the results are picked up by the `data` branch the
 same way as every other dataset in this repo.
@@ -37,7 +38,9 @@ from bikespace_data.bicycle_theft.manhattan_zones import (
 )
 from bikespace_data.bicycle_theft.theft_rate_zones import (
     aggregate_theft_rates,
+    clip_zones_outside_lake,
     detect_tts_weight_col,
+    load_lake_ontario,
     load_thefts_gdf,
     load_tts_zones,
     plot_theft_rates,
@@ -134,6 +137,15 @@ def generate_theft_rate_zones(
         f"  Total thefts (all-time): {int(rates['theft_count'].sum())}, "
         f"total bike_trips (typical day): {rates['bike_trips'].sum():,.0f}"
     )
+
+    # Clip after the rates are computed so the numbers stay attached to each zone
+    # and only the drawn shape changes.
+    print("\nRemoving Lake Ontario from the zones …")
+    lake = load_lake_ontario()
+    rates = clip_zones_outside_lake(rates, lake)
+    print(f"  {len(rates)} zones remain on land")
+    if len(rates) == 0:
+        raise RuntimeError("Removing Lake Ontario left no zones.")
 
     print(f"\nSaving outputs to {output_dir} and {display_dir} …")
     save_geo_output(rates, path=output_dir, file_name=OUTPUT_FILE_NAME, na="null")

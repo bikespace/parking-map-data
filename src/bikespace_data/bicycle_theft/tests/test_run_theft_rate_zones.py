@@ -41,6 +41,15 @@ def test_generate_theft_rate_zones_writes_expected_outputs(mocker, tmp_path):
         "bikespace_data.bicycle_theft.run_theft_rate_zones.load_tts_zones",
         return_value=tts_zones,
     )
+    # The lake sits south of the city rectangle, so every zone stays on land.
+    lake = gpd.GeoDataFrame(
+        geometry=[Polygon([(-79.50, 43.50), (-79.30, 43.50), (-79.30, 43.64), (-79.50, 43.64)])],
+        crs="EPSG:4326",
+    )
+    mocker.patch(
+        "bikespace_data.bicycle_theft.run_theft_rate_zones.load_lake_ontario",
+        return_value=lake,
+    )
 
     output_dir = tmp_path / "output_files"
     display_dir = tmp_path / "display_files"
