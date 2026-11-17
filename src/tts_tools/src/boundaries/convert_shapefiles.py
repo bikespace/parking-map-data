@@ -13,20 +13,20 @@ OUTPUT_PATH = "src/tts_tools/src/boundaries/processed/"
 
 
 def convert_shp(
-    input_path: str,
-    output_path: str,
+    input_dir: str,
+    output_dir: str,
     renaming_lookup: dict | None = None,
 ):
     """
-    Takes a shapefile from `input_path`, corrects invalid geometry, and outputs a GeoJSON file of the same name at `output_path`.
+    Takes a shapefile from `input_dir`, corrects invalid geometry, and outputs a GeoJSON file of the same name at `output_dir`.
 
     If `renaming_lookup` is supplied, it will be used to rename the output file and its columns.
     """
 
-    input_dir = Path(input_path)
-    output_dir = Path(output_path)
+    input_path = Path(input_dir)
+    output_path = Path(output_dir)
 
-    gdf = gpd.read_file(input_dir)
+    gdf = gpd.read_file(input_path)
     gdf = gdf.to_crs(GEOJSON_CRS)
 
     # fix invalid geometry
@@ -37,19 +37,29 @@ def convert_shp(
 
     # optionally rename output file and its columns
     # TODO add handling for no match found
-    if renaming_lookup:
-        lookup = renaming_lookup[input_dir.stem]
+    if renaming_lookup and input_path.stem in renaming_lookup:
+        lookup = renaming_lookup[input_path.stem]
         gdf = gdf.rename(columns=lookup["columns"])
         output_name = f"{lookup['output_name']}.geojson"
     else:
-        output_name = f"{input_dir.stem}.geojson"
+        output_name = f"{input_path.stem}.geojson"
 
-    output_dir.mkdir(parents=True, exist_ok=True)
-    output_file = output_dir / output_name
+    output_path.mkdir(parents=True, exist_ok=True)
+    output_file = output_path / output_name
     gdf.to_file(output_file, driver="GeoJSON", RFC7946="YES")
 
     return output_file
 
 
+def convert_source_folder(source_dir: str):
+    """Docstring TODO"""
+
+    source_path = Path(source_dir)
+    source_files = source_path.glob("**/*.shp")
+
+    for file in source_files:
+        convert_shp(file.as_posix(), OUTPUT_PATH, renamings)
+
+
 if __name__ == "__main__":
-    convert_shp(FILE_PATH, OUTPUT_PATH, renamings)
+    convert_source_folder("src/tts_tools/src/boundaries/source/")
