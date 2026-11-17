@@ -1,3 +1,5 @@
+from pathlib import Path
+
 attributes = {
     "tts22_dest": "2022 TTS zone of destination",
     "mode_prime": "Primary travel mode of trip",
@@ -55,18 +57,27 @@ _geometry_types = ["accs", "dest", "egrs", "emp", "hhld", "orig", "sch"]
 
 
 geometry_match = {
-    *{
-        k: {"file": "2022_tts2006", "key": "tts2006"}
+    **{
+        k: {
+            "file": Path("src/tts_tools/src/boundaries/processed/2022_tts2006.geojson"),
+            "key": "tts2006",
+        }
         for k in [f"gta06_{type}" for type in _geometry_types]
     },
     # mun_ TODO - extract from 2022_tts2022
-    *{
-        k: {"file": "2022_pd", "key": "pd_no"}
+    **{
+        k: {
+            "file": Path("src/tts_tools/src/boundaries/processed/2022_pd.geojson"),
+            "key": "pd_no",
+        }
         for k in [f"pd_{type}" for type in _geometry_types]
     },
     # region_ TODO - extract from 2022_pd
-    *{
-        k: {"file": "2022_tts2022", "key": "tts2022"}
+    **{
+        k: {
+            "file": Path("src/tts_tools/src/boundaries/processed/2022_tts2022.geojson"),
+            "key": "tts2022",
+        }
         for k in [f"tts22_{type}" for type in _geometry_types]
     },
     # ward_ TODO - extract from PDF

@@ -4,8 +4,10 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import cast
 
+import geopandas as gpd
 import pandas as pd
 
+from .structure.structure_2022 import geometry_match
 from .types import TTSMetric, TTSYear
 
 
@@ -27,10 +29,47 @@ class TTSCrossTabulation:
     """Docstring TODO"""
 
     def __init__(self, df: pd.DataFrame, metadata: TTSCrossTabulationMetadata):
-        self.df = df
-        self.metadata = metadata
+        self._df = df
+        self._metadata = metadata
 
     # TODO add __repr__
+
+    @property
+    def metadata(self) -> TTSCrossTabulationMetadata:
+        return self._metadata
+
+    @property
+    def df(self) -> pd.DataFrame:
+        return self._df
+
+    @property
+    def gdf(self) -> gpd.GeoDataFrame:
+        # TODO add additional years to the gdf matching, not just 2022
+
+        geometry = geometry_match.get(self.metadata.row_attribute, None)
+        if geometry:
+            match_key = str(geometry["key"])
+            geometry_gdf = gpd.read_file(geometry["file"]).set_index(match_key)
+            data = self._df.copy()
+            data[match_key] = data[self.metadata.row_attribute]
+            data = data.set_index(match_key)
+
+            # TODO add checks to warn if there are un-matched rows
+            # TODO need to handle difference between formats - csv-like uses string name for row/col values, whereas tabular uses the internal code. E.g. pd in csv-like: "PD 1 of Toronto", in tabular: 1
+            # Therefore, for parsing csv-like, it needs a name to value lookup for each row/col value
+            # The difference for tts zone is very subtle since only the 99998 and 99999 values get names that appear string-like.
+            # convert the df and gdf properties to get functions and add a param for friendly row/column names or not
+
+            output_gdf = gpd.GeoDataFrame(
+                data.join(geometry_gdf), crs=geometry_gdf.crs, geometry="geometry"
+            )
+            breakpoint()
+        else:
+            raise ValueError(
+                f"No geometry found to match row attribute {self.metadata.row_attribute}"
+            )
+
+        return output_gdf
 
 
 def read_crosstab(filepath: str, *, expansion_factor: bool | None = None):
