@@ -43,6 +43,8 @@ def read_crosstab(filepath: str):
     source = Path(filepath)
     text = source.read_text().splitlines()
 
+    # TODO add in logic to determine filetype also: csv-like if ',' line found, otherwise table-format if 'ROW :' found
+
     # find the index of key lines
     for index, line in enumerate(text):
         if len(line) == 0:
