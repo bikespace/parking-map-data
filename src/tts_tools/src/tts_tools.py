@@ -2,14 +2,11 @@ import io
 import re
 from dataclasses import dataclass
 from pathlib import Path
+from typing import cast
 
 import pandas as pd
 
 from .types import TTSMetric, TTSYear
-
-HEADING_PATTERN = (
-    r"(Row|Column): (?P<attribute_description>.+) - (?P<attribute_code>.+)"
-)
 
 
 @dataclass
@@ -17,18 +14,18 @@ class TTSCrossTabulationMetadata:
     """Docstring TODO"""
 
     run_datetime: str  # TODO update this later once you add parsing logic
-    run_duration: int  # milliseconds
+    run_duration: str  # usually returns milliseconds
     metric: TTSMetric
     year: TTSYear
     row_attribute: str  # TODO update this to be stricter for autocomplete
     column_attribute: str  # TODO update this to be stricter for autocomplete
     table_attribute: str | None  # TODO update this to be stricter for autocomplete
+    expansion_factor: bool | None
 
 
 class TTSCrossTabulation:
     """Docstring TODO"""
 
-    # TODO add metadata: TTSCrossTabulationMetadata
     def __init__(self, df: pd.DataFrame, metadata: TTSCrossTabulationMetadata):
         self.df = df
         self.metadata = metadata
@@ -36,7 +33,7 @@ class TTSCrossTabulation:
     # TODO add __repr__
 
 
-def read_crosstab(filepath: str):
+def read_crosstab(filepath: str, *, expansion_factor: bool | None = None):
     """Docstring TODO"""
 
     # read file into a list of lines
@@ -49,8 +46,9 @@ def read_crosstab(filepath: str):
     for index, line in enumerate(text):
         if len(line) == 0:
             continue
-        print(line[0:10])  # TODO remove debug
-        if line[0:4] == "Row:":
+        if line[0:27] == "Cross Tabulation Query Form":
+            year_and_metric_index = index
+        elif line[0:4] == "Row:":
             row_index = index
         elif line[0:7] == "Column:":
             column_index = index
@@ -58,28 +56,58 @@ def read_crosstab(filepath: str):
             header_index = index
             break
 
+    # extract run datetime and duration
+    RUN_TIME_PATTERN = r"^(?P<run_datetime>.+) \((?P<timezone_name>.+)\) - Run Time: (?P<run_duration>\d+\w+)"
+    run_time_match = re.search(RUN_TIME_PATTERN, text[0])
+    if run_time_match:
+        run_datetime = run_time_match.group("run_datetime")
+        run_duration = run_time_match.group("run_duration")
+    else:
+        raise ValueError(
+            f"Unable to parse cross-tab run datetime or duration from line 1 of {source.name}."
+        )
+
+    # extract year and metric
+    YEAR_AND_METRIC_PATTERN = r"Cross Tabulation Query Form - (?P<metric>Household|Person|Trip|Transit) - (?P<year>\d{4})"
+    year_and_metric_match = re.search(
+        YEAR_AND_METRIC_PATTERN, text[year_and_metric_index]
+    )
+    if year_and_metric_match:
+        metric = cast(TTSMetric, str(year_and_metric_match.group("metric")).lower())
+        year = cast(TTSYear, int(year_and_metric_match.group("year")))
+    else:
+        raise ValueError(
+            f"Unable to parse survey year and output metric from line {year_and_metric_index + 1} of {source.name}."
+        )
+
     # extract row and column names
-    row_heading_search = re.search(HEADING_PATTERN, text[row_index])
-    row_heading = (
-        row_heading_search.group("attribute_code")
-        if row_heading_search
-        else "unknown row attribute"  # TODO should this throw an error instead?
+    HEADING_PATTERN = (
+        r"(Row|Column): (?P<attribute_description>.+) - (?P<attribute_code>.+)"
     )
-    column_heading_search = re.search(HEADING_PATTERN, text[column_index])
-    column_heading = (
-        column_heading_search.group("attribute_code")
-        if column_heading_search
-        else "unknown column attribute"  # TODO should this throw an error instead?
-    )
+    row_heading_match = re.search(HEADING_PATTERN, text[row_index])
+    if row_heading_match:
+        row_heading = row_heading_match.group("attribute_code")
+    else:
+        raise ValueError(
+            f"Unable to parse row heading from line {row_index + 1} of {source.name}."
+        )
+    column_heading_match = re.search(HEADING_PATTERN, text[column_index])
+    if column_heading_match:
+        column_heading = column_heading_match.group("attribute_code")
+    else:
+        raise ValueError(
+            f"Unable to parse column heading from line {column_index + 1} of {source.name}."
+        )
 
     metadata = TTSCrossTabulationMetadata(
-        run_datetime="todo",
-        run_duration=1,  # TODO
-        metric="trip",  # TODO
-        year=2022,  # TODO
+        run_datetime=run_datetime,
+        run_duration=run_duration,
+        metric=metric,
+        year=year,
         row_attribute=row_heading,
         column_attribute=column_heading,
-        table_attribute=None,
+        table_attribute=None,  # TODO, not yet implemented
+        expansion_factor=expansion_factor,
     )
 
     # extract csv segment
