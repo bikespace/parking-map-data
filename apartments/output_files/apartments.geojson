@@ -14212,8 +14212,8 @@
         "YEAR_BUILT": 2023,
         "YEAR_REGISTERED": 2024,
         "SITE_ADDRESS_y": "26 ENGELHART CRES",
-        "LATITUDE": 43.722771953,
-        "LONGITUDE": -79.299406046,
+        "LATITUDE": 43.7220330061,
+        "LONGITUDE": -79.3004691697,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -14239,8 +14239,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.299406046,
-          43.722771953
+          -79.3004691697,
+          43.7220330061
         ]
       }
     },
@@ -22444,7 +22444,7 @@
         "bike_parking_indoor": 20,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "77 KEEWATIN AVE",
-        "LATITUDE": 43.71268246980967,
+        "LATITUDE": 43.712682469809664,
         "LONGITUDE": -79.39642779519151,
         "ward_code": "15",
         "ward_name": "Don Valley West",
@@ -22472,7 +22472,7 @@
         "type": "Point",
         "coordinates": [
           -79.39642779519151,
-          43.71268246980967
+          43.712682469809664
         ]
       }
     },
@@ -24090,7 +24090,7 @@
         "YEAR_BUILT": 2024,
         "YEAR_REGISTERED": 2025,
         "SITE_ADDRESS_y": "748 BATHURST ST",
-        "LATITUDE": 43.6641378977989,
+        "LATITUDE": 43.66413789779891,
         "LONGITUDE": -79.41112979358672,
         "ward_code": "11",
         "ward_name": "University-Rosedale",
@@ -24118,7 +24118,7 @@
         "type": "Point",
         "coordinates": [
           -79.41112979358672,
-          43.6641378977989
+          43.66413789779891
         ]
       }
     },
@@ -24975,7 +24975,7 @@
         "bike_parking_indoor": 197,
         "bike_parking_outdoor": 40,
         "SITE_ADDRESS_y": "55 WARRENDER AVE",
-        "LATITUDE": 43.675820403583614,
+        "LATITUDE": 43.67582040358361,
         "LONGITUDE": -79.55485839413227,
         "ward_code": "02",
         "ward_name": "Etobicoke Centre",
@@ -25003,7 +25003,7 @@
         "type": "Point",
         "coordinates": [
           -79.55485839413227,
-          43.675820403583614
+          43.67582040358361
         ]
       }
     },
@@ -25683,8 +25683,8 @@
         "YEAR_BUILT": 2023,
         "YEAR_REGISTERED": 2024,
         "SITE_ADDRESS_y": "22 ENGELHART CRES",
-        "LATITUDE": 43.722622055,
-        "LONGITUDE": -79.299806622,
+        "LATITUDE": 43.7220330061,
+        "LONGITUDE": -79.3004691697,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -25710,8 +25710,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.299806622,
-          43.722622055
+          -79.3004691697,
+          43.7220330061
         ]
       }
     },
@@ -63270,7 +63270,7 @@
         "bike_parking_indoor": 204,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "131 MILL ST",
-        "LATITUDE": 43.65128412037885,
+        "LATITUDE": 43.65128412037886,
         "LONGITUDE": -79.35683352036396,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
@@ -63298,7 +63298,7 @@
         "type": "Point",
         "coordinates": [
           -79.35683352036396,
-          43.65128412037885
+          43.65128412037886
         ]
       }
     },
@@ -73191,7 +73191,7 @@
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "88 ERSKINE AVE",
         "LATITUDE": 43.71204543314231,
-        "LONGITUDE": -79.3959758159565,
+        "LONGITUDE": -79.39597581595652,
         "ward_code": "15",
         "ward_name": "Don Valley West",
         "ward_full": "Don Valley West (15)",
@@ -73217,7 +73217,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3959758159565,
+          -79.39597581595652,
           43.71204543314231
         ]
       }
@@ -81691,8 +81691,8 @@
         "YEAR_BUILT": 1970,
         "YEAR_REGISTERED": 2024,
         "SITE_ADDRESS_y": "18 ENGELHART CRES",
-        "LATITUDE": 43.722377951,
-        "LONGITUDE": -79.300224712,
+        "LATITUDE": 43.7220330061,
+        "LONGITUDE": -79.3004691697,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -81718,8 +81718,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.300224712,
-          43.722377951
+          -79.3004691697,
+          43.7220330061
         ]
       }
     },
@@ -83422,7 +83422,7 @@
         "bike_parking_indoor": 204,
         "bike_parking_outdoor": 0,
         "SITE_ADDRESS_y": "151 MILL ST",
-        "LATITUDE": 43.65161353320759,
+        "LATITUDE": 43.651613533207595,
         "LONGITUDE": -79.3555365595102,
         "ward_code": "10",
         "ward_name": "Spadina-Fort York",
@@ -83450,7 +83450,7 @@
         "type": "Point",
         "coordinates": [
           -79.3555365595102,
-          43.65161353320759
+          43.651613533207595
         ]
       }
     },
@@ -120656,7 +120656,7 @@
         "bike_parking_indoor": 773,
         "bike_parking_outdoor": 13,
         "SITE_ADDRESS_y": "55 BROADWAY AVE",
-        "LATITUDE": 43.70970865556819,
+        "LATITUDE": 43.709708655568186,
         "LONGITUDE": -79.39557828300809,
         "ward_code": "12",
         "ward_name": "Toronto-St. Paul's",
@@ -120684,7 +120684,7 @@
         "type": "Point",
         "coordinates": [
           -79.39557828300809,
-          43.70970865556819
+          43.709708655568186
         ]
       }
     },
@@ -130113,7 +130113,7 @@
         "bike_parking_indoor": 300,
         "bike_parking_outdoor": 10,
         "SITE_ADDRESS_y": "400 DUFFERIN ST",
-        "LATITUDE": 43.643907415812585,
+        "LATITUDE": 43.64390741581258,
         "LONGITUDE": -79.42967310572098,
         "ward_code": "09",
         "ward_name": "Davenport",
@@ -130141,7 +130141,7 @@
         "type": "Point",
         "coordinates": [
           -79.42967310572098,
-          43.643907415812585
+          43.64390741581258
         ]
       }
     },
