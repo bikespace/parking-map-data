@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?><mdb:MD_Metadata xmlns:msr="http://standards.iso.org/iso/19115/-3/msr/1.0" xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0" xmlns:mex="http://standards.iso.org/iso/19115/-3/mex/1.0" xmlns:gcx="http://standards.iso.org/iso/19115/-3/gcx/1.0" xmlns:mmi="http://standards.iso.org/iso/19115/-3/mmi/1.0" xmlns:mac="http://standards.iso.org/iso/19115/-3/mac/1.0" xmlns:esri="http://www.esri.com/metadata/" xmlns:mdb="http://standards.iso.org/iso/19115/-3/mdb/1.0" xmlns:mda="http://standards.iso.org/iso/19115/-3/mda/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mpc="http://standards.iso.org/iso/19115/-3/mpc/1.0" xmlns:cat="http://standards.iso.org/iso/19115/-3/cat/1.0" xmlns:gco="http://standards.iso.org/iso/19115/-3/gco/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:lan="http://standards.iso.org/iso/19115/-3/lan/1.0" xmlns:t="http://www.esri.com/xslt/translator" xmlns:mco="http://standards.iso.org/iso/19115/-3/mco/1.0" xmlns:mrs="http://standards.iso.org/iso/19115/-3/mrs/1.0" xmlns:dqc="http://standards.iso.org/iso/19157/-2/dqc/1.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:mrl="http://standards.iso.org/iso/19115/-3/mrl/1.0" xmlns:gex="http://standards.iso.org/iso/19115/-3/gex/1.0" xmlns:mdt="http://standards.iso.org/iso/19115/-3/mdt/1.0" xmlns:mri="http://standards.iso.org/iso/19115/-3/mri/1.0" xmlns:mas="http://standards.iso.org/iso/19115/-3/mas/1.0" xmlns:mds="http://standards.iso.org/iso/19115/-3/mds/1.0" xmlns:mcc="http://standards.iso.org/iso/19115/-3/mcc/1.0" xmlns:srv="http://standards.iso.org/iso/19115/-3/srv/2.0" xmlns:mdq="http://standards.iso.org/iso/19157/-2/mdq/1.0" xmlns:mrd="http://standards.iso.org/iso/19115/-3/mrd/1.0" xmlns:res="http://www.esri.com/metadata/res/" xmlns:mrc="http://standards.iso.org/iso/19115/-3/mrc/1.0">
+    <mdb:metadataIdentifier>
+        <mcc:MD_Identifier>
+            <mcc:code>
+                <gco:CharacterString>64fb702e16204c3e88b528d9759f1174</gco:CharacterString>
+            </mcc:code>
+        </mcc:MD_Identifier>
+    </mdb:metadataIdentifier>
+    <mdb:defaultLocale>
+        <lan:PT_Locale>
+            <lan:language>
+                <lan:LanguageCode codeList="http://www.loc.gov/standards/iso639-2/php/code_list.php" codeListValue="eng">eng</lan:LanguageCode>
+            </lan:language>
+            <lan:characterEncoding>
+                <lan:MD_CharacterSetCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</lan:MD_CharacterSetCode>
+            </lan:characterEncoding>
+        </lan:PT_Locale>
+    </mdb:defaultLocale>
+    <mdb:metadataScope>
+        <mdb:MD_MetadataScope>
+            <mdb:resourceScope>
+                <mcc:MD_ScopeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
+            </mdb:resourceScope>
+        </mdb:MD_MetadataScope>
+    </mdb:metadataScope>
+    <mdb:contact>
+        <cit:CI_Responsibility>
+            <cit:role>
+                <cit:CI_RoleCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+            </cit:role>
+            <cit:party>
+                <cit:CI_Organisation>
+                    <cit:name>
+                        <gco:CharacterString>Ministry of Municipal Affairs and Housing</gco:CharacterString>
+                    </cit:name>
+                    <cit:contactInfo>
+                        <cit:CI_Contact>
+                            <cit:phone>
+                                <cit:CI_Telephone>
+                                    <cit:number>
+                                        <gco:CharacterString>1 (416) 5857256</gco:CharacterString>
+                                    </cit:number>
+                                    <cit:numberType>
+                                        <cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                                    </cit:numberType>
+                                </cit:CI_Telephone>
+                            </cit:phone>
+                            <cit:address>
+                                <cit:CI_Address>
+                                    <cit:electronicMailAddress>
+                                        <gco:CharacterString>Paul.McKenzie@ontario.ca</gco:CharacterString>
+                                    </cit:electronicMailAddress>
+                                </cit:CI_Address>
+                            </cit:address>
+                        </cit:CI_Contact>
+                    </cit:contactInfo>
+                    <cit:individual>
+                        <cit:CI_Individual>
+                            <cit:name>
+                                <gco:CharacterString>Paul McKenzie</gco:CharacterString>
+                            </cit:name>
+                            <cit:positionName>
+                                <gco:CharacterString>Geomatics Technician</gco:CharacterString>
+                            </cit:positionName>
+                        </cit:CI_Individual>
+                    </cit:individual>
+                </cit:CI_Organisation>
+            </cit:party>
+        </cit:CI_Responsibility>
+    </mdb:contact>
+    <mdb:dateInfo>
+        <cit:CI_Date>
+            <cit:date>
+                <gco:DateTime>2019-06-04</gco:DateTime>
+            </cit:date>
+            <cit:dateType>
+                <cit:CI_DateTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
+            </cit:dateType>
+        </cit:CI_Date>
+    </mdb:dateInfo>
+    <mdb:metadataStandard>
+        <cit:CI_Citation>
+            <cit:title>
+                <gco:CharacterString>ISO 19115-3 Geographic Information - Metadata - Part 1: Fundamentals</gco:CharacterString>
+            </cit:title>
+            <cit:edition>
+                <gco:CharacterString>2014</gco:CharacterString>
+            </cit:edition>
+        </cit:CI_Citation>
+    </mdb:metadataStandard>
+    <mdb:referenceSystemInfo>
+        <mrs:MD_ReferenceSystem>
+            <mrs:referenceSystemIdentifier>
+                <mcc:MD_Identifier>
+                    <mcc:code>
+                        <gco:CharacterString>Grid CS = Geographic (Lat, Long); Map Proj = Not Applicable; Horiz. Datum = NAD83; Vert. Datum = Not Applicable</gco:CharacterString>
+                    </mcc:code>
+                </mcc:MD_Identifier>
+            </mrs:referenceSystemIdentifier>
+        </mrs:MD_ReferenceSystem>
+    </mdb:referenceSystemInfo>
+    <mdb:identificationInfo>
+        <mri:MD_DataIdentification>
+            <mri:citation>
+                <cit:CI_Citation>
+                    <cit:title>
+                        <gco:CharacterString>Municipal Boundary - Lower and Single Tier</gco:CharacterString>
+                    </cit:title>
+                    <cit:date>
+                        <cit:CI_Date>
+                            <cit:date>
+                                <gco:DateTime>2012-01-01T00:00:00</gco:DateTime>
+                            </cit:date>
+                            <cit:dateType>
+                                <cit:CI_DateTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</cit:CI_DateTypeCode>
+                            </cit:dateType>
+                        </cit:CI_Date>
+                    </cit:date>
+                    <cit:date>
+                        <cit:CI_Date>
+                            <cit:date>
+                                <gco:DateTime>2024-02-15T10:45:59</gco:DateTime>
+                            </cit:date>
+                            <cit:dateType>
+                                <cit:CI_DateTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_DateTypeCode" codeListValue="revision">revision</cit:CI_DateTypeCode>
+                            </cit:dateType>
+                        </cit:CI_Date>
+                    </cit:date>
+                    <cit:identifier>
+                        <mcc:MD_Identifier>
+                            <mcc:authority>
+                                <cit:CI_Citation>
+                                    <cit:title>
+                                        <gco:CharacterString>LIO Metadata Management Tool UUID</gco:CharacterString>
+                                    </cit:title>
+                                    <cit:date>
+                                        <cit:CI_Date>
+                                            <cit:date>
+                                                <gco:DateTime>2019-04-11T14:57:26.932922</gco:DateTime>
+                                            </cit:date>
+                                            <cit:dateType>
+                                                <cit:CI_DateTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                                            </cit:dateType>
+                                        </cit:CI_Date>
+                                    </cit:date>
+                                </cit:CI_Citation>
+                            </mcc:authority>
+                            <mcc:code>
+                                <gco:CharacterString>2c9815c2-b071-4adb-a956-9229fd510419</gco:CharacterString>
+                            </mcc:code>
+                        </mcc:MD_Identifier>
+                    </cit:identifier>
+                    <cit:identifier>
+                        <mcc:MD_Identifier>
+                            <mcc:authority>
+                                <cit:CI_Citation>
+                                    <cit:title>
+                                        <gco:CharacterString>LIO Concrete Class Short Name</gco:CharacterString>
+                                    </cit:title>
+                                    <cit:date>
+                                        <cit:CI_Date>
+                                            <cit:date>
+                                                <gco:DateTime>2019-04-11T14:57:26.942920</gco:DateTime>
+                                            </cit:date>
+                                            <cit:dateType>
+                                                <cit:CI_DateTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                                            </cit:dateType>
+                                        </cit:CI_Date>
+                                    </cit:date>
+                                </cit:CI_Citation>
+                            </mcc:authority>
+                            <mcc:code>
+                                <gco:CharacterString>MUNICLOW</gco:CharacterString>
+                            </mcc:code>
+                        </mcc:MD_Identifier>
+                    </cit:identifier>
+                    <cit:identifier>
+                        <mcc:MD_Identifier>
+                            <mcc:authority>
+                                <cit:CI_Citation>
+                                    <cit:title>
+                                        <gco:CharacterString>Ontario GeoHub French Record ID</gco:CharacterString>
+                                    </cit:title>
+                                    <cit:date>
+                                        <cit:CI_Date>
+                                            <cit:date>
+                                                <gco:DateTime>2020-01-02T16:05:58.426312</gco:DateTime>
+                                            </cit:date>
+                                            <cit:dateType>
+                                                <cit:CI_DateTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</cit:CI_DateTypeCode>
+                                            </cit:dateType>
+                                        </cit:CI_Date>
+                                    </cit:date>
+                                </cit:CI_Citation>
+                            </mcc:authority>
+                            <mcc:code>
+                                <gco:CharacterString>c61356d949d14810b257e86e192cd821_14</gco:CharacterString>
+                            </mcc:code>
+                        </mcc:MD_Identifier>
+                    </cit:identifier>
+                    <cit:citedResponsibleParty>
+                        <cit:CI_Responsibility>
+                            <cit:role>
+                                <cit:CI_RoleCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_RoleCode" codeListValue="publisher">publisher</cit:CI_RoleCode>
+                            </cit:role>
+                            <cit:party>
+                                <cit:CI_Organisation>
+                                    <cit:name>
+                                        <gco:CharacterString>Ontario Ministry of Municipal Affairs and Housing</gco:CharacterString>
+                                    </cit:name>
+                                </cit:CI_Organisation>
+                            </cit:party>
+                        </cit:CI_Responsibility>
+                    </cit:citedResponsibleParty>
+                    <cit:onlineResource>
+                        <cit:CI_OnlineResource>
+                            <cit:linkage>
+                                <gco:CharacterString>https://www.gisapplication.lrc.gov.on.ca/fmedatadownload/Packages/fgdb/MUNICLOW.zip</gco:CharacterString>
+                            </cit:linkage>
+                            <cit:protocol gco:nilReason="missing"/>
+                            <cit:name>
+                                <gco:CharacterString>Complete File Geodatabase</gco:CharacterString>
+                            </cit:name>
+                        </cit:CI_OnlineResource>
+                    </cit:onlineResource>
+                    <cit:onlineResource>
+                        <cit:CI_OnlineResource>
+                            <cit:linkage>
+                                <gco:CharacterString>https://www.gisapplication.lrc.gov.on.ca/fmedatadownload/Packages/MUNICLOW.zip</gco:CharacterString>
+                            </cit:linkage>
+                            <cit:protocol gco:nilReason="missing"/>
+                            <cit:name>
+                                <gco:CharacterString>Complete Shapefile</gco:CharacterString>
+                            </cit:name>
+                        </cit:CI_OnlineResource>
+                    </cit:onlineResource>
+                    <cit:onlineResource>
+                        <cit:CI_OnlineResource>
+                            <cit:linkage>
+                                <gco:CharacterString>https://www.publicdocs.mnr.gov.on.ca/mirb/lio-open-qlr-eng/municipal-boundary-lower-and-single-tier.qlr</gco:CharacterString>
+                            </cit:linkage>
+                            <cit:protocol gco:nilReason="missing"/>
+                            <cit:name>
+                                <gco:CharacterString>QGIS Layer Definition File (.qlr)</gco:CharacterString>
+                            </cit:name>
+                        </cit:CI_OnlineResource>
+                    </cit:onlineResource>
+                </cit:CI_Citation>
+            </mri:citation>
+            <mri:abstract>
+                <gco:CharacterString>
+SINGLE TIER - A single-tier municipality means a municipality that does not form part of an upper-tier municipality for municipal purposes and assumes all municipal responsibilities set out under the Municipal Act and other Provincial legislation.
+LOWER TIER - A lower-tier municipality means a municipality that forms part of an upper-tier municipality for municipal purposes. Municipal responsibilities set out under the Municipal Act and other Provincial legislation are split between the upper tier and lower tier municipalities.
+Additional Time Period Information: Updates are done as required. Changes may occur as a result of correction of errors or improvement in positional accuracy, at any time.  
+  
+ Additional Documentation
+
+Municipal Boundary - Lower and Single Tier - Data Description (PDF)&amp;nbsp;(Document Update in Progress)
+Municipal Boundary - Lower and Single Tier - Documentation (Word)
+
+ 
+ Status  
+On going: data is being continually updated  
+  
+ Maintenance and Update Frequency  
+Annually: data is updated every year  
+  
+ Contact  
+Paul McKenzie, Paul.McKenzie@ontario.ca  </gco:CharacterString>
+            </mri:abstract>
+            <mri:purpose>
+                <gco:CharacterString>To identify the location of Single Tier and Lower Tier municipalities.</gco:CharacterString>
+            </mri:purpose>
+            <mri:credit>
+                <gco:CharacterString>Ontario Ministry of Municipal Affairs and Housing © King's Printer for Ontario, 2023</gco:CharacterString>
+            </mri:credit>
+            <mri:status>
+                <mcc:MD_ProgressCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_ProgressCode" codeListValue="onGoing">onGoing</mcc:MD_ProgressCode>
+            </mri:status>
+            <mri:pointOfContact>
+                <cit:CI_Responsibility>
+                    <cit:role>
+                        <cit:CI_RoleCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_RoleCode" codeListValue="custodian">custodian</cit:CI_RoleCode>
+                    </cit:role>
+                    <cit:party>
+                        <cit:CI_Organisation>
+                            <cit:name>
+                                <gco:CharacterString>Ministry of Municipal Affairs and Housing</gco:CharacterString>
+                            </cit:name>
+                            <cit:contactInfo>
+                                <cit:CI_Contact>
+                                    <cit:phone>
+                                        <cit:CI_Telephone>
+                                            <cit:number>
+                                                <gco:CharacterString>1 (416) 5857256</gco:CharacterString>
+                                            </cit:number>
+                                            <cit:numberType>
+                                                <cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                                            </cit:numberType>
+                                        </cit:CI_Telephone>
+                                    </cit:phone>
+                                    <cit:address>
+                                        <cit:CI_Address>
+                                            <cit:electronicMailAddress>
+                                                <gco:CharacterString>Paul.McKenzie@ontario.ca</gco:CharacterString>
+                                            </cit:electronicMailAddress>
+                                        </cit:CI_Address>
+                                    </cit:address>
+                                </cit:CI_Contact>
+                            </cit:contactInfo>
+                            <cit:individual>
+                                <cit:CI_Individual>
+                                    <cit:name>
+                                        <gco:CharacterString>Paul McKenzie</gco:CharacterString>
+                                    </cit:name>
+                                    <cit:positionName>
+                                        <gco:CharacterString>Geomatics Technician</gco:CharacterString>
+                                    </cit:positionName>
+                                </cit:CI_Individual>
+                            </cit:individual>
+                        </cit:CI_Organisation>
+                    </cit:party>
+                </cit:CI_Responsibility>
+            </mri:pointOfContact>
+            <mri:pointOfContact>
+                <cit:CI_Responsibility>
+                    <cit:role>
+                        <cit:CI_RoleCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</cit:CI_RoleCode>
+                    </cit:role>
+                    <cit:party>
+                        <cit:CI_Organisation>
+                            <cit:name>
+                                <gco:CharacterString>Ministry of Municipal Affairs and Housing</gco:CharacterString>
+                            </cit:name>
+                            <cit:contactInfo>
+                                <cit:CI_Contact>
+                                    <cit:phone>
+                                        <cit:CI_Telephone>
+                                            <cit:number>
+                                                <gco:CharacterString>1 (416) 5856122</gco:CharacterString>
+                                            </cit:number>
+                                            <cit:numberType>
+                                                <cit:CI_TelephoneTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#CI_TelephoneTypeCode" codeListValue="voice">voice</cit:CI_TelephoneTypeCode>
+                                            </cit:numberType>
+                                        </cit:CI_Telephone>
+                                    </cit:phone>
+                                    <cit:address>
+                                        <cit:CI_Address>
+                                            <cit:electronicMailAddress>
+                                                <gco:CharacterString>christopher.wan@ontario.ca</gco:CharacterString>
+                                            </cit:electronicMailAddress>
+                                        </cit:CI_Address>
+                                    </cit:address>
+                                </cit:CI_Contact>
+                            </cit:contactInfo>
+                            <cit:individual>
+                                <cit:CI_Individual>
+                                    <cit:name>
+                                        <gco:CharacterString>Christopher Wan</gco:CharacterString>
+                                    </cit:name>
+                                    <cit:positionName>
+                                        <gco:CharacterString>Coordinator, GIS/IT</gco:CharacterString>
+                                    </cit:positionName>
+                                </cit:CI_Individual>
+                            </cit:individual>
+                        </cit:CI_Organisation>
+                    </cit:party>
+                </cit:CI_Responsibility>
+            </mri:pointOfContact>
+            <mri:topicCategory>
+                <mri:MD_TopicCategoryCode>boundaries</mri:MD_TopicCategoryCode>
+            </mri:topicCategory>
+            <mri:extent>
+                <gex:EX_Extent>
+                    <gex:geographicElement>
+                        <gex:EX_GeographicBoundingBox>
+                            <gex:westBoundLongitude>
+                                <gco:Decimal>-93.753</gco:Decimal>
+                            </gex:westBoundLongitude>
+                            <gex:eastBoundLongitude>
+                                <gco:Decimal>-75.737</gco:Decimal>
+                            </gex:eastBoundLongitude>
+                            <gex:southBoundLatitude>
+                                <gco:Decimal>41.918</gco:Decimal>
+                            </gex:southBoundLatitude>
+                            <gex:northBoundLatitude>
+                                <gco:Decimal>59.934</gco:Decimal>
+                            </gex:northBoundLatitude>
+                        </gex:EX_GeographicBoundingBox>
+                    </gex:geographicElement>
+                </gex:EX_Extent>
+            </mri:extent>
+            <mri:resourceMaintenance>
+                <mmi:MD_MaintenanceInformation>
+                    <mmi:maintenanceAndUpdateFrequency>
+                        <mmi:MD_MaintenanceFrequencyCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_MaintenanceFrequencyCode" codeListValue="annually">annually</mmi:MD_MaintenanceFrequencyCode>
+                    </mmi:maintenanceAndUpdateFrequency>
+                </mmi:MD_MaintenanceInformation>
+            </mri:resourceMaintenance>
+            <mri:graphicOverview>
+                <mcc:MD_BrowseGraphic>
+                    <mcc:fileName gco:nilReason="withheld"/>
+                    <mcc:fileDescription>
+                        <gco:CharacterString>large_thumbnail</gco:CharacterString>
+                    </mcc:fileDescription>
+                    <mcc:fileType>
+                        <gco:CharacterString>png</gco:CharacterString>
+                    </mcc:fileType>
+                </mcc:MD_BrowseGraphic>
+            </mri:graphicOverview>
+            <mri:graphicOverview>
+                <mcc:MD_BrowseGraphic>
+                    <mcc:fileName gco:nilReason="withheld"/>
+                    <mcc:fileDescription>
+                        <gco:CharacterString>large_thumbnail</gco:CharacterString>
+                    </mcc:fileDescription>
+                    <mcc:fileType>
+                        <gco:CharacterString>png</gco:CharacterString>
+                    </mcc:fileType>
+                </mcc:MD_BrowseGraphic>
+            </mri:graphicOverview>
+            <mri:graphicOverview>
+                <mcc:MD_BrowseGraphic>
+                    <mcc:fileName gco:nilReason="withheld"/>
+                    <mcc:fileDescription>
+                        <gco:CharacterString>large_thumbnail</gco:CharacterString>
+                    </mcc:fileDescription>
+                    <mcc:fileType>
+                        <gco:CharacterString>png</gco:CharacterString>
+                    </mcc:fileType>
+                </mcc:MD_BrowseGraphic>
+            </mri:graphicOverview>
+            <mri:graphicOverview>
+                <mcc:MD_BrowseGraphic>
+                    <mcc:fileName gco:nilReason="missing"/>
+                    <mcc:fileDescription>
+                        <gco:CharacterString>Sample Data File Name: ; Sample Data File Descr: ; Sample Data File Type: ; Sample Data File Size: 0</gco:CharacterString>
+                    </mcc:fileDescription>
+                </mcc:MD_BrowseGraphic>
+            </mri:graphicOverview>
+            <mri:graphicOverview>
+                <mcc:MD_BrowseGraphic>
+                    <mcc:fileName gco:nilReason="withheld"/>
+                    <mcc:fileDescription>
+                        <gco:CharacterString>thumbnail</gco:CharacterString>
+                    </mcc:fileDescription>
+                    <mcc:fileType>
+                        <gco:CharacterString>png</gco:CharacterString>
+                    </mcc:fileType>
+                </mcc:MD_BrowseGraphic>
+            </mri:graphicOverview>
+            <mri:graphicOverview>
+                <mcc:MD_BrowseGraphic>
+                    <mcc:fileName gco:nilReason="withheld"/>
+                    <mcc:fileDescription>
+                        <gco:CharacterString>thumbnail</gco:CharacterString>
+                    </mcc:fileDescription>
+                    <mcc:fileType>
+                        <gco:CharacterString>png</gco:CharacterString>
+                    </mcc:fileType>
+                </mcc:MD_BrowseGraphic>
+            </mri:graphicOverview>
+            <mri:graphicOverview>
+                <mcc:MD_BrowseGraphic>
+                    <mcc:fileName gco:nilReason="withheld"/>
+                    <mcc:fileDescription>
+                        <gco:CharacterString>thumbnail</gco:CharacterString>
+                    </mcc:fileDescription>
+                    <mcc:fileType>
+                        <gco:CharacterString>png</gco:CharacterString>
+                    </mcc:fileType>
+                </mcc:MD_BrowseGraphic>
+            </mri:graphicOverview>
+            <mri:descriptiveKeywords>
+                <mri:MD_Keywords>
+                    <mri:keyword>
+                        <gco:CharacterString>MUNICIPAL BOUNDARY</gco:CharacterString>
+                    </mri:keyword>
+                    <mri:type>
+                        <mri:MD_KeywordTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#napMD_KeywordTypeCode" codeListValue="theme">theme</mri:MD_KeywordTypeCode>
+                    </mri:type>
+                    <mri:thesaurusName>
+                        <cit:CI_Citation>
+                            <cit:title>
+                                <gco:CharacterString>external</gco:CharacterString>
+                            </cit:title>
+                        </cit:CI_Citation>
+                    </mri:thesaurusName>
+                </mri:MD_Keywords>
+            </mri:descriptiveKeywords>
+            <mri:descriptiveKeywords>
+                <mri:MD_Keywords>
+                    <mri:keyword gco:nilReason="missing"/>
+                    <mri:type>
+                        <mri:MD_KeywordTypeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#napMD_KeywordTypeCode" codeListValue="unknown">unknown</mri:MD_KeywordTypeCode>
+                    </mri:type>
+                </mri:MD_Keywords>
+            </mri:descriptiveKeywords>
+            <mri:resourceConstraints>
+                <mco:MD_Constraints>
+                    <mco:useLimitation>
+                        <gco:CharacterString>Open Government Licence – Ontario</gco:CharacterString>
+                    </mco:useLimitation>
+                </mco:MD_Constraints>
+            </mri:resourceConstraints>
+            <mri:resourceConstraints>
+                <mco:MD_LegalConstraints>
+                    <mco:useLimitation>
+                        <gco:CharacterString>Open Government Licence – Ontario</gco:CharacterString>
+                    </mco:useLimitation>
+                </mco:MD_LegalConstraints>
+            </mri:resourceConstraints>
+            <mri:resourceConstraints>
+                <mco:MD_LegalConstraints>
+                    <mco:accessConstraints>
+                        <mco:MD_RestrictionCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</mco:MD_RestrictionCode>
+                    </mco:accessConstraints>
+                    <mco:otherConstraints>
+                        <gco:CharacterString>Other Constraints</gco:CharacterString>
+                    </mco:otherConstraints>
+                </mco:MD_LegalConstraints>
+            </mri:resourceConstraints>
+            <mri:resourceConstraints>
+                <mco:MD_LegalConstraints>
+                    <mco:useConstraints>
+                        <mco:MD_RestrictionCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_RestrictionCode" codeListValue="otherRestrictions">otherRestrictions</mco:MD_RestrictionCode>
+                    </mco:useConstraints>
+                    <mco:otherConstraints>
+                        <gco:CharacterString>Other Constraints</gco:CharacterString>
+                    </mco:otherConstraints>
+                </mco:MD_LegalConstraints>
+            </mri:resourceConstraints>
+            <mri:defaultLocale gco:nilReason="missing"/>
+            <mri:environmentDescription>
+                <gco:CharacterString>Data created using personal geodatabase version 8.3. 1) line feature class created 2) topology created to eliminate topological errors: - lines must not overlap - lines must not intersect - lines must not have dangles - lines must not have pseudos - lines must not intersect or touch interior 3) polygon feature class created from line feature class 4) another topology created on polygon feature class - polygons must not overlap - polygons must not have gaps 5) attributes assigned; Geodatabase</gco:CharacterString>
+            </mri:environmentDescription>
+        </mri:MD_DataIdentification>
+    </mdb:identificationInfo>
+    <mdb:distributionInfo>
+        <mrd:MD_Distribution>
+            <mrd:transferOptions>
+                <mrd:MD_DigitalTransferOptions>
+                    <mrd:onLine>
+                        <cit:CI_OnlineResource>
+                            <cit:linkage>
+                                <gco:CharacterString>https://www.gisapplication.lrc.gov.on.ca/fmedatadownload/Packages/fgdb/MUNICLOW.zip</gco:CharacterString>
+                            </cit:linkage>
+                            <cit:protocol gco:nilReason="missing"/>
+                            <cit:name>
+                                <gco:CharacterString>Complete File Geodatabase</gco:CharacterString>
+                            </cit:name>
+                        </cit:CI_OnlineResource>
+                    </mrd:onLine>
+                    <mrd:onLine>
+                        <cit:CI_OnlineResource>
+                            <cit:linkage>
+                                <gco:CharacterString>https://www.gisapplication.lrc.gov.on.ca/fmedatadownload/Packages/MUNICLOW.zip</gco:CharacterString>
+                            </cit:linkage>
+                            <cit:protocol gco:nilReason="missing"/>
+                            <cit:name>
+                                <gco:CharacterString>Complete Shapefile</gco:CharacterString>
+                            </cit:name>
+                        </cit:CI_OnlineResource>
+                    </mrd:onLine>
+                    <mrd:onLine>
+                        <cit:CI_OnlineResource>
+                            <cit:linkage>
+                                <gco:CharacterString>https://www.publicdocs.mnr.gov.on.ca/mirb/lio-open-qlr-eng/municipal-boundary-lower-and-single-tier.qlr</gco:CharacterString>
+                            </cit:linkage>
+                            <cit:protocol gco:nilReason="missing"/>
+                            <cit:name>
+                                <gco:CharacterString>QGIS Layer Definition File (.qlr)</gco:CharacterString>
+                            </cit:name>
+                        </cit:CI_OnlineResource>
+                    </mrd:onLine>
+                </mrd:MD_DigitalTransferOptions>
+            </mrd:transferOptions>
+        </mrd:MD_Distribution>
+    </mdb:distributionInfo>
+    <mdb:dataQualityInfo>
+        <mdq:DQ_DataQuality>
+            <mdq:scope>
+                <mcc:MD_Scope>
+                    <mcc:level>
+                        <mcc:MD_ScopeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
+                    </mcc:level>
+                </mcc:MD_Scope>
+            </mdq:scope>
+            <mdq:report>
+                <mdq:DQ_RelativeInternalPositionalAccuracy>
+                    <mdq:measure>
+                        <mdq:DQ_MeasureReference>
+                            <mdq:measureDescription>
+                                <gco:CharacterString>Horizontal: Reliable: +/- 100 m 1:20,000 (SOUTHERN ONTARIO) 1:20,000 (NORTHERN ONTARIO) ; Vertical: Not Applicable</gco:CharacterString>
+                            </mdq:measureDescription>
+                        </mdq:DQ_MeasureReference>
+                    </mdq:measure>
+                    <mdq:result gco:nilReason="missing"/>
+                </mdq:DQ_RelativeInternalPositionalAccuracy>
+            </mdq:report>
+        </mdq:DQ_DataQuality>
+    </mdb:dataQualityInfo>
+    <mdb:resourceLineage>
+        <mrl:LI_Lineage>
+            <mrl:scope>
+                <mcc:MD_Scope>
+                    <mcc:level>
+                        <mcc:MD_ScopeCode codeList="standards.iso.org/19115/-3/lan/1.0/codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</mcc:MD_ScopeCode>
+                    </mcc:level>
+                </mcc:MD_Scope>
+            </mrl:scope>
+            <mrl:source>
+                <mrl:LI_Source>
+                    <mrl:description>
+                        <gco:CharacterString>MNR - water egde coverage</gco:CharacterString>
+                    </mrl:description>
+                    <mrl:sourceCitation>
+                        <cit:CI_Citation>
+                            <cit:title>
+                                <gco:CharacterString>Wateredge</gco:CharacterString>
+                            </cit:title>
+                        </cit:CI_Citation>
+                    </mrl:sourceCitation>
+                </mrl:LI_Source>
+            </mrl:source>
+            <mrl:source>
+                <mrl:LI_Source>
+                    <mrl:description>
+                        <gco:CharacterString>Some of the data came from municipalities in the form of paper maps</gco:CharacterString>
+                    </mrl:description>
+                    <mrl:sourceCitation>
+                        <cit:CI_Citation>
+                            <cit:title>
+                                <gco:CharacterString>Municipal boundaries from paper maps</gco:CharacterString>
+                            </cit:title>
+                        </cit:CI_Citation>
+                    </mrl:sourceCitation>
+                </mrl:LI_Source>
+            </mrl:source>
+            <mrl:source>
+                <mrl:LI_Source>
+                    <mrl:description>
+                        <gco:CharacterString>Some of the data came from municipalities in the form of digital data</gco:CharacterString>
+                    </mrl:description>
+                    <mrl:sourceCitation>
+                        <cit:CI_Citation>
+                            <cit:title>
+                                <gco:CharacterString>Municipal boundaries from digital sources</gco:CharacterString>
+                            </cit:title>
+                        </cit:CI_Citation>
+                    </mrl:sourceCitation>
+                </mrl:LI_Source>
+            </mrl:source>
+        </mrl:LI_Lineage>
+    </mdb:resourceLineage>
+</mdb:MD_Metadata>

@@ -10,6 +10,7 @@ FILE_PATH = "src/tts_tools/src/boundaries/source/tts2022_v1_1_shapefile/tts2022_
 OUTPUT_PATH = "src/tts_tools/src/boundaries/processed/"
 
 # TODO add a proper typed dict type for the renamings
+# TODO add in missing "external" regions using geohub municipality boundaries
 
 
 def convert_shp(
