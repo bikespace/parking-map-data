@@ -193,7 +193,7 @@ def read_crosstab(filepath: str, *, expansion_factor: bool | None = None):
             index=row_heading,
             columns=column_heading,
             values="total",
-        )
+        ).fillna(0)
     else:
         raise ValueError(
             f"Unable to determine if crosstab {source.name} is in csv or columnar format."
