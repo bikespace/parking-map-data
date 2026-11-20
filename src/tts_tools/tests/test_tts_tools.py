@@ -9,6 +9,7 @@ def test_read_crosstab():
         expansion_factor=True,
     )
     gdf = ct.gdf
+    gdf.to_file("test.geojson")
     # TODO add validation
 
 

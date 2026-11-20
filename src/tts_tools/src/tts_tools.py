@@ -7,7 +7,7 @@ from typing import cast
 import geopandas as gpd
 import pandas as pd
 
-from .structure.structure_2022 import geometry_match
+from .structure.structure_2022 import geometry_match, description_to_code
 from .types import TTSMetric, TTSYear
 
 
@@ -50,26 +50,30 @@ class TTSCrossTabulation:
         if geometry:
             match_key = str(geometry["key"])
             geometry_gdf = gpd.read_file(geometry["file"]).set_index(match_key)
+
             data = self._df.copy()
-            data[match_key] = data[self.metadata.row_attribute]
+            # TODO description to code conversion should be dependent on the input file type
+            data[match_key] = data[self.metadata.row_attribute].apply(
+                lambda x: description_to_code(self.metadata.row_attribute, x)
+            )
             data = data.set_index(match_key)
 
             # TODO add checks to warn if there are un-matched rows
-            # TODO need to handle difference between formats - csv-like uses string name for row/col values, whereas tabular uses the internal code. E.g. pd in csv-like: "PD 1 of Toronto", in tabular: 1
-            # Therefore, for parsing csv-like, it needs a name to value lookup for each row/col value
-            # The difference for tts zone is very subtle since only the 99998 and 99999 values get names that appear string-like.
-            # convert the df and gdf properties to get functions and add a param for friendly row/column names or not
+            # known missing tts zones: 98001, 98002, 98003, 98004, 98005, 98006, 98007, 98008, 98009, 98010, 99998 (some may not have geometry)
+            # TODO convert the df and gdf properties to get functions and add a param for friendly row/column names or not
 
             output_gdf = gpd.GeoDataFrame(
                 data.join(geometry_gdf), crs=geometry_gdf.crs, geometry="geometry"
             )
-            breakpoint()
+
         else:
             raise ValueError(
                 f"No geometry found to match row attribute {self.metadata.row_attribute}"
             )
 
         return output_gdf
+
+    # TODO add a geojson save file option that adds the metadata
 
 
 def read_crosstab(filepath: str, *, expansion_factor: bool | None = None):

@@ -26,6 +26,7 @@ def convert_shp(
     input_path = Path(input_dir)
     output_path = Path(output_dir)
 
+    # TODO - suppress winding order warning
     gdf = gpd.read_file(input_path)
     gdf = gdf.to_crs(GEOJSON_CRS)
 
