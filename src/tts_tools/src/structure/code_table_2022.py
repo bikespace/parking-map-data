@@ -23,7 +23,8 @@ code_table: dict[str, list[CodeLookup]] = {
         {
             "type": "direct",
             "code": "E",
-            "description": "E-scooter (2022)",
+            "description": "E-scooter",
+            "years_valid": [2022],
         },
         {
             "type": "direct",
@@ -63,7 +64,8 @@ code_table: dict[str, list[CodeLookup]] = {
         {
             "type": "direct",
             "code": "U",
-            "description": "Paid rideshare (2016)",
+            "description": "Paid rideshare",
+            "years_valid": [2016],
         },
         {
             "type": "direct",

@@ -1,4 +1,9 @@
 from pathlib import Path
+from typing import cast
+
+from tts_tools.src.types import CodeLookupDirect
+
+from .code_table_2022 import code_table
 
 attributes = {
     "tts22_dest": "2022 TTS zone of destination",
@@ -74,6 +79,25 @@ def description_to_code(column, description):
                 raise ValueError(
                     f"Unable to convert {description} to a tts 2022 zone number"
                 )
+
+    elif column == "mode_prime":
+        lookup = code_table.get(column)
+        if lookup:
+            lookup_results = [l for l in lookup if l["description"] == description]
+            if not lookup_results:
+                raise ValueError(
+                    f"Unable to find description to code conversion for mode_prime: {description}"
+                )
+            if len(lookup_results) > 1:
+                raise ValueError(
+                    f"Found multiple description to code conversions for mode_prime: {description}"
+                )
+            lookup_result = cast(CodeLookupDirect, lookup_results[0])
+            return lookup_result["code"]
+        else:
+            raise ValueError(
+                f"Unable to find description to code conversion lookup table for {column}."
+            )
 
 
 def code_to_description(column, code):

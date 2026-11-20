@@ -9,7 +9,7 @@ import geopandas as gpd
 import pandas as pd
 
 from .structure.structure_2022 import description_to_code, geometry_match
-from .types import TTSMetric, TTSYear
+from .types import CrossTabType, TTSMetric, TTSYear
 
 # set up logging
 logger = logging.getLogger(__name__)
@@ -19,6 +19,7 @@ logger = logging.getLogger(__name__)
 class TTSCrossTabulationMetadata:
     """Docstring TODO"""
 
+    crosstab_type: CrossTabType
     run_datetime: str  # TODO update this later once you add parsing logic
     run_duration: str  # usually returns milliseconds
     metric: TTSMetric
@@ -26,6 +27,7 @@ class TTSCrossTabulationMetadata:
     row_attribute: str  # TODO update this to be stricter for autocomplete
     column_attribute: str  # TODO update this to be stricter for autocomplete
     table_attribute: str | None  # TODO update this to be stricter for autocomplete
+    filters: str | None
     expansion_factor: bool | None
 
 
@@ -57,12 +59,10 @@ class TTSCrossTabulation:
             match_key = str(geometry["key"])
             geometry_gdf = gpd.read_file(geometry["file"]).set_index(match_key)
 
+            # convert row index to a column and rename row to match_key
             data = self._df.copy()
-            # TODO description to code conversion should be dependent on the input file type
-            data[match_key] = data[self.metadata.row_attribute].apply(
-                lambda x: description_to_code(self.metadata.row_attribute, x)
-            )
-            data = data.set_index(match_key)
+            data[data.index.name] = data.index
+            data.index.name = match_key
 
             output_gdf = gpd.GeoDataFrame(
                 data.join(geometry_gdf), crs=geometry_gdf.crs, geometry="geometry"
@@ -102,8 +102,15 @@ def read_crosstab(filepath: str, *, expansion_factor: bool | None = None):
             row_index = index
         elif line[0:7] == "Column:":
             column_index = index
+        elif line[0:8] == "Filters:":
+            filters_index = index
         elif line[0] == ",":
             header_index = index
+            crosstab_type: CrossTabType = "csv"
+            break
+        elif line[0:8] == "COLUMN :":
+            header_index = index + 1
+            crosstab_type: CrossTabType = "col"
             break
 
     # extract run datetime and duration
@@ -150,6 +157,7 @@ def read_crosstab(filepath: str, *, expansion_factor: bool | None = None):
         )
 
     metadata = TTSCrossTabulationMetadata(
+        crosstab_type=crosstab_type,
         run_datetime=run_datetime,
         run_duration=run_duration,
         metric=metric,
@@ -157,11 +165,38 @@ def read_crosstab(filepath: str, *, expansion_factor: bool | None = None):
         row_attribute=row_heading,
         column_attribute=column_heading,
         table_attribute=None,  # TODO, not yet implemented
+        filters=None,  # TODO, not yet implemented
         expansion_factor=expansion_factor,
     )
 
-    # extract csv segment
-    csv_segment = "\n".join(text[header_index:])
-    data = pd.read_csv(io.StringIO(row_heading + csv_segment))
+    # extract data into a pandas dataframe
+    if crosstab_type == "csv":
+        csv_segment = "\n".join(text[header_index:])
+        # append the otherwise-blank row heading
+        segment_io = io.StringIO(row_heading + csv_segment)
+        data = pd.read_csv(segment_io)
+        data.columns.name = column_heading
+        data = data.set_index(row_heading)
+
+        # convert description-based row and column headings to codes
+        column_names = {
+            k: description_to_code(column_heading, k) for k in data.columns.values
+        }
+        row_names = {k: description_to_code(row_heading, k) for k in data.index.values}
+        data = data.rename(columns=column_names, index=row_names)
+
+    elif crosstab_type == "col":
+        table_segment = "\n".join(text[header_index:])
+        segment_io = io.StringIO(table_segment)
+        records = pd.read_fwf(segment_io)
+        data = records.pivot(
+            index=row_heading,
+            columns=column_heading,
+            values="total",
+        )
+    else:
+        raise ValueError(
+            f"Unable to determine if crosstab {source.name} is in csv or columnar format."
+        )
 
     return TTSCrossTabulation(data, metadata)
