@@ -1,4 +1,5 @@
 import io
+import logging
 import re
 from dataclasses import dataclass
 from pathlib import Path
@@ -7,8 +8,11 @@ from typing import cast
 import geopandas as gpd
 import pandas as pd
 
-from .structure.structure_2022 import geometry_match, description_to_code
+from .structure.structure_2022 import description_to_code, geometry_match
 from .types import TTSMetric, TTSYear
+
+# set up logging
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -27,6 +31,8 @@ class TTSCrossTabulationMetadata:
 
 class TTSCrossTabulation:
     """Docstring TODO"""
+
+    # TODO convert the df and gdf properties to get functions and add a param for friendly row/column names or not
 
     def __init__(self, df: pd.DataFrame, metadata: TTSCrossTabulationMetadata):
         self._df = df
@@ -58,13 +64,14 @@ class TTSCrossTabulation:
             )
             data = data.set_index(match_key)
 
-            # TODO add checks to warn if there are un-matched rows
-            # known missing tts zones: 98001, 98002, 98003, 98004, 98005, 98006, 98007, 98008, 98009, 98010, 99998 (some may not have geometry)
-            # TODO convert the df and gdf properties to get functions and add a param for friendly row/column names or not
-
             output_gdf = gpd.GeoDataFrame(
                 data.join(geometry_gdf), crs=geometry_gdf.crs, geometry="geometry"
             )
+
+            if output_gdf.geometry.hasnans:
+                logger.info(
+                    f"No matching geometry was found for {output_gdf.geometry.isna().sum()} of {len(output_gdf)} fields in {output_gdf.index.name}."
+                )
 
         else:
             raise ValueError(

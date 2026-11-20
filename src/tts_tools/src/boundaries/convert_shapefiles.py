@@ -1,3 +1,4 @@
+import warnings
 from pathlib import Path
 
 import geopandas as gpd
@@ -5,8 +6,6 @@ import geopandas as gpd
 from tts_tools.src.boundaries.renaming_lookup import renamings
 
 GEOJSON_CRS = "EPSG:4326"  # WGS84
-
-FILE_PATH = "src/tts_tools/src/boundaries/source/tts2022_v1_1_shapefile/tts2022_v1_1_shapefile.shp"
 OUTPUT_PATH = "src/tts_tools/src/boundaries/processed/"
 
 # TODO add a proper typed dict type for the renamings
@@ -27,8 +26,16 @@ def convert_shp(
     input_path = Path(input_dir)
     output_path = Path(output_dir)
 
-    # TODO - suppress winding order warning
-    gdf = gpd.read_file(input_path)
+    # Some of the source shapefiles have invalid winding orders
+    # but these are auto-corrected by GeoPandas on load
+    with warnings.catch_warnings():
+        warnings.filterwarnings(
+            "ignore",
+            category=RuntimeWarning,
+            message=r".*invalid winding order.*",
+        )
+        gdf = gpd.read_file(input_path)
+
     gdf = gdf.to_crs(GEOJSON_CRS)
 
     # fix invalid geometry
