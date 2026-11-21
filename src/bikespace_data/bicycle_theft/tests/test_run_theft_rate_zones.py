@@ -41,7 +41,7 @@ def test_generate_theft_rate_zones_writes_expected_outputs(mocker, tmp_path):
         return_value=make_city_gdf(),
     )
     mocker.patch(
-        "bikespace_data.bicycle_theft.run_theft_rate_zones.load_tts_zones",
+        "bikespace_data.bicycle_theft.run_theft_rate_zones.load_tts_zones_from_file",
         return_value=tts_zones,
     )
 
@@ -106,7 +106,7 @@ def test_generate_theft_rate_zones_bad_tts_source_writes_nothing(
         return_value=make_city_gdf(),
     )
     mocker.patch(
-        "bikespace_data.bicycle_theft.run_theft_rate_zones.load_tts_zones",
+        "bikespace_data.bicycle_theft.run_theft_rate_zones.load_tts_zones_from_file",
         **tts_patch,
     )
 
