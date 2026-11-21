@@ -1,32 +1,24 @@
 from pathlib import Path
 
+from tts_tools.src.types import CodeLookupDirect, CodeLookupRange, CodeLookupRangeDirect
 from .code_table_2022 import code_table_direct, code_table_range
 
 _geometry_types = ["accs", "dest", "egrs", "emp", "hhld", "orig", "sch"]
 
 # generate lookup dicts to get properties by code or description
 code_to_props_direct_2022 = {
-    k: {p["code"]: p for p in props_list if 2022 in p.get("years_valid", [2022])}
-    for k, props_list in code_table_direct.items()
+    k: {p["code"]: p for p in props_list} for k, props_list in code_table_direct.items()
 }
 description_to_props_direct_2022 = {
-    k: {p["description"]: p for p in props_list if 2022 in p.get("years_valid", [2022])}
+    k: {p["description"]: p for p in props_list}
     for k, props_list in code_table_direct.items()
 }
 code_to_props_range_2022 = {
-    k: {
-        (p["code_min"], p["code_max"]): p
-        for p in props_list
-        if 2022 in p.get("years_valid", [2022])
-    }
+    k: {(p["code_min"], p["code_max"]): p for p in props_list}
     for k, props_list in code_table_range.items()
 }
 description_to_props_range_direct_2022 = {
-    k: {
-        p["description"]: p
-        for p in props_list
-        if p["type"] == "range_direct" and 2022 in p.get("years_valid", [2022])
-    }
+    k: {p["description"]: p for p in props_list if p["type"] == "range_direct"}
     for k, props_list in code_table_range.items()
 }
 
@@ -70,6 +62,12 @@ geometry_match = {
 def description_to_code(column, description):
     """Docstring TODO"""
 
+    def check_year_validity(
+        props: CodeLookupDirect | CodeLookupRange | CodeLookupRangeDirect,
+    ):
+        if 2022 not in props.get("years_valid", [2022]):
+            raise ValueError(f"{column}: {description} is not valid in 2022")
+
     # handle column name variants
     if column in [f"gta06_{type}" for type in _geometry_types]:
         column = "gta06"
@@ -87,6 +85,7 @@ def description_to_code(column, description):
         lookup = description_to_props_direct_2022[column]
         props = lookup.get(description)
         if props:
+            check_year_validity(props)
             return props["code"]
         else:
             raise ValueError(
@@ -97,14 +96,18 @@ def description_to_code(column, description):
         try:
             code = int(description)
             lookup = code_to_props_range_2022[column]
-            for min, max in lookup:
-                if min <= int(description) <= max:
+            for key in lookup:
+                min, max = key
+                if min <= code <= max:
+                    props = lookup[key]
+                    check_year_validity(props)
                     return code
         # check string descriptions for direct lookup matches
         except ValueError, TypeError:
             lookup = description_to_props_range_direct_2022[column]
             props = lookup.get(description)
             if props:
+                check_year_validity(props)
                 return props["code"]
             else:
                 raise ValueError(
@@ -124,10 +127,17 @@ def description_to_code(column, description):
 def code_to_description(column, code):
     """Docstring TODO"""
 
+    def check_year_validity(
+        props: CodeLookupDirect | CodeLookupRange | CodeLookupRangeDirect,
+    ):
+        if 2022 not in props.get("years_valid", [2022]):
+            raise ValueError(f"{column}: {code} is not valid in 2022")
+
     if column in code_table_direct:
         lookup = code_to_props_direct_2022[column]
         props = lookup.get(code)
         if props:
+            check_year_validity(props)
             return props["description"]
         else:
             raise ValueError(
@@ -139,6 +149,7 @@ def code_to_description(column, code):
             min, max = key
             if min <= code <= max:
                 props = lookup[key]
+                check_year_validity(props)
                 return props.get("description", str(code))
     else:
         raise ValueError(
