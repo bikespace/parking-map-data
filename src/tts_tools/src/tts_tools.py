@@ -240,9 +240,11 @@ def read_crosstab(
 
         # convert description-based row and column headings to codes
         column_names = {
-            k: description_to_code(column_heading, k) for k in data.columns.values
+            k: description_to_code(column_heading, str(k)) for k in data.columns.values
         }
-        row_names = {k: description_to_code(row_heading, k) for k in data.index.values}
+        row_names = {
+            k: description_to_code(row_heading, str(k)) for k in data.index.values
+        }
         data = data.rename(columns=column_names, index=row_names)
 
     elif crosstab_type == "col":
