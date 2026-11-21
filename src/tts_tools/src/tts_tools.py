@@ -8,8 +8,12 @@ from typing import cast
 import geopandas as gpd
 import pandas as pd
 
-from .structure.structure_2022 import description_to_code, get_geometry
-from .types import CrossTabType, TTSAttribute, TTSMetric, TTSYear
+from .structure.structure_2022 import (
+    code_to_description,
+    description_to_code,
+    get_geometry,
+)
+from .types import CrossTabType, IndexLabelType, TTSAttribute, TTSMetric, TTSYear
 
 # set up logging
 logger = logging.getLogger(__name__)
@@ -37,8 +41,6 @@ class TTSCrossTabulation:
 
     TODO describe key methods and attributes
     """
-
-    # TODO add a param for friendly row/column names or not in df/gdf functions
 
     def __init__(self, df: pd.DataFrame, metadata: TTSCrossTabulationMetadata):
         self._df = df
@@ -82,12 +84,44 @@ class TTSCrossTabulation:
     def metadata(self) -> TTSCrossTabulationMetadata:
         return self._metadata
 
-    def get_df(self) -> pd.DataFrame:
-        return self._df
+    def get_df(self, *, labels: IndexLabelType = "code") -> pd.DataFrame:
+        if labels == "code":
+            return self._df
+        elif labels == "description":
+            output_df = self._df.copy()
+            new_columns = {
+                k: code_to_description(self._metadata.column_attribute, k)
+                for k in output_df.columns.tolist()
+            }
+            new_rows = {
+                k: code_to_description(self._metadata.row_attribute, k)
+                for k in output_df.index.tolist()
+            }
+            output_df = output_df.rename(columns=new_columns, index=new_rows)
+            return output_df
+        else:
+            raise TypeError(f"Labels argument {labels} is invalid.")
 
-    def get_gdf(self) -> gpd.GeoDataFrame:
+    def get_gdf(self, *, labels: IndexLabelType = "code") -> gpd.GeoDataFrame:
         if self._gdf is not None:
-            return self._gdf
+            if labels == "code":
+                return self._gdf
+            elif labels == "description":
+                labels_df = self._df.copy()
+                output_gdf = self._gdf.copy()
+                new_columns = {
+                    k: code_to_description(self._metadata.column_attribute, k)
+                    for k in labels_df.columns.tolist()
+                }
+                new_rows = {
+                    k: code_to_description(self._metadata.row_attribute, k)
+                    for k in labels_df.index.tolist()
+                }
+                output_gdf = output_gdf.rename(columns=new_columns, index=new_rows)
+                return output_gdf
+            else:
+                raise TypeError(f"Labels argument {labels} is invalid.")
+
         else:
             raise ValueError(
                 f"No geometry found to match row attribute {self._metadata.row_attribute}"

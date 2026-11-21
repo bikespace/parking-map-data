@@ -43,6 +43,7 @@ TTSAttribute = Literal[
 ]  # fmt: skip
 
 CrossTabType = Literal["csv", "col"]
+IndexLabelType = Literal["code", "description"]
 
 
 class TTSGeometryRenamingLookup(TypedDict):

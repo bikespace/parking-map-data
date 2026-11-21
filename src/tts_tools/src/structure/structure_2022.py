@@ -1,5 +1,7 @@
 from pathlib import Path
 
+import pandas as pd
+
 from tts_tools.src.types import (
     CodeLookup,
     TTSAttribute,
@@ -89,6 +91,11 @@ def description_to_code(
     - description "Unknown" -> code 99999 (column "tts22")
     """
 
+    if not isinstance(description, str):
+        raise TypeError(
+            f"Unable to find code to description conversion for {column}: {description}. {description} must be either an int or a str."
+        )
+
     def check_year_validity(props: CodeLookup):
         """Raises an exception if the `CodeLookup` properties are not valid for the current year."""
         if survey_year not in props.get("years_valid", [survey_year]):
@@ -166,10 +173,27 @@ def code_to_description(
     - code 99999 -> description "Unknown" (column "tts22")
     """
 
+    if not (isinstance(code, (str, int))):
+        raise TypeError(
+            f"Unable to find code to description conversion for {column}: {code}. {code} must be either an int or a str."
+        )
+
     def check_year_validity(props: CodeLookup):
         """Raises an exception if the `CodeLookup` properties are not valid for the current year."""
         if survey_year not in props.get("years_valid", [survey_year]):
             raise ValueError(f"{column}: {code} is not valid in {survey_year}")
+
+    # handle column name variants
+    if column in [f"gta06_{type}" for type in _geometry_types]:
+        column = "gta06"
+    elif column in [f"mun_{type}" for type in _geometry_types]:
+        column = "mun"
+    elif column in [f"pd_{type}" for type in _geometry_types]:
+        column = "pd"
+    elif column in [f"region_{type}" for type in _geometry_types]:
+        column = "region"
+    elif column in [f"tts22_{type}" for type in _geometry_types]:
+        column = "tts22"
 
     if column in code_table_direct:
         lookup = code_to_props_direct_2022[column]

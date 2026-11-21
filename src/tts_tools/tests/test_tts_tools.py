@@ -2,6 +2,10 @@ import logging
 
 import pytest
 
+from tts_tools.src.structure.structure_2022 import (
+    code_to_description,
+    description_to_code,
+)
 from tts_tools.src.tts_tools import TTSCrossTabulation, read_crosstab
 
 
@@ -36,7 +40,7 @@ def trips_destination_by_mode_col(caplog) -> TTSCrossTabulation:
         ("trips_destination_by_mode_col", "col"),
     ],
 )
-def test_read_crosstab(caplog, request, ct_fixture, ct_type):
+def test_read_crosstab(request, ct_fixture, ct_type):
     """
     GIVEN a TTS CrossTab "csv" or "col" type query output
     WHEN a `TTSCrossTabulation` is initiated using the `read_crosstab` function
@@ -50,6 +54,25 @@ def test_read_crosstab(caplog, request, ct_fixture, ct_type):
     gdf = ct.get_gdf()
 
     assert len(df) == len(gdf)
+
+    # confirm that description-style labels match back to code-style
+    dfd = ct.get_df(labels="description")
+    assert df.columns.tolist() == [
+        description_to_code(ct.metadata.column_attribute, c)
+        for c in dfd.columns.tolist()
+    ]
+    assert df.index.tolist() == [
+        description_to_code(ct.metadata.row_attribute, i) for i in dfd.index.tolist()
+    ]
+
+    gdfd = ct.get_gdf(labels="description")
+    assert gdf.columns.tolist()[0 : len(df.columns)] == [
+        description_to_code(ct.metadata.column_attribute, c)
+        for c in gdfd.columns.tolist()[0 : len(df.columns)]
+    ]
+    assert gdf.index.tolist() == [
+        description_to_code(ct.metadata.row_attribute, i) for i in gdfd.index.tolist()
+    ]
 
     # TODO add more validation
 
