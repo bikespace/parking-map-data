@@ -24,6 +24,7 @@ Options:
     --min-bike-trips N    Zones with fewer estimated bike trips than this are masked
                           on the plot as too noisy to rate (default 100)
 """
+
 from __future__ import annotations
 
 import argparse
@@ -87,7 +88,9 @@ def generate_theft_rate_zones(
     th_gdf = load_thefts_gdf(thefts_path)
     print(f"  {len(th_gdf)} theft points after cleaning")
     if len(th_gdf) == 0:
-        raise RuntimeError("No theft points loaded — check the thefts path and file contents.")
+        raise RuntimeError(
+            "No theft points loaded — check the thefts path and file contents."
+        )
 
     print("\nLoading Toronto city outline …")
     city = get_neighbourhoods_gdf()
@@ -98,7 +101,9 @@ def generate_theft_rate_zones(
     tts = load_tts_zones(tts_source)
     print(f"  {len(tts)} TTS zones, CRS={tts.crs}")
     if len(tts) == 0:
-        raise RuntimeError("No TTS zones loaded — check the TTS source and file contents.")
+        raise RuntimeError(
+            "No TTS zones loaded — check the TTS source and file contents."
+        )
 
     tts_weight_col, tts = detect_tts_weight_col(tts)
     if tts_weight_col is None:

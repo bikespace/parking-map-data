@@ -12,6 +12,7 @@ Functions:
 Works on any set of disjoint zone polygons with a `zone_id` column; the runner uses the
 trip-balanced Manhattan zones from `bikespace_data.bicycle_theft.manhattan_zones`.
 """
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -45,12 +46,16 @@ def load_thefts_gdf(path: Path | str) -> gpd.GeoDataFrame:
     # simple heuristic for swapped coords (same as notebook)
     gdf["x"] = gdf.geometry.x
     gdf["y"] = gdf.geometry.y
-    swap_mask = (gdf["y"].abs() < 0.5) | ((gdf["x"] > 0) & (gdf["y"] > 0)) | (gdf["y"] < -20)
+    swap_mask = (
+        (gdf["y"].abs() < 0.5) | ((gdf["x"] > 0) & (gdf["y"] > 0)) | (gdf["y"] < -20)
+    )
     if swap_mask.any():
         gdf.loc[swap_mask, ["x", "y"]] = gdf.loc[swap_mask, ["y", "x"]].values
         gdf["geometry"] = gdf.apply(lambda r: Point(r["x"], r["y"]), axis=1)
     # keep only broad NA extents
-    na_mask = (gdf["x"] >= -130) & (gdf["x"] <= -50) & (gdf["y"] >= 5) & (gdf["y"] <= 70)
+    na_mask = (
+        (gdf["x"] >= -130) & (gdf["x"] <= -50) & (gdf["y"] >= 5) & (gdf["y"] <= 70)
+    )
     gdf = gdf.loc[na_mask].copy()
     gdf = gdf.drop(columns=["x", "y"]).reset_index(drop=True)
     return gdf
@@ -63,7 +68,9 @@ def load_tts_zones(source: str | Path) -> gpd.GeoDataFrame:
     return gdf
 
 
-def detect_tts_weight_col(tts: gpd.GeoDataFrame) -> tuple[Optional[str], gpd.GeoDataFrame]:
+def detect_tts_weight_col(
+    tts: gpd.GeoDataFrame,
+) -> tuple[Optional[str], gpd.GeoDataFrame]:
     """Return (weight_col, possibly_augmented_tts).
 
     Tries the following in order:
@@ -78,7 +85,9 @@ def detect_tts_weight_col(tts: gpd.GeoDataFrame) -> tuple[Optional[str], gpd.Geo
     """
     if {"population", "trips_5up_per_person", "mode_bike"}.issubset(tts.columns):
         population = pd.to_numeric(tts["population"], errors="coerce").fillna(0)
-        trips_per_person = pd.to_numeric(tts["trips_5up_per_person"], errors="coerce").fillna(0)
+        trips_per_person = pd.to_numeric(
+            tts["trips_5up_per_person"], errors="coerce"
+        ).fillna(0)
         mb = pd.to_numeric(tts["mode_bike"], errors="coerce").fillna(0)
         share = mb / 100.0 if mb.max() > 1.5 else mb
         tts = tts.copy()
@@ -116,9 +125,7 @@ def assign_thefts_to_zones(
         nearest = gpd.sjoin_nearest(missing_proj, zones_proj, how="left").drop(
             columns=["index_right"], errors="ignore"
         )
-        joined.loc[nearest.index, "zone_id"] = nearest[
-            "zone_id"
-        ].values
+        joined.loc[nearest.index, "zone_id"] = nearest["zone_id"].values
 
     return joined.groupby("zone_id").size().rename("theft_count")
 
@@ -161,7 +168,9 @@ def _apportion_by_area(
     covered_area = overlay.groupby("_source_id")["_piece_area"].transform("sum")
     mostly_covered = covered_area / overlay["_source_area"] >= min_covered_fraction
     share_denominator = overlay["_source_area"].where(~mostly_covered, covered_area)
-    overlay["_weight_share"] = overlay[weight_col] * (overlay["_piece_area"] / share_denominator)
+    overlay["_weight_share"] = overlay[weight_col] * (
+        overlay["_piece_area"] / share_denominator
+    )
     return overlay.groupby("zone_id")["_weight_share"].sum().rename("bike_trips")
 
 
@@ -235,12 +244,8 @@ def aggregate_theft_rates(
     else:
         usage = pd.Series(dtype=float, name="bike_trips")
 
-    result = zones_gdf.merge(
-        th_counts, left_on="zone_id", right_index=True, how="left"
-    )
-    result = result.merge(
-        daily_thefts, left_on="zone_id", right_index=True, how="left"
-    )
+    result = zones_gdf.merge(th_counts, left_on="zone_id", right_index=True, how="left")
+    result = result.merge(daily_thefts, left_on="zone_id", right_index=True, how="left")
     result = result.merge(usage, left_on="zone_id", right_index=True, how="left")
     result["theft_count"] = result["theft_count"].fillna(0).astype(int)
     result["daily_theft_estimate"] = result["daily_theft_estimate"].fillna(0)
@@ -249,7 +254,8 @@ def aggregate_theft_rates(
     # `.where` keeps the column float (NaN where there are no trips); replacing 0 with pd.NA
     # would turn it into an object column that gets written to GeoJSON as strings
     result["theft_per_1000_trips"] = (
-        result["daily_theft_estimate"] / result["bike_trips"].where(result["bike_trips"] > 0)
+        result["daily_theft_estimate"]
+        / result["bike_trips"].where(result["bike_trips"] > 0)
     ) * 1000
     return result
 
@@ -296,7 +302,11 @@ def plot_theft_rates(
     if len(main) > 0:
         plot_kwargs = {"norm": norm} if norm is not None else {}
         main.plot(
-            column="plot_rate_num", ax=ax, cmap=cmap, linewidth=0.3, edgecolor="white",
+            column="plot_rate_num",
+            ax=ax,
+            cmap=cmap,
+            linewidth=0.3,
+            edgecolor="white",
             **plot_kwargs,
         )
 

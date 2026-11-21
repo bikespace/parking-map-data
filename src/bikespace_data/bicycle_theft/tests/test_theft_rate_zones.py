@@ -109,9 +109,7 @@ def test_aggregate_theft_rates_splits_weight_by_area(zones_gdf):
     # the TTS zone is split evenly between the two equal-area zones
     assert west["bike_trips"] == pytest.approx(500.0, rel=0.05)
     assert east["bike_trips"] == pytest.approx(500.0, rel=0.05)
-    assert west["theft_per_1000_trips"] == pytest.approx(
-        2 / west["bike_trips"] * 1000
-    )
+    assert west["theft_per_1000_trips"] == pytest.approx(2 / west["bike_trips"] * 1000)
 
 
 def test_aggregate_theft_rates_keeps_over_water_share_of_a_mostly_covered_zone(
@@ -277,6 +275,4 @@ def test_aggregate_theft_rates_without_tts_data(zones_gdf):
 
     assert (result["bike_trips"] == 0).all()
     assert result.set_index("zone_id").loc[1, "theft_count"] == 1
-    assert pd.isna(
-        result.set_index("zone_id").loc[1, "theft_per_1000_trips"]
-    )
+    assert pd.isna(result.set_index("zone_id").loc[1, "theft_per_1000_trips"])

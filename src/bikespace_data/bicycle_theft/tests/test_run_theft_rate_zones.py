@@ -6,14 +6,15 @@ from shapely.geometry import Point, Polygon
 
 from bikespace_data.bicycle_theft.run_theft_rate_zones import generate_theft_rate_zones
 
-
 # a ~2 km x 1 km "city" near Toronto (the zone builder works in a Toronto UTM projection)
 WEST, SOUTH, EAST, NORTH = -79.41, 43.65, -79.39, 43.66
 
 
 def make_city_gdf():
     return gpd.GeoDataFrame(
-        geometry=[Polygon([(WEST, SOUTH), (EAST, SOUTH), (EAST, NORTH), (WEST, NORTH)])],
+        geometry=[
+            Polygon([(WEST, SOUTH), (EAST, SOUTH), (EAST, NORTH), (WEST, NORTH)])
+        ],
         crs="EPSG:4326",
     )
 
@@ -25,7 +26,9 @@ def test_generate_theft_rate_zones_writes_expected_outputs(mocker, tmp_path):
     )
     tts_zones = gpd.GeoDataFrame(
         {"trips": [1000.0]},
-        geometry=[Polygon([(WEST, SOUTH), (EAST, SOUTH), (EAST, NORTH), (WEST, NORTH)])],
+        geometry=[
+            Polygon([(WEST, SOUTH), (EAST, SOUTH), (EAST, NORTH), (WEST, NORTH)])
+        ],
         crs="EPSG:4326",
     )
 
@@ -79,13 +82,17 @@ def test_generate_theft_rate_zones_writes_expected_outputs(mocker, tmp_path):
         # a zone with no usable bike-trip column, e.g. after an upstream schema change
         {
             "return_value": gpd.GeoDataFrame(
-                {"TTS2022": [1]}, geometry=[Point(-79.4, 43.655).buffer(0.01)], crs="EPSG:4326"
+                {"TTS2022": [1]},
+                geometry=[Point(-79.4, 43.655).buffer(0.01)],
+                crs="EPSG:4326",
             )
         },
     ],
     ids=["unreachable", "empty", "no_weight_column"],
 )
-def test_generate_theft_rate_zones_bad_tts_source_writes_nothing(mocker, tmp_path, tts_patch):
+def test_generate_theft_rate_zones_bad_tts_source_writes_nothing(
+    mocker, tmp_path, tts_patch
+):
     """Without usable TTS bike-trip data the rates are meaningless, so the script must fail
     before writing any output (the workflow then has nothing to commit to the data branch)."""
     thefts = gpd.GeoDataFrame(geometry=[Point(-79.4, 43.655)], crs="EPSG:4326")

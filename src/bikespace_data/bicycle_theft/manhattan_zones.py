@@ -9,6 +9,7 @@ every zone's rate backed by enough trips to be meaningful.
 Functions:
 - build_manhattan_zones
 """
+
 from __future__ import annotations
 
 from typing import Optional
@@ -39,7 +40,9 @@ def _balanced_sites(xy: np.ndarray, weights: np.ndarray, n_sites: int) -> np.nda
     def split(idx: np.ndarray, k: int) -> None:
         if k == 1 or len(idx) <= 1:
             w = weights[idx]
-            sites.append(np.average(xy[idx], axis=0, weights=w if w.sum() > 0 else None))
+            sites.append(
+                np.average(xy[idx], axis=0, weights=w if w.sum() > 0 else None)
+            )
             return
         axis = int(np.argmax(np.ptp(xy[idx], axis=0)))
         order = idx[np.argsort(xy[idx, axis], kind="stable")]
@@ -87,10 +90,17 @@ def build_manhattan_zones(
     boxes = shapely.box(x0, y0, x0 + cell_m, y0 + cell_m)
     shapely.prepare(city_grid)
     touches = shapely.intersects(boxes, city_grid)
-    boxes, centres = boxes[touches], np.column_stack([x0[touches], y0[touches]]) + cell_m / 2
+    boxes, centres = (
+        boxes[touches],
+        np.column_stack([x0[touches], y0[touches]]) + cell_m / 2,
+    )
 
     # how many bike trips sit in each cell's land, to place the sites
-    if tts_weight_col and tts_weight_col in tts_zones_gdf.columns and len(tts_zones_gdf) > 0:
+    if (
+        tts_weight_col
+        and tts_weight_col in tts_zones_gdf.columns
+        and len(tts_zones_gdf) > 0
+    ):
         land = shapely.intersection(boxes, city_grid)
         land_cells = gpd.GeoDataFrame(
             {"zone_id": np.arange(len(boxes))},
@@ -109,7 +119,9 @@ def build_manhattan_zones(
     # coverage_simplify can smooth the staircase between zones without opening gaps
     zones = [shapely.union_all(boxes[label == i]) for i in range(len(sites))]
     keep = [i for i, z in enumerate(zones) if not z.is_empty]
-    zones = shapely.coverage_simplify(np.array([zones[i] for i in keep], dtype=object), SIMPLIFY_M)
+    zones = shapely.coverage_simplify(
+        np.array([zones[i] for i in keep], dtype=object), SIMPLIFY_M
+    )
     clipped = [from_grid(shapely.intersection(z, city_grid)) for z in zones]
 
     out = gpd.GeoDataFrame(
