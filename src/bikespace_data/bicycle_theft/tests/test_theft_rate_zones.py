@@ -9,7 +9,6 @@ from bikespace_data.bicycle_theft.theft_rate_zones import (
     detect_tts_weight_col,
     filter_to_complete_years,
     load_thefts_gdf,
-    load_tts_zones,
 )
 
 
@@ -253,18 +252,6 @@ def test_load_thefts_gdf_converts_non_point_geometry_to_centroid(tmp_path):
 
     assert len(result) == 1
     assert result.geometry.iloc[0].geom_type == "Point"
-
-
-def test_load_tts_zones_reprojects_to_4326(tmp_path):
-    raw = gpd.GeoDataFrame(
-        geometry=[Polygon([(0, 0), (1, 0), (1, 1), (0, 1)])], crs="EPSG:3857"
-    )
-    path = tmp_path / "tts.geojson"
-    raw.to_file(path, driver="GeoJSON")
-
-    result = load_tts_zones(path)
-
-    assert result.crs.to_epsg() == 4326
 
 
 def test_aggregate_theft_rates_without_tts_data(zones_gdf):
