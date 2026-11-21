@@ -2,7 +2,7 @@ import logging
 
 import pytest
 
-from ..src.tts_tools import read_crosstab
+from tts_tools.src.tts_tools import read_crosstab
 
 
 @pytest.fixture
