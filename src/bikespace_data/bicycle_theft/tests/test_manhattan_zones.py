@@ -1,6 +1,6 @@
 import geopandas as gpd
 import pytest
-from shapely.geometry import Point, Polygon
+from shapely.geometry import Polygon
 
 from bikespace_data.bicycle_theft.manhattan_zones import build_manhattan_zones
 
@@ -27,7 +27,9 @@ def lopsided_tts():
 
 
 def test_build_manhattan_zones_partitions_the_city(city_gdf, lopsided_tts):
-    zones = build_manhattan_zones(city_gdf, lopsided_tts, "trips", n_zones=8, cell_m=200)
+    zones = build_manhattan_zones(
+        city_gdf, lopsided_tts, "trips", n_zones=8, cell_m=200
+    )
 
     assert zones.crs.to_epsg() == 4326
     assert len(zones) == 8
@@ -38,8 +40,12 @@ def test_build_manhattan_zones_partitions_the_city(city_gdf, lopsided_tts):
     assert zone_area == pytest.approx(city_area, rel=0.01)
 
 
-def test_build_manhattan_zones_puts_more_zones_where_the_trips_are(city_gdf, lopsided_tts):
-    zones = build_manhattan_zones(city_gdf, lopsided_tts, "trips", n_zones=8, cell_m=200)
+def test_build_manhattan_zones_puts_more_zones_where_the_trips_are(
+    city_gdf, lopsided_tts
+):
+    zones = build_manhattan_zones(
+        city_gdf, lopsided_tts, "trips", n_zones=8, cell_m=200
+    )
 
     # the busy quarter of the city would get 2 of 8 zones if split by area
     busy_side = sum(zones.to_crs(3857).geometry.centroid.to_crs(4326).x > -79.41)

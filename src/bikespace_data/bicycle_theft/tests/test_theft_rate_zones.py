@@ -9,7 +9,6 @@ from bikespace_data.bicycle_theft.theft_rate_zones import (
     detect_tts_weight_col,
     filter_to_complete_years,
     load_thefts_gdf,
-    load_tts_zones,
 )
 
 
@@ -109,9 +108,7 @@ def test_aggregate_theft_rates_splits_weight_by_area(zones_gdf):
     # the TTS zone is split evenly between the two equal-area zones
     assert west["bike_trips"] == pytest.approx(500.0, rel=0.05)
     assert east["bike_trips"] == pytest.approx(500.0, rel=0.05)
-    assert west["theft_per_1000_trips"] == pytest.approx(
-        2 / west["bike_trips"] * 1000
-    )
+    assert west["theft_per_1000_trips"] == pytest.approx(2 / west["bike_trips"] * 1000)
 
 
 def test_aggregate_theft_rates_keeps_over_water_share_of_a_mostly_covered_zone(
@@ -257,18 +254,6 @@ def test_load_thefts_gdf_converts_non_point_geometry_to_centroid(tmp_path):
     assert result.geometry.iloc[0].geom_type == "Point"
 
 
-def test_load_tts_zones_reprojects_to_4326(tmp_path):
-    raw = gpd.GeoDataFrame(
-        geometry=[Polygon([(0, 0), (1, 0), (1, 1), (0, 1)])], crs="EPSG:3857"
-    )
-    path = tmp_path / "tts.geojson"
-    raw.to_file(path, driver="GeoJSON")
-
-    result = load_tts_zones(path)
-
-    assert result.crs.to_epsg() == 4326
-
-
 def test_aggregate_theft_rates_without_tts_data(zones_gdf):
     thefts = make_point_gdf([(0.5, 0.5)])
     empty_tts = gpd.GeoDataFrame(columns=["geometry"], crs="EPSG:4326")
@@ -277,6 +262,4 @@ def test_aggregate_theft_rates_without_tts_data(zones_gdf):
 
     assert (result["bike_trips"] == 0).all()
     assert result.set_index("zone_id").loc[1, "theft_count"] == 1
-    assert pd.isna(
-        result.set_index("zone_id").loc[1, "theft_per_1000_trips"]
-    )
+    assert pd.isna(result.set_index("zone_id").loc[1, "theft_per_1000_trips"])

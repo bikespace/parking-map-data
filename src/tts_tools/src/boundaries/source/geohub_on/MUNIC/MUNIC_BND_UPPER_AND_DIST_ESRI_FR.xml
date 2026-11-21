@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><metadata xml:lang="en">
+    <Esri>
+        <CreaDate>2018-10-05</CreaDate>
+        <CreaTime>16515500</CreaTime>
+        <ModDate>2024-04-13</ModDate>
+        <ModTime>12:09:33.00</ModTime>
+        <PublishStatus>editor:esri.dijit.metadata.editor</PublishStatus>
+        <ArcGISFormat>1.0</ArcGISFormat>
+        <ArcGISstyle>North American Profile of ISO19115 2003</ArcGISstyle>
+        <ArcGISProfile>NAP</ArcGISProfile>
+        <MapLyrSync>false</MapLyrSync>
+    </Esri>
+    <mdHrLv>
+        <ScopeCd value="005"></ScopeCd>
+    </mdHrLv>
+    <mdFileID>1a874f573638482db8885e00853f87be</mdFileID>
+    <mdLang>
+        <languageCode value="fre"></languageCode>
+        <countryCode value="CA"></countryCode>
+    </mdLang>
+    <mdChar>
+        <CharSetCd value="004"></CharSetCd>
+    </mdChar>
+    <mdContact>
+        <rpIndName>Paul McKenzie</rpIndName>
+        <rpOrgName>Groupement ITI pour les services à la collectivité</rpOrgName>
+        <role>
+            <RoleCd value="007"></RoleCd>
+        </role>
+        <rpCntInfo>
+            <cntAddress>
+                <eMailAdd>Paul.McKenzie@ontario.ca</eMailAdd>
+            </cntAddress>
+        </rpCntInfo>
+    </mdContact>
+    <mdDateSt>2023-06-09</mdDateSt>
+    <mdTimeSt>13:20:19.40</mdTimeSt>
+    <dataIdInfo>
+        <idCitation>
+            <resTitle>Limites municipales – Palier supérieur et district</resTitle>
+            <resAltTitle>MUNIC</resAltTitle>
+            <date>
+                <createDate>2012-01-01T00:00:00</createDate>
+                <reviseDate>2024-04-12T15:33:02</reviseDate>
+            </date>
+            <citId>
+                <identCode>52900063-3758-421c-a4bb-09b58b08804b</identCode>
+                <identAuth>
+                    <resTitle>LIO Metadata Management Tool UUID</resTitle>
+                    <date>
+                        <pubDate>2019-04-11T14:57:29.282716</pubDate>
+                    </date>
+                </identAuth>
+            </citId>
+            <citId>
+                <identCode>MUNIC</identCode>
+                <identAuth>
+                    <resTitle>LIO Concrete Class Short Name</resTitle>
+                    <date>
+                        <pubDate>2019-04-11T14:57:29.291714</pubDate>
+                    </date>
+                </identAuth>
+            </citId>
+            <citId>
+                <identCode>11be9127e6ae43c4850793a3a2ee943c</identCode>
+                <identAuth>
+                    <resTitle>Ontario GeoHub English Record ID</resTitle>
+                    <date>
+                        <pubDate>2023-06-09T14:50:51.264-04:00</pubDate>
+                    </date>
+                </identAuth>
+            </citId>
+            <citRespParty>
+                <rpOrgName>ministère des Affaires municipales et du Logement de l'Ontario</rpOrgName>
+                <role>
+                    <RoleCd value="010"></RoleCd>
+                </role>
+            </citRespParty>
+        </idCitation>
+        <idAbs>&lt;span style='text-indent:0px; text-decoration-style:initial; text-decoration-color:initial; display:inline !important;'&gt;
+&lt;div&gt;PALIER SUPÉRIEUR – Une municipalité de palier supérieur comporte au moins deux municipalités de palier inférieur aux fins des municipalités. Les responsabilités municipales définies par la Loi sur les municipalités et d’autres lois provinciales sont réparties entre les municipalités de palier supérieur et de palier inférieur. &lt;br /&gt; &lt;/div&gt;
+&lt;div&gt;DISTRICT – Le district territorial désigne une zone géographique du nord de l’Ontario, décrite dans la Loi sur la division territoriale et composée de municipalités, de cantons géographiques et de territoires non arpentés.
+Renseignements supplémentaires sur la période : Des mises à jour sont apportées au besoin. Des modifications peuvent être apportées à tout moment pour corriger des erreurs ou améliorer la précision de positionnement.
+&lt;br /&gt; &lt;/div&gt;
+ &lt;div&gt; &lt;br /&gt; &lt;/div&gt;
+&lt;div&gt; &lt;strong&gt;Documents Supplémentaires&lt;br /&gt;&lt;/strong&gt;&lt;/div&gt;
+&lt;div&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href='https://www.publicdocs.mnr.gov.on.ca/mirb/Municipal Boundary - Upper Tier And District - Data Description_Updating.pdf' target='_blank' rel='nofollow ugc noopener noreferrer'&gt;Municipal Boundary - Upper Tier and District - Data Description (PDF)&lt;/a&gt;&amp;nbsp;(Document Update in Progress)&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='https://www.publicdocs.mnr.gov.on.ca/mirb/Municipal Boundary - Upper Tier and District - Documentation.docx' target='_blank' rel='nofollow ugc noopener noreferrer'&gt;Municipal Boundary - Upper Tier and District - Documentation (Word)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+
+&lt;div&gt; &lt;strong&gt;État&lt;br /&gt; &lt;/strong&gt; &lt;/div&gt;
+&lt;div&gt;Actives: Les données sont continuellement mises à jour&lt;br /&gt; &lt;/div&gt; 
+&lt;div&gt; &lt;br /&gt; &lt;/div&gt;
+&lt;div&gt; &lt;strong&gt;Fréquence de mise à jour des données&lt;/strong&gt; &lt;/div&gt;
+&lt;div&gt;Annuelle: Les données sont mises à jour tous les ans&lt;br /&gt; &lt;/div&gt;
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;&lt;strong&gt;Personne-resource&lt;/strong&gt;&lt;br /&gt;&lt;/div&gt;
+&lt;div&gt;Paul McKenzie, Groupement ITI pour les services à la collectivité, &lt;a href='mailto:Paul.McKenzie@ontario.ca' target='_blank' rel='nofollow ugc noopener noreferrer'&gt;Paul.McKenzie@ontario.ca&lt;/a&gt;&lt;/div&gt;&lt;/span&gt;</idAbs>
+        <idPurp>Cet ensemble de données identifie l’emplacement des paliers supérieurs et des districts territoriaux.</idPurp>
+        <idCredit>ministère des Affaires municipales et du Logement de l'Ontario ©  Imprimeur du Roi Pour L'Ontario, 2023</idCredit>
+        <envirDesc>Data created using personal geodatabase version 8.3. 1) line feature class created 2) topology created to eliminate topological errors: - lines must not overlap - lines must not intersect - lines must not have dangles - lines must not have pseudos - lines must not intersect or touch interior 3) polygon feature class created from line feature class 4) another topology created on polygon feature class - polygons must not overlap - polygons must not have gaps 5) attributes assigned; Geodatabase</envirDesc>
+        <dataChar>
+            <CharSetCd value="004"></CharSetCd>
+        </dataChar>
+        <idStatus>
+            <ProgCd value="004"></ProgCd>
+        </idStatus>
+        <tpCat>
+            <TopicCatCd value="003"></TopicCatCd>
+        </tpCat>
+        <tpCat>
+            <TopicCatCd value="015"></TopicCatCd>
+        </tpCat>
+        <searchKeys>
+            
+            
+            
+            
+            
+            
+            
+        <keyword>données ouvertes</keyword><keyword>planification et cadastre</keyword><keyword>limites municipales</keyword><keyword>palier supérieur</keyword><keyword>district</keyword><keyword>MAML</keyword><keyword>ministère des Affaires municipales et du Logement</keyword></searchKeys>
+        <themeKeys>
+            <keyword>MUNICIPAL BOUNDARY</keyword>
+            <keyword>ADMINISTRATION</keyword>
+            <thesaName>
+                <resTitle>external</resTitle>
+            </thesaName>
+        </themeKeys>
+        <dataExt>
+            <geoEle>
+                <GeoBndBox>
+                    <westBL>-93.753</westBL>
+                    <eastBL>-75.737</eastBL>
+                    <southBL>41.918</southBL>
+                    <northBL>59.934</northBL>
+                </GeoBndBox>
+            </geoEle>
+        </dataExt>
+        <idPoC>
+            <rpIndName>Paul McKenzie</rpIndName>
+            <rpOrgName>Groupement ITI pour les services à la collectivité</rpOrgName>
+            <role>
+                <RoleCd value="002"></RoleCd>
+            </role>
+            <rpCntInfo>
+                <cntAddress>
+                    <eMailAdd>paul.mckenzie@ontario.ca</eMailAdd>
+                </cntAddress>
+            </rpCntInfo>
+        </idPoC>
+        <idPoC>
+            <rpIndName>Paul McKenzie</rpIndName>
+            <rpOrgName>Community Services I&amp;IT Cluster</rpOrgName>
+            <role>
+                <RoleCd value="007"></RoleCd>
+            </role>
+            <rpCntInfo>
+                <cntAddress>
+                    <eMailAdd>paul.mckenzie@ontario.ca</eMailAdd>
+                </cntAddress>
+            </rpCntInfo>
+        </idPoC>
+        <resMaint>
+            <maintFreq>
+                <MaintFreqCd value="008"></MaintFreqCd>
+            </maintFreq>
+        </resMaint>
+        <resConst>
+            <LegConsts>
+                <useLimit>&lt;a href="https://www.ontario.ca/page/open-government-licence-ontario"&gt;Open Government Licence – Ontario&lt;/a&gt;</useLimit>
+            </LegConsts>
+        </resConst>
+        <resConst>
+            <Consts>
+                <useLimit>&lt;a href='https://www.ontario.ca/fr/page/licence-du-gouvernement-ouvert-ontario' rel='nofollow ugc'&gt;Licence du gouvernement ouvert – Ontario&lt;/a&gt;</useLimit>
+            </Consts>
+        </resConst>
+        <resConst>
+            <LegConsts>
+                <accessConsts>
+                    <RestrictCd value="008"></RestrictCd>
+                </accessConsts>
+                <othConsts>Other Constraints</othConsts>
+            </LegConsts>
+        </resConst>
+        <resConst>
+            <LegConsts>
+                <useConsts>
+                    <RestrictCd value="008"></RestrictCd>
+                </useConsts>
+                <othConsts>Other Constraints</othConsts>
+            </LegConsts>
+        </resConst>
+        <resConst>
+            <LegConsts>
+                <accessConsts>
+                    <RestrictCd value="008"></RestrictCd>
+                </accessConsts>
+                <othConsts>Other Constraints</othConsts>
+            </LegConsts>
+        </resConst>
+        <resConst>
+            <LegConsts>
+                <useConsts>
+                    <RestrictCd value="008"></RestrictCd>
+                </useConsts>
+                <othConsts>Other Constraints</othConsts>
+            </LegConsts>
+        </resConst>
+        <resConst>
+            <LegConsts>
+                <accessConsts>
+                    <RestrictCd value="008"></RestrictCd>
+                </accessConsts>
+                <othConsts>Other Constraints</othConsts>
+            </LegConsts>
+        </resConst>
+        <resConst>
+            <LegConsts>
+                <useConsts>
+                    <RestrictCd value="008"></RestrictCd>
+                </useConsts>
+                <othConsts>Other Constraints</othConsts>
+            </LegConsts>
+        </resConst>
+        <resConst>
+            <LegConsts>
+                <accessConsts>
+                    <RestrictCd value="008"></RestrictCd>
+                </accessConsts>
+                <othConsts>Other Constraints</othConsts>
+            </LegConsts>
+        </resConst>
+        <resConst>
+            <LegConsts>
+                <useConsts>
+                    <RestrictCd value="008"></RestrictCd>
+                </useConsts>
+                <othConsts>Other Constraints</othConsts>
+            </LegConsts>
+        </resConst>
+        <graphOver>
+            <bgFileName>withheld</bgFileName>
+            <bgFileDesc>large_thumbnail</bgFileDesc>
+            <bgFileType>png</bgFileType>
+        </graphOver>
+        <graphOver>
+            <bgFileDesc>Sample Data File Name: ; Sample Data File Descr: ; Sample Data File Type: ; Sample Data File Size: 0</bgFileDesc>
+        </graphOver>
+        <graphOver>
+            <bgFileName>withheld</bgFileName>
+            <bgFileDesc>thumbnail</bgFileDesc>
+            <bgFileType>png</bgFileType>
+        </graphOver>
+    </dataIdInfo>
+    <dqInfo>
+        <dqScope>
+            <scpLvl>
+                <ScopeCd value="005"></ScopeCd>
+            </scpLvl>
+        </dqScope>
+        <dataLineage>
+            <dataSource>
+                <srcDesc>MNR - water egde coverage</srcDesc>
+                <srcCitatn>
+                    <resTitle>Wateredge</resTitle>
+                </srcCitatn>
+            </dataSource>
+            <dataSource>
+                <srcDesc>Some of the data came from municipalities in the form of paper maps</srcDesc>
+                <srcCitatn>
+                    <resTitle>Municipal boundaries from paper maps</resTitle>
+                </srcCitatn>
+            </dataSource>
+            <dataSource>
+                <srcDesc>Some of the data came from municipalities in the form of digital data</srcDesc>
+                <srcCitatn>
+                    <resTitle>Municipal boundaries from digital sources</resTitle>
+                </srcCitatn>
+            </dataSource>
+        </dataLineage>
+        <report type="DQRelIntPosAcc">
+            <measDesc>Horizontal: Reliable: +/- 100 m 1:20,000 (SOUTHERN ONTARIO) 1:20,000 (NORTHERN ONTARIO) ; Vertical: Not Applicable</measDesc>
+        </report>
+    </dqInfo>
+    <distInfo>
+        <distTranOps>
+            <onLineSrc>
+                <linkage>https://www.gisapplication.lrc.gov.on.ca/fmedatadownload/Packages/fgdb/MUNIC.zip</linkage>
+                <orName>Complete File Geodatabase</orName>
+            </onLineSrc>
+            <onLineSrc>
+                <linkage>https://www.gisapplication.lrc.gov.on.ca/fmedatadownload/Packages/MUNIC.zip</linkage>
+                <orName>Complete Shapefile</orName>
+            </onLineSrc>
+            <onLineSrc>
+                <linkage>https://www.publicdocs.mnr.gov.on.ca/mirb/lio-open-qlr-eng/municipal-boundary-upper-tier-and-district-1.qlr</linkage>
+                <orName>QGIS Layer Definition File (.qlr)</orName>
+            </onLineSrc>
+        </distTranOps>
+    </distInfo>
+    <refSysInfo>
+        <RefSystem>
+            <refSysID>
+                <identCode code="Grid CS = Geographic (Lat, Long); Map Proj = Not Applicable; Horiz. Datum = NAD83; Vert. Datum = Not Applicable"></identCode>
+            </refSysID>
+        </RefSystem>
+    </refSysInfo>
+</metadata>

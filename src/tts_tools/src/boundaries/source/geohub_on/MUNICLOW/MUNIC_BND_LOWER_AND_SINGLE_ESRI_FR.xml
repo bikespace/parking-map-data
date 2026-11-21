@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><metadata xml:lang="en">
+    <dataIdInfo>
+        <idCitation>
+            <resTitle>Limites municipales à paliers inférieur et unique</resTitle>
+            <date>
+                <createDate>2012-01-01T00:00:00</createDate>
+                <reviseDate>2024-04-12T15:35:26</reviseDate>
+            </date>
+            <citRespParty>
+                <rpOrgName>ministère des Affaires municipales et du Logement de l'Ontario</rpOrgName>
+                <role>
+                    <RoleCd value="010"></RoleCd>
+                </role>
+            </citRespParty>
+            <citId>
+                <identCode>2c9815c2-b071-4adb-a956-9229fd510419</identCode>
+                <identAuth>
+                    <resTitle>LIO Metadata Management Tool UUID</resTitle>
+                    <date>
+                        <pubDate>2019-04-11T14:58:48.820252</pubDate>
+                    </date>
+                </identAuth>
+            </citId>
+            <citId>
+                <identCode>MUNICLOW</identCode>
+                <identAuth>
+                    <resTitle>LIO Concrete Class Short Name</resTitle>
+                    <date>
+                        <pubDate>2019-04-11T14:58:48.830245</pubDate>
+                    </date>
+                </identAuth>
+            </citId>
+            <citId>
+                <identCode>64fb702e16204c3e88b528d9759f1174_14</identCode>
+                <identAuth>
+                    <resTitle>Ontario GeoHub English Record ID</resTitle>
+                    <date>
+                        <pubDate>2020-01-02T16:05:58.426312</pubDate>
+                    </date>
+                </identAuth>
+            </citId>
+        </idCitation>
+        <idAbs>&lt;span style='text-indent:0px; text-decoration-style:initial; text-decoration-color:initial; display:inline !important;'&gt;
+
+&lt;div&gt;Une municipalité à palier unique ne fait pas partie d'une municipalité à palier supérieur et assume les responsabilités municipales selon la Loi sur les municipalités et autre législation provinciale.&lt;br /&gt;&lt;br /&gt;Une municipalité à palier inférieur fait partie d'une municipalité à palier supérieur. Les responsabilités municipales selon la Loi sur les municipalités et autre législation provinciale sont divisées entre les municipalités à palier supérieur et à palier inférieur.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Veuillez consulter l'enregistrement de métadonnées complet pour plus d'informations.&lt;/div&gt; 
+
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;br /&gt;&lt;div&gt; &lt;strong&gt;Documents Supplémentaires&lt;br /&gt;&lt;/strong&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;a href='https://www.publicdocs.mnr.gov.on.ca/mirb/Municipal Boundary - Lower And Single Tier - Data Description_Updating.pdf' target='_blank' rel='nofollow ugc noopener noreferrer'&gt;Municipal Boundary- Lower and Single Tier - Data Description&lt;/a&gt;&amp;nbsp;(Document Update in Progress)&lt;/li&gt;&lt;li&gt;&lt;a href='https://www.publicdocs.mnr.gov.on.ca/mirb/Municipal Boundary - Lower And Single Tier - Documentation.docx' target='_blank' rel='nofollow ugc noopener noreferrer'&gt;Municipal Boundary - Lower and Single Tier - Documentation&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt; 
+
+&lt;div&gt;&lt;strong&gt;État&lt;/strong&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;div&gt;Actives: Les données sont continuellement mises à jour&lt;br /&gt;&lt;/div&gt; 
+
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;strong&gt;Fréquence de mise à jour des données&lt;/strong&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;div&gt;Annuelle: Les données sont mises à jour tous les ans&lt;br /&gt;&lt;/div&gt; 
+
+&lt;div&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;div&gt;&lt;strong&gt;Personne-resource&lt;/strong&gt;&lt;br /&gt;&lt;/div&gt;
+
+&lt;div&gt;Paul McKenzie,&lt;a href='mailto:Paul.McKenzie@ontario.ca' target='_blank' rel='nofollow ugc noopener noreferrer'&gt; Paul.McKenzie@ontario.ca &lt;/a&gt;&lt;/div&gt;&lt;/span&gt;</idAbs>
+        <idPurp>Cet ensemble de données identifie la localisation des municipalités à paliers unique est inférieur.</idPurp>
+        <idCredit>&lt;a href="https://www.ontario.ca/fr/page/licence-du-gouvernement-ouvert-ontario"&gt;Licence du gouvernement ouvert – Ontario&lt;/a&gt;</idCredit>
+        <envirDesc>Data created using personal geodatabase version 8.3. 1) line feature class created 2) topology created to eliminate topological errors: - lines must not overlap - lines must not intersect - lines must not have dangles - lines must not have pseudos - lines must not intersect or touch interior 3) polygon feature class created from line feature class 4) another topology created on polygon feature class - polygons must not overlap - polygons must not have gaps 5) attributes assigned; Geodatabase</envirDesc>
+        <dataChar>
+            <CharSetCd value="004"></CharSetCd>
+        </dataChar>
+        <idStatus>
+            <ProgCd value="004"></ProgCd>
+        </idStatus>
+        <searchKeys>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        <keyword>open data</keyword><keyword>planning and cadastral</keyword><keyword>municipal boundary</keyword><keyword>single tier</keyword><keyword>lower tier</keyword><keyword>MMAH</keyword><keyword>Ministry of Municipal Affairs and Housing</keyword><keyword>Provincial Planning Policy Branch</keyword><keyword>ODCSYNC</keyword></searchKeys>
+        <themeKeys>
+            <keyword>municipal boundary</keyword>
+            <thesaName>
+                <resTitle>external</resTitle>
+            </thesaName>
+        </themeKeys>
+        <dataExt>
+            <geoEle>
+                <GeoBndBox>
+                    <westBL>-94.81746309999677</westBL>
+                    <eastBL>-74.10134523749744</eastBL>
+                    <southBL>41.67655939999864</southBL>
+                    <northBL>51.54002279999826</northBL>
+                </GeoBndBox>
+            </geoEle>
+        </dataExt>
+        <idPoC>
+            <rpIndName>Paul McKenzie</rpIndName>
+            <rpOrgName>Ministry of Municipal Affairs and Housing</rpOrgName>
+            <rpPosName>Geomatics Technician</rpPosName>
+            <role>
+                <RoleCd value="002"></RoleCd>
+            </role>
+            <rpCntInfo>
+                <cntAddress>
+                    <eMailAdd>Paul.McKenzie@ontario.ca</eMailAdd>
+                </cntAddress>
+                <cntPhone>
+                    <voiceNum>1 (416) 5857256</voiceNum>
+                </cntPhone>
+            </rpCntInfo>
+        </idPoC>
+        <idPoC>
+            <rpIndName>Christopher Wan</rpIndName>
+            <rpOrgName>Ministry of Municipal Affairs and Housing</rpOrgName>
+            <rpPosName>Coordinator, GIS/IT</rpPosName>
+            <role>
+                <RoleCd value="007"></RoleCd>
+            </role>
+            <rpCntInfo>
+                <cntAddress>
+                    <eMailAdd>christopher.wan@ontario.ca</eMailAdd>
+                </cntAddress>
+                <cntPhone>
+                    <voiceNum>1 (416) 5856122</voiceNum>
+                </cntPhone>
+            </rpCntInfo>
+        </idPoC>
+        <resMaint>
+            <maintFreq>
+                <MaintFreqCd value="008"></MaintFreqCd>
+            </maintFreq>
+        </resMaint>
+        <resConst>
+            <LegConsts>
+                <useLimit>&lt;a href="https://www.ontario.ca/page/open-government-licence-ontario"&gt;Open Government Licence – Ontario&lt;/a&gt;</useLimit>
+            </LegConsts>
+        </resConst>
+        <resConst>
+            <Consts>
+                <useLimit>&lt;a href="https://www.ontario.ca/fr/page/licence-du-gouvernement-ouvert-ontario"&gt;Licence du gouvernement ouvert – Ontario&lt;/a&gt;</useLimit>
+                <useLimit>Users must acknowledge MMAH as the provider of this dataset.</useLimit>
+            </Consts>
+        </resConst>
+        <graphOver>
+            <bgFileName>withheld</bgFileName>
+            <bgFileDesc>large_thumbnail</bgFileDesc>
+            <bgFileType>png</bgFileType>
+        </graphOver>
+        <graphOver>
+            <bgFileDesc>Sample Data File Name: ; Sample Data File Descr: ; Sample Data File Type: ; Sample Data File Size: 0</bgFileDesc>
+        </graphOver>
+        <graphOver>
+            <bgFileName>withheld</bgFileName>
+            <bgFileDesc>thumbnail</bgFileDesc>
+            <bgFileType>png</bgFileType>
+        </graphOver>
+    </dataIdInfo>
+    <dqInfo>
+        <dqScope>
+            <scpLvl>
+                <ScopeCd value="005"></ScopeCd>
+            </scpLvl>
+        </dqScope>
+        <dataLineage>
+            <dataSource>
+                <srcDesc>MNR - water egde coverage</srcDesc>
+                <srcCitatn>
+                    <resTitle>Wateredge</resTitle>
+                </srcCitatn>
+            </dataSource>
+            <dataSource>
+                <srcDesc>Some of the data came from municipalities in the form of paper maps</srcDesc>
+                <srcCitatn>
+                    <resTitle>Municipal boundaries from paper maps</resTitle>
+                </srcCitatn>
+            </dataSource>
+            <dataSource>
+                <srcDesc>Some of the data came from municipalities in the form of digital data</srcDesc>
+                <srcCitatn>
+                    <resTitle>Municipal boundaries from digital sources</resTitle>
+                </srcCitatn>
+            </dataSource>
+        </dataLineage>
+        <report type="DQRelIntPosAcc">
+            <measDesc>Horizontal: Reliable: +/- 100 m 1:20,000 (SOUTHERN ONTARIO) 1:20,000 (NORTHERN ONTARIO) ; Vertical: Not Applicable</measDesc>
+        </report>
+    </dqInfo>
+    <distInfo>
+        <distTranOps>
+            <onLineSrc>
+                <linkage>https://www.gisapplication.lrc.gov.on.ca/fmedatadownload/Packages/fgdb/MUNICLOW.zip</linkage>
+                <orName>Complete File Geodatabase</orName>
+            </onLineSrc>
+            <onLineSrc>
+                <linkage>https://www.gisapplication.lrc.gov.on.ca/fmedatadownload/Packages/MUNICLOW.zip</linkage>
+                <orName>Complete Shapefile</orName>
+            </onLineSrc>
+            <onLineSrc>
+                <linkage>https://www.publicdocs.mnr.gov.on.ca/mirb/lio-open-qlr-fre/limites-municipales-à-paliers-inférieur-et-unique.qlr</linkage>
+                <orName>QGIS Layer Definition File (.qlr)</orName>
+                <orFunct>
+                    <OnFunctCode value="001"></OnFunctCode>
+                </orFunct>
+            </onLineSrc>
+        </distTranOps>
+    </distInfo>
+    <refSysInfo>
+        <RefSystem>
+            <refSysID>
+                <identCode code="Grid CS = Geographic (Lat, Long); Map Proj = Not Applicable; Horiz. Datum = NAD83; Vert. Datum = Not Applicable"></identCode>
+            </refSysID>
+        </RefSystem>
+    </refSysInfo>
+    <Esri>
+        <ArcGISstyle>North American Profile of ISO19115 2003</ArcGISstyle>
+        <CreaDate>2018-10-06</CreaDate>
+        <CreaTime>02264600</CreaTime>
+        <ModDate>2024-04-13</ModDate>
+        <ModTime>12:09:29.00</ModTime>
+        <ArcGISFormat>1.0</ArcGISFormat>
+        <ArcGISProfile>NAP</ArcGISProfile>
+        <PublishStatus>editor:esri.dijit.metadata.editor</PublishStatus>
+    </Esri>
+    <mdHrLv>
+        <ScopeCd value="005"></ScopeCd>
+    </mdHrLv>
+    <mdDateSt>2019-12-05</mdDateSt>
+    <mdFileID>c61356d949d14810b257e86e192cd821</mdFileID>
+    <mdLang>
+        <languageCode value="fre"></languageCode>
+    </mdLang>
+    <mdChar>
+        <CharSetCd value="004"></CharSetCd>
+    </mdChar>
+    <mdContact>
+        <rpIndName>Paul McKenzie</rpIndName>
+        <rpOrgName>Ministry of Municipal Affairs and Housing</rpOrgName>
+        <rpPosName>Geomatics Technician</rpPosName>
+        <role>
+            <RoleCd value="007"></RoleCd>
+        </role>
+        <rpCntInfo>
+            <cntAddress>
+                <eMailAdd>Paul.McKenzie@ontario.ca</eMailAdd>
+            </cntAddress>
+            <cntPhone>
+                <voiceNum>1 (416) 5857256</voiceNum>
+            </cntPhone>
+        </rpCntInfo>
+    </mdContact>
+</metadata>
