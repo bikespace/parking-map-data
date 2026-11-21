@@ -9,7 +9,7 @@ import geopandas as gpd
 import pandas as pd
 
 from .structure.structure_2022 import description_to_code, get_geometry
-from .types import CrossTabType, TTSMetric, TTSYear
+from .types import CrossTabType, TTSAttribute, TTSMetric, TTSYear
 
 # set up logging
 logger = logging.getLogger(__name__)
@@ -17,22 +17,26 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class TTSCrossTabulationMetadata:
-    """Docstring TODO"""
+    """Dataclass for metadata returned by TTS CrossTab queries"""
 
     crosstab_type: CrossTabType
     run_datetime: str  # TODO update this later once you add parsing logic
     run_duration: str  # usually returns milliseconds
     metric: TTSMetric
     year: TTSYear
-    row_attribute: str  # TODO update this to be stricter for autocomplete
-    column_attribute: str  # TODO update this to be stricter for autocomplete
-    table_attribute: str | None  # TODO update this to be stricter for autocomplete
+    row_attribute: TTSAttribute
+    column_attribute: TTSAttribute
+    table_attribute: TTSAttribute | None
     filters: str | None
     expansion_factor: bool | None
 
 
 class TTSCrossTabulation:
-    """Docstring TODO"""
+    """
+    Results of a TTS CrossTab query
+
+    TODO describe key methods and attributes
+    """
 
     # TODO convert the df and gdf properties to get functions and add a param for friendly row/column names or not
 
@@ -52,8 +56,6 @@ class TTSCrossTabulation:
 
     @property
     def gdf(self) -> gpd.GeoDataFrame:
-        # TODO add additional years to the gdf matching, not just 2022
-
         geometry = get_geometry(self.metadata.row_attribute)
         if geometry:
             match_key = str(geometry["key"])
@@ -83,14 +85,14 @@ class TTSCrossTabulation:
     # TODO add a geojson save file option that adds the metadata
 
 
-def read_crosstab(filepath: str, *, expansion_factor: bool | None = None):
-    """Docstring TODO"""
+def read_crosstab(
+    filepath: str, *, expansion_factor: bool | None = None
+) -> TTSCrossTabulation:
+    """Read a TTS CrossTab query output file, parse the values and metadata, and normalize the representation of the resulting dataframe to use code values for row and column headings."""
 
     # read file into a list of lines
     source = Path(filepath)
     text = source.read_text().splitlines()
-
-    # TODO add in logic to determine filetype also: csv-like if ',' line found, otherwise table-format if 'ROW :' found
 
     # find the index of key lines
     for index, line in enumerate(text):
@@ -143,14 +145,16 @@ def read_crosstab(filepath: str, *, expansion_factor: bool | None = None):
     )
     row_heading_match = re.search(HEADING_PATTERN, text[row_index])
     if row_heading_match:
-        row_heading = row_heading_match.group("attribute_code")
+        row_heading = cast(TTSAttribute, row_heading_match.group("attribute_code"))
     else:
         raise ValueError(
             f"Unable to parse row heading from line {row_index + 1} of {source.name}."
         )
     column_heading_match = re.search(HEADING_PATTERN, text[column_index])
     if column_heading_match:
-        column_heading = column_heading_match.group("attribute_code")
+        column_heading = cast(
+            TTSAttribute, column_heading_match.group("attribute_code")
+        )
     else:
         raise ValueError(
             f"Unable to parse column heading from line {column_index + 1} of {source.name}."

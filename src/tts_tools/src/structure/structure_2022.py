@@ -1,8 +1,16 @@
 from pathlib import Path
 
-from tts_tools.src.types import CodeLookup, TTSGeometry
+from tts_tools.src.types import (
+    CodeLookup,
+    TTSAttribute,
+    TTSBaseAttribute,
+    TTSGeometry,
+    TTSYear,
+)
 
 from .code_table_2022 import code_table_direct, code_table_range
+
+SURVEY_YEAR: TTSYear = 2022
 
 # generate lookup dicts to get properties by code or description
 code_to_props_direct_2022 = {
@@ -25,7 +33,7 @@ description_to_props_range_direct_2022 = {
 _geometry_types = ["accs", "dest", "egrs", "emp", "hhld", "orig", "sch"]
 
 
-def get_geometry(key: str) -> TTSGeometry | None:
+def get_geometry(key: TTSAttribute) -> TTSGeometry | None:
     """
     Returns a link to a GeoJSON file and the column name in that file that matches to `key`.
 
@@ -65,12 +73,26 @@ def get_geometry(key: str) -> TTSGeometry | None:
 # TODO figure out handling for ward - this is not an available query output
 
 
-def description_to_code(column, description):
-    """Docstring TODO"""
+def description_to_code(
+    column: TTSBaseAttribute | TTSAttribute,
+    description: str,
+    *,
+    survey_year: TTSYear = SURVEY_YEAR,
+) -> int | str:
+    """
+    Converts the description text for the specified column and outputs the matching code value.
+
+    E.g.:
+
+    - description "Transit excluding GO rail" -> code "B" (column "mode_prime")
+    - description "1002" -> code 1002 (column "tts22")
+    - description "Unknown" -> code 99999 (column "tts22")
+    """
 
     def check_year_validity(props: CodeLookup):
-        if 2022 not in props.get("years_valid", [2022]):
-            raise ValueError(f"{column}: {description} is not valid in 2022")
+        """Raises an exception if the `CodeLookup` properties are not valid for the current year."""
+        if survey_year not in props.get("years_valid", [survey_year]):
+            raise ValueError(f"{column}: {description} is not valid in {survey_year}")
 
     # handle column name variants
     if column in [f"gta06_{type}" for type in _geometry_types]:
@@ -128,12 +150,26 @@ def description_to_code(column, description):
         )
 
 
-def code_to_description(column, code):
-    """Docstring TODO"""
+def code_to_description(
+    column: TTSBaseAttribute | TTSAttribute,
+    code: int | str,
+    *,
+    survey_year: TTSYear = SURVEY_YEAR,
+) -> str:
+    """
+    Converts the code value for the specified column and outputs the matching description.
+
+    E.g.:
+
+    - code "B" -> description "Transit excluding GO rail" (column "mode_prime")
+    - code 1002 -> description "1002"(column "tts22")
+    - code 99999 -> description "Unknown" (column "tts22")
+    """
 
     def check_year_validity(props: CodeLookup):
-        if 2022 not in props.get("years_valid", [2022]):
-            raise ValueError(f"{column}: {code} is not valid in 2022")
+        """Raises an exception if the `CodeLookup` properties are not valid for the current year."""
+        if survey_year not in props.get("years_valid", [survey_year]):
+            raise ValueError(f"{column}: {code} is not valid in {survey_year}")
 
     if column in code_table_direct:
         lookup = code_to_props_direct_2022[column]

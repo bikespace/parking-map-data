@@ -31,7 +31,11 @@ def trips_destination_by_mode_col():
     ],
 )
 def test_read_crosstab(caplog, request, ct_fixture, ct_type):
-    """Docstring TODO"""
+    """
+    GIVEN a TTS CrossTab "csv" or "col" type query output
+    WHEN a `TTSCrossTabulation` is initiated using the `read_crosstab` function
+    THEN the file read is successful with the correct metadata and data table properties
+    """
 
     ct = request.getfixturevalue(ct_fixture)
     assert ct.metadata.crosstab_type == ct_type

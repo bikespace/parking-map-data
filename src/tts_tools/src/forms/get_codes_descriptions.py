@@ -27,7 +27,7 @@ def get_codes_descriptions(file: Path) -> list[tuple[str, str]]:
 
     options = soup.find_all("option", attrs={"data-backend": True})
     results = [
-        (option.attrs["data-backend"], option.text.strip()) for option in options
+        (str(option.attrs["data-backend"]), option.text.strip()) for option in options
     ]
     return results
 

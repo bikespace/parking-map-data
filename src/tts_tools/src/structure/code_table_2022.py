@@ -1,9 +1,15 @@
 # code: description
-from tts_tools.src.types import CodeLookupDirect, CodeLookupRange, CodeLookupRangeDirect
+from tts_tools.src.types import (
+    CodeLookupDirect,
+    CodeLookupRange,
+    CodeLookupRangeDirect,
+    TTSAttribute,
+    TTSBaseAttribute,
+)
 
 # TODO need to check against the PDF for pd years valid
 
-attributes = {
+attributes: dict[TTSAttribute, str] = {
     "region_hhld": "Regional municipality of household",
     "pd_hhld": "Planning district of household",
     "ward_hhld": "Ward number of household",
@@ -182,7 +188,7 @@ attributes = {
 }
 
 
-code_table_direct: dict[str, list[CodeLookupDirect]] = {
+code_table_direct: dict[TTSBaseAttribute | TTSAttribute, list[CodeLookupDirect]] = {
     "mode_prime": [
         {
             "type": "direct",
@@ -1210,7 +1216,9 @@ code_table_direct: dict[str, list[CodeLookupDirect]] = {
     ],
 }
 
-code_table_range: dict[str, list[CodeLookupRange | CodeLookupRangeDirect]] = {
+code_table_range: dict[
+    TTSBaseAttribute | TTSAttribute, list[CodeLookupRange | CodeLookupRangeDirect]
+] = {
     "tts22": [
         {
             "type": "range",

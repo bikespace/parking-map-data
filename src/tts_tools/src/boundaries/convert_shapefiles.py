@@ -4,21 +4,21 @@ from pathlib import Path
 import geopandas as gpd
 
 from tts_tools.src.boundaries.renaming_lookup import renamings
+from tts_tools.src.types import TTSGeometryRenamingLookup
 
 GEOJSON_CRS = "EPSG:4326"  # WGS84
 OUTPUT_PATH = "src/tts_tools/src/boundaries/processed/"
 
-# TODO add a proper typed dict type for the renamings
 # TODO add in missing "external" regions using geohub municipality boundaries
 
 
 def convert_shp(
     input_dir: str,
     output_dir: str,
-    renaming_lookup: dict | None = None,
-):
+    renaming_lookup: dict[str, TTSGeometryRenamingLookup] | None = None,
+) -> Path:
     """
-    Takes a shapefile from `input_dir`, corrects invalid geometry, and outputs a GeoJSON file of the same name at `output_dir`.
+    Takes a shapefile from `input_dir`, corrects invalid geometry, and outputs a GeoJSON file of the same name at `output_dir`. Returns the path of the saved GeoJSON file.
 
     If `renaming_lookup` is supplied, it will be used to rename the output file and its columns.
     """
@@ -45,9 +45,17 @@ def convert_shp(
     )
 
     # optionally rename output file and its columns
-    # TODO add handling for no match found
     if renaming_lookup and input_path.stem in renaming_lookup:
         lookup = renaming_lookup[input_path.stem]
+        missing_column_names = set(gdf.columns.values).difference(
+            set(lookup["columns"])
+        )
+        missing_column_names.remove("geometry")
+        if missing_column_names:
+            raise KeyError(
+                f"Renamings not found for the following columns from {input_path.stem}: {missing_column_names}"
+            )
+
         gdf = gdf.rename(columns=lookup["columns"])
         output_name = f"{lookup['output_name']}.geojson"
     else:
@@ -60,14 +68,18 @@ def convert_shp(
     return output_file
 
 
-def convert_source_folder(source_dir: str):
-    """Docstring TODO"""
+def convert_source_folder(
+    source_dir: str,
+    output_path: str = OUTPUT_PATH,
+    renamings: dict[str, TTSGeometryRenamingLookup] | None = renamings,
+):
+    """Convert all the shapefiles in the specified `source_dir` folder and save them in `output_path` as cleaned up GeoJSON using `convert_shp`."""
 
     source_path = Path(source_dir)
     source_files = source_path.glob("**/*.shp")
 
     for file in source_files:
-        convert_shp(file.as_posix(), OUTPUT_PATH, renamings)
+        convert_shp(file.as_posix(), output_path, renamings)
 
 
 if __name__ == "__main__":

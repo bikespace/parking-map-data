@@ -1,4 +1,6 @@
-renamings = {
+from tts_tools.src.types import TTSGeometryRenamingLookup
+
+renamings: dict[str, TTSGeometryRenamingLookup] = {
     "tts2022_v1_1_shapefile": {
         "output_name": "2022_tts2022",
         "columns": {
