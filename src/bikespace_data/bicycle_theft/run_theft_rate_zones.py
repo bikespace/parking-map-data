@@ -16,8 +16,8 @@ Options:
     --thefts URL|PATH     Toronto Police bicycle-theft GeoJSON with an OCC_YEAR column
                           (default: the raw download that the bike_thefts update job publishes
                           on the `data` branch, so the data is only downloaded once)
-    --tts-source URL|PATH GeoJSON or CSV source for TTS zones
-                          (default: School-of-Cities GitHub tts2022zones_data.geojson)
+    --tts-source          File path to TTS trip by zone crosstab query file
+                          (default: src/bikespace_data/resources/tts/ttsCross__csv__trip_2022__tts22_dest__mode_prime.txt)
     --output-dir DIR      Directory for the full output GeoJSON + PNG (default: bicycle_theft/output_files)
     --display-dir DIR     Directory for the slim display GeoJSON (default: bicycle_theft/display_files)
     --n-zones N           Number of zones to split the city into (default 400)
@@ -40,17 +40,13 @@ from bikespace_data.bicycle_theft.theft_rate_zones import (
     aggregate_theft_rates,
     detect_tts_weight_col,
     load_thefts_gdf,
-    load_tts_zones,
+    load_tts_zones_from_file,
     plot_theft_rates,
 )
 from bikespace_data.resources.toronto_boundaries import get_neighbourhoods_gdf
 from bikespace_data.utilities import save_geo_output
 
-# pinned to a commit so upstream changes can't silently alter or break the output
-TTS_DEFAULT_SOURCE = (
-    "https://raw.githubusercontent.com/schoolofcities/transportation-tomorrow-survey/"
-    "2da4782bf90e921c7037760c20a866609734b10d/data/tts2022zones_data.geojson"
-)
+TTS_TRIPS_FILE = "src/bikespace_data/resources/tts/ttsCross__csv__trip_2022__tts22_dest__mode_prime.txt"
 THEFTS_DEFAULT = (
     "https://raw.githubusercontent.com/bikespace/parking-map-data/refs/heads/"
     "data/bike_thefts/source_files/bicycle-thefts_raw.geojson"
@@ -76,7 +72,7 @@ DISPLAY_COLUMNS = [
 
 def generate_theft_rate_zones(
     thefts_path: Path | str = THEFTS_DEFAULT,
-    tts_source: str = TTS_DEFAULT_SOURCE,
+    tts_source: str = TTS_TRIPS_FILE,
     output_dir: Path = OUTPUT_DEFAULT,
     display_dir: Path = DISPLAY_DEFAULT,
     min_bike_trips: int = MIN_BIKE_TRIPS_DEFAULT,
@@ -98,7 +94,7 @@ def generate_theft_rate_zones(
     # fail rather than fall back: without bike-trip weights the rates are meaningless, and
     # publishing them would overwrite good data on the data branch
     print(f"\nLoading TTS zones from {tts_source} …")
-    tts = load_tts_zones(tts_source)
+    tts = load_tts_zones_from_file(tts_source)
     print(f"  {len(tts)} TTS zones, CRS={tts.crs}")
     if len(tts) == 0:
         raise RuntimeError(
@@ -163,8 +159,8 @@ def main() -> None:
     )
     parser.add_argument(
         "--tts-source",
-        default=TTS_DEFAULT_SOURCE,
-        help="URL or path to TTS zones GeoJSON/CSV",
+        default=TTS_TRIPS_FILE,
+        help="File path to TTS trip by zone crosstab query file",
     )
     parser.add_argument(
         "--output-dir",

@@ -2,7 +2,7 @@
 
 Functions:
 - load_thefts_gdf
-- load_tts_zones
+- load_tts_zones_from_file
 - detect_tts_weight_col
 - assign_thefts_to_zones
 - filter_to_complete_years
@@ -22,6 +22,8 @@ import geopandas as gpd
 import numpy as np
 import pandas as pd
 from shapely.geometry import Point
+
+from tts_tools import read_crosstab
 
 AREA_CRS = "EPSG:3857"
 
@@ -61,13 +63,16 @@ def load_thefts_gdf(path: Path | str) -> gpd.GeoDataFrame:
     return gdf
 
 
-def load_tts_zones(source: str | Path) -> gpd.GeoDataFrame:
-    """Load TTS zones/GeoJSON and ensure EPSG:4326."""
-    gdf = gpd.read_file(source)
+def load_tts_zones_from_file(source: str) -> gpd.GeoDataFrame:
+    """Load TTS zones/GeoJSON from saved query file and ensure EPSG:4326."""
+    ct = read_crosstab(source, expansion_factor=True)
+    gdf = ct.get_gdf(labels="description")
     gdf = gdf.to_crs(epsg=4326)
+    gdf["bike_trips"] = gdf["Cycle"] + gdf["E-scooter"]
     return gdf
 
 
+# TODO simplify
 def detect_tts_weight_col(
     tts: gpd.GeoDataFrame,
 ) -> tuple[Optional[str], gpd.GeoDataFrame]:
@@ -94,7 +99,7 @@ def detect_tts_weight_col(
         tts["bike_trips_est"] = population * trips_per_person * share
         return "bike_trips_est", tts
 
-    for col in ("trips", "bike_trips", "TRIPS"):
+    for col in ("bike_trips", "trips", "TRIPS"):
         if col in tts.columns and pd.api.types.is_numeric_dtype(tts[col]):
             return col, tts
 
@@ -110,6 +115,7 @@ def assign_thefts_to_zones(
 
     Returns a Series indexed by zone_id containing theft counts.
     """
+    # TODO resolve typing
     if thefts_gdf.crs != zones_gdf.crs:
         thefts_gdf = thefts_gdf.to_crs(zones_gdf.crs)
 
