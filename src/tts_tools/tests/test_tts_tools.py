@@ -2,10 +2,7 @@ import logging
 
 import pytest
 
-from tts_tools.src.structure.structure_2022 import (
-    code_to_description,
-    description_to_code,
-)
+from tts_tools.src.structure.structure_2022 import description_to_code
 from tts_tools.src.tts_tools import TTSCrossTabulation, read_crosstab
 
 
@@ -49,6 +46,7 @@ def test_read_crosstab(request, ct_fixture, ct_type):
 
     ct: TTSCrossTabulation = request.getfixturevalue(ct_fixture)
     assert ct.metadata.crosstab_type == ct_type
+    assert ct.metadata.filters == None
 
     df = ct.get_df()
     gdf = ct.get_gdf()
@@ -98,6 +96,22 @@ def test_read_crosstab_parity(
     assert (ct_csv.get_df().columns == ct_col.get_df().columns).all()
     assert (ct_csv.get_df().index == ct_col.get_df().index).all()
     assert ct_csv.get_df().compare(ct_col.get_df()).empty
+
+
+def test_read_crosstab_with_filter():
+    """
+    GIVEN a TTS CrossTab "csv" or "col" type query output with specified filters
+    WHEN a `TTSCrossTabulation` is initiated using the `read_crosstab` function
+    THEN the file read is successful and the metadata includes the filter description
+    """
+    ct = read_crosstab(
+        "src/tts_tools/tests/examples/ttsCross__col__hhld_2022__pd_hhld__n_vehicle__with_filter.txt",
+        expansion_factor=True,
+    )
+    assert (
+        ct.metadata.filters
+        == "Planning district of household - pd_hhld In 1,2,3\nand\nNo. of vehicles in household - n_vehicle In 0,1,2"
+    )
 
 
 # TODO test that the error message line numbers (for the source text file) are not off by one

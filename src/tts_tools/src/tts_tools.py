@@ -184,6 +184,17 @@ def read_crosstab(
             f"Unable to parse survey year and output metric from line {year_and_metric_index + 1} of {source.name}."
         )
 
+    # extract filters description
+    if text[filters_index + 1] == "No Filters":
+        filters = None
+    else:
+        filter_lines = []
+        filter_line_index = filters_index + 1
+        while len(text[filter_line_index]) > 0:
+            filter_lines.append(text[filter_line_index])
+            filter_line_index += 1
+        filters = "\n".join(filter_lines)
+
     # extract row and column names
     HEADING_PATTERN = (
         r"(Row|Column): (?P<attribute_description>.+) - (?P<attribute_code>.+)"
@@ -214,7 +225,7 @@ def read_crosstab(
         row_attribute=row_heading,
         column_attribute=column_heading,
         table_attribute=None,  # TODO, not yet implemented
-        filters=None,  # TODO, not yet implemented
+        filters=filters,
         expansion_factor=expansion_factor,
     )
 

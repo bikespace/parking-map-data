@@ -1,0 +1,26 @@
+Sat Nov 21 2026 14:13:44 GMT-0500 (Eastern Standard Time) - Run Time: 680ms
+
+Cross Tabulation Query Form - Household - 2022
+
+Row: Planning district of household - pd_hhld
+Column: No. of vehicles in household - n_vehicle
+
+
+Filters:
+Planning district of household - pd_hhld In 1,2,3
+and
+No. of vehicles in household - n_vehicle In 0,1,2
+
+Household 2022
+ROW : pd_hhld
+COLUMN : n_vehicle
+     pd_hhld   n_vehicle      total
+           1           0     103251
+           1           1      74425
+           1           2       8641
+           2           0      37775
+           2           1      43787
+           2           2       9711
+           3           0      27870
+           3           1      47393
+           3           2      17607
