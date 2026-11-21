@@ -1,9 +1,9 @@
 # code: description
-from tts_tools.src.types import CodeLookup
+from tts_tools.src.types import CodeLookupDirect, CodeLookupRange, CodeLookupRangeDirect
 
 # TODO need to check against the PDF for pd years valid
 
-code_table: dict[str, list[CodeLookup]] = {
+code_table_direct: dict[str, list[CodeLookupDirect]] = {
     "mode_prime": [
         {
             "type": "direct",
@@ -65,7 +65,7 @@ code_table: dict[str, list[CodeLookup]] = {
             "type": "direct",
             "code": "U",
             "description": "Paid rideshare",
-            "years_valid": [2016],
+            "years_valid": [2016, 2022],
         },
         {
             "type": "direct",
@@ -75,164 +75,6 @@ code_table: dict[str, list[CodeLookup]] = {
         {
             "type": "direct",
             "code": "9",  # TODO check if this is character or int usually?
-            "description": "Unknown",
-        },
-    ],
-    "tts22": [
-        {
-            "type": "range",
-            "code_min": 1001,
-            "code_max": 1659,
-            "description": "Toronto",
-        },
-        {
-            "type": "range",
-            "code_min": 2001,
-            "code_max": 2334,
-            "description": "Durham",
-        },
-        {
-            "type": "range",
-            "code_min": 3001,
-            "code_max": 3565,
-            "description": "York",
-        },
-        {
-            "type": "range",
-            "code_min": 4001,
-            "code_max": 4753,
-            "description": "Peel",
-        },
-        {
-            "type": "range",
-            "code_min": 5001,
-            "code_max": 5488,
-            "description": "Halton",
-        },
-        {
-            "type": "range",
-            "code_min": 6001,
-            "code_max": 6265,
-            "description": "Hamilton",
-        },
-        {
-            "type": "range",
-            "code_min": 11001,
-            "code_max": 11503,
-            "description": "Niagara",
-        },
-        {
-            "type": "range",
-            "code_min": 12001,
-            "code_max": 12578,
-            "description": "Waterloo",
-        },
-        {
-            "type": "range",
-            "code_min": 13001,
-            "code_max": 13207,
-            "description": "Guelph",
-        },
-        {
-            "type": "range",
-            "code_min": 14001,
-            "code_max": 14080,
-            "description": "Wellington",
-        },
-        {
-            "type": "range",
-            "code_min": 15001,
-            "code_max": 15005,
-            "description": "Orangeville",
-        },
-        {
-            "type": "range",
-            "code_min": 22001,
-            "code_max": 22007,
-            "description": "Dufferin",
-        },
-        {
-            "type": "range",
-            "code_min": 16001,
-            "code_max": 16245,
-            "description": "Barrie",
-        },
-        {
-            "type": "range",
-            "code_min": 17001,
-            "code_max": 17313,
-            "description": "Simcoe",
-        },
-        {
-            "type": "range",
-            "code_min": 21001,
-            "code_max": 21008,
-            "description": "Orillia",
-        },
-        {
-            "type": "range",
-            "code_min": 18001,
-            "code_max": 18016,
-            "description": "Kawartha Lakes",
-        },
-        {
-            "type": "range",
-            "code_min": 19001,
-            "code_max": 19250,
-            "description": "Peterborough City",
-        },
-        {
-            "type": "range",
-            "code_min": 20001,
-            "code_max": 20116,
-            "description": "Peterborough",
-        },
-        {
-            "type": "range",
-            "code_min": 23001,
-            "code_max": 23050,
-            "description": "Brantford",
-        },
-        {
-            "type": "range",
-            "code_min": 24001,
-            "code_max": 24010,
-            "description": "Brant",
-        },
-        {
-            "type": "range",
-            "code_min": 25001,
-            "code_max": 25264,
-            "description": "Northumberland",
-        },
-        {
-            "type": "range",
-            "code_min": 26001,
-            "code_max": 26006,
-            "description": "Blue Mountains",
-        },
-        {
-            "type": "range",
-            "code_min": 27001,
-            "code_max": 27069,
-            "description": "Grey",
-        },
-        {
-            "type": "range",
-            "code_min": 90001,
-            "code_max": 90010,
-            "description": "External",
-        },
-        {
-            "type": "range",
-            "code_min": 99998,
-            "code_max": 99998,
-            "description": "External Undefined",
-        },
-        {
-            "type": "range",
-            "code_min": 99999,
-            "code_max": 99999,
             "description": "Unknown",
         },
     ],
@@ -1184,6 +1026,169 @@ code_table: dict[str, list[CodeLookup]] = {
         {
             "type": "direct",
             "code": 999,
+            "description": "Unknown",
+        },
+    ],
+}
+
+code_table_range: dict[str, list[CodeLookupRange | CodeLookupRangeDirect]] = {
+    "tts22": [
+        {
+            "type": "range",
+            "code_min": 1001,
+            "code_max": 1659,
+            "notes": "Toronto",
+        },
+        {
+            "type": "range",
+            "code_min": 2001,
+            "code_max": 2334,
+            "notes": "Durham",
+        },
+        {
+            "type": "range",
+            "code_min": 3001,
+            "code_max": 3565,
+            "notes": "York",
+        },
+        {
+            "type": "range",
+            "code_min": 4001,
+            "code_max": 4753,
+            "notes": "Peel",
+        },
+        {
+            "type": "range",
+            "code_min": 5001,
+            "code_max": 5488,
+            "notes": "Halton",
+        },
+        {
+            "type": "range",
+            "code_min": 6001,
+            "code_max": 6265,
+            "notes": "Hamilton",
+        },
+        {
+            "type": "range",
+            "code_min": 11001,
+            "code_max": 11503,
+            "notes": "Niagara",
+        },
+        {
+            "type": "range",
+            "code_min": 12001,
+            "code_max": 12578,
+            "notes": "Waterloo",
+        },
+        {
+            "type": "range",
+            "code_min": 13001,
+            "code_max": 13207,
+            "notes": "Guelph",
+        },
+        {
+            "type": "range",
+            "code_min": 14001,
+            "code_max": 14080,
+            "notes": "Wellington",
+        },
+        {
+            "type": "range",
+            "code_min": 15001,
+            "code_max": 15005,
+            "notes": "Orangeville",
+        },
+        {
+            "type": "range",
+            "code_min": 22001,
+            "code_max": 22007,
+            "notes": "Dufferin",
+        },
+        {
+            "type": "range",
+            "code_min": 16001,
+            "code_max": 16245,
+            "notes": "Barrie",
+        },
+        {
+            "type": "range",
+            "code_min": 17001,
+            "code_max": 17313,
+            "notes": "Simcoe",
+        },
+        {
+            "type": "range",
+            "code_min": 21001,
+            "code_max": 21008,
+            "notes": "Orillia",
+        },
+        {
+            "type": "range",
+            "code_min": 18001,
+            "code_max": 18016,
+            "notes": "Kawartha Lakes",
+        },
+        {
+            "type": "range",
+            "code_min": 19001,
+            "code_max": 19250,
+            "notes": "Peterborough City",
+        },
+        {
+            "type": "range",
+            "code_min": 20001,
+            "code_max": 20116,
+            "notes": "Peterborough",
+        },
+        {
+            "type": "range",
+            "code_min": 23001,
+            "code_max": 23050,
+            "notes": "Brantford",
+        },
+        {
+            "type": "range",
+            "code_min": 24001,
+            "code_max": 24010,
+            "notes": "Brant",
+        },
+        {
+            "type": "range",
+            "code_min": 25001,
+            "code_max": 25264,
+            "notes": "Northumberland",
+        },
+        {
+            "type": "range",
+            "code_min": 26001,
+            "code_max": 26006,
+            "notes": "Blue Mountains",
+        },
+        {
+            "type": "range",
+            "code_min": 27001,
+            "code_max": 27069,
+            "notes": "Grey",
+        },
+        {
+            "type": "range",
+            "code_min": 98001,
+            "code_max": 98010,
+            "notes": "External. Sometimes noted as 90001 to 90010 in the documentation, but the actual values are 980**.",
+        },
+        {
+            "type": "range_direct",
+            "code_min": 99998,
+            "code_max": 99998,
+            "code": 99998,
+            "description": "External Undefined",
+        },
+        {
+            "type": "range_direct",
+            "code_min": 99999,
+            "code_max": 99999,
+            "code": 99999,
             "description": "Unknown",
         },
     ],

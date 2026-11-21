@@ -1,11 +1,34 @@
 from pathlib import Path
-from typing import cast
 
-from tts_tools.src.types import CodeLookupDirect
-
-from .code_table_2022 import code_table
+from .code_table_2022 import code_table_direct, code_table_range
 
 _geometry_types = ["accs", "dest", "egrs", "emp", "hhld", "orig", "sch"]
+
+# generate lookup dicts to get properties by code or description
+code_to_props_direct_2022 = {
+    k: {p["code"]: p for p in props_list if 2022 in p.get("years_valid", [2022])}
+    for k, props_list in code_table_direct.items()
+}
+description_to_props_direct_2022 = {
+    k: {p["description"]: p for p in props_list if 2022 in p.get("years_valid", [2022])}
+    for k, props_list in code_table_direct.items()
+}
+code_to_props_range_2022 = {
+    k: {
+        (p["code_min"], p["code_max"]): p
+        for p in props_list
+        if 2022 in p.get("years_valid", [2022])
+    }
+    for k, props_list in code_table_range.items()
+}
+description_to_props_range_direct_2022 = {
+    k: {
+        p["description"]: p
+        for p in props_list
+        if p["type"] == "range_direct" and 2022 in p.get("years_valid", [2022])
+    }
+    for k, props_list in code_table_range.items()
+}
 
 
 # TODO convert this to a function instead?
@@ -47,57 +70,80 @@ geometry_match = {
 def description_to_code(column, description):
     """Docstring TODO"""
 
+    # handle column name variants
     if column in [f"gta06_{type}" for type in _geometry_types]:
-        raise ValueError("gta06 is not yet implemented")
-
+        column = "gta06"
     elif column in [f"mun_{type}" for type in _geometry_types]:
-        raise ValueError("mun is not yet implemented")
-
+        column = "mun"
     elif column in [f"pd_{type}" for type in _geometry_types]:
-        # direct lookup
-        raise ValueError("pd is not yet implemented")
-
+        column = "pd"
     elif column in [f"region_{type}" for type in _geometry_types]:
-        raise ValueError("region is not yet implemented")
-
+        column = "region"
     elif column in [f"tts22_{type}" for type in _geometry_types]:
-        try:
-            code = int(description)
-            return code
-        except ValueError, TypeError:
-            if description == "External Undefined":
-                return 99998
-            elif description == "Unknown":
-                return 99999
-            else:
-                raise ValueError(
-                    f"Unable to convert {description} to a tts 2022 zone number"
-                )
+        column = "tts22"
 
-    elif column == "mode_prime":
-        lookup = code_table.get(column)
-        if lookup:
-            lookup_results = [l for l in lookup if l["description"] == description]
-            if not lookup_results:
-                raise ValueError(
-                    f"Unable to find description to code conversion for mode_prime: {description}"
-                )
-            if len(lookup_results) > 1:
-                raise ValueError(
-                    f"Found multiple description to code conversions for mode_prime: {description}"
-                )
-            lookup_result = cast(CodeLookupDirect, lookup_results[0])
-            return lookup_result["code"]
+    # convert description to matching code value
+    if column in code_table_direct:
+        lookup = description_to_props_direct_2022[column]
+        props = lookup.get(description)
+        if props:
+            return props["code"]
         else:
             raise ValueError(
-                f"Unable to find description to code conversion lookup table for {column}."
+                f"Unable to find description to code conversion for {column}: {description}"
             )
+    elif column in code_table_range:
+        # return descriptions that can be converted to integers if they are in the known ranges
+        try:
+            code = int(description)
+            lookup = code_to_props_range_2022[column]
+            for min, max in lookup:
+                if min <= int(description) <= max:
+                    return code
+        # check string descriptions for direct lookup matches
+        except ValueError, TypeError:
+            lookup = description_to_props_range_direct_2022[column]
+            props = lookup.get(description)
+            if props:
+                return props["code"]
+            else:
+                raise ValueError(
+                    f"Unable to find description to code conversion for {column}: {description}"
+                )
+        # handle descriptions that can be converted to integers that are not within the known ranges
+        else:
+            raise ValueError(
+                f"Unable to find description to code conversion for {column}: {description}. {description} not in known range for {column} values."
+            )
+    else:
+        raise ValueError(
+            f"Description to code conversion for {column} is not yet implemented"
+        )
 
 
 def code_to_description(column, code):
     """Docstring TODO"""
 
-    pass
+    if column in code_table_direct:
+        lookup = code_to_props_direct_2022[column]
+        props = lookup.get(code)
+        if props:
+            return props["description"]
+        else:
+            raise ValueError(
+                f"Unable to find code to description conversion for {column}: {code}"
+            )
+    elif column in code_table_range and isinstance(code, int):
+        lookup = code_to_props_range_2022[column]
+        for key in lookup:
+            min, max = key
+            if min <= code <= max:
+                props = lookup[key]
+                return props.get("description", str(code))
+    else:
+        raise ValueError(
+            f"Code to description conversion for {column} is not yet implemented"
+        )
 
 
 attributes = {
