@@ -60,10 +60,10 @@ Cross Tabulation Features
 "accs", "dest", "egrs", "emp", "hhld", "orig", "sch"
 
 - [ ] `region`: Regional municipality
-- [ ] `pd`: Planning district
+- [x] `pd`: Planning district
 - [ ] `ward`: Ward number
 - [ ] `gta06`: 2006 GTA zone
-- [ ] `tts22`: 2022 TTS zone
+- [x] `tts22`: 2022 TTS zone
 - [ ] `ggh4`: GGHM V4 zone
 - [ ] `ggh5`: GGHM V5 zone
 
@@ -194,7 +194,7 @@ Cross Tabulation Features
 #### Trip Details
 
 - [ ] `start_time`: Start time of trip
-- [ ] `mode_prime`: Primary travel mode of trip
+- [x] `mode_prime`: Primary travel mode of trip
 - [ ] `trip_purp`: Trip purpose
 - [ ] `purp_orig2022`: 2022 Trip Purpose of Origin
 - [ ] `purp_orig`: Trip Purpose of Origin

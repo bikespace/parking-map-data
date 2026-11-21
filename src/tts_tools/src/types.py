@@ -1,9 +1,15 @@
+from pathlib import Path
 from typing import Literal, NotRequired, TypedDict
 
 TTSYear = Literal[1986, 1991, 1996, 2001, 2006, 2011, 2016, 2022]
 TTSMetric = Literal["household", "person", "trip", "transit"]
 
 CrossTabType = Literal["csv", "col"]
+
+
+class TTSGeometry(TypedDict):
+    file: Path
+    key: str
 
 
 class CodeLookupBase(TypedDict):
@@ -30,3 +36,6 @@ class CodeLookupRangeDirect(CodeLookupBase):
     code_max: int
     code: int
     description: str
+
+
+type CodeLookup = CodeLookupDirect | CodeLookupRange | CodeLookupRangeDirect

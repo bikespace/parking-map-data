@@ -8,7 +8,7 @@ from typing import cast
 import geopandas as gpd
 import pandas as pd
 
-from .structure.structure_2022 import description_to_code, geometry_match
+from .structure.structure_2022 import description_to_code, get_geometry
 from .types import CrossTabType, TTSMetric, TTSYear
 
 # set up logging
@@ -54,7 +54,7 @@ class TTSCrossTabulation:
     def gdf(self) -> gpd.GeoDataFrame:
         # TODO add additional years to the gdf matching, not just 2022
 
-        geometry = geometry_match.get(self.metadata.row_attribute, None)
+        geometry = get_geometry(self.metadata.row_attribute)
         if geometry:
             match_key = str(geometry["key"])
             geometry_gdf = gpd.read_file(geometry["file"]).set_index(match_key)
