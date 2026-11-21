@@ -151,6 +151,9 @@ def code_to_description(column, code):
                 props = lookup[key]
                 check_year_validity(props)
                 return props.get("description", str(code))
+        raise ValueError(
+            f"Unable to find code to description conversion for {column}: {code}. {code} not in known range for {column} values."
+        )
     else:
         raise ValueError(
             f"Code to description conversion for {column} is not yet implemented"
