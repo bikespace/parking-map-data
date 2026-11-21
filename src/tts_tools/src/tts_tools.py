@@ -38,25 +38,14 @@ class TTSCrossTabulation:
     TODO describe key methods and attributes
     """
 
-    # TODO convert the df and gdf properties to get functions and add a param for friendly row/column names or not
+    # TODO add a param for friendly row/column names or not in df/gdf functions
 
     def __init__(self, df: pd.DataFrame, metadata: TTSCrossTabulationMetadata):
         self._df = df
         self._metadata = metadata
 
-    # TODO add __repr__
-
-    @property
-    def metadata(self) -> TTSCrossTabulationMetadata:
-        return self._metadata
-
-    @property
-    def df(self) -> pd.DataFrame:
-        return self._df
-
-    @property
-    def gdf(self) -> gpd.GeoDataFrame:
-        geometry = get_geometry(self.metadata.row_attribute)
+        # check if there is matching geometry for the row_attribute and populate self._gdf if there is
+        geometry = get_geometry(self._metadata.row_attribute)
         if geometry:
             match_key = str(geometry["key"])
             geometry_gdf = gpd.read_file(geometry["file"]).set_index(match_key)
@@ -75,12 +64,34 @@ class TTSCrossTabulation:
                     f"No matching geometry was found for {output_gdf.geometry.isna().sum()} of {len(output_gdf)} fields in {output_gdf.index.name}."
                 )
 
+            self._gdf = output_gdf
+
+        else:
+            self._gdf = None
+
+    def __repr__(self) -> str:
+        if self._metadata.expansion_factor is None:
+            expansion_description = "not specified"
+        elif self._metadata.expansion_factor:
+            expansion_description = "on"
+        else:
+            expansion_description = "off"
+        return f"<TTSCrossTabulation {self._metadata.year}: {self._metadata.row_attribute} x {self._metadata.column_attribute} (Expansion factor: {expansion_description})>"
+
+    @property
+    def metadata(self) -> TTSCrossTabulationMetadata:
+        return self._metadata
+
+    def get_df(self) -> pd.DataFrame:
+        return self._df
+
+    def get_gdf(self) -> gpd.GeoDataFrame:
+        if self._gdf is not None:
+            return self._gdf
         else:
             raise ValueError(
-                f"No geometry found to match row attribute {self.metadata.row_attribute}"
+                f"No geometry found to match row attribute {self._metadata.row_attribute}"
             )
-
-        return output_gdf
 
     # TODO add a geojson save file option that adds the metadata
 
