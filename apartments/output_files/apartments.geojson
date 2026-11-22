@@ -26577,7 +26577,7 @@
         "YEAR_OF_REPLACEMENT": 2014,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "90 PARMA CRT",
-        "LATITUDE": 43.7170244645,
+        "LATITUDE": 43.717024464999994,
         "LONGITUDE": -79.3003576095,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
@@ -26605,7 +26605,7 @@
         "type": "Point",
         "coordinates": [
           -79.3003576095,
-          43.7170244645
+          43.717024464999994
         ]
       }
     },
@@ -99303,7 +99303,7 @@
         "WARD": 13,
         "YEAR_BUILT": 1992,
         "YEAR_REGISTERED": 2017,
-        "SITE_ADDRESS_y": "205 PARLIAMENT ST",
+        "SITE_ADDRESS_y": "20 ANNA HILLIARD LANE",
         "LATITUDE": 43.656443931,
         "LONGITUDE": -79.364457056,
         "ward_code": "13",
@@ -102811,8 +102811,8 @@
         "YEAR_OF_REPLACEMENT": 1993,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "5 WAKUNDA PL",
-        "LATITUDE": 43.7156588622,
-        "LONGITUDE": -79.30438010665,
+        "LATITUDE": 43.7155652564,
+        "LONGITUDE": -79.3046724013,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -102838,8 +102838,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.30438010665,
-          43.7156588622
+          -79.3046724013,
+          43.7155652564
         ]
       }
     },
