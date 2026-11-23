@@ -1727,21 +1727,6 @@
       "type": "Feature",
       "properties": {
         "amenity": "bicycle_parking",
-        "meta_feature_last_updated": "2010-09-08T05:34:36+00:00",
-        "meta_osm_id": "node/902315687"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -79.4354919,
-          43.6573671
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "amenity": "bicycle_parking",
         "meta_feature_last_updated": "2010-09-19T04:07:03+00:00",
         "meta_osm_id": "node/917880383"
       },
@@ -57507,7 +57492,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-11-22T17:00:12+00:00",
         "meta_osm_id": "node/13112381996"
       },
       "geometry": {
@@ -57524,7 +57510,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-11-22T17:00:15+00:00",
         "meta_osm_id": "node/13112381997"
       },
       "geometry": {
@@ -57541,7 +57528,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-11-22T17:00:09+00:00",
         "meta_osm_id": "node/13112381998"
       },
       "geometry": {
@@ -57558,7 +57546,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-11-22T17:00:04+00:00",
         "meta_osm_id": "node/13112381999"
       },
       "geometry": {
@@ -57575,7 +57564,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-11-22T16:59:58+00:00",
         "meta_osm_id": "node/13112382000"
       },
       "geometry": {
@@ -57592,7 +57582,8 @@
         "amenity": "bicycle_parking",
         "bicycle_parking": "bollard",
         "capacity": "2",
-        "meta_feature_last_updated": "2025-09-01T12:57:24+00:00",
+        "covered": "no",
+        "meta_feature_last_updated": "2026-11-22T17:00:01+00:00",
         "meta_osm_id": "node/13112384001"
       },
       "geometry": {
@@ -100218,6 +100209,194 @@
     {
       "type": "Feature",
       "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "node/14408306278"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.435233,
+          43.6583057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "5",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "node/14408306279"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4362542,
+          43.6571861
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "2",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "node/14408306280"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4351628,
+          43.6583201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "10",
+        "covered": "yes",
+        "description": "In underground garage",
+        "fee": "no",
+        "level": "-1",
+        "quantity": "2",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "node/14408306282"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4337673,
+          43.6551225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "5",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "node/14408306283"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4339937,
+          43.6558005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "14",
+        "covered": "no",
+        "fee": "no",
+        "quantity": "2",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "node/14408306287"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4350493,
+          43.6561702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "3",
+        "covered": "yes",
+        "description": "In underground garage next to cart return",
+        "fee": "no",
+        "level": "-1",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "node/14408306290"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4339736,
+          43.6557404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "covered": "yes",
+        "description": "In underground garage",
+        "fee": "no",
+        "level": "-1",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "node/14408306291"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4338031,
+          43.6550908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "7",
+        "covered": "no",
+        "fee": "no",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "node/14408306292"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.4350909,
+          43.6570665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "access": "customers",
         "amenity": "bicycle_parking",
         "bicycle_parking": "lockers",
@@ -103375,6 +103554,89 @@
           [
             -79.3754486,
             43.6691547
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "rack",
+        "capacity": "15",
+        "cargo_bike": "yes",
+        "colour": "red",
+        "covered": "no",
+        "fee": "no",
+        "quantity": "3",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "way/1583547319"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.4378509,
+            43.6578699
+          ],
+          [
+            -79.4377896,
+            43.6578817
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "stands",
+        "capacity": "14",
+        "covered": "no",
+        "fee": "no",
+        "quantity": "7",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "way/1583547320"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.4358141,
+            43.6582852
+          ],
+          [
+            -79.4358567,
+            43.6583779
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "access": "yes",
+        "amenity": "bicycle_parking",
+        "bicycle_parking": "wall_loops",
+        "capacity": "15",
+        "covered": "no",
+        "fee": "no",
+        "quantity": "3",
+        "meta_feature_last_updated": "2026-11-23T03:17:27+00:00",
+        "meta_osm_id": "way/1583547321"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.4361595,
+            43.6572325
+          ],
+          [
+            -79.4362428,
+            43.6572159
           ]
         ]
       }
