@@ -1,5 +1,6 @@
 """Functions for downstream processing of bicycle_parking data, e.g. data clustering and extracting city ref tags from OpenStreetMap features."""
 
+import hashlib
 from typing import Literal
 
 import geopandas as gpd
@@ -90,12 +91,76 @@ clustering_schema = pa.DataFrameSchema(
     }
 )
 
+# City of Toronto source reference id columns, in lookup priority order.
+# `ring_ref_columns` is a subset since bollards only ever come from one dataset.
+ring_ref_columns = ["ref:open.toronto.ca:street-furniture-bicycle-parking:id"]
+rack_ref_columns = [
+    "ref:open.toronto.ca:street-furniture-bicycle-parking:id",
+    "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id",
+    "ref:open.toronto.ca:bicycle-parking-racks:objectid",
+]
+
+
+def get_member_ref_id(row: pd.Series, ref_columns: list[str]) -> str:
+    """Return a stable identifier for an individual (pre-cluster) parking feature row.
+
+    Checks `ref_columns` in priority order and returns the first non-null source reference
+    id found; if none of the row's source datasets provide one, falls back to a key derived
+    from its rounded coordinates. This mirrors the two-tier priority the frontend's
+    `parkingFeatureKey()` (bikespace_frontend/src/utils/map-utils/matchSubmissionsToParking.ts)
+    already uses, so the pipeline and the UI identify the same row the same way.
+    """
+    for col in ref_columns:
+        if col in row.index and pd.notna(row[col]):
+            return str(row[col])
+    x, y = row.geometry.x, row.geometry.y
+    return f"{round(x, 6)},{round(y, 6)}"
+
+
+def _assign_cluster_ids(
+    gdf: gpd.GeoDataFrame,
+    ref_columns: list[str],
+    cluster_col: str = "cluster",
+) -> tuple[gpd.GeoDataFrame, dict[str, str]]:
+    """Assign a `meta_cluster_id` to every row belonging to a DBSCAN cluster label with 2+ members.
+
+    The id is a short hash of the sorted member reference ids (see `get_member_ref_id`), so it's
+    deterministic and stable across pipeline re-runs as long as cluster membership doesn't change.
+    Rows whose cluster label only has 1 member (not an actual merge) get `pd.NA`.
+
+    Returns
+    -------
+    gdf: GeoDataFrame, same rows/order as input, with a new `meta_cluster_id` column added
+    ref_id_to_cluster_id: dict mapping each clustered member's own reference id (from
+      `get_member_ref_id`) to its `meta_cluster_id`, so pre-dissolve individual records elsewhere
+      (e.g. `open_toronto_ca_unclustered.geojson`) can be tagged with the same id.
+    """
+    ref_ids = gdf.apply(lambda row: get_member_ref_id(row, ref_columns), axis=1)
+    group_sizes = gdf.groupby(cluster_col)[cluster_col].transform("size")
+
+    cluster_ids_by_label = {
+        label: hashlib.md5(
+            "|".join(sorted(ref_ids[gdf[cluster_col] == label])).encode()
+        ).hexdigest()[:12]
+        for label in gdf.loc[group_sizes >= 2, cluster_col].unique()
+    }
+
+    gdf = gdf.assign(meta_cluster_id=gdf[cluster_col].map(cluster_ids_by_label))
+
+    ref_id_to_cluster_id = {
+        ref_id: cluster_ids_by_label[label]
+        for ref_id, label, size in zip(ref_ids, gdf[cluster_col], group_sizes)
+        if size >= 2
+    }
+
+    return gdf, ref_id_to_cluster_id
+
 
 @pa.check_input(clustering_schema, "rings")
 def group_proximate_rings(
     rings: gpd.GeoDataFrame,
     radius: float = 5.0,
-) -> gpd.GeoDataFrame:
+) -> tuple[gpd.GeoDataFrame, dict[str, str]]:
     """Converts geodataframe of bollards (ring and post) from the "street-furniture-bicycle-parking" dataset and aggregates (dissolves) by proximity if bollards are within 5m of each other.
 
     Parameters
@@ -106,11 +171,13 @@ def group_proximate_rings(
     Returns
     -------
     gdf: geopandas.GeoDataFrame
+    member_cluster_ids: dict mapping each clustered member's reference id (see `get_member_ref_id`)
+      to its `meta_cluster_id`, for tagging the pre-dissolve individual records elsewhere.
     """
 
     # do not process if input dataframe is empty
     if len(rings) == 0:
-        return rings
+        return rings, {}
 
     # PART 1 - CALCULATE CLUSTERS
 
@@ -123,6 +190,11 @@ def group_proximate_rings(
 
     # Assign clusters back to GeoDataFrame
     rings = rings.assign(cluster=clusters.labels_)
+
+    # tag rows that are part of an actual (2+ member) cluster with a shared meta_cluster_id
+    rings, member_cluster_ids = _assign_cluster_ids(
+        rings, ring_ref_columns, cluster_col="cluster"
+    )
 
     # PART 2 - AGGREGATE (DISSOLVE) BY CLUSTER
 
@@ -146,6 +218,7 @@ def group_proximate_rings(
         "meta_source_license_url": "first",  # does not vary
         "meta_source_last_updated": "first",  # does not vary
         "quantity": "sum",
+        "meta_cluster_id": "first",  # constant within a cluster
     }
 
     applied_aggregations = {
@@ -168,7 +241,7 @@ def group_proximate_rings(
     out_rings = rings.astype({"quantity": "Int64"}).astype(
         {"quantity": "str"}
     )  # prevent float in string output
-    return out_rings
+    return out_rings, member_cluster_ids
 
 
 def combine_descriptions(mylist: list[str]) -> str:
@@ -181,7 +254,7 @@ def combine_descriptions(mylist: list[str]) -> str:
 def group_proximate_racks(
     racks: gpd.GeoDataFrame,
     radius: float = 30.0,
-) -> gpd.GeoDataFrame:
+) -> tuple[gpd.GeoDataFrame, dict[str, str]]:
     """Takes geodataframe of bicycle racks from multiple city datasets and aggregates (dissolves) by proximity if racks are within 30m of each other.
 
     Parameters
@@ -192,11 +265,13 @@ def group_proximate_racks(
     Returns
     -------
     gdf: geopandas.GeoDataFrame
+    member_cluster_ids: dict mapping each clustered member's reference id (see `get_member_ref_id`)
+      to its `meta_cluster_id`, for tagging the pre-dissolve individual records elsewhere.
     """
 
     # do not process if input dataframe is empty
     if len(racks) == 0:
-        return racks
+        return racks, {}
 
     # PART 1 - DEFINE CLUSTERS
 
@@ -226,7 +301,13 @@ def group_proximate_racks(
     # PART 2 - AGGREGATE (DISSOLVE) CLUSTERS
 
     # skip if no clusters were found
+    member_cluster_ids: dict[str, str] = {}
     if len(racks_clusters) > 0:
+        # tag rows that are part of an actual (2+ member) cluster with a shared meta_cluster_id
+        racks_clusters, member_cluster_ids = _assign_cluster_ids(
+            racks_clusters, rack_ref_columns, cluster_col="cluster"
+        )
+
         aggregations = {
             "amenity": "first",  # unique in dataset
             "bicycle_parking": "first",  # unique in subset
@@ -253,6 +334,7 @@ def group_proximate_racks(
             "seasonal": summarize_freq,  # debug
             "meta_status": summarize_freq,  # debug
             "meta_business_improvement_area": summarize_freq,  # debug
+            "meta_cluster_id": "first",  # constant within a cluster
         }
 
         applied_aggregations = {
@@ -268,9 +350,12 @@ def group_proximate_racks(
         # get centroid and set as geometry
         racks_clusters["geometry"] = racks_clusters.centroid
 
+    # ensure singles carry the same column (as pd.NA) so concat doesn't lose it
+    racks_singles = racks_singles.assign(meta_cluster_id=pd.NA)
+
     # combine racks
     racks_recombined = gpd.GeoDataFrame(
         pd.concat([racks_clusters, racks_singles])
     ).drop("cluster", axis=1)
 
-    return racks_recombined
+    return racks_recombined, member_cluster_ids

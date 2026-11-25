@@ -21,8 +21,10 @@ import pandas as pd
 import bikespace_data.bicycle_parking.conversions as conversions
 from bikespace_data.bicycle_parking.downstream import (
     extract_ref_tags,
+    get_member_ref_id,
     group_proximate_racks,
     group_proximate_rings,
+    rack_ref_columns,
 )
 from bikespace_data.bicycle_parking.sources.city_exclusions import (
     city_exclusions_getids,
@@ -424,7 +426,7 @@ def update_bicycle_parking(
         all_centroid_utm17N
     )
 
-    agg_bollards = group_proximate_rings(furniture_bollards)
+    agg_bollards, bollard_cluster_ids = group_proximate_rings(furniture_bollards)
     rings_clustered_utm17N = geopandas.GeoDataFrame(
         pd.concat([furniture_not_bollards, agg_bollards], ignore_index=True)
     ).convert_dtypes()
@@ -441,13 +443,25 @@ def update_bicycle_parking(
     assert len(city_racks) + len(not_city_racks) == len(rings_clustered_utm17N)
 
     # run rack clustering
-    agg_racks = group_proximate_racks(city_racks)
+    agg_racks, rack_cluster_ids = group_proximate_racks(city_racks)
     racks_clustered_utm17N = geopandas.GeoDataFrame(
         pd.concat([not_city_racks, agg_racks], ignore_index=True)
     ).convert_dtypes()
 
     # convert back to WGS 84
     all_sources = racks_clustered_utm17N.to_crs("EPSG:4326")
+
+    # propagate cluster membership onto the pre-cluster "unclustered" frame, so the frontend
+    # can look up a cluster's individual members by meta_cluster_id. Looked up by each row's
+    # own reference id (not by index) since `rings_clustered_utm17N` above was built with
+    # ignore_index=True and no longer aligns with `all_centroid_utm17N`'s original index.
+    member_cluster_ids = {**bollard_cluster_ids, **rack_cluster_ids}
+    all_centroid_utm17N = all_centroid_utm17N.assign(
+        meta_cluster_id=all_centroid_utm17N.apply(
+            lambda row: member_cluster_ids.get(get_member_ref_id(row, rack_ref_columns)),
+            axis=1,
+        )
+    )
 
     # Save display files
     # ------------------

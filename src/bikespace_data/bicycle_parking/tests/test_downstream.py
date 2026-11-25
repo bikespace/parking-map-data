@@ -4,6 +4,8 @@ import pandas as pd
 from bikespace_data.bicycle_parking.downstream import (
     combine_list,
     extract_ref_tags,
+    get_member_ref_id,
+    rack_ref_columns,
     summarize_boolean,
     summarize_freq,
     group_proximate_rings,
@@ -186,6 +188,39 @@ def test_summarize_boolean():
     assert summarize_boolean(df["other_values"]) == "<NA> (n=1), yes (n=1), blue (n=1)"
 
 
+def test_get_member_ref_id():
+    """Should return the first non-null ref id column in priority order, or fall back to a
+    rounded-coordinate key (matching the frontend's parkingFeatureKey() priority) when none
+    of the row's source datasets provide one."""
+    has_ref_id = gpd.GeoDataFrame.from_features(
+        [
+            {
+                "type": "Feature",
+                "properties": {
+                    "ref:open.toronto.ca:bicycle-parking-high-capacity-outdoor:id": "78",
+                    "ref:open.toronto.ca:bicycle-parking-racks:objectid": "52",
+                },
+                "geometry": {"type": "Point", "coordinates": [-79.4658072, 43.6544076]},
+            }
+        ],
+        crs="EPSG:4326",
+    ).iloc[0]
+    # no street-furniture id present, so the next column in priority order (high-capacity) wins
+    assert get_member_ref_id(has_ref_id, rack_ref_columns) == "78"
+
+    no_ref_id = gpd.GeoDataFrame.from_features(
+        [
+            {
+                "type": "Feature",
+                "properties": {"description": "no ref ids"},
+                "geometry": {"type": "Point", "coordinates": [-79.4, 43.66]},
+            }
+        ],
+        crs="EPSG:4326",
+    ).iloc[0]
+    assert get_member_ref_id(no_ref_id, rack_ref_columns) == "-79.4,43.66"
+
+
 def test_combine_list():
     df = pd.DataFrame(
         {
@@ -297,20 +332,39 @@ def test_group_proximate_rings():
     - dataset with only points that are not within 5m of each other (should not cluster, no dbscan matches)
     - empty dataset with no points (should return empty table)
     """
-    expected_cluster = group_proximate_rings(mock_clusterable_rings)
+    expected_cluster, member_cluster_ids = group_proximate_rings(mock_clusterable_rings)
     # one cluster of three, two unclustered. Quantity should be a string and there should not be "null" string values in output (should be pd.NA)
     assert len(expected_cluster) == 3
     assert "3" in expected_cluster["quantity"].unique()
     assert "null" not in expected_cluster["capacity"].dropna().unique()
     assert expected_cluster["capacity"].hasnans
 
-    expected_nocluster = group_proximate_rings(mock_not_clusterable_rings)
+    # the row for the 3-member cluster should carry a meta_cluster_id; the two singleton
+    # "clusters" (dbscan min_samples=1 gives every row a label) should not
+    clustered_row = expected_cluster[expected_cluster["quantity"] == "3"]
+    assert clustered_row["meta_cluster_id"].notna().all()
+    singleton_rows = expected_cluster[expected_cluster["quantity"] != "3"]
+    assert singleton_rows["meta_cluster_id"].isna().all()
+
+    # the member lookup should only contain entries for the actual (3-member) cluster, all
+    # sharing the same id as the dissolved row, keyed by each member's own coordinate-based id
+    # (none of these mock rows have a ref:open.toronto.ca:... id, so they fall back to that)
+    assert len(member_cluster_ids) == 3
+    assert len(set(member_cluster_ids.values())) == 1
+    assert clustered_row["meta_cluster_id"].iloc[0] in member_cluster_ids.values()
+
+    expected_nocluster, nocluster_member_ids = group_proximate_rings(
+        mock_not_clusterable_rings
+    )
     # two unclustered
     assert len(expected_nocluster) == 2
+    assert expected_nocluster["meta_cluster_id"].isna().all()
+    assert nocluster_member_ids == {}
 
-    expected_empty = group_proximate_rings(mock_empty_rings_table)
+    expected_empty, empty_member_ids = group_proximate_rings(mock_empty_rings_table)
     # empty table in, empty table out
     assert len(expected_empty) == 0
+    assert empty_member_ids == {}
 
 
 # see properties.description for test case notes
@@ -427,14 +481,34 @@ def test_group_proximate_racks():
     - dataset with only points that are not within 30m of each other (should not cluster, no dbscan matches)
     - empty dataset with no points (should return empty table)
     """
-    expected_cluster = group_proximate_racks(mock_clusterable_city_racks)
+    expected_cluster, member_cluster_ids = group_proximate_racks(
+        mock_clusterable_city_racks
+    )
     # one cluster of three, two within 30m but from same dataset, two not within 30m
     assert len(expected_cluster) == 5
 
-    expected_nocluster = group_proximate_racks(mock_not_clusterable_city_racks)
+    # the dissolved 3-source cluster row should carry a meta_cluster_id; the 4 rows that
+    # reverted to singles (same-dataset-only pair + the two isolated points) should not
+    clustered_rows = expected_cluster[expected_cluster["meta_cluster_id"].notna()]
+    assert len(clustered_rows) == 1
+    singleton_rows = expected_cluster[expected_cluster["meta_cluster_id"].isna()]
+    assert len(singleton_rows) == 4
+
+    # member lookup has one entry per member of the actual 3-source cluster, all sharing the
+    # dissolved row's id (keyed by coordinate-based fallback id, since these mocks have no
+    # ref:open.toronto.ca:... id)
+    assert len(member_cluster_ids) == 3
+    assert set(member_cluster_ids.values()) == set(clustered_rows["meta_cluster_id"])
+
+    expected_nocluster, nocluster_member_ids = group_proximate_racks(
+        mock_not_clusterable_city_racks
+    )
     # two not within 30m
     assert len(expected_nocluster) == 2
+    assert expected_nocluster["meta_cluster_id"].isna().all()
+    assert nocluster_member_ids == {}
 
-    expected_empty = group_proximate_racks(mock_empty_racks_table)
+    expected_empty, empty_member_ids = group_proximate_racks(mock_empty_racks_table)
     # empty table in, empty table out
     assert len(expected_empty) == 0
+    assert empty_member_ids == {}
