@@ -34030,8 +34030,8 @@
         "YEAR_BUILT": 1958,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "10 KINGS POINT DR",
-        "LATITUDE": 43.6398314682,
-        "LONGITUDE": -79.4928529071,
+        "LATITUDE": 43.6398271806,
+        "LONGITUDE": -79.49285127355,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -34057,8 +34057,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.4928529071,
-          43.6398314682
+          -79.49285127355,
+          43.6398271806
         ]
       }
     },
@@ -59698,8 +59698,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 B QUEEN ST E",
-        "LATITUDE": 43.6747570284,
-        "LONGITUDE": -79.2771547349,
+        "LATITUDE": 43.674874537700006,
+        "LONGITUDE": -79.27725205495,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -59725,8 +59725,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2771547349,
-          43.6747570284
+          -79.27725205495,
+          43.674874537700006
         ]
       }
     },
@@ -86320,8 +86320,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 A QUEEN ST E",
-        "LATITUDE": 43.6746668318,
-        "LONGITUDE": -79.2776535124,
+        "LATITUDE": 43.6747791679,
+        "LONGITUDE": -79.2776969152,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -86347,8 +86347,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2776535124,
-          43.6746668318
+          -79.2776969152,
+          43.6747791679
         ]
       }
     },
@@ -86368,8 +86368,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 G QUEEN ST E",
-        "LATITUDE": 43.6747570284,
-        "LONGITUDE": -79.2771547349,
+        "LATITUDE": 43.674874537700006,
+        "LONGITUDE": -79.27725205495,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -86395,8 +86395,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2771547349,
-          43.6747570284
+          -79.27725205495,
+          43.674874537700006
         ]
       }
     },
@@ -132713,8 +132713,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 F QUEEN ST E",
-        "LATITUDE": 43.6746668318,
-        "LONGITUDE": -79.2776535124,
+        "LATITUDE": 43.6747791679,
+        "LONGITUDE": -79.2776969152,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -132740,8 +132740,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2776535124,
-          43.6746668318
+          -79.2776969152,
+          43.6747791679
         ]
       }
     },
@@ -155635,8 +155635,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3017 QUEEN ST E",
-        "LATITUDE": 43.6747570284,
-        "LONGITUDE": -79.2771547349,
+        "LATITUDE": 43.674874537700006,
+        "LONGITUDE": -79.27725205495,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -155662,8 +155662,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.2771547349,
-          43.6747570284
+          -79.27725205495,
+          43.674874537700006
         ]
       }
     },
@@ -155683,8 +155683,8 @@
         "bike_parking_indoor": 50,
         "bike_parking_outdoor": 18,
         "SITE_ADDRESS_y": "3015 QUEEN ST E",
-        "LATITUDE": 43.6746861713,
-        "LONGITUDE": -79.27752142579999,
+        "LATITUDE": 43.6746668318,
+        "LONGITUDE": -79.2776535124,
         "ward_code": "20",
         "ward_name": "Scarborough Southwest",
         "ward_full": "Scarborough Southwest (20)",
@@ -155710,8 +155710,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.27752142579999,
-          43.6746861713
+          -79.2776535124,
+          43.6746668318
         ]
       }
     },
@@ -157653,8 +157653,8 @@
         "YEAR_BUILT": 1954,
         "YEAR_REGISTERED": 2024,
         "SITE_ADDRESS_y": "12-14 THIRTY NINTH ST",
-        "LATITUDE": 43.58885411,
-        "LONGITUDE": -79.539116113,
+        "LATITUDE": 43.588899388141094,
+        "LONGITUDE": -79.53921895217509,
         "ward_code": "03",
         "ward_name": "Etobicoke-Lakeshore",
         "ward_full": "Etobicoke-Lakeshore (03)",
@@ -157680,8 +157680,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.539116113,
-          43.58885411
+          -79.53921895217509,
+          43.588899388141094
         ]
       }
     },
