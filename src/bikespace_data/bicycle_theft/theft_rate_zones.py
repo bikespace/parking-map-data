@@ -31,8 +31,6 @@ AREA_CRS = "EPSG:3857"
 SHORELINE_CRS = "EPSG:32617"
 # The Toronto shore and islands are the outer and inner rings of this relation.
 LAKE_ONTARIO_RELATION_ID = 1206310
-# The relation's geometry is large. BikeDataOSM's client timeout defaults to 25s.
-LAKE_ONTARIO_TIMEOUT = 180
 
 
 def load_thefts_gdf(path: Path | str) -> gpd.GeoDataFrame:
@@ -289,11 +287,7 @@ def load_lake_ontario() -> gpd.GeoDataFrame:
     it from the configured Overpass server. Inner rings are islands, so they stay
     holes and a later difference leaves that land in place.
     """
-    downloaded = BikeDataOSM(
-        "lake_ontario",
-        _lake_query(),
-        timeout=LAKE_ONTARIO_TIMEOUT,
-    )
+    downloaded = BikeDataOSM("lake_ontario", _lake_query())
     features = downloaded.response_geojson.get("features") or []
     if not features:
         raise RuntimeError("Lake Ontario download did not contain a polygon.")

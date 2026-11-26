@@ -378,7 +378,7 @@ def test_load_lake_ontario_uses_bike_data_osm_and_keeps_islands(mocker):
 
     lake = load_lake_ontario()
 
-    constructor.assert_called_once_with("lake_ontario", "relation(1206310);", timeout=180)
+    constructor.assert_called_once_with("lake_ontario", "relation(1206310);")
     assert len(lake) == 1
     assert lake.crs.to_epsg() == 4326
     assert lake.covers(gpd.GeoSeries([Point(-79.39, 43.625)], crs="EPSG:4326")).all()

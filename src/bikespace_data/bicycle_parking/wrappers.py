@@ -173,7 +173,7 @@ class BikeDataOSM(BikeData):
         ),
         stop=stop_after_attempt(3),
     )
-    def __init__(self, dataset_name: str, overpass_query: str, timeout: int | None = None):
+    def __init__(self, dataset_name: str, overpass_query: str):
         super().__init__(dataset_name)
 
         # load overpass API url from environment or .env file, if specified
@@ -188,15 +188,12 @@ class BikeDataOSM(BikeData):
         )
         print(f"Requesting OpenStreetMap data from {OVERPASS_API_NAME}")
 
-        api_kwargs = {
-            "endpoint": OVERPASS_API_URL,
-            "headers": {
+        api = overpass.API(
+            endpoint=OVERPASS_API_URL,
+            headers={
                 "User-Agent": "bikespace-parking-map-data (https://github.com/bikespace/parking-map-data)"
             },
-        }
-        if timeout is not None:
-            api_kwargs["timeout"] = timeout
-        api = overpass.API(**api_kwargs)
+        )
         self._response = api.get(
             overpass_query, responseformat="geojson", verbosity="geom"
         )
