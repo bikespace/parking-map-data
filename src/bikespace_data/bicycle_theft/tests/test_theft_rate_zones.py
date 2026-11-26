@@ -1,3 +1,5 @@
+import json
+
 import geopandas as gpd
 import pandas as pd
 import pytest
@@ -349,37 +351,34 @@ def test_clip_zones_outside_lake_keeps_an_island_hole():
     assert not clipped.covers(gpd.GeoSeries([Point(-79.39, 43.63)], crs="EPSG:4326")).any()
 
 
-def _ring(coords: list[tuple[float, float]]) -> list[dict[str, float]]:
-    return [{"lon": lon, "lat": lat} for lon, lat in coords]
-
-
-def test_load_lake_ontario_cuts_islands_out_of_the_water(mocker):
-    # Two outer ways form the lake. The inner way is an island, so it is a hole.
-    outer_a = _ring([(-79.40, 43.62), (-79.38, 43.62), (-79.38, 43.64)])
-    outer_b = _ring([(-79.38, 43.64), (-79.40, 43.64), (-79.40, 43.62)])
-    island = _ring(
-        [(-79.395, 43.628), (-79.385, 43.628), (-79.385, 43.632), (-79.395, 43.632), (-79.395, 43.628)]
+def _lake_geojson_with_island():
+    outer = Polygon(
+        [(-79.40, 43.62), (-79.38, 43.62), (-79.38, 43.64), (-79.40, 43.64), (-79.40, 43.62)]
     )
-    response = mocker.Mock(status_code=200)
-    response.json.return_value = {
-        "elements": [
-            {
-                "type": "relation",
-                "members": [
-                    {"type": "way", "role": "outer", "geometry": outer_a},
-                    {"type": "way", "role": "outer", "geometry": outer_b},
-                    {"type": "way", "role": "inner", "geometry": island},
-                ],
-            }
+    island = Polygon(
+        [
+            (-79.395, 43.628),
+            (-79.385, 43.628),
+            (-79.385, 43.632),
+            (-79.395, 43.632),
+            (-79.395, 43.628),
         ]
-    }
-    mocker.patch(
-        "bikespace_data.bicycle_theft.theft_rate_zones.requests.post",
-        return_value=response,
+    )
+    water = gpd.GeoDataFrame(geometry=[outer.difference(island)], crs="EPSG:4326")
+    return json.loads(water.to_json())
+
+
+def test_load_lake_ontario_uses_bike_data_osm_and_keeps_islands(mocker):
+    osm = mocker.Mock()
+    osm.response_geojson = _lake_geojson_with_island()
+    constructor = mocker.patch(
+        "bikespace_data.bicycle_theft.theft_rate_zones.BikeDataOSM",
+        return_value=osm,
     )
 
     lake = load_lake_ontario()
 
+    constructor.assert_called_once_with("lake_ontario", "relation(1206310);", timeout=180)
     assert len(lake) == 1
     assert lake.crs.to_epsg() == 4326
     assert lake.covers(gpd.GeoSeries([Point(-79.39, 43.625)], crs="EPSG:4326")).all()
@@ -387,11 +386,12 @@ def test_load_lake_ontario_cuts_islands_out_of_the_water(mocker):
     assert not lake.covers(gpd.GeoSeries([Point(-79.39, 43.65)], crs="EPSG:4326")).any()
 
 
-def test_load_lake_ontario_rejects_a_failed_request(mocker):
-    response = mocker.Mock(status_code=500)
+def test_load_lake_ontario_rejects_a_response_without_a_polygon(mocker):
+    osm = mocker.Mock()
+    osm.response_geojson = {"type": "FeatureCollection", "features": []}
     mocker.patch(
-        "bikespace_data.bicycle_theft.theft_rate_zones.requests.post",
-        return_value=response,
+        "bikespace_data.bicycle_theft.theft_rate_zones.BikeDataOSM",
+        return_value=osm,
     )
 
     with pytest.raises(RuntimeError, match="Lake Ontario"):

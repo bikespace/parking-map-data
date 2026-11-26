@@ -16,26 +16,23 @@ trip-balanced Manhattan zones from `bikespace_data.bicycle_theft.manhattan_zones
 """
 from __future__ import annotations
 
-import time
-from http import HTTPStatus
 from pathlib import Path
 from typing import Optional
 
 import geopandas as gpd
 import numpy as np
 import pandas as pd
-import requests
 import shapely
-from shapely.geometry import LineString, Point, Polygon
+from shapely.geometry import Point
+
+from bikespace_data.bicycle_parking.wrappers import BikeDataOSM
 
 AREA_CRS = "EPSG:3857"
 SHORELINE_CRS = "EPSG:32617"
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"
-OVERPASS_USER_AGENT = (
-    "bikespace-parking-map-data (https://github.com/bikespace/parking-map-data)"
-)
 # The Toronto shore and islands are the outer and inner rings of this relation.
 LAKE_ONTARIO_RELATION_ID = 1206310
+# The relation's geometry is large. BikeDataOSM's client timeout defaults to 25s.
+LAKE_ONTARIO_TIMEOUT = 180
 
 
 def load_thefts_gdf(path: Path | str) -> gpd.GeoDataFrame:
@@ -268,97 +265,8 @@ def aggregate_theft_rates(
 
 
 def _lake_query() -> str:
-    return (
-        "[out:json][timeout:180];\n"
-        f"relation({LAKE_ONTARIO_RELATION_ID});\n"
-        "out geom;"
-    )
-
-
-def _overpass_json(query: str) -> dict:
-    """POST a query to Overpass, retrying when the public server is at capacity."""
-    retryable = {429, HTTPStatus.BAD_GATEWAY, HTTPStatus.SERVICE_UNAVAILABLE, HTTPStatus.GATEWAY_TIMEOUT}
-    last_error: Exception | None = None
-    for attempt in range(3):
-        try:
-            response = requests.post(
-                OVERPASS_URL,
-                data={"data": query},
-                headers={"User-Agent": OVERPASS_USER_AGENT},
-                timeout=180,
-            )
-        except requests.RequestException as exc:
-            last_error = exc
-            time.sleep(2 * (attempt + 1))
-            continue
-        if response.status_code in retryable:
-            last_error = RuntimeError(f"status {response.status_code}")
-            time.sleep(2 * (attempt + 1))
-            continue
-        if response.status_code != HTTPStatus.OK:
-            raise RuntimeError(
-                f"Could not download Lake Ontario (status {response.status_code})."
-            )
-        payload = response.json()
-        if isinstance(payload, dict) and "elements" in payload:
-            return payload
-        raise RuntimeError("Lake Ontario response did not contain a relation.")
-    raise RuntimeError(f"Could not download Lake Ontario ({last_error}).")
-
-
-def _member_line(member: dict) -> LineString | None:
-    coords = [
-        (point["lon"], point["lat"])
-        for point in member.get("geometry") or []
-        if "lon" in point and "lat" in point
-    ]
-    if len(coords) < 2:
-        return None
-    return LineString(coords)
-
-
-def _endpoint(coord: tuple[float, float]) -> tuple[float, float]:
-    return (round(coord[0], 6), round(coord[1], 6))
-
-
-def _chain_ways(ways: list[LineString]) -> list[LineString]:
-    """Join way pieces that share an endpoint, reversing a piece when needed."""
-    unused = [list(way.coords) for way in ways]
-    chains: list[list[tuple[float, float]]] = []
-    while unused:
-        chain = unused.pop()
-        extended = True
-        while extended:
-            extended = False
-            start, end = _endpoint(chain[0]), _endpoint(chain[-1])
-            for index, coords in enumerate(unused):
-                other_start, other_end = _endpoint(coords[0]), _endpoint(coords[-1])
-                if other_start == end:
-                    chain.extend(coords[1:])
-                elif other_end == end:
-                    chain.extend(list(reversed(coords[:-1])))
-                elif other_end == start:
-                    chain = coords[:-1] + chain
-                elif other_start == start:
-                    chain = list(reversed(coords[1:])) + chain
-                else:
-                    continue
-                unused.pop(index)
-                extended = True
-                break
-        if _endpoint(chain[0]) == _endpoint(chain[-1]) and chain[0] != chain[-1]:
-            chain.append(chain[0])
-        if len(chain) >= 2:
-            chains.append(chain)
-    return [LineString(chain) for chain in chains]
-
-
-def _closed_rings(ways: list[LineString]) -> list[LineString]:
-    rings = []
-    for line in _chain_ways(ways):
-        if len(line.coords) >= 4 and _endpoint(line.coords[0]) == _endpoint(line.coords[-1]):
-            rings.append(line)
-    return rings
+    """Overpass QL body. BikeDataOSM adds the output statement and requests geometry."""
+    return f"relation({LAKE_ONTARIO_RELATION_ID});"
 
 
 def _as_polygons(geom):
@@ -374,50 +282,26 @@ def _as_polygons(geom):
     return geom
 
 
-def _ways_by_role(payload: dict) -> tuple[list[LineString], list[LineString]]:
-    outers: list[LineString] = []
-    inners: list[LineString] = []
-    for element in payload.get("elements") or []:
-        if element.get("type") != "relation":
-            continue
-        for member in element.get("members") or []:
-            if member.get("type") != "way":
-                continue
-            line = _member_line(member)
-            if line is None:
-                continue
-            if (member.get("role") or "outer") == "inner":
-                inners.append(line)
-            else:
-                outers.append(line)
-    return outers, inners
-
-
-def _lake_geometry(payload: dict):
-    """Build the lake polygon. Inner rings are islands, so they become holes."""
-    outers, inners = _ways_by_role(payload)
-    outer_rings = _closed_rings(outers)
-    if not outer_rings:
-        raise RuntimeError("Lake Ontario download did not contain a closed shoreline.")
-    water = shapely.union_all([Polygon(ring) for ring in outer_rings])
-    inner_rings = _closed_rings(inners)
-    if inner_rings:
-        islands = shapely.union_all([Polygon(ring) for ring in inner_rings])
-        water = water.difference(islands)
-    water = _as_polygons(water)
-    if water is None:
-        raise RuntimeError("Lake Ontario download did not contain a polygon.")
-    return water
-
-
 def load_lake_ontario() -> gpd.GeoDataFrame:
     """Download Lake Ontario as one polygon, with islands kept as holes.
 
-    OpenStreetMap relation 1206310 is the lake multipolygon. The outer ring is
-    water. Each inner ring is an island, so it is cut out of the water and a
-    later difference leaves that land in place.
+    OpenStreetMap relation 1206310 is the lake multipolygon. BikeDataOSM fetches
+    it from the configured Overpass server. Inner rings are islands, so they stay
+    holes and a later difference leaves that land in place.
     """
-    return gpd.GeoDataFrame(geometry=[_lake_geometry(_overpass_json(_lake_query()))], crs="EPSG:4326")
+    downloaded = BikeDataOSM(
+        "lake_ontario",
+        _lake_query(),
+        timeout=LAKE_ONTARIO_TIMEOUT,
+    )
+    features = downloaded.response_geojson.get("features") or []
+    if not features:
+        raise RuntimeError("Lake Ontario download did not contain a polygon.")
+    lake = gpd.GeoDataFrame.from_features(downloaded.response_geojson, crs="EPSG:4326")
+    water = _as_polygons(lake.union_all())
+    if water is None:
+        raise RuntimeError("Lake Ontario download did not contain a polygon.")
+    return gpd.GeoDataFrame(geometry=[water], crs="EPSG:4326")
 
 
 def clip_zones_outside_lake(
