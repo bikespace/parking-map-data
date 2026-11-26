@@ -7,6 +7,8 @@ Functions:
 - assign_thefts_to_zones
 - filter_to_complete_years
 - aggregate_theft_rates
+- load_lake_ontario
+- clip_zones_outside_lake
 - plot_theft_rates
 
 Works on any set of disjoint zone polygons with a `zone_id` column; the runner uses the
@@ -20,9 +22,15 @@ from typing import Optional
 import geopandas as gpd
 import numpy as np
 import pandas as pd
+import shapely
 from shapely.geometry import Point
 
+from bikespace_data.bicycle_parking.wrappers import BikeDataOSM
+
 AREA_CRS = "EPSG:3857"
+SHORELINE_CRS = "EPSG:32617"
+# The Toronto shore and islands are the outer and inner rings of this relation.
+LAKE_ONTARIO_RELATION_ID = 1206310
 
 
 def load_thefts_gdf(path: Path | str) -> gpd.GeoDataFrame:
@@ -252,6 +260,64 @@ def aggregate_theft_rates(
         result["daily_theft_estimate"] / result["bike_trips"].where(result["bike_trips"] > 0)
     ) * 1000
     return result
+
+
+def _lake_query() -> str:
+    """Overpass QL body. BikeDataOSM adds the output statement and requests geometry."""
+    return f"relation({LAKE_ONTARIO_RELATION_ID});"
+
+
+def _as_polygons(geom):
+    """Keep polygonal pieces and drop lines left behind by a difference."""
+    if geom is None or geom.is_empty:
+        return None
+    geom = shapely.make_valid(geom)
+    if geom.geom_type == "GeometryCollection":
+        pieces = [part for part in geom.geoms if part.geom_type in ("Polygon", "MultiPolygon")]
+        geom = shapely.union_all(pieces) if pieces else None
+    if geom is None or geom.is_empty or geom.geom_type not in ("Polygon", "MultiPolygon"):
+        return None
+    return geom
+
+
+def load_lake_ontario() -> gpd.GeoDataFrame:
+    """Download Lake Ontario as one polygon, with islands kept as holes.
+
+    OpenStreetMap relation 1206310 is the lake multipolygon. BikeDataOSM fetches
+    it from the configured Overpass server. Inner rings are islands, so they stay
+    holes and a later difference leaves that land in place.
+    """
+    downloaded = BikeDataOSM("lake_ontario", _lake_query())
+    features = downloaded.response_geojson.get("features") or []
+    if not features:
+        raise RuntimeError("Lake Ontario download did not contain a polygon.")
+    lake = gpd.GeoDataFrame.from_features(downloaded.response_geojson, crs="EPSG:4326")
+    water = _as_polygons(lake.union_all())
+    if water is None:
+        raise RuntimeError("Lake Ontario download did not contain a polygon.")
+    return gpd.GeoDataFrame(geometry=[water], crs="EPSG:4326")
+
+
+def clip_zones_outside_lake(
+    zones_gdf: gpd.GeoDataFrame, lake_gdf: gpd.GeoDataFrame
+) -> gpd.GeoDataFrame:
+    """Drop the part of each zone that falls inside the lake.
+
+    Land outside the lake stays, including islands that are holes in the lake
+    polygon. Attributes stay on the zone. A zone that was only water is removed.
+    """
+    if zones_gdf.empty:
+        return zones_gdf
+    if lake_gdf.empty or lake_gdf.geometry.isna().all():
+        raise RuntimeError("Lake Ontario has no polygon to clip against.")
+
+    zones_m = zones_gdf.to_crs(SHORELINE_CRS).copy()
+    water = _as_polygons(lake_gdf.to_crs(SHORELINE_CRS).union_all())
+    if water is None:
+        raise RuntimeError("Lake Ontario has no polygon to clip against.")
+    zones_m["geometry"] = zones_m.geometry.difference(water).map(_as_polygons)
+    zones_m = zones_m[zones_m.geometry.notna()].reset_index(drop=True)
+    return zones_m.to_crs(epsg=4326)
 
 
 def plot_theft_rates(

@@ -1,3 +1,5 @@
+import json
+
 import geopandas as gpd
 import pandas as pd
 import pytest
@@ -6,8 +8,10 @@ from shapely.geometry import Point, Polygon
 from bikespace_data.bicycle_theft.theft_rate_zones import (
     aggregate_theft_rates,
     assign_thefts_to_zones,
+    clip_zones_outside_lake,
     detect_tts_weight_col,
     filter_to_complete_years,
+    load_lake_ontario,
     load_thefts_gdf,
     load_tts_zones,
 )
@@ -280,3 +284,115 @@ def test_aggregate_theft_rates_without_tts_data(zones_gdf):
     assert pd.isna(
         result.set_index("zone_id").loc[1, "theft_per_1000_trips"]
     )
+
+
+def _lake_square() -> gpd.GeoDataFrame:
+    # Water from 43.60 to 43.64. Land is everything outside that square.
+    return gpd.GeoDataFrame(
+        geometry=[
+            Polygon([(-79.50, 43.60), (-79.30, 43.60), (-79.30, 43.64), (-79.50, 43.64)])
+        ],
+        crs="EPSG:4326",
+    )
+
+
+def test_clip_zones_outside_lake_keeps_land_and_drops_water():
+    zones = gpd.GeoDataFrame(
+        {"zone_id": [1, 2], "theft_per_1000_trips": [0.2, 0.4]},
+        geometry=[
+            Polygon([(-79.40, 43.62), (-79.38, 43.62), (-79.38, 43.66), (-79.40, 43.66)]),
+            Polygon([(-79.38, 43.605), (-79.36, 43.605), (-79.36, 43.62), (-79.38, 43.62)]),
+        ],
+        crs="EPSG:4326",
+    )
+
+    clipped = clip_zones_outside_lake(zones, _lake_square())
+
+    assert list(clipped["zone_id"]) == [1]
+    assert clipped["theft_per_1000_trips"].iloc[0] == pytest.approx(0.2)
+    assert clipped.total_bounds[1] == pytest.approx(43.64, abs=0.002)
+    full_area = zones.to_crs(32617).area.iloc[0]
+    assert clipped.to_crs(32617).area.iloc[0] == pytest.approx(full_area / 2, rel=0.05)
+
+
+def test_clip_zones_outside_lake_keeps_an_island_hole():
+    lake = gpd.GeoDataFrame(
+        geometry=[
+            Polygon(
+                [(-79.42, 43.60), (-79.36, 43.60), (-79.36, 43.64), (-79.42, 43.64)],
+                holes=[
+                    [
+                        (-79.395, 43.612),
+                        (-79.385, 43.612),
+                        (-79.385, 43.623),
+                        (-79.395, 43.623),
+                        (-79.395, 43.612),
+                    ]
+                ],
+            )
+        ],
+        crs="EPSG:4326",
+    )
+    zones = gpd.GeoDataFrame(
+        {"zone_id": [7]},
+        geometry=[
+            Polygon([(-79.40, 43.61), (-79.38, 43.61), (-79.38, 43.66), (-79.40, 43.66)])
+        ],
+        crs="EPSG:4326",
+    )
+
+    clipped = clip_zones_outside_lake(zones, lake)
+
+    assert len(clipped) == 1
+    assert clipped["zone_id"].iloc[0] == 7
+    assert clipped.geometry.iloc[0].geom_type == "MultiPolygon"
+    assert clipped.covers(gpd.GeoSeries([Point(-79.39, 43.65)], crs="EPSG:4326")).all()
+    assert clipped.covers(gpd.GeoSeries([Point(-79.39, 43.617)], crs="EPSG:4326")).all()
+    assert not clipped.covers(gpd.GeoSeries([Point(-79.39, 43.63)], crs="EPSG:4326")).any()
+
+
+def _lake_geojson_with_island():
+    outer = Polygon(
+        [(-79.40, 43.62), (-79.38, 43.62), (-79.38, 43.64), (-79.40, 43.64), (-79.40, 43.62)]
+    )
+    island = Polygon(
+        [
+            (-79.395, 43.628),
+            (-79.385, 43.628),
+            (-79.385, 43.632),
+            (-79.395, 43.632),
+            (-79.395, 43.628),
+        ]
+    )
+    water = gpd.GeoDataFrame(geometry=[outer.difference(island)], crs="EPSG:4326")
+    return json.loads(water.to_json())
+
+
+def test_load_lake_ontario_uses_bike_data_osm_and_keeps_islands(mocker):
+    osm = mocker.Mock()
+    osm.response_geojson = _lake_geojson_with_island()
+    constructor = mocker.patch(
+        "bikespace_data.bicycle_theft.theft_rate_zones.BikeDataOSM",
+        return_value=osm,
+    )
+
+    lake = load_lake_ontario()
+
+    constructor.assert_called_once_with("lake_ontario", "relation(1206310);")
+    assert len(lake) == 1
+    assert lake.crs.to_epsg() == 4326
+    assert lake.covers(gpd.GeoSeries([Point(-79.39, 43.625)], crs="EPSG:4326")).all()
+    assert not lake.covers(gpd.GeoSeries([Point(-79.39, 43.630)], crs="EPSG:4326")).any()
+    assert not lake.covers(gpd.GeoSeries([Point(-79.39, 43.65)], crs="EPSG:4326")).any()
+
+
+def test_load_lake_ontario_rejects_a_response_without_a_polygon(mocker):
+    osm = mocker.Mock()
+    osm.response_geojson = {"type": "FeatureCollection", "features": []}
+    mocker.patch(
+        "bikespace_data.bicycle_theft.theft_rate_zones.BikeDataOSM",
+        return_value=osm,
+    )
+
+    with pytest.raises(RuntimeError, match="Lake Ontario"):
+        load_lake_ontario()
