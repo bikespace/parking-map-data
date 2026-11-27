@@ -74039,8 +74039,8 @@
         "YEAR_OF_REPLACEMENT": 2017,
         "YEAR_REGISTERED": 2017,
         "SITE_ADDRESS_y": "600 ROGERS RD",
-        "LATITUDE": 43.6822278725,
-        "LONGITUDE": -79.47246992550001,
+        "LATITUDE": 43.682227677,
+        "LONGITUDE": -79.47249628,
         "ward_code": "05",
         "ward_name": "York South-Weston",
         "ward_full": "York South-Weston (05)",
@@ -74066,8 +74066,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.47246992550001,
-          43.6822278725
+          -79.47249628,
+          43.682227677
         ]
       }
     },
