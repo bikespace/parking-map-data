@@ -57162,8 +57162,8 @@
         "bike_parking_indoor": 0,
         "bike_parking_outdoor": 4,
         "SITE_ADDRESS_y": "2916 ST CLAIR AVE E",
-        "LATITUDE": 43.7084092682,
-        "LONGITUDE": -79.3006290206,
+        "LATITUDE": 43.70844614615515,
+        "LONGITUDE": -79.30072678143961,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -57189,8 +57189,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3006290206,
-          43.7084092682
+          -79.30072678143961,
+          43.70844614615515
         ]
       }
     },
@@ -58051,8 +58051,8 @@
         "YEAR_BUILT": 1960,
         "YEAR_REGISTERED": 2023,
         "SITE_ADDRESS_y": "2914 ST CLAIR AVE E",
-        "LATITUDE": 43.7084092682,
-        "LONGITUDE": -79.3006290206,
+        "LATITUDE": 43.70844614615515,
+        "LONGITUDE": -79.30072678143961,
         "ward_code": "19",
         "ward_name": "Beaches-East York",
         "ward_full": "Beaches-East York (19)",
@@ -58078,8 +58078,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -79.3006290206,
-          43.7084092682
+          -79.30072678143961,
+          43.70844614615515
         ]
       }
     },
